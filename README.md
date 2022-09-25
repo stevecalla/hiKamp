@@ -1,22 +1,76 @@
-# ECOMMERCE BACKEND
+# Long Trails
 [![License:  MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Index
 
-1. [Description](#description)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Features](#features)
-5. [Contributing](#contributing)
-6. [Resources](#resources)
-7. [License](#license)
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Future Enhancements](#future-enhancements)
+4. [Acceptance Criteria](#acceptance-criteria)
+5. [Website Preview](#website-preview)
+6. [Technologies](#technologies)
+7. [Collaborators](#collaborators)
+8. [Resources](#resources)
 
-## Description
+## Overview
+
+### Description
+
+When you're searching for powder, the last thing an avid skier or boarder wants to do is open up tons of different website searching for the best place to ski with the least travel issues. In the past, you'd have to go to Google Maps for Driving Directions, your favorite weather website for weather info, and each individual resort's website for snow condition. Not cool Bro. Well, the Powder Bound app puts all this information into one convenient location allowing you to plan your stoke with ease. Powder Bound allows you to select your favorite Colorado ski destination to quickly see snow conditions, driving directions, and weather forecast information. It's everything you need to hit the slopes, strap in, and shred the gnar when it's dumping!
+
+### User Story
 
 ```
-This app is a deployed blog site that allows uers to publish blog posts as well as login, logout, signup, add comments, add blog posts, edit blog posts and delete blog posts.
+As an active skier in Colorado, I want to plan my ski adventures using critical information
+about the travel process such as weather, driving directions, snow conditions, and more.
 ```
 
+## Features
+
+This app includes features that allows the user to view, add, update and delete blog posts as well as add comments to posts. It includes a variety of features such as login, logout, signup, add comments, add blog posts, edit blog posts and delete blog posts as well as varies views..
+
+1. Model/Database: mysql2, sequalize, , mockaroo.com (for mock seed data)
+2. View: handlebars, express-handlebars, Javascript, HTML, CSS, FontAwesome
+3. Controller/Router: express
+4. Helpers: bcrypt, dotenv
+5. Sessions/Cookies: connect-sessions-sequalize
+6. Deployed Site: Heroku
+7. Project Management/Repo: Github
+
+## Future Enhancements
+
+1. Sync the weather with driving directions so the user knows what the weather is forecasted to be when they get to various waypoints on their route.
+2. Display all SNOTEL stations in Colorado on the map to provide info for backcountry skiers.
+3. Add travel alerts to the driving directions display.
+4. Use secure authentication and server side storage for user profiles
+5. Increase robustness of input validation
+6. Refactor code to single purpose functions
+
+## Acceptance Criteria
+
+```
+GIVEN I'm a frequent skier I want an easy way to plan my trip
+
+WHEN I go to my planner
+THEN I am presenteed with map that displays the resorts in Colorado
+
+WHEN I click on a resort
+THEN I am presented with resort weather condition base depth, 24 hour totals, forecast
+
+WHEN I click on resort
+THEN I am presented with button to obtain get step by travel directions
+THEN I am presented with step by step travel directions at checkpoints with weather
+
+WHEN I want to see snow total by resort
+THEN I can view a summary
+
+WHEN I want to set my profile
+THEN I click on the profile button (in the upper right corner)
+
+WHEN I go to my profile
+THEN I can set my preferred started location, my preferred mountains, preferred ski pass
+
+```
 ## Installation
 
 Setup: 
@@ -40,95 +94,43 @@ Note that the seed will also create entries for the user table including hashed 
 
 If you'd like to use NPM nodemon as/if you make changes to the code, please install nodemon as a development dependency using "npm install --save-dev nodemon" (see https://www.npmjs.com/package//nodemon). 
 
-## Usage
-
-This app is a deployed blog site that allows uers to publish blog posts.
-
-## Features
-
-This app includes features that allows the user to view, add, update and delete blog posts as well as add comments to posts. It includes a variety of features such as login, logout, signup, add comments, add blog posts, edit blog posts and delete blog posts as well as varies views..
-
-1. Model/Database: mysql2, sequalize, , mockaroo.com (for mock seed data)
-2. View: handlebars, express-handlebars, Javascript, HTML, CSS, FontAwesome
-3. Controller/Router: express
-4. Helpers: bcrypt, dotenv
-5. Sessions/Cookies: connect-sessions-sequalize
-6. Deployed Site: Heroku
-7. Project Management/Repo: Github
-
-<!-- ## Future Enhancements
-
-This app can be enhanced by (a) using/adding dates such as created at, updated at, deleted at to track information by time, (b) add soft and hard delete options so users can recover changes if necessary, (c) add the ability to manage middle names, (d) add more fields for employees or roles such as employee salary, date of birth, social security number (secured in some manner), email address, position start date and more, (e) add ka secure password for the mysql database connection, and (f) add additional testing. -->
-<!-- 
-1. TBD
-2. TBD
-3. TBD
--->
-
-## App Preview - Static Screenshots
-
-<img alt="Map" src="public/images/screenshot-homePage.png">
-
-## App Preview - WalkThrough Videos
-
-[Link to Setup Video](https://youtu.be/GVZ9KZithiY)
-
-This video shows - the category routes including get all categories, get single category by id, post (add a new category), put (update a category by id), delete a category by id.
-
-![In Insomnia, the user tests “GET tags,” “GET Categories,” and “GET All Products.”.](public/images/tech-blog-video.gif)
-
-<!-- <img src="public/images/powder-bound.gif" width="" height=""/> -->
-
 ## Tests
 
 No tests at this time.
 
-## Contributing
+## Website Preview
 
-Contributor Covenant Code of Conduct
+### Static Screenshots
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md)
+<img alt="Map" src="./assets/images/screenshot_map.png">
+<img alt="Dashboard" src="./assets/images/screenshot_dashboard.png">
+<img alt="Profile" src="./assets/images/screenshot_profile.png">
 
-<!-- DELETE THIS SECTION FOR THE FINAL README. For more information on example contribution guidelines please see the links below.
+### Video Preview
 
-1. Contributor Convent: [Information](https://www.contributor-covenant.org/)
-2. Contributor Covenant Code of Conduct: [Markdown File](hhttps://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md)
--->
+<img src="./assets/images/powder-bound.gif" width="" height=""/>
 
-## Resources
-
-1. Project Manager: [Steve Calla - GitHub Profile](https://github.com/stevecalla)
-2. Deployed Site URL - Heroku: 
-3. GitHub Repo: <https://github.com/stevecalla/tech-blog>
-4. GitHub Projects: https://github.com/users/stevecalla/projects/20
-4. Contact: [Email Steve](mailto:callasteven@gmail.com)
-
-## License 
-
-[![License:  MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-This project is licensed under the terms of the <span style="color:red">The MIT License</span>. Please click on the license badge for more information.
-
-<!-- DELETE THIS SECTION FOR THE FINAL README. Per Github, you are under no obligation to choose a license. However, without a license, the default copyright laws apply, meaning that you retain all rights to your source code and no one may reproduce, distribute, or create derivative works from your work. If you're creating an open source project, we strongly encourage you to include an open source license. The Open Source Guide provides additional guidance on choosing the correct license for your project. SEE THE FOLLOWING LINKS FOR MORE INFORMATION:
-
-1. GitHub: [Licensing a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
-2. Open Source Guide: [To Choose A License](https://choosealicense.com/)
--->
-
-<!-- OTHER SECTIONS IF YOU LIKE
 ## Technologies
 
 1. HTML
 2. CSS
 3. JavaScript
 4. GitHub (website hosting and source code management)
-5. TBD
-6. TBD
+5. [Moment.js v2.27.0](https://momentjs.com/)
+6. [jQuery v3.6.0](https://jquery.com/)
+7. [Bulma v0.9.4](https://bulma.io/)
+8. [Leaflet v1.8.0](https://leafletjs.com/)
 
 ### 3rd Party Application Programming Interfaces
 
-1. [TBD](https://TBD)
-2. [TBD](https://TBD)
-3. [TBD](https://TBD)
+1. [Open Weather](https://openweathermap.org/api/one-call-3)
+2. [Powderlin.es - SNOTEL DATA](http://powderlin.es/api.html) - Special thanks to Bobby Marko for helping us navigate the CORS and mixed content issues with his API.
+3. [Google Static Maps](https://developers.google.com/maps/documentation/maps-static/overview)
+4. [MapQuest Directions](https://developer.mapquest.com/documentation/directions-api/)
+5. [MapQuest GeoCoding & Reverse Geocoding](https://developer.mapquest.com/documentation/geocoding-api/)
+6. [MapQuest Static Maps](https://developer.mapquest.com/documentation/static-map-api/v5/)
+7. [MapQuest Search Ahead](https://developer.mapquest.com/documentation/searchahead-api/)
+8. [Geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
 
 ### Dependencies
 
@@ -136,12 +138,19 @@ This project is licensed under the terms of the <span style="color:red">The MIT 
 
 ## Collaborators
 
-1. FIRST & LAST NAME: [Github LINK](https://github.com/<Github user name>/)
-2. FIRST & LAST NAME: [Github LINK](https://github.com/<Github user name>/)
-3. FIRST & LAST NAME: [Github LINK](https://github.com/<Github user name>/)
+1. Alex Cleveland: [Github LINK](https://github.com/AClevel5/)
+2. Patrick Radcliff: [Github LINK](https://github.com/TBD_TBD)
+3. Rod Bennett: [Github LINK](https://github.com/RodBennett)
+4. Steve Calla: [Github LINK](https://github.com/stevecalla)
 
 ## Resources
 
-1. GitHub Repo: <https://github.com/tbd/tbd>
-2. GitHub Hosted URL: <https://tbd.tbd.com/tbd>
--->
+1. Deployed Site URL - Heroku: TBD
+3. GitHub Repo: <https://github.com/stevecalla/long-trails>
+3. GitHub Projects: <https://github.com/users/stevecalla/projects/22>
+
+## Contributing
+
+Contributor Covenant Code of Conduct
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md)
