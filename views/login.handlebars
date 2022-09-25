@@ -1,0 +1,12 @@
+<div class="login-card">
+  <h2 class="login-title">Login</h2>
+  <form class="form login-form">
+    {{> email-input}}
+    {{> password-input}}
+    {{> submit-button content="Login!"}}
+  </form>
+  {{> login-link link="signup" content="Sign up instead"}}
+</div>
+
+<script src="./js/password.js"></script>
+<script src="./js/login.js"></script>

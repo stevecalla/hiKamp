@@ -1,0 +1,10 @@
+<section class="container">
+  <div class="post-wrapper">
+  {{#each posts as |post|}}
+    <a class="post-title" href="/edit-posts/{{ id }}">
+      {{> user-details}}
+    </a>
+  {{/each}}
+  </div>
+    {{> add-post-button }}
+</section>

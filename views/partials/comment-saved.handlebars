@@ -1,0 +1,45 @@
+<section class="post-card">
+  <div class="post-header">
+    <h2 class="">{{posts.title}}</h2>
+    <h2 class="post-author">Posted by
+      {{posts.user.username}}
+      on
+      {{format_date posts.createdAt}}</h2>
+  </div>
+  <div>
+    <p>{{posts.content}}</p>
+  </div>
+</section>
+<section class="post-card comment-wrapper">
+  {{#each comments as |comment|}}
+    <p>Comment: {{content}}</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;--
+      {{user.username}}
+      on
+      {{format_date createdAt}}</p>
+    <hr />
+  {{/each}}
+</section>
+<section class="post-card">
+  <form class="form comment-form">
+    <div class="form-group">
+      <label for="post-comment">Comment</label>
+      <textarea
+        id="post-comment"
+        class="form-input comment-input"
+        name="post-comment"
+        data-post={{posts.id}}
+        rows="3"
+        cols="30"
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <button
+        class="btn btn-primary btn-custom comment-button"
+        type="submit"
+      >Submit!</button>
+    </div>
+  </form>
+</section>
+
+<script src="../../js/comment.js"></script>
