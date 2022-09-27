@@ -3,27 +3,73 @@
     * element that contains the map. */
   /* Optional: Makes the sample page fill the window. */ --}}
 <style>
-  aside {position: absolute; top:20vh; right:80vw; bottom:0;}
-  input {margin: 10px; height: 40px; width: 250px; border-radius: 3px;}
-  .resultsContainer {height: 70vh; top:25vh; overflow: scroll;}
-  {{!-- p {width: 200px;} --}}
-  .map { position: absolute; top:20vh; left: 20vw; bottom:0; width:80vw; }
+  main {display: flex; flex-direction: row;}
+  aside {top:20vh; width: 25vw; bottom:0;}
+  input {
+    margin: 5px; 
+    height: 40px; 
+    width: 250px; 
+    border-radius: 3px;
+  }
+  .resultsContainer {
+    height: 70vh; 
+    top:25vh; 
+    overflow: scroll;
+  }
+  .map { 
+    position: absolute; 
+    width: 75vw; 
+    top: 20vh; 
+    left: 25vw; 
+    bottom:0; 
+  }
   html, body {
     height: 100%;
     margin: 0;
     padding: 0;
   }
+  @media screen and (max-width: 1000px) {
+    .map {
+      position: absolute; 
+      top:30vh; 
+      left: 0; 
+      bottom:0; 
+      width:100vw; 
+    }
+
+    aside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      min-width: 375px;
+    }
+
+    input {
+      margin-top: 15px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    p {
+      color: red;
+      display: none;
+    }
+}
 </style>
 
-<aside>
-  <input type="text">
-  <div class="resultsContainer">
-    <p id="searchResults"></p>
-  </div>
-</aside>
+<main>
 
+  <aside>
+    <input type="text">
+    <div class="resultsContainer">
+      <p id="searchResults"></p>
+    </div>
+  </aside>
 
-<div class="map" id="map"></div>
+  <div class="map" id="map"></div>
+
+</main>
 
 {{!-- <script src="/js/searchResults.js"></script> --}}
 <script src="/js/map.js"></script>
