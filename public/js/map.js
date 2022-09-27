@@ -1,5 +1,4 @@
 // SECTION GOOGLE MAP
-
 let myLatLng = [
   {
     name: 'Aspenglen Campground',
@@ -153,6 +152,27 @@ let myLatLng = [
   },
 ];
 
+function renderSearchResults() {
+  let asideContainer = document.getElementById('searchResults');
+
+  console.log('hello');
+
+
+  // for(let i = 0; i < myLatLng.length; i++) {
+  for (let i = 0; i < parkList.length; i++) {
+  // parkList.forEach(({ lat, lng, name }, i) => {
+    //CREATE ELEMENT
+    let campName = document.createElement('p');
+    let renderLine = document.createElement('hr');
+    //CREATE TITLE CONTENT
+    // campName.textContent = `${i + 1}) ${myLatLng[i].name}`;
+    campName.textContent = `${i + 1}) ${parkList[i].nameState }`;
+    //APPEND
+    asideContainer.append(campName);
+    campName.append(renderLine);
+  }
+};
+
 const options = {
   enableHighAccuracy: true,
   timeout: 5000,
@@ -199,55 +219,67 @@ async function initMap() {
   });
 
   // Create the markers.
-  myLatLng.forEach(({ lat, lng, name }, i) => {
-    const contentString =
-      `<h6 id="" class="">  ${i + 1}. ${name}</h6>` +
-      '<p>More Info: <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> ';
+  // myLatLng.forEach(({ lat, lng, name }, i) => {
+  parkList.forEach(({ lat, lng, name }, i) => {
 
-    const marker = new google.maps.Marker({
-      position: { lat, lng },
-      map,
-      // title: `${i + 1}. ${name}`,
-      title: contentString,
-      label: `${i + 1}`,
-      optimized: false,
-      // icon: svgMarker,
-    });
+    if(lat && lng) {
+    
+      const contentString =
+        `<h6 id="" class="">  ${i + 1}. ${name}</h6>` +
+        '<p>More Info: <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
+        'https://en.wikipedia.org/w/index.php?title=Uluru</a> ';
 
-    // Add a click listener for each marker, and set up the info window.
-    marker.addListener('click', () => {
-      infoWindow.close();
-      infoWindow.setContent(`${marker.getTitle()}`);
-      infoWindow.open(marker.getMap(), marker);
-    });
+      const marker = new google.maps.Marker({
+        position: { lat, lng },
+        map,
+        // title: `${i + 1}. ${name}`,
+        title: contentString,
+        label: `${i + 1}`,
+        optimized: false,
+        // icon: svgMarker,
+      });
+
+      // Add a click listener for each marker, and set up the info window.
+      marker.addListener('click', () => {
+        infoWindow.close();
+        infoWindow.setContent(`${marker.getTitle()}`);
+        infoWindow.open(marker.getMap(), marker);
+      });
+    }
   });
-}
-
-function renderSearchResults() {
-  let asideContainer = document.getElementById('searchResults');
-
-  for(let i = 0; i < myLatLng.length; i++) {
-    //CREATE ELEMENT
-    let campName = document.createElement('p');
-    let renderLine = document.createElement('hr');
-    //CREATE TITLE CONTENT
-    campName.textContent = `${i + 1}) ${myLatLng[i].name}`;
-    //APPEND
-    asideContainer.append(campName);
-    campName.append(renderLine);
-  };
-};
 
 renderSearchResults();
+}
 
 let searchInput = document.getElementById("search-input");
 searchInput.addEventListener("input", () => console.log(searchInput.value));
-searchInput.addEventListener("input", () => test());
+searchInput.addEventListener("input", () => searchAutoComplete());
+searchInput.addEventListener("click", () => console.log(searchInput.value));
+searchInput.addEventListener("keypress", async (event) => {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    console.log(searchInput.value)
+    //send post request to render page
 
-function test() {
+    const getState = parkList.filter(park => park.nameState === searchInput.value);
+    let state = getState[0].state;
+    console.log(getState[0].state);
+
+    const response = await fetch("/api/map", {
+      method: "POST",
+      body: JSON.stringify({ state }),
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+});
+
+function searchAutoComplete() {
   $( "#search-input" ).autocomplete({
-    source: myLatLng.map(element => element.name),
+    // source: myLatLng.map(element => element.name),
+    source: parkList.map(park => park.nameState),
     minLength: 2,
   });
 }

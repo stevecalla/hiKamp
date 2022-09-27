@@ -8,7 +8,7 @@
   input {
     margin: 5px; 
     height: 40px; 
-    width: 250px; 
+    width: 275px; 
     border-radius: 3px;
   }
   .resultsContainer {
@@ -62,6 +62,8 @@
     background-color: white;
     border: 1px solid black;
     z-index: 2147483647;
+    height: 250px;
+    overflow: scroll;
     {{!-- padding: 5px; --}}
   }
   /* ENSURES THE AUTOCOMPLETE ITEM DOESNT RENDER AT THE BOTTOM LEFT OF DESKTOP UX */
@@ -84,4 +86,5 @@
 </main>
 
 {{!-- <script src="/js/searchResults.js"></script> --}}
+{{!-- <script src="/seeds/parkList.js"></script> --}}
 <script src="/js/map.js"></script>
