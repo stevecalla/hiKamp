@@ -16,9 +16,15 @@ Campsite.init(
         },
         lat: {
             type: DataTypes.DECIMAL,
+            allowNull: false,
         },
         lng: {
             type: DataTypes.DECIMAL,
+            allowNull: false,
+        },
+        latlngg: {
+            type: DataTypes.DECIMAL,
+            allowNull: false,
         },
         state: {
             type: DataTypes.STRING,
@@ -39,8 +45,7 @@ Campsite.init(
     {
         sequelize,
         freezeTableName: true,
-        underscored: true,
-        modelName: "comment",
+        modelName: "campsite",
     }
 
 );

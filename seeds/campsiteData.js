@@ -1,4 +1,4 @@
-
+const { Campsite } = require("../models");
 
 
 const campsiteData = [
