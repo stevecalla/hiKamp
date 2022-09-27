@@ -1,0 +1,46 @@
+{{!-- <p>Hello</p>
+<p id="map" style="position:absolute; top:0; bottom:0; width:100%;">hello</p> --}}
+
+{{!-- SECTION MAPBOX --}}
+{{!-- <style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style> --}}
+
+{{!-- <div id='map'></div>
+<script src="/js/map.js"></script> --}}
+
+{{!-- <source media="(https://docs.mapbox.com/mapbox.js/example/v1.0.0/)" srcset=""> --}}
+{{!-- https://docs.mapbox.com/mapbox.js/example/v1.0.0/animate-marker-along-line/ --}}
+
+{{!-- SECTION: GOOGLE MAP --}}
+  {{!-- /* Always set the map height explicitly to define the size of the div
+    * element that contains the map. */
+  /* Optional: Makes the sample page fill the window. */ --}}
+<style>
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<!-- Search input -->
+<input id="searchInput" class="controls" type="text" placeholder="Enter a location">
+
+<div id="map"></div>
+
+<!-- Display geolocation data -->
+<ul class="geo-data">
+    <li>Full Address: <span id="location"></span></li>
+    <li>Postal Code: <span id="postal_code"></span></li>
+    <li>Country: <span id="country"></span></li>
+    <li>Latitude: <span id="lat"></span></li>
+    <li>Longitude: <span id="lon"></span></li>
+</ul>
+
+
+
+<script src="/js/map.js"></script>
+
+{{!-- SECTION: GOOGLE MAP --}}

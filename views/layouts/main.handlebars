@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LONG TRAILS</title>
     <link
@@ -23,6 +24,10 @@
     {{!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" /> --}}
+
+    {{!-- MAPBOX --}}
+    <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
 
     <!-- ADD STYLE SHEET-->
     <link rel="stylesheet" type="text/css" href="/css/jass.css" />
@@ -65,6 +70,9 @@
 
   <!-- JQUERY UI -->
   {{!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> --}}
+
+  {{!-- GOOGLE MAP --}}
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBq4HnHzwNh73EaYuMbKSqN2OiSNrAespw&callback=initMap" async defer></script>
 
   </body>
 </html>
