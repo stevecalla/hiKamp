@@ -55,13 +55,25 @@
       color: red;
       display: none;
     }
-}
+  }
+  /* JQUERY AUTOCOMPLETE CSS */
+  .ui-autocomplete {
+    max-width: 275px;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 2147483647;
+    {{!-- padding: 5px; --}}
+  }
+  /* ENSURES THE AUTOCOMPLETE ITEM DOESNT RENDER AT THE BOTTOM LEFT OF DESKTOP UX */
+  .ui-helper-hidden-accessible {
+    display: none !important;
+  }
 </style>
 
 <main>
 
   <aside>
-    <input type="text">
+    <input id="search-input" type="text">
     <div class="resultsContainer">
       <p id="searchResults"></p>
     </div>

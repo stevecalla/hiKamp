@@ -241,6 +241,17 @@ function renderSearchResults() {
 
 renderSearchResults();
 
+let searchInput = document.getElementById("search-input");
+searchInput.addEventListener("input", () => console.log(searchInput.value));
+searchInput.addEventListener("input", () => test());
+
+function test() {
+  $( "#search-input" ).autocomplete({
+    source: myLatLng.map(element => element.name),
+    minLength: 2,
+  });
+}
+
 // Source:
 // SIMPLE MARKER: https://developers.google.com/maps/documentation/javascript/examples/marker-simple
 // https://developers.google.com/maps/documentation/javascript/examples/marker-accessibility
