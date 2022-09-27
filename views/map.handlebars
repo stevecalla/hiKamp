@@ -18,28 +18,20 @@
     * element that contains the map. */
   /* Optional: Makes the sample page fill the window. */ --}}
 <style>
-  #map { position:absolute; top:0; bottom:0; width:100%; }
+  aside {position:absolute; top:20vh; right:80vw; bottom:0}
+  .map { position:absolute; top:20vh; left: 20vw; bottom:0; width:80vw; }
   html, body {
     height: 100%;
     margin: 0;
     padding: 0;
   }
 </style>
-<!-- Search input -->
-<input id="searchInput" class="controls" type="text" placeholder="Enter a location">
 
-<div id="map"></div>
+<aside >
+  <p>Hello</p>
+</aside>
 
-<!-- Display geolocation data -->
-<ul class="geo-data">
-    <li>Full Address: <span id="location"></span></li>
-    <li>Postal Code: <span id="postal_code"></span></li>
-    <li>Country: <span id="country"></span></li>
-    <li>Latitude: <span id="lat"></span></li>
-    <li>Longitude: <span id="lon"></span></li>
-</ul>
-
-
+<div class="map" id="map"></div>
 
 <script src="/js/map.js"></script>
 
