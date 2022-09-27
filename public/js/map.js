@@ -1,21 +1,4 @@
-// SECTION MAP BOX
-// L.mapbox.accessToken = 'pk.eyJ1Ijoic3RldmVjYWxsYSIsImEiOiJjbDhqNjc2NDMwYWZzM29wYzBzaTYwbWhtIn0.6xQzOco7c8oQNlUXWvpMjA';
-// var map = L.mapbox.map('map')
-//     .setView([40.0497, -105.2143], 9)
-//     .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/outdoors-v11'));
-
-// .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
-// .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/satellite-v9'));
-
-// // Create a marker and add it to the map.
-// var marker = L.marker([40.0497, -105.2143], {
-//   icon: L.mapbox.marker.icon({
-//     'marker-color': '#f86767'
-//   })
-// }).addTo(map);
-
 // SECTION GOOGLE MAP
-// var map;
 
 let myLatLng = [
   {
@@ -173,25 +156,24 @@ let myLatLng = [
 const options = {
   enableHighAccuracy: true,
   timeout: 5000,
-  maximumAge: 0
+  maximumAge: 0,
 };
 
 function getCurrentPosition() {
-  return new Promise( (resolve, reject) => {
-      navigator.geolocation.getCurrentPosition(
-          position => resolve(position),
-          error => reject(error)
-      )
-  })
-};
+  return new Promise((resolve, reject) => {
+    navigator.geolocation.getCurrentPosition(
+      (position) => resolve(position),
+      (error) => reject(error)
+    );
+  });
+}
 
 async function initMap() {
-
   let position = await getCurrentPosition();
   let currentPosition = position.coords;
   let currentLatitude = currentPosition.latitude || 40.0497;
   let currentLongitude = currentPosition.longitude || -105.2143;
-  
+
   const map = new google.maps.Map(document.getElementById('map'), {
     // center: { lat: 40.0497, lng: -105.2143 },
     center: { lat: currentLatitude, lng: currentLongitude },
@@ -199,10 +181,9 @@ async function initMap() {
     mapTypeId: 'terrain',
   });
 
-  
   // Create an info window to share between markers.
   const infoWindow = new google.maps.InfoWindow();
-  
+
   let currentMarker = new google.maps.Marker({
     map,
     // position: { lat: 40.0497, lng: -105.2143 },
@@ -211,21 +192,21 @@ async function initMap() {
     title: 'current location',
   });
 
-  currentMarker.addListener("click", () => {
+  currentMarker.addListener('click', () => {
     infoWindow.close();
     infoWindow.setContent(`${currentMarker.getTitle()}`);
     infoWindow.open(currentMarker.getMap(), currentMarker);
   });
-  
+
   // Create the markers.
-  myLatLng.forEach(({lat, lng, name}, i) => {
+  myLatLng.forEach(({ lat, lng, name }, i) => {
     const contentString =
-    `<h6 id="" class="">  ${i + 1}. ${name}</h6>` 
-    + '<p>More Info: <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' 
-    + 'https://en.wikipedia.org/w/index.php?title=Uluru</a> '
+      `<h6 id="" class="">  ${i + 1}. ${name}</h6>` +
+      '<p>More Info: <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
+      'https://en.wikipedia.org/w/index.php?title=Uluru</a> ';
 
     const marker = new google.maps.Marker({
-      position: {lat, lng},
+      position: { lat, lng },
       map,
       // title: `${i + 1}. ${name}`,
       title: contentString,
@@ -235,14 +216,30 @@ async function initMap() {
     });
 
     // Add a click listener for each marker, and set up the info window.
-    marker.addListener("click", () => {
+    marker.addListener('click', () => {
       infoWindow.close();
       infoWindow.setContent(`${marker.getTitle()}`);
       infoWindow.open(marker.getMap(), marker);
     });
   });
-
 }
+
+function renderSearchResults() {
+  let asideContainer = document.getElementById('searchResults');
+
+  for(let i = 0; i < myLatLng.length; i++) {
+    //CREATE ELEMENT
+    let campName = document.createElement('p');
+    let renderLine = document.createElement('hr');
+    //CREATE TITLE CONTENT
+    campName.textContent = `${i + 1}) ${myLatLng[i].name}`;
+    //APPEND
+    asideContainer.append(campName);
+    campName.append(renderLine);
+  };
+};
+
+renderSearchResults();
 
 // Source:
 // SIMPLE MARKER: https://developers.google.com/maps/documentation/javascript/examples/marker-simple
@@ -255,12 +252,12 @@ async function initMap() {
 // WHAT ELSE?
 // MAP ICON
 
-    // const svgMarker = {
-    //   path: "M10.453 14.016l6.563-6.609-1.406-1.406-5.156 5.203-2.063-2.109-1.406 1.406zM12 2.016q2.906 0 4.945 2.039t2.039 4.945q0 1.453-0.727 3.328t-1.758 3.516-2.039 3.070-1.711 2.273l-0.75 0.797q-0.281-0.328-0.75-0.867t-1.688-2.156-2.133-3.141-1.664-3.445-0.75-3.375q0-2.906 2.039-4.945t4.945-2.039z",
-    //   fillColor: "blue",
-    //   fillOpacity: 0.6,
-    //   strokeWeight: 0,
-    //   rotation: 0,
-    //   scale: 1,
-    //   anchor: new google.maps.Point(15, 30),
-    // };
+// const svgMarker = {
+//   path: "M10.453 14.016l6.563-6.609-1.406-1.406-5.156 5.203-2.063-2.109-1.406 1.406zM12 2.016q2.906 0 4.945 2.039t2.039 4.945q0 1.453-0.727 3.328t-1.758 3.516-2.039 3.070-1.711 2.273l-0.75 0.797q-0.281-0.328-0.75-0.867t-1.688-2.156-2.133-3.141-1.664-3.445-0.75-3.375q0-2.906 2.039-4.945t4.945-2.039z",
+//   fillColor: "blue",
+//   fillOpacity: 0.6,
+//   strokeWeight: 0,
+//   rotation: 0,
+//   scale: 1,
+//   anchor: new google.maps.Point(15, 30),
+// };
