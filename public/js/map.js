@@ -1,5 +1,5 @@
 // SECTION GOOGLE MAP
-let stateTest = "fl";
+let stateTest = "co";
 
 let myLatLng = [
   {
@@ -154,25 +154,52 @@ let myLatLng = [
   },
 ];
 
+function logToTerminal() {
+  console.log('yes');
+  let b = document.getElementById('gmimap3')
+  // b.setAttribute('style', "color:green!important");
+  // b.setIcon('http://www.google.com/mapfiles/shadow50.png');
+  // "markers[ID].setIcon(image_url)">
+  b.setIcon("http://maps.google.com/mapfiles/ms/icons/blue-dot.png")
+  console.log(b)
+}
+
 function renderSearchResults(list) {
+
+  console.log('list ======= ', list);
+
   let asideContainer = document.getElementById('searchResults');
-  console.log('hello');
+  // console.log('hello');
 
   // for(let i = 0; i < myLatLng.length; i++) {
   // for (let i = 0; i < parkList.length; i++) {
   for (let i = 0; i < list.length; i++) {
   // parkList.forEach(({ lat, lng, name }, i) => {
+
     //CREATE ELEMENT
+    let campPath = document.createElement('a');
     let campName = document.createElement('p');
     let renderLine = document.createElement('hr');
+
+    campPath.addEventListener('mouseover', logToTerminal);
+
+    //SET ATTRIBUTES
+    campPath.setAttribute('href', `/api/map/campsite/:${list[i].id}`);
+
     //CREATE TITLE CONTENT
-    // campName.textContent = `${i + 1}) ${myLatLng[i].name}`;
-    // campName.textContent = `${i + 1}) ${parkList[i].nameState }`;
     campName.textContent = `${i + 1}) ${list[i].nameState }`;
+
     //APPEND
-    asideContainer.append(campName);
+    asideContainer.append(campPath);
+    campPath.append(campName);
     campName.append(renderLine);
+
+    // asideContainer.append(campName);
+    // campName.append(renderLine);
   }
+
+  // `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/:${id}">${name}</a></h6>`
+
 };
 
 const options = {
@@ -250,7 +277,8 @@ async function initMap() {
       const marker = new google.maps.Marker({
         position: { lat, lng },
         map,
-        optimized: false,
+        optimized: true,
+        // icon: ("http://maps.google.com/mapfiles/ms/icons/red-dot.png")
         // title: `${i + 1}. ${name}`,
         // title: contentString,
         // label: `${i + 1}`,
@@ -263,7 +291,21 @@ async function initMap() {
         // infoWindow.setContent(`${marker.getTitle()}`);
         infoWindow.setContent(contentString);
         infoWindow.open(marker.getMap(), marker);
+        marker.setIcon("http://maps.google.com/mapfiles/ms/icons/blue-dot.png")
       });
+
+      // marker.addListener("mouseover", () => {
+      //   if (marker.getAnimation() !== null) {
+      //     marker.setAnimation(null);
+      //   } else {
+          // marker.setAnimation(google.maps.Animation.BOUNCE);
+          // marker.setIcon("http://maps.google.com/mapfiles/ms/icons/blue-dot.png")
+          // setTimeout(() => {
+          //   marker.setAnimation(null);
+          //   marker.setIcon("http://maps.google.com/mapfiles/ms/icons/red-dot.png")
+          // }, 2000);
+        // }
+      // });
     }
   });
 
