@@ -22,8 +22,8 @@ Campsite.init(
             type: DataTypes.DECIMAL,
             allowNull: false,
         },
-        latlngg: {
-            type: DataTypes.DECIMAL,
+        latlng: {
+            type: DataTypes.STRING,
             allowNull: false,
         },
         state: {
