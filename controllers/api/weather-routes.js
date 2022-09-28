@@ -2,6 +2,7 @@ const router = require('express').Router();
 const isAuthorized = require("../../utils/auth");
 const axios = require('axios').default;
 
+
 //section: api/weather
 
 router.get('/', async (req, res) => {
@@ -16,7 +17,7 @@ router.get('/', async (req, res) => {
     // console.log('RESPONSE = ', JSON.stringify(response.data));
     // res.json(JSON.stringify(response.data));
     // This is how we SEND the API data back to the user, using Handlebars
-
+console.log(response.data)
     // res.json(response.data);
 
     res.render('weather', {
