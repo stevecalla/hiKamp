@@ -213,7 +213,7 @@ function getCurrentPosition() {
   });
 }
 
-async function initMap(state, zoomLevel) {
+async function initMap(state, zoomLevel, selectedCampLat, selectedCampLng) {
   // let position = await getCurrentPosition();
   // let currentPosition = position.coords;
   // let currentLatitude = currentPosition.latitude || 40.0497;
@@ -268,7 +268,10 @@ async function initMap(state, zoomLevel) {
         position: { lat, lng },
         map,
         optimized: true,
-        // icon: ("http://maps.google.com/mapfiles/ms/icons/red-dot.png")
+        icon: lat === selectedCampLat ? ("http://maps.google.com/mapfiles/kml/shapes/campground.png") : console.log('help'),
+        // size: new google.maps.Size(20, 34),
+        // This marker is 20 pixels wide by 32 pixels high.
+        size: new google.maps.Size(50, 100),
         // title: `${i + 1}. ${name}`,
         // title: contentString,
         // label: `${i + 1}`,
@@ -276,28 +279,32 @@ async function initMap(state, zoomLevel) {
       });
 
       // Add a click listener for each marker, and set up the info window.
+
       marker.addListener('click', () => {
         infoWindow.close();
         // infoWindow.setContent(`${marker.getTitle()}`);
         infoWindow.setContent(contentString);
         infoWindow.open(marker.getMap(), marker);
-        marker.setIcon("http://maps.google.com/mapfiles/ms/icons/blue-dot.png")
+        if (lat !== selectedCampLat) {
+          marker.setIcon("http://maps.google.com/mapfiles/ms/icons/blue-dot.png")
+        }
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+        setTimeout(() => {
+          marker.setAnimation(null);
+          // marker.setIcon("http://maps.google.com/mapfiles/ms/icons/red-dot.png")
+        }, 1000);
       });
 
       // marker.addListener("mouseover", () => {
       //   if (marker.getAnimation() !== null) {
       //     marker.setAnimation(null);
       //   } else {
-          // marker.setAnimation(google.maps.Animation.BOUNCE);
           // marker.setIcon("http://maps.google.com/mapfiles/ms/icons/blue-dot.png")
-          // setTimeout(() => {
-          //   marker.setAnimation(null);
-          //   marker.setIcon("http://maps.google.com/mapfiles/ms/icons/red-dot.png")
-          // }, 2000);
         // }
       // });
     }
   });
+
   renderSearchResults(list);
 }
 
@@ -322,23 +329,21 @@ searchInput.addEventListener("keypress", async (event) => {
   // If the user presses the "Enter" key on the keyboard
   if (event.key === "Enter") {
     event.preventDefault();
-    let rawCampsites = await getList();
-    let getState = rawCampsites.filter(camp => camp.nameState === searchInput.value);
+    let rawCampsites = await getList(); // get camp data from database
+    let getState = rawCampsites.filter(camp => camp.nameState === searchInput.value); //get state for current search input
+    console.log(getState);
 
-    // console.log(rawCampsites)
-    // console.log(searchInput.value)
-    // console.log('#1 = ', getState);
+    let selectedCampLat;
+    let selectedCampLng;
 
-    if (!getState.length) {
-      getState = rawCampsites.filter(camp => camp.zipCode === searchInput.value);
+    if (getState.length) { //get lat & lng for selected campsite to render blue marker
+      selectedCampLat = getState[0].lat;
+      selectedCampLng = getState[0].lng;
     }
 
-    // console.log('#2 = ', getState);
-    // console.log(getState[0].state);
-    
-    let state = getState[0].state;
-    initMap(getState[0].state, 6); // pass state & map zoom level
-    
+    if (!getState.length) {getState = rawCampsites.filter(camp => camp.zipCode === searchInput.value)}; // if input is a zipcode get state
+    let state = getState[0].state; // get state for first location in the array
+    initMap(state, 6, selectedCampLat, selectedCampLng); // render map by passing state, map zoom level, selected camp lat & lng
   }
 });
 
