@@ -1,159 +1,167 @@
-// SECTION GOOGLE MAP
-let stateTest;
+//todo add spinner for map?
+//query selector variables go here 👇
+let searchInput = document.getElementById("search-input"); //USED FOR AUTOCOMPLETE & SEARCH BAR RESULTS
 
-let myLatLng = [
-  {
-    name: 'Aspenglen Campground',
-    lat: 40.39934770583215,
-    lng: -105.59305451637942,
-  },
-  {
-    name: 'Backpacking Campsites in the Dunes or Forest',
-    lat: 37.77724,
-    lng: -105.535601,
-  },
-  {
-    name: 'Cimarron Campground',
-    lat: 38.4442894775407,
-    lng: -107.555231428248,
-  },
-  {
-    name: 'Deerlodge Park Campground',
-    lat: 40.4464807631,
-    lng: -108.513304134,
-  },
-  {
-    name: 'Dry Gulch Campground',
-    lat: 38.4841144836276,
-    lng: -107.188437346818,
-  },
-  {
-    name: 'East Elk Creek Group Campground',
-    lat: 38.484167,
-    lng: -107.188333,
-  },
-  {
-    name: 'East Portal Campground',
-    lat: 38.527059599536,
-    lng: -107.64948401793,
-  },
-  {
-    name: 'East Portal Campground',
-    lat: 38.526896,
-    lng: -107.649306,
-  },
-  {
-    name: 'Echo Park Campground',
-    lat: 40.5208668444,
-    lng: -108.993230693,
-  },
-  {
-    name: 'Elk Creek Campground',
-    lat: 38.4674202781,
-    lng: -107.172066844,
-  },
-  {
-    name: 'Gates of Lodore Campground',
-    lat: 40.7249234842,
-    lng: -108.887824372,
-  },
-  {
-    name: 'Gateview Campground',
-    lat: 38.3844578817442,
-    lng: -107.242874927003,
-  },
-  {
-    name: 'Glacier Basin Campground',
-    lat: 40.32980715336969,
-    lng: -105.59562927944023,
-  },
-  {
-    name: 'Green River Campground',
-    lat: 40.4209774724,
-    lng: -109.243175668,
-  },
-  {
-    name: 'Hovenweep Campground',
-    lat: 37.3832032699,
-    lng: -109.070815001,
-  },
-  {
-    name: 'Lake Fork Campground',
-    lat: 38.4548253084593,
-    lng: -107.326981170259,
-  },
-  {
-    name: 'lnggs Peak Campground',
-    lat: 40.27479364272779,
-    lng: -105.55770432202075,
-  },
-  {
-    name: 'Medano Pass Primitive Road Campsites',
-    lat: 37.803519,
-    lng: -105.495654,
-  },
-  {
-    name: 'Moraine Park Campground',
-    lat: 40.36066149616986,
-    lng: -105.60006623223796,
-  },
-  {
-    name: 'Morefield Campground',
-    lat: 37.3014992738134,
-    lng: -108.417912473544,
-  },
-  {
-    name: 'North Rim Campground',
-    lat: 38.58518332872675,
-    lng: -107.70942777084946,
-  },
-  {
-    name: 'Piñon Flats Campground',
-    lat: 37.7449368560859,
-    lng: -105.504703076291,
-  },
-  {
-    name: 'Ponderosa Campground',
-    lat: 38.5257080480139,
-    lng: -107.314899399111,
-  },
-  {
-    name: 'Rainbow Park Campground',
-    lat: 40.4956930727,
-    lng: -109.174431587,
-  },
-  {
-    name: 'Red Creek Campground',
-    lat: 38.4793732438395,
-    lng: -107.231989784489,
-  },
-  {
-    name: 'Saddlehorn Campground',
-    lat: 39.10560328979322,
-    lng: -108.73257527355514,
-  },
-  {
-    name: 'South Rim Campground',
-    lat: 38.54381032355281,
-    lng: -107.689424061934,
-  },
-  {
-    name: 'Split Mountain Group Campground',
-    lat: 40.4405279561,
-    lng: -109.252312611,
-  },
-  {
-    name: 'Stevens Creek Campground',
-    lat: 38.4869233764467,
-    lng: -107.09112479954,
-  },
-  {
-    name: 'Timber Creek Campground',
-    lat: 40.379225136469785,
-    lng: -105.85275135737629,
-  },
-];
+//global variables go here 👇
+// let state;
+// let myLatLng = [
+//   {
+//     name: 'Aspenglen Campground',
+//     lat: 40.39934770583215,
+//     lng: -105.59305451637942,
+//   },
+//   {
+//     name: 'Backpacking Campsites in the Dunes or Forest',
+//     lat: 37.77724,
+//     lng: -105.535601,
+//   },
+//   {
+//     name: 'Cimarron Campground',
+//     lat: 38.4442894775407,
+//     lng: -107.555231428248,
+//   },
+//   {
+//     name: 'Deerlodge Park Campground',
+//     lat: 40.4464807631,
+//     lng: -108.513304134,
+//   },
+//   {
+//     name: 'Dry Gulch Campground',
+//     lat: 38.4841144836276,
+//     lng: -107.188437346818,
+//   },
+//   {
+//     name: 'East Elk Creek Group Campground',
+//     lat: 38.484167,
+//     lng: -107.188333,
+//   },
+//   {
+//     name: 'East Portal Campground',
+//     lat: 38.527059599536,
+//     lng: -107.64948401793,
+//   },
+//   {
+//     name: 'East Portal Campground',
+//     lat: 38.526896,
+//     lng: -107.649306,
+//   },
+//   {
+//     name: 'Echo Park Campground',
+//     lat: 40.5208668444,
+//     lng: -108.993230693,
+//   },
+//   {
+//     name: 'Elk Creek Campground',
+//     lat: 38.4674202781,
+//     lng: -107.172066844,
+//   },
+//   {
+//     name: 'Gates of Lodore Campground',
+//     lat: 40.7249234842,
+//     lng: -108.887824372,
+//   },
+//   {
+//     name: 'Gateview Campground',
+//     lat: 38.3844578817442,
+//     lng: -107.242874927003,
+//   },
+//   {
+//     name: 'Glacier Basin Campground',
+//     lat: 40.32980715336969,
+//     lng: -105.59562927944023,
+//   },
+//   {
+//     name: 'Green River Campground',
+//     lat: 40.4209774724,
+//     lng: -109.243175668,
+//   },
+//   {
+//     name: 'Hovenweep Campground',
+//     lat: 37.3832032699,
+//     lng: -109.070815001,
+//   },
+//   {
+//     name: 'Lake Fork Campground',
+//     lat: 38.4548253084593,
+//     lng: -107.326981170259,
+//   },
+//   {
+//     name: 'lnggs Peak Campground',
+//     lat: 40.27479364272779,
+//     lng: -105.55770432202075,
+//   },
+//   {
+//     name: 'Medano Pass Primitive Road Campsites',
+//     lat: 37.803519,
+//     lng: -105.495654,
+//   },
+//   {
+//     name: 'Moraine Park Campground',
+//     lat: 40.36066149616986,
+//     lng: -105.60006623223796,
+//   },
+//   {
+//     name: 'Morefield Campground',
+//     lat: 37.3014992738134,
+//     lng: -108.417912473544,
+//   },
+//   {
+//     name: 'North Rim Campground',
+//     lat: 38.58518332872675,
+//     lng: -107.70942777084946,
+//   },
+//   {
+//     name: 'Piñon Flats Campground',
+//     lat: 37.7449368560859,
+//     lng: -105.504703076291,
+//   },
+//   {
+//     name: 'Ponderosa Campground',
+//     lat: 38.5257080480139,
+//     lng: -107.314899399111,
+//   },
+//   {
+//     name: 'Rainbow Park Campground',
+//     lat: 40.4956930727,
+//     lng: -109.174431587,
+//   },
+//   {
+//     name: 'Red Creek Campground',
+//     lat: 38.4793732438395,
+//     lng: -107.231989784489,
+//   },
+//   {
+//     name: 'Saddlehorn Campground',
+//     lat: 39.10560328979322,
+//     lng: -108.73257527355514,
+//   },
+//   {
+//     name: 'South Rim Campground',
+//     lat: 38.54381032355281,
+//     lng: -107.689424061934,
+//   },
+//   {
+//     name: 'Split Mountain Group Campground',
+//     lat: 40.4405279561,
+//     lng: -109.252312611,
+//   },
+//   {
+//     name: 'Stevens Creek Campground',
+//     lat: 38.4869233764467,
+//     lng: -107.09112479954,
+//   },
+//   {
+//     name: 'Timber Creek Campground',
+//     lat: 40.379225136469785,
+//     lng: -105.85275135737629,
+//   },
+// ];
 
+//event listeners go here 👇
+searchInput.addEventListener("input", () => console.log(searchInput.value));
+searchInput.addEventListener("input", () => searchAutoComplete());
+
+//functions and event handlers go here 👇
 function logToTerminal() {
   console.log('yes');
   let b = document.getElementById('gmimap3')
@@ -165,17 +173,11 @@ function logToTerminal() {
 }
 
 function renderSearchResults(list) {
-
   console.log('list ======= ', list);
-
   let asideContainer = document.getElementById('searchResults');
-  // console.log('hello');
+  asideContainer.textContent = "";
 
-  // for(let i = 0; i < myLatLng.length; i++) {
-  // for (let i = 0; i < parkList.length; i++) {
   for (let i = 0; i < list.length; i++) {
-  // parkList.forEach(({ lat, lng, name }, i) => {
-
     //CREATE ELEMENT
     let campPath = document.createElement('a');
     let campName = document.createElement('p');
@@ -193,13 +195,7 @@ function renderSearchResults(list) {
     asideContainer.append(campPath);
     campPath.append(campName);
     campName.append(renderLine);
-
-    // asideContainer.append(campName);
-    // campName.append(renderLine);
   }
-
-  // `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/:${id}">${name}</a></h6>`
-
 };
 
 const options = {
@@ -217,25 +213,7 @@ function getCurrentPosition() {
   });
 }
 
-const getList = async () => {
-  let result;
-
-  if (!stateTest) {
-    result = await fetch(`/api/map/campsites-all`, {
-      method: 'GET',
-    });
-    const json = await result.json();
-    return json;
-  } else {
-    result = await fetch(`/api/map/campsite-list/${stateTest}`, {
-      method: 'GET',
-    });
-    const json = await result.json();
-    return json;
-  }
-};
-
-async function initMap() {
+async function initMap(state, zoomLevel) {
   // let position = await getCurrentPosition();
   // let currentPosition = position.coords;
   // let currentLatitude = currentPosition.latitude || 40.0497;
@@ -261,15 +239,17 @@ async function initMap() {
   // const list = response.json();
   // console.log(list);
 
-  let list = await getList();
+  let list = await getList(state);
+
+  console.log(zoomLevel, list[0].lat, list[0].lng )
 
   const map = new google.maps.Map(document.getElementById('map'), {
-    center: { lat: 47.5698520216, lng: -123.650803296 },
-    // center: { lat: list[0].lat, lng: list[0].lng },
-    // center: { lat: currentLatitude, lng: currentLongitude },
-    zoom: 3,
+    center: { lat: list[0].lat, lng: list[0].lng },
+    zoom: zoomLevel || 3,
     mapTypeId: 'terrain',
   });
+  // center: { lat: 47.5698520216, lng: -123.650803296 },
+  // center: { lat: currentLatitude, lng: currentLongitude },
 
   // Create an info window to share between markers.
   const infoWindow = new google.maps.InfoWindow();
@@ -318,25 +298,36 @@ async function initMap() {
       // });
     }
   });
-
-renderSearchResults(list);
+  renderSearchResults(list);
 }
 
-function searchAutoComplete() {
-  const stateList = parkList.filter(park => park.state === "CO");
+//todo pull list of resorts from db
+async function searchAutoComplete() {
+  let rawCampsites = await getList();
+  let campsites = rawCampsites.map(rawCampsites => rawCampsites.nameState);
+  let campZipCodes = rawCampsites.map(rawCampsites => rawCampsites.zipCode)
+  .filter(zipCode => zipCode !== null).sort();
+  let combineLists = campZipCodes.concat(campsites);
+  let autoCompleteList = [...new Set(combineLists)]; // remove duplicates
+
+  // let campsites = parkList.map(park => park.nameState);
+  // let campZipCodes = parkList.map(park => park.zipCode)
+  // .filter(zipCode => zipCode !== null).sort();
+  // // console.log(campZipCodes);
+  // let combineLists = campZipCodes.concat(campsites);
+  // let autoCompleteList = [...new Set(combineLists)]; // remove duplicates
+  // console.log(autoCompleteList);
 
   $( "#search-input" ).autocomplete({
-    // source: myLatLng.map(element => element.name),
-    source: parkList.map(park => park.nameState),
-    // source: stateList.map(park => park.nameState),
     minLength: 2,
+    source: autoCompleteList,
+    // source: campsites,
+    // source: campZipCodes,
   });
 }
 
-let searchInput = document.getElementById("search-input");
-searchInput.addEventListener("input", () => console.log(searchInput.value));
-searchInput.addEventListener("input", () => searchAutoComplete());
-searchInput.addEventListener("click", () => console.log(searchInput.value));
+//todo fix zipcode search
+//todo add fetch to get list by state)
 searchInput.addEventListener("keypress", async (event) => {
   // If the user presses the "Enter" key on the keyboard
   if (event.key === "Enter") {
@@ -350,13 +341,52 @@ searchInput.addEventListener("keypress", async (event) => {
     let state = getState[0].state;
     console.log(getState[0].state);
 
-    const response = await fetch("/api/map", {
-      method: "POST",
-      body: JSON.stringify({ state }),
-      headers: { "Content-Type": "application/json" },
-    });
+    initMap(getState[0].state, 6);
+
+    // await getList().then(() => window.location.assign("/api/map")); 
+
+
+    // const response = await fetch("/api/weather", {
+    //   method: "GET",
+    // });
+
+    // fetch("/api/weather", {
+    //   method: "GET",
+    // });
+    
+
+    // const response = await fetch("/api/map", {
+    //   method: "POST",
+    //   body: JSON.stringify({ state }),
+    //   headers: { "Content-Type": "application/json" },
+    // });
   }
 });
+
+const getList = async (state) => {
+  console.log(state)
+
+  let result;
+
+  if (!state) {
+    result = await fetch(`/api/map/campsites-all`, {
+      method: 'GET',
+    });
+    const json = await result.json();
+    // return json;
+    const list = json.filter(element => element.lat !== null || element.lng !== null);
+    return list;
+
+  } else {
+    result = await fetch(`/api/map/campsite-list/${state}`, {
+      method: 'GET',
+    });
+    const json = await result.json();
+    // return json;
+    const list = json.filter(element => element.lat !== null || element.lng !== null);
+    return list;
+  }
+};
 
 // Source:
 // SIMPLE MARKER: https://developers.google.com/maps/documentation/javascript/examples/marker-simple

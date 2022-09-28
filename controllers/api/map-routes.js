@@ -68,7 +68,6 @@ router.get('/campsite/:id', async (req, res) => {
   }
 });
 
-
 router.post('/', async (req, res) => {
   console.log('hello post');
   console.log(req.body);
