@@ -255,7 +255,7 @@ async function initMap(state, zoomLevel, selectedCampLat, selectedCampLng) {
 
   const map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: centerLat, lng: centerLng },
-    zoom: zoomLevel || 3,
+    zoom: zoomLevel || 4,
     mapTypeId: 'terrain',
   });
 
@@ -265,7 +265,9 @@ async function initMap(state, zoomLevel, selectedCampLat, selectedCampLng) {
   // Create the markers.
   // myLatLng.forEach(({ lat, lng, name }, i) => {
   // parkList.forEach(({ lat, lng, name }, i) => {
-  list.forEach(({ lat, lng, name, id }, i) => {
+
+  // list.forEach(({ lat, lng, name, id }, i) => {
+  const markers = list.map(({ lat, lng, name, id }, i) => {
 
     if(lat && lng) {
     
@@ -304,8 +306,13 @@ async function initMap(state, zoomLevel, selectedCampLat, selectedCampLng) {
           // marker.setIcon("http://maps.google.com/mapfiles/ms/icons/red-dot.png")
         }, 1000);
       });
+      return marker;
     }
   });
+
+  // Add a marker clusterer to manage the markers.
+  // new MarkerClusterer({ markers, map });
+  new markerClusterer.MarkerClusterer({ markers, map });
 
   renderSearchResults(list);
 }
