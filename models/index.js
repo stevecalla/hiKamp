@@ -54,4 +54,5 @@ module.exports = {
   Post,
   Comment,
   Campsite,
+  Favorite,
 };
