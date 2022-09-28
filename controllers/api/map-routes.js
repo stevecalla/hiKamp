@@ -13,13 +13,12 @@ router.get('/', async (req, res) => {
 
   try {
     res.render('map')
-
   } catch (error) {
     console.error(error);
   }
 });
 
-router.get("/campsite/:state", async (req, res) => {
+router.get("/campsite-list/:state", async (req, res) => {
   console.log(req.params.state)
   try {
     const dbCampsiteData = await Campsite.findAll({
@@ -33,16 +32,27 @@ router.get("/campsite/:state", async (req, res) => {
 
     res.send(campsites);
 
-    // res.render("map", {
-    //   campsites,
-    //   loggedIn: req.session.loggedIn,
-    // });
-
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
+
+router.get('/campsite/:id', async (req, res) => {
+  // console.log(req.params.id);
+  // res.json(req.params.id)
+  
+  try {
+    res.render('campsite-mock', {
+      project: req.params.id,
+      logged_in: req.session.logged_in
+    });
+
+  } catch (error) {
+    console.error(error);
+  }
+});
+
 
 router.post('/', async (req, res) => {
   console.log('hello post');
@@ -54,7 +64,6 @@ router.post('/', async (req, res) => {
 
   try {
     res.render('map')
-
   } catch (error) {
     console.error(error);
   }

@@ -191,7 +191,7 @@ function getCurrentPosition() {
 }
 
 const getList = async () => {
-  const result = await fetch(`/api/map/campsite/${stateTest}`, {
+  const result = await fetch(`/api/map/campsite-list/${stateTest}`, {
     method: 'GET',
   });
   const json = await result.json();
@@ -240,29 +240,28 @@ async function initMap() {
   // Create the markers.
   // myLatLng.forEach(({ lat, lng, name }, i) => {
   // parkList.forEach(({ lat, lng, name }, i) => {
-  list.forEach(({ lat, lng, name }, i) => {
+  list.forEach(({ lat, lng, name, id }, i) => {
 
     if(lat && lng) {
     
       const contentString =
-        `<h6 id="" class="">  ${i + 1}. ${name}</h6>` +
-        '<p>More Info: <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-        'https://en.wikipedia.org/w/index.php?title=Uluru</a> ';
+      `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/:${id}">${name}</a></h6>`
 
       const marker = new google.maps.Marker({
         position: { lat, lng },
         map,
-        // title: `${i + 1}. ${name}`,
-        title: contentString,
-        label: `${i + 1}`,
         optimized: false,
+        // title: `${i + 1}. ${name}`,
+        // title: contentString,
+        // label: `${i + 1}`,
         // icon: svgMarker,
       });
 
       // Add a click listener for each marker, and set up the info window.
       marker.addListener('click', () => {
         infoWindow.close();
-        infoWindow.setContent(`${marker.getTitle()}`);
+        // infoWindow.setContent(`${marker.getTitle()}`);
+        infoWindow.setContent(contentString);
         infoWindow.open(marker.getMap(), marker);
       });
     }
