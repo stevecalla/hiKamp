@@ -251,12 +251,29 @@ async function initMap(state, zoomLevel, selectedCampLat, selectedCampLng) {
   selectedCampLng ? centerLng = selectedCampLng : centerLng = list[0].lng;
 
   console.log(zoomLevel, list[0].lat, list[0].lng )
-  console.log(selectedCampLat, selectedCampLng, centerLat, centerLng)
+  console.log(selectedCampLat, selectedCampLng, centerLat, centerLng);
+
+  var w = window.innerWidth;
+  var h = window.innerHeight; 
+
+  if (w < 600 && !zoomLevel) {
+    zoomLevel = 3;
+  }
 
   const map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: centerLat, lng: centerLng },
     zoom: zoomLevel || 4,
     mapTypeId: 'terrain',
+    // minZoom: zoom - 3,
+    // maxZoom: zoom + 10,
+    // restriction: {
+    //   latLngBounds: {
+    //     north: 10,
+    //     south: 40,
+    //     east: -160,
+    //     west: -100,
+    //   },
+    // }
   });
 
   // Create an info window to share between markers.
@@ -312,7 +329,11 @@ async function initMap(state, zoomLevel, selectedCampLat, selectedCampLng) {
 
   // Add a marker clusterer to manage the markers.
   // new MarkerClusterer({ markers, map });
-  new markerClusterer.MarkerClusterer({ markers, map });
+  // new markerClusterer.Markergit Clusterer({ markers, map });
+  // markerCluster.clearMarkers();
+  // markerCluster.removeMarker(markers[i]);
+
+  console.log(markers);
 
   renderSearchResults(list);
 }
