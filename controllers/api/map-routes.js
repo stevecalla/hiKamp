@@ -18,6 +18,21 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get("/campsites-all", async (req, res) => {
+  console.log(req.params.state)
+  try {
+    const dbCampsiteData = await Campsite.findAll();
+
+    const campsites = dbCampsiteData.map((camps) => camps.get({ plain: true }));
+
+    res.send(campsites);
+
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 router.get("/campsite-list/:state", async (req, res) => {
   console.log(req.params.state)
   try {

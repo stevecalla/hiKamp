@@ -1,5 +1,5 @@
 // SECTION GOOGLE MAP
-let stateTest = "co";
+let stateTest;
 
 let myLatLng = [
   {
@@ -181,7 +181,7 @@ function renderSearchResults(list) {
     let campName = document.createElement('p');
     let renderLine = document.createElement('hr');
 
-    campPath.addEventListener('mouseover', logToTerminal);
+    // campPath.addEventListener('mouseover', logToTerminal);
 
     //SET ATTRIBUTES
     campPath.setAttribute('href', `/api/map/campsite/:${list[i].id}`);
@@ -218,11 +218,21 @@ function getCurrentPosition() {
 }
 
 const getList = async () => {
-  const result = await fetch(`/api/map/campsite-list/${stateTest}`, {
-    method: 'GET',
-  });
-  const json = await result.json();
-  return json;
+  let result;
+
+  if (!stateTest) {
+    result = await fetch(`/api/map/campsites-all`, {
+      method: 'GET',
+    });
+    const json = await result.json();
+    return json;
+  } else {
+    result = await fetch(`/api/map/campsite-list/${stateTest}`, {
+      method: 'GET',
+    });
+    const json = await result.json();
+    return json;
+  }
 };
 
 async function initMap() {
@@ -254,10 +264,10 @@ async function initMap() {
   let list = await getList();
 
   const map = new google.maps.Map(document.getElementById('map'), {
-    // center: { lat: 40.0497, lng: -105.2143 },
-    center: { lat: list[0].lat, lng: list[0].lng },
+    center: { lat: 47.5698520216, lng: -123.650803296 },
+    // center: { lat: list[0].lat, lng: list[0].lng },
     // center: { lat: currentLatitude, lng: currentLongitude },
-    zoom: 6,
+    zoom: 3,
     mapTypeId: 'terrain',
   });
 
