@@ -310,19 +310,9 @@ async function searchAutoComplete() {
   let combineLists = campZipCodes.concat(campsites);
   let autoCompleteList = [...new Set(combineLists)]; // remove duplicates
 
-  // let campsites = parkList.map(park => park.nameState);
-  // let campZipCodes = parkList.map(park => park.zipCode)
-  // .filter(zipCode => zipCode !== null).sort();
-  // // console.log(campZipCodes);
-  // let combineLists = campZipCodes.concat(campsites);
-  // let autoCompleteList = [...new Set(combineLists)]; // remove duplicates
-  // console.log(autoCompleteList);
-
   $( "#search-input" ).autocomplete({
     minLength: 2,
     source: autoCompleteList,
-    // source: campsites,
-    // source: campZipCodes,
   });
 }
 
@@ -373,7 +363,6 @@ const getList = async (state) => {
       method: 'GET',
     });
     const json = await result.json();
-    // return json;
     const list = json.filter(element => element.lat !== null || element.lng !== null);
     return list;
 
@@ -382,7 +371,6 @@ const getList = async (state) => {
       method: 'GET',
     });
     const json = await result.json();
-    // return json;
     const list = json.filter(element => element.lat !== null || element.lng !== null);
     return list;
   }
