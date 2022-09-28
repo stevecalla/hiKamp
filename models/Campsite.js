@@ -19,10 +19,10 @@ Campsite.init(
             type: DataTypes.STRING,
         },
         lat: {
-            type: DataTypes.DOUBLE,
+            type: DataTypes.DOUBLE(9, 6),
         },
         lng: {
-            type: DataTypes.DOUBLE,
+            type: DataTypes.DOUBLE(9, 6),
         },
         latlng: {
             type: DataTypes.STRING,
