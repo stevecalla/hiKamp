@@ -16,14 +16,11 @@
 
 ### Description
 
-When you're searching for powder, the last thing an avid skier or boarder wants to do is open up tons of different website searching for the best place to ski with the least travel issues. In the past, you'd have to go to Google Maps for Driving Directions, your favorite weather website for weather info, and each individual resort's website for snow condition. Not cool Bro. Well, the Powder Bound app puts all this information into one convenient location allowing you to plan your stoke with ease. Powder Bound allows you to select your favorite Colorado ski destination to quickly see snow conditions, driving directions, and weather forecast information. It's everything you need to hit the slopes, strap in, and shred the gnar when it's dumping!
+Want to enjoy weekend out camping in the National Parks but unsure of where to go and what to do? Longtrails is here to help you become a campsite guru. Longtrails will provide you with information such as Weather, access, fees, reservations, and more in a single screen. You will be able to also see other campers reviews and comments to get a better idea of what to expect. 
 
-### User Story
+## User Story
 
-```
-As an active skier in Colorado, I want to plan my ski adventures using critical information
-about the travel process such as weather, driving directions, snow conditions, and more.
-```
+As an outdoors person I want a quick and painless way to find uniform campsite data. Longtrails is the place to go to cut down on your research time and provide the information you need for a wonderful weekend in the National Parks.
 
 ## Features
 
@@ -39,37 +36,35 @@ This app includes features that allows the user to view, add, update and delete 
 
 ## Future Enhancements
 
-1. Sync the weather with driving directions so the user knows what the weather is forecasted to be when they get to various waypoints on their route.
+<!-- 1. Sync the weather with driving directions so the user knows what the weather is forecasted to be when they get to various waypoints on their route.
 2. Display all SNOTEL stations in Colorado on the map to provide info for backcountry skiers.
 3. Add travel alerts to the driving directions display.
 4. Use secure authentication and server side storage for user profiles
 5. Increase robustness of input validation
-6. Refactor code to single purpose functions
+6. Refactor code to single purpose functions -->
 
 ## Acceptance Criteria
 
 ```
-GIVEN I'm a frequent skier I want an easy way to plan my trip
+As an Outdoors man or woman, I want to find campsite information quick and easy. Information that includes weather, location, amentities, whether it's by reservation or first come first serve, and information about accessibility.
 
-WHEN I go to my planner
-THEN I am presenteed with map that displays the resorts in Colorado
+When I go to the longtrails app.
+Then I am presented with a map and a search bar.
 
-WHEN I click on a resort
-THEN I am presented with resort weather condition base depth, 24 hour totals, forecast
+When searching or clicking into a campsite.
+Then I am presented with login/registration page.
 
-WHEN I click on resort
-THEN I am presented with button to obtain get step by travel directions
-THEN I am presented with step by step travel directions at checkpoints with weather
+When I create an account or log in.
+Then I am able to access the whole functionality of the application.
 
-WHEN I want to see snow total by resort
-THEN I can view a summary
+When I click into a campsite.
+Then I am presented with campsite information, comments from other users, and weather for the area.
 
-WHEN I want to set my profile
-THEN I click on the profile button (in the upper right corner)
+When I click to leave comment.
+Then I am able to type a comment up about my experience with said campsite for others to view.
 
-WHEN I go to my profile
-THEN I can set my preferred started location, my preferred mountains, preferred ski pass
-
+When I click favorite.
+That specific campsite is saved to my favorites and displayed on the left side of my campsite page for easy access.
 ```
 ## Installation
 
@@ -108,7 +103,7 @@ No tests at this time.
 
 ### Video Preview
 
-<img src="./assets/images/powder-bound.gif" width="" height=""/>
+<!-- <img src="./assets/images/powder-bound.gif" width="" height=""/> -->
 
 ## Technologies
 
@@ -124,13 +119,8 @@ No tests at this time.
 ### 3rd Party Application Programming Interfaces
 
 1. [Open Weather](https://openweathermap.org/api/one-call-3)
-2. [Powderlin.es - SNOTEL DATA](http://powderlin.es/api.html) - Special thanks to Bobby Marko for helping us navigate the CORS and mixed content issues with his API.
-3. [Google Static Maps](https://developers.google.com/maps/documentation/maps-static/overview)
-4. [MapQuest Directions](https://developer.mapquest.com/documentation/directions-api/)
-5. [MapQuest GeoCoding & Reverse Geocoding](https://developer.mapquest.com/documentation/geocoding-api/)
-6. [MapQuest Static Maps](https://developer.mapquest.com/documentation/static-map-api/v5/)
-7. [MapQuest Search Ahead](https://developer.mapquest.com/documentation/searchahead-api/)
-8. [Geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
+2. [National Park Service](developer.nps.gov/api/v1)
+3. [Google Maps](https://developers.google.com/maps/documentation/javascript/examples/marker-accessibility)
 
 ### Dependencies
 
@@ -139,7 +129,7 @@ No tests at this time.
 ## Collaborators
 
 1. Alex Cleveland: [Github LINK](https://github.com/AClevel5/)
-2. Patrick Radcliff: [Github LINK](https://github.com/TBD_TBD)
+2. Patrick Radcliff: [Github LINK](https://github.com/PatrickARatcliff)
 3. Rod Bennett: [Github LINK](https://github.com/RodBennett)
 4. Steve Calla: [Github LINK](https://github.com/stevecalla)
 
