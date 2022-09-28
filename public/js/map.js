@@ -1,4 +1,7 @@
 //todo add spinner for map?
+//todo size icons?
+//todo set zoom to show icons?
+//todo set zoom to center on selected camp?
 //query selector variables go here 👇
 let searchInput = document.getElementById("search-input"); //USED FOR AUTOCOMPLETE & SEARCH BAR RESULTS
 
@@ -241,15 +244,20 @@ async function initMap(state, zoomLevel, selectedCampLat, selectedCampLng) {
 
   let list = await getList(state);
 
+  let centerLat;
+  let centerLng;
+
+  selectedCampLat ? centerLat = selectedCampLat : centerLat = list[0].lat;
+  selectedCampLng ? centerLng = selectedCampLng : centerLng = list[0].lng;
+
   console.log(zoomLevel, list[0].lat, list[0].lng )
+  console.log(selectedCampLat, selectedCampLng, centerLat, centerLng)
 
   const map = new google.maps.Map(document.getElementById('map'), {
-    center: { lat: list[0].lat, lng: list[0].lng },
+    center: { lat: centerLat, lng: centerLng },
     zoom: zoomLevel || 3,
     mapTypeId: 'terrain',
   });
-  // center: { lat: 47.5698520216, lng: -123.650803296 },
-  // center: { lat: currentLatitude, lng: currentLongitude },
 
   // Create an info window to share between markers.
   const infoWindow = new google.maps.InfoWindow();
@@ -261,14 +269,16 @@ async function initMap(state, zoomLevel, selectedCampLat, selectedCampLng) {
 
     if(lat && lng) {
     
-      const contentString =
-      `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/:${id}">${name}</a></h6>`
+      const contentString = `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/:${id}">${name}</a></h6>`
+
+      let selectedCampsiteIcon = "http://maps.google.com/mapfiles/kml/shapes/campground.png";
+      let campsiteIcon = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
 
       const marker = new google.maps.Marker({
         position: { lat, lng },
         map,
         optimized: true,
-        icon: lat === selectedCampLat ? ("http://maps.google.com/mapfiles/kml/shapes/campground.png") : console.log('help'),
+        icon: lat === selectedCampLat ? selectedCampsiteIcon : campsiteIcon,
         // size: new google.maps.Size(20, 34),
         // This marker is 20 pixels wide by 32 pixels high.
         size: new google.maps.Size(50, 100),
@@ -294,21 +304,12 @@ async function initMap(state, zoomLevel, selectedCampLat, selectedCampLng) {
           // marker.setIcon("http://maps.google.com/mapfiles/ms/icons/red-dot.png")
         }, 1000);
       });
-
-      // marker.addListener("mouseover", () => {
-      //   if (marker.getAnimation() !== null) {
-      //     marker.setAnimation(null);
-      //   } else {
-          // marker.setIcon("http://maps.google.com/mapfiles/ms/icons/blue-dot.png")
-        // }
-      // });
     }
   });
 
   renderSearchResults(list);
 }
 
-//todo pull list of resorts from db
 async function searchAutoComplete() {
   let rawCampsites = await getList();
   let campsites = rawCampsites.map(rawCampsites => rawCampsites.nameState);
@@ -323,8 +324,6 @@ async function searchAutoComplete() {
   });
 }
 
-//todo fix zipcode search
-//todo add fetch to get list by state)
 searchInput.addEventListener("keypress", async (event) => {
   // If the user presses the "Enter" key on the keyboard
   if (event.key === "Enter") {
