@@ -8,7 +8,7 @@
     <link
       rel="shortcut icon"
       type="image/jpg"
-      href="./images/flavicon-hiker3.png"
+      href="/images/flavicon-hiker3.png"
     />
 
     {{! ADD FONTAWESOME }}
@@ -24,6 +24,10 @@
     {{!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" /> --}}
+
+    {{!-- MAPBOX --}}
+    <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
 
     <!-- ADD STYLE SHEET-->
     <link rel="stylesheet" type="text/css" href="/css/jass.css" />
@@ -62,10 +66,16 @@
   {{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> --}}
 
   <!-- JQUERY LIBRARY -->
-  {{!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> --}}
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- JQUERY UI -->
-  {{!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> --}}
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  {{!-- GOOGLE MAP --}}
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBq4HnHzwNh73EaYuMbKSqN2OiSNrAespw&callback=initMap" async defer></script>
+
+
+  <script src="/js/parkList.js"></script>
 
   </body>
 </html>
