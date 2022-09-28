@@ -1,5 +1,5 @@
 // SECTION GOOGLE MAP
-let stateTest = null;
+let stateTest = "co";
 
 let myLatLng = [
   {
@@ -158,7 +158,6 @@ function renderSearchResults(list) {
   let asideContainer = document.getElementById('searchResults');
   console.log('hello');
 
-
   // for(let i = 0; i < myLatLng.length; i++) {
   // for (let i = 0; i < parkList.length; i++) {
   for (let i = 0; i < list.length; i++) {
@@ -191,18 +190,30 @@ function getCurrentPosition() {
   });
 }
 
+const getList = async () => {
+  const result = await fetch(`/api/map/campsite/${stateTest}`, {
+    method: 'GET',
+  });
+  const json = await result.json();
+  return json;
+};
+
 async function initMap() {
   let position = await getCurrentPosition();
   let currentPosition = position.coords;
   let currentLatitude = currentPosition.latitude || 40.0497;
   let currentLongitude = currentPosition.longitude || -105.2143;
 
+  let list = await getList();
+
   const map = new google.maps.Map(document.getElementById('map'), {
     // center: { lat: 40.0497, lng: -105.2143 },
-    center: { lat: currentLatitude, lng: currentLongitude },
+    center: { lat: list[0].lat, lng: list[0].lng },
+    // center: { lat: currentLatitude, lng: currentLongitude },
     zoom: 7,
     mapTypeId: 'terrain',
   });
+
 
   // Create an info window to share between markers.
   const infoWindow = new google.maps.InfoWindow();
@@ -221,13 +232,16 @@ async function initMap() {
     infoWindow.open(currentMarker.getMap(), currentMarker);
   });
 
-  const stateList = parkList.filter(park => park.state === stateTest);
+  // let stateList = parkList.filter(park => park.state === stateTest);
+
+  // const response = await fetch(`/api/map/campsite/${stateTest}`);
+  // const list = response.json();
+  // console.log(list);
 
   // Create the markers.
   // myLatLng.forEach(({ lat, lng, name }, i) => {
   // parkList.forEach(({ lat, lng, name }, i) => {
-
-  stateList.forEach(({ lat, lng, name }, i) => {
+  list.forEach(({ lat, lng, name }, i) => {
 
     if(lat && lng) {
     
@@ -255,7 +269,7 @@ async function initMap() {
     }
   });
 
-renderSearchResults(stateList);
+renderSearchResults(list);
 }
 
 function searchAutoComplete() {
