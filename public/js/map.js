@@ -321,35 +321,24 @@ async function searchAutoComplete() {
 searchInput.addEventListener("keypress", async (event) => {
   // If the user presses the "Enter" key on the keyboard
   if (event.key === "Enter") {
-    // Cancel the default action, if needed
     event.preventDefault();
-    // Trigger the button element with a click
-    console.log(searchInput.value)
-    //send post request to render page
+    let rawCampsites = await getList();
+    let getState = rawCampsites.filter(camp => camp.nameState === searchInput.value);
 
-    const getState = parkList.filter(park => park.nameState === searchInput.value);
-    let state = getState[0].state;
-    console.log(getState[0].state);
+    // console.log(rawCampsites)
+    // console.log(searchInput.value)
+    // console.log('#1 = ', getState);
 
-    initMap(getState[0].state, 6);
+    if (!getState.length) {
+      getState = rawCampsites.filter(camp => camp.zipCode === searchInput.value);
+    }
 
-    // await getList().then(() => window.location.assign("/api/map")); 
-
-
-    // const response = await fetch("/api/weather", {
-    //   method: "GET",
-    // });
-
-    // fetch("/api/weather", {
-    //   method: "GET",
-    // });
+    // console.log('#2 = ', getState);
+    // console.log(getState[0].state);
     
-
-    // const response = await fetch("/api/map", {
-    //   method: "POST",
-    //   body: JSON.stringify({ state }),
-    //   headers: { "Content-Type": "application/json" },
-    // });
+    let state = getState[0].state;
+    initMap(getState[0].state, 6); // pass state & map zoom level
+    
   }
 });
 
