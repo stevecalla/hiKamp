@@ -1,4 +1,6 @@
 // SECTION GOOGLE MAP
+let stateTest = null;
+
 let myLatLng = [
   {
     name: 'Aspenglen Campground',
@@ -152,21 +154,22 @@ let myLatLng = [
   },
 ];
 
-function renderSearchResults() {
+function renderSearchResults(list) {
   let asideContainer = document.getElementById('searchResults');
-
   console.log('hello');
 
 
   // for(let i = 0; i < myLatLng.length; i++) {
-  for (let i = 0; i < parkList.length; i++) {
+  // for (let i = 0; i < parkList.length; i++) {
+  for (let i = 0; i < list.length; i++) {
   // parkList.forEach(({ lat, lng, name }, i) => {
     //CREATE ELEMENT
     let campName = document.createElement('p');
     let renderLine = document.createElement('hr');
     //CREATE TITLE CONTENT
     // campName.textContent = `${i + 1}) ${myLatLng[i].name}`;
-    campName.textContent = `${i + 1}) ${parkList[i].nameState }`;
+    // campName.textContent = `${i + 1}) ${parkList[i].nameState }`;
+    campName.textContent = `${i + 1}) ${list[i].nameState }`;
     //APPEND
     asideContainer.append(campName);
     campName.append(renderLine);
@@ -218,9 +221,13 @@ async function initMap() {
     infoWindow.open(currentMarker.getMap(), currentMarker);
   });
 
+  const stateList = parkList.filter(park => park.state === stateTest);
+
   // Create the markers.
   // myLatLng.forEach(({ lat, lng, name }, i) => {
-  parkList.forEach(({ lat, lng, name }, i) => {
+  // parkList.forEach(({ lat, lng, name }, i) => {
+
+  stateList.forEach(({ lat, lng, name }, i) => {
 
     if(lat && lng) {
     
@@ -248,7 +255,18 @@ async function initMap() {
     }
   });
 
-renderSearchResults();
+renderSearchResults(stateList);
+}
+
+function searchAutoComplete() {
+  const stateList = parkList.filter(park => park.state === "CO");
+
+  $( "#search-input" ).autocomplete({
+    // source: myLatLng.map(element => element.name),
+    source: parkList.map(park => park.nameState),
+    // source: stateList.map(park => park.nameState),
+    minLength: 2,
+  });
 }
 
 let searchInput = document.getElementById("search-input");
@@ -275,14 +293,6 @@ searchInput.addEventListener("keypress", async (event) => {
     });
   }
 });
-
-function searchAutoComplete() {
-  $( "#search-input" ).autocomplete({
-    // source: myLatLng.map(element => element.name),
-    source: parkList.map(park => park.nameState),
-    minLength: 2,
-  });
-}
 
 // Source:
 // SIMPLE MARKER: https://developers.google.com/maps/documentation/javascript/examples/marker-simple

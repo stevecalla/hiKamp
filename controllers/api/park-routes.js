@@ -5,6 +5,7 @@ const axios = require('axios').default;
 router.get('/', async (req, res) => { 
   try {
     const response = await axios.get(`https://developer.nps.gov/api/v1/campgrounds?limit=626?&api_key=sjsH0PhPRSMzPFiZEohC8IjAeDvFOYvXzDjsetql`);
+       
 
     // const response = await axios.get(`https://developer.nps.gov/api/v1/campgrounds?stateCode=co&limit=700&api_key=sjsH0PhPRSMzPFiZEohC8IjAeDvFOYvXzDjsetql`);
 
@@ -16,7 +17,7 @@ router.get('/', async (req, res) => {
     // GET "https://developer.nps.gov/api/v1/campgrounds?limit=700"
 
     // console.log('RESPONSE = ', JSON.stringify(response.data));
-    // res.json(response.data.total, response.data.data);
+    res.json(response.data.total, response.data.data);
 
     const parks = response.data.data.map((element) => ({
       code: element.parkCode,
@@ -38,9 +39,10 @@ router.get('/', async (req, res) => {
       // parkCity: element.addresses.map(state => state.city),
       // parkAddress: element.addresses.map(state => state.address),
     }),{})
+    // .filter(element => element.state === null)
 
     // console.log(parks)
-
+ 
     res.json(parks);
   } catch (error) {
     console.error(error);
