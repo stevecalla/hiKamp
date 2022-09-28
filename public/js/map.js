@@ -329,7 +329,7 @@ async function initMap(state, zoomLevel, selectedCampLat, selectedCampLng) {
 
   // Add a marker clusterer to manage the markers.
   // new MarkerClusterer({ markers, map });
-  // new markerClusterer.Markergit Clusterer({ markers, map });
+  // new markerClusterer.MarkerClusterer({ markers, map });
   // markerCluster.clearMarkers();
   // markerCluster.removeMarker(markers[i]);
 
