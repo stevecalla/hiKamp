@@ -1,5 +1,5 @@
 // SECTION GOOGLE MAP
-let stateTest = "co";
+let stateTest = "fl";
 
 let myLatLng = [
   {
@@ -199,10 +199,30 @@ const getList = async () => {
 };
 
 async function initMap() {
-  let position = await getCurrentPosition();
-  let currentPosition = position.coords;
-  let currentLatitude = currentPosition.latitude || 40.0497;
-  let currentLongitude = currentPosition.longitude || -105.2143;
+  // let position = await getCurrentPosition();
+  // let currentPosition = position.coords;
+  // let currentLatitude = currentPosition.latitude || 40.0497;
+  // let currentLongitude = currentPosition.longitude || -105.2143;
+
+  // let currentMarker = new google.maps.Marker({
+  //   map,
+  //   // position: { lat: 40.0497, lng: -105.2143 },
+  //   position: { lat: currentPosition.latitude, lng: currentPosition.longitude },
+  //   optimized: false,
+  //   title: 'current location',
+  // });
+
+  // currentMarker.addListener('click', () => {
+  //   infoWindow.close();
+  //   infoWindow.setContent(`${currentMarker.getTitle()}`);
+  //   infoWindow.open(currentMarker.getMap(), currentMarker);
+  // });
+
+  // let stateList = parkList.filter(park => park.state === stateTest);
+
+  // const response = await fetch(`/api/map/campsite/${stateTest}`);
+  // const list = response.json();
+  // console.log(list);
 
   let list = await getList();
 
@@ -210,33 +230,12 @@ async function initMap() {
     // center: { lat: 40.0497, lng: -105.2143 },
     center: { lat: list[0].lat, lng: list[0].lng },
     // center: { lat: currentLatitude, lng: currentLongitude },
-    zoom: 7,
+    zoom: 6,
     mapTypeId: 'terrain',
   });
 
-
   // Create an info window to share between markers.
   const infoWindow = new google.maps.InfoWindow();
-
-  let currentMarker = new google.maps.Marker({
-    map,
-    // position: { lat: 40.0497, lng: -105.2143 },
-    position: { lat: currentPosition.latitude, lng: currentPosition.longitude },
-    optimized: false,
-    title: 'current location',
-  });
-
-  currentMarker.addListener('click', () => {
-    infoWindow.close();
-    infoWindow.setContent(`${currentMarker.getTitle()}`);
-    infoWindow.open(currentMarker.getMap(), currentMarker);
-  });
-
-  // let stateList = parkList.filter(park => park.state === stateTest);
-
-  // const response = await fetch(`/api/map/campsite/${stateTest}`);
-  // const list = response.json();
-  // console.log(list);
 
   // Create the markers.
   // myLatLng.forEach(({ lat, lng, name }, i) => {
