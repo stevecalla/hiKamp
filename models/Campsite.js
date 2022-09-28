@@ -5,32 +5,33 @@ class Campsite extends Model { }
 
 Campsite.init(
     {
+        id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            primaryKey: true,
+            autoIncrement: true,
+        },
         code: {
             type: DataTypes.STRING,
             allowNull: false,
-            primaryKey: true,
         },
         name: {
             type: DataTypes.STRING,
-            allowNull: false,
         },
         lat: {
             type: DataTypes.DECIMAL,
-            allowNull: false,
         },
         lng: {
             type: DataTypes.DECIMAL,
-            allowNull: false,
         },
         latlng: {
             type: DataTypes.STRING,
-            allowNull: false,
         },
         state: {
             type: DataTypes.STRING,
         },
         zipCode: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
         },
         city: {
             type: DataTypes.STRING,
@@ -49,9 +50,6 @@ Campsite.init(
     }
 
 );
-
-
-
 
 
 module.exports = Campsite;
