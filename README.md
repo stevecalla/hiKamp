@@ -16,9 +16,7 @@
 
 ### Description
 
-Want to enjoy weekend out camping in the National Parks but unsure of where to go and what to do? Longtrails is here to help you become a campsite guru.
-
-When you're searching for powder, the last thing an avid skier or boarder wants to do is open up tons of different website searching for the best place to ski with the least travel issues. In the past, you'd have to go to Google Maps for Driving Directions, your favorite weather website for weather info, and each individual resort's website for snow condition. Not cool Bro. Well, the Powder Bound app puts all this information into one convenient location allowing you to plan your stoke with ease. Powder Bound allows you to select your favorite Colorado ski destination to quickly see snow conditions, driving directions, and weather forecast information. It's everything you need to hit the slopes, strap in, and shred the gnar when it's dumping!
+Want to enjoy weekend out camping in the National Parks but unsure of where to go and what to do? Longtrails is here to help you become a campsite guru. Longtrails will provide you with information such as Weather, access, fees, reservations, and more in a single screen. You will be able to also see other campers reviews and comments to get a better idea of what to expect. 
 
 ## User Story
 
@@ -105,7 +103,7 @@ No tests at this time.
 
 ### Video Preview
 
-<img src="./assets/images/powder-bound.gif" width="" height=""/>
+<!-- <img src="./assets/images/powder-bound.gif" width="" height=""/> -->
 
 ## Technologies
 
@@ -122,7 +120,8 @@ No tests at this time.
 
 1. [Open Weather](https://openweathermap.org/api/one-call-3)
 2. [National Park Service](developer.nps.gov/api/v1)
-3. [Google Maps]
+3. [Google Maps](https://developers.google.com/maps/documentation/javascript/examples/marker-accessibility)
+
 ### Dependencies
 
 1. [VS Code Live Server](https://ritwickdey.github.io/vscode-live-server/)
