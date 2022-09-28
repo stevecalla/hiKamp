@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
     // GET "https://developer.nps.gov/api/v1/campgrounds?limit=700"
 
     // console.log('RESPONSE = ', JSON.stringify(response.data));
-    res.json(response.data.total, response.data.data);
+    // res.json(response.data.total, response.data.data);
 
     const parks = response.data.data.map((element) => ({
       code: element.parkCode,
