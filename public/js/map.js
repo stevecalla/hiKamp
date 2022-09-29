@@ -1,7 +1,3 @@
-//todo add spinner for map?
-//todo size icons?
-//todo set zoom to show icons?
-//todo set zoom to center on selected camp?
 //query selector variables go here 👇
 let searchInput = document.getElementById("search-input"); //USED FOR AUTOCOMPLETE & SEARCH BAR RESULTS
 
@@ -179,7 +175,7 @@ function logToTerminal() {
   console.log(b)
 }
 
-function renderSearchResults(list) {
+function renderSearchResults(qlist) {
   console.log('list ======= ', list);
   let asideContainer = document.getElementById('searchResults');
   asideContainer.textContent = "";
@@ -206,7 +202,7 @@ function renderSearchResults(list) {
 };
 
 const options = {
-  enableHighAccuracy: true,
+  qenableHighAccuracy: true,
   timeout: 5000,
   maximumAge: 0,
 };
@@ -305,6 +301,7 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng, name,
     
       const contentString = `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/:${camp_id}">${name}</a></h6>`
 
+      // https://maps.gstatic.com/mapfiles/place_api/icons/v2/camping_pinlet.svg
       let selectedCampsiteIcon = "http://maps.google.com/mapfiles/kml/shapes/campground.png";
       let campsiteIcon = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
 
