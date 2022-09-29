@@ -11,6 +11,9 @@ Campsite.init(
             primaryKey: true,
             autoIncrement: true,
         },
+        camp_id: {
+            type: DataTypes.TEXT,
+        },
         code: {
             type: DataTypes.STRING,
             allowNull: false,
