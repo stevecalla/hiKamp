@@ -201,47 +201,13 @@ function renderSearchResults(list) {
   }
 };
 
-const options = {
-  qenableHighAccuracy: true,
-  timeout: 5000,
-  maximumAge: 0,
-};
+// const options = {
+//   qenableHighAccuracy: true,
+//   timeout: 5000,
+//   maximumAge: 0,
+// };
 
-function getCurrentPosition() {
-  return new Promise((resolve, reject) => {
-    navigator.geolocation.getCurrentPosition(
-      (position) => resolve(position),
-      (error) => reject(error)
-    );
-  });
-}
-
-async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng, name, camp_id) {
-  // let position = await getCurrentPosition();
-  // let currentPosition = position.coords;
-  // let currentLatitude = currentPosition.latitude || 40.0497;
-  // let currentLongitude = currentPosition.longitude || -105.2143;
-
-  // let currentMarker = new google.maps.Marker({
-  //   map,
-  //   // position: { lat: 40.0497, lng: -105.2143 },
-  //   position: { lat: currentPosition.latitude, lng: currentPosition.longitude },
-  //   optimized: false,
-  //   title: 'current location',
-  // });
-
-  // currentMarker.addListener('click', () => {
-  //   infoWindow.close();
-  //   infoWindow.setContent(`${currentMarker.getTitle()}`);
-  //   infoWindow.open(currentMarker.getMap(), currentMarker);
-  // });
-
-  // let stateList = parkList.filter(park => park.state === stateTest);
-
-  // const response = await fetch(`/api/map/campsite/${stateTest}`);
-  // const list = response.json();
-  // console.log(list);
-
+async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
   let list = await getList(state);
 
   let centerLat;
@@ -342,31 +308,33 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng, name,
     }
   });
 
-  // Creates a marker for the selected campsite; not clear how it captures the info
-  if (selectedCampLat) {
+  console.log(markers);
+  renderSelectedCampMarker(selectedCampLat, map, infoWindow);
+  renderMarkerClusters( markers, map);
+  renderSearchResults(list);
+  renderCurrentLocationIcon(map, infoWindow);
+}
+
+// CREATES A MARKER FOR SELECTED CAMPSITE
+function renderSelectedCampMarker(selectedCampLat, map, infoWindow) {
+  if (selectedCampLat && map) {
     const markerSelectedCampsite = new google.maps.Marker({});
     infoWindow.open(markerSelectedCampsite.getMap(), markerSelectedCampsite);
   }
+};
 
-  // Add a marker cluster to visually reduce clutter.
+// ADD MARKER CLUSTERS TO REDUCE VISUAL CLUTTER
+function renderMarkerClusters( markers, map) {
   if (window.innerWidth <= 500) {
     new markerClusterer.MarkerClusterer({ markers, map });
     // new MarkerClusterer({ markers, map });
     // markerCluster.clearMarkers();
     // markerCluster.removeMarker(markers[i]);
   }
+}
 
-  console.log(markers);
-
-  renderSearchResults(list);
-
-  // const locationButton = document.createElement("button");
-
-  // locationButton.textContent = "Pan to Current Location";
-  // locationButton.classList.add("custom-map-control-button");
-
-  // map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton); 
-
+// RENDER CURRENT LOCATION ICON ON CLICK
+function renderCurrentLocationIcon(map, infoWindow) {
   const location = document.createElement('div');
   const locationIcon = document.createElement("img");
   locationIcon.src = '/images/current-location-v4.png';
@@ -416,6 +384,7 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng, name,
   });
 }
 
+// HANDLE ERROR FOR CURRENT LOCATION CLICK IF GEO LOCATION DISABLED
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.setPosition(pos);
   infoWindow.setContent(
