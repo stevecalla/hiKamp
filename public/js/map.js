@@ -348,7 +348,7 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng, name,
     infoWindow.open(markerSelectedCampsite.getMap(), markerSelectedCampsite);
   }
 
-  // Add a marker clusterer to manage the markers.
+  // Add a marker cluster to visually reduce clutter.
   if (window.innerWidth <= 500) {
     new markerClusterer.MarkerClusterer({ markers, map });
     // new MarkerClusterer({ markers, map });
@@ -360,12 +360,27 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng, name,
 
   renderSearchResults(list);
 
-  const locationButton = document.createElement("button");
+  // const locationButton = document.createElement("button");
 
-  locationButton.textContent = "Pan to Current Location";
-  locationButton.classList.add("custom-map-control-button");
-  map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
-  locationButton.addEventListener("click", () => {
+  // locationButton.textContent = "Pan to Current Location";
+  // locationButton.classList.add("custom-map-control-button");
+
+  // map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton); 
+
+  const location = document.createElement('div');
+  const locationIcon = document.createElement("img");
+  locationIcon.src = '/images/current-location-v5.png';
+  location.setAttribute('style', "width:40px; padding: 0px")
+  locationIcon.setAttribute('style', "padding-top: 6px; height:33px; width:40px; top:50px")
+
+  location.append(locationIcon);
+
+  location.classList.add("custom-map-control-button");
+  map.controls[google.maps.ControlPosition.RIGHT_TOP].push(location); 
+
+
+  // locationButton.addEventListener("click", () => {
+  locationIcon.addEventListener("click", () => {
     // Try HTML5 geolocation.
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
