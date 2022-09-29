@@ -213,6 +213,9 @@ function createMap(
   // Create an info window to share between markers
   const infoWindow = new google.maps.InfoWindow();
 
+  // creates marker boundry to center map based on screen size (step #1 of 3)
+  let bounds  = new google.maps.LatLngBounds();
+
   // Create the markers
   const markers = list.map(({ lat, lng, name, id, camp_id }, i) => {
     if (lat && lng) {
@@ -246,9 +249,19 @@ function createMap(
           marker.setAnimation(null);
         }, 1000);
       });
+
+      // creates marker boundry to center map based on screen size (step #2 of 3)
+      if ((marker.position.lat() < 50 && marker.position.lat() > 30) && (marker.position.lng() > -118 && marker.position.lng() < -75)) {
+          loc = new google.maps.LatLng(marker.position.lat(), marker.position.lng());
+          bounds.extend(loc);
+        }
       return marker;
     }
   });
+
+  // creates marker boundry to center map based on screen size (step #3 of 3)
+  map.fitBounds(bounds);       // auto-zoom
+  map.panToBounds(bounds);     //auto-center
 
   console.log(markers);
   // renderSelectedCampMarker(selectedCampLat, infoWindow, map);
