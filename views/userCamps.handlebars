@@ -1,36 +1,74 @@
+{{!-- SECTION: USER CAMPS PAGE --}}
+<style>
+    .star {
+        visibility: hidden;
+        font-size: 24px;
+        color: gold;
+        cursor: pointer;
+
+    }
+
+    .star:before {
+        content: "\2606";
+        position: relative;
+        left: 25px;
+        visibility: visible;
+    }
+
+    .star:checked:before {
+        content: "\2605";
+        position: relative;
+        left: 25px;
+    }
+
+    #favStarEl {
+        float: right;
+        font-size: 12px;
+    }
+</style>
+
+{{#each campData as |data|}}
+
 <div id="campsite-header" class="row">
-    <h3>{{campData.nameState}}</h3>
+    <h3>
+        <span id="camp-name">{{name}}</span>
+        <div id="favStarEl">
+            {{!-- FAVORITES BUTTON --}}
+            <input id="favStar" class="star" type="checkbox" title="favStar"><BR></BR>
+            <span> <i>Add to Favorites</i></span>
+        </div>
+    </h3>
 </div>
 <div class="row">
     {{!MAIN PHOTO}}
-    <img id="campsite-photo" src="{{campData.images[0].url}}" alt="{{campData.images[0].altText}}">
+    <img id="campsite-photo" src="{{images[0].url}}" alt="{{images[0].altText}}">
 </div>
 <div class="row">
-    <p id="campsite-desc">{{campData.description}}</p>
+    <p id="campsite-desc">{{description}}</p>
 </div>
 <div class="row">
-    <div class="column">
+    <div class="col">
         {{!RESERVATIONS}}
-        <p>Reservation Info: {{campData.reservationInfo}}</p>
-        <p>Make a reservation: <a href="{{campData.reservationUrl}}" target="_blank">{{campData.reservationUrl}}</p>
+        <p>Reservation Info: {{reservationInfo}}</p>
+        <p>Make a Reservation: <a href="{{reservationUrl}}" target="_blank">{{reservationUrl}}</p>
         <br>
         <br>
         {{!REGULATIONS}}
-        <p>Regulations: {{campData.regulationsOverview}}<br>
-            <a>href="{{campData.regulationsurl}}">{{campData.regulationsurl}}</a>
+        <p>Regulations: {{regulationsOverview}}<br>
+            <a href="{{regulationsurl}}">{{regulationsurl}}</a>
         </p>
     </div>
-    <div class="column">
+    <div class="col">
         {{!CONTACT}}
-        <p>Phone: {{campData.contacts.phoneNumbers[0].phoneNumber}}</p>
-        <p>Email: <a href="mailto:{{campData.contacts.emailAddresses[0].emailAddress}}">{{campData.contacts.emailAddresses[1]}}</a>
+        <p>Phone: {{contacts.phoneNumbers[0].phoneNumber}}</p>
+        <p>Email: <a href="mailto:{{contacts.emailAddresses[0].emailAddress}}">{{contacts.emailAddresses[1]}}</a>
         </p>
         <br>
         <br>
         {{!FEES}}
-        <p>{{campData.fees[0].title}} {{campData.fees[0].cost}}: {{campData.fees[0].description}}</p>
+        <p>{{fees[0].title}} {{fees[0].cost}}: {{fees[0].description}}</p>
     </div>
 </div>
 
 
-{{!-- {{campData.audioDescription}} --}}
+{{!-- {{audioDescription}} --}}
