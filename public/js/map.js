@@ -4,10 +4,7 @@ let searchInput = document.getElementById('search-input'); //USED FOR AUTOCOMPLE
 //global variables go here 👇
 
 //event listeners go here 👇
-window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-  window.innerWidth > 500 ? initMap(4) : initMap(3);
-});
+window.addEventListener('resize', adjustZoomOnResize);
 searchInput.addEventListener('keypress', renderSearchInputMap);
 searchInput.addEventListener('input', () => searchAutoComplete());
 // searchInput.addEventListener("input", () => console.log(searchInput.value));
@@ -21,6 +18,12 @@ function logToTerminal() {
   // "markers[ID].setIcon(image_url)">
   b.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
   console.log(b);
+}
+
+// RENDER MAP ZOOM AS WINDOW IS RE-SIZED
+function adjustZoomOnResize() {
+  console.log(window.innerWidth);
+  window.innerWidth > 500 ? initMap(4) : initMap(3);
 }
 
 // RENDER MAP USING SEARCH INPUT
