@@ -220,7 +220,7 @@ function getCurrentPosition() {
   });
 }
 
-async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
+async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng, name, camp_id) {
   // let position = await getCurrentPosition();
   // let currentPosition = position.coords;
   // let currentLatitude = currentPosition.latitude || 40.0497;
@@ -268,6 +268,17 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
     center: { lat: centerLat, lng: centerLng },
     zoom: zoomLevel || 4,
     mapTypeId: 'terrain',
+    // disableDefaultUI: true,
+    zoomControl: true,
+    mapTypeControl: true,
+    scaleControl: true,
+    streetViewControl: true,
+    rotateControl: true,
+    fullscreenControl: true,
+    mapTypeControlOptions: {
+      style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+      // mapTypeIds: ["roadmap", "terrain"],
+    },
     // minZoom: zoom - 3,
     // maxZoom: zoom + 10,
     // restriction: {
@@ -331,6 +342,12 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
     }
   });
 
+  // Creates a marker for the selected campsite; not clear how it captures the info
+  if (selectedCampLat) {
+    const markerSelectedCampsite = new google.maps.Marker({});
+    infoWindow.open(markerSelectedCampsite.getMap(), markerSelectedCampsite);
+  }
+
   // Add a marker clusterer to manage the markers.
   if (window.innerWidth <= 500) {
     new markerClusterer.MarkerClusterer({ markers, map });
@@ -342,6 +359,55 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
   console.log(markers);
 
   renderSearchResults(list);
+
+  const locationButton = document.createElement("button");
+
+  locationButton.textContent = "Pan to Current Location";
+  locationButton.classList.add("custom-map-control-button");
+  map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+  locationButton.addEventListener("click", () => {
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          };
+
+          infoWindow.setPosition(pos);
+          infoWindow.setContent("Location found.");
+          infoWindow.open(map);
+          map.setCenter(pos);
+          
+          
+          const markerCurrentLocation = new google.maps.Marker({
+            position: pos,
+            map,
+            icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png",
+          });
+          infoWindow.open(markerCurrentLocation.getMap(), markerCurrentLocation);
+
+        },
+        () => {
+          handleLocationError(true, infoWindow, map.getCenter());
+        }
+      );
+    } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, infoWindow, map.getCenter());
+    }
+  });
+}
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+  infoWindow.setPosition(pos);
+  infoWindow.setContent(
+    browserHasGeolocation
+      ? "Error: The Geolocation service failed."
+      : "Error: Your browser doesn't support geolocation."
+  );
+  infoWindow.open(map);
 }
 
 async function searchAutoComplete() {
