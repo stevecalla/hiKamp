@@ -189,7 +189,7 @@ function renderSearchResults(list) {
     // campPath.addEventListener('mouseover', logToTerminal);
 
     //SET ATTRIBUTES
-    campPath.setAttribute('href', `/api/map/campsite/:${list[i].id}`);
+    campPath.setAttribute('href', `/api/map/campsite/:${list[i].camp_id}`);
 
     //CREATE TITLE CONTENT
     campName.textContent = `${i + 1}) ${list[i].nameState }`;
@@ -284,11 +284,11 @@ async function initMap(state, zoomLevel, selectedCampLat, selectedCampLng) {
   // parkList.forEach(({ lat, lng, name }, i) => {
 
   // list.forEach(({ lat, lng, name, id }, i) => {
-  const markers = list.map(({ lat, lng, name, id }, i) => {
+  const markers = list.map(({ lat, lng, name, id, camp_id }, i) => {
 
     if(lat && lng) {
     
-      const contentString = `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/:${id}">${name}</a></h6>`
+      const contentString = `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/:${camp_id}">${name}</a></h6>`
 
       let selectedCampsiteIcon = "http://maps.google.com/mapfiles/kml/shapes/campground.png";
       let campsiteIcon = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
