@@ -260,8 +260,10 @@ function createMap(
   });
 
   // creates marker boundry to center map based on screen size (step #3 of 3)
-  map.fitBounds(bounds);       // auto-zoom
-  map.panToBounds(bounds);     //auto-center
+  if (!selectedCampLat) {
+    map.fitBounds(bounds);       // auto-zoom
+    map.panToBounds(bounds);     //auto-center
+  }
 
   console.log(markers);
   // renderSelectedCampMarker(selectedCampLat, infoWindow, map);
