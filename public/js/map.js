@@ -369,7 +369,7 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng, name,
 
   const location = document.createElement('div');
   const locationIcon = document.createElement("img");
-  locationIcon.src = '/images/current-location-v5.png';
+  locationIcon.src = '/images/current-location-v4.png';
   location.setAttribute('style', "width:40px; padding: 0px")
   locationIcon.setAttribute('style', "padding-top: 6px; height:33px; width:40px; top:50px")
 
