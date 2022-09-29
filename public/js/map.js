@@ -175,7 +175,7 @@ function logToTerminal() {
   console.log(b)
 }
 
-function renderSearchResults(qlist) {
+function renderSearchResults(list) {
   console.log('list ======= ', list);
   let asideContainer = document.getElementById('searchResults');
   asideContainer.textContent = "";
@@ -285,6 +285,9 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng, name,
     //     west: -100,
     //   },
     // }
+    qenableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0,
   });
 
   // Create an info window to share between markers.
@@ -391,12 +394,13 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng, name,
           infoWindow.setContent("Location found.");
           infoWindow.open(map);
           map.setCenter(pos);
+          map.setZoom(5);
           
           
           const markerCurrentLocation = new google.maps.Marker({
             position: pos,
             map,
-            icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png",
+            icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png",
           });
           infoWindow.open(markerCurrentLocation.getMap(), markerCurrentLocation);
 
