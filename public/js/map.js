@@ -1,5 +1,5 @@
 //query selector variables go here 👇
-let searchInput = document.getElementById("search-input"); //USED FOR AUTOCOMPLETE & SEARCH BAR RESULTS
+let searchInput = document.getElementById('search-input'); //USED FOR AUTOCOMPLETE & SEARCH BAR RESULTS
 
 //global variables go here 👇
 
@@ -8,46 +8,134 @@ window.addEventListener('resize', () => {
   console.log(window.innerWidth);
   window.innerWidth > 500 ? initMap(4) : initMap(3);
 });
-searchInput.addEventListener("keypress", async (event) => {
-  // If the user presses the "Enter" key on the keyboard
-  if (event.key === "Enter") {
-    event.preventDefault();
-    let rawCampsites = await getList(); // get camp data from database
-    let getState = rawCampsites.filter(camp => camp.nameState === searchInput.value); //get state for current search input
-    console.log(getState);
-
-    let selectedCampLat;
-    let selectedCampLng;
-
-    if (getState.length) { //get lat & lng for selected campsite to render blue marker
-      selectedCampLat = getState[0].lat;
-      selectedCampLng = getState[0].lng;
-    }
-
-    if (!getState.length) {getState = rawCampsites.filter(camp => camp.zipCode === searchInput.value)}; // if input is a zipcode get state
-    let state = getState[0].state; // get state for first location in the array
-    initMap(6, state, selectedCampLat, selectedCampLng); // render map by passing state, map zoom level, selected camp lat & lng
-  }
-});
-searchInput.addEventListener("input", () => searchAutoComplete());
-searchInput.addEventListener("input", () => console.log(searchInput.value));
+searchInput.addEventListener('keypress', renderSearchInputMap);
+searchInput.addEventListener('input', () => searchAutoComplete());
+// searchInput.addEventListener("input", () => console.log(searchInput.value));
 
 //functions and event handlers go here 👇
 function logToTerminal() {
   console.log('yes');
-  let b = document.getElementById('gmimap3')
+  let b = document.getElementById('gmimap3');
   // b.setAttribute('style', "color:green!important");
   // b.setIcon('http://www.google.com/mapfiles/shadow50.png');
   // "markers[ID].setIcon(image_url)">
-  b.setIcon("http://maps.google.com/mapfiles/ms/icons/blue-dot.png")
-  console.log(b)
+  b.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
+  console.log(b);
 }
+
+// RENDER MAP USING SEARCH INPUT
+async function renderSearchInputMap(event) {
+  let selectedCampLat;
+  let selectedCampLng;
+
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === 'Enter') {
+    event.preventDefault();
+
+    // get all campsites from database
+    let rawCampsites = await getList();
+
+    // get state for current search input
+    let getState = rawCampsites.filter(
+      (camp) => camp.nameState === searchInput.value
+    );
+    
+    // if input is a zipcode get state
+    if (!getState.length) {
+      getState = rawCampsites.filter(
+        (camp) => camp.zipCode === searchInput.value
+        );
+    }
+
+    // get state for first location in the array
+    let state = getState[0].state;
+    // console.log(getState);
+
+    // get lat & lng for campsite to center map
+    if (getState.length) {
+      selectedCampLat = getState[0].lat;
+      selectedCampLng = getState[0].lng;
+    }
+
+    // render map by passing state, map zoom level, selected camp lat & lng
+    initMap(6, state, selectedCampLat, selectedCampLng);
+  }
+}
+
+// RENDER SEARCH BOX AUTO COMPLETE WITH JQUERY
+async function searchAutoComplete() {
+  let rawCampsites = await getList(); // get list of all campsites
+
+  // create campsite & zipcode array
+  let campsites = rawCampsites.map((rawCampsites) => rawCampsites.nameState);
+  let campZipCodes = rawCampsites
+    .map((rawCampsites) => rawCampsites.zipCode)
+    .filter((zipCode) => zipCode !== null)
+    .sort();
+
+  let combineLists = campZipCodes.concat(campsites); // combine campsite and zip code array
+  let autoCompleteList = [...new Set(combineLists)]; // remove duplicates
+
+  // jquery autocomplete function
+  $('#search-input').autocomplete({
+    minLength: 2,
+    source: autoCompleteList,
+  });
+}
+
+// INTIALIZE MAP
+async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
+  let list = await getList(state);
+  renderSearchResults(list);
+  let mobileZoomLevel = setMobileZoomLevel(zoomLevel);
+  let { centerLat, centerLng } = setLatAndLong(
+    list,
+    selectedCampLat,
+    selectedCampLng,
+    zoomLevel
+  );
+  createMap(
+    centerLat,
+    centerLng,
+    mobileZoomLevel,
+    zoomLevel,
+    list,
+    selectedCampLat
+  );
+}
+
+// GET LIST OF CAMPSITES TO RENDER
+const getList = async (state) => {
+  console.log(state);
+
+  let result;
+
+  if (!state) {
+    result = await fetch(`/api/map/campsites-all`, {
+      method: 'GET',
+    });
+    const json = await result.json();
+    const list = json.filter(
+      (element) => element.lat !== null || element.lng !== null
+    );
+    return list;
+  } else {
+    result = await fetch(`/api/map/campsite-list/${state}`, {
+      method: 'GET',
+    });
+    const json = await result.json();
+    const list = json.filter(
+      (element) => element.lat !== null || element.lng !== null
+    );
+    return list;
+  }
+};
 
 // RENDER SEARCH RESULTS IN ASIDE
 function renderSearchResults(list) {
   console.log('list ======= ', list);
   let asideContainer = document.getElementById('searchResults');
-  asideContainer.textContent = "";
+  asideContainer.textContent = '';
 
   for (let i = 0; i < list.length; i++) {
     //CREATE ELEMENT
@@ -61,37 +149,48 @@ function renderSearchResults(list) {
     campPath.setAttribute('href', `/api/map/campsite/:${list[i].camp_id}`);
 
     //CREATE TITLE CONTENT
-    campName.textContent = `${i + 1}) ${list[i].nameState }`;
+    campName.textContent = `${i + 1}) ${list[i].nameState}`;
 
     //APPEND
     asideContainer.append(campPath);
     campPath.append(campName);
     campName.append(renderLine);
   }
-};
+}
 
-async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
-  let list = await getList(state);
-
-  let centerLat;
-  let centerLng;
-
-  selectedCampLat ? centerLat = selectedCampLat : centerLat = list[0].lat;
-  selectedCampLng ? centerLng = selectedCampLng : centerLng = list[0].lng;
-
-  console.log(zoomLevel, list[0].lat, list[0].lng )
-  console.log(selectedCampLat, selectedCampLng, centerLat, centerLng);
-
-  var w = window.innerWidth;
-  var h = window.innerHeight; 
-
+// SET MOBILE ZOOM LEVEL
+function setMobileZoomLevel(zoomLevel) {
   if (window.innerWidth <= 500 && !zoomLevel) {
     zoomLevel = 3;
   }
+  return zoomLevel;
+}
 
+function setLatAndLong(list, selectedCampLat, selectedCampLng, zoomLevel) {
+  let centerLat;
+  let centerLng;
+
+  selectedCampLat ? (centerLat = selectedCampLat) : (centerLat = list[0].lat);
+  selectedCampLng ? (centerLng = selectedCampLng) : (centerLng = list[0].lng);
+
+  console.log(zoomLevel, list[0].lat, list[0].lng);
+  console.log(selectedCampLat, selectedCampLng, centerLat, centerLng);
+
+  return { centerLat, centerLng };
+}
+
+function createMap(
+  centerLat,
+  centerLng,
+  mobileZoomLevel,
+  zoomLevel,
+  list,
+  selectedCampLat
+) {
+  // Create instance of map
   const map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: centerLat, lng: centerLng },
-    zoom: zoomLevel || 4,
+    zoom: mobileZoomLevel || zoomLevel || 4,
     mapTypeId: 'terrain',
     // disableDefaultUI: true,
     zoomControl: true,
@@ -103,24 +202,23 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
     },
-    qenableHighAccuracy: true,
+    enableHighAccuracy: true,
     timeout: 5000,
     maximumAge: 0,
   });
 
-  // Create an info window to share between markers.
+  // Create an info window to share between markers
   const infoWindow = new google.maps.InfoWindow();
 
-  // Create the marker
+  // Create the markers
   const markers = list.map(({ lat, lng, name, id, camp_id }, i) => {
-
-    if(lat && lng) {
-    
-      const contentString = `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/:${camp_id}">${name}</a></h6>`
+    if (lat && lng) {
+      const contentString = `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/:${camp_id}">${name}</a></h6>`;
 
       // https://maps.gstatic.com/mapfiles/place_api/icons/v2/camping_pinlet.svg
-      let selectedCampsiteIcon = "http://maps.google.com/mapfiles/kml/shapes/campground.png";
-      let campsiteIcon = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
+      let selectedCampsiteIcon =
+        'http://maps.google.com/mapfiles/kml/shapes/campground.png';
+      let campsiteIcon = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
 
       const marker = new google.maps.Marker({
         position: { lat, lng },
@@ -130,14 +228,15 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
         size: new google.maps.Size(50, 100),
       });
 
-      // Add a click listener for each marker, and set up the info window.
-
+      // Add a click listener for each marker, and set up the info window
       marker.addListener('click', () => {
         infoWindow.close();
         infoWindow.setContent(contentString);
         infoWindow.open(marker.getMap(), marker);
         if (lat !== selectedCampLat) {
-          marker.setIcon("http://maps.google.com/mapfiles/ms/icons/blue-dot.png")
+          marker.setIcon(
+            'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+          );
         }
         marker.setAnimation(google.maps.Animation.BOUNCE);
         setTimeout(() => {
@@ -149,9 +248,8 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
   });
 
   console.log(markers);
-  renderSelectedCampMarker(selectedCampLat, infoWindow, map);
-  renderMarkerClusters( markers, map);
-  renderSearchResults(list);
+  // renderSelectedCampMarker(selectedCampLat, infoWindow, map);
+  renderMarkerClusters(markers, map);
   renderCurrentLocationIcon(map, infoWindow);
 }
 
@@ -161,10 +259,10 @@ function renderSelectedCampMarker(selectedCampLat, infoWindow, map) {
     const markerSelectedCampsite = new google.maps.Marker({});
     infoWindow.open(markerSelectedCampsite.getMap(), markerSelectedCampsite);
   }
-};
+}
 
 // ADD MARKER CLUSTERS TO REDUCE VISUAL CLUTTER
-function renderMarkerClusters( markers, map) {
+function renderMarkerClusters(markers, map) {
   if (window.innerWidth <= 500) {
     new markerClusterer.MarkerClusterer({ markers, map });
     // new MarkerClusterer({ markers, map });
@@ -176,17 +274,21 @@ function renderMarkerClusters( markers, map) {
 // RENDER CURRENT LOCATION ICON ON CLICK
 function renderCurrentLocationIcon(map, infoWindow) {
   const location = document.createElement('div');
-  const locationIcon = document.createElement("img");
+  const locationIcon = document.createElement('img');
   locationIcon.src = '/images/current-location-v4.png';
-  location.setAttribute('style', "width:40px; padding: 0px")
-  locationIcon.setAttribute('style', "padding-top: 6px; height:33px; width:40px; top:50px")
+  // locationIcon.src = 'https://maps.gstatic.com/tactile/mylocation/mylocation-sprite-2x.png',
+  location.setAttribute('style', 'width:40px; padding: 0px');
+  locationIcon.setAttribute(
+    'style',
+    'padding: 2px; height:37px; width:40px; top:50px; padding-top: 6px;'
+  );
 
   location.append(locationIcon);
 
-  location.classList.add("custom-map-control-button");
-  map.controls[google.maps.ControlPosition.RIGHT_TOP].push(location); 
+  location.classList.add('custom-map-control-button');
+  map.controls[google.maps.ControlPosition.RIGHT_TOP].push(location);
 
-  locationIcon.addEventListener("click", () => {
+  locationIcon.addEventListener('click', () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -196,19 +298,20 @@ function renderCurrentLocationIcon(map, infoWindow) {
           };
 
           infoWindow.setPosition(pos);
-          infoWindow.setContent("Location found.");
+          infoWindow.setContent('Location found.');
           infoWindow.open(map);
           map.setCenter(pos);
           map.setZoom(5);
-          
-          
+
           const markerCurrentLocation = new google.maps.Marker({
             position: pos,
             map,
-            icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png",
+            icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
           });
-          infoWindow.open(markerCurrentLocation.getMap(), markerCurrentLocation);
-
+          infoWindow.open(
+            markerCurrentLocation.getMap(),
+            markerCurrentLocation
+          );
         },
         () => {
           handleLocationError(true, infoWindow, map.getCenter());
@@ -226,48 +329,11 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.setPosition(pos);
   infoWindow.setContent(
     browserHasGeolocation
-      ? "Error: The Geolocation service failed."
+      ? 'Error: The Geolocation service failed.'
       : "Error: Your browser doesn't support geolocation."
   );
   infoWindow.open(map);
 }
-
-async function searchAutoComplete() {
-  let rawCampsites = await getList();
-  let campsites = rawCampsites.map(rawCampsites => rawCampsites.nameState);
-  let campZipCodes = rawCampsites.map(rawCampsites => rawCampsites.zipCode)
-  .filter(zipCode => zipCode !== null).sort();
-  let combineLists = campZipCodes.concat(campsites);
-  let autoCompleteList = [...new Set(combineLists)]; // remove duplicates
-
-  $( "#search-input" ).autocomplete({
-    minLength: 2,
-    source: autoCompleteList,
-  });
-}
-
-const getList = async (state) => {
-  console.log(state)
-
-  let result;
-
-  if (!state) {
-    result = await fetch(`/api/map/campsites-all`, {
-      method: 'GET',
-    });
-    const json = await result.json();
-    const list = json.filter(element => element.lat !== null || element.lng !== null);
-    return list;
-
-  } else {
-    result = await fetch(`/api/map/campsite-list/${state}`, {
-      method: 'GET',
-    });
-    const json = await result.json();
-    const list = json.filter(element => element.lat !== null || element.lng !== null);
-    return list;
-  }
-};
 
 // Source:
 // SIMPLE MARKER: https://developers.google.com/maps/documentation/javascript/examples/marker-simple
