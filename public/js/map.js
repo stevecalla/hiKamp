@@ -161,8 +161,12 @@ let searchInput = document.getElementById("search-input"); //USED FOR AUTOCOMPLE
 // ];
 
 //event listeners go here 👇
-searchInput.addEventListener("input", () => console.log(searchInput.value));
+window.addEventListener('resize', () => {
+  console.log(window.innerWidth);
+  window.innerWidth > 500 ? initMap(4) : initMap(3);
+});
 searchInput.addEventListener("input", () => searchAutoComplete());
+searchInput.addEventListener("input", () => console.log(searchInput.value));
 
 //functions and event handlers go here 👇
 function logToTerminal() {
@@ -216,7 +220,7 @@ function getCurrentPosition() {
   });
 }
 
-async function initMap(state, zoomLevel, selectedCampLat, selectedCampLng) {
+async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
   // let position = await getCurrentPosition();
   // let currentPosition = position.coords;
   // let currentLatitude = currentPosition.latitude || 40.0497;
@@ -256,7 +260,7 @@ async function initMap(state, zoomLevel, selectedCampLat, selectedCampLng) {
   var w = window.innerWidth;
   var h = window.innerHeight; 
 
-  if (w < 600 && !zoomLevel) {
+  if (window.innerWidth <= 500 && !zoomLevel) {
     zoomLevel = 3;
   }
 
@@ -328,10 +332,12 @@ async function initMap(state, zoomLevel, selectedCampLat, selectedCampLng) {
   });
 
   // Add a marker clusterer to manage the markers.
-  // new MarkerClusterer({ markers, map });
-  // new markerClusterer.MarkerClusterer({ markers, map });
-  // markerCluster.clearMarkers();
-  // markerCluster.removeMarker(markers[i]);
+  if (window.innerWidth <= 500) {
+    new markerClusterer.MarkerClusterer({ markers, map });
+    // new MarkerClusterer({ markers, map });
+    // markerCluster.clearMarkers();
+    // markerCluster.removeMarker(markers[i]);
+  }
 
   console.log(markers);
 
@@ -370,7 +376,7 @@ searchInput.addEventListener("keypress", async (event) => {
 
     if (!getState.length) {getState = rawCampsites.filter(camp => camp.zipCode === searchInput.value)}; // if input is a zipcode get state
     let state = getState[0].state; // get state for first location in the array
-    initMap(state, 6, selectedCampLat, selectedCampLng); // render map by passing state, map zoom level, selected camp lat & lng
+    initMap(6, state, selectedCampLat, selectedCampLng); // render map by passing state, map zoom level, selected camp lat & lng
   }
 });
 
