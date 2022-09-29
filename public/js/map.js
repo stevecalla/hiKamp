@@ -353,6 +353,8 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.open(map);
 }
 
+initMap();
+
 // Source:
 // SIMPLE MARKER: https://developers.google.com/maps/documentation/javascript/examples/marker-simple
 // https://developers.google.com/maps/documentation/javascript/examples/marker-accessibility
