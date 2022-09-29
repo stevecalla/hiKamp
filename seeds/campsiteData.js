@@ -3,7 +3,7 @@ const { Campsite } = require("../models");
 
 const campsiteData = [
     {
-        id: "EA81BC45-C361-437F-89B8-5C89FB0D0F86",
+        camp_id: "EA81BC45-C361-437F-89B8-5C89FB0D0F86",
         code: "amis",
         name: "277 North Campground",
         lat: 29.5108900007192,
@@ -16,7 +16,7 @@ const campsiteData = [
         nameState: "277 North Campground"
     },
     {
-        id: "1241C56B-7003-4FDF-A449-29DA8BCB0A41",
+        camp_id: "1241C56B-7003-4FDF-A449-29DA8BCB0A41",
         code: "grsm",
         name: "Abrams Creek Campground",
         lat: 35.61074664664336,
@@ -28,7 +28,7 @@ const campsiteData = [
         nameState: "Abrams Creek Campground, TN"
     },
     {
-        id: "ABDC6E2A-9959-4A4C-9DB6-EEF66E7C95B8",
+        camp_id: "ABDC6E2A-9959-4A4C-9DB6-EEF66E7C95B8",
         code: "cato",
         name: "Adirondack Shelters",
         lat: 39.67775041640082,
@@ -40,7 +40,7 @@ const campsiteData = [
         nameState: "Adirondack Shelters, MD"
     },
     {
-        id: "4F9ED6A5-3ED1-443D-9E4C-859D7988F199",
+        camp_id: "4F9ED6A5-3ED1-443D-9E4C-859D7988F199",
         code: "bica",
         name: "Afterbay Campground",
         lat: 45.315438210045016,
@@ -52,7 +52,7 @@ const campsiteData = [
         nameState: "Afterbay Campground, MT"
     },
     {
-        id: "9FAE941D-D7E8-4F36-A28F-8556628242BA",
+        camp_id: "9FAE941D-D7E8-4F36-A28F-8556628242BA",
         code: "ozar",
         name: "Akers Group Campground",
         lat: 37.3764551871,
@@ -64,7 +64,7 @@ const campsiteData = [
         nameState: "Akers Group Campground, MO"
     },
     {
-        id: "6EAB2A34-0D56-4A15-99E2-E41C06B0FF86",
+        camp_id: "6EAB2A34-0D56-4A15-99E2-E41C06B0FF86",
         code: "orpi",
         name: "Alamo Canyon Primitive Campground",
         lat: 32.072943,
@@ -76,7 +76,7 @@ const campsiteData = [
         nameState: "Alamo Canyon Primitive Campground, AZ"
     },
     {
-        id: "AB15EC6C-7761-4DFF-A4AC-38E6A9986FB7",
+        camp_id: "AB15EC6C-7761-4DFF-A4AC-38E6A9986FB7",
         code: "ozar",
         name: "Alley Spring Campground",
         lat: 37.148223,
@@ -88,7 +88,7 @@ const campsiteData = [
         nameState: "Alley Spring Campground, MO"
     },
     {
-        id: "4F9E59DF-BFCB-400F-8F4E-6A5233A47324",
+        camp_id: "4F9E59DF-BFCB-400F-8F4E-6A5233A47324",
         code: "biso",
         name: "Alum Ford Campground",
         lat: 36.764033745775,
@@ -100,7 +100,7 @@ const campsiteData = [
         nameState: "Alum Ford Campground, KY"
     },
     {
-        id: "B0B25595-CE24-4E9C-B0CD-93912216F113",
+        camp_id: "B0B25595-CE24-4E9C-B0CD-93912216F113",
         code: "amme",
         name: "American Memorial Park",
         lat: null,
@@ -112,7 +112,7 @@ const campsiteData = [
         nameState: "American Memorial Park, MP"
     },
     {
-        id: "E7CC7363-9C34-42ED-B3F0-769BB39E9400",
+        camp_id: "E7CC7363-9C34-42ED-B3F0-769BB39E9400",
         code: "chis",
         name: "Anacapa Island Campground",
         lat: 34.0143426535482,
@@ -124,7 +124,7 @@ const campsiteData = [
         nameState: "Anacapa Island Campground, CA"
     },
     {
-        id: "3CCB0AF7-A364-4490-A788-EE00700BD108",
+        camp_id: "3CCB0AF7-A364-4490-A788-EE00700BD108",
         code: "glca",
         name: "Antelope Point RV Park",
         lat: 36.956030575674106,
@@ -137,7 +137,7 @@ const campsiteData = [
         nameState: "Antelope Point RV Park"
     },
     {
-        id: "03608E50-3CA0-4AEA-9E6C-146FBD6D204B",
+        camp_id: "03608E50-3CA0-4AEA-9E6C-146FBD6D204B",
         code: "choh",
         name: "Antietam Creek Campground",
         lat: 39.421109176,
@@ -150,7 +150,7 @@ const campsiteData = [
         nameState: "Antietam Creek Campground"
     },
     {
-        id: "48F2732E-4251-4D81-875C-8E52839620B5",
+        camp_id: "48F2732E-4251-4D81-875C-8E52839620B5",
         code: "glac",
         name: "Apgar Campground",
         lat: 48.526081043909606,
@@ -162,7 +162,7 @@ const campsiteData = [
         nameState: "Apgar Campground, MT"
     },
     {
-        id: "18D6C184-E9BB-4590-93FF-09CE0210C13A",
+        camp_id: "18D6C184-E9BB-4590-93FF-09CE0210C13A",
         code: "neri",
         name: "Army Camp",
         lat: 37.858852,
@@ -174,7 +174,7 @@ const campsiteData = [
         nameState: "Army Camp, WV"
     },
     {
-        id: "7475825B-E844-4012-841B-0E29E05D4540",
+        camp_id: "7475825B-E844-4012-841B-0E29E05D4540",
         code: "romo",
         name: "Aspenglen Campground",
         lat: 40.39934770583215,
@@ -186,7 +186,7 @@ const campsiteData = [
         nameState: "Aspenglen Campground, CO"
     },
     {
-        id: "BC707FA3-F575-4734-8E62-34689982F615",
+        camp_id: "BC707FA3-F575-4734-8E62-34689982F615",
         code: "seki",
         name: "Atwell Mill Campground",
         lat: 36.4646681174428,
@@ -198,7 +198,7 @@ const campsiteData = [
         nameState: "Atwell Mill Campground, CA"
     },
     {
-        id: "18436909-D300-44A7-BD73-553AF16E576E",
+        camp_id: "18436909-D300-44A7-BD73-553AF16E576E",
         code: "piro",
         name: "Au Sable East Group Backpacking Site",
         lat: 46.670375,
@@ -211,7 +211,7 @@ const campsiteData = [
         nameState: "Au Sable East Group Backpacking Site"
     },
     {
-        id: "F3ED602F-ECEE-4C10-9FBF-299331032221",
+        camp_id: "F3ED602F-ECEE-4C10-9FBF-299331032221",
         code: "piro",
         name: "Au Sable East Individual Backpacking Sites",
         lat: 46.669327,
@@ -224,7 +224,7 @@ const campsiteData = [
         nameState: "Au Sable East Individual Backpacking Sites"
     },
     {
-        id: "2DEFC258-0088-4E21-B429-7B7014B09060",
+        camp_id: "2DEFC258-0088-4E21-B429-7B7014B09060",
         code: "glac",
         name: "Avalanche",
         lat: 48.67654586358507,
@@ -236,7 +236,7 @@ const campsiteData = [
         nameState: "Avalanche, MT"
     },
     {
-        id: "D82D2D01-80E6-4394-BEC0-C41ECAC12798",
+        camp_id: "D82D2D01-80E6-4394-BEC0-C41ECAC12798",
         code: "seki",
         name: "Azalea Campground",
         lat: 36.741334351,
@@ -248,7 +248,7 @@ const campsiteData = [
         nameState: "Azalea Campground, CA"
     },
     {
-        id: "43CF9CC2-4B3F-496F-9587-26F98A454217",
+        camp_id: "43CF9CC2-4B3F-496F-9587-26F98A454217",
         code: "asis",
         name: "Back Country Camping - Green Run",
         lat: 38.0799522999743,
@@ -260,7 +260,7 @@ const campsiteData = [
         nameState: "Back Country Camping - Green Run, MD"
     },
     {
-        id: "8540D911-6CCA-4DD7-A515-34A3939BABFE",
+        camp_id: "8540D911-6CCA-4DD7-A515-34A3939BABFE",
         code: "asis",
         name: "Back Country Camping - Little Levels",
         lat: 38.1521378003843,
@@ -273,7 +273,7 @@ const campsiteData = [
         nameState: "Back Country Camping - Little Levels"
     },
     {
-        id: "BEAF9758-4BAB-4FE7-A6C0-7336362BDE42",
+        camp_id: "BEAF9758-4BAB-4FE7-A6C0-7336362BDE42",
         code: "asis",
         name: "Back Country Camping - Pine Tree",
         lat: 38.1432381002,
@@ -285,7 +285,7 @@ const campsiteData = [
         nameState: "Back Country Camping - Pine Tree, MD"
     },
     {
-        id: "FB37FF71-E7EE-4B25-8117-842784111EEC",
+        camp_id: "FB37FF71-E7EE-4B25-8117-842784111EEC",
         code: "asis",
         name: "Back Country Camping - Pope Bay",
         lat: 38.0477905997415,
@@ -297,7 +297,7 @@ const campsiteData = [
         nameState: "Back Country Camping - Pope Bay, MD"
     },
     {
-        id: "B238585C-BEFC-446C-B433-F785D295873E",
+        camp_id: "B238585C-BEFC-446C-B433-F785D295873E",
         code: "asis",
         name: "Back Country Camping - State Line",
         lat: 38.04472,
@@ -310,7 +310,7 @@ const campsiteData = [
         nameState: "Back Country Camping - State Line"
     },
     {
-        id: "B9AF19E6-8B7F-482F-AFB7-E606FFD4BA4E",
+        camp_id: "B9AF19E6-8B7F-482F-AFB7-E606FFD4BA4E",
         code: "asis",
         name: "Back Country Camping - Tingles Island",
         lat: 38.1777120008,
@@ -322,7 +322,7 @@ const campsiteData = [
         nameState: "Back Country Camping - Tingles Island, MD"
     },
     {
-        id: "9E0AF4C5-2100-427F-AF7D-D8653FBF3FA5",
+        camp_id: "9E0AF4C5-2100-427F-AF7D-D8653FBF3FA5",
         code: "whsa",
         name: "Backcountry Camping",
         lat: 32.809869,
@@ -334,7 +334,7 @@ const campsiteData = [
         nameState: "Backcountry Camping, NM"
     },
     {
-        id: "07B94648-198D-4762-9D87-236DEC0C58BA",
+        camp_id: "07B94648-198D-4762-9D87-236DEC0C58BA",
         code: "care",
         name: "Backcountry Camping",
         lat: null,
@@ -346,7 +346,7 @@ const campsiteData = [
         nameState: "Backcountry Camping, UT"
     },
     {
-        id: "AC81EBCF-B50B-420E-A286-13C67EE98B4F",
+        camp_id: "AC81EBCF-B50B-420E-A286-13C67EE98B4F",
         code: "fiis",
         name: "Backcountry Camping in the Otis Pike High Dune Wilderness",
         lat: 40.6961609,
@@ -359,7 +359,7 @@ const campsiteData = [
         nameState: "Backcountry Camping in the Otis Pike High Dune Wilderness"
     },
     {
-        id: "9FA0E6D0-85F3-4388-92B1-26F408774F28",
+        camp_id: "9FA0E6D0-85F3-4388-92B1-26F408774F28",
         code: "grsa",
         name: "Backpacking Campsites in the Dunes or Forest",
         lat: 37.77724,
@@ -371,7 +371,7 @@ const campsiteData = [
         nameState: "Backpacking Campsites in the Dunes or Forest, CO"
     },
     {
-        id: "0131994D-CB80-4736-A362-A5ECF862337B",
+        camp_id: "0131994D-CB80-4736-A362-A5ECF862337B",
         code: "grba",
         name: "Baker Creek Campground",
         lat: 38.98573,
@@ -384,7 +384,7 @@ const campsiteData = [
         nameState: "Baker Creek Campground"
     },
     {
-        id: "E02FF569-7F16-4A73-B44F-2A2211C98513",
+        camp_id: "E02FF569-7F16-4A73-B44F-2A2211C98513",
         code: "choh",
         name: "Bald Eagle Island Hiker-Biker Campsite",
         lat: 39.299834,
@@ -396,7 +396,7 @@ const campsiteData = [
         nameState: "Bald Eagle Island Hiker-Biker Campsite, MD"
     },
     {
-        id: "E3D6E089-3B10-46E0-91C8-F7A5C7BBE409",
+        camp_id: "E3D6E089-3B10-46E0-91C8-F7A5C7BBE409",
         code: "grsm",
         name: "Balsam Mountain Campground",
         lat: 35.56543624633261,
@@ -408,7 +408,7 @@ const campsiteData = [
         nameState: "Balsam Mountain Campground, TN"
     },
     {
-        id: "09BC0AFC-F118-44EA-B7E1-1FE0191CA77E",
+        camp_id: "09BC0AFC-F118-44EA-B7E1-1FE0191CA77E",
         code: "biso",
         name: "Bandy Creek Campground",
         lat: 36.4886610474,
@@ -420,7 +420,7 @@ const campsiteData = [
         nameState: "Bandy Creek Campground, TN"
     },
     {
-        id: "4EAF0F61-6361-4CAC-BB23-F93C5CF4A8E2",
+        camp_id: "4EAF0F61-6361-4CAC-BB23-F93C5CF4A8E2",
         code: "bica",
         name: "Barry's Landing & Trail Creek Campground",
         lat: 45.1044128273,
@@ -432,7 +432,7 @@ const campsiteData = [
         nameState: "Barry's Landing & Trail Creek Campground, WY"
     },
     {
-        id: "8F8394D7-51F5-4593-9042-83BC845F0F71",
+        camp_id: "8F8394D7-51F5-4593-9042-83BC845F0F71",
         code: "glba",
         name: "Bartlett Cove Campground",
         lat: 58.450780888,
@@ -444,7 +444,7 @@ const campsiteData = [
         nameState: "Bartlett Cove Campground, AK"
     },
     {
-        id: "6EEB6398-2024-46B2-BFA0-B2A437464B37",
+        camp_id: "6EEB6398-2024-46B2-BFA0-B2A437464B37",
         code: "slbe",
         name: "Bay Campground - South Manitou Island",
         lat: 45.018882,
@@ -456,7 +456,7 @@ const campsiteData = [
         nameState: "Bay Campground - South Manitou Island, MI"
     },
     {
-        id: "700E6BD8-F6CA-4A1A-A361-CFEAF028902A",
+        camp_id: "700E6BD8-F6CA-4A1A-A361-CFEAF028902A",
         code: "asis",
         name: "Bayside Drive-in Campground",
         lat: 38.207737100574306,
@@ -468,7 +468,7 @@ const campsiteData = [
         nameState: "Bayside Drive-in Campground, MD"
     },
     {
-        id: "88FE257F-E2CF-45DC-858E-7DF1B92AFF4F",
+        camp_id: "88FE257F-E2CF-45DC-858E-7DF1B92AFF4F",
         code: "biso",
         name: "Bear Creek Horse Camp",
         lat: 36.6423697456121,
@@ -480,7 +480,7 @@ const campsiteData = [
         nameState: "Bear Creek Horse Camp, KY"
     },
     {
-        id: "CF03117B-0727-4497-885A-0C81227D2F11",
+        camp_id: "CF03117B-0727-4497-885A-0C81227D2F11",
         code: "bicy",
         name: "Bear Island Campground",
         lat: 26.183239748193,
@@ -492,7 +492,7 @@ const campsiteData = [
         nameState: "Bear Island Campground, FL"
     },
     {
-        id: "7108D5E4-1BE3-42A7-846A-7BF3C631E8E9",
+        camp_id: "7108D5E4-1BE3-42A7-846A-7BF3C631E8E9",
         code: "piro",
         name: "Beaver Creek Individual Backpacking Sites",
         lat: 46.577012,
@@ -505,7 +505,7 @@ const campsiteData = [
         nameState: "Beaver Creek Individual Backpacking Sites"
     },
     {
-        id: "D3397636-7BAA-419B-A634-9C53D6AD7E55",
+        camp_id: "D3397636-7BAA-419B-A634-9C53D6AD7E55",
         code: "isro",
         name: "Beaver Island Campground",
         lat: 47.90406144441624,
@@ -517,7 +517,7 @@ const campsiteData = [
         nameState: "Beaver Island Campground, MI"
     },
     {
-        id: "7E99AF3C-193D-4F89-8AA3-A799590CB89C",
+        camp_id: "7E99AF3C-193D-4F89-8AA3-A799590CB89C",
         code: "glca",
         name: "Beehives Campground",
         lat: 36.938243,
@@ -529,7 +529,7 @@ const campsiteData = [
         nameState: "Beehives Campground, AZ"
     },
     {
-        id: "07E7E764-4D4F-4615-ADEB-28AB6BD87471",
+        camp_id: "07E7E764-4D4F-4615-ADEB-28AB6BD87471",
         code: "jotr",
         name: "Belle Campground",
         lat: 34.0019373491,
@@ -541,7 +541,7 @@ const campsiteData = [
         nameState: "Belle Campground, CA"
     },
     {
-        id: "BCFEC04A-6E92-4CC5-844F-B0486E386268",
+        camp_id: "BCFEC04A-6E92-4CC5-844F-B0486E386268",
         code: "deto",
         name: "Belle Fourche River Campground",
         lat: 44.58183403582838,
@@ -553,7 +553,7 @@ const campsiteData = [
         nameState: "Belle Fourche River Campground, WY"
     },
     {
-        id: "4E13DA78-AC48-422A-A82B-444BF0F46C37",
+        camp_id: "4E13DA78-AC48-422A-A82B-444BF0F46C37",
         code: "isro",
         name: "Belle Isle Campground",
         lat: 48.15235177620953,
@@ -565,7 +565,7 @@ const campsiteData = [
         nameState: "Belle Isle Campground, MI"
     },
     {
-        id: "B0B0CF0A-F97A-4DA8-AC53-B72516E0B248",
+        camp_id: "B0B0CF0A-F97A-4DA8-AC53-B72516E0B248",
         code: "piro",
         name: "Benchmark Individual Backpacking Sites",
         lat: 46.647014,
@@ -578,7 +578,7 @@ const campsiteData = [
         nameState: "Benchmark Individual Backpacking Sites"
     },
     {
-        id: "2AFC7456-747A-4F35-8572-418E6E103989",
+        camp_id: "2AFC7456-747A-4F35-8572-418E6E103989",
         code: "goga",
         name: "Bicentennial Campground",
         lat: 37.8245721146453,
@@ -590,7 +590,7 @@ const campsiteData = [
         nameState: "Bicentennial Campground, CA"
     },
     {
-        id: "559F6C6D-8688-4269-9578-86DE30B01674",
+        camp_id: "559F6C6D-8688-4269-9578-86DE30B01674",
         code: "grsm",
         name: "Big Creek Campground",
         lat: 35.7500776458923,
@@ -602,7 +602,7 @@ const campsiteData = [
         nameState: "Big Creek Campground, TN"
     },
     {
-        id: "75E4DC88-1332-456C-9F06-05E9F4E1CAB6",
+        camp_id: "75E4DC88-1332-456C-9F06-05E9F4E1CAB6",
         code: "shen",
         name: "Big Meadows Campground",
         lat: 38.5279623,
@@ -614,7 +614,7 @@ const campsiteData = [
         nameState: "Big Meadows Campground, VA"
     },
     {
-        id: "CC6D39E3-EA7C-4E86-BBD8-3847DD3CF539",
+        camp_id: "CC6D39E3-EA7C-4E86-BBD8-3847DD3CF539",
         code: "kaww",
         name: "Big Seboeis Campsite",
         lat: 45.932131,
@@ -627,7 +627,7 @@ const campsiteData = [
         nameState: "Big Seboeis Campsite"
     },
     {
-        id: "A873A126-9BD6-4979-8FA2-9692AB909A9E",
+        camp_id: "A873A126-9BD6-4979-8FA2-9692AB909A9E",
         code: "kaww",
         name: "Big Spring Brook Campsite",
         lat: 46.0287936106,
@@ -640,7 +640,7 @@ const campsiteData = [
         nameState: "Big Spring Brook Campsite"
     },
     {
-        id: "1CE97109-25B0-4A15-B4B9-3525EF22C1C5",
+        camp_id: "1CE97109-25B0-4A15-B4B9-3525EF22C1C5",
         code: "kaww",
         name: "Big Spring Brook Hut",
         lat: 46.0341848574,
@@ -652,7 +652,7 @@ const campsiteData = [
         nameState: "Big Spring Brook Hut, ME"
     },
     {
-        id: "01F1984D-7345-4D6B-A6C6-D4565B7FBC57",
+        camp_id: "01F1984D-7345-4D6B-A6C6-D4565B7FBC57",
         code: "ozar",
         name: "Big Spring Campground",
         lat: 36.96099384748342,
@@ -664,7 +664,7 @@ const campsiteData = [
         nameState: "Big Spring Campground, MO"
     },
     {
-        id: "26A77456-D7A5-4CD2-8F28-96B3679085C7",
+        camp_id: "26A77456-D7A5-4CD2-8F28-96B3679085C7",
         code: "choh",
         name: "Big Woods Hiker-Biker Campsite",
         lat: 39.492868,
@@ -676,7 +676,7 @@ const campsiteData = [
         nameState: "Big Woods Hiker-Biker Campsite, MD"
     },
     {
-        id: "33204668-CC4F-4F22-8041-CE65C86B47F7",
+        camp_id: "33204668-CC4F-4F22-8041-CE65C86B47F7",
         code: "isro",
         name: "Birch Island Campground",
         lat: 48.110107730247336,
@@ -688,7 +688,7 @@ const campsiteData = [
         nameState: "Birch Island Campground, MN"
     },
     {
-        id: "C4CB1781-C59F-4065-AFE3-F7A327B075A2",
+        camp_id: "C4CB1781-C59F-4065-AFE3-F7A327B075A2",
         code: "pais",
         name: "Bird Island Basin Campground",
         lat: 27.466794,
@@ -700,7 +700,7 @@ const campsiteData = [
         nameState: "Bird Island Basin Campground, TX"
     },
     {
-        id: "A1C3F421-F571-4448-B105-EA5DE06AB1AB",
+        camp_id: "A1C3F421-F571-4448-B105-EA5DE06AB1AB",
         code: "bica",
         name: "Black Canyon Campground",
         lat: 45.25091802928579,
@@ -712,7 +712,7 @@ const campsiteData = [
         nameState: "Black Canyon Campground, MT"
     },
     {
-        id: "BF423B82-7FE4-4101-B86D-9FE12E2315B4",
+        camp_id: "BF423B82-7FE4-4101-B86D-9FE12E2315B4",
         code: "moja",
         name: "Black Canyon Group and Equestrian Campground",
         lat: 35.0486255634651,
@@ -724,7 +724,7 @@ const campsiteData = [
         nameState: "Black Canyon Group and Equestrian Campground, CA"
     },
     {
-        id: "33AA5642-343E-425B-89E9-69A0918A8502",
+        camp_id: "33AA5642-343E-425B-89E9-69A0918A8502",
         code: "jotr",
         name: "Black Rock Campground",
         lat: 34.07298223672509,
@@ -737,7 +737,7 @@ const campsiteData = [
         nameState: "Black Rock Campground"
     },
     {
-        id: "6E127BF1-F2A9-4C59-90FA-C4BED53EA7F5",
+        camp_id: "6E127BF1-F2A9-4C59-90FA-C4BED53EA7F5",
         code: "acad",
         name: "Blackwoods Campground",
         lat: 44.30894404258141,
@@ -749,7 +749,7 @@ const campsiteData = [
         nameState: "Blackwoods Campground, ME"
     },
     {
-        id: "A7E4AEDA-09DB-4E57-A6C0-615867B8A299",
+        camp_id: "A7E4AEDA-09DB-4E57-A6C0-615867B8A299",
         code: "lamr",
         name: "Blue Creek",
         lat: 35.7230720210905,
@@ -761,7 +761,7 @@ const campsiteData = [
         nameState: "Blue Creek, TX"
     },
     {
-        id: "78C8F7E4-CDD1-475C-A540-5EA8E22B1CAC",
+        camp_id: "78C8F7E4-CDD1-475C-A540-5EA8E22B1CAC",
         code: "biso",
         name: "Blue Heron Campground",
         lat: 36.6775354458249,
@@ -773,7 +773,7 @@ const campsiteData = [
         nameState: "Blue Heron Campground, KY"
     },
     {
-        id: "7B17E712-1EA9-4FE8-A8B2-B677ED81B385",
+        camp_id: "7B17E712-1EA9-4FE8-A8B2-B677ED81B385",
         code: "gumo",
         name: "Blue Ridge Wilderness Campground",
         lat: 31.9482587276,
@@ -786,7 +786,7 @@ const campsiteData = [
         nameState: "Blue Ridge Wilderness Campground"
     },
     {
-        id: "7461D94E-67E8-4C2B-BEFF-B93174B8CE06",
+        camp_id: "7461D94E-67E8-4C2B-BEFF-B93174B8CE06",
         code: "lamr",
         name: "Blue West Campground",
         lat: 35.682455887,
@@ -799,7 +799,7 @@ const campsiteData = [
         nameState: "Blue West Campground"
     },
     {
-        id: "289944B3-8869-44CF-BCAC-192CA620B028",
+        camp_id: "289944B3-8869-44CF-BCAC-192CA620B028",
         code: "cong",
         name: "Bluff Campground",
         lat: 33.8323062462,
@@ -812,7 +812,7 @@ const campsiteData = [
         nameState: "Bluff Campground"
     },
     {
-        id: "3974D96D-C28E-4A4B-8CCA-4C0C4747C420",
+        camp_id: "3974D96D-C28E-4A4B-8CCA-4C0C4747C420",
         code: "bisc",
         name: "Boca Chita Campground",
         lat: 25.5231,
@@ -824,7 +824,7 @@ const campsiteData = [
         nameState: "Boca Chita Campground, FL"
     },
     {
-        id: "8D97B7B6-3DB4-4355-8755-2248F20D2E30",
+        camp_id: "8D97B7B6-3DB4-4355-8755-2248F20D2E30",
         code: "chir",
         name: "Bonita Canyon Campground",
         lat: 32.0115507156,
@@ -837,7 +837,7 @@ const campsiteData = [
         nameState: "Bonita Canyon Campground"
     },
     {
-        id: "D0B26144-86D6-4F31-9296-4455BA0A3DDB",
+        camp_id: "D0B26144-86D6-4F31-9296-4455BA0A3DDB",
         code: "lake",
         name: "Boulder Beach Campground",
         lat: 36.0369503293103,
@@ -849,7 +849,7 @@ const campsiteData = [
         nameState: "Boulder Beach Campground, NV"
     },
     {
-        id: "726B4856-7914-4952-BF9F-C3D48D0E5712",
+        camp_id: "726B4856-7914-4952-BF9F-C3D48D0E5712",
         code: "lake",
         name: "Boulder Beach Group Campground",
         lat: 36.0375252007271,
@@ -861,7 +861,7 @@ const campsiteData = [
         nameState: "Boulder Beach Group Campground, NV"
     },
     {
-        id: "EED1CD77-7B8F-478E-89C3-466C44B2D047",
+        camp_id: "EED1CD77-7B8F-478E-89C3-466C44B2D047",
         code: "mnrr",
         name: "Bow Creek Primitive Camping",
         lat: 42.7776,
@@ -874,7 +874,7 @@ const campsiteData = [
         nameState: "Bow Creek Primitive Camping"
     },
     {
-        id: "03CC7ABA-0A4F-4F74-96B8-317F981E3B8E",
+        camp_id: "03CC7ABA-0A4F-4F74-96B8-317F981E3B8E",
         code: "glac",
         name: "Bowman Lake",
         lat: 48.8290464956264,
@@ -886,7 +886,7 @@ const campsiteData = [
         nameState: "Bowman Lake, MT"
     },
     {
-        id: "3EC422D6-D669-4C88-B906-EE5BB4DA2C21",
+        camp_id: "3EC422D6-D669-4C88-B906-EE5BB4DA2C21",
         code: "whis",
         name: "Brandy Creek",
         lat: 40.6173933269,
@@ -898,7 +898,7 @@ const campsiteData = [
         nameState: "Brandy Creek, CA"
     },
     {
-        id: "520460C8-4CDF-4642-BABF-422217A7830D",
+        camp_id: "520460C8-4CDF-4642-BABF-422217A7830D",
         code: "whis",
         name: "Brandy Creek RV",
         lat: 40.61705,
@@ -910,7 +910,7 @@ const campsiteData = [
         nameState: "Brandy Creek RV, CA"
     },
     {
-        id: "530F6E66-6603-41A9-AC88-6E8750923E1A",
+        camp_id: "530F6E66-6603-41A9-AC88-6E8750923E1A",
         code: "cuis",
         name: "Brickhill Bluff Wilderness Campsite",
         lat: 30.8945,
@@ -923,7 +923,7 @@ const campsiteData = [
         nameState: "Brickhill Bluff Wilderness Campsite"
     },
     {
-        id: "58B9591C-4723-4049-B26C-D30C07A6FAD6",
+        camp_id: "58B9591C-4723-4049-B26C-D30C07A6FAD6",
         code: "yose",
         name: "Bridalveil Creek Campground",
         lat: 37.6636576342436,
@@ -936,7 +936,7 @@ const campsiteData = [
         nameState: "Bridalveil Creek Campground"
     },
     {
-        id: "1A5B19B8-BF1F-4803-8D87-2D4091D59A4D",
+        camp_id: "1A5B19B8-BF1F-4803-8D87-2D4091D59A4D",
         code: "yell",
         name: "Bridge Bay Campground",
         lat: 44.534437749236,
@@ -948,7 +948,7 @@ const campsiteData = [
         nameState: "Bridge Bay Campground, WY"
     },
     {
-        id: "66473DAA-0E97-47DE-A5AD-F52B0DFF4E88",
+        camp_id: "66473DAA-0E97-47DE-A5AD-F52B0DFF4E88",
         code: "neri",
         name: "Brooklyn Campground",
         lat: 37.984096,
@@ -960,7 +960,7 @@ const campsiteData = [
         nameState: "Brooklyn Campground, WV"
     },
     {
-        id: "CE630927-F34B-4A58-BD8E-D4ED74E8EDCA",
+        camp_id: "CE630927-F34B-4A58-BD8E-D4ED74E8EDCA",
         code: "katm",
         name: "Brooks Camp Campground",
         lat: 58.5597862997626,
@@ -972,7 +972,7 @@ const campsiteData = [
         nameState: "Brooks Camp Campground, AK"
     },
     {
-        id: "6BCF7F8D-71B1-4B29-A925-5DCFDD0CB38E",
+        camp_id: "6BCF7F8D-71B1-4B29-A925-5DCFDD0CB38E",
         code: "seki",
         name: "Buckeye Flat Campground",
         lat: 36.5224330238,
@@ -984,7 +984,7 @@ const campsiteData = [
         nameState: "Buckeye Flat Campground, CA"
     },
     {
-        id: "9607DA82-8507-4D92-A3DB-5FE81E4CD5C8",
+        camp_id: "9607DA82-8507-4D92-A3DB-5FE81E4CD5C8",
         code: "chic",
         name: "Buckhorn Campground Loop A",
         lat: 34.4291301418,
@@ -997,7 +997,7 @@ const campsiteData = [
         nameState: "Buckhorn Campground Loop A"
     },
     {
-        id: "90EF147D-A958-4C60-9414-193FC048A66C",
+        camp_id: "90EF147D-A958-4C60-9414-193FC048A66C",
         code: "chic",
         name: "Buckhorn Campground Loop B",
         lat: 34.4273650843,
@@ -1010,7 +1010,7 @@ const campsiteData = [
         nameState: "Buckhorn Campground Loop B"
     },
     {
-        id: "FFC17012-1267-43CF-B294-D56FD7F89E47",
+        camp_id: "FFC17012-1267-43CF-B294-D56FD7F89E47",
         code: "chic",
         name: "Buckhorn Campground Loop C",
         lat: 34.4316165287372,
@@ -1023,7 +1023,7 @@ const campsiteData = [
         nameState: "Buckhorn Campground Loop C"
     },
     {
-        id: "E7B327F1-7369-40B6-BC6D-35221C41F9D6",
+        camp_id: "E7B327F1-7369-40B6-BC6D-35221C41F9D6",
         code: "chic",
         name: "Buckhorn Campground Loop D",
         lat: 34.4317472227631,
@@ -1036,7 +1036,7 @@ const campsiteData = [
         nameState: "Buckhorn Campground Loop D"
     },
     {
-        id: "5AA6174E-B53C-46F7-9F7B-CC275DD91CBC",
+        camp_id: "5AA6174E-B53C-46F7-9F7B-CC275DD91CBC",
         code: "buff",
         name: "Buffalo Point Campground",
         lat: 36.0715554992,
@@ -1048,7 +1048,7 @@ const campsiteData = [
         nameState: "Buffalo Point Campground, AR"
     },
     {
-        id: "DAC620D3-F276-4073-9DBF-0815C1A74BBA",
+        camp_id: "DAC620D3-F276-4073-9DBF-0815C1A74BBA",
         code: "lamr",
         name: "Bugbee Canyon",
         lat: 35.7248098991,
@@ -1060,7 +1060,7 @@ const campsiteData = [
         nameState: "Bugbee Canyon, TX"
     },
     {
-        id: "4285489C-2D25-4967-91E7-18597C645A0F",
+        camp_id: "4285489C-2D25-4967-91E7-18597C645A0F",
         code: "glca",
         name: "Bullfrog RV & Campground",
         lat: 37.5199691549143,
@@ -1072,7 +1072,7 @@ const campsiteData = [
         nameState: "Bullfrog RV & Campground, UT"
     },
     {
-        id: "46473049-16E4-4629-A3AD-00E108D06584",
+        camp_id: "46473049-16E4-4629-A3AD-00E108D06584",
         code: "bicy",
         name: "Burns Lake",
         lat: 25.8931188486191,
@@ -1084,7 +1084,7 @@ const campsiteData = [
         nameState: "Burns Lake, FL"
     },
     {
-        id: "46B56158-098F-454B-AA80-B4F167736A29",
+        camp_id: "46B56158-098F-454B-AA80-B4F167736A29",
         code: "neri",
         name: "Burnwood Group Campsite",
         lat: 38.073636,
@@ -1096,7 +1096,7 @@ const campsiteData = [
         nameState: "Burnwood Group Campsite, WV"
     },
     {
-        id: "68B2FAB6-1857-4C5D-B025-1AA2712A7BFD",
+        camp_id: "68B2FAB6-1857-4C5D-B025-1AA2712A7BFD",
         code: "gumo",
         name: "Bush Mountain Wilderness Campground",
         lat: 31.9264160207,
@@ -1109,7 +1109,7 @@ const campsiteData = [
         nameState: "Bush Mountain Wilderness Campground"
     },
     {
-        id: "8AA8C347-B5A7-47F2-A2D4-A37635F8E4B3",
+        camp_id: "8AA8C347-B5A7-47F2-A2D4-A37635F8E4B3",
         code: "lavo",
         name: "Butte Lake Campground",
         lat: 40.5648011556304,
@@ -1121,7 +1121,7 @@ const campsiteData = [
         nameState: "Butte Lake Campground, CA"
     },
     {
-        id: "9CAD260F-57A8-4814-87FA-E61D14108C81",
+        camp_id: "9CAD260F-57A8-4814-87FA-E61D14108C81",
         code: "prwi",
         name: "Cabin Camp 1 (By Reservation Only)",
         lat: 38.59701768873082,
@@ -1133,7 +1133,7 @@ const campsiteData = [
         nameState: "Cabin Camp 1 (By Reservation Only), VA"
     },
     {
-        id: "CBA8D848-FB74-4492-9E5D-E1E4979A976B",
+        camp_id: "CBA8D848-FB74-4492-9E5D-E1E4979A976B",
         code: "prwi",
         name: "Cabin Camp 2 (By Reservation Only)",
         lat: 38.581375041329196,
@@ -1146,7 +1146,7 @@ const campsiteData = [
         nameState: "Cabin Camp 2 (By Reservation Only)"
     },
     {
-        id: "B26D8D06-514E-4230-A314-CF0ED2023B98",
+        camp_id: "B26D8D06-514E-4230-A314-CF0ED2023B98",
         code: "prwi",
         name: "Cabin Camp 3 (By Reservation Only)",
         lat: 38.56367216064515,
@@ -1158,7 +1158,7 @@ const campsiteData = [
         nameState: "Cabin Camp 3 (By Reservation Only), VA"
     },
     {
-        id: "67817EE3-C197-45DD-AEF0-E5E86061691B",
+        camp_id: "67817EE3-C197-45DD-AEF0-E5E86061691B",
         code: "prwi",
         name: "Cabin Camp 4 (By Reservation Only)",
         lat: 38.59150925969603,
@@ -1170,7 +1170,7 @@ const campsiteData = [
         nameState: "Cabin Camp 4 (By Reservation Only), VA"
     },
     {
-        id: "2D5D7B26-19D2-4583-A370-86575EA22C2F",
+        camp_id: "2D5D7B26-19D2-4583-A370-86575EA22C2F",
         code: "prwi",
         name: "Cabin Camp 5 (By Reservation Only)",
         lat: 38.57577906331334,
@@ -1182,7 +1182,7 @@ const campsiteData = [
         nameState: "Cabin Camp 5 (By Reservation Only), VA"
     },
     {
-        id: "EE34E034-775B-4EB2-ABEC-F23AF045D3AB",
+        camp_id: "EE34E034-775B-4EB2-ABEC-F23AF045D3AB",
         code: "choh",
         name: "Cacapon Junction Hiker-Biker Campsite",
         lat: 39.621284,
@@ -1194,7 +1194,7 @@ const campsiteData = [
         nameState: "Cacapon Junction Hiker-Biker Campsite, MD"
     },
     {
-        id: "711EFDE3-F836-4A4C-B58C-D3E28386BDE4",
+        camp_id: "711EFDE3-F836-4A4C-B58C-D3E28386BDE4",
         code: "grsm",
         name: "Cades Cove Campground",
         lat: 35.6027246468281,
@@ -1206,7 +1206,7 @@ const campsiteData = [
         nameState: "Cades Cove Campground, TN"
     },
     {
-        id: "E4E470BE-46E5-44B6-A65A-31CFAAB939DB",
+        camp_id: "E4E470BE-46E5-44B6-A65A-31CFAAB939DB",
         code: "grsm",
         name: "Cades Cove Group Campground",
         lat: 35.6038916470614,
@@ -1218,7 +1218,7 @@ const campsiteData = [
         nameState: "Cades Cove Group Campground, TN"
     },
     {
-        id: "9EBA8986-2A1F-4207-82D1-F155A10BEB35",
+        camp_id: "9EBA8986-2A1F-4207-82D1-F155A10BEB35",
         code: "choh",
         name: "Calico Rocks Hiker-Biker Campsite",
         lat: 39.271168,
@@ -1230,7 +1230,7 @@ const campsiteData = [
         nameState: "Calico Rocks Hiker-Biker Campsite, MD"
     },
     {
-        id: "34A6DDB4-815E-484B-A366-6DB3024920B3",
+        camp_id: "34A6DDB4-815E-484B-A366-6DB3024920B3",
         code: "lake",
         name: "Callville Bay Campground",
         lat: 36.1378088553276,
@@ -1243,7 +1243,7 @@ const campsiteData = [
         nameState: "Callville Bay Campground"
     },
     {
-        id: "8131F253-D893-42FA-A162-4CDE07363AD5",
+        camp_id: "8131F253-D893-42FA-A162-4CDE07363AD5",
         code: "lake",
         name: "Callville Bay RV Park",
         lat: 36.143263,
@@ -1256,7 +1256,7 @@ const campsiteData = [
         nameState: "Callville Bay RV Park"
     },
     {
-        id: "8F36DEB6-298E-4214-A677-064BD457996A",
+        camp_id: "8F36DEB6-298E-4214-A677-064BD457996A",
         code: "yose",
         name: "Camp 4 Campground",
         lat: 37.7420541114337,
@@ -1269,7 +1269,7 @@ const campsiteData = [
         nameState: "Camp 4 Campground"
     },
     {
-        id: "D378656F-72C7-4F18-A3CC-741CBEE9B394",
+        camp_id: "D378656F-72C7-4F18-A3CC-741CBEE9B394",
         code: "cato",
         name: "Camp Greentop",
         lat: 39.64454144059151,
@@ -1281,7 +1281,7 @@ const campsiteData = [
         nameState: "Camp Greentop, MD"
     },
     {
-        id: "9EE76DDC-80AB-4283-BCE9-F85952ED03E1",
+        camp_id: "9EE76DDC-80AB-4283-BCE9-F85952ED03E1",
         code: "cato",
         name: "Camp Misty Mount",
         lat: 39.6418851453505,
@@ -1293,7 +1293,7 @@ const campsiteData = [
         nameState: "Camp Misty Mount, MD"
     },
     {
-        id: "905221FE-094D-4E73-90EB-205CBCAD69AA",
+        camp_id: "905221FE-094D-4E73-90EB-205CBCAD69AA",
         code: "cato",
         name: "Camp Round Meadow",
         lat: 39.6449169814922,
@@ -1305,7 +1305,7 @@ const campsiteData = [
         nameState: "Camp Round Meadow, MD"
     },
     {
-        id: "8B813CCA-9522-490F-A477-1904540C69A3",
+        camp_id: "8B813CCA-9522-490F-A477-1904540C69A3",
         code: "kaww",
         name: "Camping and Huts",
         lat: 46.1249342961593,
@@ -1318,7 +1318,7 @@ const campsiteData = [
         nameState: "Camping and Huts"
     },
     {
-        id: "77D2C8BE-94A4-4550-9823-7183C50F4803",
+        camp_id: "77D2C8BE-94A4-4550-9823-7183C50F4803",
         code: "cana",
         name: "Canaveral National Seashore Backcountry Island Camping",
         lat: 28.92700096310608,
@@ -1330,7 +1330,7 @@ const campsiteData = [
         nameState: "Canaveral National Seashore Backcountry Island Camping, FL"
     },
     {
-        id: "8C42E6D8-1819-46F3-A363-3C8107A1AFAC",
+        camp_id: "8C42E6D8-1819-46F3-A363-3C8107A1AFAC",
         code: "yell",
         name: "Canyon Campground",
         lat: 44.7353837489,
@@ -1342,7 +1342,7 @@ const campsiteData = [
         nameState: "Canyon Campground, WY"
     },
     {
-        id: "ECDA4D3D-F3B7-4ED3-ABEA-9FDE0839E053",
+        camp_id: "ECDA4D3D-F3B7-4ED3-ABEA-9FDE0839E053",
         code: "klgo",
         name: "Canyon City",
         lat: 59.6075624,
@@ -1354,7 +1354,7 @@ const campsiteData = [
         nameState: "Canyon City, AK"
     },
     {
-        id: "85543439-6134-478E-8593-36D96471F5E6",
+        camp_id: "85543439-6134-478E-8593-36D96471F5E6",
         code: "nava",
         name: "Canyon View Campground",
         lat: null,
@@ -1366,7 +1366,7 @@ const campsiteData = [
         nameState: "Canyon View Campground, AZ"
     },
     {
-        id: "3851B132-FEA2-45BD-9F47-CE177AC59489",
+        camp_id: "3851B132-FEA2-45BD-9F47-CE177AC59489",
         code: "seki",
         name: "Canyon View Campground",
         lat: 36.787192938,
@@ -1378,7 +1378,7 @@ const campsiteData = [
         nameState: "Canyon View Campground, CA"
     },
     {
-        id: "C250A435-A020-4A92-A14F-1F9737B25F45",
+        camp_id: "C250A435-A020-4A92-A14F-1F9737B25F45",
         code: "caha",
         name: "Cape Point Campground",
         lat: 35.235775,
@@ -1390,7 +1390,7 @@ const campsiteData = [
         nameState: "Cape Point Campground, NC"
     },
     {
-        id: "BD44D68E-2EAA-456B-842C-75136B035CB1",
+        camp_id: "BD44D68E-2EAA-456B-842C-75136B035CB1",
         code: "isro",
         name: "Caribou Island Campground",
         lat: 48.094571206998936,
@@ -1402,7 +1402,7 @@ const campsiteData = [
         nameState: "Caribou Island Campground, MI"
     },
     {
-        id: "1FEBD642-4DE4-49FD-9DF1-3EF8E499AC03",
+        camp_id: "1FEBD642-4DE4-49FD-9DF1-3EF8E499AC03",
         code: "buff",
         name: "Carver Campground",
         lat: 35.9835736001,
@@ -1414,7 +1414,7 @@ const campsiteData = [
         nameState: "Carver Campground, AR"
     },
     {
-        id: "8B71E7E6-5EF0-49D8-8E33-2578A64A6DD5",
+        camp_id: "8B71E7E6-5EF0-49D8-8E33-2578A64A6DD5",
         code: "grsm",
         name: "Cataloochee Campground",
         lat: 35.631185945507,
@@ -1426,7 +1426,7 @@ const campsiteData = [
         nameState: "Cataloochee Campground, NC"
     },
     {
-        id: "CE2A760B-8A8F-4083-9E6F-3DB38B313145",
+        camp_id: "CE2A760B-8A8F-4083-9E6F-3DB38B313145",
         code: "orca",
         name: "Cave Creek Campground",
         lat: 42.1142851019,
@@ -1438,7 +1438,7 @@ const campsiteData = [
         nameState: "Cave Creek Campground, OR"
     },
     {
-        id: "DF24E937-0AA1-4E65-84A8-3F2458EFD1C5",
+        camp_id: "DF24E937-0AA1-4E65-84A8-3F2458EFD1C5",
         code: "lamr",
         name: "Cedar Canyon Campground",
         lat: 35.79584,
@@ -1450,7 +1450,7 @@ const campsiteData = [
         nameState: "Cedar Canyon Campground, TX"
     },
     {
-        id: "92F73FF4-10AB-45D0-915E-AC0A063420E2",
+        camp_id: "92F73FF4-10AB-45D0-915E-AC0A063420E2",
         code: "badl",
         name: "Cedar Pass Campground",
         lat: 43.744154,
@@ -1462,7 +1462,7 @@ const campsiteData = [
         nameState: "Cedar Pass Campground, SD"
     },
     {
-        id: "4AFE2D11-908E-489B-B8A0-A2222AE752A3",
+        camp_id: "4AFE2D11-908E-489B-B8A0-A2222AE752A3",
         code: "chic",
         name: "Central Campground",
         lat: 34.5049201966,
@@ -1475,7 +1475,7 @@ const campsiteData = [
         nameState: "Central Campground"
     },
     {
-        id: "3D7C58EB-7354-4212-98E7-CCD7C13BC98F",
+        camp_id: "3D7C58EB-7354-4212-98E7-CCD7C13BC98F",
         code: "piro",
         name: "Chapel Individual Backpacking Sites",
         lat: 46.546925,
@@ -1488,7 +1488,7 @@ const campsiteData = [
         nameState: "Chapel Individual Backpacking Sites"
     },
     {
-        id: "3E73BA85-7545-4A30-9ACD-A9E3C073DB2A",
+        camp_id: "3E73BA85-7545-4A30-9ACD-A9E3C073DB2A",
         code: "lamr",
         name: "Chimney Hollow Campground",
         lat: 35.6918602938,
@@ -1500,7 +1500,7 @@ const campsiteData = [
         nameState: "Chimney Hollow Campground, TX"
     },
     {
-        id: "ECF46E27-F335-4766-9140-56A8D2AAC209",
+        camp_id: "ECF46E27-F335-4766-9140-56A8D2AAC209",
         code: "isro",
         name: "Chippewa Harbor Campground",
         lat: 48.02936725450616,
@@ -1512,7 +1512,7 @@ const campsiteData = [
         nameState: "Chippewa Harbor Campground, MI"
     },
     {
-        id: "B9D70C3C-FCA6-4E10-A654-8D0D2B38CAA7",
+        camp_id: "B9D70C3C-FCA6-4E10-A654-8D0D2B38CAA7",
         code: "choh",
         name: "Chisel Branch Hiker-Biker Campsite",
         lat: 39.102158,
@@ -1524,7 +1524,7 @@ const campsiteData = [
         nameState: "Chisel Branch Hiker-Biker Campsite, MD"
     },
     {
-        id: "127199AC-A753-4B49-B3FF-1F8484B61CBE",
+        camp_id: "127199AC-A753-4B49-B3FF-1F8484B61CBE",
         code: "bibe",
         name: "Chisos Basin Campground",
         lat: 29.275900792177,
@@ -1537,7 +1537,7 @@ const campsiteData = [
         nameState: "Chisos Basin Campground"
     },
     {
-        id: "5529F57E-216A-47FB-B513-067410887BC0",
+        camp_id: "5529F57E-216A-47FB-B513-067410887BC0",
         code: "prwi",
         name: "Chopawamsic Backcountry Area",
         lat: 38.5587614251363,
@@ -1549,7 +1549,7 @@ const campsiteData = [
         nameState: "Chopawamsic Backcountry Area, VA"
     },
     {
-        id: "B6981A2D-2C0B-47DF-B7F8-67A25A35D24A",
+        camp_id: "B6981A2D-2C0B-47DF-B7F8-67A25A35D24A",
         code: "cure",
         name: "Cimarron Campground",
         lat: 38.4442894775407,
@@ -1562,7 +1562,7 @@ const campsiteData = [
         nameState: "Cimarron Campground"
     },
     {
-        id: "14084144-35CA-4862-96D8-72364E4A638B",
+        camp_id: "14084144-35CA-4862-96D8-72364E4A638B",
         code: "samo",
         name: "Circle X Ranch Campground -    code",
         lat: 34.1112789977,
@@ -1574,19 +1574,19 @@ const campsiteData = [
         nameState: "Circle X Ranch Campground -   code, CA"
     },
     {
-        id: "849C892E-19ED-4539-8591-CF2D1670D380",
+        camp_camp_id: "849C892E-19ED-4539-8591-CF2D1670D380",
         code: "ciro",
         name: "City of Rocks Campground",
         lat: 42.067203,
         lng: -113.701382,
         latlong: "{lat:42.067203, lng:-113.701382}",
-        state: id,
+        state: "ID",
         zipCode: 83312,
         city: "Almo",
         nameState: "City of Rocks Campground, ID"
     },
     {
-        id: "E9451131-5026-4E61-B72E-F385A0C6AC48",
+        camp_id: "E9451131-5026-4E61-B72E-F385A0C6AC48",
         code: "piro",
         name: "Cliff Group Backpacking Site",
         lat: 46.48567,
@@ -1599,7 +1599,7 @@ const campsiteData = [
         nameState: "Cliff Group Backpacking Site"
     },
     {
-        id: "B9D839A2-7500-4CFC-9EB7-1A1C8F7B7425",
+        camp_id: "B9D839A2-7500-4CFC-9EB7-1A1C8F7B7425",
         code: "piro",
         name: "Cliffs Individual Backpacking Sites",
         lat: 46.473431,
@@ -1612,7 +1612,7 @@ const campsiteData = [
         nameState: "Cliffs Individual Backpacking Sites"
     },
     {
-        id: "79EC784A-70FD-4C73-BD0E-C5D0C96F4F57",
+        camp_id: "79EC784A-70FD-4C73-BD0E-C5D0C96F4F57",
         code: "laro",
         name: "Cloverleaf Campground",
         lat: 48.2971109735789,
@@ -1624,7 +1624,7 @@ const campsiteData = [
         nameState: "Cloverleaf Campground, WA"
     },
     {
-        id: "6EBE4D11-5079-45B7-BDA5-84280A8EE7DF",
+        camp_id: "6EBE4D11-5079-45B7-BDA5-84280A8EE7DF",
         code: "pore",
         name: "Coast Campground",
         lat: 38.0171728059185,
@@ -1636,7 +1636,7 @@ const campsiteData = [
         nameState: "Coast Campground, CA"
     },
     {
-        id: "E43BEB8F-1EE3-4CDD-88EB-ED8262628F95",
+        camp_id: "E43BEB8F-1EE3-4CDD-88EB-ED8262628F95",
         code: "seki",
         name: "Cold Springs Campground",
         lat: 36.45130196180305,
@@ -1648,7 +1648,7 @@ const campsiteData = [
         nameState: "Cold Springs Campground, CA"
     },
     {
-        id: "70748762-AEEB-4057-82DD-B0509183305A",
+        camp_id: "70748762-AEEB-4057-82DD-B0509183305A",
         code: "chic",
         name: "Cold Springs Campground",
         lat: 34.5013484424,
@@ -1661,7 +1661,7 @@ const campsiteData = [
         nameState: "Cold Springs Campground"
     },
     {
-        id: "1410EA4F-FA47-40E0-9C51-B7C012EFD228",
+        camp_id: "1410EA4F-FA47-40E0-9C51-B7C012EFD228",
         code: "noca",
         name: "Colonial Creek North Campground",
         lat: 48.691,
@@ -1673,7 +1673,7 @@ const campsiteData = [
         nameState: "Colonial Creek North Campground, WA"
     },
     {
-        id: "24D589C4-88AF-4BFA-8A02-1FF9E8134B04",
+        camp_id: "24D589C4-88AF-4BFA-8A02-1FF9E8134B04",
         code: "noca",
         name: "Colonial Creek South Campground",
         lat: 48.687,
@@ -1685,7 +1685,7 @@ const campsiteData = [
         nameState: "Colonial Creek South Campground, WA"
     },
     {
-        id: "3DC83C15-25CE-488E-816B-64FEBB1F79FF",
+        camp_id: "3DC83C15-25CE-488E-816B-64FEBB1F79FF",
         code: "glca",
         name: "Colorado River Primitive Camping Between Glen Canyon Dam and Lees Ferry",
         lat: 36.86618866356771,
@@ -1697,7 +1697,7 @@ const campsiteData = [
         nameState: "Colorado River Primitive Camping Between Glen Canyon Dam and Lees Ferry, AZ"
     },
     {
-        id: "35B51EB0-EB3E-4C41-9753-2C97CFDDAD93",
+        camp_id: "35B51EB0-EB3E-4C41-9753-2C97CFDDAD93",
         code: "grte",
         name: "Colter Bay Campground",
         lat: 43.9074780505115,
@@ -1709,7 +1709,7 @@ const campsiteData = [
         nameState: "Colter Bay Campground, WY"
     },
     {
-        id: "2E829940-0ECC-49A7-85FB-F0AE8D45EBA0",
+        camp_id: "2E829940-0ECC-49A7-85FB-F0AE8D45EBA0",
         code: "grte",
         name: "Colter Bay RV Park",
         lat: 43.905642,
@@ -1721,7 +1721,7 @@ const campsiteData = [
         nameState: "Colter Bay RV Park, WY"
     },
     {
-        id: "DF1FBE98-BC80-4770-84A3-F207D1F8A27A",
+        camp_id: "DF1FBE98-BC80-4770-84A3-F207D1F8A27A",
         code: "grte",
         name: "Colter Bay Tent Village",
         lat: 43.904150265109244,
@@ -1733,7 +1733,7 @@ const campsiteData = [
         nameState: "Colter Bay Tent Village, WY"
     },
     {
-        id: "B3B0C4BD-BB79-40AA-B678-B953294BB9A3",
+        camp_id: "B3B0C4BD-BB79-40AA-B678-B953294BB9A3",
         code: "grsm",
         name: "Cosby Campground",
         lat: 35.7545448462525,
@@ -1745,7 +1745,7 @@ const campsiteData = [
         nameState: "Cosby Campground, TN"
     },
     {
-        id: "D7143083-B16F-45C0-8493-E717CEDA7C3B",
+        camp_id: "D7143083-B16F-45C0-8493-E717CEDA7C3B",
         code: "bibe",
         name: "Cottonwood Campground",
         lat: 29.13678040375,
@@ -1758,7 +1758,7 @@ const campsiteData = [
         nameState: "Cottonwood Campground"
     },
     {
-        id: "9B5A7B2B-E147-429F-B52F-EDBF1B48EBB0",
+        camp_id: "9B5A7B2B-E147-429F-B52F-EDBF1B48EBB0",
         code: "jotr",
         name: "Cottonwood Campground",
         lat: 33.7448801298196,
@@ -1770,7 +1770,7 @@ const campsiteData = [
         nameState: "Cottonwood Campground, CA"
     },
     {
-        id: "A9F2297C-AFF2-48EA-BD2A-2BBE35BDE306",
+        camp_id: "A9F2297C-AFF2-48EA-BD2A-2BBE35BDE306",
         code: "thro",
         name: "Cottonwood Campground",
         lat: 46.949934505,
@@ -1783,7 +1783,7 @@ const campsiteData = [
         nameState: "Cottonwood Campground"
     },
     {
-        id: "B6682425-0D1C-4646-846F-1C0E248CBCFA",
+        camp_id: "B6682425-0D1C-4646-846F-1C0E248CBCFA",
         code: "lake",
         name: "Cottonwood Cove Campground",
         lat: 35.487755719796056,
@@ -1796,7 +1796,7 @@ const campsiteData = [
         nameState: "Cottonwood Cove Campground"
     },
     {
-        id: "9D67A3A2-CFAB-45A1-8E9E-5A19DE56137F",
+        camp_id: "9D67A3A2-CFAB-45A1-8E9E-5A19DE56137F",
         code: "mora",
         name: "Cougar Rock Campground",
         lat: 46.767606803,
@@ -1809,7 +1809,7 @@ const campsiteData = [
         nameState: "Cougar Rock Campground"
     },
     {
-        id: "894E2817-C7C9-48DA-BABF-3C1679567835",
+        camp_id: "894E2817-C7C9-48DA-BABF-3C1679567835",
         code: "piro",
         name: "Coves Group Backpacking Site",
         lat: 46.56088,
@@ -1822,7 +1822,7 @@ const campsiteData = [
         nameState: "Coves Group Backpacking Site"
     },
     {
-        id: "A451A935-35BF-4391-96E5-B9C8D492FCFE",
+        camp_id: "A451A935-35BF-4391-96E5-B9C8D492FCFE",
         code: "piro",
         name: "Coves Individual Backpacking Sites",
         lat: 46.568171,
@@ -1835,7 +1835,7 @@ const campsiteData = [
         nameState: "Coves Individual Backpacking Sites"
     },
     {
-        id: "B7FFF416-1181-4457-931B-6F9920C0EFE7",
+        camp_id: "B7FFF416-1181-4457-931B-6F9920C0EFE7",
         code: "blri",
         name: "Crabtree Falls Campground",
         lat: 35.815386045639634,
@@ -1847,7 +1847,7 @@ const campsiteData = [
         nameState: "Crabtree Falls Campground, NC"
     },
     {
-        id: "B1396AAB-EA01-4A6C-B45E-A9BBA51A89A1",
+        camp_id: "B1396AAB-EA01-4A6C-B45E-A9BBA51A89A1",
         code: "yose",
         name: "Crane Flat Campground",
         lat: 37.7497960831966,
@@ -1860,7 +1860,7 @@ const campsiteData = [
         nameState: "Crane Flat Campground"
     },
     {
-        id: "4A67F766-D8C0-451B-86AD-CD7DD878EB80",
+        camp_id: "4A67F766-D8C0-451B-86AD-CD7DD878EB80",
         code: "whis",
         name: "Crystal Creek",
         lat: 40.6422,
@@ -1872,7 +1872,7 @@ const campsiteData = [
         nameState: "Crystal Creek, CA"
     },
     {
-        id: "6D44AAC6-2A52-416E-8087-6202B8AD52BB",
+        camp_id: "6D44AAC6-2A52-416E-8087-6202B8AD52BB",
         code: "seki",
         name: "Crystal Springs Campground",
         lat: 36.7453277426348,
@@ -1884,7 +1884,7 @@ const campsiteData = [
         nameState: "Crystal Springs Campground, CA"
     },
     {
-        id: "4FA8CCF3-5D38-41C0-A77F-06ADCB37BA53",
+        camp_id: "4FA8CCF3-5D38-41C0-A77F-06ADCB37BA53",
         code: "choh",
         name: "Cumberland Valley Hiker-Biker Campsite",
         lat: 39.562141,
@@ -1896,7 +1896,7 @@ const campsiteData = [
         nameState: "Cumberland Valley Hiker-Biker Campsite, MD"
     },
     {
-        id: "4624D185-108D-460F-9331-5EC95512BEC7",
+        camp_id: "4624D185-108D-460F-9331-5EC95512BEC7",
         code: "glac",
         name: "Cut Bank",
         lat: 48.6059915912156,
@@ -1908,7 +1908,7 @@ const campsiteData = [
         nameState: "Cut Bank, MT"
     },
     {
-        id: "70336B82-9090-4BFA-8D3D-47BDC91F4542",
+        camp_id: "70336B82-9090-4BFA-8D3D-47BDC91F4542",
         code: "slbe",
         name: "D. H. Day Campground",
         lat: 44.89615,
@@ -1920,7 +1920,7 @@ const campsiteData = [
         nameState: "D. H. Day Campground, MI"
     },
     {
-        id: "FD182876-4CAF-4630-8E88-0B710A434AE4",
+        camp_id: "FD182876-4CAF-4630-8E88-0B710A434AE4",
         code: "slbe",
         name: "D. H. Day Campground Group Campground",
         lat: 44.89615,
@@ -1932,7 +1932,7 @@ const campsiteData = [
         nameState: "D. H. Day Campground Group Campground, MI"
     },
     {
-        id: "808BBAC7-F662-47F6-B2BC-2BEF78B73A69",
+        camp_id: "808BBAC7-F662-47F6-B2BC-2BEF78B73A69",
         code: "isro",
         name: "Daisy Farm Campground",
         lat: 48.09208065079491,
@@ -1944,7 +1944,7 @@ const campsiteData = [
         nameState: "Daisy Farm Campground, MI"
     },
     {
-        id: "E33743CA-5B4A-4DC6-84D8-BCA4984BFE67",
+        camp_id: "E33743CA-5B4A-4DC6-84D8-BCA4984BFE67",
         code: "guis",
         name: "Davis Bayou Campground",
         lat: 30.397808,
@@ -1956,7 +1956,7 @@ const campsiteData = [
         nameState: "Davis Bayou Campground, MS"
     },
     {
-        id: "A7C0F001-EDB5-4832-BB9A-5DF82A4EC57A",
+        camp_id: "A7C0F001-EDB5-4832-BB9A-5DF82A4EC57A",
         code: "bica",
         name: "Dayboard 9 Campground",
         lat: 45.2651648,
@@ -1968,7 +1968,7 @@ const campsiteData = [
         nameState: "Dayboard 9 Campground, MT"
     },
     {
-        id: "2266A16D-7440-4B19-840A-B8B570FFF31F",
+        camp_id: "2266A16D-7440-4B19-840A-B8B570FFF31F",
         code: "grsm",
         name: "Deep Creek Campground",
         lat: 35.46031234620795,
@@ -1980,7 +1980,7 @@ const campsiteData = [
         nameState: "Deep Creek Campground, NC"
     },
     {
-        id: "522A398C-D05C-4F67-B1E4-E4F8DF7ED18D",
+        camp_id: "522A398C-D05C-4F67-B1E4-E4F8DF7ED18D",
         code: "dino",
         name: "Deerlodge Park Campground",
         lat: 40.4464807631,
@@ -1992,7 +1992,7 @@ const campsiteData = [
         nameState: "Deerlodge Park Campground, CO"
     },
     {
-        id: "889D3F1F-C595-40D2-B66B-5DA52128DB6A",
+        camp_id: "889D3F1F-C595-40D2-B66B-5DA52128DB6A",
         code: "grca",
         name: "Desert View Campground (Reservations Required)",
         lat: 36.03893681567372,
@@ -2004,7 +2004,7 @@ const campsiteData = [
         nameState: "Desert View Campground (Reservations Required), AZ"
     },
     {
-        id: "F41195B6-57A5-43FA-9509-CE4AE75FFA95",
+        camp_id: "F41195B6-57A5-43FA-9509-CE4AE75FFA95",
         code: "choh",
         name: "Devils Alley Hiker-Biker Campsite",
         lat: 39.622156,
@@ -2016,7 +2016,7 @@ const campsiteData = [
         nameState: "Devils Alley Hiker-Biker Campsite, MD"
     },
     {
-        id: "FE998695-1CD4-42C2-A57C-0B8B257BBE09",
+        camp_id: "FE998695-1CD4-42C2-A57C-0B8B257BBE09",
         code: "arch",
         name: "Devils Garden Campground",
         lat: 38.7773329174,
@@ -2028,7 +2028,7 @@ const campsiteData = [
         nameState: "Devils Garden Campground, UT"
     },
     {
-        id: "DC29D4FD-0E76-41AF-8A2E-74FA3626C3EF",
+        camp_id: "DC29D4FD-0E76-41AF-8A2E-74FA3626C3EF",
         code: "dewa",
         name: "Dingmans Campground",
         lat: 41.2110633,
@@ -2040,7 +2040,7 @@ const campsiteData = [
         nameState: "Dingmans Campground, PA"
     },
     {
-        id: "C46D4DBB-5B16-4F5A-BBFA-34C350639B98",
+        camp_id: "C46D4DBB-5B16-4F5A-BBFA-34C350639B98",
         code: "gumo",
         name: "Dog Canyon Campground",
         lat: 31.9948983481,
@@ -2052,7 +2052,7 @@ const campsiteData = [
         nameState: "Dog Canyon Campground, TX"
     },
     {
-        id: "E2472655-E82D-4C38-A9B6-0C374BEE7828",
+        camp_id: "E2472655-E82D-4C38-A9B6-0C374BEE7828",
         code: "seki",
         name: "Dorst Creek Campground",
         lat: 36.6361712129834,
@@ -2064,7 +2064,7 @@ const campsiteData = [
         nameState: "Dorst Creek Campground, CA"
     },
     {
-        id: "85AB5EC6-9BBC-4369-9CFA-A51A6D4498A0",
+        camp_id: "85AB5EC6-9BBC-4369-9CFA-A51A6D4498A0",
         code: "olym",
         name: "Dosewallips Campground (Walk-In Only)",
         lat: 47.7373029,
@@ -2076,7 +2076,7 @@ const campsiteData = [
         nameState: "Dosewallips Campground (Walk-In Only), WA"
     },
     {
-        id: "298C9FE2-25B3-4A60-BE23-76E43A703FC5",
+        camp_id: "298C9FE2-25B3-4A60-BE23-76E43A703FC5",
         code: "blri",
         name: "Doughton Park Campground",
         lat: 36.42949264609475,
@@ -2088,7 +2088,7 @@ const campsiteData = [
         nameState: "Doughton Park Campground, NC"
     },
     {
-        id: "AC12C7C9-38CD-4F10-828D-8C903F1C7926",
+        camp_id: "AC12C7C9-38CD-4F10-828D-8C903F1C7926",
         code: "sagu",
         name: "Douglas Spring",
         lat: 32.227981,
@@ -2100,7 +2100,7 @@ const campsiteData = [
         nameState: "Douglas Spring, AZ"
     },
     {
-        id: "4C4E2EBD-9A3D-4E59-A7D8-1E68EB5EA501",
+        camp_id: "4C4E2EBD-9A3D-4E59-A7D8-1E68EB5EA501",
         code: "whis",
         name: "Dry Creek Group Campground",
         lat: 40.6253167,
@@ -2113,7 +2113,7 @@ const campsiteData = [
         nameState: "Dry Creek Group Campground"
     },
     {
-        id: "1D41C0D1-7DA9-44AE-8692-12A63255B0D6",
+        camp_id: "1D41C0D1-7DA9-44AE-8692-12A63255B0D6",
         code: "cure",
         name: "Dry Gulch Campground",
         lat: 38.4841144836276,
@@ -2126,7 +2126,7 @@ const campsiteData = [
         nameState: "Dry Gulch Campground"
     },
     {
-        id: "C1388F86-68A9-4C1C-85C2-193CD4BD3EE1",
+        camp_id: "C1388F86-68A9-4C1C-85C2-193CD4BD3EE1",
         code: "acad",
         name: "Duck Harbor Campground",
         lat: 44.0277948996318,
@@ -2138,7 +2138,7 @@ const campsiteData = [
         nameState: "Duck Harbor Campground, ME"
     },
     {
-        id: "6AAEA981-168E-4F68-AABC-5140D75F05F4",
+        camp_id: "6AAEA981-168E-4F68-AABC-5140D75F05F4",
         code: "grba",
         name: "Dump Station",
         lat: 39.006544,
@@ -2151,7 +2151,7 @@ const campsiteData = [
         nameState: "Dump Station"
     },
     {
-        id: "665A07F7-CD99-401A-8674-4C65AC41954C",
+        camp_id: "665A07F7-CD99-401A-8674-4C65AC41954C",
         code: "indu",
         name: "Dunbar Group Site",
         lat: 41.68266002966044,
@@ -2163,7 +2163,7 @@ const campsiteData = [
         nameState: "Dunbar Group Site, IN"
     },
     {
-        id: "0DFCB514-30BF-4FFE-B944-65FC6F41D214",
+        camp_id: "0DFCB514-30BF-4FFE-B944-65FC6F41D214",
         code: "isro",
         name: "Duncan Bay Campground",
         lat: 48.150633110830206,
@@ -2175,7 +2175,7 @@ const campsiteData = [
         nameState: "Duncan Bay Campground, MI"
     },
     {
-        id: "3950A5D1-88F1-4727-857F-91473917C23F",
+        camp_id: "3950A5D1-88F1-4727-857F-91473917C23F",
         code: "isro",
         name: "Duncan Narrows Campground",
         lat: 48.169312119814265,
@@ -2187,7 +2187,7 @@ const campsiteData = [
         nameState: "Duncan Narrows Campground, MI"
     },
     {
-        id: "79E68F95-541A-49F8-8CC3-97C07A59670E",
+        camp_id: "79E68F95-541A-49F8-8CC3-97C07A59670E",
         code: "shen",
         name: "Dundo Group Campground",
         lat: 38.2341,
@@ -2199,7 +2199,7 @@ const campsiteData = [
         nameState: "Dundo Group Campground, VA"
     },
     {
-        id: "B526C74A-2287-48D2-A480-F4FD2F832CE5",
+        camp_id: "B526C74A-2287-48D2-A480-F4FD2F832CE5",
         code: "indu",
         name: "Dunewood Campground",
         lat: 41.671966000578976,
@@ -2211,7 +2211,7 @@ const campsiteData = [
         nameState: "Dunewood Campground, IN"
     },
     {
-        id: "DFE57C24-C7F4-4F2D-87B7-54A81D20D2E4",
+        camp_id: "DFE57C24-C7F4-4F2D-87B7-54A81D20D2E4",
         code: "klgo",
         name: "Dyea Campground",
         lat: 59.5072499,
@@ -2224,7 +2224,7 @@ const campsiteData = [
         nameState: "Dyea Campground"
     },
     {
-        id: "4C757AF8-2F39-49A8-A624-F63EB7F5BA90",
+        camp_id: "4C757AF8-2F39-49A8-A624-F63EB7F5BA90",
         code: "isro",
         name: "East Chickenbone Campground",
         lat: 48.073437514172,
@@ -2236,7 +2236,7 @@ const campsiteData = [
         nameState: "East Chickenbone Campground, MI"
     },
     {
-        id: "B9E356D7-B123-45F9-961B-F6AAE98FD6E0",
+        camp_id: "B9E356D7-B123-45F9-961B-F6AAE98FD6E0",
         code: "cure",
         name: "East Elk Creek Group Campground",
         lat: 38.484167,
@@ -2249,7 +2249,7 @@ const campsiteData = [
         nameState: "East Elk Creek Group Campground"
     },
     {
-        id: "C7040322-AF55-456C-A03B-5EF85E48E83B",
+        camp_id: "C7040322-AF55-456C-A03B-5EF85E48E83B",
         code: "cure",
         name: "East Portal Campground",
         lat: 38.527059599536,
@@ -2262,7 +2262,7 @@ const campsiteData = [
         nameState: "East Portal Campground"
     },
     {
-        id: "FB7ECE1E-C9F6-4841-B52A-071DFBD4FAFC",
+        camp_id: "FB7ECE1E-C9F6-4841-B52A-071DFBD4FAFC",
         code: "blca",
         name: "East Portal Campground",
         lat: 38.526896,
@@ -2274,7 +2274,7 @@ const campsiteData = [
         nameState: "East Portal Campground, CO"
     },
     {
-        id: "FBCE7DA5-896A-4A5B-939E-4AEACC63CC76",
+        camp_id: "FBCE7DA5-896A-4A5B-939E-4AEACC63CC76",
         code: "lake",
         name: "Echo Bay Campground",
         lat: 36.3081373406848,
@@ -2286,7 +2286,7 @@ const campsiteData = [
         nameState: "Echo Bay Campground, NV"
     },
     {
-        id: "32C0E210-8389-49F0-BFDF-B434678FCFEE",
+        camp_id: "32C0E210-8389-49F0-BFDF-B434678FCFEE",
         code: "dino",
         name: "Echo Park Campground",
         lat: 40.5208668444,
@@ -2298,7 +2298,7 @@ const campsiteData = [
         nameState: "Echo Park Campground, CO"
     },
     {
-        id: "DEAF023E-A2A4-4656-BB05-FC71582BE67D",
+        camp_id: "DEAF023E-A2A4-4656-BB05-FC71582BE67D",
         code: "elmo",
         name: "El Morro Campground",
         lat: 35.0368936454882,
@@ -2310,7 +2310,7 @@ const campsiteData = [
         nameState: "El Morro Campground, NM"
     },
     {
-        id: "B2E3FA84-A72E-4193-95E9-A53557BBDCF5",
+        camp_id: "B2E3FA84-A72E-4193-95E9-A53557BBDCF5",
         code: "cure",
         name: "Elk Creek Campground",
         lat: 38.4674202781,
@@ -2323,7 +2323,7 @@ const campsiteData = [
         nameState: "Elk Creek Campground"
     },
     {
-        id: "46F315CE-1A6C-4600-BDE0-98D044A55172",
+        camp_id: "46F315CE-1A6C-4600-BDE0-98D044A55172",
         code: "wica",
         name: "Elk Mountain Campground",
         lat: 43.565470717,
@@ -2335,7 +2335,7 @@ const campsiteData = [
         nameState: "Elk Mountain Campground, SD"
     },
     {
-        id: "1734D80A-77AA-4392-A53B-36206595BDCC",
+        camp_id: "1734D80A-77AA-4392-A53B-36206595BDCC",
         code: "redw",
         name: "Elk Prairie Campgound",
         lat: 41.3598248532,
@@ -2347,7 +2347,7 @@ const campsiteData = [
         nameState: "Elk Prairie Campgound, CA"
     },
     {
-        id: "63D37502-C1A6-44B7-A2C3-C4F784C03318",
+        camp_id: "63D37502-C1A6-44B7-A2C3-C4F784C03318",
         code: "grsm",
         name: "Elkmont Campground",
         lat: 35.65875714556928,
@@ -2359,7 +2359,7 @@ const campsiteData = [
         nameState: "Elkmont Campground, TN"
     },
     {
-        id: "1B42DF20-EB0E-4F6A-8094-BCF63BA6B54F",
+        camp_id: "1B42DF20-EB0E-4F6A-8094-BCF63BA6B54F",
         code: "grsm",
         name: "Elkmont Group Campground",
         lat: 35.6596758456,
@@ -2371,7 +2371,7 @@ const campsiteData = [
         nameState: "Elkmont Group Campground, TN"
     },
     {
-        id: "D5A0E41F-CF3C-4669-B774-C71AE16199A1",
+        camp_id: "D5A0E41F-CF3C-4669-B774-C71AE16199A1",
         code: "bisc",
         name: "Elliott Key Campground",
         lat: 25.4535845128,
@@ -2384,7 +2384,7 @@ const campsiteData = [
         nameState: "Elliott Key Campground"
     },
     {
-        id: "F448D6D4-AA8F-48BA-B5B8-FEC826541394",
+        camp_id: "F448D6D4-AA8F-48BA-B5B8-FEC826541394",
         code: "deva",
         name: "Emigrant Campground",
         lat: 36.4965230407409,
@@ -2396,7 +2396,7 @@ const campsiteData = [
         nameState: "Emigrant Campground, CA"
     },
     {
-        id: "74277392-66F4-4FEB-B95B-A9FD2B6D4258",
+        camp_id: "74277392-66F4-4FEB-B95B-A9FD2B6D4258",
         code: "buff",
         name: "Erbie Campground",
         lat: 36.0713269988,
@@ -2408,7 +2408,7 @@ const campsiteData = [
         nameState: "Erbie Campground, AR"
     },
     {
-        id: "E8A7594F-7F0C-4E5D-8465-2C4A4A055855",
+        camp_id: "E8A7594F-7F0C-4E5D-8465-2C4A4A055855",
         code: "kaww",
         name: "Esker Campsite",
         lat: 45.9083960065,
@@ -2420,7 +2420,7 @@ const campsiteData = [
         nameState: "Esker Campsite, ME"
     },
     {
-        id: "7E6E57BE-02ED-4440-AE5C-1BD6A8DE82C1",
+        camp_id: "7E6E57BE-02ED-4440-AE5C-1BD6A8DE82C1",
         code: "deva",
         name: "Eureka Dunes Campground (Primitive)",
         lat: 37.112,
@@ -2432,7 +2432,7 @@ const campsiteData = [
         nameState: "Eureka Dunes Campground (Primitive), CA"
     },
     {
-        id: "41D2DEC1-F454-45FD-9239-B0E91C665BE7",
+        camp_id: "41D2DEC1-F454-45FD-9239-B0E91C665BE7",
         code: "laro",
         name: "Evans Campground",
         lat: 48.6988181471821,
@@ -2444,7 +2444,7 @@ const campsiteData = [
         nameState: "Evans Campground, WA"
     },
     {
-        id: "1036CB25-3FAD-48EA-A264-E197016C6D77",
+        camp_id: "1036CB25-3FAD-48EA-A264-E197016C6D77",
         code: "laro",
         name: "Evans Group Site",
         lat: 48.701517,
@@ -2456,7 +2456,7 @@ const campsiteData = [
         nameState: "Evans Group Site, WA"
     },
     {
-        id: "CA193220-AEAD-4170-BBD3-1275AE5770DD",
+        camp_id: "CA193220-AEAD-4170-BBD3-1275AE5770DD",
         code: "choh",
         name: "Evitts Creek Hiker-Biker Campsite",
         lat: 39.616979,
@@ -2468,7 +2468,7 @@ const campsiteData = [
         nameState: "Evitts Creek Hiker-Biker Campsite, MD"
     },
     {
-        id: "5F2A45B9-4C98-4710-B06B-30D23ACF5E79",
+        camp_id: "5F2A45B9-4C98-4710-B06B-30D23ACF5E79",
         code: "kefj",
         name: "Exit Glacier Campground",
         lat: 60.1909682429161,
@@ -2480,7 +2480,7 @@ const campsiteData = [
         nameState: "Exit Glacier Campground, AK"
     },
     {
-        id: "F15D3521-C877-4DA6-BE0A-E78B83D39AC7",
+        camp_id: "F15D3521-C877-4DA6-BE0A-E78B83D39AC7",
         code: "olym",
         name: "Fairholme Campground",
         lat: 48.0700799992,
@@ -2492,7 +2492,7 @@ const campsiteData = [
         nameState: "Fairholme Campground, WA"
     },
     {
-        id: "D8A2C986-6DAD-48A9-8A0D-93133EE7C4C5",
+        camp_id: "D8A2C986-6DAD-48A9-8A0D-93133EE7C4C5",
         code: "isro",
         name: "Feldtmann Lake Campground",
         lat: 47.84857314451423,
@@ -2504,7 +2504,7 @@ const campsiteData = [
         nameState: "Feldtmann Lake Campground, MI"
     },
     {
-        id: "7918FDCD-28B1-4A0B-AD5A-86EAAB88CFB6",
+        camp_id: "7918FDCD-28B1-4A0B-AD5A-86EAAB88CFB6",
         code: "choh",
         name: "Fifteenmile Creek Campground",
         lat: 39.6253030493,
@@ -2517,7 +2517,7 @@ const campsiteData = [
         nameState: "Fifteenmile Creek Campground"
     },
     {
-        id: "3CD41217-24F5-4D7B-B34A-436506EEC448",
+        camp_id: "3CD41217-24F5-4D7B-B34A-436506EEC448",
         code: "klgo",
         name: "Finnegan's Point",
         lat: 59.575423,
@@ -2529,7 +2529,7 @@ const campsiteData = [
         nameState: "Finnegan's Point, AK"
     },
     {
-        id: "D3D02CD0-A5DB-430B-A1FC-B498FD1890E0",
+        camp_id: "D3D02CD0-A5DB-430B-A1FC-B498FD1890E0",
         code: "glac",
         name: "Fish Creek",
         lat: 48.5501313183584,
@@ -2541,7 +2541,7 @@ const campsiteData = [
         nameState: "Fish Creek, MT"
     },
     {
-        id: "64ABF507-2DCD-4FE4-90B9-F2C5636D4B52",
+        camp_id: "64ABF507-2DCD-4FE4-90B9-F2C5636D4B52",
         code: "yell",
         name: "Fishing Bridge RV Park",
         lat: 44.5647552489551,
@@ -2553,7 +2553,7 @@ const campsiteData = [
         nameState: "Fishing Bridge RV Park, WY"
     },
     {
-        id: "4F5128AD-453F-4B40-91F0-388FD662D110",
+        camp_id: "4F5128AD-453F-4B40-91F0-388FD662D110",
         code: "ever",
         name: "Flamingo Campground",
         lat: 25.137212,
@@ -2565,7 +2565,7 @@ const campsiteData = [
         nameState: "Flamingo Campground, FL"
     },
     {
-        id: "C2D30818-1C74-4284-9DBA-C689A6977BC0",
+        camp_id: "C2D30818-1C74-4284-9DBA-C689A6977BC0",
         code: "ebla",
         name: "Fort Casey State Park",
         lat: 48.1568610743654,
@@ -2577,7 +2577,7 @@ const campsiteData = [
         nameState: "Fort Casey State Park, WA"
     },
     {
-        id: "B1C748D9-1239-4E42-A61E-3387E02AEDA5",
+        camp_id: "B1C748D9-1239-4E42-A61E-3387E02AEDA5",
         code: "grpo",
         name: "Fort Charlotte Backcountry Campgrounds",
         lat: 48.0036881003,
@@ -2589,7 +2589,7 @@ const campsiteData = [
         nameState: "Fort Charlotte Backcountry Campgrounds, MN"
     },
     {
-        id: "2E0F6571-F19E-4AE9-98AC-6AC486B48B7C",
+        camp_id: "2E0F6571-F19E-4AE9-98AC-6AC486B48B7C",
         code: "ebla",
         name: "Fort Ebey State Park",
         lat: 35.6474198892006,
@@ -2601,7 +2601,7 @@ const campsiteData = [
         nameState: "Fort Ebey State Park, WA"
     },
     {
-        id: "18921332-CD30-4B8B-8CD7-08CAA365919E",
+        camp_id: "18921332-CD30-4B8B-8CD7-08CAA365919E",
         code: "guis",
         name: "Fort Pickens Campground",
         lat: 30.32320834796311,
@@ -2613,7 +2613,7 @@ const campsiteData = [
         nameState: "Fort Pickens Campground, FL"
     },
     {
-        id: "05011267-F78C-4A27-B956-6F82230C7BBE",
+        camp_id: "05011267-F78C-4A27-B956-6F82230C7BBE",
         code: "laro",
         name: "Fort Spokane Campground",
         lat: 47.91057783564893,
@@ -2625,7 +2625,7 @@ const campsiteData = [
         nameState: "Fort Spokane Campground, WA"
     },
     {
-        id: "D512733D-28A8-4CF6-BA19-2D5A7DAAB45B",
+        camp_id: "D512733D-28A8-4CF6-BA19-2D5A7DAAB45B",
         code: "laro",
         name: "Fort Spokane Group Sites",
         lat: 47.908742,
@@ -2637,7 +2637,7 @@ const campsiteData = [
         nameState: "Fort Spokane Group Sites, WA"
     },
     {
-        id: "6838ABBE-4A61-4668-9D33-FE56AD77D7E4",
+        camp_id: "6838ABBE-4A61-4668-9D33-FE56AD77D7E4",
         code: "gate",
         name: "Fort Wadsworth Campsite",
         lat: 40.599998,
@@ -2650,7 +2650,7 @@ const campsiteData = [
         nameState: "Fort Wadsworth Campsite"
     },
     {
-        id: "66DA0C26-4D6E-4C02-AA89-794655DF2C38",
+        camp_id: "66DA0C26-4D6E-4C02-AA89-794655DF2C38",
         code: "gumo",
         name: "Frijole Horse Corral Campground",
         lat: 31.8995224439952,
@@ -2663,7 +2663,7 @@ const campsiteData = [
         nameState: "Frijole Horse Corral Campground"
     },
     {
-        id: "5A68AFB0-A5CD-4892-9222-880AF77B37BE",
+        camp_id: "5A68AFB0-A5CD-4892-9222-880AF77B37BE",
         code: "caha",
         name: "Frisco Campground",
         lat: 35.237075,
@@ -2675,7 +2675,7 @@ const campsiteData = [
         nameState: "Frisco Campground, NC"
     },
     {
-        id: "12BCF9B8-3B58-4787-97E7-99D7D1EFA719",
+        camp_id: "12BCF9B8-3B58-4787-97E7-99D7D1EFA719",
         code: "lamr",
         name: "Fritch Fortress",
         lat: 35.6817457818143,
@@ -2687,7 +2687,7 @@ const campsiteData = [
         nameState: "Fritch Fortress, TX"
     },
     {
-        id: "B1B4EA86-DDA9-416A-9E7B-D718DF3C3233",
+        camp_id: "B1B4EA86-DDA9-416A-9E7B-D718DF3C3233",
         code: "care",
         name: "Fruita Campground",
         lat: 38.2825607383,
@@ -2699,7 +2699,7 @@ const campsiteData = [
         nameState: "Fruita Campground, UT"
     },
     {
-        id: "2DCEC434-825E-46B0-AF59-21BE27A849A1",
+        camp_id: "2DCEC434-825E-46B0-AF59-21BE27A849A1",
         code: "deva",
         name: "Furnace Creek Campground",
         lat: 36.4630684020062,
@@ -2711,7 +2711,7 @@ const campsiteData = [
         nameState: "Furnace Creek Campground, CA"
     },
     {
-        id: "7FB9E93F-7F2B-4967-862E-BB2B24722B14",
+        camp_id: "7FB9E93F-7F2B-4967-862E-BB2B24722B14",
         code: "drto",
         name: "Garden Key Campground",
         lat: 24.6270109567431,
@@ -2723,7 +2723,7 @@ const campsiteData = [
         nameState: "Garden Key Campground, FL"
     },
     {
-        id: "C37B6AA5-24C5-4982-9058-8BBEA3E07DE3",
+        camp_id: "C37B6AA5-24C5-4982-9058-8BBEA3E07DE3",
         code: "dino",
         name: "Gates of Lodore Campground",
         lat: 40.7249234842,
@@ -2735,7 +2735,7 @@ const campsiteData = [
         nameState: "Gates of Lodore Campground, CO"
     },
     {
-        id: "5B7FB84F-E9EB-448D-B721-9176B8B4B11A",
+        camp_id: "5B7FB84F-E9EB-448D-B721-9176B8B4B11A",
         code: "cure",
         name: "Gateview Campground",
         lat: 38.3844578817442,
@@ -2748,7 +2748,7 @@ const campsiteData = [
         nameState: "Gateview Campground"
     },
     {
-        id: "EDF9CACD-CA15-478C-830B-581FB3A18BDE",
+        camp_id: "EDF9CACD-CA15-478C-830B-581FB3A18BDE",
         code: "bicy",
         name: "Gator Head",
         lat: 26.2238175484,
@@ -2760,7 +2760,7 @@ const campsiteData = [
         nameState: "Gator Head, FL"
     },
     {
-        id: "5DA9B21A-60C6-4B73-B115-D9273354A6C9",
+        camp_id: "5DA9B21A-60C6-4B73-B115-D9273354A6C9",
         code: "gari",
         name: "Gauley Tailwaters",
         lat: 38.214092,
@@ -2773,7 +2773,7 @@ const campsiteData = [
         nameState: "Gauley Tailwaters"
     },
     {
-        id: "F45274CB-22BB-46A9-91FF-F83EF7CC45E8",
+        camp_id: "F45274CB-22BB-46A9-91FF-F83EF7CC45E8",
         code: "laro",
         name: "Gifford Campground",
         lat: 48.2858575736509,
@@ -2785,7 +2785,7 @@ const campsiteData = [
         nameState: "Gifford Campground, WA"
     },
     {
-        id: "D55642DE-EA9F-4B67-85AE-0A85556616E6",
+        camp_id: "D55642DE-EA9F-4B67-85AE-0A85556616E6",
         code: "laro",
         name: "Gifford Group Site",
         lat: 48.288223,
@@ -2797,7 +2797,7 @@ const campsiteData = [
         nameState: "Gifford Group Site, WA"
     },
     {
-        id: "6715A7CC-280C-4093-85D3-492004C2DB48",
+        camp_id: "6715A7CC-280C-4093-85D3-492004C2DB48",
         code: "romo",
         name: "Glacier Basin Campground",
         lat: 40.32980715336969,
@@ -2809,7 +2809,7 @@ const campsiteData = [
         nameState: "Glacier Basin Campground, CO"
     },
     {
-        id: "C838E1A7-6558-4F7B-8F2D-FE51D9DC333D",
+        camp_id: "C838E1A7-6558-4F7B-8F2D-FE51D9DC333D",
         code: "neri",
         name: "Glade Creek Campground",
         lat: 37.829446,
@@ -2821,7 +2821,7 @@ const campsiteData = [
         nameState: "Glade Creek Campground, WV"
     },
     {
-        id: "68E04D73-F0F7-490C-B9B9-E95A03564825",
+        camp_id: "68E04D73-F0F7-490C-B9B9-E95A03564825",
         code: "pore",
         name: "Glen Campground",
         lat: 37.9893107086396,
@@ -2833,7 +2833,7 @@ const campsiteData = [
         nameState: "Glen Campground, CA"
     },
     {
-        id: "09141625-F881-4441-AF5E-B0FAA9887D4F",
+        camp_id: "09141625-F881-4441-AF5E-B0FAA9887D4F",
         code: "mnrr",
         name: "Goat Island Primitive Camping",
         lat: 42.765746,
@@ -2845,7 +2845,7 @@ const campsiteData = [
         nameState: "Goat Island Primitive Camping, NE"
     },
     {
-        id: "2D58DB61-4744-4A49-8012-A1C53FD6E3BE",
+        camp_id: "2D58DB61-4744-4A49-8012-A1C53FD6E3BE",
         code: "redw",
         name: "Gold Bluffs Beach Campground",
         lat: 41.3822173891,
@@ -2857,7 +2857,7 @@ const campsiteData = [
         nameState: "Gold Bluffs Beach Campground, CA"
     },
     {
-        id: "9D6E5F9A-BB88-4170-A3B4-87F303AA0836",
+        camp_id: "9D6E5F9A-BB88-4170-A3B4-87F303AA0836",
         code: "noca",
         name: "Goodell Creek Campground",
         lat: 48.673,
@@ -2869,7 +2869,7 @@ const campsiteData = [
         nameState: "Goodell Creek Campground, WA"
     },
     {
-        id: "43B0C61B-D068-48EB-9AD9-F06A0DE250BE",
+        camp_id: "43B0C61B-D068-48EB-9AD9-F06A0DE250BE",
         code: "noca",
         name: "Gorge Lake Campground",
         lat: 48.716,
@@ -2882,7 +2882,7 @@ const campsiteData = [
         nameState: "Gorge Lake Campground"
     },
     {
-        id: "FFA388BF-3129-4FC4-80ED-D163E8199587",
+        camp_id: "FFA388BF-3129-4FC4-80ED-D163E8199587",
         code: "amis",
         name: "Governors Landing Campground",
         lat: 29.47907637,
@@ -2895,7 +2895,7 @@ const campsiteData = [
         nameState: "Governors Landing Campground"
     },
     {
-        id: "4A23813E-3190-4E4F-8272-0001F57A049C",
+        camp_id: "4A23813E-3190-4E4F-8272-0001F57A049C",
         code: "isro",
         name: "Grace Island Campground",
         lat: 47.88249028850224,
@@ -2907,7 +2907,7 @@ const campsiteData = [
         nameState: "Grace Island Campground, MI"
     },
     {
-        id: "6929599F-D083-481C-A5A9-D551EC31CAA3",
+        camp_id: "6929599F-D083-481C-A5A9-D551EC31CAA3",
         code: "kaww",
         name: "Grand Pitch Lean-to",
         lat: 46.057785,
@@ -2920,7 +2920,7 @@ const campsiteData = [
         nameState: "Grand Pitch Lean-to"
     },
     {
-        id: "1487B254-91D2-4BA2-BC19-FF6FA7BB18A7",
+        camp_id: "1487B254-91D2-4BA2-BC19-FF6FA7BB18A7",
         code: "neri",
         name: "Grandview Sandbar",
         lat: 37.857116,
@@ -2932,7 +2932,7 @@ const campsiteData = [
         nameState: "Grandview Sandbar, WV"
     },
     {
-        id: "E8EB610A-8BBA-490F-BC39-CBCB28909F20",
+        camp_id: "E8EB610A-8BBA-490F-BC39-CBCB28909F20",
         code: "yell",
         name: "Grant Village Campground",
         lat: 44.3942533493729,
@@ -2944,7 +2944,7 @@ const campsiteData = [
         nameState: "Grant Village Campground, WY"
     },
     {
-        id: "59EF188B-482C-4E9F-BD9B-414411DB6727",
+        camp_id: "59EF188B-482C-4E9F-BD9B-414411DB6727",
         code: "bica",
         name: "Grapevine Campground",
         lat: 45.31804610741141,
@@ -2957,7 +2957,7 @@ const campsiteData = [
         nameState: "Grapevine Campground"
     },
     {
-        id: "812CF898-9225-4E23-9937-85FB14490F36",
+        camp_id: "812CF898-9225-4E23-9937-85FB14490F36",
         code: "sagu",
         name: "Grass Shack",
         lat: 32.183854,
@@ -2969,7 +2969,7 @@ const campsiteData = [
         nameState: "Grass Shack, AZ"
     },
     {
-        id: "2EA47E1B-6EA8-476D-A491-376F850EF923",
+        camp_id: "2EA47E1B-6EA8-476D-A491-376F850EF923",
         code: "olym",
         name: "Graves Creek Campground",
         lat: 47.573831087,
@@ -2981,7 +2981,7 @@ const campsiteData = [
         nameState: "Graves Creek Campground, WA"
     },
     {
-        id: "19323FC8-387C-4F88-870A-BDE13D3E5447",
+        camp_id: "19323FC8-387C-4F88-870A-BDE13D3E5447",
         code: "calo",
         name: "Great Island Cabin Camp",
         lat: 34.76055561111111,
@@ -2993,7 +2993,7 @@ const campsiteData = [
         nameState: "Great Island Cabin Camp, NC"
     },
     {
-        id: "7CB72719-D7D0-49B9-B3AF-D71316CAB9B4",
+        camp_id: "7CB72719-D7D0-49B9-B3AF-D71316CAB9B4",
         code: "mnrr",
         name: "Green Island Primitive Camping",
         lat: 42.8633666,
@@ -3006,7 +3006,7 @@ const campsiteData = [
         nameState: "Green Island Primitive Camping"
     },
     {
-        id: "0AD1C4E8-ED05-426E-8332-EA369022B8C5",
+        camp_id: "0AD1C4E8-ED05-426E-8332-EA369022B8C5",
         code: "dino",
         name: "Green River Campground",
         lat: 40.4209774724,
@@ -3018,7 +3018,7 @@ const campsiteData = [
         nameState: "Green River Campground, UT"
     },
     {
-        id: "7F7BBB8F-3E23-4B9F-8EA7-DB17EE88FDE8",
+        camp_id: "7F7BBB8F-3E23-4B9F-8EA7-DB17EE88FDE8",
         code: "gree",
         name: "Greenbelt Park Campground",
         lat: 38.97908,
@@ -3030,7 +3030,7 @@ const campsiteData = [
         nameState: "Greenbelt Park Campground, MD"
     },
     {
-        id: "27D0E27F-2644-42D0-952B-EE41A0AD5E83",
+        camp_id: "27D0E27F-2644-42D0-952B-EE41A0AD5E83",
         code: "grba",
         name: "Grey Cliffs Campground",
         lat: 38.99115,
@@ -3043,7 +3043,7 @@ const campsiteData = [
         nameState: "Grey Cliffs Campground"
     },
     {
-        id: "F79BD2D4-B5CE-4405-99F4-AF59DD1913A6",
+        camp_id: "F79BD2D4-B5CE-4405-99F4-AF59DD1913A6",
         code: "grte",
         name: "Gros Ventre Campground",
         lat: 43.6159078257903,
@@ -3055,7 +3055,7 @@ const campsiteData = [
         nameState: "Gros Ventre Campground, WY"
     },
     {
-        id: "6FCC4CC5-0D5A-479D-A5E8-D987207F9E84",
+        camp_id: "6FCC4CC5-0D5A-479D-A5E8-D987207F9E84",
         code: "crmo",
         name: "Group Campground",
         lat: 43.4727778,
@@ -3068,7 +3068,7 @@ const campsiteData = [
         nameState: "Group Campground"
     },
     {
-        id: "6A989D7D-8AA1-432E-A915-337BB2B45E4C",
+        camp_id: "6A989D7D-8AA1-432E-A915-337BB2B45E4C",
         code: "care",
         name: "Group Campsite",
         lat: 38.2789,
@@ -3080,7 +3080,7 @@ const campsiteData = [
         nameState: "Group Campsite, UT"
     },
     {
-        id: "EAA68679-D1DF-4327-AA61-7B1293EA17E5",
+        camp_id: "EAA68679-D1DF-4327-AA61-7B1293EA17E5",
         code: "gumo",
         name: "Guadalupe Peak Wilderness Campground",
         lat: 31.8934963936164,
@@ -3093,7 +3093,7 @@ const campsiteData = [
         nameState: "Guadalupe Peak Wilderness Campground"
     },
     {
-        id: "B09710B2-3D0B-47B0-B15E-ABAFC4243F75",
+        camp_id: "B09710B2-3D0B-47B0-B15E-ABAFC4243F75",
         code: "hosp",
         name: "Gulpha Gorge Campground",
         lat: 34.52436309933005,
@@ -3105,7 +3105,7 @@ const campsiteData = [
         nameState: "Gulpha Gorge Campground, AR"
     },
     {
-        id: "34728A7E-796D-4834-949A-4E960CC945C1",
+        camp_id: "34728A7E-796D-4834-949A-4E960CC945C1",
         code: "semo",
         name: "Gunter Hill Campground",
         lat: 32.358663,
@@ -3118,7 +3118,7 @@ const campsiteData = [
         nameState: "Gunter Hill Campground"
     },
     {
-        id: "D9E5422D-1BC9-436A-9695-857D7CE64FD5",
+        camp_id: "D9E5422D-1BC9-436A-9695-857D7CE64FD5",
         code: "chic",
         name: "Guy Sandy Campground",
         lat: 34.4556834317,
@@ -3131,7 +3131,7 @@ const campsiteData = [
         nameState: "Guy Sandy Campground"
     },
     {
-        id: "13D9E8A8-CF13-4AC4-9482-81AFC6ADBAF6",
+        camp_id: "13D9E8A8-CF13-4AC4-9482-81AFC6ADBAF6",
         code: "laro",
         name: "Haag Cove Campground",
         lat: 48.5606608808908,
@@ -3143,7 +3143,7 @@ const campsiteData = [
         nameState: "Haag Cove Campground, WA"
     },
     {
-        id: "2279D883-668A-490A-A794-2060011B8960",
+        camp_id: "2279D883-668A-490A-A794-2060011B8960",
         code: "glca",
         name: "Halls Crossing RV & Campground",
         lat: 37.4577993989406,
@@ -3155,7 +3155,7 @@ const campsiteData = [
         nameState: "Halls Crossing RV & Campground, UT"
     },
     {
-        id: "D1770365-E6B3-45F2-8029-13E6F75DF232",
+        camp_id: "D1770365-E6B3-45F2-8029-13E6F75DF232",
         code: "sagu",
         name: "Happy Valley Saddle",
         lat: 32.154022,
@@ -3167,7 +3167,7 @@ const campsiteData = [
         nameState: "Happy Valley Saddle, AZ"
     },
     {
-        id: "95C99A7D-D423-4F04-967D-B22EEC464C56",
+        camp_id: "95C99A7D-D423-4F04-967D-B22EEC464C56",
         code: "lamr",
         name: "Harbor Bay Campground",
         lat: 35.6478560545659,
@@ -3180,7 +3180,7 @@ const campsiteData = [
         nameState: "Harbor Bay Campground"
     },
     {
-        id: "55555B90-B545-4045-BB65-1FBB696E4515",
+        camp_id: "55555B90-B545-4045-BB65-1FBB696E4515",
         code: "noca",
         name: "Harlequin Campground",
         lat: 48.3468,
@@ -3193,7 +3193,7 @@ const campsiteData = [
         nameState: "Harlequin Campground"
     },
     {
-        id: "3A459D88-DF35-41D2-AE2F-2D0829B4BE08",
+        camp_id: "3A459D88-DF35-41D2-AE2F-2D0829B4BE08",
         code: "kaww",
         name: "Haskell Campsite",
         lat: 46.073046,
@@ -3206,7 +3206,7 @@ const campsiteData = [
         nameState: "Haskell Campsite"
     },
     {
-        id: "95AFF7B7-E0DE-4872-A58E-9E4179AD5474",
+        camp_id: "95AFF7B7-E0DE-4872-A58E-9E4179AD5474",
         code: "kaww",
         name: "Haskell Hut",
         lat: 46.079623645522545,
@@ -3218,7 +3218,7 @@ const campsiteData = [
         nameState: "Haskell Hut, ME"
     },
     {
-        id: "374DF57A-1323-4107-B5B2-5C31633CEB80",
+        camp_id: "374DF57A-1323-4107-B5B2-5C31633CEB80",
         code: "isro",
         name: "Hatchet Lake Campground",
         lat: 48.02113448367796,
@@ -3230,7 +3230,7 @@ const campsiteData = [
         nameState: "Hatchet Lake Campground, MI"
     },
     {
-        id: "CF4FCDE0-60FD-42DE-9A64-816E3601A562",
+        camp_id: "CF4FCDE0-60FD-42DE-9A64-816E3601A562",
         code: "goga",
         name: "Hawk Campground",
         lat: 37.8541575376106,
@@ -3242,7 +3242,7 @@ const campsiteData = [
         nameState: "Hawk Campground, CA"
     },
     {
-        id: "42969E1F-9F45-4417-9493-A068CE39E500",
+        camp_id: "42969E1F-9F45-4417-9493-A068CE39E500",
         code: "laro",
         name: "Hawk Creek Campground",
         lat: 47.815164484753,
@@ -3254,7 +3254,7 @@ const campsiteData = [
         nameState: "Hawk Creek Campground, WA"
     },
     {
-        id: "59C82327-07CE-4C77-BEB3-29BDABA8A60F",
+        camp_id: "59C82327-07CE-4C77-BEB3-29BDABA8A60F",
         code: "isro",
         name: "Hay Bay Campground",
         lat: 47.93386908337534,
@@ -3266,7 +3266,7 @@ const campsiteData = [
         nameState: "Hay Bay Campground, MI"
     },
     {
-        id: "0FAC4543-542C-4B14-9930-27EA43E2E842",
+        camp_id: "0FAC4543-542C-4B14-9930-27EA43E2E842",
         code: "goga",
         name: "Haypress Campground",
         lat: 37.8607851159,
@@ -3278,7 +3278,7 @@ const campsiteData = [
         nameState: "Haypress Campground, CA"
     },
     {
-        id: "C015D3D1-180D-408C-88AB-B73EAEA89E10",
+        camp_id: "C015D3D1-180D-408C-88AB-B73EAEA89E10",
         code: "grte",
         name: "Headwaters Campground",
         lat: 44.1058980602854,
@@ -3290,7 +3290,7 @@ const campsiteData = [
         nameState: "Headwaters Campground, WY"
     },
     {
-        id: "C4C0ACBD-0AE4-4970-9C6A-E75A0153050D",
+        camp_id: "C4C0ACBD-0AE4-4970-9C6A-E75A0153050D",
         code: "olym",
         name: "Heart O' the Hills Campground",
         lat: 48.0362664284,
@@ -3302,7 +3302,7 @@ const campsiteData = [
         nameState: "Heart O' the Hills Campground, WA"
     },
     {
-        id: "CD6FC82F-A9B7-46EA-A6A4-2FD69E7E017D",
+        camp_id: "CD6FC82F-A9B7-46EA-A6A4-2FD69E7E017D",
         code: "cuis",
         name: "Hickory Hill Wilderness Campsite",
         lat: 30.8327,
@@ -3315,7 +3315,7 @@ const campsiteData = [
         nameState: "Hickory Hill Wilderness Campsite"
     },
     {
-        id: "8271D39A-48E1-4693-B3E2-2DBE4C3511D2",
+        camp_id: "8271D39A-48E1-4693-B3E2-2DBE4C3511D2",
         code: "jotr",
         name: "Hidden Valley Campground",
         lat: 34.0171884429,
@@ -3328,7 +3328,7 @@ const campsiteData = [
         nameState: "Hidden Valley Campground"
     },
     {
-        id: "53B78B5A-F056-47DB-B254-13C2EDEC8094",
+        camp_id: "53B78B5A-F056-47DB-B254-13C2EDEC8094",
         code: "glca",
         name: "Hite Outpost Adventure Center -    code until further notice",
         lat: 37.87686,
@@ -3340,7 +3340,7 @@ const campsiteData = [
         nameState: "Hite Outpost Adventure Center -   code until further notice, UT"
     },
     {
-        id: "3BE59EF8-1327-4B0F-B4ED-AFE4C6085DEE",
+        camp_id: "3BE59EF8-1327-4B0F-B4ED-AFE4C6085DEE",
         code: "glca",
         name: "Hite Primitive (Dirty Devil, Farley, White Canyon) camping",
         lat: 37.864131,
@@ -3352,7 +3352,7 @@ const campsiteData = [
         nameState: "Hite Primitive (Dirty Devil, Farley, White Canyon) camping, AZ"
     },
     {
-        id: "8D89A88A-5E90-449B-B4FA-78026CF14D70",
+        camp_id: "8D89A88A-5E90-449B-B4FA-78026CF14D70",
         code: "yose",
         name: "Hodgdon Meadow Campground",
         lat: 37.7998824480597,
@@ -3365,7 +3365,7 @@ const campsiteData = [
         nameState: "Hodgdon Meadow Campground"
     },
     {
-        id: "B4D16CA6-183B-492C-BDEA-A41DA6349EDD",
+        camp_id: "B4D16CA6-183B-492C-BDEA-A41DA6349EDD",
         code: "olym",
         name: "Hoh Campground",
         lat: 47.8583524952499,
@@ -3377,7 +3377,7 @@ const campsiteData = [
         nameState: "Hoh Campground, WA"
     },
     {
-        id: "91F6D1D1-70F5-44EE-9930-4003ECC52A22",
+        camp_id: "91F6D1D1-70F5-44EE-9930-4003ECC52A22",
         code: "moja",
         name: "Hole-in-the-Wall Campground",
         lat: 35.0460238204,
@@ -3389,7 +3389,7 @@ const campsiteData = [
         nameState: "Hole-in-the-Wall Campground, CA"
     },
     {
-        id: "2BB05B85-183A-49D2-B9B6-612A7BBF3793",
+        camp_id: "2BB05B85-183A-49D2-B9B6-612A7BBF3793",
         code: "deva",
         name: "Homestake Campground (Primitive)",
         lat: 36.6376,
@@ -3401,7 +3401,7 @@ const campsiteData = [
         nameState: "Homestake Campground (Primitive), CA"
     },
     {
-        id: "22C22378-2697-4D14-B5F7-E8BAD9B7033D",
+        camp_id: "22C22378-2697-4D14-B5F7-E8BAD9B7033D",
         code: "whis",
         name: "Horse Camp",
         lat: 40.57611111,
@@ -3413,7 +3413,7 @@ const campsiteData = [
         nameState: "Horse Camp, CA"
     },
     {
-        id: "27EBFE30-BE1A-4511-9244-CF83F67E3085",
+        camp_id: "27EBFE30-BE1A-4511-9244-CF83F67E3085",
         code: "asis",
         name: "Horse camping",
         lat: 38.19282100055179,
@@ -3425,7 +3425,7 @@ const campsiteData = [
         nameState: "Horse camping, MD"
     },
     {
-        id: "96423246-D213-41C2-860C-34DF71149E34",
+        camp_id: "96423246-D213-41C2-860C-34DF71149E34",
         code: "choh",
         name: "Horsepen Branch Hiker-Biker Campsite",
         lat: 39.06938,
@@ -3437,7 +3437,7 @@ const campsiteData = [
         nameState: "Horsepen Branch Hiker-Biker Campsite, MD"
     },
     {
-        id: "13B7970B-039E-415E-900A-E1E1A2C7B032",
+        camp_id: "13B7970B-039E-415E-900A-E1E1A2C7B032",
         code: "bica",
         name: "Horseshoe Bend Campground",
         lat: 44.96,
@@ -3449,7 +3449,7 @@ const campsiteData = [
         nameState: "Horseshoe Bend Campground, WY"
     },
     {
-        id: "80B2AD5E-92D0-4BF8-90C4-92349E09338E",
+        camp_id: "80B2AD5E-92D0-4BF8-90C4-92349E09338E",
         code: "choh",
         name: "Horseshoe Bend Hiker-Biker Campsite",
         lat: 39.486903,
@@ -3461,7 +3461,7 @@ const campsiteData = [
         nameState: "Horseshoe Bend Hiker-Biker Campsite, MD"
     },
     {
-        id: "75216514-60C2-4262-9107-35122A9194AC",
+        camp_id: "75216514-60C2-4262-9107-35122A9194AC",
         code: "hale",
         name: "Hosmer Grove Campground",
         lat: 20.768155,
@@ -3473,7 +3473,7 @@ const campsiteData = [
         nameState: "Hosmer Grove Campground, HI"
     },
     {
-        id: "8F0F105B-48D2-41FE-9B50-CB1A1B1952AB",
+        camp_id: "8F0F105B-48D2-41FE-9B50-CB1A1B1952AB",
         code: "maca",
         name: "Houchin Ferry Campground",
         lat: 37.2016901005,
@@ -3485,7 +3485,7 @@ const campsiteData = [
         nameState: "Houchin Ferry Campground, KY"
     },
     {
-        id: "5F2991D3-8D31-4DF0-9E00-5351349391AF",
+        camp_id: "5F2991D3-8D31-4DF0-9E00-5351349391AF",
         code: "hove",
         name: "Hovenweep Campground",
         lat: 37.3832032699,
@@ -3497,7 +3497,7 @@ const campsiteData = [
         nameState: "Hovenweep Campground, CO"
     },
     {
-        id: "AD024FB6-EE7E-4DC0-A151-5A09F7A35B02",
+        camp_id: "AD024FB6-EE7E-4DC0-A151-5A09F7A35B02",
         code: "noca",
         name: "Hozomeen Campground",
         lat: 48.9871,
@@ -3510,7 +3510,7 @@ const campsiteData = [
         nameState: "Hozomeen Campground"
     },
     {
-        id: "129ADE5E-5C43-4F6F-85E3-2F69DC82217D",
+        camp_id: "129ADE5E-5C43-4F6F-85E3-2F69DC82217D",
         code: "choh",
         name: "Huckleberry Hill Hiker-Biker Campsite",
         lat: 39.34152,
@@ -3522,7 +3522,7 @@ const campsiteData = [
         nameState: "Huckleberry Hill Hiker-Biker Campsite, MD"
     },
     {
-        id: "12DB0F9A-5D56-4117-B66A-A66C6A1C2E33",
+        camp_id: "12DB0F9A-5D56-4117-B66A-A66C6A1C2E33",
         code: "isro",
         name: "Huginnin Cove Campground",
         lat: 47.934272022481146,
@@ -3534,7 +3534,7 @@ const campsiteData = [
         nameState: "Huginnin Cove Campground, MI"
     },
     {
-        id: "0D61BB7D-56EC-4B90-870B-C54B4B23F627",
+        camp_id: "0D61BB7D-56EC-4B90-870B-C54B4B23F627",
         code: "laro",
         name: "Hunters Campground",
         lat: 48.1255472978347,
@@ -3546,7 +3546,7 @@ const campsiteData = [
         nameState: "Hunters Campground, WA"
     },
     {
-        id: "4F237B6C-D314-4A2C-ADBF-1A86D0DCC98A",
+        camp_id: "4F237B6C-D314-4A2C-ADBF-1A86D0DCC98A",
         code: "laro",
         name: "Hunters Group Sites",
         lat: 48.12544,
@@ -3558,7 +3558,7 @@ const campsiteData = [
         nameState: "Hunters Group Sites, WA"
     },
     {
-        id: "06069540-A17B-448D-BFE2-4F84CF26ABC1",
+        camp_id: "06069540-A17B-448D-BFE2-4F84CF26ABC1",
         code: "piro",
         name: "Hurricane River Campground",
         lat: 46.663953,
@@ -3570,7 +3570,7 @@ const campsiteData = [
         nameState: "Hurricane River Campground, MI"
     },
     {
-        id: "3B299906-24BA-44F3-A0BA-A054245F7615",
+        camp_id: "3B299906-24BA-44F3-A0BA-A054245F7615",
         code: "dena",
         name: "Igloo Creek",
         lat: 63.60969751677842,
@@ -3583,7 +3583,7 @@ const campsiteData = [
         nameState: "Igloo Creek"
     },
     {
-        id: "E456A79A-B17D-4D7C-8866-C3FFE9290283",
+        camp_id: "E456A79A-B17D-4D7C-8866-C3FFE9290283",
         code: "jotr",
         name: "Indian Cove Campground",
         lat: 34.0934671523033,
@@ -3595,7 +3595,7 @@ const campsiteData = [
         nameState: "Indian Cove Campground, CA"
     },
     {
-        id: "31A8FCDE-C07A-465F-BABA-0AD338ED9938",
+        camp_id: "31A8FCDE-C07A-465F-BABA-0AD338ED9938",
         code: "yell",
         name: "Indian Creek Campground",
         lat: 44.887023247756964,
@@ -3607,7 +3607,7 @@ const campsiteData = [
         nameState: "Indian Creek Campground, WY"
     },
     {
-        id: "AF40345B-C2EC-4ED5-8E47-BD195FE6972E",
+        camp_id: "AF40345B-C2EC-4ED5-8E47-BD195FE6972E",
         code: "choh",
         name: "Indian Flats Hiker-Biker Campsite",
         lat: 39.233516,
@@ -3619,7 +3619,7 @@ const campsiteData = [
         nameState: "Indian Flats Hiker-Biker Campsite, MD"
     },
     {
-        id: "EAA2FD98-4F5D-4533-B65A-A11F73AA4494",
+        camp_id: "EAA2FD98-4F5D-4533-B65A-A11F73AA4494",
         code: "labe",
         name: "Indian Well Campground",
         lat: 41.7174707355158,
@@ -3631,7 +3631,7 @@ const campsiteData = [
         nameState: "Indian Well Campground, CA"
     },
     {
-        id: "2133A176-466F-4A3E-8B74-AF4AC2E1B2AA",
+        camp_id: "2133A176-466F-4A3E-8B74-AF4AC2E1B2AA",
         code: "choh",
         name: "Indigo Neck Hiker-Biker Campsite",
         lat: 39.626697,
@@ -3643,7 +3643,7 @@ const campsiteData = [
         nameState: "Indigo Neck Hiker-Biker Campsite, MD"
     },
     {
-        id: "A8605BC4-C81C-4F67-8AC3-FC14363304C3",
+        camp_id: "A8605BC4-C81C-4F67-8AC3-FC14363304C3",
         code: "isro",
         name: "Intermediate Lake Campground",
         lat: 48.0337769036068,
@@ -3655,7 +3655,7 @@ const campsiteData = [
         nameState: "Intermediate Lake Campground, MI"
     },
     {
-        id: "1B582C8D-FD73-4E42-8EBE-8E4C00DC7535",
+        camp_id: "1B582C8D-FD73-4E42-8EBE-8E4C00DC7535",
         code: "choh",
         name: "Irons Mountain Hiker-Biker Campsite",
         lat: 39.58747900000001,
@@ -3667,7 +3667,7 @@ const campsiteData = [
         nameState: "Irons Mountain Hiker-Biker Campsite, MD"
     },
     {
-        id: "A7F66044-BE85-43D4-8BCF-7475CF00018E",
+        camp_id: "A7F66044-BE85-43D4-8BCF-7475CF00018E",
         code: "isro",
         name: "Island Mine Campground",
         lat: 47.93022395196004,
@@ -3679,7 +3679,7 @@ const campsiteData = [
         nameState: "Island Mine Campground, MN"
     },
     {
-        id: "26404A2A-AB76-4A51-9707-39D0E6E3368D",
+        camp_id: "26404A2A-AB76-4A51-9707-39D0E6E3368D",
         code: "cany",
         name: "Island in the Sky (Willow Flat) Campground",
         lat: 38.3832733696,
@@ -3691,7 +3691,7 @@ const campsiteData = [
         nameState: "Island in the Sky (Willow Flat) Campground, UT"
     },
     {
-        id: "A2B6DE41-CD49-4109-9EB4-AA32B6A82568",
+        camp_id: "A2B6DE41-CD49-4109-9EB4-AA32B6A82568",
         code: "redw",
         name: "Jedediah Smith Campground",
         lat: 41.7957264763,
@@ -3703,7 +3703,7 @@ const campsiteData = [
         nameState: "Jedediah Smith Campground, CA"
     },
     {
-        id: "CC65EA50-831C-4C71-ABD1-3C32D780E4D4",
+        camp_id: "CC65EA50-831C-4C71-ABD1-3C32D780E4D4",
         code: "natr",
         name: "Jeff Busby Campground, Milepost 193.1",
         lat: 33.4171640485,
@@ -3715,7 +3715,7 @@ const campsiteData = [
         nameState: "Jeff Busby Campground, Milepost 193.1, MS"
     },
     {
-        id: "5A3B6615-6E41-47CD-A13A-A717684296E5",
+        camp_id: "5A3B6615-6E41-47CD-A13A-A717684296E5",
         code: "grte",
         name: "Jenny Lake Campground",
         lat: 43.7552631986,
@@ -3727,7 +3727,7 @@ const campsiteData = [
         nameState: "Jenny Lake Campground, WY"
     },
     {
-        id: "F626FF38-1C87-48C9-81F2-D13B8FFBEB8A",
+        camp_id: "F626FF38-1C87-48C9-81F2-D13B8FFBEB8A",
         code: "laro",
         name: "Jones Bay Campground",
         lat: 47.9198995489921,
@@ -3739,7 +3739,7 @@ const campsiteData = [
         nameState: "Jones Bay Campground, WA"
     },
     {
-        id: "B89F33B9-4FDD-49EE-8FA4-BF2AB74AFFB5",
+        camp_id: "B89F33B9-4FDD-49EE-8FA4-BF2AB74AFFB5",
         code: "choh",
         name: "Jordan Junction Hiker-Biker Campsite",
         lat: 39.60919199999999,
@@ -3751,7 +3751,7 @@ const campsiteData = [
         nameState: "Jordan Junction Hiker-Biker Campsite, MD"
     },
     {
-        id: "04662D80-18F0-4E2C-8C6A-461E244DB0A7",
+        camp_id: "04662D80-18F0-4E2C-8C6A-461E244DB0A7",
         code: "blri",
         name: "Julian Price Park Campground",
         lat: 36.1203493459,
@@ -3763,7 +3763,7 @@ const campsiteData = [
         nameState: "Julian Price Park Campground, NC"
     },
     {
-        id: "6742B85D-65DA-447C-95C2-80E110AA5E6A",
+        camp_id: "6742B85D-65DA-447C-95C2-80E110AA5E6A",
         code: "jotr",
         name: "Jumbo Rocks Campground",
         lat: 33.9907564455,
@@ -3775,7 +3775,7 @@ const campsiteData = [
         nameState: "Jumbo Rocks Campground, CA"
     },
     {
-        id: "4A56E4A8-59E9-4766-9E89-677CF4B1C88D",
+        camp_id: "4A56E4A8-59E9-4766-9E89-677CF4B1C88D",
         code: "sagu",
         name: "Juniper Basin",
         lat: 32.182818,
@@ -3787,7 +3787,7 @@ const campsiteData = [
         nameState: "Juniper Basin, AZ"
     },
     {
-        id: "77017AF3-91BF-4166-BE1E-F17D903294ED",
+        camp_id: "77017AF3-91BF-4166-BE1E-F17D903294ED",
         code: "thro",
         name: "Juniper Campground",
         lat: 47.5952474630001,
@@ -3800,7 +3800,7 @@ const campsiteData = [
         nameState: "Juniper Campground"
     },
     {
-        id: "B4212C55-8FAB-495E-9A12-DE6D57EB91D4",
+        camp_id: "B4212C55-8FAB-495E-9A12-DE6D57EB91D4",
         code: "band",
         name: "Juniper Family Campground",
         lat: 35.7953381873139,
@@ -3812,7 +3812,7 @@ const campsiteData = [
         nameState: "Juniper Family Campground, NM"
     },
     {
-        id: "EE0BEF31-3C7D-4249-A131-156D31114388",
+        camp_id: "EE0BEF31-3C7D-4249-A131-156D31114388",
         code: "lavo",
         name: "Juniper Lake Campground",
         lat: 40.4496486561308,
@@ -3824,7 +3824,7 @@ const campsiteData = [
         nameState: "Juniper Lake Campground, CA"
     },
     {
-        id: "F8DFAB23-EFE0-4F31-98D0-CD5A871596A9",
+        camp_id: "F8DFAB23-EFE0-4F31-98D0-CD5A871596A9",
         code: "olym",
         name: "Kalaloch Campround",
         lat: 47.6127053601112,
@@ -3837,7 +3837,7 @@ const campsiteData = [
         nameState: "Kalaloch Campround"
     },
     {
-        id: "BE7AB8F1-8ED2-40DA-A2DB-B4C7F7EC3531",
+        camp_id: "BE7AB8F1-8ED2-40DA-A2DB-B4C7F7EC3531",
         code: "laro",
         name: "Kamloops Island Campground",
         lat: 48.6783241500684,
@@ -3849,7 +3849,7 @@ const campsiteData = [
         nameState: "Kamloops Island Campground, WA"
     },
     {
-        id: "5867E623-661C-49E1-ADC1-DFACA828D8F0",
+        camp_id: "5867E623-661C-49E1-ADC1-DFACA828D8F0",
         code: "kaww",
         name: "Katahdin Brook Lean-to",
         lat: 45.9204007640828,
@@ -3862,7 +3862,7 @@ const campsiteData = [
         nameState: "Katahdin Brook Lean-to"
     },
     {
-        id: "3D4EA3B5-B5B3-42B5-94C8-35A39D6A2893",
+        camp_id: "3D4EA3B5-B5B3-42B5-94C8-35A39D6A2893",
         code: "wrst",
         name: "Kendesnii Campground",
         lat: 62.52982,
@@ -3874,7 +3874,7 @@ const campsiteData = [
         nameState: "Kendesnii Campground, AK"
     },
     {
-        id: "E6B4725F-B2C0-4E4B-BD4C-D15EC8CF6212",
+        camp_id: "E6B4725F-B2C0-4E4B-BD4C-D15EC8CF6212",
         code: "laro",
         name: "Kettle Falls Campground",
         lat: 48.601517648676904,
@@ -3886,7 +3886,7 @@ const campsiteData = [
         nameState: "Kettle Falls Campground, WA"
     },
     {
-        id: "476252BB-E411-46A7-BC5C-77CCE0281781",
+        camp_id: "476252BB-E411-46A7-BC5C-77CCE0281781",
         code: "laro",
         name: "Kettle River Campground",
         lat: 48.7159308743606,
@@ -3898,7 +3898,7 @@ const campsiteData = [
         nameState: "Kettle River Campground, WA"
     },
     {
-        id: "A610C577-66D8-4544-9F6F-62FF55803C8F",
+        camp_id: "A610C577-66D8-4544-9F6F-62FF55803C8F",
         code: "choh",
         name: "Killiansburg Cave Hiker-Biker Campsite",
         lat: 39.45920199999999,
@@ -3910,7 +3910,7 @@ const campsiteData = [
         nameState: "Killiansburg Cave Hiker-Biker Campsite, MD"
     },
     {
-        id: "BCE824F6-C326-4753-9D3D-916A93A690ED",
+        camp_id: "BCE824F6-C326-4753-9D3D-916A93A690ED",
         code: "glac",
         name: "Kintla Lake",
         lat: 48.9357452088272,
@@ -3922,7 +3922,7 @@ const campsiteData = [
         nameState: "Kintla Lake, MT"
     },
     {
-        id: "E432BD79-E5A8-4989-8F03-ADF9683A95A2",
+        camp_id: "E432BD79-E5A8-4989-8F03-ADF9683A95A2",
         code: "goga",
         name: "Kirby Cove Campground",
         lat: 37.8279021174,
@@ -3934,7 +3934,7 @@ const campsiteData = [
         nameState: "Kirby Cove Campground, CA"
     },
     {
-        id: "A859E76B-FA23-43CE-8BED-904FB4D41B60",
+        camp_id: "A859E76B-FA23-43CE-8BED-904FB4D41B60",
         code: "havo",
         name: "Kulanaokuaiki",
         lat: 19.3436666463,
@@ -3946,7 +3946,7 @@ const campsiteData = [
         nameState: "Kulanaokuaiki, HI"
     },
     {
-        id: "0B860B12-04E9-46DB-A1C3-E7FBA8B1A3DE",
+        camp_id: "0B860B12-04E9-46DB-A1C3-E7FBA8B1A3DE",
         code: "buff",
         name: "Kyles Landing",
         lat: 36.0557786001,
@@ -3958,7 +3958,7 @@ const campsiteData = [
         nameState: "Kyles Landing, AR"
     },
     {
-        id: "D24D8C58-DF08-4A80-BC5F-531E6F086A1B",
+        camp_id: "D24D8C58-DF08-4A80-BC5F-531E6F086A1B",
         code: "hale",
         name: "Kīpahulu Campground",
         lat: 20.659705,
@@ -3970,7 +3970,7 @@ const campsiteData = [
         nameState: "Kīpahulu Campground, HI"
     },
     {
-        id: "D8737D28-750B-4C8D-9E0D-78F327C77CBB",
+        camp_id: "D8737D28-750B-4C8D-9E0D-78F327C77CBB",
         code: "cure",
         name: "Lake Fork Campground",
         lat: 38.4548253084593,
@@ -3983,7 +3983,7 @@ const campsiteData = [
         nameState: "Lake Fork Campground"
     },
     {
-        id: "C838D310-D10F-4670-91C8-E375C0F294F4",
+        camp_id: "C838D310-D10F-4670-91C8-E375C0F294F4",
         code: "lake",
         name: "Lake Mead RV Village",
         lat: 36.03503,
@@ -3996,7 +3996,7 @@ const campsiteData = [
         nameState: "Lake Mead RV Village"
     },
     {
-        id: "5B9B3451-F0DD-4BD3-9EB7-7AEF691285DD",
+        camp_id: "5B9B3451-F0DD-4BD3-9EB7-7AEF691285DD",
         code: "isro",
         name: "Lake Richie Campground",
         lat: 48.05134221029036,
@@ -4008,7 +4008,7 @@ const campsiteData = [
         nameState: "Lake Richie Campground, MI"
     },
     {
-        id: "56BEF8CE-2E4F-467E-B548-3B8DB0E28C92",
+        camp_id: "56BEF8CE-2E4F-467E-B548-3B8DB0E28C92",
         code: "isro",
         name: "Lake Richie Canoe Campground",
         lat: 48.04382454287261,
@@ -4020,7 +4020,7 @@ const campsiteData = [
         nameState: "Lake Richie Canoe Campground, MI"
     },
     {
-        id: "BCBF894F-DF97-4EAE-804B-CAF0E4237A8B",
+        camp_id: "BCBF894F-DF97-4EAE-804B-CAF0E4237A8B",
         code: "isro",
         name: "Lake Whittlesey Campground",
         lat: 48.007628545489816,
@@ -4032,7 +4032,7 @@ const campsiteData = [
         nameState: "Lake Whittlesey Campground, MI"
     },
     {
-        id: "A8B8F6C0-8C37-4293-8A52-A332FE879B00",
+        camp_id: "A8B8F6C0-8C37-4293-8A52-A332FE879B00",
         code: "noca",
         name: "Lakeview Campground",
         lat: 48.3079,
@@ -4045,7 +4045,7 @@ const campsiteData = [
         nameState: "Lakeview Campground"
     },
     {
-        id: "1617F7AB-6DAA-4571-AD88-DCFBC7AC6DC5",
+        camp_id: "1617F7AB-6DAA-4571-AD88-DCFBC7AC6DC5",
         code: "isro",
         name: "Lane Cove Campground",
         lat: 48.14490683133697,
@@ -4057,7 +4057,7 @@ const campsiteData = [
         nameState: "Lane Cove Campground, MI"
     },
     {
-        id: "2358E196-5E36-4A03-842F-C2C6FE81EFFD",
+        camp_id: "2358E196-5E36-4A03-842F-C2C6FE81EFFD",
         code: "lake",
         name: "Las Vegas Bay Campground",
         lat: 36.1278445862602,
@@ -4069,19 +4069,19 @@ const campsiteData = [
         nameState: "Las Vegas Bay Campground, NV"
     },
     {
-        id: "655E8DDE-9586-447E-B531-A93B31EEE1A0",
+        camp_id: "655E8DDE-9586-447E-B531-A93B31EEE1A0",
         code: "crmo",
         name: "Lava Flow Campground",
         lat: 43.46070030861083,
         lng: -113.55913194531865,
         latlong: "{lat:43.46070030861083, lng:-113.55913194531865}",
-        state: id,
+        state: "ID",
         zipCode: 83213,
         city: "Arco",
         nameState: "Lava Flow Campground, ID"
     },
     {
-        id: "B30A5B7D-0343-4E47-97E3-CBBAC4700D6B",
+        camp_id: "B30A5B7D-0343-4E47-97E3-CBBAC4700D6B",
         code: "zion",
         name: "Lava Point Campground",
         lat: 37.3838790934259,
@@ -4094,7 +4094,7 @@ const campsiteData = [
         nameState: "Lava Point Campground"
     },
     {
-        id: "047E1B9A-FF2B-4BD0-B98A-65ED0857639C",
+        camp_id: "047E1B9A-FF2B-4BD0-B98A-65ED0857639C",
         code: "glca",
         name: "Lees Ferry Campground",
         lat: 36.8593470173641,
@@ -4106,7 +4106,7 @@ const campsiteData = [
         nameState: "Lees Ferry Campground, AZ"
     },
     {
-        id: "0477F54F-BBA5-4418-96C9-262FD30FEFC3",
+        camp_id: "0477F54F-BBA5-4418-96C9-262FD30FEFC3",
         code: "choh",
         name: "Leopards Mill Hiker-Biker Campsite",
         lat: 39.6519276443,
@@ -4118,7 +4118,7 @@ const campsiteData = [
         nameState: "Leopards Mill Hiker-Biker Campsite, MD"
     },
     {
-        id: "86643A75-55AF-4A7F-ADD1-DE35E379BB7F",
+        camp_id: "86643A75-55AF-4A7F-ADD1-DE35E379BB7F",
         code: "yell",
         name: "Lewis Lake Campground",
         lat: 44.282205650024956,
@@ -4130,7 +4130,7 @@ const campsiteData = [
         nameState: "Lewis Lake Campground, WY"
     },
     {
-        id: "BAC9E60C-2FD0-479D-B676-1EB623EDAE60",
+        camp_id: "BAC9E60C-2FD0-479D-B676-1EB623EDAE60",
         code: "shen",
         name: "Lewis Mountain Campground",
         lat: 38.43556,
@@ -4142,7 +4142,7 @@ const campsiteData = [
         nameState: "Lewis Mountain Campground, VA"
     },
     {
-        id: "29887D47-54ED-4C49-A7FB-B49AB60DCCE4",
+        camp_id: "29887D47-54ED-4C49-A7FB-B49AB60DCCE4",
         code: "choh",
         name: "Licking Creek Hiker-Biker Campsite",
         lat: 39.650293999999995,
@@ -4154,7 +4154,7 @@ const campsiteData = [
         nameState: "Licking Creek Hiker-Biker Campsite, MD"
     },
     {
-        id: "C32CB41B-1C35-454B-B9FD-AE3F71EEBDC8",
+        camp_id: "C32CB41B-1C35-454B-B9FD-AE3F71EEBDC8",
         code: "blri",
         name: "Linville Falls Campground",
         lat: 35.9671524465,
@@ -4166,7 +4166,7 @@ const campsiteData = [
         nameState: "Linville Falls Campground, NC"
     },
     {
-        id: "A63DE856-B573-4F34-A8AC-8F2BE146C442",
+        camp_id: "A63DE856-B573-4F34-A8AC-8F2BE146C442",
         code: "piro",
         name: "Little Beaver Lake Campground",
         lat: 46.5575,
@@ -4178,7 +4178,7 @@ const campsiteData = [
         nameState: "Little Beaver Lake Campground, MI"
     },
     {
-        id: "FBDC47A8-40CD-4BE7-B588-7DD0D89ADF82",
+        camp_id: "FBDC47A8-40CD-4BE7-B588-7DD0D89ADF82",
         code: "choh",
         name: "Little Pool Hiker-Biker Campsite",
         lat: 39.68477600000001,
@@ -4190,7 +4190,7 @@ const campsiteData = [
         nameState: "Little Pool Hiker-Biker Campsite, MD"
     },
     {
-        id: "5FEBB647-6237-4F47-B304-95C564E66B3D",
+        camp_id: "5FEBB647-6237-4F47-B304-95C564E66B3D",
         code: "isro",
         name: "Little Todd Campground",
         lat: 48.020255955459476,
@@ -4202,7 +4202,7 @@ const campsiteData = [
         nameState: "Little Todd Campground, MI"
     },
     {
-        id: "E0080EF8-EB48-4573-A23C-A7CDD2B75F76",
+        camp_id: "E0080EF8-EB48-4573-A23C-A7CDD2B75F76",
         code: "grte",
         name: "Lizard Creek Campground",
         lat: 44.0034692521,
@@ -4214,7 +4214,7 @@ const campsiteData = [
         nameState: "Lizard Creek Campground, WY"
     },
     {
-        id: "E5093CF2-87B9-4099-840B-56BF12701918",
+        camp_id: "E5093CF2-87B9-4099-840B-56BF12701918",
         code: "laro",
         name: "Locust Grove Group Sites",
         lat: 48.592901,
@@ -4226,7 +4226,7 @@ const campsiteData = [
         nameState: "Locust Grove Group Sites, WA"
     },
     {
-        id: "F727B83F-B8CB-49AC-A0EC-76DFAB6140FE",
+        camp_id: "F727B83F-B8CB-49AC-A0EC-76DFAB6140FE",
         code: "seki",
         name: "Lodgepole Campground",
         lat: 36.6057726327463,
@@ -4238,7 +4238,7 @@ const campsiteData = [
         nameState: "Lodgepole Campground, CA"
     },
     {
-        id: "BFBDA380-305A-4821-BB62-C72A939C78FC",
+        camp_id: "BFBDA380-305A-4821-BB62-C72A939C78FC",
         code: "shen",
         name: "Loft Mountain Campground",
         lat: 38.246415,
@@ -4250,7 +4250,7 @@ const campsiteData = [
         nameState: "Loft Mountain Campground, VA"
     },
     {
-        id: "4CA589A7-8776-4E8E-BFB7-E5D1EF2E65E8",
+        camp_id: "4CA589A7-8776-4E8E-BFB7-E5D1EF2E65E8",
         code: "glac",
         name: "Logging Creek",
         lat: 48.6984547613409,
@@ -4262,7 +4262,7 @@ const campsiteData = [
         nameState: "Logging Creek, MT"
     },
     {
-        id: "BF0E7B53-5990-4465-8242-172A24A0083A",
+        camp_id: "BF0E7B53-5990-4465-8242-172A24A0083A",
         code: "glca",
         name: "Lone Rock Beach Primitive Camping Area",
         lat: 37.016159934,
@@ -4274,7 +4274,7 @@ const campsiteData = [
         nameState: "Lone Rock Beach Primitive Camping Area, AZ"
     },
     {
-        id: "AE149158-1191-4835-8457-E6E899F5EA48",
+        camp_id: "AE149158-1191-4835-8457-E6E899F5EA48",
         code: "ever",
         name: "Long Pine Key Campground",
         lat: 25.3979002291,
@@ -4286,7 +4286,7 @@ const campsiteData = [
         nameState: "Long Pine Key Campground, FL"
     },
     {
-        id: "457CE0AF-DC49-4203-8647-55410C7B9FE1",
+        camp_id: "457CE0AF-DC49-4203-8647-55410C7B9FE1",
         code: "cong",
         name: "Longleaf Campground",
         lat: 33.8357177464607,
@@ -4299,7 +4299,7 @@ const campsiteData = [
         nameState: "Longleaf Campground"
     },
     {
-        id: "F7CE47A2-A770-449F-8085-0DF17DD432EB",
+        camp_id: "F7CE47A2-A770-449F-8085-0DF17DD432EB",
         code: "romo",
         name: "Longs Peak Campground",
         lat: 40.27479364272779,
@@ -4312,7 +4312,7 @@ const campsiteData = [
         nameState: "Longs Peak Campground"
     },
     {
-        id: "71D71180-EFB3-4888-8B2C-5474107CC139",
+        camp_id: "71D71180-EFB3-4888-8B2C-5474107CC139",
         code: "crla",
         name: "Lost Creek Campground, elevation 6,000 feet (1,829 meters)",
         lat: 42.8797493937,
@@ -4324,7 +4324,7 @@ const campsiteData = [
         nameState: "Lost Creek Campground, elevation 6,000 feet (1,829 meters), OR"
     },
     {
-        id: "864E3CD2-E953-4811-8DB0-07BB2544F6D2",
+        camp_id: "864E3CD2-E953-4811-8DB0-07BB2544F6D2",
         code: "lavo",
         name: "Lost Creek Group Campground",
         lat: 40.5618411426837,
@@ -4336,7 +4336,7 @@ const campsiteData = [
         nameState: "Lost Creek Group Campground, CA"
     },
     {
-        id: "9FF275B6-E645-4860-A614-19463177E32B",
+        camp_id: "9FF275B6-E645-4860-A614-19463177E32B",
         code: "noca",
         name: "Lower Goodell Creek Group Campground",
         lat: 48.67657475935347,
@@ -4348,7 +4348,7 @@ const campsiteData = [
         nameState: "Lower Goodell Creek Group Campground, WA"
     },
     {
-        id: "EAAFABA8-59A2-4CBD-8F9F-89C7C2B1FF8D",
+        camp_id: "EAAFABA8-59A2-4CBD-8F9F-89C7C2B1FF8D",
         code: "grba",
         name: "Lower Lehman Campground",
         lat: 39.01737,
@@ -4361,7 +4361,7 @@ const campsiteData = [
         nameState: "Lower Lehman Campground"
     },
     {
-        id: "4C3C4954-FA9C-4C58-B6CF-E66054E1F0EF",
+        camp_id: "4C3C4954-FA9C-4C58-B6CF-E66054E1F0EF",
         code: "yose",
         name: "Lower Pines Campground",
         lat: 37.7394658916,
@@ -4373,7 +4373,7 @@ const campsiteData = [
         nameState: "Lower Pines Campground, CA"
     },
     {
-        id: "CDA8256A-9CBB-4965-95FC-E3BDA19D1DF9",
+        camp_id: "CDA8256A-9CBB-4965-95FC-E3BDA19D1DF9",
         code: "gicl",
         name: "Lower Scorpion Campground",
         lat: 33.229944,
@@ -4386,7 +4386,7 @@ const campsiteData = [
         nameState: "Lower Scorpion Campground"
     },
     {
-        id: "16DA32CA-C0E9-4AF2-A6BD-39AD52887B80",
+        camp_id: "16DA32CA-C0E9-4AF2-A6BD-39AD52887B80",
         code: "sacn",
         name: "Lower St. Croix District",
         lat: 45.253281,
@@ -4399,7 +4399,7 @@ const campsiteData = [
         nameState: "Lower St. Croix District"
     },
     {
-        id: "44BCA8F4-F3F0-469E-9F2C-5B76A9978677",
+        camp_id: "44BCA8F4-F3F0-469E-9F2C-5B76A9978677",
         code: "piro",
         name: "Lowney Creek Individual Backpacking Sites",
         lat: 46.558462,
@@ -4412,7 +4412,7 @@ const campsiteData = [
         nameState: "Lowney Creek Individual Backpacking Sites"
     },
     {
-        id: "C4863E55-CDB6-4BE8-9E1B-4AE5AE18962D",
+        camp_id: "C4863E55-CDB6-4BE8-9E1B-4AE5AE18962D",
         code: "piro",
         name: "Lowney Greek Group Backpacking Site",
         lat: 46.557203,
@@ -4425,7 +4425,7 @@ const campsiteData = [
         nameState: "Lowney Greek Group Backpacking Site"
     },
     {
-        id: "14A6565A-E77A-45D7-9F6D-67BF3FEA2251",
+        camp_id: "14A6565A-E77A-45D7-9F6D-67BF3FEA2251",
         code: "kaww",
         name: "Lunksoos Campsites",
         lat: 45.908436,
@@ -4437,7 +4437,7 @@ const campsiteData = [
         nameState: "Lunksoos Campsites, ME"
     },
     {
-        id: "C6AE22BE-6AE8-4D98-BF0D-48F24D7C8B98",
+        camp_id: "C6AE22BE-6AE8-4D98-BF0D-48F24D7C8B98",
         code: "kaww",
         name: "Lunksoos Mountain Lean-To",
         lat: 45.9569815730881,
@@ -4450,7 +4450,7 @@ const campsiteData = [
         nameState: "Lunksoos Mountain Lean-To"
     },
     {
-        id: "66DFF49B-F1DC-49BB-A3CF-9F007330450D",
+        camp_id: "66DFF49B-F1DC-49BB-A3CF-9F007330450D",
         code: "yell",
         name: "Madison Campground",
         lat: 44.6454215492,
@@ -4462,7 +4462,7 @@ const campsiteData = [
         nameState: "Madison Campground, WY"
     },
     {
-        id: "C56C81F5-BF2C-481C-A63E-FFAB374F5664",
+        camp_id: "C56C81F5-BF2C-481C-A63E-FFAB374F5664",
         code: "deva",
         name: "Mahogany Flat Campground (Primitive)",
         lat: 36.23,
@@ -4474,7 +4474,7 @@ const campsiteData = [
         nameState: "Mahogany Flat Campground (Primitive), CA"
     },
     {
-        id: "4DAAC939-A3E4-4CDA-AEE6-2C6B5B7BF499",
+        camp_id: "4DAAC939-A3E4-4CDA-AEE6-2C6B5B7BF499",
         code: "pais",
         name: "Malaquite Campground",
         lat: 27.43023,
@@ -4486,7 +4486,7 @@ const campsiteData = [
         nameState: "Malaquite Campground, TX"
     },
     {
-        id: "F8782C74-5524-40BD-9FFE-1B2FB984136B",
+        camp_id: "F8782C74-5524-40BD-9FFE-1B2FB984136B",
         code: "isro",
         name: "Malone Bay Campground",
         lat: 47.98524426035943,
@@ -4498,7 +4498,7 @@ const campsiteData = [
         nameState: "Malone Bay Campground, MI"
     },
     {
-        id: "5B664E0A-C138-40B1-BAD2-17E27200DFD9",
+        camp_id: "5B664E0A-C138-40B1-BAD2-17E27200DFD9",
         code: "yell",
         name: "Mammoth Campground",
         lat: 44.97360954829384,
@@ -4510,7 +4510,7 @@ const campsiteData = [
         nameState: "Mammoth Campground, WY"
     },
     {
-        id: "B637FEC0-7F4B-4A54-BD13-7EBE26DDEF19",
+        camp_id: "B637FEC0-7F4B-4A54-BD13-7EBE26DDEF19",
         code: "maca",
         name: "Mammoth Cave Campground",
         lat: 37.1821894000506,
@@ -4522,7 +4522,7 @@ const campsiteData = [
         nameState: "Mammoth Cave Campground, KY"
     },
     {
-        id: "593D7585-DD7B-43C6-88E3-73FAB6299D0B",
+        camp_id: "593D7585-DD7B-43C6-88E3-73FAB6299D0B",
         code: "sagu",
         name: "Manning Camp",
         lat: 32.207386,
@@ -4534,7 +4534,7 @@ const campsiteData = [
         nameState: "Manning Camp, AZ"
     },
     {
-        id: "E6C99AFB-B842-4840-BD72-A4C028E0C06F",
+        camp_id: "E6C99AFB-B842-4840-BD72-A4C028E0C06F",
         code: "glac",
         name: "Many Glacier",
         lat: 48.7964957236,
@@ -4546,7 +4546,7 @@ const campsiteData = [
         nameState: "Many Glacier, MT"
     },
     {
-        id: "D62E0AD6-E402-4D82-B250-236876F667A3",
+        camp_id: "D62E0AD6-E402-4D82-B250-236876F667A3",
         code: "lavo",
         name: "Manzanita Lake Campground",
         lat: 40.5278515681602,
@@ -4558,7 +4558,7 @@ const campsiteData = [
         nameState: "Manzanita Lake Campground, CA"
     },
     {
-        id: "2EE3B5DE-9EC1-4AB0-AB15-F807746F722C",
+        camp_id: "2EE3B5DE-9EC1-4AB0-AB15-F807746F722C",
         code: "maca",
         name: "Maple Springs Group Campground",
         lat: 37.204205,
@@ -4570,7 +4570,7 @@ const campsiteData = [
         nameState: "Maple Springs Group Campground, KY"
     },
     {
-        id: "C8186F5C-7EC1-4DCE-A261-02C2C3FEDDFA",
+        camp_id: "C8186F5C-7EC1-4DCE-A261-02C2C3FEDDFA",
         code: "choh",
         name: "Marble Quarry Hiker-Biker Campsite",
         lat: 39.179557999999986,
@@ -4582,7 +4582,7 @@ const campsiteData = [
         nameState: "Marble Quarry Hiker-Biker Campsite, MD"
     },
     {
-        id: "15655876-DFFA-4A3A-8EA8-FE4F4F0F0559",
+        camp_id: "15655876-DFFA-4A3A-8EA8-FE4F4F0F0559",
         code: "laro",
         name: "Marcus Island Campground",
         lat: 48.6687321922,
@@ -4594,7 +4594,7 @@ const campsiteData = [
         nameState: "Marcus Island Campground, WA"
     },
     {
-        id: "B9CCD51F-22E2-45C1-A3E4-F352999558FF",
+        camp_id: "B9CCD51F-22E2-45C1-A3E4-F352999558FF",
         code: "gumo",
         name: "Marcus Wilderness Campground",
         lat: 31.9811711479,
@@ -4607,7 +4607,7 @@ const campsiteData = [
         nameState: "Marcus Wilderness Campground"
     },
     {
-        id: "4A67D2E9-712F-445A-80F8-330CB66FFDCE",
+        camp_id: "4A67D2E9-712F-445A-80F8-330CB66FFDCE",
         code: "choh",
         name: "Marsden Tract Group Campground",
         lat: 38.97679701853521,
@@ -4620,7 +4620,7 @@ const campsiteData = [
         nameState: "Marsden Tract Group Campground"
     },
     {
-        id: "0CBEC1FE-AEED-4AA7-BE9F-7A25E9EB602B",
+        camp_id: "0CBEC1FE-AEED-4AA7-BE9F-7A25E9EB602B",
         code: "piro",
         name: "Masse Homestead Group Backpacking Site",
         lat: 46.6468043665,
@@ -4633,7 +4633,7 @@ const campsiteData = [
         nameState: "Masse Homestead Group Backpacking Site"
     },
     {
-        id: "FFC19C0E-A862-4F84-A269-BBE89791789F",
+        camp_id: "FFC19C0E-A862-4F84-A269-BBE89791789F",
         code: "piro",
         name: "Masse Homestead Individual Backpacking Sites",
         lat: 46.647693,
@@ -4646,7 +4646,7 @@ const campsiteData = [
         nameState: "Masse Homestead Individual Backpacking Sites"
     },
     {
-        id: "CBEBF627-E888-45E6-9E8C-6EA6AE9A1B2D",
+        camp_id: "CBEBF627-E888-45E6-9E8C-6EA6AE9A1B2D",
         code: "grca",
         name: "Mather Campground - South Rim",
         lat: 36.04918080776177,
@@ -4658,7 +4658,7 @@ const campsiteData = [
         nameState: "Mather Campground - South Rim, AZ"
     },
     {
-        id: "C4944EF0-E744-47F8-ACEB-F6283723AFCA",
+        camp_id: "C4944EF0-E744-47F8-ACEB-F6283723AFCA",
         code: "shen",
         name: "Mathews Arm Campground",
         lat: 38.763144,
@@ -4670,7 +4670,7 @@ const campsiteData = [
         nameState: "Mathews Arm Campground, VA"
     },
     {
-        id: "739CE881-991F-42CE-885B-3F0410D82ED5",
+        camp_id: "739CE881-991F-42CE-885B-3F0410D82ED5",
         code: "buff",
         name: "Maumee South",
         lat: 36.0394860005,
@@ -4682,7 +4682,7 @@ const campsiteData = [
         nameState: "Maumee South, AR"
     },
     {
-        id: "ADCAAE21-0B87-4379-A710-73E70566AA92",
+        camp_id: "ADCAAE21-0B87-4379-A710-73E70566AA92",
         code: "crla",
         name: "Mazama Campground",
         lat: 42.86862146054785,
@@ -4694,7 +4694,7 @@ const campsiteData = [
         nameState: "Mazama Campground, OR"
     },
     {
-        id: "91B3E7C5-3AEE-44DF-B806-3A9468D334C9",
+        camp_id: "91B3E7C5-3AEE-44DF-B806-3A9468D334C9",
         code: "lamr",
         name: "McBride Canyon and Mullinaw Creek Campgrounds",
         lat: 35.529449,
@@ -4707,7 +4707,7 @@ const campsiteData = [
         nameState: "McBride Canyon and Mullinaw Creek Campgrounds"
     },
     {
-        id: "9D2E311B-C207-4DCF-94B3-DE542132D2C3",
+        camp_id: "9D2E311B-C207-4DCF-94B3-DE542132D2C3",
         code: "isro",
         name: "McCargoe Cove Campground",
         lat: 48.08719604689656,
@@ -4719,7 +4719,7 @@ const campsiteData = [
         nameState: "McCargoe Cove Campground, MI"
     },
     {
-        id: "A93DCCB5-EE82-4091-9744-387D1649C0C0",
+        camp_id: "A93DCCB5-EE82-4091-9744-387D1649C0C0",
         code: "gumo",
         name: "McKittrick Ridge Wilderness Campground",
         lat: 31.9743477327,
@@ -4732,7 +4732,7 @@ const campsiteData = [
         nameState: "McKittrick Ridge Wilderness Campground"
     },
     {
-        id: "14751579-DBB7-4045-8558-93B39B25E616",
+        camp_id: "14751579-DBB7-4045-8558-93B39B25E616",
         code: "gett",
         name: "McMillan Woods Youth Campground",
         lat: 39.8210049992,
@@ -4744,7 +4744,7 @@ const campsiteData = [
         nameState: "McMillan Woods Youth Campground, PA"
     },
     {
-        id: "C70FF8AC-BE33-4C34-B4E4-F144C6D60275",
+        camp_id: "C70FF8AC-BE33-4C34-B4E4-F144C6D60275",
         code: "choh",
         name: "Mccoys Ferry Campground",
         lat: 39.60923039149862,
@@ -4757,7 +4757,7 @@ const campsiteData = [
         nameState: "Mccoys Ferry Campground"
     },
     {
-        id: "10EE7534-B7D7-4A2A-B8A2-AAE5628429F9",
+        camp_id: "10EE7534-B7D7-4A2A-B8A2-AAE5628429F9",
         code: "neri",
         name: "Meadow Creek Campground",
         lat: 37.79667,
@@ -4769,7 +4769,7 @@ const campsiteData = [
         nameState: "Meadow Creek Campground, WV"
     },
     {
-        id: "0E90E11A-C131-4AEA-AADD-C14042C04B23",
+        camp_id: "0E90E11A-C131-4AEA-AADD-C14042C04B23",
         code: "grsa",
         name: "Medano Pass Primitive Road Campsites",
         lat: 37.803519,
@@ -4782,7 +4782,7 @@ const campsiteData = [
         nameState: "Medano Pass Primitive Road Campsites"
     },
     {
-        id: "59D597C2-D37E-41A8-AEBA-FA0D219280D4",
+        camp_id: "59D597C2-D37E-41A8-AEBA-FA0D219280D4",
         code: "bica",
         name: "Medicine Creek Campground",
         lat: 45.1101806592348,
@@ -4794,7 +4794,7 @@ const campsiteData = [
         nameState: "Medicine Creek Campground, WY"
     },
     {
-        id: "E525405F-CD51-455B-BB8A-375D58C6636E",
+        camp_id: "E525405F-CD51-455B-BB8A-375D58C6636E",
         code: "natr",
         name: "Meriwether Lewis Campground, Milepost 385.9",
         lat: 35.5224918473591,
@@ -4806,7 +4806,7 @@ const campsiteData = [
         nameState: "Meriwether Lewis Campground, Milepost 385.9, TN"
     },
     {
-        id: "65BC7988-F9D6-475A-9FD7-C3E0E0C66C06",
+        camp_id: "65BC7988-F9D6-475A-9FD7-C3E0E0C66C06",
         code: "isro",
         name: "Merritt Lane Campground",
         lat: 48.18459316327891,
@@ -4818,7 +4818,7 @@ const campsiteData = [
         nameState: "Merritt Lane Campground, MI"
     },
     {
-        id: "75B2EF77-B8A3-4FAB-8E68-B4C9D7894F68",
+        camp_id: "75B2EF77-B8A3-4FAB-8E68-B4C9D7894F68",
         code: "gumo",
         name: "Mescalero Wilderness Campground",
         lat: 31.9526879019085,
@@ -4831,7 +4831,7 @@ const campsiteData = [
         nameState: "Mescalero Wilderness Campground"
     },
     {
-        id: "B60A752C-4A67-4A7F-806F-2876DF00243E",
+        camp_id: "B60A752C-4A67-4A7F-806F-2876DF00243E",
         code: "deva",
         name: "Mesquite Spring Campground",
         lat: 36.9632819819,
@@ -4843,7 +4843,7 @@ const campsiteData = [
         nameState: "Mesquite Spring Campground, CA"
     },
     {
-        id: "90B166B3-6065-41B2-9190-9F5AF76D9D8D",
+        camp_id: "90B166B3-6065-41B2-9190-9F5AF76D9D8D",
         code: "moja",
         name: "Mid-Hills Campground",
         lat: 35.1314809174233,
@@ -4855,7 +4855,7 @@ const campsiteData = [
         nameState: "Mid-Hills Campground, CA"
     },
     {
-        id: "8D116916-7528-4629-B983-99F5D19C4668",
+        camp_id: "8D116916-7528-4629-B983-99F5D19C4668",
         code: "sacn",
         name: "Middle St. Croix",
         lat: 45.773341,
@@ -4868,7 +4868,7 @@ const campsiteData = [
         nameState: "Middle St. Croix"
     },
     {
-        id: "4C753B83-8E55-4969-A918-7CF37BEBEF34",
+        camp_id: "4C753B83-8E55-4969-A918-7CF37BEBEF34",
         code: "bicy",
         name: "Midway Campground",
         lat: 25.851926,
@@ -4880,7 +4880,7 @@ const campsiteData = [
         nameState: "Midway Campground, FL"
     },
     {
-        id: "6656707B-F876-4334-9150-730DC35BAC97",
+        camp_id: "6656707B-F876-4334-9150-730DC35BAC97",
         code: "redw",
         name: "Mill Creek Campground",
         lat: 41.7027241694,
@@ -4892,7 +4892,7 @@ const campsiteData = [
         nameState: "Mill Creek Campground, CA"
     },
     {
-        id: "60569FBD-2B27-45BD-9FF7-68722E5BF02D",
+        camp_id: "60569FBD-2B27-45BD-9FF7-68722E5BF02D",
         code: "bicy",
         name: "Mitchell's Landing",
         lat: 25.7564496482,
@@ -4904,7 +4904,7 @@ const campsiteData = [
         nameState: "Mitchell's Landing, FL"
     },
     {
-        id: "D7BA07C5-8453-4E03-A178-2C20AB591360",
+        camp_id: "D7BA07C5-8453-4E03-A178-2C20AB591360",
         code: "dewa",
         name: "Mohican Outdoor Center",
         lat: 41.0350164989291,
@@ -4916,7 +4916,7 @@ const campsiteData = [
         nameState: "Mohican Outdoor Center, NJ"
     },
     {
-        id: "AC717D5E-F55A-4539-AC8E-4B4C5009ABBB",
+        camp_id: "AC717D5E-F55A-4539-AC8E-4B4C5009ABBB",
         code: "bicy",
         name: "Monument Lake",
         lat: 25.8684663476,
@@ -4928,7 +4928,7 @@ const campsiteData = [
         nameState: "Monument Lake, FL"
     },
     {
-        id: "1F9A5CA2-8D09-4444-ABD6-532B22C404B7",
+        camp_id: "1F9A5CA2-8D09-4444-ABD6-532B22C404B7",
         code: "olym",
         name: "Mora Campground",
         lat: 47.9168610105267,
@@ -4940,7 +4940,7 @@ const campsiteData = [
         nameState: "Mora Campground, WA"
     },
     {
-        id: "97A7C642-B9C6-463B-8FAC-B9480FE5503A",
+        camp_id: "97A7C642-B9C6-463B-8FAC-B9480FE5503A",
         code: "seki",
         name: "Moraine Campground",
         lat: 36.7852162631223,
@@ -4952,7 +4952,7 @@ const campsiteData = [
         nameState: "Moraine Campground, CA"
     },
     {
-        id: "D322E1E9-8058-4C42-80A3-9FBC82583190",
+        camp_id: "D322E1E9-8058-4C42-80A3-9FBC82583190",
         code: "romo",
         name: "Moraine Park Campground",
         lat: 40.36066149616986,
@@ -4964,7 +4964,7 @@ const campsiteData = [
         nameState: "Moraine Park Campground, CO"
     },
     {
-        id: "D00BE92E-B246-4C6E-8CDD-77F437678AF2",
+        camp_id: "D00BE92E-B246-4C6E-8CDD-77F437678AF2",
         code: "meve",
         name: "Morefield Campground",
         lat: 37.3014992738134,
@@ -4976,7 +4976,7 @@ const campsiteData = [
         nameState: "Morefield Campground, CO"
     },
     {
-        id: "AC9D778B-7792-420B-A55A-6E1AA558042F",
+        camp_id: "AC9D778B-7792-420B-A55A-6E1AA558042F",
         code: "isro",
         name: "Moskey Basin Campground",
         lat: 48.06298074914441,
@@ -4988,7 +4988,7 @@ const campsiteData = [
         nameState: "Moskey Basin Campground, MI"
     },
     {
-        id: "38CA8E50-5BB0-4592-9992-0600AD177834",
+        camp_id: "38CA8E50-5BB0-4592-9992-0600AD177834",
         code: "piro",
         name: "Mosquito Individual Backpacking Sites",
         lat: 46.527061,
@@ -5001,7 +5001,7 @@ const campsiteData = [
         nameState: "Mosquito Individual Backpacking Sites"
     },
     {
-        id: "F4C0B48E-944E-42FC-9E18-D579786BBC93",
+        camp_id: "F4C0B48E-944E-42FC-9E18-D579786BBC93",
         code: "piro",
         name: "Mosquito River Group Backpacking Site",
         lat: 46.5226013349,
@@ -5014,7 +5014,7 @@ const campsiteData = [
         nameState: "Mosquito River Group Backpacking Site"
     },
     {
-        id: "1B9BB56F-9FF5-4AD4-B966-F3B7310AED49",
+        camp_id: "1B9BB56F-9FF5-4AD4-B966-F3B7310AED49",
         code: "blri",
         name: "Mount Pisgah",
         lat: 35.40286804539159,
@@ -5026,7 +5026,7 @@ const campsiteData = [
         nameState: "Mount Pisgah, NC"
     },
     {
-        id: "7FDEE7A6-EB52-43E9-A4D8-193545AB5207",
+        camp_id: "7FDEE7A6-EB52-43E9-A4D8-193545AB5207",
         code: "lacl",
         name: "NPS Priest Rock Public Use Cabin",
         lat: 60.3093333056,
@@ -5039,7 +5039,7 @@ const campsiteData = [
         nameState: "NPS Priest Rock Public Use Cabin"
     },
     {
-        id: "7BBD3378-FC3C-46E4-9DF8-2F2AFFA92C2E",
+        camp_id: "7BBD3378-FC3C-46E4-9DF8-2F2AFFA92C2E",
         code: "sacn",
         name: "Namekagon District",
         lat: 45.905263,
@@ -5052,7 +5052,7 @@ const campsiteData = [
         nameState: "Namekagon District"
     },
     {
-        id: "3D8B7A3D-BC50-4270-8CD1-631D13A15C62",
+        camp_id: "3D8B7A3D-BC50-4270-8CD1-631D13A15C62",
         code: "nabr",
         name: "Natural Bridges Campground",
         lat: 37.60921843789215,
@@ -5064,7 +5064,7 @@ const campsiteData = [
         nameState: "Natural Bridges Campground, UT"
     },
     {
-        id: "F1D0E963-7D3A-4CDF-A5CC-1759D8994679",
+        camp_id: "F1D0E963-7D3A-4CDF-A5CC-1759D8994679",
         code: "guis",
         name: "Naval Live Oaks Youth Group Camping",
         lat: 30.3689892485485,
@@ -5076,7 +5076,7 @@ const campsiteData = [
         nameState: "Naval Live Oaks Youth Group Camping, FL"
     },
     {
-        id: "C772BBDA-274E-40A2-B213-3C7B8127E6A7",
+        camp_id: "C772BBDA-274E-40A2-B213-3C7B8127E6A7",
         code: "noca",
         name: "Newhalem Creek Campground",
         lat: 48.671,
@@ -5088,7 +5088,7 @@ const campsiteData = [
         nameState: "Newhalem Creek Campground, WA"
     },
     {
-        id: "6B63B182-983C-41D9-82F7-F879170A3517",
+        camp_id: "6B63B182-983C-41D9-82F7-F879170A3517",
         code: "yell",
         name: "Norris Campground",
         lat: 44.73784854861962,
@@ -5100,7 +5100,7 @@ const campsiteData = [
         nameState: "Norris Campground, WY"
     },
     {
-        id: "17B8A379-66C5-4225-8EE3-2D3CB3CF0CA4",
+        camp_id: "17B8A379-66C5-4225-8EE3-2D3CB3CF0CA4",
         code: "brca",
         name: "North Campground",
         lat: 37.638096,
@@ -5112,7 +5112,7 @@ const campsiteData = [
         nameState: "North Campground, UT"
     },
     {
-        id: "8EB31DC6-1B15-4036-87CA-F97589FC77DD",
+        camp_id: "8EB31DC6-1B15-4036-87CA-F97589FC77DD",
         code: "isro",
         name: "North Desor Campground",
         lat: 47.98085044383097,
@@ -5124,7 +5124,7 @@ const campsiteData = [
         nameState: "North Desor Campground, MI"
     },
     {
-        id: "FFD42463-76E6-4540-898A-0A70A8A8F747",
+        camp_id: "FFD42463-76E6-4540-898A-0A70A8A8F747",
         code: "olym",
         name: "North Fork Campground",
         lat: 47.5698520216,
@@ -5136,7 +5136,7 @@ const campsiteData = [
         nameState: "North Fork Campground, WA"
     },
     {
-        id: "BF1EF0FB-866C-41EC-AE20-39C588D6250A",
+        camp_id: "BF1EF0FB-866C-41EC-AE20-39C588D6250A",
         code: "laro",
         name: "North Gorge Campground",
         lat: 48.7864756738437,
@@ -5148,7 +5148,7 @@ const campsiteData = [
         nameState: "North Gorge Campground, WA"
     },
     {
-        id: "E9D964EF-67FA-4F51-8ECC-56FD621F7AD7",
+        camp_id: "E9D964EF-67FA-4F51-8ECC-56FD621F7AD7",
         code: "choh",
         name: "North Mountain Hiker-Biker Campsite",
         lat: 39.610663,
@@ -5160,7 +5160,7 @@ const campsiteData = [
         nameState: "North Mountain Hiker-Biker Campsite, MD"
     },
     {
-        id: "BDF9737C-DD6E-457F-9ADC-501B07851F77",
+        camp_id: "BDF9737C-DD6E-457F-9ADC-501B07851F77",
         code: "yose",
         name: "North Pines Campground",
         lat: 37.7404163398378,
@@ -5172,7 +5172,7 @@ const campsiteData = [
         nameState: "North Pines Campground, CA"
     },
     {
-        id: "FCA57A5F-BC58-44D8-83BD-EDC0FC9CCB17",
+        camp_id: "FCA57A5F-BC58-44D8-83BD-EDC0FC9CCB17",
         code: "blca",
         name: "North Rim Campground",
         lat: 38.58518332872675,
@@ -5184,7 +5184,7 @@ const campsiteData = [
         nameState: "North Rim Campground, CO"
     },
     {
-        id: "E6979811-AC94-41A2-BD7A-8C17B8D0111D",
+        camp_id: "E6979811-AC94-41A2-BD7A-8C17B8D0111D",
         code: "grca",
         name: "North Rim Campground",
         lat: 36.208690159698094,
@@ -5196,7 +5196,7 @@ const campsiteData = [
         nameState: "North Rim Campground, AZ"
     },
     {
-        id: "46225547-072D-45AA-9261-558B27D92DB4",
+        camp_id: "46225547-072D-45AA-9261-558B27D92DB4",
         code: "havo",
         name: "Nāmakanipaio",
         lat: 19.4253736529641,
@@ -5208,7 +5208,7 @@ const campsiteData = [
         nameState: "Nāmakanipaio, HI"
     },
     {
-        id: "33D32CEA-A00E-4225-B3C0-E769A7DDCDFD",
+        camp_id: "33D32CEA-A00E-4225-B3C0-E769A7DDCDFD",
         code: "whis",
         name: "Oak Bottom RV",
         lat: 40.6505313284,
@@ -5220,7 +5220,7 @@ const campsiteData = [
         nameState: "Oak Bottom RV, CA"
     },
     {
-        id: "5E78B8BD-F020-406E-88B9-FC67AA04E663",
+        camp_id: "5E78B8BD-F020-406E-88B9-FC67AA04E663",
         code: "whis",
         name: "Oak Bottom Tent Campground",
         lat: 40.650528,
@@ -5232,7 +5232,7 @@ const campsiteData = [
         nameState: "Oak Bottom Tent Campground, CA"
     },
     {
-        id: "1D88A5D2-1AC6-4B07-9295-E666F1736B95",
+        camp_id: "1D88A5D2-1AC6-4B07-9295-E666F1736B95",
         code: "prwi",
         name: "Oak Ridge Campground",
         lat: 38.6004202182,
@@ -5244,7 +5244,7 @@ const campsiteData = [
         nameState: "Oak Ridge Campground, VA"
     },
     {
-        id: "EB7177AD-9252-4CAD-B85D-08D9BE25AA25",
+        camp_id: "EB7177AD-9252-4CAD-B85D-08D9BE25AA25",
         code: "asis",
         name: "Oceanside Drive-in Campground",
         lat: 38.20161059949485,
@@ -5256,7 +5256,7 @@ const campsiteData = [
         nameState: "Oceanside Drive-in Campground, MD"
     },
     {
-        id: "27416013-2F23-4D0A-86FA-42FC24D7A03E",
+        camp_id: "27416013-2F23-4D0A-86FA-42FC24D7A03E",
         code: "asis",
         name: "Oceanside Group Campground",
         lat: 38.20377,
@@ -5268,7 +5268,7 @@ const campsiteData = [
         nameState: "Oceanside Group Campground, MD"
     },
     {
-        id: "B9B39C25-D4C1-47AE-B02A-AC0E6CB93DCB",
+        camp_id: "B9B39C25-D4C1-47AE-B02A-AC0E6CB93DCB",
         code: "asis",
         name: "Oceanside Walk-in campground",
         lat: 38.1948063,
@@ -5280,7 +5280,7 @@ const campsiteData = [
         nameState: "Oceanside Walk-in campground, MD"
     },
     {
-        id: "E8C25071-8A67-42F8-8160-66BF81E8C450",
+        camp_id: "E8C25071-8A67-42F8-8160-66BF81E8C450",
         code: "caha",
         name: "Ocracoke Campground",
         lat: 35.136234,
@@ -5292,7 +5292,7 @@ const campsiteData = [
         nameState: "Ocracoke Campground, NC"
     },
     {
-        id: "EE30401B-4172-4BBA-91AE-B63EAE532367",
+        camp_id: "EE30401B-4172-4BBA-91AE-B63EAE532367",
         code: "mora",
         name: "Ohanapecosh Campground",
         lat: 46.73599667059602,
@@ -5305,7 +5305,7 @@ const campsiteData = [
         nameState: "Ohanapecosh Campground"
     },
     {
-        id: "D02FA068-BF79-4A17-8621-533DFE01DDF0",
+        camp_id: "D02FA068-BF79-4A17-8621-533DFE01DDF0",
         code: "choh",
         name: "Opequon Junction Hiker-Biker Campsite",
         lat: 39.51593300000001,
@@ -5317,7 +5317,7 @@ const campsiteData = [
         nameState: "Opequon Junction Hiker-Biker Campsite, MD"
     },
     {
-        id: "C2BA0A25-CF73-48EB-8B4C-29E16D6E52B5",
+        camp_id: "C2BA0A25-CF73-48EB-8B4C-29E16D6E52B5",
         code: "caha",
         name: "Oregon Inlet Campground",
         lat: 35.80027781,
@@ -5329,7 +5329,7 @@ const campsiteData = [
         nameState: "Oregon Inlet Campground, NC"
     },
     {
-        id: "AACB05F2-F5E2-47CF-8D26-EE42B70DF978",
+        camp_id: "AACB05F2-F5E2-47CF-8D26-EE42B70DF978",
         code: "blri",
         name: "Otter Creek",
         lat: 37.5756939454,
@@ -5341,7 +5341,7 @@ const campsiteData = [
         nameState: "Otter Creek, VA"
     },
     {
-        id: "90965E82-9EC7-4D1E-A5FA-4AE939B549B5",
+        camp_id: "90965E82-9EC7-4D1E-A5FA-4AE939B549B5",
         code: "cato",
         name: "Owens Creek Campground",
         lat: 39.6596869874,
@@ -5353,7 +5353,7 @@ const campsiteData = [
         nameState: "Owens Creek Campground, MD"
     },
     {
-        id: "5CEA9F21-8CBB-4B5D-AB2F-7D6FC31AE52E",
+        camp_id: "5CEA9F21-8CBB-4B5D-AB2F-7D6FC31AE52E",
         code: "buff",
         name: "Ozark Campground",
         lat: 36.0640098001,
@@ -5365,7 +5365,7 @@ const campsiteData = [
         nameState: "Ozark Campground, AR"
     },
     {
-        id: "24D983CD-F853-49B3-A368-25DC3832F628",
+        camp_id: "24D983CD-F853-49B3-A368-25DC3832F628",
         code: "olym",
         name: "Ozette Campground",
         lat: 48.1532400873933,
@@ -5377,7 +5377,7 @@ const campsiteData = [
         nameState: "Ozette Campground, WA"
     },
     {
-        id: "AB0F4BC2-8EFF-4138-94F3-98F3F910FDE2",
+        camp_id: "AB0F4BC2-8EFF-4138-94F3-98F3F910FDE2",
         code: "semo",
         name: "Paul Grist State Park",
         lat: 32.591452,
@@ -5390,7 +5390,7 @@ const campsiteData = [
         nameState: "Paul Grist State Park"
     },
     {
-        id: "18876B25-BB2B-4507-B2F6-0949C995BCED",
+        camp_id: "18876B25-BB2B-4507-B2F6-0949C995BCED",
         code: "choh",
         name: "Paw Paw Tunnel Campground",
         lat: 39.54423610033746,
@@ -5403,7 +5403,7 @@ const campsiteData = [
         nameState: "Paw Paw Tunnel Campground"
     },
     {
-        id: "9D607267-5063-463F-8487-DF928F788339",
+        camp_id: "9D607267-5063-463F-8487-DF928F788339",
         code: "blri",
         name: "Peaks of Otter Campground",
         lat: 37.443384745,
@@ -5415,7 +5415,7 @@ const campsiteData = [
         nameState: "Peaks of Otter Campground, VA"
     },
     {
-        id: "FB8D1AFA-AD1F-48F1-AFF4-B649857B6D61",
+        camp_id: "FB8D1AFA-AD1F-48F1-AFF4-B649857B6D61",
         code: "yell",
         name: "Pebble Creek Campground",
         lat: 44.9169813491583,
@@ -5427,7 +5427,7 @@ const campsiteData = [
         nameState: "Pebble Creek Campground, WY"
     },
     {
-        id: "15CB8D4F-5780-4293-95DE-153674F84667",
+        camp_id: "15CB8D4F-5780-4293-95DE-153674F84667",
         code: "whis",
         name: "Peltier Bridge",
         lat: 40.5857833,
@@ -5439,7 +5439,7 @@ const campsiteData = [
         nameState: "Peltier Bridge, CA"
     },
     {
-        id: "CC016A4C-E0FA-4042-A148-5A1AA75E5AAD",
+        camp_id: "CC016A4C-E0FA-4042-A148-5A1AA75E5AAD",
         code: "isro",
         name: "Pickerel Cove Campground",
         lat: 48.1245169558947,
@@ -5451,7 +5451,7 @@ const campsiteData = [
         nameState: "Pickerel Cove Campground, MI"
     },
     {
-        id: "7CB28D9D-073D-4493-9D2C-CA3004484378",
+        camp_id: "7CB28D9D-073D-4493-9D2C-CA3004484378",
         code: "choh",
         name: "Pigmans Ferry Hiker-Biker Campsite",
         lat: 39.53895800000001,
@@ -5463,7 +5463,7 @@ const campsiteData = [
         nameState: "Pigmans Ferry Hiker-Biker Campsite, MD"
     },
     {
-        id: "1A2D2E59-3F76-493A-86AA-8CCCDD8C47D2",
+        camp_id: "1A2D2E59-3F76-493A-86AA-8CCCDD8C47D2",
         code: "piro",
         name: "Pine Bluff Individual Backpacking Sites",
         lat: 46.586272,
@@ -5476,7 +5476,7 @@ const campsiteData = [
         nameState: "Pine Bluff Individual Backpacking Sites"
     },
     {
-        id: "4356D077-AE68-4822-B67E-3CF48A8BBDDB",
+        camp_id: "4356D077-AE68-4822-B67E-3CF48A8BBDDB",
         code: "gumo",
         name: "Pine Springs Campground",
         lat: 31.8952617307,
@@ -5488,7 +5488,7 @@ const campsiteData = [
         nameState: "Pine Springs Campground, TX"
     },
     {
-        id: "0A45C29D-7CE3-455D-BA28-1C982B68F5A6",
+        camp_id: "0A45C29D-7CE3-455D-BA28-1C982B68F5A6",
         code: "gumo",
         name: "Pine Top Wilderness Campground",
         lat: 31.9185398240834,
@@ -5501,7 +5501,7 @@ const campsiteData = [
         nameState: "Pine Top Wilderness Campground"
     },
     {
-        id: "63A57214-A247-405D-ACBD-254D56A1FDE7",
+        camp_id: "63A57214-A247-405D-ACBD-254D56A1FDE7",
         code: "bicy",
         name: "Pinecrest",
         lat: 25.7615555478,
@@ -5513,7 +5513,7 @@ const campsiteData = [
         nameState: "Pinecrest, FL"
     },
     {
-        id: "F5482EE1-0DC2-473D-AB4E-A6132ECFEF2D",
+        camp_id: "F5482EE1-0DC2-473D-AB4E-A6132ECFEF2D",
         code: "bicy",
         name: "Pink Jeep",
         lat: 26.216331047905975,
@@ -5525,7 +5525,7 @@ const campsiteData = [
         nameState: "Pink Jeep, FL"
     },
     {
-        id: "B55ABE9A-E5AF-4A4E-AACE-7299165831F5",
+        camp_id: "B55ABE9A-E5AF-4A4E-AACE-7299165831F5",
         code: "pinn",
         name: "Pinnacles Campground",
         lat: 36.4898445958,
@@ -5537,7 +5537,7 @@ const campsiteData = [
         nameState: "Pinnacles Campground, CA"
     },
     {
-        id: "F3D4A32A-B2CA-4E38-B049-C90164E4540A",
+        camp_id: "F3D4A32A-B2CA-4E38-B049-C90164E4540A",
         code: "grsa",
         name: "Piñon Flats Campground",
         lat: 37.7449368560859,
@@ -5549,7 +5549,7 @@ const campsiteData = [
         nameState: "Piñon Flats Campground, CO"
     },
     {
-        id: "64C7EA2F-FCB4-47A3-A19E-D6ED6EADF6F6",
+        camp_id: "64C7EA2F-FCB4-47A3-A19E-D6ED6EADF6F6",
         code: "slbe",
         name: "Platte River Campground",
         lat: 44.71551,
@@ -5561,7 +5561,7 @@ const campsiteData = [
         nameState: "Platte River Campground, MI"
     },
     {
-        id: "625ECC9F-CC94-4173-9F41-6B6C72A0EB1A",
+        camp_id: "625ECC9F-CC94-4173-9F41-6B6C72A0EB1A",
         code: "klgo",
         name: "Pleasant Camp",
         lat: 59.6385221,
@@ -5573,7 +5573,7 @@ const campsiteData = [
         nameState: "Pleasant Camp, AK"
     },
     {
-        id: "49F2E692-7A04-488E-BEED-C4C0E195B1E2",
+        camp_id: "49F2E692-7A04-488E-BEED-C4C0E195B1E2",
         code: "lamr",
         name: "Plum Creek Campgrounds",
         lat: 35.516667,
@@ -5585,7 +5585,7 @@ const campsiteData = [
         nameState: "Plum Creek Campgrounds, TX"
     },
     {
-        id: "1827DF3F-1EC6-4A91-9A57-8BD6CEE2039B",
+        camp_id: "1827DF3F-1EC6-4A91-9A57-8BD6CEE2039B",
         code: "cebr",
         name: "Point Supreme Campground",
         lat: 37.6103850583356,
@@ -5598,7 +5598,7 @@ const campsiteData = [
         nameState: "Point Supreme Campground"
     },
     {
-        id: "87AC7E6E-5020-4E63-ADC1-90BA6D3F73CE",
+        camp_id: "87AC7E6E-5020-4E63-ADC1-90BA6D3F73CE",
         code: "kaww",
         name: "Pond Pitch Campsite",
         lat: 46.0633204470942,
@@ -5611,7 +5611,7 @@ const campsiteData = [
         nameState: "Pond Pitch Campsite"
     },
     {
-        id: "344FA89E-5F8A-49FC-A1E2-7F584B355393",
+        camp_id: "344FA89E-5F8A-49FC-A1E2-7F584B355393",
         code: "band",
         name: "Ponderosa",
         lat: 35.83308336,
@@ -5623,7 +5623,7 @@ const campsiteData = [
         nameState: "Ponderosa, NM"
     },
     {
-        id: "0F440585-6E8F-4D63-AC22-92312953FB5E",
+        camp_id: "0F440585-6E8F-4D63-AC22-92312953FB5E",
         code: "cure",
         name: "Ponderosa Campground",
         lat: 38.5257080480139,
@@ -5636,7 +5636,7 @@ const campsiteData = [
         nameState: "Ponderosa Campground"
     },
     {
-        id: "761D857A-D5D4-4FAE-8E66-952DE2052224",
+        camp_id: "761D857A-D5D4-4FAE-8E66-952DE2052224",
         code: "cato",
         name: "Poplar Grove Youth Group Tent Campground",
         lat: 39.6558291260591,
@@ -5649,7 +5649,7 @@ const campsiteData = [
         nameState: "Poplar Grove Youth Group Tent Campground"
     },
     {
-        id: "37A2C529-C63B-42B4-8AE1-DC0611B34690",
+        camp_id: "37A2C529-C63B-42B4-8AE1-DC0611B34690",
         code: "slbe",
         name: "Popple Campground - South Manitou Island",
         lat: 45.046024,
@@ -5661,7 +5661,7 @@ const campsiteData = [
         nameState: "Popple Campground - South Manitou Island, MI"
     },
     {
-        id: "E725A627-101C-486D-92CE-D4798A742BB1",
+        camp_id: "E725A627-101C-486D-92CE-D4798A742BB1",
         code: "laro",
         name: "Porcupine Bay Campground",
         lat: 47.8945931616,
@@ -5674,7 +5674,7 @@ const campsiteData = [
         nameState: "Porcupine Bay Campground"
     },
     {
-        id: "AFD1869B-19F1-4C47-9B9B-75A6625C7A6D",
+        camp_id: "AFD1869B-19F1-4C47-9B9B-75A6625C7A6D",
         code: "yose",
         name: "Porcupine Flat Campground",
         lat: 37.8082397641,
@@ -5687,7 +5687,7 @@ const campsiteData = [
         nameState: "Porcupine Flat Campground"
     },
     {
-        id: "5EAA1F18-E950-4FE7-83D5-2D00F4471177",
+        camp_id: "5EAA1F18-E950-4FE7-83D5-2D00F4471177",
         code: "piro",
         name: "Potato Patch Individual Backpacking Sites",
         lat: 46.497249,
@@ -5700,7 +5700,7 @@ const campsiteData = [
         nameState: "Potato Patch Individual Backpacking Sites"
     },
     {
-        id: "9F588F02-DC9B-4573-B868-1A0B600BA1F3",
+        camp_id: "9F588F02-DC9B-4573-B868-1A0B600BA1F3",
         code: "choh",
         name: "Potomac Forks Hiker-Biker Campsite",
         lat: 39.53094000000004,
@@ -5712,7 +5712,7 @@ const campsiteData = [
         nameState: "Potomac Forks Hiker-Biker Campsite, MD"
     },
     {
-        id: "191F3831-AC51-41B2-8BAB-92A4D1BC7685",
+        camp_id: "191F3831-AC51-41B2-8BAB-92A4D1BC7685",
         code: "seki",
         name: "Potwisha Campground",
         lat: 36.5165078377,
@@ -5725,7 +5725,7 @@ const campsiteData = [
         nameState: "Potwisha Campground"
     },
     {
-        id: "6C955DB8-0800-422C-8198-F6E1DC7BA46C",
+        camp_id: "6C955DB8-0800-422C-8198-F6E1DC7BA46C",
         code: "semo",
         name: "Prairie Creek",
         lat: 32.3336736,
@@ -5738,7 +5738,7 @@ const campsiteData = [
         nameState: "Prairie Creek"
     },
     {
-        id: "36C60550-B5BE-4D8D-AFA3-F87E545CA54A",
+        camp_id: "36C60550-B5BE-4D8D-AFA3-F87E545CA54A",
         code: "care",
         name: "Primitive campsites at Cathedral Campground",
         lat: 38.4746,
@@ -5750,7 +5750,7 @@ const campsiteData = [
         nameState: "Primitive campsites at Cathedral Campground, UT"
     },
     {
-        id: "B59E5DFB-3738-4986-96AD-648FE6A34ABE",
+        camp_id: "B59E5DFB-3738-4986-96AD-648FE6A34ABE",
         code: "care",
         name: "Primitive campsites at Cedar Mesa Campground",
         lat: 38.0073,
@@ -5762,7 +5762,7 @@ const campsiteData = [
         nameState: "Primitive campsites at Cedar Mesa Campground, UT"
     },
     {
-        id: "1B6C3E06-37FE-4725-A042-8FE3ECBAB2CD",
+        camp_id: "1B6C3E06-37FE-4725-A042-8FE3ECBAB2CD",
         code: "prwi",
         name: "Prince William Forest RV Campground",
         lat: 38.603929,
@@ -5774,7 +5774,7 @@ const campsiteData = [
         nameState: "Prince William Forest RV Campground, VA"
     },
     {
-        id: "81DE0EE8-2328-4F98-A59D-CF41B00BC6BD",
+        camp_id: "81DE0EE8-2328-4F98-A59D-CF41B00BC6BD",
         code: "ozar",
         name: "Pulltite Campground",
         lat: 37.3394667448,
@@ -5786,7 +5786,7 @@ const campsiteData = [
         nameState: "Pulltite Campground, MO"
     },
     {
-        id: "37E012F8-43AE-4145-A8F1-BFA6BBD7332E",
+        camp_id: "37E012F8-43AE-4145-A8F1-BFA6BBD7332E",
         code: "noca",
         name: "Purple Point Campground",
         lat: 48.3131,
@@ -5799,7 +5799,7 @@ const campsiteData = [
         nameState: "Purple Point Campground"
     },
     {
-        id: "B1D9FE14-0809-4759-BD6D-03B98FEAA7F1",
+        camp_id: "B1D9FE14-0809-4759-BD6D-03B98FEAA7F1",
         code: "choh",
         name: "Purslane Run Hiker-Biker Campsite",
         lat: 39.535244000000006,
@@ -5811,7 +5811,7 @@ const campsiteData = [
         nameState: "Purslane Run Hiker-Biker Campsite, MD"
     },
     {
-        id: "2EB16A75-677B-4AF6-9237-A6285BE18962",
+        camp_id: "2EB16A75-677B-4AF6-9237-A6285BE18962",
         code: "glac",
         name: "Quartz Creek",
         lat: 48.7226099101101,
@@ -5823,7 +5823,7 @@ const campsiteData = [
         nameState: "Quartz Creek, MT"
     },
     {
-        id: "E4F0BEC0-D410-41AA-902D-41A539DEA564",
+        camp_id: "E4F0BEC0-D410-41AA-902D-41A539DEA564",
         code: "olym",
         name: "Queets Campground",
         lat: 47.6259946274311,
@@ -5835,7 +5835,7 @@ const campsiteData = [
         nameState: "Queets Campground, WA"
     },
     {
-        id: "7AFE0D29-866B-4025-A403-3BCE20E4CF32",
+        camp_id: "7AFE0D29-866B-4025-A403-3BCE20E4CF32",
         code: "dino",
         name: "Rainbow Park Campground",
         lat: 40.4956930727,
@@ -5847,7 +5847,7 @@ const campsiteData = [
         nameState: "Rainbow Park Campground, UT"
     },
     {
-        id: "4D753D24-3797-45AA-976C-8419EA35B585",
+        camp_id: "4D753D24-3797-45AA-976C-8419EA35B585",
         code: "cure",
         name: "Red Creek Campground",
         lat: 38.4793732438395,
@@ -5860,7 +5860,7 @@ const campsiteData = [
         nameState: "Red Creek Campground"
     },
     {
-        id: "D182E1F7-4066-45D4-AB4F-9C7E3F9E509C",
+        camp_id: "D182E1F7-4066-45D4-AB4F-9C7E3F9E509C",
         code: "dena",
         name: "Riley Creek",
         lat: 63.733359835872776,
@@ -5872,7 +5872,7 @@ const campsiteData = [
         nameState: "Riley Creek, AK"
     },
     {
-        id: "2940AF6F-D2F2-4AEE-91E3-1D0DDDA7B84B",
+        camp_id: "2940AF6F-D2F2-4AEE-91E3-1D0DDDA7B84B",
         code: "bibe",
         name: "Rio Grande Village Campground",
         lat: 29.1801945038,
@@ -5885,7 +5885,7 @@ const campsiteData = [
         nameState: "Rio Grande Village Campground"
     },
     {
-        id: "6134A1E6-4A8B-473E-9FA5-7DAEEAA3FD14",
+        camp_id: "6134A1E6-4A8B-473E-9FA5-7DAEEAA3FD14",
         code: "bibe",
         name: "Rio Grande Village RV",
         lat: 29.1831689600897,
@@ -5898,7 +5898,7 @@ const campsiteData = [
         nameState: "Rio Grande Village RV"
     },
     {
-        id: "02A81AB4-ECCC-4FA1-9A62-1769B1D3850C",
+        camp_id: "02A81AB4-ECCC-4FA1-9A62-1769B1D3850C",
         code: "glac",
         name: "Rising Sun",
         lat: 48.6945321731,
@@ -5910,7 +5910,7 @@ const campsiteData = [
         nameState: "Rising Sun, MT"
     },
     {
-        id: "0B61F802-F8D6-46D0-9A2C-708177036C95",
+        camp_id: "0B61F802-F8D6-46D0-9A2C-708177036C95",
         code: "dewa",
         name: "Rivers Bend Group Campground",
         lat: 41.0961180995224,
@@ -5922,7 +5922,7 @@ const campsiteData = [
         nameState: "Rivers Bend Group Campground, NJ"
     },
     {
-        id: "C44D4A8E-8C95-4360-BEC8-0C53C6BA4D35",
+        camp_id: "C44D4A8E-8C95-4360-BEC8-0C53C6BA4D35",
         code: "obed",
         name: "Rock Creek Campground",
         lat: 36.06963726622717,
@@ -5935,7 +5935,7 @@ const campsiteData = [
         nameState: "Rock Creek Campground"
     },
     {
-        id: "9E82C5FE-EB28-41E1-B522-BD593426BE2C",
+        camp_id: "9E82C5FE-EB28-41E1-B522-BD593426BE2C",
         code: "chic",
         name: "Rock Creek Campground",
         lat: 34.4957176633711,
@@ -5948,7 +5948,7 @@ const campsiteData = [
         nameState: "Rock Creek Campground"
     },
     {
-        id: "98A4D3E0-4207-4FAC-9B55-FB9942E063FF",
+        camp_id: "98A4D3E0-4207-4FAC-9B55-FB9942E063FF",
         code: "isro",
         name: "Rock Harbor Campground",
         lat: 48.14543517120799,
@@ -5960,7 +5960,7 @@ const campsiteData = [
         nameState: "Rock Harbor Campground, MI"
     },
     {
-        id: "0158C072-F1F3-4904-98F2-9994BF2F116A",
+        camp_id: "0158C072-F1F3-4904-98F2-9994BF2F116A",
         code: "blri",
         name: "Rocky Knob Campground",
         lat: 36.8129880454,
@@ -5972,7 +5972,7 @@ const campsiteData = [
         nameState: "Rocky Knob Campground, VA"
     },
     {
-        id: "0B3A9971-2BAE-444E-85C1-095D72B7E65F",
+        camp_id: "0B3A9971-2BAE-444E-85C1-095D72B7E65F",
         code: "natr",
         name: "Rocky Springs Campground, Milepost 54.8",
         lat: 32.0874311492369,
@@ -5984,7 +5984,7 @@ const campsiteData = [
         nameState: "Rocky Springs Campground, Milepost 54.8, MS"
     },
     {
-        id: "2DD0D227-A228-41ED-A2FF-E52FFB3434EB",
+        camp_id: "2DD0D227-A228-41ED-A2FF-E52FFB3434EB",
         code: "lamr",
         name: "Rosita Flats",
         lat: 35.3647,
@@ -5997,7 +5997,7 @@ const campsiteData = [
         nameState: "Rosita Flats"
     },
     {
-        id: "5D9FE77F-9C30-4B0C-A0F6-CD60E86B38FB",
+        camp_id: "5D9FE77F-9C30-4B0C-A0F6-CD60E86B38FB",
         code: "amis",
         name: "Rough Canyon Camground",
         lat: 29.573599,
@@ -6010,7 +6010,7 @@ const campsiteData = [
         nameState: "Rough Canyon Camground"
     },
     {
-        id: "C5E40A77-D82E-4B36-8E69-444ED825F332",
+        camp_id: "C5E40A77-D82E-4B36-8E69-444ED825F332",
         code: "ozar",
         name: "Round Spring Campground",
         lat: 37.2795173,
@@ -6022,7 +6022,7 @@ const campsiteData = [
         nameState: "Round Spring Campground, MO"
     },
     {
-        id: "A2C6CBD3-2490-40A8-853F-808EFD9C8B0D",
+        camp_id: "A2C6CBD3-2490-40A8-853F-808EFD9C8B0D",
         code: "thro",
         name: "Roundup Group Horse Camp",
         lat: 47.0069444,
@@ -6035,7 +6035,7 @@ const campsiteData = [
         nameState: "Roundup Group Horse Camp"
     },
     {
-        id: "150AF6E6-881A-4420-B535-7B31E3905549",
+        camp_id: "150AF6E6-881A-4420-B535-7B31E3905549",
         code: "buff",
         name: "Rush Campground",
         lat: 36.1227472999,
@@ -6047,7 +6047,7 @@ const campsiteData = [
         nameState: "Rush Campground, AR"
     },
     {
-        id: "F08972F9-3943-4003-8499-B0B2EA41A1C7",
+        camp_id: "F08972F9-3943-4003-8499-B0B2EA41A1C7",
         code: "jotr",
         name: "Ryan Campground",
         lat: 33.9830583394153,
@@ -6059,7 +6059,7 @@ const campsiteData = [
         nameState: "Ryan Campground, CA"
     },
     {
-        id: "B64B25ED-E087-4E45-BCF7-52A7D494CB18",
+        camp_id: "B64B25ED-E087-4E45-BCF7-52A7D494CB18",
         code: "colm",
         name: "Saddlehorn Campground",
         lat: 39.10560328979322,
@@ -6071,7 +6071,7 @@ const campsiteData = [
         nameState: "Saddlehorn Campground, CO"
     },
     {
-        id: "2925BA89-CCF3-440F-B987-105578F89025",
+        camp_id: "2925BA89-CCF3-440F-B987-105578F89025",
         code: "badl",
         name: "Sage Creek Campground",
         lat: 43.893146,
@@ -6083,7 +6083,7 @@ const campsiteData = [
         nameState: "Sage Creek Campground, SD"
     },
     {
-        id: "8E2A7F5B-FD6E-4367-B2E8-CA5C41758EED",
+        camp_id: "8E2A7F5B-FD6E-4367-B2E8-CA5C41758EED",
         code: "deva",
         name: "Saline Valley Campground (Primitive)",
         lat: 36.8056,
@@ -6096,7 +6096,7 @@ const campsiteData = [
         nameState: "Saline Valley Campground (Primitive)"
     },
     {
-        id: "02998E8A-00C5-4873-A437-A0DD07B4F758",
+        camp_id: "02998E8A-00C5-4873-A437-A0DD07B4F758",
         code: "chis",
         name: "San Miguel Island Campground",
         lat: 34.0407937961,
@@ -6108,7 +6108,7 @@ const campsiteData = [
         nameState: "San Miguel Island Campground, CA"
     },
     {
-        id: "225E6D27-6AA8-42EE-AE4E-E6C85DE8A8C9",
+        camp_id: "225E6D27-6AA8-42EE-AE4E-E6C85DE8A8C9",
         code: "amis",
         name: "San Pedro Campground",
         lat: 29.467931458828826,
@@ -6121,7 +6121,7 @@ const campsiteData = [
         nameState: "San Pedro Campground"
     },
     {
-        id: "1FCF67D3-6986-494F-8031-CE45E1B33796",
+        camp_id: "1FCF67D3-6986-494F-8031-CE45E1B33796",
         code: "dena",
         name: "Sanctuary River",
         lat: 63.72255876395471,
@@ -6133,7 +6133,7 @@ const campsiteData = [
         nameState: "Sanctuary River, AK"
     },
     {
-        id: "5C7C13D2-AF27-47FD-96BE-3800E9D60162",
+        camp_id: "5C7C13D2-AF27-47FD-96BE-3800E9D60162",
         code: "kaww",
         name: "Sandbank Stream Campground",
         lat: 45.8627572635709,
@@ -6145,7 +6145,7 @@ const campsiteData = [
         nameState: "Sandbank Stream Campground, ME"
     },
     {
-        id: "44ECF5C9-C37D-478C-89A7-0A2ED81162B3",
+        camp_id: "44ECF5C9-C37D-478C-89A7-0A2ED81162B3",
         code: "gate",
         name: "Sandy Hook Camp Ground",
         lat: 40.4500495,
@@ -6158,7 +6158,7 @@ const campsiteData = [
         nameState: "Sandy Hook Camp Ground"
     },
     {
-        id: "41B38315-53CC-489C-B69D-11DA7878E491",
+        camp_id: "41B38315-53CC-489C-B69D-11DA7878E491",
         code: "lamr",
         name: "Sanford Yake Campground",
         lat: 35.413937,
@@ -6171,7 +6171,7 @@ const campsiteData = [
         nameState: "Sanford Yake Campground"
     },
     {
-        id: "9AF9B28F-F268-4833-9DB5-C7657918720B",
+        camp_id: "9AF9B28F-F268-4833-9DB5-C7657918720B",
         code: "chis",
         name: "Santa Barbara Island Campground",
         lat: 33.4800017206,
@@ -6183,7 +6183,7 @@ const campsiteData = [
         nameState: "Santa Barbara Island Campground, CA"
     },
     {
-        id: "6DAE08E9-80F7-4112-8957-F19B964DAC4E",
+        camp_id: "6DAE08E9-80F7-4112-8957-F19B964DAC4E",
         code: "chis",
         name: "Santa Cruz Island Del Norte Backcountry Campground",
         lat: 34.0110749692,
@@ -6195,7 +6195,7 @@ const campsiteData = [
         nameState: "Santa Cruz Island Del Norte Backcountry Campground, CA"
     },
     {
-        id: "574C1E8C-3085-4B3C-A3BE-B24F73B0C685",
+        camp_id: "574C1E8C-3085-4B3C-A3BE-B24F73B0C685",
         code: "chis",
         name: "Santa Cruz Island Scorpion Canyon Campground",
         lat: 34.0480064918,
@@ -6207,7 +6207,7 @@ const campsiteData = [
         nameState: "Santa Cruz Island Scorpion Canyon Campground, CA"
     },
     {
-        id: "CC099758-3DE8-4E5A-9C52-892D0F79755F",
+        camp_id: "CC099758-3DE8-4E5A-9C52-892D0F79755F",
         code: "chis",
         name: "Santa Rosa Island Backcountry Beach Camping",
         lat: 33.885295509365314,
@@ -6219,7 +6219,7 @@ const campsiteData = [
         nameState: "Santa Rosa Island Backcountry Beach Camping, CA"
     },
     {
-        id: "413E7820-D6FA-4C05-933A-FC3E3D6282DC",
+        camp_id: "413E7820-D6FA-4C05-933A-FC3E3D6282DC",
         code: "chis",
         name: "Santa Rosa Island Campground",
         lat: 33.9918639133255,
@@ -6231,7 +6231,7 @@ const campsiteData = [
         nameState: "Santa Rosa Island Campground, CA"
     },
     {
-        id: "13674F30-F2B4-4254-BD42-036039834FA0",
+        camp_id: "13674F30-F2B4-4254-BD42-036039834FA0",
         code: "dena",
         name: "Savage River",
         lat: 63.7153041825,
@@ -6243,7 +6243,7 @@ const campsiteData = [
         nameState: "Savage River, AK"
     },
     {
-        id: "B2B52195-15AB-4E9E-B441-0694F4193585",
+        camp_id: "B2B52195-15AB-4E9E-B441-0694F4193585",
         code: "acad",
         name: "Schoodic Woods Campground",
         lat: 44.3800630004,
@@ -6255,7 +6255,7 @@ const campsiteData = [
         nameState: "Schoodic Woods Campground, ME"
     },
     {
-        id: "81E44F0C-24B0-4B53-B526-9F66E46E7299",
+        camp_id: "81E44F0C-24B0-4B53-B526-9F66E46E7299",
         code: "cuis",
         name: "Sea Camp Campground",
         lat: 30.7636395998859,
@@ -6268,7 +6268,7 @@ const campsiteData = [
         nameState: "Sea Camp Campground"
     },
     {
-        id: "B530C7AD-249F-4632-B78F-3CE8C9F3DBDA",
+        camp_id: "B530C7AD-249F-4632-B78F-3CE8C9F3DBDA",
         code: "acad",
         name: "Seawall Campground",
         lat: 44.2415646998274,
@@ -6280,7 +6280,7 @@ const campsiteData = [
         nameState: "Seawall Campground, ME"
     },
     {
-        id: "3322DBC8-A9D9-4C2A-9F79-67AA12670789",
+        camp_id: "3322DBC8-A9D9-4C2A-9F79-67AA12670789",
         code: "seki",
         name: "Sentinel Campground",
         lat: 36.7903277233654,
@@ -6292,7 +6292,7 @@ const campsiteData = [
         nameState: "Sentinel Campground, CA"
     },
     {
-        id: "C72EDEA2-FA0E-422B-A32A-440F6C48937B",
+        camp_id: "C72EDEA2-FA0E-422B-A32A-440F6C48937B",
         code: "piro",
         name: "Seven Mile Creek Group Backpacking Site",
         lat: 46.6318360458,
@@ -6305,7 +6305,7 @@ const campsiteData = [
         nameState: "Seven Mile Creek Group Backpacking Site"
     },
     {
-        id: "4C464BE7-AA33-4E3F-BBF8-C731A4BC35D6",
+        camp_id: "4C464BE7-AA33-4E3F-BBF8-C731A4BC35D6",
         code: "piro",
         name: "Sevenmile Creek Individual Backpacking Sites",
         lat: 46.619268,
@@ -6318,7 +6318,7 @@ const campsiteData = [
         nameState: "Sevenmile Creek Individual Backpacking Sites"
     },
     {
-        id: "9DC67D93-1C46-4A11-99F1-7F66DDC9F78E",
+        camp_id: "9DC67D93-1C46-4A11-99F1-7F66DDC9F78E",
         code: "klgo",
         name: "Sheep Camp",
         lat: 59.6590711,
@@ -6330,7 +6330,7 @@ const campsiteData = [
         nameState: "Sheep Camp, AK"
     },
     {
-        id: "82A719D5-346C-476E-A819-F10D3363E351",
+        camp_id: "82A719D5-346C-476E-A819-F10D3363E351",
         code: "whis",
         name: "Sheep Camp",
         lat: 40.599876224,
@@ -6342,7 +6342,7 @@ const campsiteData = [
         nameState: "Sheep Camp, CA"
     },
     {
-        id: "E7668917-5D14-4C03-9516-26E3D5A51C38",
+        camp_id: "E7668917-5D14-4C03-9516-26E3D5A51C38",
         code: "seki",
         name: "Sheep Creek Campground",
         lat: 36.7921370625,
@@ -6354,7 +6354,7 @@ const campsiteData = [
         nameState: "Sheep Creek Campground, CA"
     },
     {
-        id: "760FD8AD-0493-43CE-8D6F-C58438BD8212",
+        camp_id: "760FD8AD-0493-43CE-8D6F-C58438BD8212",
         code: "jotr",
         name: "Sheep Pass Group Campground",
         lat: 34.0000909432,
@@ -6366,7 +6366,7 @@ const campsiteData = [
         nameState: "Sheep Pass Group Campground, CA"
     },
     {
-        id: "7398124D-9099-4D3B-9B90-EA82EE919960",
+        camp_id: "7398124D-9099-4D3B-9B90-EA82EE919960",
         code: "gumo",
         name: "Shumard Canyon Wilderness Campground",
         lat: 31.8887274040177,
@@ -6379,7 +6379,7 @@ const campsiteData = [
         nameState: "Shumard Canyon Wilderness Campground"
     },
     {
-        id: "67AC9C0C-E0E8-406F-88D2-EF0BD3FC471D",
+        camp_id: "67AC9C0C-E0E8-406F-88D2-EF0BD3FC471D",
         code: "grte",
         name: "Signal Mountain Campground",
         lat: 43.8414780508,
@@ -6391,7 +6391,7 @@ const campsiteData = [
         nameState: "Signal Mountain Campground, WY"
     },
     {
-        id: "5FEDA142-5FE2-4F88-92A4-951C1C78EEBE",
+        camp_id: "5FEDA142-5FE2-4F88-92A4-951C1C78EEBE",
         code: "isro",
         name: "Siskiwit Bay Campground",
         lat: 47.890444970478676,
@@ -6403,7 +6403,7 @@ const campsiteData = [
         nameState: "Siskiwit Bay Campground, MI"
     },
     {
-        id: "8F3F1AE3-1B25-4E83-9662-C76E3EF0A06A",
+        camp_id: "8F3F1AE3-1B25-4E83-9662-C76E3EF0A06A",
         code: "pore",
         name: "Sky Campground",
         lat: 38.0399151096,
@@ -6415,7 +6415,7 @@ const campsiteData = [
         nameState: "Sky Campground, CA"
     },
     {
-        id: "827FE6FC-C9A3-4543-93A5-F3150E009DDF",
+        camp_id: "827FE6FC-C9A3-4543-93A5-F3150E009DDF",
         code: "yell",
         name: "Slough Creek Campground",
         lat: 44.94884664880159,
@@ -6427,7 +6427,7 @@ const campsiteData = [
         nameState: "Slough Creek Campground, WY"
     },
     {
-        id: "5EC50DAF-A871-466C-80B6-9729BDBF090B",
+        camp_id: "5EC50DAF-A871-466C-80B6-9729BDBF090B",
         code: "grsm",
         name: "Smokemont Campground",
         lat: 35.55645004606256,
@@ -6439,7 +6439,7 @@ const campsiteData = [
         nameState: "Smokemont Campground, NC"
     },
     {
-        id: "30033AFC-D90E-4B30-BDFC-6495D2B9CB64",
+        camp_id: "30033AFC-D90E-4B30-BDFC-6495D2B9CB64",
         code: "grsm",
         name: "Smokemont Group Campground",
         lat: 35.5598078457,
@@ -6451,19 +6451,19 @@ const campsiteData = [
         nameState: "Smokemont Group Campground, TN"
     },
     {
-        id: "5541512A-EAA8-472F-9B88-2435CCD0087F",
+        camp_id: "5541512A-EAA8-472F-9B88-2435CCD0087F",
         code: "ciro",
         name: "Smoky Mountain Campground",
         lat: 42.0755503036454,
         lng: -113.651634013004,
         latlong: "{lat:42.0755503036454, lng:-113.651634013004}",
-        state: id,
+        state: "ID",
         zipCode: 83312,
         city: "Almo",
         nameState: "Smoky Mountain Campground, ID"
     },
     {
-        id: "A512F2E3-3925-43C5-9743-6B2A9B782DDA",
+        camp_id: "A512F2E3-3925-43C5-9743-6B2A9B782DDA",
         code: "laro",
         name: "Snag Cove Campground",
         lat: 48.7337074263939,
@@ -6475,7 +6475,7 @@ const campsiteData = [
         nameState: "Snag Cove Campground, WA"
     },
     {
-        id: "36B920F7-7D13-4D94-9129-E9701FE02DFB",
+        camp_id: "36B920F7-7D13-4D94-9129-E9701FE02DFB",
         code: "grba",
         name: "Snake Creek Primitive Campgrounds",
         lat: 38.925381,
@@ -6488,7 +6488,7 @@ const campsiteData = [
         nameState: "Snake Creek Primitive Campgrounds"
     },
     {
-        id: "CFA62A52-1B27-4211-803E-07FFD2CBF0B8",
+        camp_id: "CFA62A52-1B27-4211-803E-07FFD2CBF0B8",
         code: "choh",
         name: "Sorrel Ridge Hiker-Biker Campsite",
         lat: 39.57169900000001,
@@ -6500,7 +6500,7 @@ const campsiteData = [
         nameState: "Sorrel Ridge Hiker-Biker Campsite, MD"
     },
     {
-        id: "061815D1-A285-4DF5-9079-32F6B4990CF5",
+        camp_id: "061815D1-A285-4DF5-9079-32F6B4990CF5",
         code: "olym",
         name: "South Beach Campground",
         lat: 47.5660233967878,
@@ -6512,7 +6512,7 @@ const campsiteData = [
         nameState: "South Beach Campground, WA"
     },
     {
-        id: "BC2D51FF-DE4E-407C-86B3-3470BE11BBAF",
+        camp_id: "BC2D51FF-DE4E-407C-86B3-3470BE11BBAF",
         code: "zion",
         name: "South Campground",
         lat: 37.2037425996767,
@@ -6525,7 +6525,7 @@ const campsiteData = [
         nameState: "South Campground"
     },
     {
-        id: "AF84F9D4-0115-4F06-9D20-8108F2CF44E2",
+        camp_id: "AF84F9D4-0115-4F06-9D20-8108F2CF44E2",
         code: "calo",
         name: "South Core Banks -- Beach camping",
         lat: 34.76055561111111,
@@ -6537,7 +6537,7 @@ const campsiteData = [
         nameState: "South Core Banks -- Beach camping, NC"
     },
     {
-        id: "E8221D31-0B2B-4606-9061-1F91794AD45A",
+        camp_id: "E8221D31-0B2B-4606-9061-1F91794AD45A",
         code: "seki",
         name: "South Fork Campground",
         lat: 36.3499844275717,
@@ -6549,7 +6549,7 @@ const campsiteData = [
         nameState: "South Fork Campground, CA"
     },
     {
-        id: "E39D6E00-78C0-445C-BBDB-EF9D9CD25BE2",
+        camp_id: "E39D6E00-78C0-445C-BBDB-EF9D9CD25BE2",
         code: "isro",
         name: "South Lake Desor Campground",
         lat: 47.970686098959334,
@@ -6561,7 +6561,7 @@ const campsiteData = [
         nameState: "South Lake Desor Campground, MI"
     },
     {
-        id: "1E5A64AC-1AA7-43EA-88DB-87DCE1DA6C11",
+        camp_id: "1E5A64AC-1AA7-43EA-88DB-87DCE1DA6C11",
         code: "blca",
         name: "South Rim Campground",
         lat: 38.54381032355281,
@@ -6573,7 +6573,7 @@ const campsiteData = [
         nameState: "South Rim Campground, CO"
     },
     {
-        id: "2FBEED6C-9CD6-4DBE-A532-5F73F4B4A361",
+        camp_id: "2FBEED6C-9CD6-4DBE-A532-5F73F4B4A361",
         code: "lavo",
         name: "Southwest Walk-In Campground",
         lat: 40.4366004217,
@@ -6585,7 +6585,7 @@ const campsiteData = [
         nameState: "Southwest Walk-In Campground, CA"
     },
     {
-        id: "8E2351CD-649C-41C3-B1EA-5EDE58F33CDD",
+        camp_id: "8E2351CD-649C-41C3-B1EA-5EDE58F33CDD",
         code: "dino",
         name: "Split Mountain Group Campground",
         lat: 40.4405279561,
@@ -6597,7 +6597,7 @@ const campsiteData = [
         nameState: "Split Mountain Group Campground, UT"
     },
     {
-        id: "2ABC98CE-A9E8-438C-8BDA-2935B0224BB4",
+        camp_id: "2ABC98CE-A9E8-438C-8BDA-2935B0224BB4",
         code: "glac",
         name: "Sprague Creek Campground",
         lat: 48.605617416126826,
@@ -6609,7 +6609,7 @@ const campsiteData = [
         nameState: "Sprague Creek Campground, MT"
     },
     {
-        id: "94A86C9F-730D-42C1-BAD9-DCA321B9E3E2",
+        camp_id: "94A86C9F-730D-42C1-BAD9-DCA321B9E3E2",
         code: "laro",
         name: "Spring Canyon Campground",
         lat: 47.933040826786495,
@@ -6621,7 +6621,7 @@ const campsiteData = [
         nameState: "Spring Canyon Campground, WA"
     },
     {
-        id: "45092D7D-C58F-41C1-BD94-FB0CAA127E53",
+        camp_id: "45092D7D-C58F-41C1-BD94-FB0CAA127E53",
         code: "laro",
         name: "Spring Canyon Group Sites",
         lat: 47.934625,
@@ -6633,7 +6633,7 @@ const campsiteData = [
         nameState: "Spring Canyon Group Sites, WA"
     },
     {
-        id: "517BA74F-FFC6-4B85-AF59-0DF4FBF65899",
+        camp_id: "517BA74F-FFC6-4B85-AF59-0DF4FBF65899",
         code: "buff",
         name: "Spring Creek Campground",
         lat: 36.0299778999,
@@ -6645,7 +6645,7 @@ const campsiteData = [
         nameState: "Spring Creek Campground, AR"
     },
     {
-        id: "4A654434-3AE1-449D-BD18-DD1C98688685",
+        camp_id: "4A654434-3AE1-449D-BD18-DD1C98688685",
         code: "choh",
         name: "Spring Gap Campground",
         lat: 39.564844337461764,
@@ -6658,7 +6658,7 @@ const campsiteData = [
         nameState: "Spring Gap Campground"
     },
     {
-        id: "8FFC1412-19CB-4AE7-9860-2BBC36799440",
+        camp_id: "8FFC1412-19CB-4AE7-9860-2BBC36799440",
         code: "sagu",
         name: "Spud Rock Spring",
         lat: 32.204179,
@@ -6670,7 +6670,7 @@ const campsiteData = [
         nameState: "Spud Rock Spring, AZ"
     },
     {
-        id: "BB3E9361-0E41-4CF7-ADCC-AA19234877FD",
+        camp_id: "BB3E9361-0E41-4CF7-ADCC-AA19234877FD",
         code: "amis",
         name: "Spur 406 Campground",
         lat: 29.550551582208,
@@ -6683,7 +6683,7 @@ const campsiteData = [
         nameState: "Spur 406 Campground"
     },
     {
-        id: "E4607DC5-8154-4BE3-989D-66FAE589B686",
+        camp_id: "E4607DC5-8154-4BE3-989D-66FAE589B686",
         code: "glac",
         name: "St. Mary",
         lat: 48.7516790329555,
@@ -6695,7 +6695,7 @@ const campsiteData = [
         nameState: "St. Mary, MT"
     },
     {
-        id: "454AA69A-21A7-4825-8240-C47CE1422934",
+        camp_id: "454AA69A-21A7-4825-8240-C47CE1422934",
         code: "cuis",
         name: "Stafford Beach Campground",
         lat: 30.80667,
@@ -6708,7 +6708,7 @@ const campsiteData = [
         nameState: "Stafford Beach Campground"
     },
     {
-        id: "B4603AC8-E7B9-46B2-B717-A8C8183562F8",
+        camp_id: "B4603AC8-E7B9-46B2-B717-A8C8183562F8",
         code: "kaww",
         name: "Stair Falls Campsite",
         lat: 46.0872701025,
@@ -6721,7 +6721,7 @@ const campsiteData = [
         nameState: "Stair Falls Campsite"
     },
     {
-        id: "368E0896-3B0D-4331-8882-5FBABBEF7739",
+        camp_id: "368E0896-3B0D-4331-8882-5FBABBEF7739",
         code: "olym",
         name: "Staircase Campground",
         lat: 47.5153731343,
@@ -6733,7 +6733,7 @@ const campsiteData = [
         nameState: "Staircase Campground, WA"
     },
     {
-        id: "694F54CD-F504-4E78-AE02-27FB53F2A48E",
+        camp_id: "694F54CD-F504-4E78-AE02-27FB53F2A48E",
         code: "glca",
         name: "Stanton Creek Primitive Camping Area",
         lat: 37.498985,
@@ -6745,7 +6745,7 @@ const campsiteData = [
         nameState: "Stanton Creek Primitive Camping Area, UT"
     },
     {
-        id: "C8AA0A50-B50A-44C4-8535-84277F7160DA",
+        camp_id: "C8AA0A50-B50A-44C4-8535-84277F7160DA",
         code: "biso",
         name: "Station Camp Campground",
         lat: 36.5458497459104,
@@ -6757,7 +6757,7 @@ const campsiteData = [
         nameState: "Station Camp Campground, TN"
     },
     {
-        id: "3EA23346-5C4D-4E01-A4E0-748033E92446",
+        camp_id: "3EA23346-5C4D-4E01-A4E0-748033E92446",
         code: "buff",
         name: "Steel Creek Campground",
         lat: 36.0400288995,
@@ -6769,7 +6769,7 @@ const campsiteData = [
         nameState: "Steel Creek Campground, AR"
     },
     {
-        id: "103C0AB5-429C-4AF9-AEC1-B645228FD967",
+        camp_id: "103C0AB5-429C-4AF9-AEC1-B645228FD967",
         code: "cure",
         name: "Stevens Creek Campground",
         lat: 38.4869233764467,
@@ -6782,7 +6782,7 @@ const campsiteData = [
         nameState: "Stevens Creek Campground"
     },
     {
-        id: "010134D2-1B0F-4A1E-85FF-53137A8996CF",
+        camp_id: "010134D2-1B0F-4A1E-85FF-53137A8996CF",
         code: "choh",
         name: "Stickpile Hill Hiker-Biker Campsite",
         lat: 39.583598999999985,
@@ -6794,7 +6794,7 @@ const campsiteData = [
         nameState: "Stickpile Hill Hiker-Biker Campsite, MD"
     },
     {
-        id: "A8E8F0C6-9CF3-4E0A-AD89-A8C23990B1E2",
+        camp_id: "A8E8F0C6-9CF3-4E0A-AD89-A8C23990B1E2",
         code: "neri",
         name: "Stone Cliff",
         lat: 37.933636,
@@ -6806,7 +6806,7 @@ const campsiteData = [
         nameState: "Stone Cliff, WV"
     },
     {
-        id: "F3361651-FFA0-4671-B15E-FF496B65EA98",
+        camp_id: "F3361651-FFA0-4671-B15E-FF496B65EA98",
         code: "deva",
         name: "Stovepipe Wells Campground",
         lat: 36.607885875,
@@ -6818,7 +6818,7 @@ const campsiteData = [
         nameState: "Stovepipe Wells Campground, CA"
     },
     {
-        id: "E641DC39-3D00-4AFB-8E7E-EFDFE9433AB5",
+        camp_id: "E641DC39-3D00-4AFB-8E7E-EFDFE9433AB5",
         code: "lavo",
         name: "Summit Lake North Campground",
         lat: 40.4946207961,
@@ -6830,7 +6830,7 @@ const campsiteData = [
         nameState: "Summit Lake North Campground, CA"
     },
     {
-        id: "D7B03A9E-7B8F-4515-9F1A-B315CB260FC5",
+        camp_id: "D7B03A9E-7B8F-4515-9F1A-B315CB260FC5",
         code: "lavo",
         name: "Summit Lake South Campground",
         lat: 40.4904121913623,
@@ -6842,7 +6842,7 @@ const campsiteData = [
         nameState: "Summit Lake South Campground, CA"
     },
     {
-        id: "99CA90B7-E669-41EE-8744-2BBF8215C2A8",
+        camp_id: "99CA90B7-E669-41EE-8744-2BBF8215C2A8",
         code: "brca",
         name: "Sunset Campground",
         lat: 37.6222868282,
@@ -6854,7 +6854,7 @@ const campsiteData = [
         nameState: "Sunset Campground, UT"
     },
     {
-        id: "1C8ED3AF-8ABC-478A-A5AB-C8BB7098431E",
+        camp_id: "1C8ED3AF-8ABC-478A-A5AB-C8BB7098431E",
         code: "deva",
         name: "Sunset Campground",
         lat: 36.4588438120067,
@@ -6866,7 +6866,7 @@ const campsiteData = [
         nameState: "Sunset Campground, CA"
     },
     {
-        id: "21432CAA-2722-40B3-A56B-C7F90A8F1467",
+        camp_id: "21432CAA-2722-40B3-A56B-C7F90A8F1467",
         code: "seki",
         name: "Sunset Campground",
         lat: 36.7373684358,
@@ -6878,7 +6878,7 @@ const campsiteData = [
         nameState: "Sunset Campground, CA"
     },
     {
-        id: "D60009AE-31AB-4905-B182-6F5D6D11742D",
+        camp_id: "D60009AE-31AB-4905-B182-6F5D6D11742D",
         code: "nava",
         name: "Sunset View Campground",
         lat: 36.6756921508332,
@@ -6890,7 +6890,7 @@ const campsiteData = [
         nameState: "Sunset View Campground, AZ"
     },
     {
-        id: "55615849-4767-4B24-81BA-F9D651BDDE7F",
+        camp_id: "55615849-4767-4B24-81BA-F9D651BDDE7F",
         code: "choh",
         name: "Swains Lock Hiker-Biker Campsite",
         lat: 39.03100200000001,
@@ -6902,7 +6902,7 @@ const campsiteData = [
         nameState: "Swains Lock Hiker-Biker Campsite, MD"
     },
     {
-        id: "88397D32-BCEE-494E-8305-3BB22143019B",
+        camp_id: "88397D32-BCEE-494E-8305-3BB22143019B",
         code: "yose",
         name: "Tamarack Flat Campground",
         lat: 37.7517175326,
@@ -6915,7 +6915,7 @@ const campsiteData = [
         nameState: "Tamarack Flat Campground"
     },
     {
-        id: "A3196D33-288F-4484-A075-33B8D2695937",
+        camp_id: "A3196D33-288F-4484-A075-33B8D2695937",
         code: "gumo",
         name: "Tejas Wilderness Campground",
         lat: 31.9368597503931,
@@ -6928,7 +6928,7 @@ const campsiteData = [
         nameState: "Tejas Wilderness Campground"
     },
     {
-        id: "6C239EBB-CDA7-4D9E-8AE0-D31446911917",
+        camp_id: "6C239EBB-CDA7-4D9E-8AE0-D31446911917",
         code: "dena",
         name: "Teklanika River",
         lat: 63.6704983524783,
@@ -6940,7 +6940,7 @@ const campsiteData = [
         nameState: "Teklanika River, AK"
     },
     {
-        id: "3A3A571D-14D7-4939-91A2-026756CFC2A7",
+        camp_id: "3A3A571D-14D7-4939-91A2-026756CFC2A7",
         code: "lake",
         name: "Temple Bar Campground",
         lat: 36.0303182900411,
@@ -6952,7 +6952,7 @@ const campsiteData = [
         nameState: "Temple Bar Campground, NV"
     },
     {
-        id: "5730203B-95D6-4866-91EE-09D3B2107D1B",
+        camp_id: "5730203B-95D6-4866-91EE-09D3B2107D1B",
         code: "deva",
         name: "Texas Springs Campground",
         lat: 36.4588989387814,
@@ -6964,7 +6964,7 @@ const campsiteData = [
         nameState: "Texas Springs Campground, CA"
     },
     {
-        id: "81FD44D4-DA33-4E58-A317-3CAA2573EBD8",
+        camp_id: "81FD44D4-DA33-4E58-A317-3CAA2573EBD8",
         code: "neri",
         name: "Thayer Campground",
         lat: 37.902,
@@ -6976,7 +6976,7 @@ const campsiteData = [
         nameState: "Thayer Campground, WV"
     },
     {
-        id: "C06B2E84-8426-4696-A511-18B171465F1B",
+        camp_id: "C06B2E84-8426-4696-A511-18B171465F1B",
         code: "fomr",
         name: "The Colonies RV and Travel Park",
         lat: 37.022068,
@@ -6988,7 +6988,7 @@ const campsiteData = [
         nameState: "The Colonies RV and Travel Park, VA"
     },
     {
-        id: "73BA2645-DCEB-49C6-B3B6-7056FC1FD734",
+        camp_id: "73BA2645-DCEB-49C6-B3B6-7056FC1FD734",
         code: "cany",
         name: "The Needles Campground",
         lat: 38.1464920023084,
@@ -7000,7 +7000,7 @@ const campsiteData = [
         nameState: "The Needles Campground, UT"
     },
     {
-        id: "EC2CFFFC-1EF2-4D95-B812-699AEB0DBEF5",
+        camp_id: "EC2CFFFC-1EF2-4D95-B812-699AEB0DBEF5",
         code: "chic",
         name: "The Point Campground",
         lat: 34.4595338826992,
@@ -7013,7 +7013,7 @@ const campsiteData = [
         nameState: "The Point Campground"
     },
     {
-        id: "DF55B96A-D2A8-4DF7-8D54-75BD36C266E2",
+        camp_id: "DF55B96A-D2A8-4DF7-8D54-75BD36C266E2",
         code: "deva",
         name: "Thorndike Campground (Primitive)",
         lat: 36.236917,
@@ -7025,7 +7025,7 @@ const campsiteData = [
         nameState: "Thorndike Campground (Primitive), CA"
     },
     {
-        id: "1E8F227A-243A-4171-A9CC-8320471896C2",
+        camp_id: "1E8F227A-243A-4171-A9CC-8320471896C2",
         code: "isro",
         name: "Three Mile Campground",
         lat: 48.12385213393805,
@@ -7037,7 +7037,7 @@ const campsiteData = [
         nameState: "Three Mile Campground, MI"
     },
     {
-        id: "F7965B87-3035-49D4-B55A-D55D6CAD0C93",
+        camp_id: "F7965B87-3035-49D4-B55A-D55D6CAD0C93",
         code: "romo",
         name: "Timber Creek Campground",
         lat: 40.379225136469785,
@@ -7049,7 +7049,7 @@ const campsiteData = [
         nameState: "Timber Creek Campground, CO"
     },
     {
-        id: "7EAD356B-38CC-48FC-8139-8729BC4CC5F1",
+        camp_id: "7EAD356B-38CC-48FC-8139-8729BC4CC5F1",
         code: "isro",
         name: "Todd Harbor Campground",
         lat: 48.05080649877427,
@@ -7061,7 +7061,7 @@ const campsiteData = [
         nameState: "Todd Harbor Campground, MI"
     },
     {
-        id: "18007353-02EB-4352-A8A3-08E39A1A5D8F",
+        camp_id: "18007353-02EB-4352-A8A3-08E39A1A5D8F",
         code: "pore",
         name: "Tomales Bay Boat-in Camping",
         lat: 38.163318,
@@ -7073,7 +7073,7 @@ const campsiteData = [
         nameState: "Tomales Bay Boat-in Camping, CA"
     },
     {
-        id: "124FB583-CC05-4366-9644-EDA43BF6B75B",
+        camp_id: "124FB583-CC05-4366-9644-EDA43BF6B75B",
         code: "isro",
         name: "Tookers Island Campground",
         lat: 48.12939102951485,
@@ -7085,7 +7085,7 @@ const campsiteData = [
         nameState: "Tookers Island Campground, MI"
     },
     {
-        id: "6CB8E14E-8C58-414A-A764-CB117EB34B8C",
+        camp_id: "6CB8E14E-8C58-414A-A764-CB117EB34B8C",
         code: "yell",
         name: "Tower Fall Campground",
         lat: 44.8895498483,
@@ -7097,7 +7097,7 @@ const campsiteData = [
         nameState: "Tower Fall Campground, WY"
     },
     {
-        id: "93F1B7C1-041B-4F7B-8E75-D0C35CA6CAE2",
+        camp_id: "93F1B7C1-041B-4F7B-8E75-D0C35CA6CAE2",
         code: "choh",
         name: "Town Creek Hiker-Biker Campsite",
         lat: 39.52446099999999,
@@ -7109,7 +7109,7 @@ const campsiteData = [
         nameState: "Town Creek Hiker-Biker Campsite, MD"
     },
     {
-        id: "DF0F45FB-FEE4-47A9-ACD4-63E3DC9BF9DA",
+        camp_id: "DF0F45FB-FEE4-47A9-ACD4-63E3DC9BF9DA",
         code: "grca",
         name: "Trailer Village RV Park - South Rim",
         lat: 36.052812,
@@ -7121,7 +7121,7 @@ const campsiteData = [
         nameState: "Trailer Village RV Park - South Rim, AZ"
     },
     {
-        id: "DF092FA4-F3AB-4BC7-91B3-DB65FB71114B",
+        camp_id: "DF092FA4-F3AB-4BC7-91B3-DB65FB71114B",
         code: "piro",
         name: "Trappers Lake Group Backpacking Site",
         lat: 46.5876435919,
@@ -7134,7 +7134,7 @@ const campsiteData = [
         nameState: "Trappers Lake Group Backpacking Site"
     },
     {
-        id: "B1FD9610-9535-46B7-901A-5B230DBAC3E5",
+        camp_id: "B1FD9610-9535-46B7-901A-5B230DBAC3E5",
         code: "piro",
         name: "Trappers Lake Individual Backpacking Sites",
         lat: 46.586517,
@@ -7147,7 +7147,7 @@ const campsiteData = [
         nameState: "Trappers Lake Individual Backpacking Sites"
     },
     {
-        id: "793AAB2C-885E-44F7-A0A1-D64B37291338",
+        camp_id: "793AAB2C-885E-44F7-A0A1-D64B37291338",
         code: "yose",
         name: "Tuolumne Meadows Campground",
         lat: 37.8744752916,
@@ -7160,7 +7160,7 @@ const campsiteData = [
         nameState: "Tuolumne Meadows Campground"
     },
     {
-        id: "456366E0-A589-4C3A-8468-15CAAC114C0B",
+        camp_id: "456366E0-A589-4C3A-8468-15CAAC114C0B",
         code: "prwi",
         name: "Turkey Run Ridge Group Campground",
         lat: 38.581601403,
@@ -7172,7 +7172,7 @@ const campsiteData = [
         nameState: "Turkey Run Ridge Group Campground, VA"
     },
     {
-        id: "6003817A-3C71-4406-A59E-ECB38F3AE724",
+        camp_id: "6003817A-3C71-4406-A59E-ECB38F3AE724",
         code: "choh",
         name: "Turtle Run Hiker-Biker Campsite",
         lat: 39.13928799999999,
@@ -7184,7 +7184,7 @@ const campsiteData = [
         nameState: "Turtle Run Hiker-Biker Campsite, MD"
     },
     {
-        id: "8F9F7BD4-CA1C-42DB-948A-B3CABF750037",
+        camp_id: "8F9F7BD4-CA1C-42DB-948A-B3CABF750037",
         code: "piro",
         name: "Twelvemile Beach Campground",
         lat: 46.6408,
@@ -7196,7 +7196,7 @@ const campsiteData = [
         nameState: "Twelvemile Beach Campground, MI"
     },
     {
-        id: "8DF34653-E2E5-4716-A58E-8856AC14C242",
+        camp_id: "8DF34653-E2E5-4716-A58E-8856AC14C242",
         code: "orpi",
         name: "Twin Peaks Campground",
         lat: 31.9406810816067,
@@ -7208,7 +7208,7 @@ const campsiteData = [
         nameState: "Twin Peaks Campground, AZ"
     },
     {
-        id: "3A770067-D79E-413F-AF38-D879707B79B6",
+        camp_id: "3A770067-D79E-413F-AF38-D879707B79B6",
         code: "glac",
         name: "Two Medicine",
         lat: 48.492114971,
@@ -7220,7 +7220,7 @@ const campsiteData = [
         nameState: "Two Medicine, MT"
     },
     {
-        id: "0EDCA7B8-76C4-4D1B-8B8A-F9549DCC256D",
+        camp_id: "0EDCA7B8-76C4-4D1B-8B8A-F9549DCC256D",
         code: "ozar",
         name: "Two Rivers Campground",
         lat: 37.189929,
@@ -7232,7 +7232,7 @@ const campsiteData = [
         nameState: "Two Rivers Campground, MO"
     },
     {
-        id: "DC5B8982-C3B5-40A4-B5C1-BE320C39F637",
+        camp_id: "DC5B8982-C3B5-40A4-B5C1-BE320C39F637",
         code: "buff",
         name: "Tyler Bend Campground",
         lat: 35.9868835993,
@@ -7244,7 +7244,7 @@ const campsiteData = [
         nameState: "Tyler Bend Campground, AR"
     },
     {
-        id: "EFA96348-96DA-4AC5-AED7-78C4F84C6512",
+        camp_id: "EFA96348-96DA-4AC5-AED7-78C4F84C6512",
         code: "kaww",
         name: "Upper East Branch Campsite",
         lat: 46.113820001804086,
@@ -7256,7 +7256,7 @@ const campsiteData = [
         nameState: "Upper East Branch Campsite, ME"
     },
     {
-        id: "F872CA6C-B7FA-405C-BDB6-81D75972C9F2",
+        camp_id: "F872CA6C-B7FA-405C-BDB6-81D75972C9F2",
         code: "noca",
         name: "Upper Goodell Creek Group Campsite",
         lat: 48.683276868130136,
@@ -7268,7 +7268,7 @@ const campsiteData = [
         nameState: "Upper Goodell Creek Group Campsite, WA"
     },
     {
-        id: "BE18116D-35DF-4187-8B8C-D86810C17899",
+        camp_id: "BE18116D-35DF-4187-8B8C-D86810C17899",
         code: "grba",
         name: "Upper Lehman Campground",
         lat: 39.0136,
@@ -7281,7 +7281,7 @@ const campsiteData = [
         nameState: "Upper Lehman Campground"
     },
     {
-        id: "9D5B57D0-793A-4C2B-B620-5B561EDFC031",
+        camp_id: "9D5B57D0-793A-4C2B-B620-5B561EDFC031",
         code: "yose",
         name: "Upper Pines Campground",
         lat: 37.7384294727,
@@ -7293,7 +7293,7 @@ const campsiteData = [
         nameState: "Upper Pines Campground, CA"
     },
     {
-        id: "3AD1C657-F432-4C3E-9409-5F0FB6A4E8BD",
+        camp_id: "3AD1C657-F432-4C3E-9409-5F0FB6A4E8BD",
         code: "gicl",
         name: "Upper Scorpion Campground",
         lat: 33.2304987885,
@@ -7306,7 +7306,7 @@ const campsiteData = [
         nameState: "Upper Scorpion Campground"
     },
     {
-        id: "023C3AE0-CA2D-42B0-8F0A-A3106336BFAA",
+        camp_id: "023C3AE0-CA2D-42B0-8F0A-A3106336BFAA",
         code: "dewa",
         name: "Valley View Group Campground",
         lat: 41.1156191003,
@@ -7318,7 +7318,7 @@ const campsiteData = [
         nameState: "Valley View Group Campground, PA"
     },
     {
-        id: "CD57926C-D569-489B-8A4B-F528D026DE75",
+        camp_id: "CD57926C-D569-489B-8A4B-F528D026DE75",
         code: "slbe",
         name: "Village Campground - North Manitou Island",
         lat: 45.1281213,
@@ -7330,7 +7330,7 @@ const campsiteData = [
         nameState: "Village Campground - North Manitou Island, MI"
     },
     {
-        id: "97FC7F59-6472-4AB6-A411-A7E6874680BD",
+        camp_id: "97FC7F59-6472-4AB6-A411-A7E6874680BD",
         code: "glca",
         name: "Wahweap Campground & RV Park",
         lat: 36.9967066553,
@@ -7342,7 +7342,7 @@ const campsiteData = [
         nameState: "Wahweap Campground & RV Park, AZ"
     },
     {
-        id: "4072160F-820D-48BC-9E1A-84B9012F1288",
+        camp_id: "4072160F-820D-48BC-9E1A-84B9012F1288",
         code: "neri",
         name: "War Ridge/Backus Mountain Campground",
         lat: 37.84525,
@@ -7354,7 +7354,7 @@ const campsiteData = [
         nameState: "War Ridge/Backus Mountain Campground, WV"
     },
     {
-        id: "690C7677-FD55-430A-BB36-85410822EB5F",
+        camp_id: "690C7677-FD55-430A-BB36-85410822EB5F",
         code: "lavo",
         name: "Warner Valley Campground",
         lat: 40.4428300456,
@@ -7366,7 +7366,7 @@ const campsiteData = [
         nameState: "Warner Valley Campground, CA"
     },
     {
-        id: "06226BC6-9AD8-40D8-A9B0-35997490B33D",
+        camp_id: "06226BC6-9AD8-40D8-A9B0-35997490B33D",
         code: "isro",
         name: "Washington Creek Campground",
         lat: 47.91621695055476,
@@ -7378,7 +7378,7 @@ const campsiteData = [
         nameState: "Washington Creek Campground, MI"
     },
     {
-        id: "2F950808-AEC8-4AF4-9B87-50BF4C1299BA",
+        camp_id: "2F950808-AEC8-4AF4-9B87-50BF4C1299BA",
         code: "kaww",
         name: "Wassataquoik Campsite",
         lat: 45.9329028831785,
@@ -7391,7 +7391,7 @@ const campsiteData = [
         nameState: "Wassataquoik Campsite"
     },
     {
-        id: "6865D5F5-853C-4A07-9CF4-FC9467F37F85",
+        camp_id: "6865D5F5-853C-4A07-9CF4-FC9467F37F85",
         code: "kaww",
         name: "Wassataquoik Lean-to",
         lat: 45.9328416267,
@@ -7404,7 +7404,7 @@ const campsiteData = [
         nameState: "Wassataquoik Lean-to"
     },
     {
-        id: "9B6BFDE9-F02F-473C-8826-9531A937758F",
+        camp_id: "9B6BFDE9-F02F-473C-8826-9531A937758F",
         code: "fiis",
         name: "Watch Hill Family Campground",
         lat: 40.6909163,
@@ -7417,7 +7417,7 @@ const campsiteData = [
         nameState: "Watch Hill Family Campground"
     },
     {
-        id: "2DEDB733-BCA8-41FF-8E0C-3E676DE620DF",
+        camp_id: "2DEDB733-BCA8-41FF-8E0C-3E676DE620DF",
         code: "zion",
         name: "Watchman Campground",
         lat: 37.1975852245451,
@@ -7430,7 +7430,7 @@ const campsiteData = [
         nameState: "Watchman Campground"
     },
     {
-        id: "F7CA3802-BD31-4C93-9C3C-A4097B955EE6",
+        camp_id: "F7CA3802-BD31-4C93-9C3C-A4097B955EE6",
         code: "yose",
         name: "Wawona Campground",
         lat: 37.5447206588165,
@@ -7442,7 +7442,7 @@ const campsiteData = [
         nameState: "Wawona Campground, CA"
     },
     {
-        id: "7D57A961-B5E9-4312-9519-21898097AD02",
+        camp_id: "7D57A961-B5E9-4312-9519-21898097AD02",
         code: "slbe",
         name: "Weather Station Campground - South Manitou Island",
         lat: 45.003301,
@@ -7454,7 +7454,7 @@ const campsiteData = [
         nameState: "Weather Station Campground - South Manitou Island, MI"
     },
     {
-        id: "A0363A97-D1E8-46F8-A75E-3DF8BC93DC39",
+        camp_id: "A0363A97-D1E8-46F8-A75E-3DF8BC93DC39",
         code: "isro",
         name: "West Chickenbone Campground",
         lat: 48.063272054903905,
@@ -7466,7 +7466,7 @@ const campsiteData = [
         nameState: "West Chickenbone Campground, MI"
     },
     {
-        id: "8EB5A87A-535B-4EDE-8475-AC63B225B1A7",
+        camp_id: "8EB5A87A-535B-4EDE-8475-AC63B225B1A7",
         code: "grba",
         name: "Wheeler Peak Campground",
         lat: 39.01091,
@@ -7479,7 +7479,7 @@ const campsiteData = [
         nameState: "Wheeler Peak Campground"
     },
     {
-        id: "35E0D115-7743-49C8-9D9D-3A347BCF41CB",
+        camp_id: "35E0D115-7743-49C8-9D9D-3A347BCF41CB",
         code: "slbe",
         name: "White Pine Backcountry Campground",
         lat: 44.737174,
@@ -7491,7 +7491,7 @@ const campsiteData = [
         nameState: "White Pine Backcountry Campground, MI"
     },
     {
-        id: "B491535B-8883-4684-8E34-228E49D01A5C",
+        camp_id: "B491535B-8883-4684-8E34-228E49D01A5C",
         code: "mora",
         name: "White River Campground",
         lat: 46.9024098268932,
@@ -7503,7 +7503,7 @@ const campsiteData = [
         nameState: "White River Campground, WA"
     },
     {
-        id: "753ADCCD-0ABC-4D9A-B5E4-BB37572F196E",
+        camp_id: "753ADCCD-0ABC-4D9A-B5E4-BB37572F196E",
         code: "choh",
         name: "White Rock Hiker-Biker Campsite",
         lat: 39.67753999999999,
@@ -7515,7 +7515,7 @@ const campsiteData = [
         nameState: "White Rock Hiker-Biker Campsite, MD"
     },
     {
-        id: "F825CA55-5923-48FE-B11D-CD55B5F53B88",
+        camp_id: "F825CA55-5923-48FE-B11D-CD55B5F53B88",
         code: "jotr",
         name: "White Tank Campground",
         lat: 33.985738,
@@ -7527,7 +7527,7 @@ const campsiteData = [
         nameState: "White Tank Campground, CA"
     },
     {
-        id: "2B396150-CB50-4013-AAF2-B862D4FA4823",
+        camp_id: "2B396150-CB50-4013-AAF2-B862D4FA4823",
         code: "yose",
         name: "White Wolf Campground",
         lat: 37.8703497149,
@@ -7540,7 +7540,7 @@ const campsiteData = [
         nameState: "White Wolf Campground"
     },
     {
-        id: "938474DC-C66E-4577-A107-0628E0C8E4C0",
+        camp_id: "938474DC-C66E-4577-A107-0628E0C8E4C0",
         code: "pore",
         name: "Wildcat Campground",
         lat: 37.9701531069231,
@@ -7552,7 +7552,7 @@ const campsiteData = [
         nameState: "Wildcat Campground, CA"
     },
     {
-        id: "833AF1FD-97F4-4CBF-AB54-5963E5A91382",
+        camp_id: "833AF1FD-97F4-4CBF-AB54-5963E5A91382",
         code: "hale",
         name: "Wilderness Cabins",
         lat: 20.717921296462112,
@@ -7564,7 +7564,7 @@ const campsiteData = [
         nameState: "Wilderness Cabins, HI"
     },
     {
-        id: "60A9F911-9C8C-4B0E-91F0-DA9803B46794",
+        camp_id: "60A9F911-9C8C-4B0E-91F0-DA9803B46794",
         code: "gumo",
         name: "Wilderness Ridge Wilderness Campground",
         lat: 31.9978400344,
@@ -7577,7 +7577,7 @@ const campsiteData = [
         nameState: "Wilderness Ridge Wilderness Campground"
     },
     {
-        id: "87CACD0F-E22C-4DED-9CA5-B6E1F08857CE",
+        camp_id: "87CACD0F-E22C-4DED-9CA5-B6E1F08857CE",
         code: "cuga",
         name: "Wilderness Road Campground",
         lat: null,
@@ -7589,7 +7589,7 @@ const campsiteData = [
         nameState: "Wilderness Road Campground, VA"
     },
     {
-        id: "23161602-35FD-4E07-BD8C-8AF7012423A0",
+        camp_id: "23161602-35FD-4E07-BD8C-8AF7012423A0",
         code: "hale",
         name: "Wilderness Tent Sites",
         lat: 20.73951720216006,
@@ -7601,7 +7601,7 @@ const campsiteData = [
         nameState: "Wilderness Tent Sites, HI"
     },
     {
-        id: "322E9FDF-A46A-4C15-A726-99DA7113764A",
+        camp_id: "322E9FDF-A46A-4C15-A726-99DA7113764A",
         code: "deva",
         name: "Wildrose Campground",
         lat: 36.2658396358283,
@@ -7613,7 +7613,7 @@ const campsiteData = [
         nameState: "Wildrose Campground, CA"
     },
     {
-        id: "D4F65C49-97B3-46B3-93DD-3B13430C2608",
+        camp_id: "D4F65C49-97B3-46B3-93DD-3B13430C2608",
         code: "dena",
         name: "Wonder Lake",
         lat: 63.4539821769859,
@@ -7625,7 +7625,7 @@ const campsiteData = [
         nameState: "Wonder Lake, AK"
     },
     {
-        id: "A1EAF11C-75D8-484B-8BB2-985F61951BAD",
+        camp_id: "A1EAF11C-75D8-484B-8BB2-985F61951BAD",
         code: "isro",
         name: "Wood Lake Campground",
         lat: 48.00853512034862,
@@ -7637,7 +7637,7 @@ const campsiteData = [
         nameState: "Wood Lake Campground, MI"
     },
     {
-        id: "B94FE8B9-2EF1-4464-A2E1-5803C9AE7648",
+        camp_id: "B94FE8B9-2EF1-4464-A2E1-5803C9AE7648",
         code: "buff",
         name: "Woolum",
         lat: 35.9703114997,
@@ -7649,7 +7649,7 @@ const campsiteData = [
         nameState: "Woolum, AR"
     },
     {
-        id: "CCDC908D-4B98-46C9-83BB-AFE6EF2E9869",
+        camp_id: "CCDC908D-4B98-46C9-83BB-AFE6EF2E9869",
         code: "cuis",
         name: "Yankee Paradise Wilderness Campsite",
         lat: 30.8492,
@@ -7662,7 +7662,7 @@ const campsiteData = [
         nameState: "Yankee Paradise Wilderness Campsite"
     },
     {
-        id: "025AFF52-097D-4754-8952-5A554386CE62",
+        camp_id: "025AFF52-097D-4754-8952-5A554386CE62",
         code: "yose",
         name: "Yosemite Creek Campground",
         lat: 37.82629400382813,

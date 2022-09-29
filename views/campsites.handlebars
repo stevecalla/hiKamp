@@ -1,8 +1,12 @@
-{{!-- <p>{{ project.lat }} </p> --}}
+{{!-- <p> {{ campData.id }} </p>
+<p>{{ id }}</p> --}}
 
+{{#each campData as |data|}}
+ <img id="campsite-photo" src="{{ images[0].url }}" alt="{{images[0].altText}}">
 
-{{#each projects as |project|}}
-      <p> hello</p>
-      {{!-- <p> {{ project.id }} </p> --}}
-<p>{{ id }} </p>
+<p>{{ description }} {{ }}</p>
+<p>{{ url }}</p>
+
     {{/each}} 
+
+    

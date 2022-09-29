@@ -93,11 +93,11 @@ textarea {
   background-color: var(--background-secondary);
 }
 
-.post a,
+/* .post a,
 .post-card {
   margin: 5px;
   border: 3px solid black;
-}
+} */
 
 .btn-no-style {
   color: inherit;
