@@ -1,0 +1,37 @@
+<div id="campsite-header" class="row">
+    <h3>{{ campData.stateCode }}</h3>
+    <p>hello hello {{ campData.url }} </p>
+</div>
+<div class="row">
+    {{!MAIN PHOTO}}
+    {{!-- <img id="campsite-photo" src="{{campData.images[0].url}}" alt="{{campData.images[0].altText}}"> --}}
+</div>
+<div class="row">
+    <p id="campsite-desc">{{campData.description}}</p>
+</div>
+<div class="row">
+    <div class="column">
+        {{!RESERVATIONS}}
+        <p>Reservation Info: {{campData.reservationInfo}}</p>
+        <p>Make a reservation: <a href="{{campData.reservationUrl}}" target="_blank">{{campData.reservationUrl}}</p>
+        <br>
+        <br>
+        {{!REGULATIONS}}
+        <p>Regulations: {{campData.regulationsOverview}}<br>
+            <a>href="{{campData.regulationsurl}}">{{campData.regulationsurl}}</a>
+        </p>
+    </div>
+    <div class="column">
+        {{!CONTACT}}
+        {{!-- <p>Phone: {{campData.contacts.phoneNumbers[0].phoneNumber}}</p> --}}
+        {{!-- <p>Email: <a href="mailto:{{campData.contacts.emailAddresses[0].emailAddress}}">{{campData.contacts.emailAddresses[1]}}</a> --}}
+        </p>
+        <br>
+        <br>
+        {{!FEES}}
+        {{!-- <p>{{campData.fees[0].title}} {{campData.fees[0].cost}}: {{campData.fees[0].description}}</p> --}}
+    </div>
+</div>
+
+
+{{!-- {{campData.audioDescription}} --}}
