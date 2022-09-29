@@ -9,11 +9,11 @@ const campsiteData = [
         lat: 29.5108900007192,
         lng: -100.907309999953,
         latlong: "{lat:29.5108900007192, lng:-100.907309999953}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "277 North Campground"
+        state: "Texas",
+        zipCode: 78840,
+        city: "Del Rio",
+        address: "Unnamed Road",
+        nameState: "277 North Campground, TX"
     },
     {
         camp_id: "1241C56B-7003-4FDF-A449-29DA8BCB0A41",
@@ -22,7 +22,7 @@ const campsiteData = [
         lat: 35.61074664664336,
         lng: -83.93318327404131,
         latlong: "{lat:35.61074664664336, lng:-83.93318327404131}",
-        state: "TN",
+        state: "Tennessee",
         zipCode: 37878,
         city: "Tallassee",
         nameState: "Abrams Creek Campground, TN"
@@ -34,7 +34,7 @@ const campsiteData = [
         lat: 39.67775041640082,
         lng: -77.48462720159597,
         latlong: "{lat:39.67775041640082, lng:-77.48462720159597}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21788,
         city: "Thurmont",
         nameState: "Adirondack Shelters, MD"
@@ -46,7 +46,7 @@ const campsiteData = [
         lat: 45.315438210045016,
         lng: -107.94165891102676,
         latlong: "{lat:45.315438210045016, lng:-107.94165891102676}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59035,
         city: "Fort Smith",
         nameState: "Afterbay Campground, MT"
@@ -58,7 +58,7 @@ const campsiteData = [
         lat: 37.3764551871,
         lng: -91.5615463252,
         latlong: "{lat:37.3764551871, lng:-91.5615463252}",
-        state: "MO",
+        state: "Missouri",
         zipCode: 65466,
         city: "Eminence",
         nameState: "Akers Group Campground, MO"
@@ -70,7 +70,7 @@ const campsiteData = [
         lat: 32.072943,
         lng: -112.728093,
         latlong: "{lat:32.072943, lng:-112.728093}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 85321,
         city: "Ajo",
         nameState: "Alamo Canyon Primitive Campground, AZ"
@@ -82,7 +82,7 @@ const campsiteData = [
         lat: 37.148223,
         lng: -91.44976700000001,
         latlong: "{lat:37.148223, lng:-91.44976700000001}",
-        state: "MO",
+        state: "Missouri",
         zipCode: 65466,
         city: "Eminence",
         nameState: "Alley Spring Campground, MO"
@@ -94,22 +94,10 @@ const campsiteData = [
         lat: 36.764033745775,
         lng: -84.5463375728999,
         latlong: "{lat:36.764033745775, lng:-84.5463375728999}",
-        state: "KY",
+        state: "Kentucky",
         zipCode: 42653,
         city: "Whitley City",
         nameState: "Alum Ford Campground, KY"
-    },
-    {
-        camp_id: "B0B25595-CE24-4E9C-B0CD-93912216F113",
-        code: "amme",
-        name: "American Memorial Park",
-        lat: null,
-        lng: null,
-        latlong: "",
-        state: "MP",
-        zipCode: 96950,
-        city: "Saipan",
-        nameState: "American Memorial Park, MP"
     },
     {
         camp_id: "E7CC7363-9C34-42ED-B3F0-769BB39E9400",
@@ -118,7 +106,7 @@ const campsiteData = [
         lat: 34.0143426535482,
         lng: -119.367763068282,
         latlong: "{lat:34.0143426535482, lng:-119.367763068282}",
-        state: "CA",
+        state: "California",
         zipCode: 93001,
         city: "Anacapa Island",
         nameState: "Anacapa Island Campground, CA"
@@ -130,11 +118,11 @@ const campsiteData = [
         lat: 36.956030575674106,
         lng: -111.43123626708984,
         latlong: "{lat:36.956030575674106, lng:-111.43123626708984}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Antelope Point RV Park"
+        state: "Arizona",
+        zipCode: 86040,
+        city: "Page",
+        address: "537 Marina Parkway",
+        nameState: "Antelope Point RV Park, AZ"
     },
     {
         camp_id: "03608E50-3CA0-4AEA-9E6C-146FBD6D204B",
@@ -143,11 +131,11 @@ const campsiteData = [
         lat: 39.421109176,
         lng: -77.7488428204,
         latlong: "{lat:39.421109176, lng:-77.7488428204}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Antietam Creek Campground"
+        state: "Maryland",
+        zipCode: 21782,
+        city: "Sharpsburg",
+        address: "Chesapeake and Ohio Canal National Historic Park",
+        nameState: "Antietam Creek Campground, MD"
     },
     {
         camp_id: "48F2732E-4251-4D81-875C-8E52839620B5",
@@ -156,7 +144,7 @@ const campsiteData = [
         lat: 48.526081043909606,
         lng: -113.9818601853201,
         latlong: "{lat:48.526081043909606, lng:-113.9818601853201}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59936,
         city: "West Glacier",
         nameState: "Apgar Campground, MT"
@@ -168,7 +156,7 @@ const campsiteData = [
         lat: 37.858852,
         lng: -81.09231899999997,
         latlong: "{lat:37.858852, lng:-81.09231899999997}",
-        state: "WV",
+        state: "West Virgina",
         zipCode: 25907,
         city: "Prince",
         nameState: "Army Camp, WV"
@@ -180,7 +168,7 @@ const campsiteData = [
         lat: 40.39934770583215,
         lng: -105.59305451637942,
         latlong: "{lat:40.39934770583215, lng:-105.59305451637942}",
-        state: "CO",
+        state: "Colorado",
         zipCode: 80517,
         city: "Estes Park",
         nameState: "Aspenglen Campground, CO"
@@ -192,7 +180,7 @@ const campsiteData = [
         lat: 36.4646681174428,
         lng: -118.66967218847,
         latlong: "{lat:36.4646681174428, lng:-118.66967218847}",
-        state: "CA",
+        state: "California",
         zipCode: 93271,
         city: "Sequoia National Park",
         nameState: "Atwell Mill Campground, CA"
@@ -204,24 +192,11 @@ const campsiteData = [
         lat: 46.670375,
         lng: -86.13682,
         latlong: "{lat:46.670375, lng:-86.13682}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Au Sable East Group Backpacking Site"
-    },
-    {
-        camp_id: "F3ED602F-ECEE-4C10-9FBF-299331032221",
-        code: "piro",
-        name: "Au Sable East Individual Backpacking Sites",
-        lat: 46.669327,
-        lng: -86.135215,
-        latlong: "{lat:46.669327, lng:-86.135215}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Au Sable East Individual Backpacking Sites"
+        state: "Michigan",
+        zipCode: 49883,
+        city: "Seney",
+        address: "N Country Trail, Seney, MI 49883",
+        nameState: "Au Sable East Group Backpacking Site, MI"
     },
     {
         camp_id: "2DEFC258-0088-4E21-B429-7B7014B09060",
@@ -230,7 +205,7 @@ const campsiteData = [
         lat: 48.67654586358507,
         lng: -113.81852507945598,
         latlong: "{lat:48.67654586358507, lng:-113.81852507945598}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59936,
         city: "West Glacier",
         nameState: "Avalanche, MT"
@@ -242,7 +217,7 @@ const campsiteData = [
         lat: 36.741334351,
         lng: -118.967776777,
         latlong: "{lat:36.741334351, lng:-118.967776777}",
-        state: "CA",
+        state: "California",
         zipCode: 93633,
         city: "Grant Grove",
         nameState: "Azalea Campground, CA"
@@ -254,7 +229,7 @@ const campsiteData = [
         lat: 38.0799522999743,
         lng: -75.2135101005224,
         latlong: "{lat:38.0799522999743, lng:-75.2135101005224}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21811,
         city: "Berlin",
         nameState: "Back Country Camping - Green Run, MD"
@@ -266,11 +241,11 @@ const campsiteData = [
         lat: 38.1521378003843,
         lng: -75.1727157999991,
         latlong: "{lat:38.1521378003843, lng:-75.1727157999991}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Back Country Camping - Little Levels"
+        state: "Maryland",
+        zipCode: 21811,
+        city: "Berlin",
+        address: "Bayberry Dr",
+        nameState: "Back Country Camping - Little Levels, MD"
     },
     {
         camp_id: "BEAF9758-4BAB-4FE7-A6C0-7336362BDE42",
@@ -279,7 +254,7 @@ const campsiteData = [
         lat: 38.1432381002,
         lng: -75.1883865003,
         latlong: "{lat:38.1432381002, lng:-75.1883865003}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21811,
         city: "Berlin",
         nameState: "Back Country Camping - Pine Tree, MD"
@@ -291,7 +266,7 @@ const campsiteData = [
         lat: 38.0477905997415,
         lng: -75.2341248002154,
         latlong: "{lat:38.0477905997415, lng:-75.2341248002154}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21811,
         city: "Berlin",
         nameState: "Back Country Camping - Pope Bay, MD"
@@ -303,11 +278,11 @@ const campsiteData = [
         lat: 38.04472,
         lng: -75.23139,
         latlong: "{lat:38.04472, lng:-75.23139}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Back Country Camping - State Line"
+        state: "Maryland",
+        zipCode: 21864,
+        city: "Goose Island",
+        address: "George Island Landing",
+        nameState: "Back Country Camping - State Line, MD"
     },
     {
         camp_id: "B9AF19E6-8B7F-482F-AFB7-E606FFD4BA4E",
@@ -316,7 +291,7 @@ const campsiteData = [
         lat: 38.1777120008,
         lng: -75.1754320001,
         latlong: "{lat:38.1777120008, lng:-75.1754320001}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21811,
         city: "Berlin",
         nameState: "Back Country Camping - Tingles Island, MD"
@@ -328,7 +303,7 @@ const campsiteData = [
         lat: 32.809869,
         lng: -106.264225,
         latlong: "{lat:32.809869, lng:-106.264225}",
-        state: "NM",
+        state: "New Mexico",
         zipCode: 88310,
         city: "Alamogordo",
         nameState: "Backcountry Camping, NM"
@@ -337,10 +312,10 @@ const campsiteData = [
         camp_id: "07B94648-198D-4762-9D87-236DEC0C58BA",
         code: "care",
         name: "Backcountry Camping",
-        lat: null,
-        lng: null,
-        latlong: "",
-        state: "UT",
+        lat: 45.567833,
+        lng: -75.84775,
+        latlong: "{lat:45.567833 , lng:-75.84775",
+        state: "Utah",
         zipCode: 84775,
         city: "Torrey",
         nameState: "Backcountry Camping, UT"
@@ -352,11 +327,11 @@ const campsiteData = [
         lat: 40.6961609,
         lng: -72.9719285,
         latlong: "{lat:40.6961609, lng:-72.9719285}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Backcountry Camping in the Otis Pike High Dune Wilderness"
+        state: "New York",
+        zipCode: 11772,
+        city: "Patchogue",
+        address: "Unnamed Road",
+        nameState: "Backcountry Camping in the Otis Pike High Dune Wilderness, NY"
     },
     {
         camp_id: "9FA0E6D0-85F3-4388-92B1-26F408774F28",
@@ -365,7 +340,7 @@ const campsiteData = [
         lat: 37.77724,
         lng: -105.535601,
         latlong: "{lat:37.77724, lng:-105.535601}",
-        state: "CO",
+        state: "Colorado",
         zipCode: 81146,
         city: "Mosca",
         nameState: "Backpacking Campsites in the Dunes or Forest, CO"
@@ -377,11 +352,11 @@ const campsiteData = [
         lat: 38.98573,
         lng: -114.24331,
         latlong: "{lat:38.98573, lng:-114.24331}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Baker Creek Campground"
+        state: "Nevada",
+        zipCode: 89311,
+        city: "Baker",
+        address: "Unnamed Road",
+        nameState: "Baker Creek Campground, NV"
     },
     {
         camp_id: "E02FF569-7F16-4A73-B44F-2A2211C98513",
@@ -390,7 +365,7 @@ const campsiteData = [
         lat: 39.299834,
         lng: -77.557168,
         latlong: "{lat:39.299834, lng:-77.557168}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 20176,
         city: "Lander",
         nameState: "Bald Eagle Island Hiker-Biker Campsite, MD"
@@ -402,7 +377,7 @@ const campsiteData = [
         lat: 35.56543624633261,
         lng: -83.17429877302192,
         latlong: "{lat:35.56543624633261, lng:-83.17429877302192}",
-        state: "TN",
+        state: "Tennessee",
         zipCode: 37738,
         city: "Gatlinburg",
         nameState: "Balsam Mountain Campground, TN"
@@ -414,7 +389,7 @@ const campsiteData = [
         lat: 36.4886610474,
         lng: -84.6971229739,
         latlong: "{lat:36.4886610474, lng:-84.6971229739}",
-        state: "TN",
+        state: "Tennessee",
         zipCode: 37841,
         city: "Oneida",
         nameState: "Bandy Creek Campground, TN"
@@ -426,7 +401,7 @@ const campsiteData = [
         lat: 45.1044128273,
         lng: -108.225571084,
         latlong: "{lat:45.1044128273, lng:-108.225571084}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82413,
         city: "Lovell",
         nameState: "Barry's Landing & Trail Creek Campground, WY"
@@ -438,7 +413,7 @@ const campsiteData = [
         lat: 58.450780888,
         lng: -135.894400288,
         latlong: "{lat:58.450780888, lng:-135.894400288}",
-        state: "AK",
+        state: "Alaska",
         zipCode: 99826,
         city: "Bartlett Cove",
         nameState: "Bartlett Cove Campground, AK"
@@ -450,7 +425,7 @@ const campsiteData = [
         lat: 45.018882,
         lng: -86.102772,
         latlong: "{lat:45.018882, lng:-86.102772}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49630,
         city: "Empire",
         nameState: "Bay Campground - South Manitou Island, MI"
@@ -462,7 +437,7 @@ const campsiteData = [
         lat: 38.207737100574306,
         lng: -75.1593790997531,
         latlong: "{lat:38.207737100574306, lng:-75.1593790997531}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21811,
         city: "Berlin",
         nameState: "Bayside Drive-in Campground, MD"
@@ -474,7 +449,7 @@ const campsiteData = [
         lat: 36.6423697456121,
         lng: -84.5243896745863,
         latlong: "{lat:36.6423697456121, lng:-84.5243896745863}",
-        state: "KY",
+        state: "Kentucky",
         zipCode: 42649,
         city: "Strunk",
         nameState: "Bear Creek Horse Camp, KY"
@@ -486,23 +461,10 @@ const campsiteData = [
         lat: 26.183239748193,
         lng: -81.247475274331,
         latlong: "{lat:26.183239748193, lng:-81.247475274331}",
-        state: "FL",
+        state: "Florida",
         zipCode: 34141,
         city: "Ochopee",
         nameState: "Bear Island Campground, FL"
-    },
-    {
-        camp_id: "7108D5E4-1BE3-42A7-846A-7BF3C631E8E9",
-        code: "piro",
-        name: "Beaver Creek Individual Backpacking Sites",
-        lat: 46.577012,
-        lng: -86.350163,
-        latlong: "{lat:46.577012, lng:-86.350163}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Beaver Creek Individual Backpacking Sites"
     },
     {
         camp_id: "D3397636-7BAA-419B-A634-9C53D6AD7E55",
@@ -511,7 +473,7 @@ const campsiteData = [
         lat: 47.90406144441624,
         lng: -89.1743364694965,
         latlong: "{lat:47.90406144441624, lng:-89.1743364694965}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Beaver Island Campground, MI"
@@ -523,7 +485,7 @@ const campsiteData = [
         lat: 36.938243,
         lng: -111.496291,
         latlong: "{lat:36.938243, lng:-111.496291}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 86040,
         city: "Page",
         nameState: "Beehives Campground, AZ"
@@ -535,7 +497,7 @@ const campsiteData = [
         lat: 34.0019373491,
         lng: -116.019762032,
         latlong: "{lat:34.0019373491, lng:-116.019762032}",
-        state: "CA",
+        state: "California",
         zipCode: 92277,
         city: "Twentynine Palms",
         nameState: "Belle Campground, CA"
@@ -547,7 +509,7 @@ const campsiteData = [
         lat: 44.58183403582838,
         lng: -104.70634354706148,
         latlong: "{lat:44.58183403582838, lng:-104.70634354706148}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82714,
         city: "Devils Tower",
         nameState: "Belle Fourche River Campground, WY"
@@ -559,23 +521,10 @@ const campsiteData = [
         lat: 48.15235177620953,
         lng: -88.58598760529463,
         latlong: "{lat:48.15235177620953, lng:-88.58598760529463}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Belle Isle Campground, MI"
-    },
-    {
-        camp_id: "B0B0CF0A-F97A-4DA8-AC53-B72516E0B248",
-        code: "piro",
-        name: "Benchmark Individual Backpacking Sites",
-        lat: 46.647014,
-        lng: -86.200461,
-        latlong: "{lat:46.647014, lng:-86.200461}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Benchmark Individual Backpacking Sites"
     },
     {
         camp_id: "2AFC7456-747A-4F35-8572-418E6E103989",
@@ -584,7 +533,7 @@ const campsiteData = [
         lat: 37.8245721146453,
         lng: -122.526725469915,
         latlong: "{lat:37.8245721146453, lng:-122.526725469915}",
-        state: "CA",
+        state: "California",
         zipCode: 94965,
         city: "Sausalito",
         nameState: "Bicentennial Campground, CA"
@@ -596,7 +545,7 @@ const campsiteData = [
         lat: 35.7500776458923,
         lng: -83.1113810735188,
         latlong: "{lat:35.7500776458923, lng:-83.1113810735188}",
-        state: "TN",
+        state: "Tennessee",
         zipCode: 37821,
         city: "Newport",
         nameState: "Big Creek Campground, TN"
@@ -608,7 +557,7 @@ const campsiteData = [
         lat: 38.5279623,
         lng: -78.4369404,
         latlong: "{lat:38.5279623, lng:-78.4369404}",
-        state: "VA",
+        state: "Virginia",
         zipCode: 22851,
         city: "Robertson",
         nameState: "Big Meadows Campground, VA"
@@ -620,24 +569,11 @@ const campsiteData = [
         lat: 45.932131,
         lng: -68.635802,
         latlong: "{lat:45.932131, lng:-68.635802}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
+        state: "Maine",
+        zipCode: 04765,
+        city: "Stacyville",
+        address: "W9J7+VM4 Stacyville",
         nameState: "Big Seboeis Campsite"
-    },
-    {
-        camp_id: "A873A126-9BD6-4979-8FA2-9692AB909A9E",
-        code: "kaww",
-        name: "Big Spring Brook Campsite",
-        lat: 46.0287936106,
-        lng: -68.7256877275,
-        latlong: "{lat:46.0287936106, lng:-68.7256877275}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Big Spring Brook Campsite"
     },
     {
         camp_id: "1CE97109-25B0-4A15-B4B9-3525EF22C1C5",
@@ -646,8 +582,8 @@ const campsiteData = [
         lat: 46.0341848574,
         lng: -68.7742320868,
         latlong: "{lat:46.0341848574, lng:-68.7742320868}",
-        state: "ME",
-        zipCode: 4765,
+        state: "Maine",
+        zipCode: 04765,
         city: "Patten",
         nameState: "Big Spring Brook Hut, ME"
     },
@@ -658,7 +594,7 @@ const campsiteData = [
         lat: 36.96099384748342,
         lng: -90.98586951446981,
         latlong: "{lat:36.96099384748342, lng:-90.98586951446981}",
-        state: "MO",
+        state: "Missouri",
         zipCode: 63965,
         city: "Van Buren",
         nameState: "Big Spring Campground, MO"
@@ -670,7 +606,7 @@ const campsiteData = [
         lat: 39.492868,
         lng: -77.792591,
         latlong: "{lat:39.492868, lng:-77.792591}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21782,
         city: "Mercersville",
         nameState: "Big Woods Hiker-Biker Campsite, MD"
@@ -682,7 +618,7 @@ const campsiteData = [
         lat: 48.110107730247336,
         lng: -88.68562291855892,
         latlong: "{lat:48.110107730247336, lng:-88.68562291855892}",
-        state: "MN",
+        state: "Minnesota",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Birch Island Campground, MN"
@@ -694,7 +630,7 @@ const campsiteData = [
         lat: 27.466794,
         lng: -97.313693,
         latlong: "{lat:27.466794, lng:-97.313693}",
-        state: "TX",
+        state: "Texas",
         zipCode: 78418,
         city: "Corpus Christi",
         nameState: "Bird Island Basin Campground, TX"
@@ -706,7 +642,7 @@ const campsiteData = [
         lat: 45.25091802928579,
         lng: -107.96260372030031,
         latlong: "{lat:45.25091802928579, lng:-107.96260372030031}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59035,
         city: "Fort Smith",
         nameState: "Black Canyon Campground, MT"
@@ -718,7 +654,7 @@ const campsiteData = [
         lat: 35.0486255634651,
         lng: -115.382956822183,
         latlong: "{lat:35.0486255634651, lng:-115.382956822183}",
-        state: "CA",
+        state: "California",
         zipCode: 92311,
         city: "Barstow",
         nameState: "Black Canyon Group and Equestrian Campground, CA"
@@ -730,10 +666,10 @@ const campsiteData = [
         lat: 34.07298223672509,
         lng: -116.39149680312721,
         latlong: "{lat:34.07298223672509, lng:-116.39149680312721}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
+        state: "California",
+        zipCode: 92277,
+        city: "Cottonwood Springs",
+        address: "Unnamed road",
         nameState: "Black Rock Campground"
     },
     {
@@ -743,8 +679,8 @@ const campsiteData = [
         lat: 44.30894404258141,
         lng: -68.20988547018771,
         latlong: "{lat:44.30894404258141, lng:-68.20988547018771}",
-        state: "ME",
-        zipCode: 4660,
+        state: "Maine",
+        zipCode: 04660,
         city: "Otter Creek",
         nameState: "Blackwoods Campground, ME"
     },
@@ -755,7 +691,7 @@ const campsiteData = [
         lat: 35.7230720210905,
         lng: -101.663841251126,
         latlong: "{lat:35.7230720210905, lng:-101.663841251126}",
-        state: "TX",
+        state: "Texas",
         zipCode: 79036,
         city: "Fritch",
         nameState: "Blue Creek, TX"
@@ -767,7 +703,7 @@ const campsiteData = [
         lat: 36.6775354458249,
         lng: -84.5185055731685,
         latlong: "{lat:36.6775354458249, lng:-84.5185055731685}",
-        state: "KY",
+        state: "Kentucky",
         zipCode: 42649,
         city: "Strunk",
         nameState: "Blue Heron Campground, KY"
@@ -779,11 +715,11 @@ const campsiteData = [
         lat: 31.9482587276,
         lng: -104.871748209,
         latlong: "{lat:31.9482587276, lng:-104.871748209}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Blue Ridge Wilderness Campground"
+        state: "Texas",
+        zipCode: 79847,
+        city: "Salt Flat",
+        address: "Unnamed Road",
+        nameState: "Blue Ridge Wilderness Campground, TX"
     },
     {
         camp_id: "7461D94E-67E8-4C2B-BEFF-B93174B8CE06",
@@ -792,10 +728,10 @@ const campsiteData = [
         lat: 35.682455887,
         lng: -101.628561851,
         latlong: "{lat:35.682455887, lng:-101.628561851}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
+        state: "Texas",
+        zipCode: "79114",
+        city: "Fritch",
+        address: "Blue West Rd",
         nameState: "Blue West Campground"
     },
     {
@@ -805,11 +741,11 @@ const campsiteData = [
         lat: 33.8323062462,
         lng: -80.8148872732,
         latlong: "{lat:33.8323062462, lng:-80.8148872732}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Bluff Campground"
+        state: "South Carolina",
+        zipCode: 29205,
+        city: "Richland",
+        address: "Richland County",
+        nameState: "Bluff Campground, SC"
     },
     {
         camp_id: "3974D96D-C28E-4A4B-8CCA-4C0C4747C420",
@@ -818,9 +754,10 @@ const campsiteData = [
         lat: 25.5231,
         lng: -80.1746,
         latlong: "{lat:25.5231, lng:-80.1746}",
-        state: "FL",
+        state: "Florida",
         zipCode: 33033,
         city: "Homestead",
+        address: "Unnamed Road",
         nameState: "Boca Chita Campground, FL"
     },
     {
@@ -830,11 +767,11 @@ const campsiteData = [
         lat: 32.0115507156,
         lng: -109.355060216,
         latlong: "{lat:32.0115507156, lng:-109.355060216}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Bonita Canyon Campground"
+        state: "Arizona",
+        zipCode: 85643,
+        city: "Willcox",
+        address: "13250 E Bonita Canyon Rd",
+        nameState: "Bonita Canyon Campground, AZ"
     },
     {
         camp_id: "D0B26144-86D6-4F31-9296-4455BA0A3DDB",
@@ -843,7 +780,7 @@ const campsiteData = [
         lat: 36.0369503293103,
         lng: -114.801916601689,
         latlong: "{lat:36.0369503293103, lng:-114.801916601689}",
-        state: "NV",
+        state: "Nevada",
         zipCode: 89005,
         city: "Boulder City",
         nameState: "Boulder Beach Campground, NV"
@@ -855,7 +792,7 @@ const campsiteData = [
         lat: 36.0375252007271,
         lng: -114.802573100311,
         latlong: "{lat:36.0375252007271, lng:-114.802573100311}",
-        state: "NV",
+        state: "Nevada",
         zipCode: 89005,
         city: "Boulder City",
         nameState: "Boulder Beach Group Campground, NV"
@@ -867,11 +804,11 @@ const campsiteData = [
         lat: 42.7776,
         lng: -97.1481,
         latlong: "{lat:42.7776, lng:-97.1481}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Bow Creek Primitive Camping"
+        state: "Nebraska",
+        zipCode: 68792,
+        city: "Cedar County",
+        address: "Unnamed Road",
+        nameState: "Bow Creek Primitive Camping, NE"
     },
     {
         camp_id: "03CC7ABA-0A4F-4F74-96B8-317F981E3B8E",
@@ -880,7 +817,7 @@ const campsiteData = [
         lat: 48.8290464956264,
         lng: -114.203130379479,
         latlong: "{lat:48.8290464956264, lng:-114.203130379479}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59936,
         city: "West Glacier",
         nameState: "Bowman Lake, MT"
@@ -892,9 +829,10 @@ const campsiteData = [
         lat: 40.6173933269,
         lng: -122.574956741,
         latlong: "{lat:40.6173933269, lng:-122.574956741}",
-        state: "CA",
+        state: "California",
         zipCode: 96095,
         city: "Whiskeytown",
+        address: "Unnamed Road",
         nameState: "Brandy Creek, CA"
     },
     {
@@ -904,9 +842,10 @@ const campsiteData = [
         lat: 40.61705,
         lng: -122.57476,
         latlong: "{lat:40.61705, lng:-122.57476}",
-        state: "CA",
+        state: "California",
         zipCode: 96095,
         city: "Whiskeytown",
+        address: "Unnamed Road",
         nameState: "Brandy Creek RV, CA"
     },
     {
@@ -916,11 +855,11 @@ const campsiteData = [
         lat: 30.8945,
         lng: -81.444,
         latlong: "{lat:30.8945, lng:-81.444}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Brickhill Bluff Wilderness Campsite"
+        state: "Georgia",
+        zipCode: 31558,
+        city: "Cumberland",
+        address: "Cumberland Island",
+        nameState: "Brickhill Bluff Wilderness Campsite, GA"
     },
     {
         camp_id: "58B9591C-4723-4049-B26C-D30C07A6FAD6",
@@ -929,11 +868,11 @@ const campsiteData = [
         lat: 37.6636576342436,
         lng: -119.624293366359,
         latlong: "{lat:37.6636576342436, lng:-119.624293366359}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Bridalveil Creek Campground"
+        state: "California",
+        zipCode: 95389,
+        city: "Yosemite",
+        address: "Unnamed Road",
+        nameState: "Bridalveil Creek Campground, CA"
     },
     {
         camp_id: "1A5B19B8-BF1F-4803-8D87-2D4091D59A4D",
@@ -942,7 +881,7 @@ const campsiteData = [
         lat: 44.534437749236,
         lng: -110.436923682403,
         latlong: "{lat:44.534437749236, lng:-110.436923682403}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82190,
         city: "Yellowstone National Park",
         nameState: "Bridge Bay Campground, WY"
@@ -954,7 +893,7 @@ const campsiteData = [
         lat: 37.984096,
         lng: -81.027881,
         latlong: "{lat:37.984096, lng:-81.027881}",
-        state: "WV",
+        state: "West Virginia",
         zipCode: 25830,
         city: "Cunard",
         nameState: "Brooklyn Campground, WV"
@@ -966,7 +905,7 @@ const campsiteData = [
         lat: 58.5597862997626,
         lng: -155.777534811051,
         latlong: "{lat:58.5597862997626, lng:-155.777534811051}",
-        state: "AK",
+        state: "Alaska",
         zipCode: 99613,
         city: "King Salmon",
         nameState: "Brooks Camp Campground, AK"
@@ -978,7 +917,7 @@ const campsiteData = [
         lat: 36.5224330238,
         lng: -118.764106493,
         latlong: "{lat:36.5224330238, lng:-118.764106493}",
-        state: "CA",
+        state: "California",
         zipCode: 93271,
         city: "Sequoia National Park",
         nameState: "Buckeye Flat Campground, CA"
@@ -990,11 +929,11 @@ const campsiteData = [
         lat: 34.4291301418,
         lng: -96.9885393739,
         latlong: "{lat:34.4291301418, lng:-96.9885393739}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Buckhorn Campground Loop A"
+        state: "Oklahoma",
+        zipCode: 73086,
+        city: "Sulpher",
+        address: "Buckhorn Campground",
+        nameState: "Buckhorn Campground Loop A, OK"
     },
     {
         camp_id: "90EF147D-A958-4C60-9414-193FC048A66C",
@@ -1003,11 +942,11 @@ const campsiteData = [
         lat: 34.4273650843,
         lng: -96.9916061826,
         latlong: "{lat:34.4273650843, lng:-96.9916061826}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Buckhorn Campground Loop B"
+        state: "Oklahoma",
+        zipCode: 73086,
+        city: "Sulpher",
+        address: "Buckhorn Campground",
+        nameState: "Buckhorn Campground Loop B, OK"
     },
     {
         camp_id: "FFC17012-1267-43CF-B294-D56FD7F89E47",
@@ -1016,11 +955,11 @@ const campsiteData = [
         lat: 34.4316165287372,
         lng: -96.9964235623855,
         latlong: "{lat:34.4316165287372, lng:-96.9964235623855}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Buckhorn Campground Loop C"
+        state: "Oklahoma",
+        zipCode: 73086,
+        city: "Sulpher",
+        address: "Buckhorn Campground",
+        nameState: "Buckhorn Campground Loop C, OK"
     },
     {
         camp_id: "E7B327F1-7369-40B6-BC6D-35221C41F9D6",
@@ -1029,11 +968,11 @@ const campsiteData = [
         lat: 34.4317472227631,
         lng: -96.9982420570924,
         latlong: "{lat:34.4317472227631, lng:-96.9982420570924}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Buckhorn Campground Loop D"
+        state: "Oklahoma",
+        zipCode: 73086,
+        city: "Sulpher",
+        address: "Buckhorn Campground",
+        nameState: "Buckhorn Campground Loop D, OK"
     },
     {
         camp_id: "5AA6174E-B53C-46F7-9F7B-CC275DD91CBC",
@@ -1042,7 +981,7 @@ const campsiteData = [
         lat: 36.0715554992,
         lng: -92.5555762993,
         latlong: "{lat:36.0715554992, lng:-92.5555762993}",
-        state: "AR",
+        state: "Arkansas",
         zipCode: 72687,
         city: "Yellville",
         nameState: "Buffalo Point Campground, AR"
@@ -1054,7 +993,7 @@ const campsiteData = [
         lat: 35.7248098991,
         lng: -101.5901470184,
         latlong: "{lat:35.7248098991, lng:-101.5901470184}",
-        state: "TX",
+        state: "Texas",
         zipCode: 79036,
         city: "Fritch",
         nameState: "Bugbee Canyon, TX"
@@ -1066,7 +1005,7 @@ const campsiteData = [
         lat: 37.5199691549143,
         lng: -110.721029500387,
         latlong: "{lat:37.5199691549143, lng:-110.721029500387}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84533,
         city: "Lake Powell",
         nameState: "Bullfrog RV & Campground, UT"
@@ -1078,7 +1017,7 @@ const campsiteData = [
         lat: 25.8931188486191,
         lng: -81.2297696743782,
         latlong: "{lat:25.8931188486191, lng:-81.2297696743782}",
-        state: "FL",
+        state: "Florida",
         zipCode: 34141,
         city: "ochopee",
         nameState: "Burns Lake, FL"
@@ -1090,7 +1029,7 @@ const campsiteData = [
         lat: 38.073636,
         lng: -81.077535,
         latlong: "{lat:38.073636, lng:-81.077535}",
-        state: "WV",
+        state: "West Virginia",
         zipCode: 25862,
         city: "Lansing",
         nameState: "Burnwood Group Campsite, WV"
@@ -1102,11 +1041,11 @@ const campsiteData = [
         lat: 31.9264160207,
         lng: -104.876685436,
         latlong: "{lat:31.9264160207, lng:-104.876685436}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Bush Mountain Wilderness Campground"
+        state: "Texas",
+        zipCode: 79847,
+        city: "Salt Flat",
+        address: "Unnamed Road",
+        nameState: "Bush Mountain Wilderness Campground, TX"
     },
     {
         camp_id: "8AA8C347-B5A7-47F2-A2D4-A37635F8E4B3",
@@ -1115,7 +1054,7 @@ const campsiteData = [
         lat: 40.5648011556304,
         lng: -121.305764293073,
         latlong: "{lat:40.5648011556304, lng:-121.305764293073}",
-        state: "CA",
+        state: "California",
         zipCode: 96071,
         city: "Old Station",
         nameState: "Butte Lake Campground, CA"
@@ -1127,7 +1066,7 @@ const campsiteData = [
         lat: 38.59701768873082,
         lng: -77.35605254877296,
         latlong: "{lat:38.59701768873082, lng:-77.35605254877296}",
-        state: "VA",
+        state: "Virgina",
         zipCode: 22025,
         city: "Dumfries",
         nameState: "Cabin Camp 1 (By Reservation Only), VA"
@@ -1139,11 +1078,11 @@ const campsiteData = [
         lat: 38.581375041329196,
         lng: -77.4157374023348,
         latlong: "{lat:38.581375041329196, lng:-77.4157374023348}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Cabin Camp 2 (By Reservation Only)"
+        state: "Virgina",
+        zipCode: 55347,
+        city: "Triangle",
+        address: "Unnamed Road",
+        nameState: "Cabin Camp 2 (By Reservation Only), VA"
     },
     {
         camp_id: "B26D8D06-514E-4230-A314-CF0ED2023B98",
@@ -1152,9 +1091,10 @@ const campsiteData = [
         lat: 38.56367216064515,
         lng: -77.36493032549049,
         latlong: "{lat:38.56367216064515, lng:-77.36493032549049}",
-        state: "VA",
+        state: "Virgina",
         zipCode: 55347,
         city: "Triangle",
+        address: "Unnamed Road",
         nameState: "Cabin Camp 3 (By Reservation Only), VA"
     },
     {
@@ -1164,7 +1104,7 @@ const campsiteData = [
         lat: 38.59150925969603,
         lng: -77.35386082375908,
         latlong: "{lat:38.59150925969603, lng:-77.35386082375908}",
-        state: "VA",
+        state: "Virgina",
         zipCode: 22025,
         city: "Dumfries",
         nameState: "Cabin Camp 4 (By Reservation Only), VA"
@@ -1176,7 +1116,7 @@ const campsiteData = [
         lat: 38.57577906331334,
         lng: -77.41256789301237,
         latlong: "{lat:38.57577906331334, lng:-77.41256789301237}",
-        state: "VA",
+        state: "Virgina",
         zipCode: 22172,
         city: "Triangle",
         nameState: "Cabin Camp 5 (By Reservation Only), VA"
@@ -1188,7 +1128,7 @@ const campsiteData = [
         lat: 39.621284,
         lng: -78.279305,
         latlong: "{lat:39.621284, lng:-78.279305}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21750,
         city: "Woodmont",
         nameState: "Cacapon Junction Hiker-Biker Campsite, MD"
@@ -1200,7 +1140,7 @@ const campsiteData = [
         lat: 35.6027246468281,
         lng: -83.7762927735478,
         latlong: "{lat:35.6027246468281, lng:-83.7762927735478}",
-        state: "TN",
+        state: "Tennessee",
         zipCode: 37882,
         city: "Townsend",
         nameState: "Cades Cove Campground, TN"
@@ -1212,7 +1152,7 @@ const campsiteData = [
         lat: 35.6038916470614,
         lng: -83.7713098747745,
         latlong: "{lat:35.6038916470614, lng:-83.7713098747745}",
-        state: "TN",
+        state: "Tennessee",
         zipCode: 37882,
         city: "Townsend",
         nameState: "Cades Cove Group Campground, TN"
@@ -1224,7 +1164,7 @@ const campsiteData = [
         lat: 39.271168,
         lng: -77.535582,
         latlong: "{lat:39.271168, lng:-77.535582}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21777,
         city: "Point of Rocks",
         nameState: "Calico Rocks Hiker-Biker Campsite, MD"
@@ -1249,11 +1189,11 @@ const campsiteData = [
         lat: 36.143263,
         lng: -114.725594,
         latlong: "{lat:36.143263, lng:-114.725594}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Callville Bay RV Park"
+        state: "Nevada",
+        zipCode: 89005,
+        city: "Boulder City",
+        address: "Unnamed Road",
+        nameState: "Callville Bay RV Park, NV"
     },
     {
         camp_id: "8F36DEB6-298E-4214-A677-064BD457996A",
@@ -1262,11 +1202,11 @@ const campsiteData = [
         lat: 37.7420541114337,
         lng: -119.602253054678,
         latlong: "{lat:37.7420541114337, lng:-119.602253054678}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Camp 4 Campground"
+        state: "California",
+        zipCode: 95389,
+        city: "Yosemite",
+        address: "Unnamed Road",
+        nameState: "Camp 4 Campground, CA"
     },
     {
         camp_id: "D378656F-72C7-4F18-A3CC-741CBEE9B394",
@@ -1275,7 +1215,7 @@ const campsiteData = [
         lat: 39.64454144059151,
         lng: -77.47656473444567,
         latlong: "{lat:39.64454144059151, lng:-77.47656473444567}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21788,
         city: "Thurmont",
         nameState: "Camp Greentop, MD"
@@ -1287,7 +1227,7 @@ const campsiteData = [
         lat: 39.6418851453505,
         lng: -77.4484489543919,
         latlong: "{lat:39.6418851453505, lng:-77.4484489543919}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21788,
         city: "Thurmont",
         nameState: "Camp Misty Mount, MD"
@@ -1299,23 +1239,10 @@ const campsiteData = [
         lat: 39.6449169814922,
         lng: -77.4876280994409,
         latlong: "{lat:39.6449169814922, lng:-77.4876280994409}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21780,
         city: "Sabillasville",
         nameState: "Camp Round Meadow, MD"
-    },
-    {
-        camp_id: "8B813CCA-9522-490F-A477-1904540C69A3",
-        code: "kaww",
-        name: "Camping and Huts",
-        lat: 46.1249342961593,
-        lng: -68.801462993981,
-        latlong: "{lat:46.1249342961593, lng:-68.801462993981}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Camping and Huts"
     },
     {
         camp_id: "77D2C8BE-94A4-4550-9823-7183C50F4803",
@@ -1324,7 +1251,7 @@ const campsiteData = [
         lat: 28.92700096310608,
         lng: -80.82460296672082,
         latlong: "{lat:28.92700096310608, lng:-80.82460296672082}",
-        state: "FL",
+        state: "Florida",
         zipCode: 32169,
         city: "New Smyrna Beach",
         nameState: "Canaveral National Seashore Backcountry Island Camping, FL"
@@ -1336,7 +1263,7 @@ const campsiteData = [
         lat: 44.7353837489,
         lng: -110.487912383,
         latlong: "{lat:44.7353837489, lng:-110.487912383}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82190,
         city: "Yellowstone National Park",
         nameState: "Canyon Campground, WY"
@@ -1348,19 +1275,20 @@ const campsiteData = [
         lat: 59.6075624,
         lng: -135.3246672,
         latlong: "{lat:59.6075624, lng:-135.3246672}",
-        state: "AK",
+        state: "Alaska",
         zipCode: 99840,
         city: "Skagway",
+        address: "Unnamed Road",
         nameState: "Canyon City, AK"
     },
     {
         camp_id: "85543439-6134-478E-8593-36D96471F5E6",
         code: "nava",
         name: "Canyon View Campground",
-        lat: null,
-        lng: null,
-        latlong: "",
-        state: "AZ",
+        lat: 36.6756921508332,
+        lng: -110.542683230592,
+        latlong: "{lat:36.6756921508332, lng:-110.542683230592}",
+        state: "Arizona",
         zipCode: 86054,
         city: "Shonto",
         nameState: "Canyon View Campground, AZ"
@@ -1372,7 +1300,7 @@ const campsiteData = [
         lat: 36.787192938,
         lng: -118.665449308,
         latlong: "{lat:36.787192938, lng:-118.665449308}",
-        state: "CA",
+        state: "California",
         zipCode: 93633,
         city: "Kings Canyon National Park",
         nameState: "Canyon View Campground, CA"
@@ -1384,7 +1312,7 @@ const campsiteData = [
         lat: 35.235775,
         lng: -75.53911,
         latlong: "{lat:35.235775, lng:-75.53911}",
-        state: "NC",
+        state: "North Carolina",
         zipCode: 27920,
         city: "Buxton",
         nameState: "Cape Point Campground, NC"
@@ -1396,7 +1324,7 @@ const campsiteData = [
         lat: 48.094571206998936,
         lng: -88.57220404720897,
         latlong: "{lat:48.094571206998936, lng:-88.57220404720897}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Caribou Island Campground, MI"
@@ -1408,7 +1336,7 @@ const campsiteData = [
         lat: 35.9835736001,
         lng: -93.0401838004,
         latlong: "{lat:35.9835736001, lng:-93.0401838004}",
-        state: "AR",
+        state: "Arkansas",
         zipCode: 72641,
         city: "Jasper",
         nameState: "Carver Campground, AR"
@@ -1420,7 +1348,7 @@ const campsiteData = [
         lat: 35.631185945507,
         lng: -83.08554127280615,
         latlong: "{lat:35.631185945507, lng:-83.08554127280615}",
-        state: "NC",
+        state: "North Carolina",
         zipCode: 37876,
         city: "Waynesville",
         nameState: "Cataloochee Campground, NC"
@@ -1432,7 +1360,7 @@ const campsiteData = [
         lat: 42.1142851019,
         lng: -123.431699655,
         latlong: "{lat:42.1142851019, lng:-123.431699655}",
-        state: "OR",
+        state: "Oregon",
         zipCode: 97523,
         city: "Cave Junction",
         nameState: "Cave Creek Campground, OR"
@@ -1444,7 +1372,7 @@ const campsiteData = [
         lat: 35.79584,
         lng: -101.24451,
         latlong: "{lat:35.79584, lng:-101.24451}",
-        state: "TX",
+        state: "Texas",
         zipCode: 79036,
         city: "Fritch",
         nameState: "Cedar Canyon Campground, TX"
@@ -1456,7 +1384,7 @@ const campsiteData = [
         lat: 43.744154,
         lng: -101.950161,
         latlong: "{lat:43.744154, lng:-101.950161}",
-        state: "SD",
+        state: "South Dakota",
         zipCode: 57750,
         city: "Interior",
         nameState: "Cedar Pass Campground, SD"
@@ -1468,11 +1396,11 @@ const campsiteData = [
         lat: 34.5049201966,
         lng: -96.9672378028,
         latlong: "{lat:34.5049201966, lng:-96.9672378028}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Central Campground"
+        state: "Oklahoma",
+        zipCode: 73086,
+        city: "Sulpher",
+        address: "Buckhorn Campground",
+        nameState: "Central Campground, OK"
     },
     {
         camp_id: "3D7C58EB-7354-4212-98E7-CCD7C13BC98F",
@@ -1481,11 +1409,11 @@ const campsiteData = [
         lat: 46.546925,
         lng: -86.440929,
         latlong: "{lat:46.546925, lng:-86.440929}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Chapel Individual Backpacking Sites"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Chapel Individual Backpacking Sites, MI"
     },
     {
         camp_id: "3E73BA85-7545-4A30-9ACD-A9E3C073DB2A",
@@ -1494,7 +1422,7 @@ const campsiteData = [
         lat: 35.6918602938,
         lng: -101.642234005,
         latlong: "{lat:35.6918602938, lng:-101.642234005}",
-        state: "TX",
+        state: "Texas",
         zipCode: 79036,
         city: "Fritch",
         nameState: "Chimney Hollow Campground, TX"
@@ -1506,7 +1434,7 @@ const campsiteData = [
         lat: 48.02936725450616,
         lng: -88.6510379097632,
         latlong: "{lat:48.02936725450616, lng:-88.6510379097632}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Chippewa Harbor Campground, MI"
@@ -1518,7 +1446,7 @@ const campsiteData = [
         lat: 39.102158,
         lng: -77.473011,
         latlong: "{lat:39.102158, lng:-77.473011}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 20837,
         city: "Poolesville",
         nameState: "Chisel Branch Hiker-Biker Campsite, MD"
@@ -1530,11 +1458,11 @@ const campsiteData = [
         lat: 29.275900792177,
         lng: -103.302285692397,
         latlong: "{lat:29.275900792177, lng:-103.302285692397}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Chisos Basin Campground"
+        state: "Texas",
+        zipCode: 79834,
+        city: "Big Bend",
+        address: "Big Bend National Park",
+        nameState: "Chisos Basin Campground, TX"
     },
     {
         camp_id: "5529F57E-216A-47FB-B513-067410887BC0",
@@ -1543,7 +1471,7 @@ const campsiteData = [
         lat: 38.5587614251363,
         lng: -77.4069097323804,
         latlong: "{lat:38.5587614251363, lng:-77.4069097323804}",
-        state: "VA",
+        state: "Virgina",
         zipCode: 22172,
         city: "Triangle",
         nameState: "Chopawamsic Backcountry Area, VA"
@@ -1555,11 +1483,11 @@ const campsiteData = [
         lat: 38.4442894775407,
         lng: -107.555231428248,
         latlong: "{lat:38.4442894775407, lng:-107.555231428248}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Cimarron Campground"
+        state: "Colorado",
+        zipCode: 81230,
+        city: "Gunnison",
+        address: "29070-29174 US-50",
+        nameState: "Cimarron Campground, CO"
     },
     {
         camp_id: "14084144-35CA-4862-96D8-72364E4A638B",
@@ -1568,7 +1496,7 @@ const campsiteData = [
         lat: 34.1112789977,
         lng: -118.926525539,
         latlong: "{lat:34.1112789977, lng:-118.926525539}",
-        state: "CA",
+        state: "California",
         zipCode: 90265,
         city: "Malibu",
         nameState: "Circle X Ranch Campground -   code, CA"
@@ -1580,7 +1508,7 @@ const campsiteData = [
         lat: 42.067203,
         lng: -113.701382,
         latlong: "{lat:42.067203, lng:-113.701382}",
-        state: "ID",
+        state: "Idaho",
         zipCode: 83312,
         city: "Almo",
         nameState: "City of Rocks Campground, ID"
@@ -1592,11 +1520,11 @@ const campsiteData = [
         lat: 46.48567,
         lng: -86.556577,
         latlong: "{lat:46.48567, lng:-86.556577}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Cliff Group Backpacking Site"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Cliff Group Backpacking Site, MI"
     },
     {
         camp_id: "B9D839A2-7500-4CFC-9EB7-1A1C8F7B7425",
@@ -1605,11 +1533,11 @@ const campsiteData = [
         lat: 46.473431,
         lng: -86.570456,
         latlong: "{lat:46.473431, lng:-86.570456}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Cliffs Individual Backpacking Sites"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Cliffs Individual Backpacking Sites, MI"
     },
     {
         camp_id: "79EC784A-70FD-4C73-BD0E-C5D0C96F4F57",
@@ -1618,7 +1546,7 @@ const campsiteData = [
         lat: 48.2971109735789,
         lng: -118.14685853302,
         latlong: "{lat:48.2971109735789, lng:-118.14685853302}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99131,
         city: "Gifford",
         nameState: "Cloverleaf Campground, WA"
@@ -1630,7 +1558,7 @@ const campsiteData = [
         lat: 38.0171728059185,
         lng: -122.854375340707,
         latlong: "{lat:38.0171728059185, lng:-122.854375340707}",
-        state: "CA",
+        state: "California",
         zipCode: 94956,
         city: "Point Reyes Station",
         nameState: "Coast Campground, CA"
@@ -1642,7 +1570,7 @@ const campsiteData = [
         lat: 36.45130196180305,
         lng: -118.61241063063437,
         latlong: "{lat:36.45130196180305, lng:-118.61241063063437}",
-        state: "CA",
+        state: "California",
         zipCode: 93271,
         city: "Sequoia National Park",
         nameState: "Cold Springs Campground, CA"
@@ -1654,11 +1582,11 @@ const campsiteData = [
         lat: 34.5013484424,
         lng: -96.9584441793,
         latlong: "{lat:34.5013484424, lng:-96.9584441793}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Cold Springs Campground"
+        state: "Oklahoma",
+        zipCode: 73086,
+        city: "Sulpher",
+        address: "Buckhorn Campground",
+        nameState: "Cold Springs Campground, OK"
     },
     {
         camp_id: "1410EA4F-FA47-40E0-9C51-B7C012EFD228",
@@ -1667,9 +1595,10 @@ const campsiteData = [
         lat: 48.691,
         lng: -121.101,
         latlong: "{lat:48.691, lng:-121.101}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98284,
         city: "Sedro-Woolley",
+        address: "Unnamed Road",
         nameState: "Colonial Creek North Campground, WA"
     },
     {
@@ -1679,9 +1608,10 @@ const campsiteData = [
         lat: 48.687,
         lng: -121.094,
         latlong: "{lat:48.687, lng:-121.094}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98284,
         city: "Sedro-Woolley",
+        address: "Unnamed Road",
         nameState: "Colonial Creek South Campground, WA"
     },
     {
@@ -1691,9 +1621,10 @@ const campsiteData = [
         lat: 36.86618866356771,
         lng: -111.58668629578499,
         latlong: "{lat:36.86618866356771, lng:-111.58668629578499}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 86040,
         city: "Page",
+        address: "Unnamed Road",
         nameState: "Colorado River Primitive Camping Between Glen Canyon Dam and Lees Ferry, AZ"
     },
     {
@@ -1703,9 +1634,10 @@ const campsiteData = [
         lat: 43.9074780505115,
         lng: -110.641378983075,
         latlong: "{lat:43.9074780505115, lng:-110.641378983075}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 83013,
         city: "Moran",
+        address: "Unnamed Road",
         nameState: "Colter Bay Campground, WY"
     },
     {
@@ -1715,9 +1647,10 @@ const campsiteData = [
         lat: 43.905642,
         lng: -110.641324,
         latlong: "{lat:43.905642, lng:-110.641324}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 83013,
         city: "Moran",
+        address: "Unnamed Road",
         nameState: "Colter Bay RV Park, WY"
     },
     {
@@ -1727,9 +1660,10 @@ const campsiteData = [
         lat: 43.904150265109244,
         lng: -110.63494741916656,
         latlong: "{lat:43.904150265109244, lng:-110.63494741916656}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 83013,
         city: "Moran",
+        address: "Unnamed Road",
         nameState: "Colter Bay Tent Village, WY"
     },
     {
@@ -1739,9 +1673,10 @@ const campsiteData = [
         lat: 35.7545448462525,
         lng: -83.20925027349114,
         latlong: "{lat:35.7545448462525, lng:-83.20925027349114}",
-        state: "TN",
+        state: "Tennessee",
         zipCode: 37722,
         city: "Cosby",
+        address: "Unnamed Road",
         nameState: "Cosby Campground, TN"
     },
     {
@@ -1751,11 +1686,11 @@ const campsiteData = [
         lat: 29.13678040375,
         lng: -103.522513962131,
         latlong: "{lat:29.13678040375, lng:-103.522513962131}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Cottonwood Campground"
+        state: "Texas",
+        zipCode: 79834,
+        city: "Big Bend",
+        address: "Big Bend National Park",
+        nameState: "Cottonwood Campground, TX"
     },
     {
         camp_id: "9B5A7B2B-E147-429F-B52F-EDBF1B48EBB0",
@@ -1764,9 +1699,10 @@ const campsiteData = [
         lat: 33.7448801298196,
         lng: -115.812829874374,
         latlong: "{lat:33.7448801298196, lng:-115.812829874374}",
-        state: "CA",
+        state: "California",
         zipCode: 92277,
         city: "Cottonwood Springs",
+        address: "Unnamed Road",
         nameState: "Cottonwood Campground, CA"
     },
     {
@@ -1776,11 +1712,11 @@ const campsiteData = [
         lat: 46.949934505,
         lng: -103.531268589,
         latlong: "{lat:46.949934505, lng:-103.531268589}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Cottonwood Campground"
+        state: "North Dakota",
+        zipCode: 58645,
+        city: "Medora",
+        address: "Unnamed Road",
+        nameState: "Cottonwood Campground, ND"
     },
     {
         camp_id: "B6682425-0D1C-4646-846F-1C0E248CBCFA",
@@ -1789,11 +1725,11 @@ const campsiteData = [
         lat: 35.487755719796056,
         lng: -114.69503347257717,
         latlong: "{lat:35.487755719796056, lng:-114.69503347257717}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Cottonwood Cove Campground"
+        state: "Nevada",
+        zipCode: 89005,
+        city: "Boulder City",
+        address: "Unnamed Road",
+        nameState: "Cottonwood Cove Campground, NV"
     },
     {
         camp_id: "9D67A3A2-CFAB-45A1-8E9E-5A19DE56137F",
@@ -1802,11 +1738,11 @@ const campsiteData = [
         lat: 46.767606803,
         lng: -121.792370845,
         latlong: "{lat:46.767606803, lng:-121.792370845}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Cougar Rock Campground"
+        state: "Washington",
+        zipCode: 98304,
+        city: "Ashford",
+        address: "48627 Paradise Rd E",
+        nameState: "Cougar Rock Campground, WA"
     },
     {
         camp_id: "894E2817-C7C9-48DA-BABF-3C1679567835",
@@ -1815,11 +1751,11 @@ const campsiteData = [
         lat: 46.56088,
         lng: -86.395902,
         latlong: "{lat:46.56088, lng:-86.395902}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Coves Group Backpacking Site"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Coves Group Backpacking Site, MI"
     },
     {
         camp_id: "A451A935-35BF-4391-96E5-B9C8D492FCFE",
@@ -1828,11 +1764,11 @@ const campsiteData = [
         lat: 46.568171,
         lng: -86.372254,
         latlong: "{lat:46.568171, lng:-86.372254}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Coves Individual Backpacking Sites"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Coves Individual Backpacking Sites, MI"
     },
     {
         camp_id: "B7FFF416-1181-4457-931B-6F9920C0EFE7",
@@ -1841,7 +1777,7 @@ const campsiteData = [
         lat: 35.815386045639634,
         lng: -82.14556897298166,
         latlong: "{lat:35.815386045639634, lng:-82.14556897298166}",
-        state: "NC",
+        state: "North Carolina",
         zipCode: 28777,
         city: "Spruce Pine",
         nameState: "Crabtree Falls Campground, NC"
@@ -1853,11 +1789,11 @@ const campsiteData = [
         lat: 37.7497960831966,
         lng: -119.800258983341,
         latlong: "{lat:37.7497960831966, lng:-119.800258983341}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Crane Flat Campground"
+        state: "California",
+        zipCode: 95389,
+        city: "Yosemite",
+        address: "Unnamed Road",
+        nameState: "Crane Flat Campground, CA"
     },
     {
         camp_id: "4A67F766-D8C0-451B-86AD-CD7DD878EB80",
@@ -1866,9 +1802,10 @@ const campsiteData = [
         lat: 40.6422,
         lng: -122.6710333,
         latlong: "{lat:40.6422, lng:-122.6710333}",
-        state: "CA",
+        state: "California",
         zipCode: 96095,
         city: "Whiskeytown",
+        address: "Unnamed Road",
         nameState: "Crystal Creek, CA"
     },
     {
@@ -1878,7 +1815,7 @@ const campsiteData = [
         lat: 36.7453277426348,
         lng: -118.962958133454,
         latlong: "{lat:36.7453277426348, lng:-118.962958133454}",
-        state: "CA",
+        state: "California",
         zipCode: 93633,
         city: "Grant Grove",
         nameState: "Crystal Springs Campground, CA"
@@ -1890,7 +1827,7 @@ const campsiteData = [
         lat: 39.562141,
         lng: -77.853069,
         latlong: "{lat:39.562141, lng:-77.853069}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21795,
         city: "Williamsport",
         nameState: "Cumberland Valley Hiker-Biker Campsite, MD"
@@ -1902,9 +1839,9 @@ const campsiteData = [
         lat: 48.6059915912156,
         lng: -113.376949654401,
         latlong: "{lat:48.6059915912156, lng:-113.376949654401}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59936,
-        city: "",
+        city: "Cut Bank",
         nameState: "Cut Bank, MT"
     },
     {
@@ -1914,7 +1851,7 @@ const campsiteData = [
         lat: 44.89615,
         lng: -86.02006,
         latlong: "{lat:44.89615, lng:-86.02006}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49636,
         city: "Glen Arbor",
         nameState: "D. H. Day Campground, MI"
@@ -1926,7 +1863,7 @@ const campsiteData = [
         lat: 44.89615,
         lng: -86.02006,
         latlong: "{lat:44.89615, lng:-86.02006}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49636,
         city: "Glen Arbor",
         nameState: "D. H. Day Campground Group Campground, MI"
@@ -1938,7 +1875,7 @@ const campsiteData = [
         lat: 48.09208065079491,
         lng: -88.59622128173942,
         latlong: "{lat:48.09208065079491, lng:-88.59622128173942}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Daisy Farm Campground, MI"
@@ -1950,7 +1887,7 @@ const campsiteData = [
         lat: 30.397808,
         lng: -88.795595,
         latlong: "{lat:30.397808, lng:-88.795595}",
-        state: "MS",
+        state: "Mississippi",
         zipCode: 39564,
         city: "Ocean Springs",
         nameState: "Davis Bayou Campground, MS"
@@ -1962,9 +1899,10 @@ const campsiteData = [
         lat: 45.2651648,
         lng: -108.0028519,
         latlong: "{lat:45.2651648, lng:-108.0028519}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59035,
         city: "Fort Smith",
+        address: "Unnamed Road",
         nameState: "Dayboard 9 Campground, MT"
     },
     {
@@ -1974,7 +1912,7 @@ const campsiteData = [
         lat: 35.46031234620795,
         lng: -83.43466297423731,
         latlong: "{lat:35.46031234620795, lng:-83.43466297423731}",
-        state: "NC",
+        state: "North Carolina",
         zipCode: 28713,
         city: "Bryson City",
         nameState: "Deep Creek Campground, NC"
@@ -1986,7 +1924,7 @@ const campsiteData = [
         lat: 40.4464807631,
         lng: -108.513304134,
         latlong: "{lat:40.4464807631, lng:-108.513304134}",
-        state: "CO",
+        state: "Colorado",
         zipCode: 81610,
         city: "Dinosaur",
         nameState: "Deerlodge Park Campground, CO"
@@ -1998,7 +1936,7 @@ const campsiteData = [
         lat: 36.03893681567372,
         lng: -111.82260877399438,
         latlong: "{lat:36.03893681567372, lng:-111.82260877399438}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 86023,
         city: "Grand Canyon",
         nameState: "Desert View Campground (Reservations Required), AZ"
@@ -2010,7 +1948,7 @@ const campsiteData = [
         lat: 39.622156,
         lng: -78.411328,
         latlong: "{lat:39.622156, lng:-78.411328}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21766,
         city: "Little Orleans",
         nameState: "Devils Alley Hiker-Biker Campsite, MD"
@@ -2022,7 +1960,7 @@ const campsiteData = [
         lat: 38.7773329174,
         lng: -109.588799042,
         latlong: "{lat:38.7773329174, lng:-109.588799042}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84532,
         city: "Moab",
         nameState: "Devils Garden Campground, UT"
@@ -2034,7 +1972,7 @@ const campsiteData = [
         lat: 41.2110633,
         lng: -74.8736983995,
         latlong: "{lat:41.2110633, lng:-74.8736983995}",
-        state: "PA",
+        state: "Pennsylvania",
         zipCode: 18328,
         city: "Dingmans Ferry",
         nameState: "Dingmans Campground, PA"
@@ -2046,7 +1984,7 @@ const campsiteData = [
         lat: 31.9948983481,
         lng: -104.832847248,
         latlong: "{lat:31.9948983481, lng:-104.832847248}",
-        state: "TX",
+        state: "Texas",
         zipCode: 79847,
         city: "Salt Flat",
         nameState: "Dog Canyon Campground, TX"
@@ -2058,7 +1996,7 @@ const campsiteData = [
         lat: 36.6361712129834,
         lng: -118.808502647521,
         latlong: "{lat:36.6361712129834, lng:-118.808502647521}",
-        state: "CA",
+        state: "California",
         zipCode: 93262,
         city: "Sequoia National Park",
         nameState: "Dorst Creek Campground, CA"
@@ -2070,7 +2008,7 @@ const campsiteData = [
         lat: 47.7373029,
         lng: -123.1647009,
         latlong: "{lat:47.7373029, lng:-123.1647009}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98362,
         city: "Port Angeles",
         nameState: "Dosewallips Campground (Walk-In Only), WA"
@@ -2082,7 +2020,7 @@ const campsiteData = [
         lat: 36.42949264609475,
         lng: -81.15577587281024,
         latlong: "{lat:36.42949264609475, lng:-81.15577587281024}",
-        state: "NC",
+        state: "North Carolina",
         zipCode: 28644,
         city: "Laurel Springs",
         nameState: "Doughton Park Campground, NC"
@@ -2094,7 +2032,7 @@ const campsiteData = [
         lat: 32.227981,
         lng: -110.606875,
         latlong: "{lat:32.227981, lng:-110.606875}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 85730,
         city: "Tucson",
         nameState: "Douglas Spring, AZ"
@@ -2106,10 +2044,10 @@ const campsiteData = [
         lat: 40.6253167,
         lng: -122.5807,
         latlong: "{lat:40.6253167, lng:-122.5807}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
+        state: "California",
+        zipCode: 96095,
+        city: "Whiskeytown",
+        address: "Unnamed Road",
         nameState: "Dry Creek Group Campground"
     },
     {
@@ -2119,11 +2057,11 @@ const campsiteData = [
         lat: 38.4841144836276,
         lng: -107.188437346818,
         latlong: "{lat:38.4841144836276, lng:-107.188437346818}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Dry Gulch Campground"
+        state: "Colorado",
+        zipCode: 81230,
+        city: "Gunnison",
+        address: "29070-29174 US-50",
+        nameState: "Dry Gulch Campground, CO"
     },
     {
         camp_id: "C1388F86-68A9-4C1C-85C2-193CD4BD3EE1",
@@ -2132,7 +2070,7 @@ const campsiteData = [
         lat: 44.0277948996318,
         lng: -68.6535293990644,
         latlong: "{lat:44.0277948996318, lng:-68.6535293990644}",
-        state: "ME",
+        state: "Maine",
         zipCode: 4609,
         city: "Bar Harbor",
         nameState: "Duck Harbor Campground, ME"
@@ -2144,11 +2082,11 @@ const campsiteData = [
         lat: 39.006544,
         lng: -114.215989,
         latlong: "{lat:39.006544, lng:-114.215989}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Dump Station"
+        state: "Nevada",
+        zipCode: 89311,
+        city: "Baker",
+        address: "Unnamed Road",
+        nameState: "Dump Station, NV"
     },
     {
         camp_id: "665A07F7-CD99-401A-8674-4C65AC41954C",
@@ -2157,7 +2095,7 @@ const campsiteData = [
         lat: 41.68266002966044,
         lng: -87.00171411037445,
         latlong: "{lat:41.68266002966044, lng:-87.00171411037445}",
-        state: "IN",
+        state: "Indiana",
         zipCode: 46304,
         city: "Porter",
         nameState: "Dunbar Group Site, IN"
@@ -2169,7 +2107,7 @@ const campsiteData = [
         lat: 48.150633110830206,
         lng: -88.52247086940037,
         latlong: "{lat:48.150633110830206, lng:-88.52247086940037}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Duncan Bay Campground, MI"
@@ -2181,7 +2119,7 @@ const campsiteData = [
         lat: 48.169312119814265,
         lng: -88.47796476335344,
         latlong: "{lat:48.169312119814265, lng:-88.47796476335344}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Duncan Narrows Campground, MI"
@@ -2193,7 +2131,7 @@ const campsiteData = [
         lat: 38.2341,
         lng: -78.7216,
         latlong: "{lat:38.2341, lng:-78.7216}",
-        state: "VA",
+        state: "Virgina",
         zipCode: 22932,
         city: "Crozet",
         nameState: "Dundo Group Campground, VA"
@@ -2205,7 +2143,7 @@ const campsiteData = [
         lat: 41.671966000578976,
         lng: -86.9837859988566,
         latlong: "{lat:41.671966000578976, lng:-86.9837859988566}",
-        state: "IN",
+        state: "Indiana",
         zipCode: 46360,
         city: "Beverly Shores",
         nameState: "Dunewood Campground, IN"
@@ -2217,11 +2155,11 @@ const campsiteData = [
         lat: 59.5072499,
         lng: -135.3504976,
         latlong: "{lat:59.5072499, lng:-135.3504976}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Dyea Campground"
+        state: "Alaska",
+        zipCode: 99840,
+        city: "Skagway",
+        address: "Unnamed Road",
+        nameState: "Dyea Campground, AK"
     },
     {
         camp_id: "4C757AF8-2F39-49A8-A624-F63EB7F5BA90",
@@ -2230,7 +2168,7 @@ const campsiteData = [
         lat: 48.073437514172,
         lng: -88.69425862129464,
         latlong: "{lat:48.073437514172, lng:-88.69425862129464}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "East Chickenbone Campground, MI"
@@ -2242,11 +2180,11 @@ const campsiteData = [
         lat: 38.484167,
         lng: -107.188333,
         latlong: "{lat:38.484167, lng:-107.188333}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "East Elk Creek Group Campground"
+        state: "Colorado",
+        zipCode: 81230,
+        city: "Gunnison",
+        address: "29070-29174 US-50",
+        nameState: "East Elk Creek Group Campground, CO"
     },
     {
         camp_id: "C7040322-AF55-456C-A03B-5EF85E48E83B",
@@ -2255,11 +2193,11 @@ const campsiteData = [
         lat: 38.527059599536,
         lng: -107.64948401793,
         latlong: "{lat:38.527059599536, lng:-107.64948401793}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "East Portal Campground"
+        state: "Colorado",
+        zipCode: 81230,
+        city: "Gunnison",
+        address: "29070-29174 US-50",
+        nameState: "East Portal Campground, CO"
     },
     {
         camp_id: "FB7ECE1E-C9F6-4841-B52A-071DFBD4FAFC",
@@ -2268,7 +2206,7 @@ const campsiteData = [
         lat: 38.526896,
         lng: -107.649306,
         latlong: "{lat:38.526896, lng:-107.649306}",
-        state: "CO",
+        state: "Colorado",
         zipCode: 81401,
         city: "Montrose",
         nameState: "East Portal Campground, CO"
@@ -2280,9 +2218,10 @@ const campsiteData = [
         lat: 36.3081373406848,
         lng: -114.436897864068,
         latlong: "{lat:36.3081373406848, lng:-114.436897864068}",
-        state: "NV",
+        state: "Nevada",
         zipCode: 89005,
         city: "Boulder City",
+        address: "Unnamed Road",
         nameState: "Echo Bay Campground, NV"
     },
     {
@@ -2292,7 +2231,7 @@ const campsiteData = [
         lat: 40.5208668444,
         lng: -108.993230693,
         latlong: "{lat:40.5208668444, lng:-108.993230693}",
-        state: "CO",
+        state: "Colorado",
         zipCode: 81610,
         city: "Dinosaur",
         nameState: "Echo Park Campground, CO"
@@ -2304,7 +2243,7 @@ const campsiteData = [
         lat: 35.0368936454882,
         lng: -108.33681211762,
         latlong: "{lat:35.0368936454882, lng:-108.33681211762}",
-        state: "NM",
+        state: "New Mexico",
         zipCode: 87321,
         city: "Ramah",
         nameState: "El Morro Campground, NM"
@@ -2316,11 +2255,11 @@ const campsiteData = [
         lat: 38.4674202781,
         lng: -107.172066844,
         latlong: "{lat:38.4674202781, lng:-107.172066844}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Elk Creek Campground"
+        state: "Colorado",
+        zipCode: 81230,
+        city: "Gunnison",
+        address: "29070-29174 US-50",
+        nameState: "Elk Creek Campground, CO"
     },
     {
         camp_id: "46F315CE-1A6C-4600-BDE0-98D044A55172",
@@ -2329,7 +2268,7 @@ const campsiteData = [
         lat: 43.565470717,
         lng: -103.488234522,
         latlong: "{lat:43.565470717, lng:-103.488234522}",
-        state: "SD",
+        state: "South Dakota",
         zipCode: 57747,
         city: "Hot Springs",
         nameState: "Elk Mountain Campground, SD"
@@ -2341,7 +2280,7 @@ const campsiteData = [
         lat: 41.3598248532,
         lng: -124.029432767,
         latlong: "{lat:41.3598248532, lng:-124.029432767}",
-        state: "CA",
+        state: "California",
         zipCode: 95531,
         city: "Crescent City",
         nameState: "Elk Prairie Campgound, CA"
@@ -2353,7 +2292,7 @@ const campsiteData = [
         lat: 35.65875714556928,
         lng: -83.5827404743859,
         latlong: "{lat:35.65875714556928, lng:-83.5827404743859}",
-        state: "TN",
+        state: "Tennessee",
         zipCode: 37738,
         city: "Gatlinburg",
         nameState: "Elkmont Campground, TN"
@@ -2365,7 +2304,7 @@ const campsiteData = [
         lat: 35.6596758456,
         lng: -83.5863818735,
         latlong: "{lat:35.6596758456, lng:-83.5863818735}",
-        state: "TN",
+        state: "Tennessee",
         zipCode: 37738,
         city: "Gatlinburg",
         nameState: "Elkmont Group Campground, TN"
@@ -2377,11 +2316,11 @@ const campsiteData = [
         lat: 25.4535845128,
         lng: -80.1958850931,
         latlong: "{lat:25.4535845128, lng:-80.1958850931}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Elliott Key Campground"
+        state: "Florida",
+        zipCode: 33033,
+        city: "Homestead",
+        address: "Unnamed Road",
+        nameState: "Elliott Key Campground, FL"
     },
     {
         camp_id: "F448D6D4-AA8F-48BA-B5B8-FEC826541394",
@@ -2390,7 +2329,7 @@ const campsiteData = [
         lat: 36.4965230407409,
         lng: -117.227734796205,
         latlong: "{lat:36.4965230407409, lng:-117.227734796205}",
-        state: "CA",
+        state: "California",
         zipCode: 92328,
         city: "Death Valley",
         nameState: "Emigrant Campground, CA"
@@ -2402,7 +2341,7 @@ const campsiteData = [
         lat: 36.0713269988,
         lng: -93.2149368998,
         latlong: "{lat:36.0713269988, lng:-93.2149368998}",
-        state: "AR",
+        state: "Arkansas",
         zipCode: 72641,
         city: "Jasper",
         nameState: "Erbie Campground, AR"
@@ -2414,7 +2353,7 @@ const campsiteData = [
         lat: 45.9083960065,
         lng: -68.6795909867,
         latlong: "{lat:45.9083960065, lng:-68.6795909867}",
-        state: "ME",
+        state: "Maine",
         zipCode: 4765,
         city: "Patten",
         nameState: "Esker Campsite, ME"
@@ -2426,7 +2365,7 @@ const campsiteData = [
         lat: 37.112,
         lng: -117.6809,
         latlong: "{lat:37.112, lng:-117.6809}",
-        state: "CA",
+        state: "California",
         zipCode: 92328,
         city: "Death Valley",
         nameState: "Eureka Dunes Campground (Primitive), CA"
@@ -2438,7 +2377,7 @@ const campsiteData = [
         lat: 48.6988181471821,
         lng: -118.017651460508,
         latlong: "{lat:48.6988181471821, lng:-118.017651460508}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99126,
         city: "Evans",
         nameState: "Evans Campground, WA"
@@ -2450,7 +2389,7 @@ const campsiteData = [
         lat: 48.701517,
         lng: -118.018959,
         latlong: "{lat:48.701517, lng:-118.018959}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99126,
         city: "Evans",
         nameState: "Evans Group Site, WA"
@@ -2462,9 +2401,10 @@ const campsiteData = [
         lat: 39.616979,
         lng: -78.73259,
         latlong: "{lat:39.616979, lng:-78.73259}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21740,
         city: "Hagerstown",
+        address: "Unnamed Road",
         nameState: "Evitts Creek Hiker-Biker Campsite, MD"
     },
     {
@@ -2474,7 +2414,7 @@ const campsiteData = [
         lat: 60.1909682429161,
         lng: -149.618120247669,
         latlong: "{lat:60.1909682429161, lng:-149.618120247669}",
-        state: "AK",
+        state: "Alaska",
         zipCode: 99664,
         city: "Seward",
         nameState: "Exit Glacier Campground, AK"
@@ -2486,7 +2426,7 @@ const campsiteData = [
         lat: 48.0700799992,
         lng: -123.918138409,
         latlong: "{lat:48.0700799992, lng:-123.918138409}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98363,
         city: "Port Angeles",
         nameState: "Fairholme Campground, WA"
@@ -2498,7 +2438,7 @@ const campsiteData = [
         lat: 47.84857314451423,
         lng: -89.18297185832984,
         latlong: "{lat:47.84857314451423, lng:-89.18297185832984}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Feldtmann Lake Campground, MI"
@@ -2510,11 +2450,11 @@ const campsiteData = [
         lat: 39.6253030493,
         lng: -78.3855986458,
         latlong: "{lat:39.6253030493, lng:-78.3855986458}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Fifteenmile Creek Campground"
+        state: "Maryland",
+        zipCode: 21740,
+        city: "Hagerstown",
+        address: "Unnamed Road",
+        nameState: "Fifteenmile Creek Campground, MD"
     },
     {
         camp_id: "3CD41217-24F5-4D7B-B34A-436506EEC448",
@@ -2523,9 +2463,10 @@ const campsiteData = [
         lat: 59.575423,
         lng: -135.3348773,
         latlong: "{lat:59.575423, lng:-135.3348773}",
-        state: "AK",
+        state: "Alaska",
         zipCode: 99840,
         city: "Skagway",
+        address: "Unnamed Road",
         nameState: "Finnegan's Point, AK"
     },
     {
@@ -2535,7 +2476,7 @@ const campsiteData = [
         lat: 48.5501313183584,
         lng: -113.982962737138,
         latlong: "{lat:48.5501313183584, lng:-113.982962737138}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59936,
         city: "West Glacier",
         nameState: "Fish Creek, MT"
@@ -2547,7 +2488,7 @@ const campsiteData = [
         lat: 44.5647552489551,
         lng: -110.369472282319,
         latlong: "{lat:44.5647552489551, lng:-110.369472282319}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82190,
         city: "Yellowstone National Park",
         nameState: "Fishing Bridge RV Park, WY"
@@ -2559,7 +2500,7 @@ const campsiteData = [
         lat: 25.137212,
         lng: -80.938773,
         latlong: "{lat:25.137212, lng:-80.938773}",
-        state: "FL",
+        state: "Florida",
         zipCode: 33034,
         city: "Flamingo",
         nameState: "Flamingo Campground, FL"
@@ -2571,7 +2512,7 @@ const campsiteData = [
         lat: 48.1568610743654,
         lng: -122.67400959303,
         latlong: "{lat:48.1568610743654, lng:-122.67400959303}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98239,
         city: "Coupeville",
         nameState: "Fort Casey State Park, WA"
@@ -2583,7 +2524,7 @@ const campsiteData = [
         lat: 48.0036881003,
         lng: -89.8283403008,
         latlong: "{lat:48.0036881003, lng:-89.8283403008}",
-        state: "MN",
+        state: "Minnesota",
         zipCode: 55605,
         city: "Grand Portage",
         nameState: "Fort Charlotte Backcountry Campgrounds, MN"
@@ -2595,7 +2536,7 @@ const campsiteData = [
         lat: 35.6474198892006,
         lng: -101.628934056876,
         latlong: "{lat:35.6474198892006, lng:-101.628934056876}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98239,
         city: "Coupeville",
         nameState: "Fort Ebey State Park, WA"
@@ -2607,7 +2548,7 @@ const campsiteData = [
         lat: 30.32320834796311,
         lng: -87.27597277606765,
         latlong: "{lat:30.32320834796311, lng:-87.27597277606765}",
-        state: "FL",
+        state: "Florida",
         zipCode: 32561,
         city: "Pensacola Beach",
         nameState: "Fort Pickens Campground, FL"
@@ -2619,7 +2560,7 @@ const campsiteData = [
         lat: 47.91057783564893,
         lng: -118.3059186711921,
         latlong: "{lat:47.91057783564893, lng:-118.3059186711921}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99122,
         city: "Davenport",
         nameState: "Fort Spokane Campground, WA"
@@ -2631,7 +2572,7 @@ const campsiteData = [
         lat: 47.908742,
         lng: -118.311859,
         latlong: "{lat:47.908742, lng:-118.311859}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99122,
         city: "Davenport",
         nameState: "Fort Spokane Group Sites, WA"
@@ -2643,11 +2584,11 @@ const campsiteData = [
         lat: 40.599998,
         lng: -74.054771,
         latlong: "{lat:40.599998, lng:-74.054771}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Fort Wadsworth Campsite"
+        state: "New Jersey",
+        zipCode: 07732,
+        city: "Highlands",
+        address: "Camp Site Rd",
+        nameState: "Fort Wadsworth Campsite, NJ"
     },
     {
         camp_id: "66DA0C26-4D6E-4C02-AA89-794655DF2C38",
@@ -2656,11 +2597,11 @@ const campsiteData = [
         lat: 31.8995224439952,
         lng: -104.799849430182,
         latlong: "{lat:31.8995224439952, lng:-104.799849430182}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Frijole Horse Corral Campground"
+        state: "Texas",
+        zipCode: 79847,
+        city: "Salt Flat",
+        address: "Unnamed Road",
+        nameState: "Frijole Horse Corral Campground, TX"
     },
     {
         camp_id: "5A68AFB0-A5CD-4892-9222-880AF77B37BE",
@@ -2669,7 +2610,7 @@ const campsiteData = [
         lat: 35.237075,
         lng: -75.603357,
         latlong: "{lat:35.237075, lng:-75.603357}",
-        state: "NC",
+        state: "North Carolina",
         zipCode: 27920,
         city: "Frisco",
         nameState: "Frisco Campground, NC"
@@ -2681,7 +2622,7 @@ const campsiteData = [
         lat: 35.6817457818143,
         lng: -101.598311253546,
         latlong: "{lat:35.6817457818143, lng:-101.598311253546}",
-        state: "TX",
+        state: "Texas",
         zipCode: 79036,
         city: "Fritch",
         nameState: "Fritch Fortress, TX"
@@ -2693,7 +2634,7 @@ const campsiteData = [
         lat: 38.2825607383,
         lng: -111.248097934,
         latlong: "{lat:38.2825607383, lng:-111.248097934}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84775,
         city: "Torrey",
         nameState: "Fruita Campground, UT"
@@ -2705,7 +2646,7 @@ const campsiteData = [
         lat: 36.4630684020062,
         lng: -116.86882600627,
         latlong: "{lat:36.4630684020062, lng:-116.86882600627}",
-        state: "CA",
+        state: "California",
         zipCode: 92328,
         city: "Death Valley",
         nameState: "Furnace Creek Campground, CA"
@@ -2717,7 +2658,7 @@ const campsiteData = [
         lat: 24.6270109567431,
         lng: -82.8734064423241,
         latlong: "{lat:24.6270109567431, lng:-82.8734064423241}",
-        state: "FL",
+        state: "Florida",
         zipCode: 33034,
         city: "Homestead",
         nameState: "Garden Key Campground, FL"
@@ -2729,7 +2670,7 @@ const campsiteData = [
         lat: 40.7249234842,
         lng: -108.887824372,
         latlong: "{lat:40.7249234842, lng:-108.887824372}",
-        state: "CO",
+        state: "Colorado",
         zipCode: 81640,
         city: "Maybell",
         nameState: "Gates of Lodore Campground, CO"
@@ -2741,11 +2682,11 @@ const campsiteData = [
         lat: 38.3844578817442,
         lng: -107.242874927003,
         latlong: "{lat:38.3844578817442, lng:-107.242874927003}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Gateview Campground"
+        state: "Colorado",
+        zipCode: 81230,
+        city: "Gunnison",
+        address: "29070-29174 US-50",
+        nameState: "Gateview Campground, CO"
     },
     {
         camp_id: "EDF9CACD-CA15-478C-830B-581FB3A18BDE",
@@ -2754,7 +2695,7 @@ const campsiteData = [
         lat: 26.2238175484,
         lng: -81.2677556747,
         latlong: "{lat:26.2238175484, lng:-81.2677556747}",
-        state: "FL",
+        state: "Florida",
         zipCode: 34141,
         city: "Ochopee",
         nameState: "Gator Head, FL"
@@ -2766,11 +2707,11 @@ const campsiteData = [
         lat: 38.214092,
         lng: -80.8886969997,
         latlong: "{lat:38.214092, lng:-80.8886969997}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Gauley Tailwaters"
+        state: "West Virgina",
+        zipCode: 26651,
+        city: "Summersville",
+        address: "Unnamed Road",
+        nameState: "Gauley Tailwaters, WV"
     },
     {
         camp_id: "F45274CB-22BB-46A9-91FF-F83EF7CC45E8",
@@ -2779,7 +2720,7 @@ const campsiteData = [
         lat: 48.2858575736509,
         lng: -118.142799633773,
         latlong: "{lat:48.2858575736509, lng:-118.142799633773}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99131,
         city: "Gifford",
         nameState: "Gifford Campground, WA"
@@ -2791,7 +2732,7 @@ const campsiteData = [
         lat: 48.288223,
         lng: -118.143881,
         latlong: "{lat:48.288223, lng:-118.143881}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99131,
         city: "Gifford",
         nameState: "Gifford Group Site, WA"
@@ -2803,7 +2744,7 @@ const campsiteData = [
         lat: 40.32980715336969,
         lng: -105.59562927944023,
         latlong: "{lat:40.32980715336969, lng:-105.59562927944023}",
-        state: "CO",
+        state: "Colorado",
         zipCode: 80517,
         city: "Estes Park",
         nameState: "Glacier Basin Campground, CO"
@@ -2815,7 +2756,7 @@ const campsiteData = [
         lat: 37.829446,
         lng: -81.013398,
         latlong: "{lat:37.829446, lng:-81.013398}",
-        state: "WV",
+        state: "West Virgina",
         zipCode: 25907,
         city: "Prince",
         nameState: "Glade Creek Campground, WV"
@@ -2827,7 +2768,7 @@ const campsiteData = [
         lat: 37.9893107086396,
         lng: -122.788487927921,
         latlong: "{lat:37.9893107086396, lng:-122.788487927921}",
-        state: "CA",
+        state: "California",
         zipCode: 94956,
         city: "Point Reyes Station",
         nameState: "Glen Campground, CA"
@@ -2839,9 +2780,10 @@ const campsiteData = [
         lat: 42.765746,
         lng: -97.066858,
         latlong: "{lat:42.765746, lng:-97.066858}",
-        state: "NE",
+        state: "Nebraska",
         zipCode: 68792,
         city: "Cedar County",
+        address: "Unnamed Road",
         nameState: "Goat Island Primitive Camping, NE"
     },
     {
@@ -2851,7 +2793,7 @@ const campsiteData = [
         lat: 41.3822173891,
         lng: -124.069882187,
         latlong: "{lat:41.3822173891, lng:-124.069882187}",
-        state: "CA",
+        state: "California",
         zipCode: 95555,
         city: "Orick",
         nameState: "Gold Bluffs Beach Campground, CA"
@@ -2863,9 +2805,10 @@ const campsiteData = [
         lat: 48.673,
         lng: -121.267,
         latlong: "{lat:48.673, lng:-121.267}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98284,
         city: "Sedro-Woolley",
+        address: "Unnamed Road",
         nameState: "Goodell Creek Campground, WA"
     },
     {
@@ -2875,11 +2818,11 @@ const campsiteData = [
         lat: 48.716,
         lng: -121.152,
         latlong: "{lat:48.716, lng:-121.152}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Gorge Lake Campground"
+        state: "Washington",
+        zipCode: 98284,
+        city: "Sedro-Woolley",
+        address: "Unnamed Road",
+        nameState: "Gorge Lake Campground, WA"
     },
     {
         camp_id: "FFA388BF-3129-4FC4-80ED-D163E8199587",
@@ -2888,11 +2831,11 @@ const campsiteData = [
         lat: 29.47907637,
         lng: -101.028863217,
         latlong: "{lat:29.47907637, lng:-101.028863217}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Governors Landing Campground"
+        state: "Texas",
+        zipCode: 78840,
+        city: "Del Rio",
+        address: "Unnamed Road",
+        nameState: "Governors Landing Campground, TX"
     },
     {
         camp_id: "4A23813E-3190-4E4F-8272-0001F57A049C",
@@ -2901,23 +2844,10 @@ const campsiteData = [
         lat: 47.88249028850224,
         lng: -89.21635637438078,
         latlong: "{lat:47.88249028850224, lng:-89.21635637438078}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Grace Island Campground, MI"
-    },
-    {
-        camp_id: "6929599F-D083-481C-A5A9-D551EC31CAA3",
-        code: "kaww",
-        name: "Grand Pitch Lean-to",
-        lat: 46.057785,
-        lng: -68.748256,
-        latlong: "{lat:46.057785, lng:-68.748256}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Grand Pitch Lean-to"
     },
     {
         camp_id: "1487B254-91D2-4BA2-BC19-FF6FA7BB18A7",
@@ -2926,7 +2856,7 @@ const campsiteData = [
         lat: 37.857116,
         lng: -81.051906,
         latlong: "{lat:37.857116, lng:-81.051906}",
-        state: "WV",
+        state: "West Virgina",
         zipCode: 25907,
         city: "Prince",
         nameState: "Grandview Sandbar, WV"
@@ -2938,7 +2868,7 @@ const campsiteData = [
         lat: 44.3942533493729,
         lng: -110.563444983232,
         latlong: "{lat:44.3942533493729, lng:-110.563444983232}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82190,
         city: "Yellowstone National Park",
         nameState: "Grant Village Campground, WY"
@@ -2950,11 +2880,11 @@ const campsiteData = [
         lat: 45.31804610741141,
         lng: -107.94067157826737,
         latlong: "{lat:45.31804610741141, lng:-107.94067157826737}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Grapevine Campground"
+        state: "Montana",
+        zipCode: 59035,
+        city: "Fort Smith",
+        address: "Unnamed Road",
+        nameState: "Grapevine Campground, MT"
     },
     {
         camp_id: "812CF898-9225-4E23-9937-85FB14490F36",
@@ -2963,7 +2893,7 @@ const campsiteData = [
         lat: 32.183854,
         lng: -110.592818,
         latlong: "{lat:32.183854, lng:-110.592818}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 85730,
         city: "Tucson",
         nameState: "Grass Shack, AZ"
@@ -2975,7 +2905,7 @@ const campsiteData = [
         lat: 47.573831087,
         lng: -123.576795443,
         latlong: "{lat:47.573831087, lng:-123.576795443}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98362,
         city: "Port Angeles",
         nameState: "Graves Creek Campground, WA"
@@ -2987,7 +2917,7 @@ const campsiteData = [
         lat: 34.76055561111111,
         lng: -76.41222219444445,
         latlong: "{lat:34.76055561111111, lng:-76.41222219444445}",
-        state: "NC",
+        state: "North Carolina",
         zipCode: 28524,
         city: "Core Banks",
         nameState: "Great Island Cabin Camp, NC"
@@ -2999,11 +2929,11 @@ const campsiteData = [
         lat: 42.8633666,
         lng: -97.412217,
         latlong: "{lat:42.8633666, lng:-97.412217}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Green Island Primitive Camping"
+        state: "Nebraska",
+        zipCode: 68792,
+        city: "Cedar County",
+        address: "Unnamed Road",
+        nameState: "Green Island Primitive Camping, NE"
     },
     {
         camp_id: "0AD1C4E8-ED05-426E-8332-EA369022B8C5",
@@ -3012,7 +2942,7 @@ const campsiteData = [
         lat: 40.4209774724,
         lng: -109.243175668,
         latlong: "{lat:40.4209774724, lng:-109.243175668}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84035,
         city: "Jensen",
         nameState: "Green River Campground, UT"
@@ -3024,7 +2954,7 @@ const campsiteData = [
         lat: 38.97908,
         lng: -76.89841,
         latlong: "{lat:38.97908, lng:-76.89841}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 20770,
         city: "Greenbelt",
         nameState: "Greenbelt Park Campground, MD"
@@ -3036,11 +2966,11 @@ const campsiteData = [
         lat: 38.99115,
         lng: -114.219121,
         latlong: "{lat:38.99115, lng:-114.219121}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Grey Cliffs Campground"
+        state: "Nevada",
+        zipCode: 89311,
+        city: "Baker",
+        address: "Unnamed Road",
+        nameState: "Grey Cliffs Campground, NV"
     },
     {
         camp_id: "F79BD2D4-B5CE-4405-99F4-AF59DD1913A6",
@@ -3049,7 +2979,7 @@ const campsiteData = [
         lat: 43.6159078257903,
         lng: -110.665883983664,
         latlong: "{lat:43.6159078257903, lng:-110.665883983664}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 83011,
         city: "Kelly",
         nameState: "Gros Ventre Campground, WY"
@@ -3061,10 +2991,10 @@ const campsiteData = [
         lat: 43.4727778,
         lng: -113.5669444,
         latlong: "{lat:43.4727778, lng:-113.5669444}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
+        state: "Idaho",
+        zipCode: 83213,
+        city: "Arco",
+        address: "Unnamed Road",
         nameState: "Group Campground"
     },
     {
@@ -3074,7 +3004,7 @@ const campsiteData = [
         lat: 38.2789,
         lng: -111.2514,
         latlong: "{lat:38.2789, lng:-111.2514}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84775,
         city: "Torrey",
         nameState: "Group Campsite, UT"
@@ -3086,11 +3016,11 @@ const campsiteData = [
         lat: 31.8934963936164,
         lng: -104.851581112569,
         latlong: "{lat:31.8934963936164, lng:-104.851581112569}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Guadalupe Peak Wilderness Campground"
+        state: "Texas",
+        zipCode: 79847,
+        city: "Salt Flat",
+        address: "Unnamed Road",
+        nameState: "Guadalupe Peak Wilderness Campground, TX"
     },
     {
         camp_id: "B09710B2-3D0B-47B0-B15E-ABAFC4243F75",
@@ -3099,7 +3029,7 @@ const campsiteData = [
         lat: 34.52436309933005,
         lng: -93.03604779926388,
         latlong: "{lat:34.52436309933005, lng:-93.03604779926388}",
-        state: "AR",
+        state: "Arkansas",
         zipCode: 71901,
         city: "Hot Springs",
         nameState: "Gulpha Gorge Campground, AR"
@@ -3111,11 +3041,11 @@ const campsiteData = [
         lat: 32.358663,
         lng: -86.452365,
         latlong: "{lat:32.358663, lng:-86.452365}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Gunter Hill Campground"
+        state: "Alabama",
+        zipCode: 36108,
+        city: "Montgomery",
+        address: "561 Booth Rd",
+        nameState: "Gunter Hill Campground, AL"
     },
     {
         camp_id: "D9E5422D-1BC9-436A-9695-857D7CE64FD5",
@@ -3124,11 +3054,11 @@ const campsiteData = [
         lat: 34.4556834317,
         lng: -97.0496858383,
         latlong: "{lat:34.4556834317, lng:-97.0496858383}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Guy Sandy Campground"
+        state: "Oklahoma",
+        zipCode: 73086,
+        city: "Sulpher",
+        address: "Buckhorn Campground",
+        nameState: "Guy Sandy Campground, OK"
     },
     {
         camp_id: "13D9E8A8-CF13-4AC4-9482-81AFC6ADBAF6",
@@ -3137,7 +3067,7 @@ const campsiteData = [
         lat: 48.5606608808908,
         lng: -118.151804154105,
         latlong: "{lat:48.5606608808908, lng:-118.151804154105}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99141,
         city: "Kettle Falls",
         nameState: "Haag Cove Campground, WA"
@@ -3149,7 +3079,7 @@ const campsiteData = [
         lat: 37.4577993989406,
         lng: -110.71820138441,
         latlong: "{lat:37.4577993989406, lng:-110.71820138441}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84533,
         city: "Lake Powell",
         nameState: "Halls Crossing RV & Campground, UT"
@@ -3161,7 +3091,7 @@ const campsiteData = [
         lat: 32.154022,
         lng: -110.518452,
         latlong: "{lat:32.154022, lng:-110.518452}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 85730,
         city: "Tucson",
         nameState: "Happy Valley Saddle, AZ"
@@ -3173,11 +3103,11 @@ const campsiteData = [
         lat: 35.6478560545659,
         lng: -101.628983197957,
         latlong: "{lat:35.6478560545659, lng:-101.628983197957}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Harbor Bay Campground"
+        state: "Texas",
+        zipCode: "79114",
+        city: "Fritch",
+        address: "Blue West Rd",
+        nameState: "Harbor Bay Campground, TX"
     },
     {
         camp_id: "55555B90-B545-4045-BB65-1FBB696E4515",
@@ -3186,24 +3116,11 @@ const campsiteData = [
         lat: 48.3468,
         lng: -120.7137,
         latlong: "{lat:48.3468, lng:-120.7137}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Harlequin Campground"
-    },
-    {
-        camp_id: "3A459D88-DF35-41D2-AE2F-2D0829B4BE08",
-        code: "kaww",
-        name: "Haskell Campsite",
-        lat: 46.073046,
-        lng: -68.768473,
-        latlong: "{lat:46.073046, lng:-68.768473}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Haskell Campsite"
+        state: "Washington",
+        zipCode: 98284,
+        city: "Sedro-Woolley",
+        address: "Unnamed Road",
+        nameState: "Harlequin Campground, WA"
     },
     {
         camp_id: "95AFF7B7-E0DE-4872-A58E-9E4179AD5474",
@@ -3212,7 +3129,7 @@ const campsiteData = [
         lat: 46.079623645522545,
         lng: -68.77007902706657,
         latlong: "{lat:46.079623645522545, lng:-68.77007902706657}",
-        state: "ME",
+        state: "Maine",
         zipCode: 4765,
         city: "Patten",
         nameState: "Haskell Hut, ME"
@@ -3224,7 +3141,7 @@ const campsiteData = [
         lat: 48.02113448367796,
         lng: -88.85081644657868,
         latlong: "{lat:48.02113448367796, lng:-88.85081644657868}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Hatchet Lake Campground, MI"
@@ -3236,7 +3153,7 @@ const campsiteData = [
         lat: 37.8541575376106,
         lng: -122.520646072328,
         latlong: "{lat:37.8541575376106, lng:-122.520646072328}",
-        state: "CA",
+        state: "California",
         zipCode: 94965,
         city: "Sausalito",
         nameState: "Hawk Campground, CA"
@@ -3248,7 +3165,7 @@ const campsiteData = [
         lat: 47.815164484753,
         lng: -118.324951949107,
         latlong: "{lat:47.815164484753, lng:-118.324951949107}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99117,
         city: "Creston",
         nameState: "Hawk Creek Campground, WA"
@@ -3260,7 +3177,7 @@ const campsiteData = [
         lat: 47.93386908337534,
         lng: -88.93999432938057,
         latlong: "{lat:47.93386908337534, lng:-88.93999432938057}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Hay Bay Campground, MI"
@@ -3272,7 +3189,7 @@ const campsiteData = [
         lat: 37.8607851159,
         lng: -122.546454477,
         latlong: "{lat:37.8607851159, lng:-122.546454477}",
-        state: "CA",
+        state: "California",
         zipCode: 94965,
         city: "Sausalito",
         nameState: "Haypress Campground, CA"
@@ -3284,7 +3201,7 @@ const campsiteData = [
         lat: 44.1058980602854,
         lng: -110.671020215965,
         latlong: "{lat:44.1058980602854, lng:-110.671020215965}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 83013,
         city: "Moran",
         nameState: "Headwaters Campground, WY"
@@ -3296,7 +3213,7 @@ const campsiteData = [
         lat: 48.0362664284,
         lng: -123.429967329,
         latlong: "{lat:48.0362664284, lng:-123.429967329}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98362,
         city: "Port Angeles",
         nameState: "Heart O' the Hills Campground, WA"
@@ -3308,11 +3225,11 @@ const campsiteData = [
         lat: 30.8327,
         lng: -81.4514,
         latlong: "{lat:30.8327, lng:-81.4514}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Hickory Hill Wilderness Campsite"
+        state: "Georgia",
+        zipCode: 31558,
+        city: "Cumberland",
+        address: "Cumberland Island",
+        nameState: "Hickory Hill Wilderness Campsit, GA"
     },
     {
         camp_id: "8271D39A-48E1-4693-B3E2-2DBE4C3511D2",
@@ -3321,11 +3238,11 @@ const campsiteData = [
         lat: 34.0171884429,
         lng: -116.162736958,
         latlong: "{lat:34.0171884429, lng:-116.162736958}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Hidden Valley Campground"
+        state: "California",
+        zipCode: 92277,
+        city: "Cottonwood Springs",
+        address: "Unnamed Road",
+        nameState: "Hidden Valley Campground, CA"
     },
     {
         camp_id: "53B78B5A-F056-47DB-B254-13C2EDEC8094",
@@ -3334,7 +3251,7 @@ const campsiteData = [
         lat: 37.87686,
         lng: -110.381007,
         latlong: "{lat:37.87686, lng:-110.381007}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84533,
         city: "Campground is  code",
         nameState: "Hite Outpost Adventure Center -   code until further notice, UT"
@@ -3346,7 +3263,7 @@ const campsiteData = [
         lat: 37.864131,
         lng: -110.399782,
         latlong: "{lat:37.864131, lng:-110.399782}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 86040,
         city: "Page",
         nameState: "Hite Primitive (Dirty Devil, Farley, White Canyon) camping, AZ"
@@ -3358,11 +3275,11 @@ const campsiteData = [
         lat: 37.7998824480597,
         lng: -119.867033107265,
         latlong: "{lat:37.7998824480597, lng:-119.867033107265}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Hodgdon Meadow Campground"
+        state: "California",
+        zipCode: 95389,
+        city: "Yosemite",
+        address: "Unnamed Road",
+        nameState: "Hodgdon Meadow Campground, CA"
     },
     {
         camp_id: "B4D16CA6-183B-492C-BDEA-A41DA6349EDD",
@@ -3371,7 +3288,7 @@ const campsiteData = [
         lat: 47.8583524952499,
         lng: -123.935540122439,
         latlong: "{lat:47.8583524952499, lng:-123.935540122439}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98331,
         city: "Forks",
         nameState: "Hoh Campground, WA"
@@ -3383,7 +3300,7 @@ const campsiteData = [
         lat: 35.0460238204,
         lng: -115.393565162,
         latlong: "{lat:35.0460238204, lng:-115.393565162}",
-        state: "CA",
+        state: "California",
         zipCode: 92332,
         city: "Essex",
         nameState: "Hole-in-the-Wall Campground, CA"
@@ -3395,7 +3312,7 @@ const campsiteData = [
         lat: 36.6376,
         lng: -117.5738,
         latlong: "{lat:36.6376, lng:-117.5738}",
-        state: "CA",
+        state: "California",
         zipCode: 92328,
         city: "Death Valley",
         nameState: "Homestake Campground (Primitive), CA"
@@ -3407,9 +3324,10 @@ const campsiteData = [
         lat: 40.57611111,
         lng: -122.531388889,
         latlong: "{lat:40.57611111, lng:-122.531388889}",
-        state: "CA",
+        state: "California",
         zipCode: 96095,
         city: "Whiskeytown",
+        address: "Unnamed Road",
         nameState: "Horse Camp, CA"
     },
     {
@@ -3419,7 +3337,7 @@ const campsiteData = [
         lat: 38.19282100055179,
         lng: -75.1574710003365,
         latlong: "{lat:38.19282100055179, lng:-75.1574710003365}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21811,
         city: "Berlin",
         nameState: "Horse camping, MD"
@@ -3431,7 +3349,7 @@ const campsiteData = [
         lat: 39.06938,
         lng: -77.398038,
         latlong: "{lat:39.06938, lng:-77.398038}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 20837,
         city: "Poolesville",
         nameState: "Horsepen Branch Hiker-Biker Campsite, MD"
@@ -3443,7 +3361,7 @@ const campsiteData = [
         lat: 44.96,
         lng: -108.26,
         latlong: "{lat:44.96, lng:-108.26}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82431,
         city: "Lovell",
         nameState: "Horseshoe Bend Campground, WY"
@@ -3455,7 +3373,7 @@ const campsiteData = [
         lat: 39.486903,
         lng: -77.774341,
         latlong: "{lat:39.486903, lng:-77.774341}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21782,
         city: "Mercersville",
         nameState: "Horseshoe Bend Hiker-Biker Campsite, MD"
@@ -3467,7 +3385,7 @@ const campsiteData = [
         lat: 20.768155,
         lng: -156.237592,
         latlong: "{lat:20.768155, lng:-156.237592}",
-        state: "HI",
+        state: "Hawaii",
         zipCode: 96790,
         city: "Kula",
         nameState: "Hosmer Grove Campground, HI"
@@ -3479,7 +3397,7 @@ const campsiteData = [
         lat: 37.2016901005,
         lng: -86.2377215005,
         latlong: "{lat:37.2016901005, lng:-86.2377215005}",
-        state: "KY",
+        state: "Kentucky",
         zipCode: 42210,
         city: "Brownsville",
         nameState: "Houchin Ferry Campground, KY"
@@ -3491,7 +3409,7 @@ const campsiteData = [
         lat: 37.3832032699,
         lng: -109.070815001,
         latlong: "{lat:37.3832032699, lng:-109.070815001}",
-        state: "CO",
+        state: "Colorado",
         zipCode: 81321,
         city: "Cortez",
         nameState: "Hovenweep Campground, CO"
@@ -3503,11 +3421,11 @@ const campsiteData = [
         lat: 48.9871,
         lng: -121.0711,
         latlong: "{lat:48.9871, lng:-121.0711}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Hozomeen Campground"
+        state: "Washington",
+        zipCode: 98284,
+        city: "Sedro-Woolley",
+        address: "Unnamed Road",
+        nameState: "Hozomeen Campground, WA"
     },
     {
         camp_id: "129ADE5E-5C43-4F6F-85E3-2F69DC82217D",
@@ -3516,9 +3434,10 @@ const campsiteData = [
         lat: 39.34152,
         lng: -77.75747000000001,
         latlong: "{lat:39.34152, lng:-77.75747000000001}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21740,
         city: "Hagerstown",
+        address: "Unnamed Road",
         nameState: "Huckleberry Hill Hiker-Biker Campsite, MD"
     },
     {
@@ -3528,7 +3447,7 @@ const campsiteData = [
         lat: 47.934272022481146,
         lng: -89.17647822364461,
         latlong: "{lat:47.934272022481146, lng:-89.17647822364461}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Huginnin Cove Campground, MI"
@@ -3540,7 +3459,7 @@ const campsiteData = [
         lat: 48.1255472978347,
         lng: -118.231331985386,
         latlong: "{lat:48.1255472978347, lng:-118.231331985386}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99137,
         city: "Hunters",
         nameState: "Hunters Campground, WA"
@@ -3552,7 +3471,7 @@ const campsiteData = [
         lat: 48.12544,
         lng: -118.230877,
         latlong: "{lat:48.12544, lng:-118.230877}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99137,
         city: "Hunters",
         nameState: "Hunters Group Sites, WA"
@@ -3564,9 +3483,10 @@ const campsiteData = [
         lat: 46.663953,
         lng: -86.1661587,
         latlong: "{lat:46.663953, lng:-86.1661587}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49839,
         city: "Grand Marais",
+        address: "Unnamed Road",
         nameState: "Hurricane River Campground, MI"
     },
     {
@@ -3576,11 +3496,11 @@ const campsiteData = [
         lat: 63.60969751677842,
         lng: -149.583358087987,
         latlong: "{lat:63.60969751677842, lng:-149.583358087987}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Igloo Creek"
+        state: "Alaska",
+        zipCode: 99755,
+        city: "Denali Park",
+        address: "Unnamed Road",
+        nameState: "Igloo Creek, AK"
     },
     {
         camp_id: "E456A79A-B17D-4D7C-8866-C3FFE9290283",
@@ -3589,7 +3509,7 @@ const campsiteData = [
         lat: 34.0934671523033,
         lng: -116.158853563898,
         latlong: "{lat:34.0934671523033, lng:-116.158853563898}",
-        state: "CA",
+        state: "California",
         zipCode: 92277,
         city: "Twentynine Palms",
         nameState: "Indian Cove Campground, CA"
@@ -3601,7 +3521,7 @@ const campsiteData = [
         lat: 44.887023247756964,
         lng: -110.73606858357869,
         latlong: "{lat:44.887023247756964, lng:-110.73606858357869}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82190,
         city: "Yellowstone National Park",
         nameState: "Indian Creek Campground, WY"
@@ -3613,7 +3533,7 @@ const campsiteData = [
         lat: 39.233516,
         lng: -77.462711,
         latlong: "{lat:39.233516, lng:-77.462711}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 20842,
         city: "Dickerson",
         nameState: "Indian Flats Hiker-Biker Campsite, MD"
@@ -3625,7 +3545,7 @@ const campsiteData = [
         lat: 41.7174707355158,
         lng: -121.504144731988,
         latlong: "{lat:41.7174707355158, lng:-121.504144731988}",
-        state: "CA",
+        state: "California",
         zipCode: 96134,
         city: "Tulelake",
         nameState: "Indian Well Campground, CA"
@@ -3637,7 +3557,7 @@ const campsiteData = [
         lat: 39.626697,
         lng: -78.358666,
         latlong: "{lat:39.626697, lng:-78.358666}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21766,
         city: "Little Orleans",
         nameState: "Indigo Neck Hiker-Biker Campsite, MD"
@@ -3649,7 +3569,7 @@ const campsiteData = [
         lat: 48.0337769036068,
         lng: -88.72265854573033,
         latlong: "{lat:48.0337769036068, lng:-88.72265854573033}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Intermediate Lake Campground, MI"
@@ -3661,7 +3581,7 @@ const campsiteData = [
         lat: 39.58747900000001,
         lng: -78.73558400000002,
         latlong: "{lat:39.58747900000001, lng:-78.73558400000002}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21740,
         city: "Hagerstown",
         nameState: "Irons Mountain Hiker-Biker Campsite, MD"
@@ -3685,7 +3605,7 @@ const campsiteData = [
         lat: 38.3832733696,
         lng: -109.888258333,
         latlong: "{lat:38.3832733696, lng:-109.888258333}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84532,
         city: "Moab",
         nameState: "Island in the Sky (Willow Flat) Campground, UT"
@@ -3697,7 +3617,7 @@ const campsiteData = [
         lat: 41.7957264763,
         lng: -124.086447444,
         latlong: "{lat:41.7957264763, lng:-124.086447444}",
-        state: "CA",
+        state: "California",
         zipCode: 95531,
         city: "Crescent City",
         nameState: "Jedediah Smith Campground, CA"
@@ -3721,7 +3641,7 @@ const campsiteData = [
         lat: 43.7552631986,
         lng: -110.719393468,
         latlong: "{lat:43.7552631986, lng:-110.719393468}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 83012,
         city: "Moose",
         nameState: "Jenny Lake Campground, WY"
@@ -3733,7 +3653,7 @@ const campsiteData = [
         lat: 47.9198995489921,
         lng: -118.582833386076,
         latlong: "{lat:47.9198995489921, lng:-118.582833386076}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99185,
         city: "Wilbur",
         nameState: "Jones Bay Campground, WA"
@@ -3745,7 +3665,7 @@ const campsiteData = [
         lat: 39.60919199999999,
         lng: -77.85283,
         latlong: "{lat:39.60919199999999, lng:-77.85283}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21795,
         city: "Williamsport",
         nameState: "Jordan Junction Hiker-Biker Campsite, MD"
@@ -3757,7 +3677,7 @@ const campsiteData = [
         lat: 36.1203493459,
         lng: -81.7652698731,
         latlong: "{lat:36.1203493459, lng:-81.7652698731}",
-        state: "NC",
+        state: "North Carolina",
         zipCode: 28605,
         city: "Blowing Rock",
         nameState: "Julian Price Park Campground, NC"
@@ -3769,7 +3689,7 @@ const campsiteData = [
         lat: 33.9907564455,
         lng: -116.059251838,
         latlong: "{lat:33.9907564455, lng:-116.059251838}",
-        state: "CA",
+        state: "California",
         zipCode: 92277,
         city: "Twentynine Palms",
         nameState: "Jumbo Rocks Campground, CA"
@@ -3781,7 +3701,7 @@ const campsiteData = [
         lat: 32.182818,
         lng: -110.644513,
         latlong: "{lat:32.182818, lng:-110.644513}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 85730,
         city: "Tucson",
         nameState: "Juniper Basin, AZ"
@@ -3793,11 +3713,11 @@ const campsiteData = [
         lat: 47.5952474630001,
         lng: -103.333156762,
         latlong: "{lat:47.5952474630001, lng:-103.333156762}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Juniper Campground"
+        state: "North Dakota",
+        zipCode: 58645,
+        city: "Medora",
+        address: "Unnamed Road",
+        nameState: "Juniper Campground, ND"
     },
     {
         camp_id: "B4212C55-8FAB-495E-9A12-DE6D57EB91D4",
@@ -3818,7 +3738,7 @@ const campsiteData = [
         lat: 40.4496486561308,
         lng: -121.296461605835,
         latlong: "{lat:40.4496486561308, lng:-121.296461605835}",
-        state: "CA",
+        state: "California",
         zipCode: 96020,
         city: "Chester",
         nameState: "Juniper Lake Campground, CA"
@@ -3843,23 +3763,10 @@ const campsiteData = [
         lat: 48.6783241500684,
         lng: -118.117008793336,
         latlong: "{lat:48.6783241500684, lng:-118.117008793336}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99141,
         city: "Kettle Falls",
         nameState: "Kamloops Island Campground, WA"
-    },
-    {
-        camp_id: "5867E623-661C-49E1-ADC1-DFACA828D8F0",
-        code: "kaww",
-        name: "Katahdin Brook Lean-to",
-        lat: 45.9204007640828,
-        lng: -68.7628803658878,
-        latlong: "{lat:45.9204007640828, lng:-68.7628803658878}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Katahdin Brook Lean-to"
     },
     {
         camp_id: "3D4EA3B5-B5B3-42B5-94C8-35A39D6A2893",
@@ -3880,7 +3787,7 @@ const campsiteData = [
         lat: 48.601517648676904,
         lng: -118.12357127064581,
         latlong: "{lat:48.601517648676904, lng:-118.12357127064581}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99141,
         city: "Kettle Falls",
         nameState: "Kettle Falls Campground, WA"
@@ -3892,7 +3799,7 @@ const campsiteData = [
         lat: 48.7159308743606,
         lng: -118.122687332665,
         latlong: "{lat:48.7159308743606, lng:-118.122687332665}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99107,
         city: "Boyds",
         nameState: "Kettle River Campground, WA"
@@ -3904,7 +3811,7 @@ const campsiteData = [
         lat: 39.45920199999999,
         lng: -77.796583,
         latlong: "{lat:39.45920199999999, lng:-77.796583}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21782,
         city: "Sharpsburg",
         nameState: "Killiansburg Cave Hiker-Biker Campsite, MD"
@@ -3916,7 +3823,7 @@ const campsiteData = [
         lat: 48.9357452088272,
         lng: -114.345930032059,
         latlong: "{lat:48.9357452088272, lng:-114.345930032059}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59936,
         city: "West Glacier",
         nameState: "Kintla Lake, MT"
@@ -3928,7 +3835,7 @@ const campsiteData = [
         lat: 37.8279021174,
         lng: -122.490393465,
         latlong: "{lat:37.8279021174, lng:-122.490393465}",
-        state: "CA",
+        state: "California",
         zipCode: 94965,
         city: "Sausalito",
         nameState: "Kirby Cove Campground, CA"
@@ -3940,7 +3847,7 @@ const campsiteData = [
         lat: 19.3436666463,
         lng: -155.274076368,
         latlong: "{lat:19.3436666463, lng:-155.274076368}",
-        state: "HI",
+        state: "Hawaii",
         zipCode: 96718,
         city: "Hawaii National Park",
         nameState: "Kulanaokuaiki, HI"
@@ -3952,7 +3859,7 @@ const campsiteData = [
         lat: 36.0557786001,
         lng: -93.2807538999,
         latlong: "{lat:36.0557786001, lng:-93.2807538999}",
-        state: "AR",
+        state: "Arkansas",
         zipCode: 72641,
         city: "Jasper",
         nameState: "Kyles Landing, AR"
@@ -3964,7 +3871,7 @@ const campsiteData = [
         lat: 20.659705,
         lng: -156.044492,
         latlong: "{lat:20.659705, lng:-156.044492}",
-        state: "HI",
+        state: "Hawaii",
         zipCode: 93713,
         city: "Hāna",
         nameState: "Kīpahulu Campground, HI"
@@ -3976,11 +3883,11 @@ const campsiteData = [
         lat: 38.4548253084593,
         lng: -107.326981170259,
         latlong: "{lat:38.4548253084593, lng:-107.326981170259}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Lake Fork Campground"
+        state: "Colorado",
+        zipCode: 81230,
+        city: "Gunnison",
+        address: "29070-29174 US-50",
+        nameState: "Lake Fork Campground, CO"
     },
     {
         camp_id: "C838D310-D10F-4670-91C8-E375C0F294F4",
@@ -3989,11 +3896,11 @@ const campsiteData = [
         lat: 36.03503,
         lng: -114.800453,
         latlong: "{lat:36.03503, lng:-114.800453}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Lake Mead RV Village"
+        state: "Nevada",
+        zipCode: 89005,
+        city: "Boulder City",
+        address: "Unnamed Road",
+        nameState: "Lake Mead RV Village, NV"
     },
     {
         camp_id: "5B9B3451-F0DD-4BD3-9EB7-7AEF691285DD",
@@ -4002,7 +3909,7 @@ const campsiteData = [
         lat: 48.05134221029036,
         lng: -88.68736051726773,
         latlong: "{lat:48.05134221029036, lng:-88.68736051726773}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Lake Richie Campground, MI"
@@ -4014,7 +3921,7 @@ const campsiteData = [
         lat: 48.04382454287261,
         lng: -88.70018995569336,
         latlong: "{lat:48.04382454287261, lng:-88.70018995569336}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Lake Richie Canoe Campground, MI"
@@ -4026,7 +3933,7 @@ const campsiteData = [
         lat: 48.007628545489816,
         lng: -88.7070852277252,
         latlong: "{lat:48.007628545489816, lng:-88.7070852277252}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Lake Whittlesey Campground, MI"
@@ -4038,11 +3945,11 @@ const campsiteData = [
         lat: 48.3079,
         lng: -120.6544,
         latlong: "{lat:48.3079, lng:-120.6544}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Lakeview Campground"
+        state: "Washington",
+        zipCode: 98284,
+        city: "Sedro-Woolley",
+        address: "Unnamed Road",
+        nameState: "Lakeview Campground, WA"
     },
     {
         camp_id: "1617F7AB-6DAA-4571-AD88-DCFBC7AC6DC5",
@@ -4051,7 +3958,7 @@ const campsiteData = [
         lat: 48.14490683133697,
         lng: -88.55767854958867,
         latlong: "{lat:48.14490683133697, lng:-88.55767854958867}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Lane Cove Campground, MI"
@@ -4063,7 +3970,7 @@ const campsiteData = [
         lat: 36.1278445862602,
         lng: -114.872569672466,
         latlong: "{lat:36.1278445862602, lng:-114.872569672466}",
-        state: "NV",
+        state: "Nevada",
         zipCode: 89005,
         city: "Boulder City",
         nameState: "Las Vegas Bay Campground, NV"
@@ -4075,9 +3982,10 @@ const campsiteData = [
         lat: 43.46070030861083,
         lng: -113.55913194531865,
         latlong: "{lat:43.46070030861083, lng:-113.55913194531865}",
-        state: "ID",
+        state: "Idaho",
         zipCode: 83213,
         city: "Arco",
+        address: "Unnamed Road",
         nameState: "Lava Flow Campground, ID"
     },
     {
@@ -4087,11 +3995,11 @@ const campsiteData = [
         lat: 37.3838790934259,
         lng: -113.032845693121,
         latlong: "{lat:37.3838790934259, lng:-113.032845693121}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Lava Point Campground"
+        state: "Utah",
+        zipCode: 84737,
+        city: "Hurricane",
+        address: "Watchman Campground",
+        nameState: "Lava Point Campground, UT"
     },
     {
         camp_id: "047E1B9A-FF2B-4BD0-B98A-65ED0857639C",
@@ -4100,7 +4008,7 @@ const campsiteData = [
         lat: 36.8593470173641,
         lng: -111.606274705221,
         latlong: "{lat:36.8593470173641, lng:-111.606274705221}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 86036,
         city: "Marble Canyon",
         nameState: "Lees Ferry Campground, AZ"
@@ -4112,7 +4020,7 @@ const campsiteData = [
         lat: 39.6519276443,
         lng: -78.2401552013,
         latlong: "{lat:39.6519276443, lng:-78.2401552013}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21750,
         city: "Hancock",
         nameState: "Leopards Mill Hiker-Biker Campsite, MD"
@@ -4124,7 +4032,7 @@ const campsiteData = [
         lat: 44.282205650024956,
         lng: -110.62798728261384,
         latlong: "{lat:44.282205650024956, lng:-110.62798728261384}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82190,
         city: "Yellowstone National Park",
         nameState: "Lewis Lake Campground, WY"
@@ -4136,7 +4044,7 @@ const campsiteData = [
         lat: 38.43556,
         lng: -78.478096,
         latlong: "{lat:38.43556, lng:-78.478096}",
-        state: "VA",
+        state: "Virgina",
         zipCode: 22827,
         city: "Shenandoah",
         nameState: "Lewis Mountain Campground, VA"
@@ -4148,7 +4056,7 @@ const campsiteData = [
         lat: 39.650293999999995,
         lng: -78.04877600000002,
         latlong: "{lat:39.650293999999995, lng:-78.04877600000002}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21711,
         city: "Pool",
         nameState: "Licking Creek Hiker-Biker Campsite, MD"
@@ -4160,7 +4068,7 @@ const campsiteData = [
         lat: 35.9671524465,
         lng: -81.9326240728,
         latlong: "{lat:35.9671524465, lng:-81.9326240728}",
-        state: "NC",
+        state: "North Carolina",
         zipCode: 28752,
         city: "Linville Falls",
         nameState: "Linville Falls Campground, NC"
@@ -4172,7 +4080,7 @@ const campsiteData = [
         lat: 46.5575,
         lng: -86.3638,
         latlong: "{lat:46.5575, lng:-86.3638}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49884,
         city: "Melstrand",
         nameState: "Little Beaver Lake Campground, MI"
@@ -4184,7 +4092,7 @@ const campsiteData = [
         lat: 39.68477600000001,
         lng: -78.11312500000001,
         latlong: "{lat:39.68477600000001, lng:-78.11312500000001}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21750,
         city: "Hancock",
         nameState: "Little Pool Hiker-Biker Campsite, MD"
@@ -4196,7 +4104,7 @@ const campsiteData = [
         lat: 48.020255955459476,
         lng: -88.92666555449784,
         latlong: "{lat:48.020255955459476, lng:-88.92666555449784}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Little Todd Campground, MI"
@@ -4208,7 +4116,7 @@ const campsiteData = [
         lat: 44.0034692521,
         lng: -110.688659309,
         latlong: "{lat:44.0034692521, lng:-110.688659309}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 83013,
         city: "Moran",
         nameState: "Lizard Creek Campground, WY"
@@ -4220,7 +4128,7 @@ const campsiteData = [
         lat: 48.592901,
         lng: -118.114979,
         latlong: "{lat:48.592901, lng:-118.114979}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99141,
         city: "Kettle Falls",
         nameState: "Locust Grove Group Sites, WA"
@@ -4232,7 +4140,7 @@ const campsiteData = [
         lat: 36.6057726327463,
         lng: -118.72688304333,
         latlong: "{lat:36.6057726327463, lng:-118.72688304333}",
-        state: "CA",
+        state: "California",
         zipCode: 93262,
         city: "Lodgepole",
         nameState: "Lodgepole Campground, CA"
@@ -4244,7 +4152,7 @@ const campsiteData = [
         lat: 38.246415,
         lng: -78.670701,
         latlong: "{lat:38.246415, lng:-78.670701}",
-        state: "VA",
+        state: "Virgina",
         zipCode: 22932,
         city: "Crozet",
         nameState: "Loft Mountain Campground, VA"
@@ -4256,7 +4164,7 @@ const campsiteData = [
         lat: 48.6984547613409,
         lng: -114.191655603626,
         latlong: "{lat:48.6984547613409, lng:-114.191655603626}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59936,
         city: "West Glacier",
         nameState: "Logging Creek, MT"
@@ -4268,7 +4176,7 @@ const campsiteData = [
         lat: 37.016159934,
         lng: -111.540346568,
         latlong: "{lat:37.016159934, lng:-111.540346568}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 86040,
         city: "Greenehaven",
         nameState: "Lone Rock Beach Primitive Camping Area, AZ"
@@ -4280,7 +4188,7 @@ const campsiteData = [
         lat: 25.3979002291,
         lng: -80.6569697813,
         latlong: "{lat:25.3979002291, lng:-80.6569697813}",
-        state: "FL",
+        state: "Florida",
         zipCode: 33034,
         city: "Homestead",
         nameState: "Long Pine Key Campground, FL"
@@ -4292,11 +4200,11 @@ const campsiteData = [
         lat: 33.8357177464607,
         lng: -80.8273976732926,
         latlong: "{lat:33.8357177464607, lng:-80.8273976732926}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Longleaf Campground"
+        state: "South Carolina",
+        zipCode: 29205,
+        city: "Richland",
+        address: "Richland County",
+        nameState: "Longleaf Campground, SC"
     },
     {
         camp_id: "F7CE47A2-A770-449F-8085-0DF17DD432EB",
@@ -4305,11 +4213,11 @@ const campsiteData = [
         lat: 40.27479364272779,
         lng: -105.55770432202075,
         latlong: "{lat:40.27479364272779, lng:-105.55770432202075}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Longs Peak Campground"
+        state: "Colorado",
+        zipCode: 80517,
+        city: "Estes Park",
+        address: "Unnamed Road",
+        nameState: "Longs Peak Campground, CO"
     },
     {
         camp_id: "71D71180-EFB3-4888-8B2C-5474107CC139",
@@ -4318,7 +4226,7 @@ const campsiteData = [
         lat: 42.8797493937,
         lng: -122.038711217,
         latlong: "{lat:42.8797493937, lng:-122.038711217}",
-        state: "OR",
+        state: "Oregon",
         zipCode: 97604,
         city: "Crater Lake",
         nameState: "Lost Creek Campground, elevation 6,000 feet (1,829 meters), OR"
@@ -4330,7 +4238,7 @@ const campsiteData = [
         lat: 40.5618411426837,
         lng: -121.517718845844,
         latlong: "{lat:40.5618411426837, lng:-121.517718845844}",
-        state: "CA",
+        state: "California",
         zipCode: 96088,
         city: "Shingletown",
         nameState: "Lost Creek Group Campground, CA"
@@ -4342,7 +4250,7 @@ const campsiteData = [
         lat: 48.67657475935347,
         lng: -121.27136454780918,
         latlong: "{lat:48.67657475935347, lng:-121.27136454780918}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98284,
         city: "Sedro-Woolley",
         nameState: "Lower Goodell Creek Group Campground, WA"
@@ -4354,11 +4262,11 @@ const campsiteData = [
         lat: 39.01737,
         lng: -114.23798,
         latlong: "{lat:39.01737, lng:-114.23798}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Lower Lehman Campground"
+        state: "Nevada",
+        zipCode: 89311,
+        city: "Baker",
+        address: "Unnamed Road",
+        nameState: "Lower Lehman Campground, NV"
     },
     {
         camp_id: "4C3C4954-FA9C-4C58-B6CF-E66054E1F0EF",
@@ -4367,7 +4275,7 @@ const campsiteData = [
         lat: 37.7394658916,
         lng: -119.566313767,
         latlong: "{lat:37.7394658916, lng:-119.566313767}",
-        state: "CA",
+        state: "California",
         zipCode: 95389,
         city: "Yosemite",
         nameState: "Lower Pines Campground, CA"
@@ -4379,11 +4287,11 @@ const campsiteData = [
         lat: 33.229944,
         lng: -108.25757,
         latlong: "{lat:33.229944, lng:-108.25757}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Lower Scorpion Campground"
+        state: "New Meico",
+        zipCode: 88061,
+        city: "Silver City",
+        address: "NM-15",
+        nameState: "Lower Scorpion Campground, NM"
     },
     {
         camp_id: "16DA32CA-C0E9-4AF2-A6BD-39AD52887B80",
@@ -4392,11 +4300,11 @@ const campsiteData = [
         lat: 45.253281,
         lng: -92.760328,
         latlong: "{lat:45.253281, lng:-92.760328}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Lower St. Croix District"
+        state: "Wisconsin",
+        zipCode: 54888,
+        city: "Trego",
+        address: "Unnamed Road",
+        nameState: "Lower St. Croix District, WI"
     },
     {
         camp_id: "44BCA8F4-F3F0-469E-9F2C-5B76A9978677",
@@ -4405,11 +4313,11 @@ const campsiteData = [
         lat: 46.558462,
         lng: -86.33977,
         latlong: "{lat:46.558462, lng:-86.33977}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Lowney Creek Individual Backpacking Sites"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Lowney Creek Individual Backpacking Sites, MI"
     },
     {
         camp_id: "C4863E55-CDB6-4BE8-9E1B-4AE5AE18962D",
@@ -4418,11 +4326,11 @@ const campsiteData = [
         lat: 46.557203,
         lng: -86.344702,
         latlong: "{lat:46.557203, lng:-86.344702}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Lowney Greek Group Backpacking Site"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Lowney Greek Group Backpacking Site, MI"
     },
     {
         camp_id: "14A6565A-E77A-45D7-9F6D-67BF3FEA2251",
@@ -4431,7 +4339,7 @@ const campsiteData = [
         lat: 45.908436,
         lng: -68.613925,
         latlong: "{lat:45.908436, lng:-68.613925}",
-        state: "ME",
+        state: "Maine",
         zipCode: 4765,
         city: "Patten",
         nameState: "Lunksoos Campsites, ME"
@@ -4443,11 +4351,11 @@ const campsiteData = [
         lat: 45.9569815730881,
         lng: -68.7016996665859,
         latlong: "{lat:45.9569815730881, lng:-68.7016996665859}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Lunksoos Mountain Lean-To"
+        state: "Maine",
+        zipCode: 4765,
+        city: "Patten",
+        address: "Unnamed Road",
+        nameState: "Lunksoos Mountain Lean-To, ME"
     },
     {
         camp_id: "66DFF49B-F1DC-49BB-A3CF-9F007330450D",
@@ -4456,7 +4364,7 @@ const campsiteData = [
         lat: 44.6454215492,
         lng: -110.861302682,
         latlong: "{lat:44.6454215492, lng:-110.861302682}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82190,
         city: "Yellowstone National Park",
         nameState: "Madison Campground, WY"
@@ -4468,7 +4376,7 @@ const campsiteData = [
         lat: 36.23,
         lng: -117.068377,
         latlong: "{lat:36.23, lng:-117.068377}",
-        state: "CA",
+        state: "California",
         zipCode: 92328,
         city: "Death Valley",
         nameState: "Mahogany Flat Campground (Primitive), CA"
@@ -4492,7 +4400,7 @@ const campsiteData = [
         lat: 47.98524426035943,
         lng: -88.80722670151698,
         latlong: "{lat:47.98524426035943, lng:-88.80722670151698}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Malone Bay Campground, MI"
@@ -4504,7 +4412,7 @@ const campsiteData = [
         lat: 44.97360954829384,
         lng: -110.69323158293622,
         latlong: "{lat:44.97360954829384, lng:-110.69323158293622}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82190,
         city: "Yellowstone National Park",
         nameState: "Mammoth Campground, WY"
@@ -4516,7 +4424,7 @@ const campsiteData = [
         lat: 37.1821894000506,
         lng: -86.09704310043361,
         latlong: "{lat:37.1821894000506, lng:-86.09704310043361}",
-        state: "KY",
+        state: "Kentucky",
         zipCode: 42259,
         city: "Mammoth Cave",
         nameState: "Mammoth Cave Campground, KY"
@@ -4528,7 +4436,7 @@ const campsiteData = [
         lat: 32.207386,
         lng: -110.554542,
         latlong: "{lat:32.207386, lng:-110.554542}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 85730,
         city: "Tucson",
         nameState: "Manning Camp, AZ"
@@ -4540,7 +4448,7 @@ const campsiteData = [
         lat: 48.7964957236,
         lng: -113.677619731,
         latlong: "{lat:48.7964957236, lng:-113.677619731}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59936,
         city: "West Glacier",
         nameState: "Many Glacier, MT"
@@ -4552,7 +4460,7 @@ const campsiteData = [
         lat: 40.5278515681602,
         lng: -121.563186589946,
         latlong: "{lat:40.5278515681602, lng:-121.563186589946}",
-        state: "CA",
+        state: "California",
         zipCode: 96088,
         city: "Shingletown",
         nameState: "Manzanita Lake Campground, CA"
@@ -4564,7 +4472,7 @@ const campsiteData = [
         lat: 37.204205,
         lng: -86.136092,
         latlong: "{lat:37.204205, lng:-86.136092}",
-        state: "KY",
+        state: "Kentucky",
         zipCode: 42259,
         city: "Mammoth Cave",
         nameState: "Maple Springs Group Campground, KY"
@@ -4576,7 +4484,7 @@ const campsiteData = [
         lat: 39.179557999999986,
         lng: -77.492708,
         latlong: "{lat:39.179557999999986, lng:-77.492708}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 20837,
         city: "Poolesville",
         nameState: "Marble Quarry Hiker-Biker Campsite, MD"
@@ -4588,7 +4496,7 @@ const campsiteData = [
         lat: 48.6687321922,
         lng: -118.057368267,
         latlong: "{lat:48.6687321922, lng:-118.057368267}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99151,
         city: "Marcus",
         nameState: "Marcus Island Campground, WA"
@@ -4600,11 +4508,11 @@ const campsiteData = [
         lat: 31.9811711479,
         lng: -104.876854149,
         latlong: "{lat:31.9811711479, lng:-104.876854149}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Marcus Wilderness Campground"
+        state: "Texas",
+        zipCode: 79847,
+        city: "Salt Flat",
+        address: "Unnamed Road",
+        nameState: "Marcus Wilderness Campground, TX"
     },
     {
         camp_id: "4A67D2E9-712F-445A-80F8-330CB66FFDCE",
@@ -4613,11 +4521,11 @@ const campsiteData = [
         lat: 38.97679701853521,
         lng: -77.21484911273555,
         latlong: "{lat:38.97679701853521, lng:-77.21484911273555}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Marsden Tract Group Campground"
+        state: "Maryland",
+        zipCode: 21740,
+        city: "Hagerstown",
+        address: "Unnamed Road",
+        nameState: "Marsden Tract Group Campground, MD"
     },
     {
         camp_id: "0CBEC1FE-AEED-4AA7-BE9F-7A25E9EB602B",
@@ -4626,11 +4534,11 @@ const campsiteData = [
         lat: 46.6468043665,
         lng: -86.0956764204,
         latlong: "{lat:46.6468043665, lng:-86.0956764204}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Masse Homestead Group Backpacking Site"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Masse Homestead Group Backpacking Site, MI"
     },
     {
         camp_id: "FFC19C0E-A862-4F84-A269-BBE89791789F",
@@ -4639,11 +4547,11 @@ const campsiteData = [
         lat: 46.647693,
         lng: -86.090932,
         latlong: "{lat:46.647693, lng:-86.090932}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Masse Homestead Individual Backpacking Sites"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Masse Homestead Individual Backpacking Sites, MI"
     },
     {
         camp_id: "CBEBF627-E888-45E6-9E8C-6EA6AE9A1B2D",
@@ -4652,7 +4560,7 @@ const campsiteData = [
         lat: 36.04918080776177,
         lng: -112.11849726539117,
         latlong: "{lat:36.04918080776177, lng:-112.11849726539117}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 86023,
         city: "Grand Canyon",
         nameState: "Mather Campground - South Rim, AZ"
@@ -4664,7 +4572,7 @@ const campsiteData = [
         lat: 38.763144,
         lng: -78.296388,
         latlong: "{lat:38.763144, lng:-78.296388}",
-        state: "VA",
+        state: "Virgina",
         zipCode: 22835,
         city: "Luray",
         nameState: "Mathews Arm Campground, VA"
@@ -4676,7 +4584,7 @@ const campsiteData = [
         lat: 36.0394860005,
         lng: -92.635645801,
         latlong: "{lat:36.0394860005, lng:-92.635645801}",
-        state: "AR",
+        state: "Arkansas",
         zipCode: 72650,
         city: "Marshall",
         nameState: "Maumee South, AR"
@@ -4688,7 +4596,7 @@ const campsiteData = [
         lat: 42.86862146054785,
         lng: -122.1677826463598,
         latlong: "{lat:42.86862146054785, lng:-122.1677826463598}",
-        state: "OR",
+        state: "Oregon",
         zipCode: 97604,
         city: "Crater Lake",
         nameState: "Mazama Campground, OR"
@@ -4700,11 +4608,11 @@ const campsiteData = [
         lat: 35.529449,
         lng: -101.759431,
         latlong: "{lat:35.529449, lng:-101.759431}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "McBride Canyon and Mullinaw Creek Campgrounds"
+        state: "Texas",
+        zipCode: "79114",
+        city: "Fritch",
+        address: "Blue West Rd",
+        nameState: "McBride Canyon and Mullinaw Creek Campgrounds, TX"
     },
     {
         camp_id: "9D2E311B-C207-4DCF-94B3-DE542132D2C3",
@@ -4713,7 +4621,7 @@ const campsiteData = [
         lat: 48.08719604689656,
         lng: -88.70934934701029,
         latlong: "{lat:48.08719604689656, lng:-88.70934934701029}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "McCargoe Cove Campground, MI"
@@ -4725,11 +4633,11 @@ const campsiteData = [
         lat: 31.9743477327,
         lng: -104.808226914,
         latlong: "{lat:31.9743477327, lng:-104.808226914}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "McKittrick Ridge Wilderness Campground"
+        state: "Texas",
+        zipCode: 79847,
+        city: "Salt Flat",
+        address: "Unnamed Road",
+        nameState: "McKittrick Ridge Wilderness Campground, TX"
     },
     {
         camp_id: "14751579-DBB7-4045-8558-93B39B25E616",
@@ -4750,11 +4658,11 @@ const campsiteData = [
         lat: 39.60923039149862,
         lng: -77.96663983689507,
         latlong: "{lat:39.60923039149862, lng:-77.96663983689507}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Mccoys Ferry Campground"
+        state: "Maryland",
+        zipCode: 21740,
+        city: "Hagerstown",
+        address: "Unnamed Road",
+        nameState: "Mccoys Ferry Campground, MD"
     },
     {
         camp_id: "10EE7534-B7D7-4A2A-B8A2-AAE5628429F9",
@@ -4763,7 +4671,7 @@ const campsiteData = [
         lat: 37.79667,
         lng: -80.92009,
         latlong: "{lat:37.79667, lng:-80.92009}",
-        state: "WV",
+        state: "West Virgina",
         zipCode: 25977,
         city: "Sandstone",
         nameState: "Meadow Creek Campground, WV"
@@ -4775,11 +4683,10 @@ const campsiteData = [
         lat: 37.803519,
         lng: -105.495654,
         latlong: "{lat:37.803519, lng:-105.495654}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Medano Pass Primitive Road Campsites"
+        state: "Colorado",
+        zipCode: 81146,
+        city: "Mosca",
+        nameState: "Medano Pass Primitive Road Campsites, CO"
     },
     {
         camp_id: "59D597C2-D37E-41A8-AEBA-FA0D219280D4",
@@ -4788,7 +4695,7 @@ const campsiteData = [
         lat: 45.1101806592348,
         lng: -108.20431158086,
         latlong: "{lat:45.1101806592348, lng:-108.20431158086}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82431,
         city: "Lovell",
         nameState: "Medicine Creek Campground, WY"
@@ -4800,7 +4707,7 @@ const campsiteData = [
         lat: 35.5224918473591,
         lng: -87.4556851746386,
         latlong: "{lat:35.5224918473591, lng:-87.4556851746386}",
-        state: "TN",
+        state: "Tennessee",
         zipCode: 38462,
         city: "Hohenwald",
         nameState: "Meriwether Lewis Campground, Milepost 385.9, TN"
@@ -4812,7 +4719,7 @@ const campsiteData = [
         lat: 48.18459316327891,
         lng: -88.42965712508789,
         latlong: "{lat:48.18459316327891, lng:-88.42965712508789}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Merritt Lane Campground, MI"
@@ -4824,11 +4731,11 @@ const campsiteData = [
         lat: 31.9526879019085,
         lng: -104.847984983904,
         latlong: "{lat:31.9526879019085, lng:-104.847984983904}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Mescalero Wilderness Campground"
+        state: "Texas",
+        zipCode: 79847,
+        city: "Salt Flat",
+        address: "Unnamed Road",
+        nameState: "Mescalero Wilderness Campground, TX"
     },
     {
         camp_id: "B60A752C-4A67-4A7F-806F-2876DF00243E",
@@ -4837,7 +4744,7 @@ const campsiteData = [
         lat: 36.9632819819,
         lng: -117.367825604,
         latlong: "{lat:36.9632819819, lng:-117.367825604}",
-        state: "CA",
+        state: "California",
         zipCode: 92328,
         city: "Death Valley",
         nameState: "Mesquite Spring Campground, CA"
@@ -4849,7 +4756,7 @@ const campsiteData = [
         lat: 35.1314809174233,
         lng: -115.435625021846,
         latlong: "{lat:35.1314809174233, lng:-115.435625021846}",
-        state: "CA",
+        state: "California",
         zipCode: 92311,
         city: "Barstow",
         nameState: "Mid-Hills Campground, CA"
@@ -4861,11 +4768,11 @@ const campsiteData = [
         lat: 45.773341,
         lng: -92.781074,
         latlong: "{lat:45.773341, lng:-92.781074}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Middle St. Croix"
+        state: "Wisconsin",
+        zipCode: 54888,
+        city: "Trego",
+        address: "Unnamed Road",
+        nameState: "Middle St. Croix, WI"
     },
     {
         camp_id: "4C753B83-8E55-4969-A918-7CF37BEBEF34",
@@ -4874,7 +4781,7 @@ const campsiteData = [
         lat: 25.851926,
         lng: -80.989444,
         latlong: "{lat:25.851926, lng:-80.989444}",
-        state: "FL",
+        state: "Florida",
         zipCode: 34141,
         city: "Ochopee",
         nameState: "Midway Campground, FL"
@@ -4886,7 +4793,7 @@ const campsiteData = [
         lat: 41.7027241694,
         lng: -124.097784631,
         latlong: "{lat:41.7027241694, lng:-124.097784631}",
-        state: "CA",
+        state: "California",
         zipCode: 95531,
         city: "Crescent City",
         nameState: "Mill Creek Campground, CA"
@@ -4898,7 +4805,7 @@ const campsiteData = [
         lat: 25.7564496482,
         lng: -80.9305981752,
         latlong: "{lat:25.7564496482, lng:-80.9305981752}",
-        state: "FL",
+        state: "Florida",
         zipCode: 34141,
         city: "Ochopee",
         nameState: "Mitchell's Landing, FL"
@@ -4910,7 +4817,7 @@ const campsiteData = [
         lat: 41.0350164989291,
         lng: -75.0010072013237,
         latlong: "{lat:41.0350164989291, lng:-75.0010072013237}",
-        state: "NJ",
+        state: "New Jersey",
         zipCode: 7825,
         city: "Blairstown",
         nameState: "Mohican Outdoor Center, NJ"
@@ -4922,7 +4829,7 @@ const campsiteData = [
         lat: 25.8684663476,
         lng: -81.1131314752,
         latlong: "{lat:25.8684663476, lng:-81.1131314752}",
-        state: "FL",
+        state: "Florida",
         zipCode: 34141,
         city: "Ochopee",
         nameState: "Monument Lake, FL"
@@ -4934,7 +4841,7 @@ const campsiteData = [
         lat: 47.9168610105267,
         lng: -124.60593738701,
         latlong: "{lat:47.9168610105267, lng:-124.60593738701}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98331,
         city: "Forks",
         nameState: "Mora Campground, WA"
@@ -4946,7 +4853,7 @@ const campsiteData = [
         lat: 36.7852162631223,
         lng: -118.661056803223,
         latlong: "{lat:36.7852162631223, lng:-118.661056803223}",
-        state: "CA",
+        state: "California",
         zipCode: 93633,
         city: "Kings Canyon National Park",
         nameState: "Moraine Campground, CA"
@@ -4958,7 +4865,7 @@ const campsiteData = [
         lat: 40.36066149616986,
         lng: -105.60006623223796,
         latlong: "{lat:40.36066149616986, lng:-105.60006623223796}",
-        state: "CO",
+        state: "Colorado",
         zipCode: 80517,
         city: "Estes Park",
         nameState: "Moraine Park Campground, CO"
@@ -4970,7 +4877,7 @@ const campsiteData = [
         lat: 37.3014992738134,
         lng: -108.417912473544,
         latlong: "{lat:37.3014992738134, lng:-108.417912473544}",
-        state: "CO",
+        state: "Colorado",
         zipCode: 81330,
         city: "Mesa Verde National Park",
         nameState: "Morefield Campground, CO"
@@ -4982,7 +4889,7 @@ const campsiteData = [
         lat: 48.06298074914441,
         lng: -88.64516328280524,
         latlong: "{lat:48.06298074914441, lng:-88.64516328280524}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Moskey Basin Campground, MI"
@@ -4994,11 +4901,11 @@ const campsiteData = [
         lat: 46.527061,
         lng: -86.492008,
         latlong: "{lat:46.527061, lng:-86.492008}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Mosquito Individual Backpacking Sites"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Mosquito Individual Backpacking Sites, MI"
     },
     {
         camp_id: "F4C0B48E-944E-42FC-9E18-D579786BBC93",
@@ -5007,11 +4914,11 @@ const campsiteData = [
         lat: 46.5226013349,
         lng: -86.4938020699,
         latlong: "{lat:46.5226013349, lng:-86.4938020699}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Mosquito River Group Backpacking Site"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Mosquito River Group Backpacking Site, MI"
     },
     {
         camp_id: "1B9BB56F-9FF5-4AD4-B966-F3B7310AED49",
@@ -5020,23 +4927,10 @@ const campsiteData = [
         lat: 35.40286804539159,
         lng: -82.75691997303858,
         latlong: "{lat:35.40286804539159, lng:-82.75691997303858}",
-        state: "NC",
+        state: "North Carolina",
         zipCode: 28803,
         city: "Asheville",
         nameState: "Mount Pisgah, NC"
-    },
-    {
-        camp_id: "7FDEE7A6-EB52-43E9-A4D8-193545AB5207",
-        code: "lacl",
-        name: "NPS Priest Rock Public Use Cabin",
-        lat: 60.3093333056,
-        lng: 154.177,
-        latlong: "{lat:60.3093333056, lng:154.177}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "NPS Priest Rock Public Use Cabin"
     },
     {
         camp_id: "7BBD3378-FC3C-46E4-9DF8-2F2AFFA92C2E",
@@ -5045,11 +4939,11 @@ const campsiteData = [
         lat: 45.905263,
         lng: -91.815991,
         latlong: "{lat:45.905263, lng:-91.815991}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Namekagon District"
+        state: "Wisconsin",
+        zipCode: 54888,
+        city: "Trego",
+        address: "Unnamed Road",
+        nameState: "Namekagon District, WI"
     },
     {
         camp_id: "3D8B7A3D-BC50-4270-8CD1-631D13A15C62",
@@ -5058,7 +4952,7 @@ const campsiteData = [
         lat: 37.60921843789215,
         lng: -109.98419312147183,
         latlong: "{lat:37.60921843789215, lng:-109.98419312147183}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84511,
         city: "Blanding",
         nameState: "Natural Bridges Campground, UT"
@@ -5070,7 +4964,7 @@ const campsiteData = [
         lat: 30.3689892485485,
         lng: -87.1423119758788,
         latlong: "{lat:30.3689892485485, lng:-87.1423119758788}",
-        state: "FL",
+        state: "Florida",
         zipCode: 32563,
         city: "Gulf Breeze",
         nameState: "Naval Live Oaks Youth Group Camping, FL"
@@ -5082,7 +4976,7 @@ const campsiteData = [
         lat: 48.671,
         lng: -121.261,
         latlong: "{lat:48.671, lng:-121.261}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98284,
         city: "Sedro-Woolley",
         nameState: "Newhalem Creek Campground, WA"
@@ -5094,7 +4988,7 @@ const campsiteData = [
         lat: 44.73784854861962,
         lng: -110.69361508287096,
         latlong: "{lat:44.73784854861962, lng:-110.69361508287096}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82190,
         city: "Yellowstone National Park",
         nameState: "Norris Campground, WY"
@@ -5106,7 +5000,7 @@ const campsiteData = [
         lat: 37.638096,
         lng: -112.167922,
         latlong: "{lat:37.638096, lng:-112.167922}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84764,
         city: "Bryce",
         nameState: "North Campground, UT"
@@ -5118,7 +5012,7 @@ const campsiteData = [
         lat: 47.98085044383097,
         lng: -88.99386540717819,
         latlong: "{lat:47.98085044383097, lng:-88.99386540717819}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "North Desor Campground, MI"
@@ -5130,7 +5024,7 @@ const campsiteData = [
         lat: 47.5698520216,
         lng: -123.650803296,
         latlong: "{lat:47.5698520216, lng:-123.650803296}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98362,
         city: "Port Angeles",
         nameState: "North Fork Campground, WA"
@@ -5142,7 +5036,7 @@ const campsiteData = [
         lat: 48.7864756738437,
         lng: -118.003288633079,
         latlong: "{lat:48.7864756738437, lng:-118.003288633079}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99126,
         city: "Evans",
         nameState: "North Gorge Campground, WA"
@@ -5154,7 +5048,7 @@ const campsiteData = [
         lat: 39.610663,
         lng: -77.959636,
         latlong: "{lat:39.610663, lng:-77.959636}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21722,
         city: "Clear Spring",
         nameState: "North Mountain Hiker-Biker Campsite, MD"
@@ -5166,9 +5060,10 @@ const campsiteData = [
         lat: 37.7404163398378,
         lng: -119.565030847118,
         latlong: "{lat:37.7404163398378, lng:-119.565030847118}",
-        state: "CA",
+        state: "California",
         zipCode: 95389,
         city: "Yosemite",
+        address: "Unnamed Road",
         nameState: "North Pines Campground, CA"
     },
     {
@@ -5178,7 +5073,7 @@ const campsiteData = [
         lat: 38.58518332872675,
         lng: -107.70942777084946,
         latlong: "{lat:38.58518332872675, lng:-107.70942777084946}",
-        state: "CO",
+        state: "Colorado",
         zipCode: 81415,
         city: "Crawford",
         nameState: "North Rim Campground, CO"
@@ -5190,7 +5085,7 @@ const campsiteData = [
         lat: 36.208690159698094,
         lng: -112.05997437790796,
         latlong: "{lat:36.208690159698094, lng:-112.05997437790796}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 86052,
         city: "North Rim",
         nameState: "North Rim Campground, AZ"
@@ -5202,7 +5097,7 @@ const campsiteData = [
         lat: 19.4253736529641,
         lng: -155.295878745916,
         latlong: "{lat:19.4253736529641, lng:-155.295878745916}",
-        state: "HI",
+        state: "Hawaii",
         zipCode: 96718,
         city: "Hawaii National Park",
         nameState: "Nāmakanipaio, HI"
@@ -5214,9 +5109,10 @@ const campsiteData = [
         lat: 40.6505313284,
         lng: -122.591370849,
         latlong: "{lat:40.6505313284, lng:-122.591370849}",
-        state: "CA",
+        state: "California",
         zipCode: 96095,
         city: "Whiskeytown",
+        address: "Unnamed Road",
         nameState: "Oak Bottom RV, CA"
     },
     {
@@ -5226,9 +5122,10 @@ const campsiteData = [
         lat: 40.650528,
         lng: -122.5825,
         latlong: "{lat:40.650528, lng:-122.5825}",
-        state: "CA",
+        state: "California",
         zipCode: 96095,
         city: "Whiskeytown",
+        address: "Unnamed Road",
         nameState: "Oak Bottom Tent Campground, CA"
     },
     {
@@ -5238,7 +5135,7 @@ const campsiteData = [
         lat: 38.6004202182,
         lng: -77.4160990166,
         latlong: "{lat:38.6004202182, lng:-77.4160990166}",
-        state: "VA",
+        state: "Virgina",
         zipCode: 22172,
         city: "Triangle",
         nameState: "Oak Ridge Campground, VA"
@@ -5250,7 +5147,7 @@ const campsiteData = [
         lat: 38.20161059949485,
         lng: -75.15386509969085,
         latlong: "{lat:38.20161059949485, lng:-75.15386509969085}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21811,
         city: "Berlin",
         nameState: "Oceanside Drive-in Campground, MD"
@@ -5262,7 +5159,7 @@ const campsiteData = [
         lat: 38.20377,
         lng: -75.1524,
         latlong: "{lat:38.20377, lng:-75.1524}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21811,
         city: "Berlin",
         nameState: "Oceanside Group Campground, MD"
@@ -5274,7 +5171,7 @@ const campsiteData = [
         lat: 38.1948063,
         lng: -75.1564668,
         latlong: "{lat:38.1948063, lng:-75.1564668}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21811,
         city: "Berlin",
         nameState: "Oceanside Walk-in campground, MD"
@@ -5286,7 +5183,7 @@ const campsiteData = [
         lat: 35.136234,
         lng: -75.902467,
         latlong: "{lat:35.136234, lng:-75.902467}",
-        state: "NC",
+        state: "North Carolina",
         zipCode: 27960,
         city: "Ocracoke",
         nameState: "Ocracoke Campground, NC"
@@ -5298,11 +5195,11 @@ const campsiteData = [
         lat: 46.73599667059602,
         lng: -121.56684815883636,
         latlong: "{lat:46.73599667059602, lng:-121.56684815883636}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Ohanapecosh Campground"
+        state: "Washington",
+        zipCode: 98304,
+        city: "Ashford",
+        address: "48627 Paradise Rd E",
+        nameState: "Ohanapecosh Campground, WA"
     },
     {
         camp_id: "D02FA068-BF79-4A17-8621-533DFE01DDF0",
@@ -5311,7 +5208,7 @@ const campsiteData = [
         lat: 39.51593300000001,
         lng: -77.860112,
         latlong: "{lat:39.51593300000001, lng:-77.860112}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21795,
         city: "Williamsport",
         nameState: "Opequon Junction Hiker-Biker Campsite, MD"
@@ -5323,7 +5220,7 @@ const campsiteData = [
         lat: 35.80027781,
         lng: -75.545,
         latlong: "{lat:35.80027781, lng:-75.545}",
-        state: "NC",
+        state: "North Carolina",
         zipCode: 27959,
         city: "Nags Head",
         nameState: "Oregon Inlet Campground, NC"
@@ -5335,7 +5232,7 @@ const campsiteData = [
         lat: 37.5756939454,
         lng: -79.3374360711,
         latlong: "{lat:37.5756939454, lng:-79.3374360711}",
-        state: "VA",
+        state: "Virgina",
         zipCode: 24526,
         city: "Big Island",
         nameState: "Otter Creek, VA"
@@ -5347,7 +5244,7 @@ const campsiteData = [
         lat: 39.6596869874,
         lng: -77.4866425571,
         latlong: "{lat:39.6596869874, lng:-77.4866425571}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21780,
         city: "Sabillasville",
         nameState: "Owens Creek Campground, MD"
@@ -5359,7 +5256,7 @@ const campsiteData = [
         lat: 36.0640098001,
         lng: -93.1598566994,
         latlong: "{lat:36.0640098001, lng:-93.1598566994}",
-        state: "AR",
+        state: "Arkansas",
         zipCode: 72641,
         city: "Jasper",
         nameState: "Ozark Campground, AR"
@@ -5371,7 +5268,7 @@ const campsiteData = [
         lat: 48.1532400873933,
         lng: -124.667693189397,
         latlong: "{lat:48.1532400873933, lng:-124.667693189397}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98362,
         city: "Port Angeles",
         nameState: "Ozette Campground, WA"
@@ -5383,11 +5280,11 @@ const campsiteData = [
         lat: 32.591452,
         lng: -86.99976,
         latlong: "{lat:32.591452, lng:-86.99976}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Paul Grist State Park"
+        state: "Alabama",
+        zipCode: 36108,
+        city: "Montgomery",
+        address: "561 Booth Rd",
+        nameState: "Paul Grist State Park, AL"
     },
     {
         camp_id: "18876B25-BB2B-4507-B2F6-0949C995BCED",
@@ -5396,11 +5293,11 @@ const campsiteData = [
         lat: 39.54423610033746,
         lng: -78.46148084682035,
         latlong: "{lat:39.54423610033746, lng:-78.46148084682035}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Paw Paw Tunnel Campground"
+        state: "Maryland",
+        zipCode: 21740,
+        city: "Hagerstown",
+        address: "Unnamed Road",
+        nameState: "Paw Paw Tunnel Campground, MD"
     },
     {
         camp_id: "9D607267-5063-463F-8487-DF928F788339",
@@ -5409,7 +5306,7 @@ const campsiteData = [
         lat: 37.443384745,
         lng: -79.6049784725,
         latlong: "{lat:37.443384745, lng:-79.6049784725}",
-        state: "VA",
+        state: "Virgina",
         zipCode: 24523,
         city: "Bedford",
         nameState: "Peaks of Otter Campground, VA"
@@ -5421,7 +5318,7 @@ const campsiteData = [
         lat: 44.9169813491583,
         lng: -110.11380838335742,
         latlong: "{lat:44.9169813491583, lng:-110.11380838335742}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82190,
         city: "Yellowstone National Park",
         nameState: "Pebble Creek Campground, WY"
@@ -5433,9 +5330,10 @@ const campsiteData = [
         lat: 40.5857833,
         lng: -122.5518167,
         latlong: "{lat:40.5857833, lng:-122.5518167}",
-        state: "CA",
+        state: "California",
         zipCode: 96095,
         city: "Whiskeytown",
+        address: "Unnamed Road",
         nameState: "Peltier Bridge, CA"
     },
     {
@@ -5445,7 +5343,7 @@ const campsiteData = [
         lat: 48.1245169558947,
         lng: -88.65218294378656,
         latlong: "{lat:48.1245169558947, lng:-88.65218294378656}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Pickerel Cove Campground, MI"
@@ -5457,7 +5355,7 @@ const campsiteData = [
         lat: 39.53895800000001,
         lng: -78.650428,
         latlong: "{lat:39.53895800000001, lng:-78.650428}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21740,
         city: "Hagerstown",
         nameState: "Pigmans Ferry Hiker-Biker Campsite, MD"
@@ -5469,11 +5367,11 @@ const campsiteData = [
         lat: 46.586272,
         lng: -86.328552,
         latlong: "{lat:46.586272, lng:-86.328552}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Pine Bluff Individual Backpacking Sites"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Pine Bluff Individual Backpacking Sites, MI"
     },
     {
         camp_id: "4356D077-AE68-4822-B67E-3CF48A8BBDDB",
@@ -5482,7 +5380,7 @@ const campsiteData = [
         lat: 31.8952617307,
         lng: -104.826340693,
         latlong: "{lat:31.8952617307, lng:-104.826340693}",
-        state: "TX",
+        state: "Texas",
         zipCode: 79847,
         city: "Salt Flat",
         nameState: "Pine Springs Campground, TX"
@@ -5494,11 +5392,11 @@ const campsiteData = [
         lat: 31.9185398240834,
         lng: -104.845801986861,
         latlong: "{lat:31.9185398240834, lng:-104.845801986861}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Pine Top Wilderness Campground"
+        state: "Texas",
+        zipCode: 79847,
+        city: "Salt Flat",
+        address: "Unnamed Road",
+        nameState: "Pine Top Wilderness Campground, TX"
     },
     {
         camp_id: "63A57214-A247-405D-ACBD-254D56A1FDE7",
@@ -5507,7 +5405,7 @@ const campsiteData = [
         lat: 25.7615555478,
         lng: -80.9180630747,
         latlong: "{lat:25.7615555478, lng:-80.9180630747}",
-        state: "FL",
+        state: "Florida",
         zipCode: 34141,
         city: "Ochopee",
         nameState: "Pinecrest, FL"
@@ -5519,7 +5417,7 @@ const campsiteData = [
         lat: 26.216331047905975,
         lng: -81.29514337546641,
         latlong: "{lat:26.216331047905975, lng:-81.29514337546641}",
-        state: "FL",
+        state: "Florida",
         zipCode: 34101,
         city: "Ochopee",
         nameState: "Pink Jeep, FL"
@@ -5531,7 +5429,7 @@ const campsiteData = [
         lat: 36.4898445958,
         lng: -121.148968014,
         latlong: "{lat:36.4898445958, lng:-121.148968014}",
-        state: "CA",
+        state: "California",
         zipCode: 95043,
         city: "Paicines",
         nameState: "Pinnacles Campground, CA"
@@ -5543,7 +5441,7 @@ const campsiteData = [
         lat: 37.7449368560859,
         lng: -105.504703076291,
         latlong: "{lat:37.7449368560859, lng:-105.504703076291}",
-        state: "CO",
+        state: "Colorado",
         zipCode: 81146,
         city: "Mosca",
         nameState: "Piñon Flats Campground, CO"
@@ -5555,7 +5453,7 @@ const campsiteData = [
         lat: 44.71551,
         lng: -86.119114,
         latlong: "{lat:44.71551, lng:-86.119114}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49640,
         city: "Honor",
         nameState: "Platte River Campground, MI"
@@ -5567,9 +5465,10 @@ const campsiteData = [
         lat: 59.6385221,
         lng: -135.2937064,
         latlong: "{lat:59.6385221, lng:-135.2937064}",
-        state: "AK",
+        state: "Alaska",
         zipCode: 99840,
         city: "Skagway",
+        address: "Unnamed Road",
         nameState: "Pleasant Camp, AK"
     },
     {
@@ -5579,23 +5478,10 @@ const campsiteData = [
         lat: 35.516667,
         lng: -102.78333,
         latlong: "{lat:35.516667, lng:-102.78333}",
-        state: "TX",
+        state: "Texas",
         zipCode: 79036,
         city: "Fritch",
         nameState: "Plum Creek Campgrounds, TX"
-    },
-    {
-        camp_id: "1827DF3F-1EC6-4A91-9A57-8BD6CEE2039B",
-        code: "cebr",
-        name: "Point Supreme Campground",
-        lat: 37.6103850583356,
-        lng: -112.830926692645,
-        latlong: "{lat:37.6103850583356, lng:-112.830926692645}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Point Supreme Campground"
     },
     {
         camp_id: "87AC7E6E-5020-4E63-ADC1-90BA6D3F73CE",
@@ -5604,11 +5490,11 @@ const campsiteData = [
         lat: 46.0633204470942,
         lng: -68.7548784505108,
         latlong: "{lat:46.0633204470942, lng:-68.7548784505108}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Pond Pitch Campsite"
+        state: "Maine",
+        zipCode: 4765,
+        city: "Patten",
+        address: "Unnamed Road",
+        nameState: "Pond Pitch Campsite, ME"
     },
     {
         camp_id: "344FA89E-5F8A-49FC-A1E2-7F584B355393",
@@ -5629,24 +5515,11 @@ const campsiteData = [
         lat: 38.5257080480139,
         lng: -107.314899399111,
         latlong: "{lat:38.5257080480139, lng:-107.314899399111}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Ponderosa Campground"
-    },
-    {
-        camp_id: "761D857A-D5D4-4FAE-8E66-952DE2052224",
-        code: "cato",
-        name: "Poplar Grove Youth Group Tent Campground",
-        lat: 39.6558291260591,
-        lng: -77.47561993940099,
-        latlong: "{lat:39.6558291260591, lng:-77.47561993940099}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Poplar Grove Youth Group Tent Campground"
+        state: "Colorado",
+        zipCode: 81230,
+        city: "Gunnison",
+        address: "29070-29174 US-50",
+        nameState: "Ponderosa Campground, CO"
     },
     {
         camp_id: "37A2C529-C63B-42B4-8AE1-DC0611B34690",
@@ -5655,23 +5528,10 @@ const campsiteData = [
         lat: 45.046024,
         lng: -86.116205,
         latlong: "{lat:45.046024, lng:-86.116205}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49630,
         city: "Empire",
         nameState: "Popple Campground - South Manitou Island, MI"
-    },
-    {
-        camp_id: "E725A627-101C-486D-92CE-D4798A742BB1",
-        code: "laro",
-        name: "Porcupine Bay Campground",
-        lat: 47.8945931616,
-        lng: -118.175135367,
-        latlong: "{lat:47.8945931616, lng:-118.175135367}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Porcupine Bay Campground"
     },
     {
         camp_id: "AFD1869B-19F1-4C47-9B9B-75A6625C7A6D",
@@ -5680,11 +5540,11 @@ const campsiteData = [
         lat: 37.8082397641,
         lng: -119.565691823,
         latlong: "{lat:37.8082397641, lng:-119.565691823}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Porcupine Flat Campground"
+        state: "California",
+        zipCode: 95389,
+        city: "Yosemite",
+        address: "Unnamed Road",
+        nameState: "Porcupine Flat Campground, CA"
     },
     {
         camp_id: "5EAA1F18-E950-4FE7-83D5-2D00F4471177",
@@ -5693,11 +5553,11 @@ const campsiteData = [
         lat: 46.497249,
         lng: -86.530046,
         latlong: "{lat:46.497249, lng:-86.530046}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Potato Patch Individual Backpacking Sites"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Potato Patch Individual Backpacking Sites, MI"
     },
     {
         camp_id: "9F588F02-DC9B-4573-B868-1A0B600BA1F3",
@@ -5706,23 +5566,10 @@ const campsiteData = [
         lat: 39.53094000000004,
         lng: -78.58897499999999,
         latlong: "{lat:39.53094000000004, lng:-78.58897499999999}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21740,
         city: "Hagerstown",
         nameState: "Potomac Forks Hiker-Biker Campsite, MD"
-    },
-    {
-        camp_id: "191F3831-AC51-41B2-8BAB-92A4D1BC7685",
-        code: "seki",
-        name: "Potwisha Campground",
-        lat: 36.5165078377,
-        lng: -118.800835364,
-        latlong: "{lat:36.5165078377, lng:-118.800835364}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Potwisha Campground"
     },
     {
         camp_id: "6C955DB8-0800-422C-8198-F6E1DC7BA46C",
@@ -5731,11 +5578,11 @@ const campsiteData = [
         lat: 32.3336736,
         lng: -86.7701881,
         latlong: "{lat:32.3336736, lng:-86.7701881}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Prairie Creek"
+        state: "Alabama",
+        zipCode: 36108,
+        city: "Montgomery",
+        address: "561 Booth Rd",
+        nameState: "Prairie Creek, AL"
     },
     {
         camp_id: "36C60550-B5BE-4D8D-AFA3-F87E545CA54A",
@@ -5744,7 +5591,7 @@ const campsiteData = [
         lat: 38.4746,
         lng: -111.3673,
         latlong: "{lat:38.4746, lng:-111.3673}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84775,
         city: "Torrey",
         nameState: "Primitive campsites at Cathedral Campground, UT"
@@ -5756,7 +5603,7 @@ const campsiteData = [
         lat: 38.0073,
         lng: -111.0846,
         latlong: "{lat:38.0073, lng:-111.0846}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84775,
         city: "Torrey",
         nameState: "Primitive campsites at Cedar Mesa Campground, UT"
@@ -5768,7 +5615,7 @@ const campsiteData = [
         lat: 38.603929,
         lng: -77.350905,
         latlong: "{lat:38.603929, lng:-77.350905}",
-        state: "VA",
+        state: "Virgina",
         zipCode: 22172,
         city: "Triangle",
         nameState: "Prince William Forest RV Campground, VA"
@@ -5780,7 +5627,7 @@ const campsiteData = [
         lat: 37.3394667448,
         lng: -91.4653730395,
         latlong: "{lat:37.3394667448, lng:-91.4653730395}",
-        state: "MO",
+        state: "Missouri",
         zipCode: 65466,
         city: "Eminence",
         nameState: "Pulltite Campground, MO"
@@ -5792,11 +5639,11 @@ const campsiteData = [
         lat: 48.3131,
         lng: -120.6581,
         latlong: "{lat:48.3131, lng:-120.6581}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Purple Point Campground"
+        state: "Washington",
+        zipCode: 98284,
+        city: "Sedro-Woolley",
+        address: "Unnamed Road",
+        nameState: "Purple Point Campground, WA"
     },
     {
         camp_id: "B1D9FE14-0809-4759-BD6D-03B98FEAA7F1",
@@ -5805,7 +5652,7 @@ const campsiteData = [
         lat: 39.535244000000006,
         lng: -78.46414900000002,
         latlong: "{lat:39.535244000000006, lng:-78.46414900000002}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21740,
         city: "Hagerstown",
         nameState: "Purslane Run Hiker-Biker Campsite, MD"
@@ -5817,7 +5664,7 @@ const campsiteData = [
         lat: 48.7226099101101,
         lng: -114.224273295349,
         latlong: "{lat:48.7226099101101, lng:-114.224273295349}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59936,
         city: "West Glacier",
         nameState: "Quartz Creek, MT"
@@ -5829,7 +5676,7 @@ const campsiteData = [
         lat: 47.6259946274311,
         lng: -124.017776901915,
         latlong: "{lat:47.6259946274311, lng:-124.017776901915}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98362,
         city: "Port Angeles",
         nameState: "Queets Campground, WA"
@@ -5841,7 +5688,7 @@ const campsiteData = [
         lat: 40.4956930727,
         lng: -109.174431587,
         latlong: "{lat:40.4956930727, lng:-109.174431587}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84035,
         city: "Jensen",
         nameState: "Rainbow Park Campground, UT"
@@ -5853,11 +5700,11 @@ const campsiteData = [
         lat: 38.4793732438395,
         lng: -107.231989784489,
         latlong: "{lat:38.4793732438395, lng:-107.231989784489}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Red Creek Campground"
+        state: "Colorado",
+        zipCode: 81230,
+        city: "Gunnison",
+        address: "29070-29174 US-50",
+        nameState: "Red Creek Campground, CO"
     },
     {
         camp_id: "D182E1F7-4066-45D4-AB4F-9C7E3F9E509C",
@@ -5866,9 +5713,10 @@ const campsiteData = [
         lat: 63.733359835872776,
         lng: -148.8940189729629,
         latlong: "{lat:63.733359835872776, lng:-148.8940189729629}",
-        state: "AK",
+        state: "Alaska",
         zipCode: 99755,
         city: "Denali Park",
+        address: "Unnamed Road",
         nameState: "Riley Creek, AK"
     },
     {
@@ -5878,11 +5726,11 @@ const campsiteData = [
         lat: 29.1801945038,
         lng: -102.955634488,
         latlong: "{lat:29.1801945038, lng:-102.955634488}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Rio Grande Village Campground"
+        state: "Texas",
+        zipCode: 79834,
+        city: "Big Bend",
+        address: "Big Bend National Park",
+        nameState: "Rio Grande Village Campground, TX"
     },
     {
         camp_id: "6134A1E6-4A8B-473E-9FA5-7DAEEAA3FD14",
@@ -5891,11 +5739,11 @@ const campsiteData = [
         lat: 29.1831689600897,
         lng: -102.963812137708,
         latlong: "{lat:29.1831689600897, lng:-102.963812137708}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Rio Grande Village RV"
+        state: "Texas",
+        zipCode: 79834,
+        city: "Big Bend",
+        address: "Big Bend National Park",
+        nameState: "Rio Grande Village RV, TX"
     },
     {
         camp_id: "02A81AB4-ECCC-4FA1-9A62-1769B1D3850C",
@@ -5904,7 +5752,7 @@ const campsiteData = [
         lat: 48.6945321731,
         lng: -113.522684368,
         latlong: "{lat:48.6945321731, lng:-113.522684368}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59936,
         city: "West Glacier",
         nameState: "Rising Sun, MT"
@@ -5916,23 +5764,10 @@ const campsiteData = [
         lat: 41.0961180995224,
         lng: -74.9666324999088,
         latlong: "{lat:41.0961180995224, lng:-74.9666324999088}",
-        state: "NJ",
+        state: "New Jersey",
         zipCode: 7881,
         city: "Walpack Township",
         nameState: "Rivers Bend Group Campground, NJ"
-    },
-    {
-        camp_id: "C44D4A8E-8C95-4360-BEC8-0C53C6BA4D35",
-        code: "obed",
-        name: "Rock Creek Campground",
-        lat: 36.06963726622717,
-        lng: -84.66287612915039,
-        latlong: "{lat:36.06963726622717, lng:-84.66287612915039}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Rock Creek Campground"
     },
     {
         camp_id: "9E82C5FE-EB28-41E1-B522-BD593426BE2C",
@@ -5941,11 +5776,11 @@ const campsiteData = [
         lat: 34.4957176633711,
         lng: -96.9877970977965,
         latlong: "{lat:34.4957176633711, lng:-96.9877970977965}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Rock Creek Campground"
+        state: "Oklahoma",
+        zipCode: 73086,
+        city: "Sulpher",
+        address: "Buckhorn Campground",
+        nameState: "Rock Creek Campground, OK"
     },
     {
         camp_id: "98A4D3E0-4207-4FAC-9B55-FB9942E063FF",
@@ -5954,7 +5789,7 @@ const campsiteData = [
         lat: 48.14543517120799,
         lng: -88.48932435367544,
         latlong: "{lat:48.14543517120799, lng:-88.48932435367544}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Rock Harbor Campground, MI"
@@ -5966,7 +5801,7 @@ const campsiteData = [
         lat: 36.8129880454,
         lng: -80.349391372,
         latlong: "{lat:36.8129880454, lng:-80.349391372}",
-        state: "VA",
+        state: "Virgina",
         zipCode: 24091,
         city: "Floyd",
         nameState: "Rocky Knob Campground, VA"
@@ -5990,11 +5825,11 @@ const campsiteData = [
         lat: 35.3647,
         lng: -101.24451,
         latlong: "{lat:35.3647, lng:-101.24451}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Rosita Flats"
+        state: "Texas",
+        zipCode: "79114",
+        city: "Fritch",
+        address: "Blue West Rd",
+        nameState: "Rosita Flats, TX"
     },
     {
         camp_id: "5D9FE77F-9C30-4B0C-A0F6-CD60E86B38FB",
@@ -6003,11 +5838,11 @@ const campsiteData = [
         lat: 29.573599,
         lng: -100.97746,
         latlong: "{lat:29.573599, lng:-100.97746}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Rough Canyon Camground"
+        state: "Texas",
+        zipCode: 78840,
+        city: "Del Rio",
+        address: "Unnamed Road",
+        nameState: "Rough Canyon Camground, TX"
     },
     {
         camp_id: "C5E40A77-D82E-4B36-8E69-444ED825F332",
@@ -6016,7 +5851,7 @@ const campsiteData = [
         lat: 37.2795173,
         lng: -91.4068743,
         latlong: "{lat:37.2795173, lng:-91.4068743}",
-        state: "MO",
+        state: "Missouri",
         zipCode: 65466,
         city: "Eminence",
         nameState: "Round Spring Campground, MO"
@@ -6028,11 +5863,11 @@ const campsiteData = [
         lat: 47.0069444,
         lng: -103.5055556,
         latlong: "{lat:47.0069444, lng:-103.5055556}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Roundup Group Horse Camp"
+        state: "North Dakota",
+        zipCode: 58645,
+        city: "Medora",
+        address: "Unnamed Road",
+        nameState: "Roundup Group Horse Camp, ND"
     },
     {
         camp_id: "150AF6E6-881A-4420-B535-7B31E3905549",
@@ -6041,7 +5876,7 @@ const campsiteData = [
         lat: 36.1227472999,
         lng: -92.5504511998,
         latlong: "{lat:36.1227472999, lng:-92.5504511998}",
-        state: "AR",
+        state: "Arkansas",
         zipCode: 72687,
         city: "Yellville",
         nameState: "Rush Campground, AR"
@@ -6053,7 +5888,7 @@ const campsiteData = [
         lat: 33.9830583394153,
         lng: -116.154390354172,
         latlong: "{lat:33.9830583394153, lng:-116.154390354172}",
-        state: "CA",
+        state: "California",
         zipCode: 92277,
         city: "Twentynine Palms",
         nameState: "Ryan Campground, CA"
@@ -6065,7 +5900,7 @@ const campsiteData = [
         lat: 39.10560328979322,
         lng: -108.73257527355514,
         latlong: "{lat:39.10560328979322, lng:-108.73257527355514}",
-        state: "CO",
+        state: "Colorado",
         zipCode: 81521,
         city: "Fruita",
         nameState: "Saddlehorn Campground, CO"
@@ -6083,26 +5918,13 @@ const campsiteData = [
         nameState: "Sage Creek Campground, SD"
     },
     {
-        camp_id: "8E2A7F5B-FD6E-4367-B2E8-CA5C41758EED",
-        code: "deva",
-        name: "Saline Valley Campground (Primitive)",
-        lat: 36.8056,
-        lng: -117.7738,
-        latlong: "{lat:36.8056, lng:-117.7738}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Saline Valley Campground (Primitive)"
-    },
-    {
         camp_id: "02998E8A-00C5-4873-A437-A0DD07B4F758",
         code: "chis",
         name: "San Miguel Island Campground",
         lat: 34.0407937961,
         lng: -120.349462009,
         latlong: "{lat:34.0407937961, lng:-120.349462009}",
-        state: "CA",
+        state: "California",
         zipCode: 93001,
         city: "San Miguel Island",
         nameState: "San Miguel Island Campground, CA"
@@ -6114,11 +5936,11 @@ const campsiteData = [
         lat: 29.467931458828826,
         lng: -100.95264780457677,
         latlong: "{lat:29.467931458828826, lng:-100.95264780457677}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "San Pedro Campground"
+        state: "Texas",
+        zipCode: 78840,
+        city: "Del Rio",
+        address: "Unnamed Road",
+        nameState: "San Pedro Campground, TX"
     },
     {
         camp_id: "1FCF67D3-6986-494F-8031-CE45E1B33796",
@@ -6127,9 +5949,10 @@ const campsiteData = [
         lat: 63.72255876395471,
         lng: -149.47374843040546,
         latlong: "{lat:63.72255876395471, lng:-149.47374843040546}",
-        state: "AK",
+        state: "Alaska",
         zipCode: 99755,
         city: "Denali Park",
+        address: "Unnamed Road",
         nameState: "Sanctuary River, AK"
     },
     {
@@ -6139,7 +5962,7 @@ const campsiteData = [
         lat: 45.8627572635709,
         lng: -68.6745398700671,
         latlong: "{lat:45.8627572635709, lng:-68.6745398700671}",
-        state: "ME",
+        state: "Maine",
         zipCode: 4765,
         city: "Patten",
         nameState: "Sandbank Stream Campground, ME"
@@ -6151,11 +5974,11 @@ const campsiteData = [
         lat: 40.4500495,
         lng: -73.9950964,
         latlong: "{lat:40.4500495, lng:-73.9950964}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Sandy Hook Camp Ground"
+        state: "New Jersey",
+        zipCode: 07732,
+        city: "Highlands",
+        address: "Camp Site Rd",
+        nameState: "Sandy Hook Camp Ground, NJ"
     },
     {
         camp_id: "41B38315-53CC-489C-B69D-11DA7878E491",
@@ -6164,11 +5987,11 @@ const campsiteData = [
         lat: 35.413937,
         lng: -101.333084,
         latlong: "{lat:35.413937, lng:-101.333084}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Sanford Yake Campground"
+        state: "Texas",
+        zipCode: "79114",
+        city: "Fritch",
+        address: "Blue West Rd",
+        nameState: "Sanford Yake Campground, TX"
     },
     {
         camp_id: "9AF9B28F-F268-4833-9DB5-C7657918720B",
@@ -6177,7 +6000,7 @@ const campsiteData = [
         lat: 33.4800017206,
         lng: -119.029461163,
         latlong: "{lat:33.4800017206, lng:-119.029461163}",
-        state: "CA",
+        state: "California",
         zipCode: 93001,
         city: "Santa Barbara Island",
         nameState: "Santa Barbara Island Campground, CA"
@@ -6189,7 +6012,7 @@ const campsiteData = [
         lat: 34.0110749692,
         lng: -119.66034054,
         latlong: "{lat:34.0110749692, lng:-119.66034054}",
-        state: "CA",
+        state: "California",
         zipCode: 93001,
         city: "Santa Cruz Island",
         nameState: "Santa Cruz Island Del Norte Backcountry Campground, CA"
@@ -6201,7 +6024,7 @@ const campsiteData = [
         lat: 34.0480064918,
         lng: -119.56112541,
         latlong: "{lat:34.0480064918, lng:-119.56112541}",
-        state: "CA",
+        state: "California",
         zipCode: 93001,
         city: "Santa Cruz Island",
         nameState: "Santa Cruz Island Scorpion Canyon Campground, CA"
@@ -6213,7 +6036,7 @@ const campsiteData = [
         lat: 33.885295509365314,
         lng: -120.11494221408148,
         latlong: "{lat:33.885295509365314, lng:-120.11494221408148}",
-        state: "CA",
+        state: "California",
         zipCode: 93001,
         city: "Santa Rosa Island",
         nameState: "Santa Rosa Island Backcountry Beach Camping, CA"
@@ -6225,7 +6048,7 @@ const campsiteData = [
         lat: 33.9918639133255,
         lng: -120.047413236541,
         latlong: "{lat:33.9918639133255, lng:-120.047413236541}",
-        state: "CA",
+        state: "California",
         zipCode: 93001,
         city: "Santa Rosa Island",
         nameState: "Santa Rosa Island Campground, CA"
@@ -6237,9 +6060,10 @@ const campsiteData = [
         lat: 63.7153041825,
         lng: -149.261655331,
         latlong: "{lat:63.7153041825, lng:-149.261655331}",
-        state: "AK",
+        state: "Alaska",
         zipCode: 99755,
         city: "Denali Park",
+        address: "Unnamed Road",
         nameState: "Savage River, AK"
     },
     {
@@ -6249,7 +6073,7 @@ const campsiteData = [
         lat: 44.3800630004,
         lng: -68.0665938,
         latlong: "{lat:44.3800630004, lng:-68.0665938}",
-        state: "ME",
+        state: "Maine",
         zipCode: 4693,
         city: "Winter Harbor",
         nameState: "Schoodic Woods Campground, ME"
@@ -6261,11 +6085,11 @@ const campsiteData = [
         lat: 30.7636395998859,
         lng: -81.4637252995094,
         latlong: "{lat:30.7636395998859, lng:-81.4637252995094}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Sea Camp Campground"
+        state: "Georgia",
+        zipCode: 31558,
+        city: "Cumberland",
+        address: "Cumberland Island",
+        nameState: "Sea Camp Campground, GA"
     },
     {
         camp_id: "B530C7AD-249F-4632-B78F-3CE8C9F3DBDA",
@@ -6274,7 +6098,7 @@ const campsiteData = [
         lat: 44.2415646998274,
         lng: -68.3051438998646,
         latlong: "{lat:44.2415646998274, lng:-68.3051438998646}",
-        state: "ME",
+        state: "Maine",
         zipCode: 4679,
         city: "Southwest Harbor",
         nameState: "Seawall Campground, ME"
@@ -6286,7 +6110,7 @@ const campsiteData = [
         lat: 36.7903277233654,
         lng: -118.672036191053,
         latlong: "{lat:36.7903277233654, lng:-118.672036191053}",
-        state: "CA",
+        state: "California",
         zipCode: 93633,
         city: "Kings Canyon National Park",
         nameState: "Sentinel Campground, CA"
@@ -6298,11 +6122,11 @@ const campsiteData = [
         lat: 46.6318360458,
         lng: -86.2284851039,
         latlong: "{lat:46.6318360458, lng:-86.2284851039}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Seven Mile Creek Group Backpacking Site"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Seven Mile Creek Group Backpacking Site, MI"
     },
     {
         camp_id: "4C464BE7-AA33-4E3F-BBF8-C731A4BC35D6",
@@ -6311,11 +6135,11 @@ const campsiteData = [
         lat: 46.619268,
         lng: -86.258742,
         latlong: "{lat:46.619268, lng:-86.258742}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Sevenmile Creek Individual Backpacking Sites"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Sevenmile Creek Individual Backpacking Sites, MI"
     },
     {
         camp_id: "9DC67D93-1C46-4A11-99F1-7F66DDC9F78E",
@@ -6324,9 +6148,10 @@ const campsiteData = [
         lat: 59.6590711,
         lng: -135.2678594,
         latlong: "{lat:59.6590711, lng:-135.2678594}",
-        state: "AK",
+        state: "Alaska",
         zipCode: 99840,
         city: "Skagway",
+        address: "Unnamed Road",
         nameState: "Sheep Camp, AK"
     },
     {
@@ -6336,9 +6161,10 @@ const campsiteData = [
         lat: 40.599876224,
         lng: -122.594808442,
         latlong: "{lat:40.599876224, lng:-122.594808442}",
-        state: "CA",
+        state: "California",
         zipCode: 96095,
         city: "Whiskeytown",
+        address: "Unnamed Road",
         nameState: "Sheep Camp, CA"
     },
     {
@@ -6348,7 +6174,7 @@ const campsiteData = [
         lat: 36.7921370625,
         lng: -118.680596692,
         latlong: "{lat:36.7921370625, lng:-118.680596692}",
-        state: "CA",
+        state: "California",
         zipCode: 93633,
         city: "Kings Canyon National Park",
         nameState: "Sheep Creek Campground, CA"
@@ -6360,7 +6186,7 @@ const campsiteData = [
         lat: 34.0000909432,
         lng: -116.120500649,
         latlong: "{lat:34.0000909432, lng:-116.120500649}",
-        state: "CA",
+        state: "California",
         zipCode: 92277,
         city: "Twentynine Palms",
         nameState: "Sheep Pass Group Campground, CA"
@@ -6372,11 +6198,11 @@ const campsiteData = [
         lat: 31.8887274040177,
         lng: -104.887056599334,
         latlong: "{lat:31.8887274040177, lng:-104.887056599334}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Shumard Canyon Wilderness Campground"
+        state: "Texas",
+        zipCode: 79847,
+        city: "Salt Flat",
+        address: "Unnamed Road",
+        nameState: "Shumard Canyon Wilderness Campground, TX"
     },
     {
         camp_id: "67AC9C0C-E0E8-406F-88D2-EF0BD3FC471D",
@@ -6385,7 +6211,7 @@ const campsiteData = [
         lat: 43.8414780508,
         lng: -110.613486984,
         latlong: "{lat:43.8414780508, lng:-110.613486984}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 83013,
         city: "Moran",
         nameState: "Signal Mountain Campground, WY"
@@ -6397,7 +6223,7 @@ const campsiteData = [
         lat: 47.890444970478676,
         lng: -88.99876148310005,
         latlong: "{lat:47.890444970478676, lng:-88.99876148310005}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Siskiwit Bay Campground, MI"
@@ -6409,7 +6235,7 @@ const campsiteData = [
         lat: 38.0399151096,
         lng: -122.82882744,
         latlong: "{lat:38.0399151096, lng:-122.82882744}",
-        state: "CA",
+        state: "California",
         zipCode: 94956,
         city: "Point Reyes Station",
         nameState: "Sky Campground, CA"
@@ -6421,7 +6247,7 @@ const campsiteData = [
         lat: 44.94884664880159,
         lng: -110.30687918305057,
         latlong: "{lat:44.94884664880159, lng:-110.30687918305057}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82190,
         city: "Yellowstone National Park",
         nameState: "Slough Creek Campground, WY"
@@ -6433,7 +6259,7 @@ const campsiteData = [
         lat: 35.55645004606256,
         lng: -83.31162547281389,
         latlong: "{lat:35.55645004606256, lng:-83.31162547281389}",
-        state: "NC",
+        state: "North Carolina",
         zipCode: 28719,
         city: "Cherokee",
         nameState: "Smokemont Campground, NC"
@@ -6445,7 +6271,7 @@ const campsiteData = [
         lat: 35.5598078457,
         lng: -83.3128015734,
         latlong: "{lat:35.5598078457, lng:-83.3128015734}",
-        state: "TN",
+        state: "Tennessee",
         zipCode: 37738,
         city: "Gatlinburg",
         nameState: "Smokemont Group Campground, TN"
@@ -6469,7 +6295,7 @@ const campsiteData = [
         lat: 48.7337074263939,
         lng: -118.060418094258,
         latlong: "{lat:48.7337074263939, lng:-118.060418094258}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99141,
         city: "Kettle Falls",
         nameState: "Snag Cove Campground, WA"
@@ -6481,11 +6307,11 @@ const campsiteData = [
         lat: 38.925381,
         lng: -114.251512,
         latlong: "{lat:38.925381, lng:-114.251512}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Snake Creek Primitive Campgrounds"
+        state: "Nevada",
+        zipCode: 89311,
+        city: "Baker",
+        address: "Unnamed Road",
+        nameState: "Snake Creek Primitive Campgrounds, NV"
     },
     {
         camp_id: "CFA62A52-1B27-4211-803E-07FFD2CBF0B8",
@@ -6494,7 +6320,7 @@ const campsiteData = [
         lat: 39.57169900000001,
         lng: -78.45321300000002,
         latlong: "{lat:39.57169900000001, lng:-78.45321300000002}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21740,
         city: "Hagerstown",
         nameState: "Sorrel Ridge Hiker-Biker Campsite, MD"
@@ -6506,7 +6332,7 @@ const campsiteData = [
         lat: 47.5660233967878,
         lng: -124.361387859395,
         latlong: "{lat:47.5660233967878, lng:-124.361387859395}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98362,
         city: "Port Angeles",
         nameState: "South Beach Campground, WA"
@@ -6518,11 +6344,11 @@ const campsiteData = [
         lat: 37.2037425996767,
         lng: -112.984191557778,
         latlong: "{lat:37.2037425996767, lng:-112.984191557778}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "South Campground"
+        state: "Utah",
+        zipCode: 84737,
+        city: "Hurricane",
+        address: "Watchman Campground",
+        nameState: "South Campground, UT"
     },
     {
         camp_id: "AF84F9D4-0115-4F06-9D20-8108F2CF44E2",
@@ -6531,7 +6357,7 @@ const campsiteData = [
         lat: 34.76055561111111,
         lng: -76.41222219444445,
         latlong: "{lat:34.76055561111111, lng:-76.41222219444445}",
-        state: "NC",
+        state: "North Carolina",
         zipCode: 28524,
         city: "Great Island",
         nameState: "South Core Banks -- Beach camping, NC"
@@ -6543,7 +6369,7 @@ const campsiteData = [
         lat: 36.3499844275717,
         lng: -118.765469823923,
         latlong: "{lat:36.3499844275717, lng:-118.765469823923}",
-        state: "CA",
+        state: "California",
         zipCode: 93271,
         city: "Sequoia National Park",
         nameState: "South Fork Campground, CA"
@@ -6555,7 +6381,7 @@ const campsiteData = [
         lat: 47.970686098959334,
         lng: -88.97153792382892,
         latlong: "{lat:47.970686098959334, lng:-88.97153792382892}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "South Lake Desor Campground, MI"
@@ -6567,7 +6393,7 @@ const campsiteData = [
         lat: 38.54381032355281,
         lng: -107.689424061934,
         latlong: "{lat:38.54381032355281, lng:-107.689424061934}",
-        state: "CO",
+        state: "Colorado",
         zipCode: 81401,
         city: "Montrose",
         nameState: "South Rim Campground, CO"
@@ -6579,7 +6405,7 @@ const campsiteData = [
         lat: 40.4366004217,
         lng: -121.532640953,
         latlong: "{lat:40.4366004217, lng:-121.532640953}",
-        state: "CA",
+        state: "California",
         zipCode: 96063,
         city: "Mineral",
         nameState: "Southwest Walk-In Campground, CA"
@@ -6591,7 +6417,7 @@ const campsiteData = [
         lat: 40.4405279561,
         lng: -109.252312611,
         latlong: "{lat:40.4405279561, lng:-109.252312611}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84035,
         city: "Jensen",
         nameState: "Split Mountain Group Campground, UT"
@@ -6603,7 +6429,7 @@ const campsiteData = [
         lat: 48.605617416126826,
         lng: -113.88541339633849,
         latlong: "{lat:48.605617416126826, lng:-113.88541339633849}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59936,
         city: "West Glacier",
         nameState: "Sprague Creek Campground, MT"
@@ -6615,7 +6441,7 @@ const campsiteData = [
         lat: 47.933040826786495,
         lng: -118.94004952739897,
         latlong: "{lat:47.933040826786495, lng:-118.94004952739897}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99133,
         city: "Grand Coulee",
         nameState: "Spring Canyon Campground, WA"
@@ -6627,7 +6453,7 @@ const campsiteData = [
         lat: 47.934625,
         lng: -118.94087,
         latlong: "{lat:47.934625, lng:-118.94087}",
-        state: "WA",
+        state: "Washington",
         zipCode: 99133,
         city: "Grand Coulee",
         nameState: "Spring Canyon Group Sites, WA"
@@ -6639,7 +6465,7 @@ const campsiteData = [
         lat: 36.0299778999,
         lng: -92.5844677011,
         latlong: "{lat:36.0299778999, lng:-92.5844677011}",
-        state: "AR",
+        state: "Arkansas",
         zipCode: 72639,
         city: "Harriet",
         nameState: "Spring Creek Campground, AR"
@@ -6651,11 +6477,11 @@ const campsiteData = [
         lat: 39.564844337461764,
         lng: -78.71788171349304,
         latlong: "{lat:39.564844337461764, lng:-78.71788171349304}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Spring Gap Campground"
+        state: "Maryland",
+        zipCode: 21740,
+        city: "Hagerstown",
+        address: "Unnamed Road",
+        nameState: "Spring Gap Campground, MD"
     },
     {
         camp_id: "8FFC1412-19CB-4AE7-9860-2BBC36799440",
@@ -6664,7 +6490,7 @@ const campsiteData = [
         lat: 32.204179,
         lng: -110.532126,
         latlong: "{lat:32.204179, lng:-110.532126}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 85730,
         city: "Tucson",
         nameState: "Spud Rock Spring, AZ"
@@ -6676,11 +6502,11 @@ const campsiteData = [
         lat: 29.550551582208,
         lng: -101.020437230493,
         latlong: "{lat:29.550551582208, lng:-101.020437230493}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Spur 406 Campground"
+        state: "Texas",
+        zipCode: 78840,
+        city: "Del Rio",
+        address: "Unnamed Road",
+        nameState: "Spur 406 Campground, TX"
     },
     {
         camp_id: "E4607DC5-8154-4BE3-989D-66FAE589B686",
@@ -6689,7 +6515,7 @@ const campsiteData = [
         lat: 48.7516790329555,
         lng: -113.44240520291879,
         latlong: "{lat:48.7516790329555, lng:-113.44240520291879}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59936,
         city: "West Glacier",
         nameState: "St. Mary, MT"
@@ -6701,11 +6527,11 @@ const campsiteData = [
         lat: 30.80667,
         lng: -81.45139,
         latlong: "{lat:30.80667, lng:-81.45139}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Stafford Beach Campground"
+        state: "Georgia",
+        zipCode: 31558,
+        city: "Cumberland",
+        address: "Cumberland Island",
+        nameState: "Stafford Beach Campground, GA"
     },
     {
         camp_id: "B4603AC8-E7B9-46B2-B717-A8C8183562F8",
@@ -6714,11 +6540,11 @@ const campsiteData = [
         lat: 46.0872701025,
         lng: -68.7779046814,
         latlong: "{lat:46.0872701025, lng:-68.7779046814}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Stair Falls Campsite"
+        state: "Maine",
+        zipCode: 4765,
+        city: "Patten",
+        address: "Unnamed Road",
+        nameState: "Stair Falls Campsite, ME"
     },
     {
         camp_id: "368E0896-3B0D-4331-8882-5FBABBEF7739",
@@ -6727,7 +6553,7 @@ const campsiteData = [
         lat: 47.5153731343,
         lng: -123.32966806,
         latlong: "{lat:47.5153731343, lng:-123.32966806}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98548,
         city: "Hoodsport",
         nameState: "Staircase Campground, WA"
@@ -6739,7 +6565,7 @@ const campsiteData = [
         lat: 37.498985,
         lng: -110.699117,
         latlong: "{lat:37.498985, lng:-110.699117}",
-        state: "UT",
+        state: "Utah",
         zipCode: 0,
         city: "Lake Powell",
         nameState: "Stanton Creek Primitive Camping Area, UT"
@@ -6751,7 +6577,7 @@ const campsiteData = [
         lat: 36.5458497459104,
         lng: -84.6352172739667,
         latlong: "{lat:36.5458497459104, lng:-84.6352172739667}",
-        state: "TN",
+        state: "Tennessee",
         zipCode: 37841,
         city: "Oneida",
         nameState: "Station Camp Campground, TN"
@@ -6763,7 +6589,7 @@ const campsiteData = [
         lat: 36.0400288995,
         lng: -93.3463188996,
         latlong: "{lat:36.0400288995, lng:-93.3463188996}",
-        state: "AR",
+        state: "Arkansas",
         zipCode: 72742,
         city: "Ponca",
         nameState: "Steel Creek Campground, AR"
@@ -6775,11 +6601,11 @@ const campsiteData = [
         lat: 38.4869233764467,
         lng: -107.09112479954,
         latlong: "{lat:38.4869233764467, lng:-107.09112479954}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Stevens Creek Campground"
+        state: "Colorado",
+        zipCode: 81230,
+        city: "Gunnison",
+        address: "29070-29174 US-50",
+        nameState: "Stevens Creek Campground, CO"
     },
     {
         camp_id: "010134D2-1B0F-4A1E-85FF-53137A8996CF",
@@ -6788,7 +6614,7 @@ const campsiteData = [
         lat: 39.583598999999985,
         lng: -78.397693,
         latlong: "{lat:39.583598999999985, lng:-78.397693}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21766,
         city: "Little Orleans",
         nameState: "Stickpile Hill Hiker-Biker Campsite, MD"
@@ -6800,7 +6626,7 @@ const campsiteData = [
         lat: 37.933636,
         lng: -81.06380000000001,
         latlong: "{lat:37.933636, lng:-81.06380000000001}",
-        state: "WV",
+        state: "West Virgina",
         zipCode: 25963,
         city: "Thurmond",
         nameState: "Stone Cliff, WV"
@@ -6812,7 +6638,7 @@ const campsiteData = [
         lat: 36.607885875,
         lng: -117.148116042,
         latlong: "{lat:36.607885875, lng:-117.148116042}",
-        state: "CA",
+        state: "California",
         zipCode: 92328,
         city: "Stovepipe Wells",
         nameState: "Stovepipe Wells Campground, CA"
@@ -6824,7 +6650,7 @@ const campsiteData = [
         lat: 40.4946207961,
         lng: -121.424949424,
         latlong: "{lat:40.4946207961, lng:-121.424949424}",
-        state: "CA",
+        state: "California",
         zipCode: 96063,
         city: "Mineral",
         nameState: "Summit Lake North Campground, CA"
@@ -6836,7 +6662,7 @@ const campsiteData = [
         lat: 40.4904121913623,
         lng: -121.424648255834,
         latlong: "{lat:40.4904121913623, lng:-121.424648255834}",
-        state: "CA",
+        state: "California",
         zipCode: 96063,
         city: "Mineral",
         nameState: "Summit Lake South Campground, CA"
@@ -6848,7 +6674,7 @@ const campsiteData = [
         lat: 37.6222868282,
         lng: -112.174839007,
         latlong: "{lat:37.6222868282, lng:-112.174839007}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84764,
         city: "Bryce",
         nameState: "Sunset Campground, UT"
@@ -6860,7 +6686,7 @@ const campsiteData = [
         lat: 36.4588438120067,
         lng: -116.863818528564,
         latlong: "{lat:36.4588438120067, lng:-116.863818528564}",
-        state: "CA",
+        state: "California",
         zipCode: 92328,
         city: "Furnace Creek",
         nameState: "Sunset Campground, CA"
@@ -6872,7 +6698,7 @@ const campsiteData = [
         lat: 36.7373684358,
         lng: -118.965180289,
         latlong: "{lat:36.7373684358, lng:-118.965180289}",
-        state: "CA",
+        state: "California",
         zipCode: 93633,
         city: "Grant Grove",
         nameState: "Sunset Campground, CA"
@@ -6884,7 +6710,7 @@ const campsiteData = [
         lat: 36.6756921508332,
         lng: -110.542683230592,
         latlong: "{lat:36.6756921508332, lng:-110.542683230592}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 86054,
         city: "Shonto",
         nameState: "Sunset View Campground, AZ"
@@ -6896,7 +6722,7 @@ const campsiteData = [
         lat: 39.03100200000001,
         lng: -77.244579,
         latlong: "{lat:39.03100200000001, lng:-77.244579}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 20854,
         city: "Potomac",
         nameState: "Swains Lock Hiker-Biker Campsite, MD"
@@ -6908,11 +6734,11 @@ const campsiteData = [
         lat: 37.7517175326,
         lng: -119.736234028,
         latlong: "{lat:37.7517175326, lng:-119.736234028}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Tamarack Flat Campground"
+        state: "California",
+        zipCode: 95389,
+        city: "Yosemite",
+        address: "Unnamed Road",
+        nameState: "Tamarack Flat Campground, CA"
     },
     {
         camp_id: "A3196D33-288F-4484-A075-33B8D2695937",
@@ -6921,11 +6747,11 @@ const campsiteData = [
         lat: 31.9368597503931,
         lng: -104.850488488205,
         latlong: "{lat:31.9368597503931, lng:-104.850488488205}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Tejas Wilderness Campground"
+        state: "Texas",
+        zipCode: 79847,
+        city: "Salt Flat",
+        address: "Unnamed Road",
+        nameState: "Tejas Wilderness Campground, TX"
     },
     {
         camp_id: "6C239EBB-CDA7-4D9E-8AE0-D31446911917",
@@ -6934,9 +6760,10 @@ const campsiteData = [
         lat: 63.6704983524783,
         lng: -149.580973783265,
         latlong: "{lat:63.6704983524783, lng:-149.580973783265}",
-        state: "AK",
+        state: "Alaska",
         zipCode: 99755,
         city: "Denali Park",
+        address: "Unnamed Road",
         nameState: "Teklanika River, AK"
     },
     {
@@ -6946,7 +6773,7 @@ const campsiteData = [
         lat: 36.0303182900411,
         lng: -114.324852270233,
         latlong: "{lat:36.0303182900411, lng:-114.324852270233}",
-        state: "NV",
+        state: "Nevada",
         zipCode: 89005,
         city: "Boulder City",
         nameState: "Temple Bar Campground, NV"
@@ -6958,7 +6785,7 @@ const campsiteData = [
         lat: 36.4588989387814,
         lng: -116.852666945035,
         latlong: "{lat:36.4588989387814, lng:-116.852666945035}",
-        state: "CA",
+        state: "California",
         zipCode: 92328,
         city: "Furnace Creek",
         nameState: "Texas Springs Campground, CA"
@@ -6970,7 +6797,7 @@ const campsiteData = [
         lat: 37.902,
         lng: -81.032211,
         latlong: "{lat:37.902, lng:-81.032211}",
-        state: "WV",
+        state: "West Virgina",
         zipCode: 25936,
         city: "Thurmond",
         nameState: "Thayer Campground, WV"
@@ -6982,7 +6809,7 @@ const campsiteData = [
         lat: 37.022068,
         lng: -76.298918,
         latlong: "{lat:37.022068, lng:-76.298918}",
-        state: "VA",
+        state: "Virgina",
         zipCode: 23651,
         city: "Fort Monroe",
         nameState: "The Colonies RV and Travel Park, VA"
@@ -6994,7 +6821,7 @@ const campsiteData = [
         lat: 38.1464920023084,
         lng: -109.801330606314,
         latlong: "{lat:38.1464920023084, lng:-109.801330606314}",
-        state: "UT",
+        state: "Utah",
         zipCode: 84532,
         city: "Moab",
         nameState: "The Needles Campground, UT"
@@ -7006,11 +6833,11 @@ const campsiteData = [
         lat: 34.4595338826992,
         lng: -97.0192284846189,
         latlong: "{lat:34.4595338826992, lng:-97.0192284846189}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "The Point Campground"
+        state: "Oklahoma",
+        zipCode: 73086,
+        city: "Sulpher",
+        address: "Buckhorn Campground",
+        nameState: "The Point Campground, OK"
     },
     {
         camp_id: "DF55B96A-D2A8-4DF7-8D54-75BD36C266E2",
@@ -7019,7 +6846,7 @@ const campsiteData = [
         lat: 36.236917,
         lng: -117.072172,
         latlong: "{lat:36.236917, lng:-117.072172}",
-        state: "CA",
+        state: "California",
         zipCode: 92328,
         city: "Death Valley",
         nameState: "Thorndike Campground (Primitive), CA"
@@ -7031,7 +6858,7 @@ const campsiteData = [
         lat: 48.12385213393805,
         lng: -88.52961948526877,
         latlong: "{lat:48.12385213393805, lng:-88.52961948526877}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Three Mile Campground, MI"
@@ -7043,7 +6870,7 @@ const campsiteData = [
         lat: 40.379225136469785,
         lng: -105.85275135737629,
         latlong: "{lat:40.379225136469785, lng:-105.85275135737629}",
-        state: "CO",
+        state: "Colorado",
         zipCode: 80447,
         city: "Grand Lake",
         nameState: "Timber Creek Campground, CO"
@@ -7055,7 +6882,7 @@ const campsiteData = [
         lat: 48.05080649877427,
         lng: -88.82111715996166,
         latlong: "{lat:48.05080649877427, lng:-88.82111715996166}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Todd Harbor Campground, MI"
@@ -7067,7 +6894,7 @@ const campsiteData = [
         lat: 38.163318,
         lng: -122.915392,
         latlong: "{lat:38.163318, lng:-122.915392}",
-        state: "CA",
+        state: "California",
         zipCode: 94956,
         city: "Point Reyes Station",
         nameState: "Tomales Bay Boat-in Camping, CA"
@@ -7079,7 +6906,7 @@ const campsiteData = [
         lat: 48.12939102951485,
         lng: -88.5032933491924,
         latlong: "{lat:48.12939102951485, lng:-88.5032933491924}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Tookers Island Campground, MI"
@@ -7091,7 +6918,7 @@ const campsiteData = [
         lat: 44.8895498483,
         lng: -110.389475883,
         latlong: "{lat:44.8895498483, lng:-110.389475883}",
-        state: "WY",
+        state: "Wyoming",
         zipCode: 82190,
         city: "Yellowstone National Park",
         nameState: "Tower Fall Campground, WY"
@@ -7103,7 +6930,7 @@ const campsiteData = [
         lat: 39.52446099999999,
         lng: -78.538643,
         latlong: "{lat:39.52446099999999, lng:-78.538643}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21740,
         city: "Hagerstown",
         nameState: "Town Creek Hiker-Biker Campsite, MD"
@@ -7115,7 +6942,7 @@ const campsiteData = [
         lat: 36.052812,
         lng: -112.115001,
         latlong: "{lat:36.052812, lng:-112.115001}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 86023,
         city: "Grand Canyon",
         nameState: "Trailer Village RV Park - South Rim, AZ"
@@ -7127,11 +6954,11 @@ const campsiteData = [
         lat: 46.5876435919,
         lng: -86.3154888155,
         latlong: "{lat:46.5876435919, lng:-86.3154888155}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Trappers Lake Group Backpacking Site"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Trappers Lake Group Backpacking Site, MI"
     },
     {
         camp_id: "B1FD9610-9535-46B7-901A-5B230DBAC3E5",
@@ -7140,11 +6967,11 @@ const campsiteData = [
         lat: 46.586517,
         lng: -86.316522,
         latlong: "{lat:46.586517, lng:-86.316522}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Trappers Lake Individual Backpacking Sites"
+        state: "Michigan",
+        zipCode: 49839,
+        city: "Grand Marais",
+        address: "Unnamed Road",
+        nameState: "Trappers Lake Individual Backpacking Sites, MI"
     },
     {
         camp_id: "793AAB2C-885E-44F7-A0A1-D64B37291338",
@@ -7153,11 +6980,11 @@ const campsiteData = [
         lat: 37.8744752916,
         lng: -119.353650884,
         latlong: "{lat:37.8744752916, lng:-119.353650884}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Tuolumne Meadows Campground"
+        state: "California",
+        zipCode: 95389,
+        city: "Yosemite",
+        address: "Unnamed Road",
+        nameState: "Tuolumne Meadows Campground, CA"
     },
     {
         camp_id: "456366E0-A589-4C3A-8468-15CAAC114C0B",
@@ -7166,9 +6993,10 @@ const campsiteData = [
         lat: 38.581601403,
         lng: -77.372747344,
         latlong: "{lat:38.581601403, lng:-77.372747344}",
-        state: "VA",
-        zipCode: 22172,
-        city: "Virginia",
+        state: "Virgina",
+        zipCode: 55347,
+        city: "Triangle",
+        address: "Unnamed Road",
         nameState: "Turkey Run Ridge Group Campground, VA"
     },
     {
@@ -7178,7 +7006,7 @@ const campsiteData = [
         lat: 39.13928799999999,
         lng: -77.51567299999999,
         latlong: "{lat:39.13928799999999, lng:-77.51567299999999}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 20837,
         city: "Poolesville",
         nameState: "Turtle Run Hiker-Biker Campsite, MD"
@@ -7190,9 +7018,10 @@ const campsiteData = [
         lat: 46.6408,
         lng: -86.21583,
         latlong: "{lat:46.6408, lng:-86.21583}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49839,
         city: "Grand Marais",
+        address: "Unnamed Road",
         nameState: "Twelvemile Beach Campground, MI"
     },
     {
@@ -7202,7 +7031,7 @@ const campsiteData = [
         lat: 31.9406810816067,
         lng: -112.810941742389,
         latlong: "{lat:31.9406810816067, lng:-112.810941742389}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 85321,
         city: "Ajo",
         nameState: "Twin Peaks Campground, AZ"
@@ -7214,7 +7043,7 @@ const campsiteData = [
         lat: 48.492114971,
         lng: -113.36407124,
         latlong: "{lat:48.492114971, lng:-113.36407124}",
-        state: "MT",
+        state: "Montana",
         zipCode: 59936,
         city: "West Glacier",
         nameState: "Two Medicine, MT"
@@ -7226,7 +7055,7 @@ const campsiteData = [
         lat: 37.189929,
         lng: -91.276297,
         latlong: "{lat:37.189929, lng:-91.276297}",
-        state: "MO",
+        state: "Missouri",
         zipCode: 65466,
         city: "Eminence",
         nameState: "Two Rivers Campground, MO"
@@ -7238,7 +7067,7 @@ const campsiteData = [
         lat: 35.9868835993,
         lng: -92.7595278001,
         latlong: "{lat:35.9868835993, lng:-92.7595278001}",
-        state: "AR",
+        state: "Arkansas",
         zipCode: 72675,
         city: "St. Joe",
         nameState: "Tyler Bend Campground, AR"
@@ -7250,7 +7079,7 @@ const campsiteData = [
         lat: 46.113820001804086,
         lng: -68.79790999965547,
         latlong: "{lat:46.113820001804086, lng:-68.79790999965547}",
-        state: "ME",
+        state: "Maine",
         zipCode: 4765,
         city: "Patten",
         nameState: "Upper East Branch Campsite, ME"
@@ -7262,7 +7091,7 @@ const campsiteData = [
         lat: 48.683276868130136,
         lng: -121.27077652544762,
         latlong: "{lat:48.683276868130136, lng:-121.27077652544762}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98284,
         city: "Sedro-Woolley",
         nameState: "Upper Goodell Creek Group Campsite, WA"
@@ -7274,11 +7103,11 @@ const campsiteData = [
         lat: 39.0136,
         lng: -114.24776,
         latlong: "{lat:39.0136, lng:-114.24776}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Upper Lehman Campground"
+        state: "Nevada",
+        zipCode: 89311,
+        city: "Baker",
+        address: "Unnamed Road",
+        nameState: "Upper Lehman Campground, NV"
     },
     {
         camp_id: "9D5B57D0-793A-4C2B-B620-5B561EDFC031",
@@ -7287,7 +7116,7 @@ const campsiteData = [
         lat: 37.7384294727,
         lng: -119.564411225,
         latlong: "{lat:37.7384294727, lng:-119.564411225}",
-        state: "CA",
+        state: "California",
         zipCode: 95389,
         city: "Yosemite",
         nameState: "Upper Pines Campground, CA"
@@ -7299,11 +7128,11 @@ const campsiteData = [
         lat: 33.2304987885,
         lng: -108.260995929,
         latlong: "{lat:33.2304987885, lng:-108.260995929}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Upper Scorpion Campground"
+        state: "New Meico",
+        zipCode: 88061,
+        city: "Silver City",
+        address: "NM-15",
+        nameState: "Upper Scorpion Campground, NM"
     },
     {
         camp_id: "023C3AE0-CA2D-42B0-8F0A-A3106336BFAA",
@@ -7324,7 +7153,7 @@ const campsiteData = [
         lat: 45.1281213,
         lng: -85.9775979,
         latlong: "{lat:45.1281213, lng:-85.9775979}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49630,
         city: "Empire",
         nameState: "Village Campground - North Manitou Island, MI"
@@ -7336,7 +7165,7 @@ const campsiteData = [
         lat: 36.9967066553,
         lng: -111.499386112,
         latlong: "{lat:36.9967066553, lng:-111.499386112}",
-        state: "AZ",
+        state: "Arizona",
         zipCode: 86040,
         city: "Page",
         nameState: "Wahweap Campground & RV Park, AZ"
@@ -7348,7 +7177,7 @@ const campsiteData = [
         lat: 37.84525,
         lng: -80.98518,
         latlong: "{lat:37.84525, lng:-80.98518}",
-        state: "WV",
+        state: "West Virgina",
         zipCode: 25907,
         city: "Prince",
         nameState: "War Ridge/Backus Mountain Campground, WV"
@@ -7360,7 +7189,7 @@ const campsiteData = [
         lat: 40.4428300456,
         lng: -121.394565261,
         latlong: "{lat:40.4428300456, lng:-121.394565261}",
-        state: "CA",
+        state: "California",
         zipCode: 96020,
         city: "Chester",
         nameState: "Warner Valley Campground, CA"
@@ -7372,7 +7201,7 @@ const campsiteData = [
         lat: 47.91621695055476,
         lng: -89.15457402986016,
         latlong: "{lat:47.91621695055476, lng:-89.15457402986016}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Washington Creek Campground, MI"
@@ -7384,11 +7213,11 @@ const campsiteData = [
         lat: 45.9329028831785,
         lng: -68.7146921403937,
         latlong: "{lat:45.9329028831785, lng:-68.7146921403937}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Wassataquoik Campsite"
+        state: "Maine",
+        zipCode: 4765,
+        city: "Patten",
+        address: "Unnamed Road",
+        nameState: "Wassataquoik Campsite, ME"
     },
     {
         camp_id: "6865D5F5-853C-4A07-9CF4-FC9467F37F85",
@@ -7397,11 +7226,11 @@ const campsiteData = [
         lat: 45.9328416267,
         lng: -68.7155631045,
         latlong: "{lat:45.9328416267, lng:-68.7155631045}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Wassataquoik Lean-to"
+        state: "Maine",
+        zipCode: 4765,
+        city: "Patten",
+        address: "Unnamed Road",
+        nameState: "Wassataquoik Lean-to, ME"
     },
     {
         camp_id: "9B6BFDE9-F02F-473C-8826-9531A937758F",
@@ -7423,11 +7252,11 @@ const campsiteData = [
         lat: 37.1975852245451,
         lng: -112.987306895859,
         latlong: "{lat:37.1975852245451, lng:-112.987306895859}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Watchman Campground"
+        state: "Utah",
+        zipCode: 84737,
+        city: "Hurricane",
+        address: "Watchman Campground",
+        nameState: "Watchman Campground, UT"
     },
     {
         camp_id: "F7CA3802-BD31-4C93-9C3C-A4097B955EE6",
@@ -7436,7 +7265,7 @@ const campsiteData = [
         lat: 37.5447206588165,
         lng: -119.672746461794,
         latlong: "{lat:37.5447206588165, lng:-119.672746461794}",
-        state: "CA",
+        state: "California",
         zipCode: 95389,
         city: "Yosemite",
         nameState: "Wawona Campground, CA"
@@ -7448,7 +7277,7 @@ const campsiteData = [
         lat: 45.003301,
         lng: -86.110347,
         latlong: "{lat:45.003301, lng:-86.110347}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49630,
         city: "Empire",
         nameState: "Weather Station Campground - South Manitou Island, MI"
@@ -7460,7 +7289,7 @@ const campsiteData = [
         lat: 48.063272054903905,
         lng: -88.72467586394845,
         latlong: "{lat:48.063272054903905, lng:-88.72467586394845}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "West Chickenbone Campground, MI"
@@ -7472,11 +7301,11 @@ const campsiteData = [
         lat: 39.01091,
         lng: -114.3044,
         latlong: "{lat:39.01091, lng:-114.3044}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Wheeler Peak Campground"
+        state: "Nevada",
+        zipCode: 89311,
+        city: "Baker",
+        address: "Unnamed Road",
+        nameState: "Wheeler Peak Campground, NV"
     },
     {
         camp_id: "35E0D115-7743-49C8-9D9D-3A347BCF41CB",
@@ -7485,7 +7314,7 @@ const campsiteData = [
         lat: 44.737174,
         lng: -86.08701,
         latlong: "{lat:44.737174, lng:-86.08701}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49640,
         city: "Honor",
         nameState: "White Pine Backcountry Campground, MI"
@@ -7497,7 +7326,7 @@ const campsiteData = [
         lat: 46.9024098268932,
         lng: -121.641814850334,
         latlong: "{lat:46.9024098268932, lng:-121.641814850334}",
-        state: "WA",
+        state: "Washington",
         zipCode: 98304,
         city: "Ashford",
         nameState: "White River Campground, WA"
@@ -7509,7 +7338,7 @@ const campsiteData = [
         lat: 39.67753999999999,
         lng: -78.20979399999999,
         latlong: "{lat:39.67753999999999, lng:-78.20979399999999}",
-        state: "MD",
+        state: "Maryland",
         zipCode: 21750,
         city: "Hancock",
         nameState: "White Rock Hiker-Biker Campsite, MD"
@@ -7521,7 +7350,7 @@ const campsiteData = [
         lat: 33.985738,
         lng: -116.0166743,
         latlong: "{lat:33.985738, lng:-116.0166743}",
-        state: "CA",
+        state: "California",
         zipCode: 92277,
         city: "Twentynine Palms",
         nameState: "White Tank Campground, CA"
@@ -7533,11 +7362,11 @@ const campsiteData = [
         lat: 37.8703497149,
         lng: -119.64834666,
         latlong: "{lat:37.8703497149, lng:-119.64834666}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "White Wolf Campground"
+        state: "California",
+        zipCode: 95389,
+        city: "Yosemite",
+        address: "Unnamed Road",
+        nameState: "White Wolf Campground, CA"
     },
     {
         camp_id: "938474DC-C66E-4577-A107-0628E0C8E4C0",
@@ -7546,7 +7375,7 @@ const campsiteData = [
         lat: 37.9701531069231,
         lng: -122.79068822647832,
         latlong: "{lat:37.9701531069231, lng:-122.79068822647832}",
-        state: "CA",
+        state: "California",
         zipCode: 94956,
         city: "Point Reyes Station",
         nameState: "Wildcat Campground, CA"
@@ -7558,7 +7387,7 @@ const campsiteData = [
         lat: 20.717921296462112,
         lng: -156.14203614585165,
         latlong: "{lat:20.717921296462112, lng:-156.14203614585165}",
-        state: "HI",
+        state: "Hawaii",
         zipCode: 96790,
         city: "Kula",
         nameState: "Wilderness Cabins, HI"
@@ -7570,11 +7399,11 @@ const campsiteData = [
         lat: 31.9978400344,
         lng: -104.770314315,
         latlong: "{lat:31.9978400344, lng:-104.770314315}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Wilderness Ridge Wilderness Campground"
+        state: "Texas",
+        zipCode: 79847,
+        city: "Salt Flat",
+        address: "Unnamed Road",
+        nameState: "Wilderness Ridge Wilderness Campground, TX"
     },
     {
         camp_id: "87CACD0F-E22C-4DED-9CA5-B6E1F08857CE",
@@ -7583,7 +7412,7 @@ const campsiteData = [
         lat: null,
         lng: null,
         latlong: "",
-        state: "VA",
+        state: "Virgina",
         zipCode: 24248,
         city: "Ewing",
         nameState: "Wilderness Road Campground, VA"
@@ -7595,7 +7424,7 @@ const campsiteData = [
         lat: 20.73951720216006,
         lng: -156.2186197874393,
         latlong: "{lat:20.73951720216006, lng:-156.2186197874393}",
-        state: "HI",
+        state: "Hawaii",
         zipCode: 96790,
         city: "Kula",
         nameState: "Wilderness Tent Sites, HI"
@@ -7607,7 +7436,7 @@ const campsiteData = [
         lat: 36.2658396358283,
         lng: -117.188544129679,
         latlong: "{lat:36.2658396358283, lng:-117.188544129679}",
-        state: "CA",
+        state: "California",
         zipCode: 92328,
         city: "Death Valley",
         nameState: "Wildrose Campground, CA"
@@ -7619,9 +7448,10 @@ const campsiteData = [
         lat: 63.4539821769859,
         lng: -150.86162174868446,
         latlong: "{lat:63.4539821769859, lng:-150.86162174868446}",
-        state: "AK",
+        state: "Alaska",
         zipCode: 99755,
         city: "Denali Park",
+        address: "Unnamed Road",
         nameState: "Wonder Lake, AK"
     },
     {
@@ -7631,7 +7461,7 @@ const campsiteData = [
         lat: 48.00853512034862,
         lng: -88.73960933467993,
         latlong: "{lat:48.00853512034862, lng:-88.73960933467993}",
-        state: "MI",
+        state: "Michigan",
         zipCode: 49931,
         city: "Houghton",
         nameState: "Wood Lake Campground, MI"
@@ -7643,7 +7473,7 @@ const campsiteData = [
         lat: 35.9703114997,
         lng: -92.8805197992,
         latlong: "{lat:35.9703114997, lng:-92.8805197992}",
-        state: "AR",
+        state: "Arkansas",
         zipCode: 72675,
         city: "St. Joe",
         nameState: "Woolum, AR"
@@ -7655,11 +7485,11 @@ const campsiteData = [
         lat: 30.8492,
         lng: -81.4478,
         latlong: "{lat:30.8492, lng:-81.4478}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Yankee Paradise Wilderness Campsite"
+        state: "Georgia",
+        zipCode: 31558,
+        city: "Cumberland",
+        address: "Cumberland Island",
+        nameState: "Yankee Paradise Wilderness Campsite, GA"
     },
     {
         camp_id: "025AFF52-097D-4754-8952-5A554386CE62",
@@ -7668,11 +7498,11 @@ const campsiteData = [
         lat: 37.82629400382813,
         lng: -119.59833337699251,
         latlong: "{lat:37.82629400382813, lng:-119.59833337699251}",
-        state: null,
-        zipCode: null,
-        city: null,
-        address: null,
-        nameState: "Yosemite Creek Campground"
+        state: "California",
+        zipCode: 95389,
+        city: "Yosemite",
+        address: "Unnamed Road",
+        nameState: "Yosemite Creek Campground, CA"
     }
 ];
 
