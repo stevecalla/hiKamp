@@ -1,0 +1,16 @@
+.map { 
+  position: absolute; 
+  width: 75vw; 
+  top: 20vh; 
+  left: 25vw; 
+  bottom:0; 
+}
+@media screen and (max-width: 1100px) {
+  .map {
+    position: absolute; 
+    top:30vh; 
+    left: 0; 
+    bottom:0; 
+    width:100vw; 
+  }
+}
