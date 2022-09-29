@@ -20,6 +20,11 @@ router.get('/', async (req, res) => {
     //res.json(response.data);
     res.render('userCamps', {
       projects: response.data,
+    console.log(response.data)
+    // res.json(response.data);
+
+    res.render('weather', {
+      project: response.data,
       logged_in: req.session.logged_in
     });
 
