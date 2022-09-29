@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
     const response = await axios.get(`https://developer.nps.gov/api/v1/campgrounds?limit=626?&api_key=sjsH0PhPRSMzPFiZEohC8IjAeDvFOYvXzDjsetql`);
        
 
-    // const response = await axios.get(`https://developer.nps.gov/api/v1/campgrounds?stateCode=co&limit=700&api_key=sjsH0PhPRSMzPFiZEohC8IjAeDvFOYvXzDjsetql`);
+    // const response = await axios.get(`https://developer.nps.gov/api/v1/campgrounds?stateCode=nj&limit=700&api_key=sjsH0PhPRSMzPFiZEohC8IjAeDvFOYvXzDjsetql`);
 
 
     // section: Alex's Key sjsH0PhPRSMzPFiZEohC8IjAeDvFOYvXzDjsetql
@@ -20,13 +20,14 @@ router.get('/', async (req, res) => {
     // res.json(response.data.total, response.data.data);
 
     const parks = response.data.data.map((element) => ({
+      id: element.id,
       code: element.parkCode,
       name: element.name,
       lat: parseFloat(element.latitude),
-      lon: parseFloat(element.longitude),
+      lng: parseFloat(element.longitude),
       latLong: element.latLong,
       state: element.addresses.length > 0 ? element.addresses[0].stateCode : null,
-      zipCode: element.addresses.length > 0 ? element.addresses[0].postalCode : null,
+      zipCode: element.addresses.length > 0 ? parseInt(element.addresses[0].postalCode) : null,
       city: element.addresses.length > 0 ? element.addresses[0].city : null,
       address: element.addresses.length > 0 ? element.addresses[0].address : null,
       nameState: element.addresses.length > 0 ? `${element.name}, ${element.addresses[0].stateCode}` : element.name,
