@@ -1580,7 +1580,7 @@ const campsiteData = [
         lat: 42.067203,
         lng: -113.701382,
         latlong: "{lat:42.067203, lng:-113.701382}",
-        state: id,
+        state: "ID",
         zipCode: 83312,
         city: "Almo",
         nameState: "City of Rocks Campground, ID"
@@ -4075,7 +4075,7 @@ const campsiteData = [
         lat: 43.46070030861083,
         lng: -113.55913194531865,
         latlong: "{lat:43.46070030861083, lng:-113.55913194531865}",
-        state: id,
+        state: "ID",
         zipCode: 83213,
         city: "Arco",
         nameState: "Lava Flow Campground, ID"
@@ -6457,7 +6457,7 @@ const campsiteData = [
         lat: 42.0755503036454,
         lng: -113.651634013004,
         latlong: "{lat:42.0755503036454, lng:-113.651634013004}",
-        state: id,
+        state: "ID",
         zipCode: 83312,
         city: "Almo",
         nameState: "Smoky Mountain Campground, ID"
