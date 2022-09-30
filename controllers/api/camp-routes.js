@@ -11,7 +11,6 @@ router.get('/', async (req, res) => {
     const response = await axios.get(`https://developer.nps.gov/api/v1/campgrounds?id=1241C56B-7003-4FDF-A449-29DA8BCB0A41&api_key=${key}`);
 
 //console.log('RESPONSE = ', JSON.stringify(response.data));
-=======
 console.log('RESPONSE = ', JSON.stringify(response.data));
 
 // This is how we SEND the API data back to the user, using Handlebars
@@ -76,7 +75,7 @@ router.get('/', async (req, res) => {
     console.error(error);
   }
 });
-=======
+// =======
 // router.get('/campsites/:id', async (req, res) => {
 //   console.log(req.params.id)
 //   try {
