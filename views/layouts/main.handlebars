@@ -26,11 +26,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" /> --}}
 
     {{!-- MAPBOX --}}
-    <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
-    <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
+    {{!-- <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' /> --}}
 
     <!-- ADD STYLE SHEET-->
     <link rel="stylesheet" type="text/css" href="/css/jass.css" />
+    <link rel="stylesheet" type="text/css" href="/css/location-button.css" />
+    <link rel="stylesheet" type="text/css" href="/css/search-input.css" />
+    <link rel="stylesheet" type="text/css" href="/css/auto-complete.css" />
+    <link rel="stylesheet" type="text/css" href="/css/map.css" />
+    <link rel="stylesheet" type="text/css" href="/css/search-results.css" />
+
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
   </head>
@@ -72,13 +78,13 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   {{!-- GOOGLE MAP --}}
-  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBq4HnHzwNh73EaYuMbKSqN2OiSNrAespw&callback=initMap" async defer></script>
-
-
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBq4HnHzwNh73EaYuMbKSqN2OiSNrAespw" async defer></script>
   <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
 
-
-  <script src="/js/parkList.js"></script>
+  <!-- Bootstrap -->
+  {{!-- JQUERY ADDED ABOVE --}}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
   </body>
 </html>

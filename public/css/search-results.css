@@ -1,0 +1,11 @@
+.resultsContainer {
+  height: 70vh;
+  top: 25vh;
+  overflow: scroll;
+}
+@media screen and (max-width: 1100px) {
+  .search-results {
+    color: red;
+    display: none;
+  }
+}
