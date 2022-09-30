@@ -7320,6 +7320,19 @@ const campsiteData = [
         nameState: "White Pine Backcountry Campground, MI"
     },
     {
+        "id": "7FDEE7A6-EB52-43E9-A4D8-193545AB5207",
+        "code": "lacl",
+        "name": "NPS Priest Rock Public Use Cabin",
+        "lat": 60.3093333056,
+        "lng": 154.177,
+        "latLong": "{lat:60.3093333056, lng:154.177}",
+        "state": null,
+        "zipCode": null,
+        "city": null,
+        "address": null,
+        "nameState": "NPS Priest Rock Public Use Cabin"
+    },
+    {
         camp_id: "B491535B-8883-4684-8E34-228E49D01A5C",
         code: "mora",
         name: "White River Campground",
