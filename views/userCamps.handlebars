@@ -1,6 +1,9 @@
 
 {{!-- SECTION: USER CAMPS PAGE --}}
 <style>
+    .post {
+        padding: 40px;
+    }
     .star {
         visibility: hidden;
         font-size: 24px;
@@ -32,50 +35,34 @@
 
 <div id="campsite-header" class="row">
     <h3>
-        <span id="camp-name">{{name}}</span>
+        <span id="camp-name">{{ name }} {{ stateCode }} </span>
         <div id="favStarEl">
             {{!-- FAVORITES BUTTON --}}
             <input id="favStar" class="star" type="checkbox" title="favStar"><BR></BR>
             <span> <i>Add to Favorites</i></span>
         </div>
     </h3>
-=======
-{{#each campData as |data|}}
+{{!-- {{#each campData as |data|}} --}}
 
 <div id="campsite-header" class="row">
-    <h3>{{ nameState }}</h3>
+    {{!-- <h3>{{ stateCode }}</h3> --}}
 
 </div>
 <div class="row">
 
     {{!MAIN PHOTO}}
 
-    <img id="campsite-photo" src="{{images[0].url}}" alt="{{images[0].altText}}">
-</div>
-<div class="row">
-    <p id="campsite-desc">{{description}}</p>
-
     <img id="campsite-photo" src="{{ images.[0].url }}" alt="{{ images.[0].altText }}">
 </div>
 <div class="row">
-    <h3 class="campstie-name"> {{ name }} </h3>
+    <h3 class="campsite-name"> {{ name }} </h3>
     <p id="campsite-desc">{{ description }}</p>
+    <p id="audio-icon"> 💿 {{ audioDescription }} </p>
 
 </div>
 <div class="row">
     <div class="col">
         {{!RESERVATIONS}}
-
-        <p>Reservation Info: {{reservationInfo}}</p>
-        <p>Make a Reservation: <a href="{{reservationUrl}}" target="_blank">{{reservationUrl}}</p>
-        <br>
-        <br>
-        {{!REGULATIONS}}
-        <p>Regulations: {{regulationsOverview}}<br>
-            <a href="{{regulationsurl}}">{{regulationsurl}}</a>
-        </p>
-
-        
         <p>Reservation Info: {{ reservationInfo }}</p>
         <p>Make a reservation: <a href="{{ reservationUrl }}" target="_blank">{{ reservationUrl }}</p></a>
         <br>
@@ -83,19 +70,9 @@
         {{!REGULATIONS}}
         <p>Regulations: {{ regulationsOverview }}</p><br>
             {{!-- <p class="regulations">{{ regulationsurl }}"</p> --}}
-
-
     </div>
     <div class="col">
         {{!CONTACT}}
-
-        <p>Phone: {{contacts.phoneNumbers[0].phoneNumber}}</p>
-        <p>Email: <a href="mailto:{{contacts.emailAddresses[0].emailAddress}}">{{contacts.emailAddresses[1]}}</a>
-        </p>
-        <br>
-        <br>
-        {{!FEES}}
-        <p>{{fees[0].title}} {{fees[0].cost}}: {{fees[0].description}}</p>
 
         <p>Phone: {{ contacts.phoneNumbers.[0].phoneNumber }}</p>
         <p>Email: <span><a href="mailto:{{contacts.emailAddresses.[0].emailAddress}}">{{ contacts.emailAddresses.[0].emailAddress}}</a></span></p>
@@ -104,10 +81,12 @@
         <br>
         {{!FEES}}
         <p>Fees: {{fees.[0].title}} ${{fees.[0].cost}}: {{fees.[0].description}}</p>
-         {{/each}} 
+         {{/each}}
 
+{{!-- Weather data --}}
     </div>
 </div>
-
-
 {{!-- {{audioDescription}} --}}
+
+<p>Current Weather{{ weather.current.temp }}</p>
+
