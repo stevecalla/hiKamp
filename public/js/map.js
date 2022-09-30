@@ -200,6 +200,8 @@ function createMap(
   list,
   selectedCampLat
 ) {
+  // ((marker.position.lat() < 50 && marker.position.lat() > 30) && (marker.position.lng() > -118 && marker.position.lng() < -75))
+
   // Create instance of map
   const map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: centerLat, lng: centerLng },
@@ -215,6 +217,8 @@ function createMap(
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
     },
+    minZoom: 2, //zoom out limited to prevent multiple maps
+    maxZoom: 25,
     enableHighAccuracy: true,
     timeout: 5000,
     maximumAge: 0,
@@ -262,8 +266,15 @@ function createMap(
         }, 1000);
       });
 
+      const { south, north, west, east } = { // boundries to center map
+        south: 30,  //app Austin
+        north: 50,  //app Northern border
+        west: -118, //app LA
+        east: -75,  //app NY
+      };
+
       // creates marker boundry to center map based on screen size (step #2 of 3)
-      if ((marker.position.lat() < 50 && marker.position.lat() > 30) && (marker.position.lng() > -118 && marker.position.lng() < -75)) {
+      if ((marker.position.lat() >= south && marker.position.lat() <= north) && (marker.position.lng() >= west && marker.position.lng() <= east)) {
           loc = new google.maps.LatLng(marker.position.lat(), marker.position.lng());
           bounds.extend(loc);
         }
@@ -278,6 +289,7 @@ function createMap(
   }
 
   console.log(markers);
+  // setOutOfBoundsListener(map);
   // renderSelectedCampMarker(selectedCampLat, infoWindow, map);
   renderMarkerClusters(markers, map);
   renderCurrentLocationIcon(map, infoWindow);
@@ -370,6 +382,44 @@ function validationModal(title, body) {
   $("#no-input-title").text(title);
   $("#no-input-body").text(body);
 }
+
+// Prevents multiple maps when zoom out to the max
+// var lastValidCenter;
+// var minZoomLevel = 2;
+
+// function setOutOfBoundsListener() {
+//         google.maps.event.addListener(map, 'dragend', function () {
+//             checkLatitude(map);
+//         });
+//         google.maps.event.addListener(map, 'idle', function () {
+//             checkLatitude(map);
+//         });
+//         google.maps.event.addListener(map, 'zoom_changed', function () {
+//             checkLatitude(map);
+//         });
+// };
+
+// function checkLatitude(map) {
+//     if (this.minZoomLevel) {
+//         if (map.getZoom() < minZoomLevel) {
+//             map.setZoom(parseInt(minZoomLevel));
+//         }
+//     }
+
+//     var bounds = map.getBounds();
+//     var sLat = map.getBounds().getSouthWest().lat();
+//     var nLat = map.getBounds().getNorthEast().lat();
+//     if (sLat < -85 || nLat > 85) {
+//         //the map has gone beyone the world's max or min latitude - gray areas are visible
+//         //return to a valid position
+//         if (this.lastValidCenter) {
+//             map.setCenter(this.lastValidCenter);
+//         }
+//     }
+//     else {
+//         this.lastValidCenter = map.getCenter();
+//     }
+// }
 
 initMap();
 
