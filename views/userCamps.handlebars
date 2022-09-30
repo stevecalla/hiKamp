@@ -1,92 +1,107 @@
-
 {{!-- SECTION: USER CAMPS PAGE --}}
 <style>
-    .post {
-        padding: 40px;
-    }
+
     .star {
         visibility: hidden;
         font-size: 24px;
         color: gold;
         cursor: pointer;
-
+        outline-color: black;
     }
 
     .star:before {
         content: "\2606";
-        position: relative;
-        left: 25px;
         visibility: visible;
+        position: relative;
+        right: 15px;
+        top: 5px;
     }
 
     .star:checked:before {
         content: "\2605";
         position: relative;
-        left: 25px;
+        right: 15px;
+        top: 5px;
     }
 
     #favStarEl {
-        float: right;
         font-size: 12px;
+        {{!-- float: right; --}}
     }
+
+    #favStarText {
+        font-size: 12px;
+        {{!-- float: left; --}}
+        
+    }
+
+    .row {
+        margin: auto
+    }
+
 </style>
 
-{{#each campData as |data|}}
 
-<div id="campsite-header" class="row">
-    <h3>
-        <span id="camp-name">{{ name }} {{ stateCode }} </span>
-        <div id="favStarEl">
-            {{!-- FAVORITES BUTTON --}}
-            <input id="favStar" class="star" type="checkbox" title="favStar"><BR></BR>
-            <span> <i>Add to Favorites</i></span>
+<div class="row">
+
+    <div id="userCamp-aside" class="col-2 bg-dark text-white bg-opacity-25 m-1 p-1 rounded">
+        hello world
+    </div>
+
+    {{#each campData as |data|}}
+
+    <div class="col bg-dark text-white bg-opacity-25 m-1 p-1 rounded">
+        <div id="campsite-header" class="row">
+            <div class="col-9">
+                <h3>
+                    <span id="camp-name">{{name}}</span>
+                </h3>
+            </div>
+
+            <div id="favStarEl" class="col-3 d-flex justify-content-center">
+                {{!-- FAVORITES BUTTON --}}
+                <input id="favStar" class="star" type="checkbox" title="favStar">
+                <div id="favStarText" class="align-self-center"><span><i>Add to Favorites</i></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    {{!MAIN PHOTO}}
+                    <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{images.[0].url}}"
+                        alt="{{images.[0].altText}}">
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col border-bottom border-dark">
+                    <p id="campsite-desc">{{ description }}</p>
+                </div>
+            </div>
+
+            <div class="row  mt-3">
+                <div class="col">
+                    {{!RESERVATIONS}}
+                    <p><strong>Reservation Info:</strong> {{ reservationInfo }}</p>
+                    <p><strong>Make a reservation:</strong><a href="{{ reservationUrl }}" target="_blank"> <i>{{
+                                reservationUrl }}</i></a></p>
+                    {{!REGULATIONS}}
+                    <p><strong>Regulations:</strong> {{ regulationsOverview }} <br><a href="{{ regulationsurl }}"
+                            class="regulations"> <i>{{ regulationsurl }}</i></a></p>
+                </div>
+
+                <div class="col">
+                    {{!CONTACT}}
+                    <p><strong>Phone:</strong> {{ contacts.phoneNumbers.[0].phoneNumber }}</p>
+                    <p><strong>Email:</strong> <a
+                            href="mailto:{{ contacts.emailAddresses.[0].emailAddress }}"><i>{{contacts.emailAddresses.[0].emailAddress}}</i></a>
+                    </p>
+                    {{!FEES}}
+                    <p><strong>{{fees.[0].title}}:</strong> ${{fees.[0].cost}} {{fees.[0].description}}</p>
+                </div>
+            </div>
         </div>
-    </h3>
-{{!-- {{#each campData as |data|}} --}}
-
-<div id="campsite-header" class="row">
-    {{!-- <h3>{{ stateCode }}</h3> --}}
-
-</div>
-<div class="row">
-
-    {{!MAIN PHOTO}}
-
-    <img id="campsite-photo" src="{{ images.[0].url }}" alt="{{ images.[0].altText }}">
-</div>
-<div class="row">
-    <h3 class="campsite-name"> {{ name }} </h3>
-    <p id="campsite-desc">{{ description }}</p>
-    <p id="audio-icon"> 💿 {{ audioDescription }} </p>
-
-</div>
-<div class="row">
-    <div class="col">
-        {{!RESERVATIONS}}
-        <p>Reservation Info: {{ reservationInfo }}</p>
-        <p>Make a reservation: <a href="{{ reservationUrl }}" target="_blank">{{ reservationUrl }}</p></a>
-        <br>
-        <br>
-        {{!REGULATIONS}}
-        <p>Regulations: {{ regulationsOverview }}</p><br>
-            {{!-- <p class="regulations">{{ regulationsurl }}"</p> --}}
     </div>
-    <div class="col">
-        {{!CONTACT}}
-
-        <p>Phone: {{ contacts.phoneNumbers.[0].phoneNumber }}</p>
-        <p>Email: <span><a href="mailto:{{contacts.emailAddresses.[0].emailAddress}}">{{ contacts.emailAddresses.[0].emailAddress}}</a></span></p>
-        
-        <br>
-        <br>
-        {{!FEES}}
-        <p>Fees: {{fees.[0].title}} ${{fees.[0].cost}}: {{fees.[0].description}}</p>
-         {{/each}}
-
-{{!-- Weather data --}}
-    </div>
+    {{/each}}
 </div>
-{{!-- {{audioDescription}} --}}
-
-<p>Current Weather{{ weather.current.temp }}</p>
 
