@@ -41,12 +41,12 @@ Comment.belongsTo(Post, {
 });
 
 //User/Post relationship
-User.hasMany(Post, {
-  foreignKey: "user_id",
+Campsite.hasOne(Post, {
+  foreignKey: "campSite_id",
 });
 
-Post.belongsTo(User, {
-  foreignKey: "user_id",
+Post.belongsTo(Campsite, {
+  foreignKey: "campSite_id",
 });
 
 module.exports = {
