@@ -2,6 +2,8 @@ const router = require('express').Router();
 const isAuthorized = require('../../utils/auth');
 const axios = require('axios').default;
 
+// route starts at api/campsites
+
 router.get('/', async (req, res) => {
 
   try {

@@ -157,7 +157,9 @@ function renderSearchResults(list) {
     // campPath.addEventListener('mouseover', logToTerminal);
 
     //SET ATTRIBUTES
-    campPath.setAttribute('href', `/api/map/campsite/:${list[i].camp_id}`);
+    // campPath.setAttribute('href', `/api/map/campsite/:${list[i].camp_id}`);
+
+    campPath.setAttribute('href', `/api/campsites/${list[i].camp_id}`);
 
     //CREATE TITLE CONTENT
     campName.textContent = `${i + 1}) ${list[i].nameState}`;
@@ -227,7 +229,9 @@ function createMap(
   // Create the markers
   const markers = list.map(({ lat, lng, name, id, camp_id }, i) => {
     if (lat && lng) {
-      const contentString = `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/:${camp_id}">${name}</a></h6>`;
+      // const contentString = `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/${camp_id}">${name}</a></h6>`;
+
+      const contentString = `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/campsites/${camp_id}">${name}</a></h6>`
 
       // https://maps.gstatic.com/mapfiles/place_api/icons/v2/camping_pinlet.svg
       let selectedCampsiteIcon =
