@@ -31,9 +31,17 @@ async function renderSearchInputMap(event) {
   let selectedCampLat;
   let selectedCampLng;
 
+  console.log(searchInput.value, searchInput.value.trim())
+  
   // If the user presses the "Enter" key on the keyboard
   if (event.key === 'Enter') {
     event.preventDefault();
+    
+    // validate input
+    if (searchInput.value.trim() === "") {
+      validationModal("Input is not valid", "Please select a campsite/zipcode from the list then press enter.");
+      return;
+    }
 
     // get all campsites from database
     let rawCampsites = await getList();
@@ -41,7 +49,7 @@ async function renderSearchInputMap(event) {
     // get state for current search input
     let getState = rawCampsites.filter(
       (camp) => camp.nameState === searchInput.value
-    );
+    )
     
     // if input is a zipcode get state
     if (!getState.length) {
@@ -62,7 +70,7 @@ async function renderSearchInputMap(event) {
 
     // render map by passing state, map zoom level, selected camp lat & lng
     initMap(6, state, selectedCampLat, selectedCampLng);
-  }
+  } 
 }
 
 // RENDER SEARCH BOX AUTO COMPLETE WITH JQUERY
@@ -351,6 +359,12 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       : "Error: Your browser doesn't support geolocation."
   );
   infoWindow.open(map);
+}
+
+function validationModal(title, body) {
+  $("#no-input-model").modal("show");
+  $("#no-input-title").text(title);
+  $("#no-input-body").text(body);
 }
 
 initMap();
