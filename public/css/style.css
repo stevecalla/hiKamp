@@ -27,25 +27,34 @@ p {
 
 /* HEADER & NAV */
 header {
-  height: 20vh;
+  height: 13vh;
+  min-height: 110px;
   padding: 20px;
   text-align: center;
-  background-color: var(--background-main);
+  background-color: rgba(0, 0, 0, 0.75);
   color: var(--light);
 }
 
 .header {
   width: 325px;
   margin: auto;
-  background-color: var(--background-secondary);
-  color: var(--background-main);
-  border-radius: var(--border-radius);
-  box-shadow: 5px 5px 0px 0px gray;
+  background-color: rgba(14, 88, 14);
+  /* color: var(--background-main); */
+  border-radius: var(--border-radius);5
+  /* box-shadow: 5px 5px 0px 0px gray; */
+}
+
+.menu {
+  background-color: rgb(14, 88, 14);
+}
+
+.background_image {
+  background-image: url('../images/bg_image-forest.jpeg');
 }
 
 nav {
   display: flex;
-  background-color: var(--background-main);
+  /* background-color: var(--background-main); */
 }
 
 nav a,
@@ -71,6 +80,11 @@ main {
   overflow: scroll;
 }
 
+.app_name {
+  font-family: 'Splash', cursive, sans-serif;
+  font-size: 42px;
+}
+
 aside {
   display: flex;
   flex-direction: column;
@@ -92,15 +106,15 @@ textarea {
   resize: vertical;
 }
 
-.post {
-  /* display: flex;
+/* .post {
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   flex: 4;
-  padding: 25px; */
+  padding: 25px; 
   background-color: var(--background-secondary);
-}
+} */
 
 /* .post a,
 .post-card {
