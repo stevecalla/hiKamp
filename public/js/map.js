@@ -1,6 +1,7 @@
 //query selector variables go here 👇
 let searchInput = document.getElementById('search-input'); //USED FOR AUTOCOMPLETE & SEARCH BAR RESULTS
 let searchIcon = document.getElementById('search-icon');
+let trashIcon = document.getElementById('trash-icon');
 
 //global variables go here 👇
 
@@ -8,6 +9,14 @@ let searchIcon = document.getElementById('search-icon');
 window.addEventListener('resize', adjustZoomOnResize);
 searchInput.addEventListener('keypress', renderSearchInputMap);
 searchIcon.addEventListener('click', renderSearchInputMap);
+trashIcon.addEventListener('click', () => {
+  //if search click on trash icon, hide trash icon, show search icon
+  searchInput.value = "";
+  searchIcon.classList.remove('hide');
+  trashIcon.classList.remove('show');
+  trashIcon.classList.add('hide');
+
+})
 searchInput.addEventListener('input', () => searchAutoComplete());
 // searchInput.addEventListener("input", () => console.log(searchInput.value));
 
@@ -23,19 +32,20 @@ async function renderSearchInputMap(event) {
   let selectedCampLat;
   let selectedCampLng;
 
-  console.log(searchInput.value, searchInput.value.trim());
-  console.log(event, event.target, event.target.id, event.target.id === "search-icon")
+  // console.log(searchInput.value, searchInput.value.trim());
+  // console.log(event, event.target, event.target.id, event.target.id === "search-icon")
   
   // If the user presses the "Enter" key on the keyboard
   if (event.key === 'Enter' || event.target.id === "search-icon") {
     event.preventDefault();
-    
-    // validate input
-    // if (searchInput.value.trim() === "") {
-    //   validationModal("Darn!! Input is Blank", "Please select a campsite/zipcode from the list then press enter.");
-    //   return;
-    // };
 
+    //if search input is valid hide search icon / show trash icon
+    if (searchInput.value.length > 0) {
+      searchIcon.classList.add('hide');
+      trashIcon.classList.add('show');
+      trashIcon.classList.remove('hide');
+    };
+    
     // get all campsites from database
     let rawCampsites = await getList();
 
@@ -118,7 +128,7 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
 
 // GET LIST OF CAMPSITES TO RENDER
 const getList = async (state) => {
-  console.log(state);
+  // console.log(state);
 
   let result;
 
