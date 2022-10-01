@@ -24,7 +24,7 @@ async function renderSearchInputMap(event) {
   let selectedCampLng;
 
   console.log(searchInput.value, searchInput.value.trim());
-  console.log(event.target.id, event.target.id === "search-icon")
+  console.log(event, event.target, event.target.id, event.target.id === "search-icon")
   
   // If the user presses the "Enter" key on the keyboard
   if (event.key === 'Enter' || event.target.id === "search-icon") {
@@ -95,6 +95,8 @@ async function searchAutoComplete() {
 
 // INTIALIZE MAP
 async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
+  // document.getElementById("search-input").focus();
+  searchInput.focus(); //only focus on desktop not mobile
   let list = await getList(state);
   // renderSearchResults(list);
   let mobileZoomLevel = setMobileZoomLevel(zoomLevel);
