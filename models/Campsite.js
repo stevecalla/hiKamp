@@ -47,10 +47,10 @@ Campsite.init(
         },
         favorite_id: {
             type: DataTypes.INTEGER,
-            references: {
-                model: "favorite",
-                key: "id",
-            },
+            // references: {
+            //     model: "favorite",
+            //     key: "id",
+            // },
         },
     },
     {
