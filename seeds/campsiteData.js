@@ -308,18 +308,6 @@ const campsiteData = [
     nameState: 'Backcountry Camping, NM',
   },
   {
-    camp_id: '07B94648-198D-4762-9D87-236DEC0C58BA',
-    code: 'care',
-    name: 'Backcountry Camping',
-    lat: 45.567833,
-    lng: -75.84775,
-    latlong: '{lat:45.567833 , lng:-75.84775',
-    state: 'Utah',
-    zipCode: 84775,
-    city: 'Torrey',
-    nameState: 'Backcountry Camping, UT',
-  },
-  {
     camp_id: 'AC81EBCF-B50B-420E-A286-13C67EE98B4F',
     code: 'fiis',
     name: 'Backcountry Camping in the Otis Pike High Dune Wilderness',

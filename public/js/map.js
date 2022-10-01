@@ -121,6 +121,9 @@ async function searchAutoComplete() {
 // INTIALIZE MAP
 async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
   //if search input is valid hide search icon / show trash icon
+
+  // searchInput.value = "hello"; 
+
   if (searchInput.value.length > 0) {
     searchIcon.classList.add('hide');
     trashIcon.classList.add('show');
