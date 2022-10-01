@@ -6,6 +6,7 @@ const Favorite = require("./Favorites");
 //User/Comments relationship
 User.hasMany(Comment, {
   foreignKey: "user_id",
+  onDelete: 'CASCADE'
 });
 
 Comment.belongsTo(User, {
@@ -15,6 +16,7 @@ Comment.belongsTo(User, {
 //User/Favorites relationship
 User.hasMany(Favorite, {
   foreignKey: "user_id",
+  onDelete: 'CASCADE'
 })
 
 Favorite.belongsTo(User, {
@@ -23,11 +25,11 @@ Favorite.belongsTo(User, {
 
 //Favorite/Campsite relationship
 Favorite.hasOne(Campsite, {
-  foreignKey: "campsite_id"
+  foreignKey: "favorite_id"
 });
 
 Campsite.belongsTo(Favorite, {
-  foreignKey: "campsite_id",
+  foreignKey: "favorite_id",
 });
 
 //Comment/Campsite relationship

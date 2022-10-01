@@ -1,5 +1,4 @@
 const sequelize = require("../config/connection");
-const seedPosts = require("./postData");
 const seedComments = require("./commentData");
 const seedUsers = require("./userData");
 const seedCampsites = require("./campsiteData");
@@ -9,9 +8,7 @@ const seedAll = async () => {
 
   await seedUsers();
 
-  // await seedPosts();
-
-  // await seedComments();
+  await seedComments();
 
   await seedCampsites();
 
