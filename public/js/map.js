@@ -132,24 +132,35 @@ const getList = async (state) => {
   }
 };
 
-function renderHoverIcon(event, markers) {
-  let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/shapes/campground.png';
+function renderHoverIcon(event, list, markers, selectedCampLat) {
+  // let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/shapes/parks.png';
+  // let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png';
+  // let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png';
+  let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/shapes/campfire.png';
+
+  // console.log(event.target);
+  // console.log(event.target.dataset);
+  // console.log(event.target.dataset.index);
+  // console.log(event.target.dataset.latitude);
+  // console.log(selectedCampLat, parseFloat(event.target.dataset.latitude), selectedCampLat === parseFloat(event.target.dataset.latitude) );
 
   for (let i = 0; i < markers.length; i++) {
-    if (parseInt(event.target.dataset.index) === i) {
-        console.log(parseInt(event.target.dataset.index) === i );
+    // if (parseInt(event.target.dataset.index) === i) {
+    if (parseInt(event.target.dataset.index) === i && parseFloat(event.target.dataset.latitude) !== selectedCampLat) {
+        // console.log(parseInt(event.target.dataset.index) === i );
         markers[i].setIcon(hoverCampsiteIcon);
         return;
     }
   }
 };
 
-function renderDefaultIcon(event, markers) {
+function renderDefaultIcon(event, list, markers, selectedCampLat) {
   let campsiteIcon = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
 
   for (let i = 0; i < markers.length; i++) {
-    if (parseInt(event.target.dataset.index) === i) {
-        console.log(parseInt(event.target.dataset.index) === i );
+    // if (parseInt(event.target.dataset.index) === i) {
+    if (parseInt(event.target.dataset.index) === i && parseFloat(event.target.dataset.latitude) !== selectedCampLat) {
+        // console.log(parseInt(event.target.dataset.index) === i );
         markers[i].setIcon(campsiteIcon);
         return;
     }
@@ -157,7 +168,7 @@ function renderDefaultIcon(event, markers) {
 };
 
 // RENDER SEARCH RESULTS IN ASIDE
-function renderSearchResults(list, markers) {
+function renderSearchResults(list, markers, selectedCampLat) {
   // console.log('list ======= ', list);
   let asideContainer = document.getElementById('searchResults');
   asideContainer.textContent = '';
@@ -169,23 +180,18 @@ function renderSearchResults(list, markers) {
     let renderLine = document.createElement('hr');
 
     campPath.addEventListener('mouseover', (event) => {
-      renderHoverIcon(event, markers)
+      renderHoverIcon(event, list, markers, selectedCampLat)
     });
 
-    campPath.addEventListener('mouseout', (event) => {
-      renderDefaultIcon(event, markers)
-    });
+    // campPath.addEventListener('mouseout', (event) => {
+    //   renderDefaultIcon(event, list, markers, selectedCampLat)
+    // });
 
     //SET ATTRIBUTES
     // campPath.setAttribute('href', `/api/map/campsite/:${list[i].camp_id}`);
     campPath.setAttribute('href', `/api/campsites/${list[i].camp_id}`);
-    campName.setAttribute('data-index', i)
-
-    //set dataset "data-index" attribute = index
-    //then event.target.... get data-index
-    //if data-index value = index of the marker
-    //then change the marker
-    //when mouse moves off marker change the marker back
+    campName.setAttribute('data-index', i);
+    campName.setAttribute('data-latitude', list[i].lat)
 
     //CREATE TITLE CONTENT
     campName.textContent = `${i + 1}) ${list[i].nameState}`;
@@ -287,7 +293,8 @@ function createMap(
         infoWindow.open(marker.getMap(), marker);
         if (lat !== selectedCampLat) {
           marker.setIcon(
-            'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+            // 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+            'http://maps.google.com/mapfiles/kml/shapes/campfire.png'
           );
         }
         marker.setAnimation(google.maps.Animation.BOUNCE);
@@ -322,7 +329,7 @@ function createMap(
 
   // setOutOfBoundsListener(map);
   // renderSelectedCampMarker(selectedCampLat, infoWindow, map);
-  renderSearchResults(list, markers);
+  renderSearchResults(list, markers, selectedCampLat);
   renderMarkerClusters(markers, map);
   renderCurrentLocationIcon(map, infoWindow);
 }
