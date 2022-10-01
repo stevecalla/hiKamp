@@ -12,15 +12,18 @@ User.hasMany(Favorite, {
 
 Favorite.belongsTo(User, {
   foreignKey: "user_id",
+  onDelete: 'CASCADE'
 });
 
 // Favorite to Campsite relationship
 Favorite.hasOne(Campsite, {
-  foreignKey: "favorite_id"
+  foreignKey: "favorite_id",
+  onDelete: 'CASCADE'
 });
 
 Campsite.belongsTo(Favorite, {
   foreignKey: "favorite_id",
+  onDelete: 'CASCADE'
 });
 
 // User to Comments relationship
@@ -31,15 +34,18 @@ User.hasMany(Comment, {
 
 Comment.belongsTo(User, {
   foreignKey: "user_id",
+  onDelete: 'CASCADE'
 });
 
 //Comment/Campsite relationship
 Campsite.hasMany(Favorite, {
   foreignKey: "camp_id",
+  onDelete: 'CASCADE'
 });
 
 Comment.belongsTo(Campsite, {
-  foreignKey: "camp_id"
+  foreignKey: "camp_id",
+  onDelete: 'CASCADE'
 });
 
 module.exports = {
