@@ -1,7 +1,18 @@
-<section class="container">
-    {{#each posts as |post|}}
-      <a href="/post/{{id}}">
-        {{> post-details}}
-      </a>
-    {{/each}}
-</section>
+<aside>
+  {{> search-input }}
+
+  {{#each campsites as |camp|}}
+    {{> search-results }}
+  {{/each}}
+
+</aside>
+  {{> map-details }}
+  {{> validation-modal }}
+
+<script src="/js/map.js"></script>
+
+  {{!-- {{#each posts as |post|}}
+    <a href="/post/{{id}}">
+      {{> post-details}}
+    </a>
+  {{/each}} --}}
