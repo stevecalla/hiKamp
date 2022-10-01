@@ -14,6 +14,10 @@ Comment.init(
     content: {
       type: DataTypes.STRING,
       allowNull: false,
+      references: {
+        model: 'post',
+        key: "content"
+      }
     },
     user_id: {
       type: DataTypes.INTEGER,
