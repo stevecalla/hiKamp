@@ -28,10 +28,10 @@ async function renderSearchInputMap(event) {
     event.preventDefault();
     
     // validate input
-    if (searchInput.value.trim() === "") {
-      validationModal("Input is not valid", "Please select a campsite/zipcode from the list then press enter.");
-      return;
-    }
+    // if (searchInput.value.trim() === "") {
+    //   validationModal("Darn!! Input is Blank", "Please select a campsite/zipcode from the list then press enter.");
+    //   return;
+    // };
 
     // get all campsites from database
     let rawCampsites = await getList();
@@ -39,15 +39,21 @@ async function renderSearchInputMap(event) {
     // get state for current search input
     let getState = rawCampsites.filter(
       (camp) => camp.nameState === searchInput.value
-    )
+    );
     
     // if input is a zipcode get state
     if (!getState.length) {
       getState = rawCampsites.filter(
         (camp) => camp.zipCode === searchInput.value
         );
+    };
+    
+    // validate input
+    if (!getState.length) {
+      validationModal("Darn!! Campsite Not Found", "Please select a campsite/zipcode from the list then press enter.");
+      return;
     }
-
+    
     // get state for first location in the array
     let state = getState[0].state;
     // console.log(getState);
