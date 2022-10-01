@@ -1624,7 +1624,7 @@ const campsiteData = [
     nameState: 'Circle X Ranch Campground -   code, CA',
   },
   {
-    camp_camp_id: '849C892E-19ED-4539-8591-CF2D1670D380',
+    camp_id: '849C892E-19ED-4539-8591-CF2D1670D380',
     code: 'ciro',
     name: 'City of Rocks Campground',
     lat: 42.067203,
