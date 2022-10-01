@@ -120,8 +120,15 @@ async function searchAutoComplete() {
 
 // INTIALIZE MAP
 async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
-  // document.getElementById("search-input").focus();
+  //if search input is valid hide search icon / show trash icon
+  if (searchInput.value.length > 0) {
+    searchIcon.classList.add('hide');
+    trashIcon.classList.add('show');
+    trashIcon.classList.remove('hide');
+  };
+
   searchInput.focus(); //only focus on desktop not mobile
+
   let list = await getList(state);
   // renderSearchResults(list);
   let mobileZoomLevel = setMobileZoomLevel(zoomLevel);
@@ -423,7 +430,8 @@ function renderCurrentLocationIcon(map, infoWindow) {
           const markerCurrentLocation = new google.maps.Marker({
             position: pos,
             map,
-            icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
+            // icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
+            icon: 'http://maps.google.com/mapfiles/kml/shapes/ranger_station.png',
           });
           infoWindow.open(
             markerCurrentLocation.getMap(),
