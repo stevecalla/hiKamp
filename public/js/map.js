@@ -1,11 +1,13 @@
 //query selector variables go here 👇
 let searchInput = document.getElementById('search-input'); //USED FOR AUTOCOMPLETE & SEARCH BAR RESULTS
+let searchIcon = document.getElementById('search-icon');
 
 //global variables go here 👇
 
 //event listeners go here 👇
 window.addEventListener('resize', adjustZoomOnResize);
 searchInput.addEventListener('keypress', renderSearchInputMap);
+searchIcon.addEventListener('click', renderSearchInputMap);
 searchInput.addEventListener('input', () => searchAutoComplete());
 // searchInput.addEventListener("input", () => console.log(searchInput.value));
 
@@ -21,10 +23,11 @@ async function renderSearchInputMap(event) {
   let selectedCampLat;
   let selectedCampLng;
 
-  console.log(searchInput.value, searchInput.value.trim())
+  console.log(searchInput.value, searchInput.value.trim());
+  console.log(event.target.id, event.target.id === "search-icon")
   
   // If the user presses the "Enter" key on the keyboard
-  if (event.key === 'Enter') {
+  if (event.key === 'Enter' || event.target.id === "search-icon") {
     event.preventDefault();
     
     // validate input
