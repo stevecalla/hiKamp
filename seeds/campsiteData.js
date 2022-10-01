@@ -12,7 +12,9 @@ const campsiteData = [
     zipCode: 78840,
     city: 'Del Rio',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: '277 North Campground, TX',
+
   },
   {
     camp_id: '1241C56B-7003-4FDF-A449-29DA8BCB0A41',
@@ -24,6 +26,7 @@ const campsiteData = [
     state: 'Tennessee',
     zipCode: 37878,
     city: 'Tallassee',
+    favorite_id: null,
     nameState: 'Abrams Creek Campground, TN',
   },
   {
@@ -36,6 +39,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21788,
     city: 'Thurmont',
+    favorite_id: null,
     nameState: 'Adirondack Shelters, MD',
   },
   {
@@ -48,6 +52,7 @@ const campsiteData = [
     state: 'Montana',
     zipCode: 59035,
     city: 'Fort Smith',
+    favorite_id: null,
     nameState: 'Afterbay Campground, MT',
   },
   {
@@ -60,6 +65,7 @@ const campsiteData = [
     state: 'Missouri',
     zipCode: 65466,
     city: 'Eminence',
+    favorite_id: null,
     nameState: 'Akers Group Campground, MO',
   },
   {
@@ -72,6 +78,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 85321,
     city: 'Ajo',
+    favorite_id: null,
     nameState: 'Alamo Canyon Primitive Campground, AZ',
   },
   {
@@ -84,6 +91,7 @@ const campsiteData = [
     state: 'Missouri',
     zipCode: 65466,
     city: 'Eminence',
+    favorite_id: null,
     nameState: 'Alley Spring Campground, MO',
   },
   {
@@ -96,6 +104,7 @@ const campsiteData = [
     state: 'Kentucky',
     zipCode: 42653,
     city: 'Whitley City',
+    favorite_id: null,
     nameState: 'Alum Ford Campground, KY',
   },
   {
@@ -108,6 +117,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93001,
     city: 'Anacapa Island',
+    favorite_id: null,
     nameState: 'Anacapa Island Campground, CA',
   },
   {
@@ -121,6 +131,7 @@ const campsiteData = [
     zipCode: 86040,
     city: 'Page',
     address: '537 Marina Parkway',
+    favorite_id: null,
     nameState: 'Antelope Point RV Park, AZ',
   },
   {
@@ -134,6 +145,7 @@ const campsiteData = [
     zipCode: 21782,
     city: 'Sharpsburg',
     address: 'Chesapeake and Ohio Canal National Historic Park',
+    favorite_id: null,
     nameState: 'Antietam Creek Campground, MD',
   },
   {
@@ -146,6 +158,7 @@ const campsiteData = [
     state: 'Montana',
     zipCode: 59936,
     city: 'West Glacier',
+    favorite_id: null,
     nameState: 'Apgar Campground, MT',
   },
   {
@@ -158,6 +171,7 @@ const campsiteData = [
     state: 'West Virginia',
     zipCode: 25907,
     city: 'Prince',
+    favorite_id: null,
     nameState: 'Army Camp, WV',
   },
   {
@@ -170,6 +184,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 80517,
     city: 'Estes Park',
+    favorite_id: null,
     nameState: 'Aspenglen Campground, CO',
   },
   {
@@ -182,6 +197,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93271,
     city: 'Sequoia National Park',
+    favorite_id: null,
     nameState: 'Atwell Mill Campground, CA',
   },
   {
@@ -195,6 +211,7 @@ const campsiteData = [
     zipCode: 49883,
     city: 'Seney',
     address: 'N Country Trail, Seney, MI 49883',
+    favorite_id: null,
     nameState: 'Au Sable East Group Backpacking Site, MI',
   },
   {
@@ -207,6 +224,7 @@ const campsiteData = [
     state: 'Montana',
     zipCode: 59936,
     city: 'West Glacier',
+    favorite_id: null,
     nameState: 'Avalanche, MT',
   },
   {
@@ -219,6 +237,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93633,
     city: 'Grant Grove',
+    favorite_id: null,
     nameState: 'Azalea Campground, CA',
   },
   {
@@ -231,6 +250,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21811,
     city: 'Berlin',
+    favorite_id: null,
     nameState: 'Back Country Camping - Green Run, MD',
   },
   {
@@ -244,6 +264,7 @@ const campsiteData = [
     zipCode: 21811,
     city: 'Berlin',
     address: 'Bayberry Dr',
+    favorite_id: null,
     nameState: 'Back Country Camping - Little Levels, MD',
   },
   {
@@ -256,6 +277,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21811,
     city: 'Berlin',
+    favorite_id: null,
     nameState: 'Back Country Camping - Pine Tree, MD',
   },
   {
@@ -268,6 +290,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21811,
     city: 'Berlin',
+    favorite_id: null,
     nameState: 'Back Country Camping - Pope Bay, MD',
   },
   {
@@ -281,6 +304,7 @@ const campsiteData = [
     zipCode: 21864,
     city: 'Goose Island',
     address: 'George Island Landing',
+    favorite_id: null,
     nameState: 'Back Country Camping - State Line, MD',
   },
   {
@@ -293,6 +317,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21811,
     city: 'Berlin',
+    favorite_id: null,
     nameState: 'Back Country Camping - Tingles Island, MD',
   },
   {
@@ -305,6 +330,7 @@ const campsiteData = [
     state: 'New Mexico',
     zipCode: 88310,
     city: 'Alamogordo',
+    favorite_id: null,
     nameState: 'Backcountry Camping, NM',
   },
   {
@@ -317,6 +343,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84775,
     city: 'Torrey',
+    favorite_id: null,
     nameState: 'Backcountry Camping, UT',
   },
   {
@@ -330,6 +357,7 @@ const campsiteData = [
     zipCode: 11772,
     city: 'Patchogue',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Backcountry Camping in the Otis Pike High Dune Wilderness, NY',
   },
   {
@@ -342,6 +370,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 81146,
     city: 'Mosca',
+    favorite_id: null,
     nameState: 'Backpacking Campsites in the Dunes or Forest, CO',
   },
   {
@@ -355,6 +384,7 @@ const campsiteData = [
     zipCode: 89311,
     city: 'Baker',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Baker Creek Campground, NV',
   },
   {
@@ -367,6 +397,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 20176,
     city: 'Lander',
+    favorite_id: null,
     nameState: 'Bald Eagle Island Hiker-Biker Campsite, MD',
   },
   {
@@ -379,6 +410,7 @@ const campsiteData = [
     state: 'Tennessee',
     zipCode: 37738,
     city: 'Gatlinburg',
+    favorite_id: null,
     nameState: 'Balsam Mountain Campground, TN',
   },
   {
@@ -391,6 +423,7 @@ const campsiteData = [
     state: 'Tennessee',
     zipCode: 37841,
     city: 'Oneida',
+    favorite_id: null,
     nameState: 'Bandy Creek Campground, TN',
   },
   {
@@ -403,6 +436,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82413,
     city: 'Lovell',
+    favorite_id: null,
     nameState: "Barry's Landing & Trail Creek Campground, WY",
   },
   {
@@ -415,6 +449,7 @@ const campsiteData = [
     state: 'Alaska',
     zipCode: 99826,
     city: 'Bartlett Cove',
+    favorite_id: null,
     nameState: 'Bartlett Cove Campground, AK',
   },
   {
@@ -427,6 +462,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49630,
     city: 'Empire',
+    favorite_id: null,
     nameState: 'Bay Campground - South Manitou Island, MI',
   },
   {
@@ -439,6 +475,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21811,
     city: 'Berlin',
+    favorite_id: null,
     nameState: 'Bayside Drive-in Campground, MD',
   },
   {
@@ -451,6 +488,7 @@ const campsiteData = [
     state: 'Kentucky',
     zipCode: 42649,
     city: 'Strunk',
+    favorite_id: null,
     nameState: 'Bear Creek Horse Camp, KY',
   },
   {
@@ -463,6 +501,7 @@ const campsiteData = [
     state: 'Florida',
     zipCode: 34141,
     city: 'Ochopee',
+    favorite_id: null,
     nameState: 'Bear Island Campground, FL',
   },
   {
@@ -475,6 +514,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Beaver Island Campground, MI',
   },
   {
@@ -487,6 +527,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 86040,
     city: 'Page',
+    favorite_id: null,
     nameState: 'Beehives Campground, AZ',
   },
   {
@@ -499,6 +540,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92277,
     city: 'Twentynine Palms',
+    favorite_id: null,
     nameState: 'Belle Campground, CA',
   },
   {
@@ -511,6 +553,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82714,
     city: 'Devils Tower',
+    favorite_id: null,
     nameState: 'Belle Fourche River Campground, WY',
   },
   {
@@ -523,6 +566,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Belle Isle Campground, MI',
   },
   {
@@ -535,6 +579,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 94965,
     city: 'Sausalito',
+    favorite_id: null,
     nameState: 'Bicentennial Campground, CA',
   },
   {
@@ -547,6 +592,7 @@ const campsiteData = [
     state: 'Tennessee',
     zipCode: 37821,
     city: 'Newport',
+    favorite_id: null,
     nameState: 'Big Creek Campground, TN',
   },
   {
@@ -559,6 +605,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 22851,
     city: 'Robertson',
+    favorite_id: null,
     nameState: 'Big Meadows Campground, VA',
   },
   {
@@ -572,6 +619,7 @@ const campsiteData = [
     zipCode: 04765,
     city: 'Stacyville',
     address: 'W9J7+VM4 Stacyville',
+    favorite_id: null,
     nameState: 'Big Seboeis Campsite',
   },
   {
@@ -584,6 +632,7 @@ const campsiteData = [
     state: 'Maine',
     zipCode: 04765,
     city: 'Patten',
+    favorite_id: null,
     nameState: 'Big Spring Brook Hut, ME',
   },
   {
@@ -596,6 +645,7 @@ const campsiteData = [
     state: 'Missouri',
     zipCode: 63965,
     city: 'Van Buren',
+    favorite_id: null,
     nameState: 'Big Spring Campground, MO',
   },
   {
@@ -608,6 +658,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21782,
     city: 'Mercersville',
+    favorite_id: null,
     nameState: 'Big Woods Hiker-Biker Campsite, MD',
   },
   {
@@ -620,6 +671,7 @@ const campsiteData = [
     state: 'Minnesota',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Birch Island Campground, MN',
   },
   {
@@ -632,6 +684,7 @@ const campsiteData = [
     state: 'Texas',
     zipCode: 78418,
     city: 'Corpus Christi',
+    favorite_id: null,
     nameState: 'Bird Island Basin Campground, TX',
   },
   {
@@ -644,6 +697,7 @@ const campsiteData = [
     state: 'Montana',
     zipCode: 59035,
     city: 'Fort Smith',
+    favorite_id: null,
     nameState: 'Black Canyon Campground, MT',
   },
   {
@@ -656,6 +710,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92311,
     city: 'Barstow',
+    favorite_id: null,
     nameState: 'Black Canyon Group and Equestrian Campground, CA',
   },
   {
@@ -669,6 +724,7 @@ const campsiteData = [
     zipCode: 92277,
     city: 'Cottonwood Springs',
     address: 'Unnamed road',
+    favorite_id: null,
     nameState: 'Black Rock Campground',
   },
   {
@@ -681,6 +737,7 @@ const campsiteData = [
     state: 'Maine',
     zipCode: 04660,
     city: 'Otter Creek',
+    favorite_id: null,
     nameState: 'Blackwoods Campground, ME',
   },
   {
@@ -693,6 +750,7 @@ const campsiteData = [
     state: 'Texas',
     zipCode: 79036,
     city: 'Fritch',
+    favorite_id: null,
     nameState: 'Blue Creek, TX',
   },
   {
@@ -705,6 +763,7 @@ const campsiteData = [
     state: 'Kentucky',
     zipCode: 42649,
     city: 'Strunk',
+    favorite_id: null,
     nameState: 'Blue Heron Campground, KY',
   },
   {
@@ -718,6 +777,7 @@ const campsiteData = [
     zipCode: 79847,
     city: 'Salt Flat',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Blue Ridge Wilderness Campground, TX',
   },
   {
@@ -731,6 +791,7 @@ const campsiteData = [
     zipCode: '79114',
     city: 'Fritch',
     address: 'Blue West Rd',
+    favorite_id: null,
     nameState: 'Blue West Campground',
   },
   {
@@ -744,6 +805,7 @@ const campsiteData = [
     zipCode: 29205,
     city: 'Richland',
     address: 'Richland County',
+    favorite_id: null,
     nameState: 'Bluff Campground, SC',
   },
   {
@@ -757,6 +819,7 @@ const campsiteData = [
     zipCode: 33033,
     city: 'Homestead',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Boca Chita Campground, FL',
   },
   {
@@ -770,6 +833,7 @@ const campsiteData = [
     zipCode: 85643,
     city: 'Willcox',
     address: '13250 E Bonita Canyon Rd',
+    favorite_id: null,
     nameState: 'Bonita Canyon Campground, AZ',
   },
   {
@@ -782,6 +846,7 @@ const campsiteData = [
     state: 'Nevada',
     zipCode: 89005,
     city: 'Boulder City',
+    favorite_id: null,
     nameState: 'Boulder Beach Campground, NV',
   },
   {
@@ -794,6 +859,7 @@ const campsiteData = [
     state: 'Nevada',
     zipCode: 89005,
     city: 'Boulder City',
+    favorite_id: null,
     nameState: 'Boulder Beach Group Campground, NV',
   },
   {
@@ -807,6 +873,7 @@ const campsiteData = [
     zipCode: 68792,
     city: 'Cedar County',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Bow Creek Primitive Camping, NE',
   },
   {
@@ -819,6 +886,7 @@ const campsiteData = [
     state: 'Montana',
     zipCode: 59936,
     city: 'West Glacier',
+    favorite_id: null,
     nameState: 'Bowman Lake, MT',
   },
   {
@@ -832,6 +900,7 @@ const campsiteData = [
     zipCode: 96095,
     city: 'Whiskeytown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Brandy Creek, CA',
   },
   {
@@ -845,6 +914,7 @@ const campsiteData = [
     zipCode: 96095,
     city: 'Whiskeytown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Brandy Creek RV, CA',
   },
   {
@@ -858,6 +928,7 @@ const campsiteData = [
     zipCode: 31558,
     city: 'Cumberland',
     address: 'Cumberland Island',
+    favorite_id: null,
     nameState: 'Brickhill Bluff Wilderness Campsite, GA',
   },
   {
@@ -871,6 +942,7 @@ const campsiteData = [
     zipCode: 95389,
     city: 'Yosemite',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Bridalveil Creek Campground, CA',
   },
   {
@@ -883,6 +955,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82190,
     city: 'Yellowstone National Park',
+    favorite_id: null,
     nameState: 'Bridge Bay Campground, WY',
   },
   {
@@ -895,6 +968,7 @@ const campsiteData = [
     state: 'West Virginia',
     zipCode: 25830,
     city: 'Cunard',
+    favorite_id: null,
     nameState: 'Brooklyn Campground, WV',
   },
   {
@@ -907,6 +981,7 @@ const campsiteData = [
     state: 'Alaska',
     zipCode: 99613,
     city: 'King Salmon',
+    favorite_id: null,
     nameState: 'Brooks Camp Campground, AK',
   },
   {
@@ -919,6 +994,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93271,
     city: 'Sequoia National Park',
+    favorite_id: null,
     nameState: 'Buckeye Flat Campground, CA',
   },
   {
@@ -932,6 +1008,7 @@ const campsiteData = [
     zipCode: 73086,
     city: 'Sulpher',
     address: 'Buckhorn Campground',
+    favorite_id: null,
     nameState: 'Buckhorn Campground Loop A, OK',
   },
   {
@@ -945,6 +1022,7 @@ const campsiteData = [
     zipCode: 73086,
     city: 'Sulpher',
     address: 'Buckhorn Campground',
+    favorite_id: null,
     nameState: 'Buckhorn Campground Loop B, OK',
   },
   {
@@ -958,6 +1036,7 @@ const campsiteData = [
     zipCode: 73086,
     city: 'Sulpher',
     address: 'Buckhorn Campground',
+    favorite_id: null,
     nameState: 'Buckhorn Campground Loop C, OK',
   },
   {
@@ -971,6 +1050,7 @@ const campsiteData = [
     zipCode: 73086,
     city: 'Sulpher',
     address: 'Buckhorn Campground',
+    favorite_id: null,
     nameState: 'Buckhorn Campground Loop D, OK',
   },
   {
@@ -983,6 +1063,7 @@ const campsiteData = [
     state: 'Arkansas',
     zipCode: 72687,
     city: 'Yellville',
+    favorite_id: null,
     nameState: 'Buffalo Point Campground, AR',
   },
   {
@@ -995,6 +1076,7 @@ const campsiteData = [
     state: 'Texas',
     zipCode: 79036,
     city: 'Fritch',
+    favorite_id: null,
     nameState: 'Bugbee Canyon, TX',
   },
   {
@@ -1007,6 +1089,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84533,
     city: 'Lake Powell',
+    favorite_id: null,
     nameState: 'Bullfrog RV & Campground, UT',
   },
   {
@@ -1019,6 +1102,7 @@ const campsiteData = [
     state: 'Florida',
     zipCode: 34141,
     city: 'ochopee',
+    favorite_id: null,
     nameState: 'Burns Lake, FL',
   },
   {
@@ -1031,6 +1115,7 @@ const campsiteData = [
     state: 'West Virginia',
     zipCode: 25862,
     city: 'Lansing',
+    favorite_id: null,
     nameState: 'Burnwood Group Campsite, WV',
   },
   {
@@ -1044,6 +1129,7 @@ const campsiteData = [
     zipCode: 79847,
     city: 'Salt Flat',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Bush Mountain Wilderness Campground, TX',
   },
   {
@@ -1056,6 +1142,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 96071,
     city: 'Old Station',
+    favorite_id: null,
     nameState: 'Butte Lake Campground, CA',
   },
   {
@@ -1068,6 +1155,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 22025,
     city: 'Dumfries',
+    favorite_id: null,
     nameState: 'Cabin Camp 1 (By Reservation Only), VA',
   },
   {
@@ -1081,6 +1169,7 @@ const campsiteData = [
     zipCode: 55347,
     city: 'Triangle',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Cabin Camp 2 (By Reservation Only), VA',
   },
   {
@@ -1094,6 +1183,7 @@ const campsiteData = [
     zipCode: 55347,
     city: 'Triangle',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Cabin Camp 3 (By Reservation Only), VA',
   },
   {
@@ -1106,6 +1196,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 22025,
     city: 'Dumfries',
+    favorite_id: null,
     nameState: 'Cabin Camp 4 (By Reservation Only), VA',
   },
   {
@@ -1118,6 +1209,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 22172,
     city: 'Triangle',
+    favorite_id: null,
     nameState: 'Cabin Camp 5 (By Reservation Only), VA',
   },
   {
@@ -1130,6 +1222,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21750,
     city: 'Woodmont',
+    favorite_id: null,
     nameState: 'Cacapon Junction Hiker-Biker Campsite, MD',
   },
   {
@@ -1142,6 +1235,7 @@ const campsiteData = [
     state: 'Tennessee',
     zipCode: 37882,
     city: 'Townsend',
+    favorite_id: null,
     nameState: 'Cades Cove Campground, TN',
   },
   {
@@ -1154,6 +1248,7 @@ const campsiteData = [
     state: 'Tennessee',
     zipCode: 37882,
     city: 'Townsend',
+    favorite_id: null,
     nameState: 'Cades Cove Group Campground, TN',
   },
   {
@@ -1166,6 +1261,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21777,
     city: 'Point of Rocks',
+    favorite_id: null,
     nameState: 'Calico Rocks Hiker-Biker Campsite, MD',
   },
   {
@@ -1179,6 +1275,7 @@ const campsiteData = [
     zipCode: null,
     city: null,
     address: null,
+    favorite_id: null,
     nameState: 'Callville Bay Campground',
   },
   {
@@ -1192,6 +1289,7 @@ const campsiteData = [
     zipCode: 89005,
     city: 'Boulder City',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Callville Bay RV Park, NV',
   },
   {
@@ -1205,6 +1303,7 @@ const campsiteData = [
     zipCode: 95389,
     city: 'Yosemite',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Camp 4 Campground, CA',
   },
   {
@@ -1217,6 +1316,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21788,
     city: 'Thurmont',
+    favorite_id: null,
     nameState: 'Camp Greentop, MD',
   },
   {
@@ -1229,6 +1329,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21788,
     city: 'Thurmont',
+    favorite_id: null,
     nameState: 'Camp Misty Mount, MD',
   },
   {
@@ -1241,6 +1342,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21780,
     city: 'Sabillasville',
+    favorite_id: null,
     nameState: 'Camp Round Meadow, MD',
   },
   {
@@ -1253,6 +1355,7 @@ const campsiteData = [
     state: 'Florida',
     zipCode: 32169,
     city: 'New Smyrna Beach',
+    favorite_id: null,
     nameState: 'Canaveral National Seashore Backcountry Island Camping, FL',
   },
   {
@@ -1265,6 +1368,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82190,
     city: 'Yellowstone National Park',
+    favorite_id: null,
     nameState: 'Canyon Campground, WY',
   },
   {
@@ -1278,6 +1382,7 @@ const campsiteData = [
     zipCode: 99840,
     city: 'Skagway',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Canyon City, AK',
   },
   {
@@ -1290,6 +1395,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 86054,
     city: 'Shonto',
+    favorite_id: null,
     nameState: 'Canyon View Campground, AZ',
   },
   {
@@ -1302,6 +1408,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93633,
     city: 'Kings Canyon National Park',
+    favorite_id: null,
     nameState: 'Canyon View Campground, CA',
   },
   {
@@ -1314,6 +1421,7 @@ const campsiteData = [
     state: 'North Carolina',
     zipCode: 27920,
     city: 'Buxton',
+    favorite_id: null,
     nameState: 'Cape Point Campground, NC',
   },
   {
@@ -1326,6 +1434,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Caribou Island Campground, MI',
   },
   {
@@ -1338,6 +1447,7 @@ const campsiteData = [
     state: 'Arkansas',
     zipCode: 72641,
     city: 'Jasper',
+    favorite_id: null,
     nameState: 'Carver Campground, AR',
   },
   {
@@ -1350,6 +1460,7 @@ const campsiteData = [
     state: 'North Carolina',
     zipCode: 37876,
     city: 'Waynesville',
+    favorite_id: null,
     nameState: 'Cataloochee Campground, NC',
   },
   {
@@ -1362,6 +1473,7 @@ const campsiteData = [
     state: 'Oregon',
     zipCode: 97523,
     city: 'Cave Junction',
+    favorite_id: null,
     nameState: 'Cave Creek Campground, OR',
   },
   {
@@ -1374,6 +1486,7 @@ const campsiteData = [
     state: 'Texas',
     zipCode: 79036,
     city: 'Fritch',
+    favorite_id: null,
     nameState: 'Cedar Canyon Campground, TX',
   },
   {
@@ -1386,6 +1499,7 @@ const campsiteData = [
     state: 'South Dakota',
     zipCode: 57750,
     city: 'Interior',
+    favorite_id: null,
     nameState: 'Cedar Pass Campground, SD',
   },
   {
@@ -1399,6 +1513,7 @@ const campsiteData = [
     zipCode: 73086,
     city: 'Sulpher',
     address: 'Buckhorn Campground',
+    favorite_id: null,
     nameState: 'Central Campground, OK',
   },
   {
@@ -1412,6 +1527,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Chapel Individual Backpacking Sites, MI',
   },
   {
@@ -1424,6 +1540,7 @@ const campsiteData = [
     state: 'Texas',
     zipCode: 79036,
     city: 'Fritch',
+    favorite_id: null,
     nameState: 'Chimney Hollow Campground, TX',
   },
   {
@@ -1436,6 +1553,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Chippewa Harbor Campground, MI',
   },
   {
@@ -1448,6 +1566,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 20837,
     city: 'Poolesville',
+    favorite_id: null,
     nameState: 'Chisel Branch Hiker-Biker Campsite, MD',
   },
   {
@@ -1461,6 +1580,7 @@ const campsiteData = [
     zipCode: 79834,
     city: 'Big Bend',
     address: 'Big Bend National Park',
+    favorite_id: null,
     nameState: 'Chisos Basin Campground, TX',
   },
   {
@@ -1473,6 +1593,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 22172,
     city: 'Triangle',
+    favorite_id: null,
     nameState: 'Chopawamsic Backcountry Area, VA',
   },
   {
@@ -1486,6 +1607,7 @@ const campsiteData = [
     zipCode: 81230,
     city: 'Gunnison',
     address: '29070-29174 US-50',
+    favorite_id: null,
     nameState: 'Cimarron Campground, CO',
   },
   {
@@ -1498,6 +1620,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 90265,
     city: 'Malibu',
+    favorite_id: null,
     nameState: 'Circle X Ranch Campground -   code, CA',
   },
   {
@@ -1510,6 +1633,7 @@ const campsiteData = [
     state: 'Idaho',
     zipCode: 83312,
     city: 'Almo',
+    favorite_id: null,
     nameState: 'City of Rocks Campground, ID',
   },
   {
@@ -1523,6 +1647,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Cliff Group Backpacking Site, MI',
   },
   {
@@ -1536,6 +1661,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Cliffs Individual Backpacking Sites, MI',
   },
   {
@@ -1548,6 +1674,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99131,
     city: 'Gifford',
+    favorite_id: null,
     nameState: 'Cloverleaf Campground, WA',
   },
   {
@@ -1560,6 +1687,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 94956,
     city: 'Point Reyes Station',
+    favorite_id: null,
     nameState: 'Coast Campground, CA',
   },
   {
@@ -1572,6 +1700,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93271,
     city: 'Sequoia National Park',
+    favorite_id: null,
     nameState: 'Cold Springs Campground, CA',
   },
   {
@@ -1585,6 +1714,7 @@ const campsiteData = [
     zipCode: 73086,
     city: 'Sulpher',
     address: 'Buckhorn Campground',
+    favorite_id: null,
     nameState: 'Cold Springs Campground, OK',
   },
   {
@@ -1598,6 +1728,7 @@ const campsiteData = [
     zipCode: 98284,
     city: 'Sedro-Woolley',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Colonial Creek North Campground, WA',
   },
   {
@@ -1611,6 +1742,7 @@ const campsiteData = [
     zipCode: 98284,
     city: 'Sedro-Woolley',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Colonial Creek South Campground, WA',
   },
   {
@@ -1624,6 +1756,7 @@ const campsiteData = [
     zipCode: 86040,
     city: 'Page',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState:
       'Colorado River Primitive Camping Between Glen Canyon Dam and Lees Ferry, AZ',
   },
@@ -1638,6 +1771,7 @@ const campsiteData = [
     zipCode: 83013,
     city: 'Moran',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Colter Bay Campground, WY',
   },
   {
@@ -1651,6 +1785,7 @@ const campsiteData = [
     zipCode: 83013,
     city: 'Moran',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Colter Bay RV Park, WY',
   },
   {
@@ -1664,6 +1799,7 @@ const campsiteData = [
     zipCode: 83013,
     city: 'Moran',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Colter Bay Tent Village, WY',
   },
   {
@@ -1677,6 +1813,7 @@ const campsiteData = [
     zipCode: 37722,
     city: 'Cosby',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Cosby Campground, TN',
   },
   {
@@ -1690,6 +1827,7 @@ const campsiteData = [
     zipCode: 79834,
     city: 'Big Bend',
     address: 'Big Bend National Park',
+    favorite_id: null,
     nameState: 'Cottonwood Campground, TX',
   },
   {
@@ -1703,6 +1841,7 @@ const campsiteData = [
     zipCode: 92277,
     city: 'Cottonwood Springs',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Cottonwood Campground, CA',
   },
   {
@@ -1716,6 +1855,7 @@ const campsiteData = [
     zipCode: 58645,
     city: 'Medora',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Cottonwood Campground, ND',
   },
   {
@@ -1729,6 +1869,7 @@ const campsiteData = [
     zipCode: 89005,
     city: 'Boulder City',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Cottonwood Cove Campground, NV',
   },
   {
@@ -1742,6 +1883,7 @@ const campsiteData = [
     zipCode: 98304,
     city: 'Ashford',
     address: '48627 Paradise Rd E',
+    favorite_id: null,
     nameState: 'Cougar Rock Campground, WA',
   },
   {
@@ -1755,6 +1897,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Coves Group Backpacking Site, MI',
   },
   {
@@ -1768,6 +1911,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Coves Individual Backpacking Sites, MI',
   },
   {
@@ -1780,6 +1924,7 @@ const campsiteData = [
     state: 'North Carolina',
     zipCode: 28777,
     city: 'Spruce Pine',
+    favorite_id: null,
     nameState: 'Crabtree Falls Campground, NC',
   },
   {
@@ -1793,6 +1938,7 @@ const campsiteData = [
     zipCode: 95389,
     city: 'Yosemite',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Crane Flat Campground, CA',
   },
   {
@@ -1806,6 +1952,7 @@ const campsiteData = [
     zipCode: 96095,
     city: 'Whiskeytown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Crystal Creek, CA',
   },
   {
@@ -1818,6 +1965,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93633,
     city: 'Grant Grove',
+    favorite_id: null,
     nameState: 'Crystal Springs Campground, CA',
   },
   {
@@ -1830,6 +1978,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21795,
     city: 'Williamsport',
+    favorite_id: null,
     nameState: 'Cumberland Valley Hiker-Biker Campsite, MD',
   },
   {
@@ -1842,6 +1991,7 @@ const campsiteData = [
     state: 'Montana',
     zipCode: 59936,
     city: 'Cut Bank',
+    favorite_id: null,
     nameState: 'Cut Bank, MT',
   },
   {
@@ -1854,6 +2004,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49636,
     city: 'Glen Arbor',
+    favorite_id: null,
     nameState: 'D. H. Day Campground, MI',
   },
   {
@@ -1866,6 +2017,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49636,
     city: 'Glen Arbor',
+    favorite_id: null,
     nameState: 'D. H. Day Campground Group Campground, MI',
   },
   {
@@ -1878,6 +2030,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Daisy Farm Campground, MI',
   },
   {
@@ -1890,6 +2043,7 @@ const campsiteData = [
     state: 'Mississippi',
     zipCode: 39564,
     city: 'Ocean Springs',
+    favorite_id: null,
     nameState: 'Davis Bayou Campground, MS',
   },
   {
@@ -1903,6 +2057,7 @@ const campsiteData = [
     zipCode: 59035,
     city: 'Fort Smith',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Dayboard 9 Campground, MT',
   },
   {
@@ -1915,6 +2070,7 @@ const campsiteData = [
     state: 'North Carolina',
     zipCode: 28713,
     city: 'Bryson City',
+    favorite_id: null,
     nameState: 'Deep Creek Campground, NC',
   },
   {
@@ -1927,6 +2083,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 81610,
     city: 'Dinosaur',
+    favorite_id: null,
     nameState: 'Deerlodge Park Campground, CO',
   },
   {
@@ -1939,6 +2096,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 86023,
     city: 'Grand Canyon',
+    favorite_id: null,
     nameState: 'Desert View Campground (Reservations Required), AZ',
   },
   {
@@ -1951,6 +2109,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21766,
     city: 'Little Orleans',
+    favorite_id: null,
     nameState: 'Devils Alley Hiker-Biker Campsite, MD',
   },
   {
@@ -1963,6 +2122,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84532,
     city: 'Moab',
+    favorite_id: null,
     nameState: 'Devils Garden Campground, UT',
   },
   {
@@ -1975,6 +2135,7 @@ const campsiteData = [
     state: 'Pennsylvania',
     zipCode: 18328,
     city: 'Dingmans Ferry',
+    favorite_id: null,
     nameState: 'Dingmans Campground, PA',
   },
   {
@@ -1987,6 +2148,7 @@ const campsiteData = [
     state: 'Texas',
     zipCode: 79847,
     city: 'Salt Flat',
+    favorite_id: null,
     nameState: 'Dog Canyon Campground, TX',
   },
   {
@@ -1999,6 +2161,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93262,
     city: 'Sequoia National Park',
+    favorite_id: null,
     nameState: 'Dorst Creek Campground, CA',
   },
   {
@@ -2011,6 +2174,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98362,
     city: 'Port Angeles',
+    favorite_id: null,
     nameState: 'Dosewallips Campground (Walk-In Only), WA',
   },
   {
@@ -2023,6 +2187,7 @@ const campsiteData = [
     state: 'North Carolina',
     zipCode: 28644,
     city: 'Laurel Springs',
+    favorite_id: null,
     nameState: 'Doughton Park Campground, NC',
   },
   {
@@ -2035,6 +2200,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 85730,
     city: 'Tucson',
+    favorite_id: null,
     nameState: 'Douglas Spring, AZ',
   },
   {
@@ -2048,6 +2214,7 @@ const campsiteData = [
     zipCode: 96095,
     city: 'Whiskeytown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Dry Creek Group Campground',
   },
   {
@@ -2061,6 +2228,7 @@ const campsiteData = [
     zipCode: 81230,
     city: 'Gunnison',
     address: '29070-29174 US-50',
+    favorite_id: null,
     nameState: 'Dry Gulch Campground, CO',
   },
   {
@@ -2073,6 +2241,7 @@ const campsiteData = [
     state: 'Maine',
     zipCode: 4609,
     city: 'Bar Harbor',
+    favorite_id: null,
     nameState: 'Duck Harbor Campground, ME',
   },
   {
@@ -2086,6 +2255,7 @@ const campsiteData = [
     zipCode: 89311,
     city: 'Baker',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Dump Station, NV',
   },
   {
@@ -2098,6 +2268,7 @@ const campsiteData = [
     state: 'Indiana',
     zipCode: 46304,
     city: 'Porter',
+    favorite_id: null,
     nameState: 'Dunbar Group Site, IN',
   },
   {
@@ -2110,6 +2281,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Duncan Bay Campground, MI',
   },
   {
@@ -2122,6 +2294,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Duncan Narrows Campground, MI',
   },
   {
@@ -2134,6 +2307,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 22932,
     city: 'Crozet',
+    favorite_id: null,
     nameState: 'Dundo Group Campground, VA',
   },
   {
@@ -2146,6 +2320,7 @@ const campsiteData = [
     state: 'Indiana',
     zipCode: 46360,
     city: 'Beverly Shores',
+    favorite_id: null,
     nameState: 'Dunewood Campground, IN',
   },
   {
@@ -2159,6 +2334,7 @@ const campsiteData = [
     zipCode: 99840,
     city: 'Skagway',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Dyea Campground, AK',
   },
   {
@@ -2171,6 +2347,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'East Chickenbone Campground, MI',
   },
   {
@@ -2184,6 +2361,7 @@ const campsiteData = [
     zipCode: 81230,
     city: 'Gunnison',
     address: '29070-29174 US-50',
+    favorite_id: null,
     nameState: 'East Elk Creek Group Campground, CO',
   },
   {
@@ -2197,6 +2375,7 @@ const campsiteData = [
     zipCode: 81230,
     city: 'Gunnison',
     address: '29070-29174 US-50',
+    favorite_id: null,
     nameState: 'East Portal Campground, CO',
   },
   {
@@ -2209,6 +2388,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 81401,
     city: 'Montrose',
+    favorite_id: null,
     nameState: 'East Portal Campground, CO',
   },
   {
@@ -2222,6 +2402,7 @@ const campsiteData = [
     zipCode: 89005,
     city: 'Boulder City',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Echo Bay Campground, NV',
   },
   {
@@ -2234,6 +2415,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 81610,
     city: 'Dinosaur',
+    favorite_id: null,
     nameState: 'Echo Park Campground, CO',
   },
   {
@@ -2246,6 +2428,7 @@ const campsiteData = [
     state: 'New Mexico',
     zipCode: 87321,
     city: 'Ramah',
+    favorite_id: null,
     nameState: 'El Morro Campground, NM',
   },
   {
@@ -2259,6 +2442,7 @@ const campsiteData = [
     zipCode: 81230,
     city: 'Gunnison',
     address: '29070-29174 US-50',
+    favorite_id: null,
     nameState: 'Elk Creek Campground, CO',
   },
   {
@@ -2271,6 +2455,7 @@ const campsiteData = [
     state: 'South Dakota',
     zipCode: 57747,
     city: 'Hot Springs',
+    favorite_id: null,
     nameState: 'Elk Mountain Campground, SD',
   },
   {
@@ -2283,6 +2468,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 95531,
     city: 'Crescent City',
+    favorite_id: null,
     nameState: 'Elk Prairie Campgound, CA',
   },
   {
@@ -2295,6 +2481,7 @@ const campsiteData = [
     state: 'Tennessee',
     zipCode: 37738,
     city: 'Gatlinburg',
+    favorite_id: null,
     nameState: 'Elkmont Campground, TN',
   },
   {
@@ -2307,6 +2494,7 @@ const campsiteData = [
     state: 'Tennessee',
     zipCode: 37738,
     city: 'Gatlinburg',
+    favorite_id: null,
     nameState: 'Elkmont Group Campground, TN',
   },
   {
@@ -2320,6 +2508,7 @@ const campsiteData = [
     zipCode: 33033,
     city: 'Homestead',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Elliott Key Campground, FL',
   },
   {
@@ -2332,6 +2521,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92328,
     city: 'Death Valley',
+    favorite_id: null,
     nameState: 'Emigrant Campground, CA',
   },
   {
@@ -2344,6 +2534,7 @@ const campsiteData = [
     state: 'Arkansas',
     zipCode: 72641,
     city: 'Jasper',
+    favorite_id: null,
     nameState: 'Erbie Campground, AR',
   },
   {
@@ -2356,6 +2547,7 @@ const campsiteData = [
     state: 'Maine',
     zipCode: 4765,
     city: 'Patten',
+    favorite_id: null,
     nameState: 'Esker Campsite, ME',
   },
   {
@@ -2368,6 +2560,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92328,
     city: 'Death Valley',
+    favorite_id: null,
     nameState: 'Eureka Dunes Campground (Primitive), CA',
   },
   {
@@ -2380,6 +2573,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99126,
     city: 'Evans',
+    favorite_id: null,
     nameState: 'Evans Campground, WA',
   },
   {
@@ -2392,6 +2586,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99126,
     city: 'Evans',
+    favorite_id: null,
     nameState: 'Evans Group Site, WA',
   },
   {
@@ -2405,6 +2600,7 @@ const campsiteData = [
     zipCode: 21740,
     city: 'Hagerstown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Evitts Creek Hiker-Biker Campsite, MD',
   },
   {
@@ -2417,6 +2613,7 @@ const campsiteData = [
     state: 'Alaska',
     zipCode: 99664,
     city: 'Seward',
+    favorite_id: null,
     nameState: 'Exit Glacier Campground, AK',
   },
   {
@@ -2429,6 +2626,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98363,
     city: 'Port Angeles',
+    favorite_id: null,
     nameState: 'Fairholme Campground, WA',
   },
   {
@@ -2441,6 +2639,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Feldtmann Lake Campground, MI',
   },
   {
@@ -2454,6 +2653,7 @@ const campsiteData = [
     zipCode: 21740,
     city: 'Hagerstown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Fifteenmile Creek Campground, MD',
   },
   {
@@ -2467,6 +2667,7 @@ const campsiteData = [
     zipCode: 99840,
     city: 'Skagway',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: "Finnegan's Point, AK",
   },
   {
@@ -2479,6 +2680,7 @@ const campsiteData = [
     state: 'Montana',
     zipCode: 59936,
     city: 'West Glacier',
+    favorite_id: null,
     nameState: 'Fish Creek, MT',
   },
   {
@@ -2491,6 +2693,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82190,
     city: 'Yellowstone National Park',
+    favorite_id: null,
     nameState: 'Fishing Bridge RV Park, WY',
   },
   {
@@ -2503,6 +2706,7 @@ const campsiteData = [
     state: 'Florida',
     zipCode: 33034,
     city: 'Flamingo',
+    favorite_id: null,
     nameState: 'Flamingo Campground, FL',
   },
   {
@@ -2515,6 +2719,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98239,
     city: 'Coupeville',
+    favorite_id: null,
     nameState: 'Fort Casey State Park, WA',
   },
   {
@@ -2527,6 +2732,7 @@ const campsiteData = [
     state: 'Minnesota',
     zipCode: 55605,
     city: 'Grand Portage',
+    favorite_id: null,
     nameState: 'Fort Charlotte Backcountry Campgrounds, MN',
   },
   {
@@ -2539,6 +2745,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98239,
     city: 'Coupeville',
+    favorite_id: null,
     nameState: 'Fort Ebey State Park, WA',
   },
   {
@@ -2551,6 +2758,7 @@ const campsiteData = [
     state: 'Florida',
     zipCode: 32561,
     city: 'Pensacola Beach',
+    favorite_id: null,
     nameState: 'Fort Pickens Campground, FL',
   },
   {
@@ -2563,6 +2771,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99122,
     city: 'Davenport',
+    favorite_id: null,
     nameState: 'Fort Spokane Campground, WA',
   },
   {
@@ -2575,6 +2784,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99122,
     city: 'Davenport',
+    favorite_id: null,
     nameState: 'Fort Spokane Group Sites, WA',
   },
   {
@@ -2588,6 +2798,7 @@ const campsiteData = [
     zipCode: 07732,
     city: 'Highlands',
     address: 'Camp Site Rd',
+    favorite_id: null,
     nameState: 'Fort Wadsworth Campsite, NJ',
   },
   {
@@ -2601,6 +2812,7 @@ const campsiteData = [
     zipCode: 79847,
     city: 'Salt Flat',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Frijole Horse Corral Campground, TX',
   },
   {
@@ -2613,6 +2825,7 @@ const campsiteData = [
     state: 'North Carolina',
     zipCode: 27920,
     city: 'Frisco',
+    favorite_id: null,
     nameState: 'Frisco Campground, NC',
   },
   {
@@ -2625,6 +2838,7 @@ const campsiteData = [
     state: 'Texas',
     zipCode: 79036,
     city: 'Fritch',
+    favorite_id: null,
     nameState: 'Fritch Fortress, TX',
   },
   {
@@ -2637,6 +2851,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84775,
     city: 'Torrey',
+    favorite_id: null,
     nameState: 'Fruita Campground, UT',
   },
   {
@@ -2649,6 +2864,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92328,
     city: 'Death Valley',
+    favorite_id: null,
     nameState: 'Furnace Creek Campground, CA',
   },
   {
@@ -2661,6 +2877,7 @@ const campsiteData = [
     state: 'Florida',
     zipCode: 33034,
     city: 'Homestead',
+    favorite_id: null,
     nameState: 'Garden Key Campground, FL',
   },
   {
@@ -2673,6 +2890,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 81640,
     city: 'Maybell',
+    favorite_id: null,
     nameState: 'Gates of Lodore Campground, CO',
   },
   {
@@ -2686,6 +2904,7 @@ const campsiteData = [
     zipCode: 81230,
     city: 'Gunnison',
     address: '29070-29174 US-50',
+    favorite_id: null,
     nameState: 'Gateview Campground, CO',
   },
   {
@@ -2698,6 +2917,7 @@ const campsiteData = [
     state: 'Florida',
     zipCode: 34141,
     city: 'Ochopee',
+    favorite_id: null,
     nameState: 'Gator Head, FL',
   },
   {
@@ -2711,6 +2931,7 @@ const campsiteData = [
     zipCode: 26651,
     city: 'Summersville',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Gauley Tailwaters, WV',
   },
   {
@@ -2723,6 +2944,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99131,
     city: 'Gifford',
+    favorite_id: null,
     nameState: 'Gifford Campground, WA',
   },
   {
@@ -2735,6 +2957,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99131,
     city: 'Gifford',
+    favorite_id: null,
     nameState: 'Gifford Group Site, WA',
   },
   {
@@ -2747,6 +2970,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 80517,
     city: 'Estes Park',
+    favorite_id: null,
     nameState: 'Glacier Basin Campground, CO',
   },
   {
@@ -2759,6 +2983,7 @@ const campsiteData = [
     state: 'West Virginia',
     zipCode: 25907,
     city: 'Prince',
+    favorite_id: null,
     nameState: 'Glade Creek Campground, WV',
   },
   {
@@ -2771,6 +2996,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 94956,
     city: 'Point Reyes Station',
+    favorite_id: null,
     nameState: 'Glen Campground, CA',
   },
   {
@@ -2784,6 +3010,7 @@ const campsiteData = [
     zipCode: 68792,
     city: 'Cedar County',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Goat Island Primitive Camping, NE',
   },
   {
@@ -2796,6 +3023,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 95555,
     city: 'Orick',
+    favorite_id: null,
     nameState: 'Gold Bluffs Beach Campground, CA',
   },
   {
@@ -2809,6 +3037,7 @@ const campsiteData = [
     zipCode: 98284,
     city: 'Sedro-Woolley',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Goodell Creek Campground, WA',
   },
   {
@@ -2822,6 +3051,7 @@ const campsiteData = [
     zipCode: 98284,
     city: 'Sedro-Woolley',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Gorge Lake Campground, WA',
   },
   {
@@ -2835,6 +3065,7 @@ const campsiteData = [
     zipCode: 78840,
     city: 'Del Rio',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Governors Landing Campground, TX',
   },
   {
@@ -2847,6 +3078,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Grace Island Campground, MI',
   },
   {
@@ -2859,6 +3091,7 @@ const campsiteData = [
     state: 'West Virginia',
     zipCode: 25907,
     city: 'Prince',
+    favorite_id: null,
     nameState: 'Grandview Sandbar, WV',
   },
   {
@@ -2871,6 +3104,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82190,
     city: 'Yellowstone National Park',
+    favorite_id: null,
     nameState: 'Grant Village Campground, WY',
   },
   {
@@ -2884,6 +3118,7 @@ const campsiteData = [
     zipCode: 59035,
     city: 'Fort Smith',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Grapevine Campground, MT',
   },
   {
@@ -2896,6 +3131,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 85730,
     city: 'Tucson',
+    favorite_id: null,
     nameState: 'Grass Shack, AZ',
   },
   {
@@ -2908,6 +3144,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98362,
     city: 'Port Angeles',
+    favorite_id: null,
     nameState: 'Graves Creek Campground, WA',
   },
   {
@@ -2920,6 +3157,7 @@ const campsiteData = [
     state: 'North Carolina',
     zipCode: 28524,
     city: 'Core Banks',
+    favorite_id: null,
     nameState: 'Great Island Cabin Camp, NC',
   },
   {
@@ -2933,6 +3171,7 @@ const campsiteData = [
     zipCode: 68792,
     city: 'Cedar County',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Green Island Primitive Camping, NE',
   },
   {
@@ -2945,6 +3184,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84035,
     city: 'Jensen',
+    favorite_id: null,
     nameState: 'Green River Campground, UT',
   },
   {
@@ -2957,6 +3197,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 20770,
     city: 'Greenbelt',
+    favorite_id: null,
     nameState: 'Greenbelt Park Campground, MD',
   },
   {
@@ -2970,6 +3211,7 @@ const campsiteData = [
     zipCode: 89311,
     city: 'Baker',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Grey Cliffs Campground, NV',
   },
   {
@@ -2982,6 +3224,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 83011,
     city: 'Kelly',
+    favorite_id: null,
     nameState: 'Gros Ventre Campground, WY',
   },
   {
@@ -2995,6 +3238,7 @@ const campsiteData = [
     zipCode: 83213,
     city: 'Arco',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Group Campground',
   },
   {
@@ -3007,6 +3251,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84775,
     city: 'Torrey',
+    favorite_id: null,
     nameState: 'Group Campsite, UT',
   },
   {
@@ -3020,6 +3265,7 @@ const campsiteData = [
     zipCode: 79847,
     city: 'Salt Flat',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Guadalupe Peak Wilderness Campground, TX',
   },
   {
@@ -3032,6 +3278,7 @@ const campsiteData = [
     state: 'Arkansas',
     zipCode: 71901,
     city: 'Hot Springs',
+    favorite_id: null,
     nameState: 'Gulpha Gorge Campground, AR',
   },
   {
@@ -3045,6 +3292,7 @@ const campsiteData = [
     zipCode: 36108,
     city: 'Montgomery',
     address: '561 Booth Rd',
+    favorite_id: null,
     nameState: 'Gunter Hill Campground, AL',
   },
   {
@@ -3058,6 +3306,7 @@ const campsiteData = [
     zipCode: 73086,
     city: 'Sulpher',
     address: 'Buckhorn Campground',
+    favorite_id: null,
     nameState: 'Guy Sandy Campground, OK',
   },
   {
@@ -3070,6 +3319,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99141,
     city: 'Kettle Falls',
+    favorite_id: null,
     nameState: 'Haag Cove Campground, WA',
   },
   {
@@ -3082,6 +3332,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84533,
     city: 'Lake Powell',
+    favorite_id: null,
     nameState: 'Halls Crossing RV & Campground, UT',
   },
   {
@@ -3094,6 +3345,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 85730,
     city: 'Tucson',
+    favorite_id: null,
     nameState: 'Happy Valley Saddle, AZ',
   },
   {
@@ -3107,6 +3359,7 @@ const campsiteData = [
     zipCode: '79114',
     city: 'Fritch',
     address: 'Blue West Rd',
+    favorite_id: null,
     nameState: 'Harbor Bay Campground, TX',
   },
   {
@@ -3120,6 +3373,7 @@ const campsiteData = [
     zipCode: 98284,
     city: 'Sedro-Woolley',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Harlequin Campground, WA',
   },
   {
@@ -3132,6 +3386,7 @@ const campsiteData = [
     state: 'Maine',
     zipCode: 4765,
     city: 'Patten',
+    favorite_id: null,
     nameState: 'Haskell Hut, ME',
   },
   {
@@ -3144,6 +3399,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Hatchet Lake Campground, MI',
   },
   {
@@ -3156,6 +3412,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 94965,
     city: 'Sausalito',
+    favorite_id: null,
     nameState: 'Hawk Campground, CA',
   },
   {
@@ -3168,6 +3425,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99117,
     city: 'Creston',
+    favorite_id: null,
     nameState: 'Hawk Creek Campground, WA',
   },
   {
@@ -3180,6 +3438,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Hay Bay Campground, MI',
   },
   {
@@ -3192,6 +3451,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 94965,
     city: 'Sausalito',
+    favorite_id: null,
     nameState: 'Haypress Campground, CA',
   },
   {
@@ -3204,6 +3464,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 83013,
     city: 'Moran',
+    favorite_id: null,
     nameState: 'Headwaters Campground, WY',
   },
   {
@@ -3216,6 +3477,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98362,
     city: 'Port Angeles',
+    favorite_id: null,
     nameState: "Heart O' the Hills Campground, WA",
   },
   {
@@ -3229,6 +3491,7 @@ const campsiteData = [
     zipCode: 31558,
     city: 'Cumberland',
     address: 'Cumberland Island',
+    favorite_id: null,
     nameState: 'Hickory Hill Wilderness Campsit, GA',
   },
   {
@@ -3242,6 +3505,7 @@ const campsiteData = [
     zipCode: 92277,
     city: 'Cottonwood Springs',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Hidden Valley Campground, CA',
   },
   {
@@ -3254,6 +3518,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84533,
     city: 'Campground is  code',
+    favorite_id: null,
     nameState:
       'Hite Outpost Adventure Center -   code until further notice, UT',
   },
@@ -3267,6 +3532,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 86040,
     city: 'Page',
+    favorite_id: null,
     nameState: 'Hite Primitive (Dirty Devil, Farley, White Canyon) camping, AZ',
   },
   {
@@ -3280,6 +3546,7 @@ const campsiteData = [
     zipCode: 95389,
     city: 'Yosemite',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Hodgdon Meadow Campground, CA',
   },
   {
@@ -3292,6 +3559,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98331,
     city: 'Forks',
+    favorite_id: null,
     nameState: 'Hoh Campground, WA',
   },
   {
@@ -3304,6 +3572,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92332,
     city: 'Essex',
+    favorite_id: null,
     nameState: 'Hole-in-the-Wall Campground, CA',
   },
   {
@@ -3316,6 +3585,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92328,
     city: 'Death Valley',
+    favorite_id: null,
     nameState: 'Homestake Campground (Primitive), CA',
   },
   {
@@ -3329,6 +3599,7 @@ const campsiteData = [
     zipCode: 96095,
     city: 'Whiskeytown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Horse Camp, CA',
   },
   {
@@ -3341,6 +3612,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21811,
     city: 'Berlin',
+    favorite_id: null,
     nameState: 'Horse camping, MD',
   },
   {
@@ -3353,6 +3625,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 20837,
     city: 'Poolesville',
+    favorite_id: null,
     nameState: 'Horsepen Branch Hiker-Biker Campsite, MD',
   },
   {
@@ -3365,6 +3638,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82431,
     city: 'Lovell',
+    favorite_id: null,
     nameState: 'Horseshoe Bend Campground, WY',
   },
   {
@@ -3377,6 +3651,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21782,
     city: 'Mercersville',
+    favorite_id: null,
     nameState: 'Horseshoe Bend Hiker-Biker Campsite, MD',
   },
   {
@@ -3389,6 +3664,7 @@ const campsiteData = [
     state: 'Hawaii',
     zipCode: 96790,
     city: 'Kula',
+    favorite_id: null,
     nameState: 'Hosmer Grove Campground, HI',
   },
   {
@@ -3401,6 +3677,7 @@ const campsiteData = [
     state: 'Kentucky',
     zipCode: 42210,
     city: 'Brownsville',
+    favorite_id: null,
     nameState: 'Houchin Ferry Campground, KY',
   },
   {
@@ -3413,6 +3690,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 81321,
     city: 'Cortez',
+    favorite_id: null,
     nameState: 'Hovenweep Campground, CO',
   },
   {
@@ -3426,6 +3704,7 @@ const campsiteData = [
     zipCode: 98284,
     city: 'Sedro-Woolley',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Hozomeen Campground, WA',
   },
   {
@@ -3439,6 +3718,7 @@ const campsiteData = [
     zipCode: 21740,
     city: 'Hagerstown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Huckleberry Hill Hiker-Biker Campsite, MD',
   },
   {
@@ -3451,6 +3731,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Huginnin Cove Campground, MI',
   },
   {
@@ -3463,6 +3744,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99137,
     city: 'Hunters',
+    favorite_id: null,
     nameState: 'Hunters Campground, WA',
   },
   {
@@ -3475,6 +3757,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99137,
     city: 'Hunters',
+    favorite_id: null,
     nameState: 'Hunters Group Sites, WA',
   },
   {
@@ -3488,6 +3771,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Hurricane River Campground, MI',
   },
   {
@@ -3501,6 +3785,7 @@ const campsiteData = [
     zipCode: 99755,
     city: 'Denali Park',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Igloo Creek, AK',
   },
   {
@@ -3513,6 +3798,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92277,
     city: 'Twentynine Palms',
+    favorite_id: null,
     nameState: 'Indian Cove Campground, CA',
   },
   {
@@ -3525,6 +3811,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82190,
     city: 'Yellowstone National Park',
+    favorite_id: null,
     nameState: 'Indian Creek Campground, WY',
   },
   {
@@ -3537,6 +3824,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 20842,
     city: 'Dickerson',
+    favorite_id: null,
     nameState: 'Indian Flats Hiker-Biker Campsite, MD',
   },
   {
@@ -3549,6 +3837,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 96134,
     city: 'Tulelake',
+    favorite_id: null,
     nameState: 'Indian Well Campground, CA',
   },
   {
@@ -3561,6 +3850,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21766,
     city: 'Little Orleans',
+    favorite_id: null,
     nameState: 'Indigo Neck Hiker-Biker Campsite, MD',
   },
   {
@@ -3573,6 +3863,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Intermediate Lake Campground, MI',
   },
   {
@@ -3585,6 +3876,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21740,
     city: 'Hagerstown',
+    favorite_id: null,
     nameState: 'Irons Mountain Hiker-Biker Campsite, MD',
   },
   {
@@ -3597,6 +3889,7 @@ const campsiteData = [
     state: 'Minnesota',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Island Mine Campground, MN',
   },
   {
@@ -3609,6 +3902,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84532,
     city: 'Moab',
+    favorite_id: null,
     nameState: 'Island in the Sky (Willow Flat) Campground, UT',
   },
   {
@@ -3621,6 +3915,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 95531,
     city: 'Crescent City',
+    favorite_id: null,
     nameState: 'Jedediah Smith Campground, CA',
   },
   {
@@ -3633,6 +3928,7 @@ const campsiteData = [
     state: 'Mississippi',
     zipCode: 39735,
     city: 'Ackerman',
+    favorite_id: null,
     nameState: 'Jeff Busby Campground, Milepost 193.1, MS',
   },
   {
@@ -3645,6 +3941,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 83012,
     city: 'Moose',
+    favorite_id: null,
     nameState: 'Jenny Lake Campground, WY',
   },
   {
@@ -3657,6 +3954,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99185,
     city: 'Wilbur',
+    favorite_id: null,
     nameState: 'Jones Bay Campground, WA',
   },
   {
@@ -3669,6 +3967,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21795,
     city: 'Williamsport',
+    favorite_id: null,
     nameState: 'Jordan Junction Hiker-Biker Campsite, MD',
   },
   {
@@ -3681,6 +3980,7 @@ const campsiteData = [
     state: 'North Carolina',
     zipCode: 28605,
     city: 'Blowing Rock',
+    favorite_id: null,
     nameState: 'Julian Price Park Campground, NC',
   },
   {
@@ -3693,6 +3993,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92277,
     city: 'Twentynine Palms',
+    favorite_id: null,
     nameState: 'Jumbo Rocks Campground, CA',
   },
   {
@@ -3705,6 +4006,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 85730,
     city: 'Tucson',
+    favorite_id: null,
     nameState: 'Juniper Basin, AZ',
   },
   {
@@ -3718,6 +4020,7 @@ const campsiteData = [
     zipCode: 58645,
     city: 'Medora',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Juniper Campground, ND',
   },
   {
@@ -3730,6 +4033,7 @@ const campsiteData = [
     state: 'New Mexico',
     zipCode: 87544,
     city: 'Los Alamos',
+    favorite_id: null,
     nameState: 'Juniper Family Campground, NM',
   },
   {
@@ -3742,6 +4046,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 96020,
     city: 'Chester',
+    favorite_id: null,
     nameState: 'Juniper Lake Campground, CA',
   },
   {
@@ -3755,6 +4060,7 @@ const campsiteData = [
     zipCode: null,
     city: null,
     address: null,
+    favorite_id: null,
     nameState: 'Kalaloch Campround',
   },
   {
@@ -3767,6 +4073,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99141,
     city: 'Kettle Falls',
+    favorite_id: null,
     nameState: 'Kamloops Island Campground, WA',
   },
   {
@@ -3779,6 +4086,7 @@ const campsiteData = [
     state: 'Alaska',
     zipCode: 99586,
     city: 'Nabesna',
+    favorite_id: null,
     nameState: 'Kendesnii Campground, AK',
   },
   {
@@ -3791,6 +4099,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99141,
     city: 'Kettle Falls',
+    favorite_id: null,
     nameState: 'Kettle Falls Campground, WA',
   },
   {
@@ -3803,6 +4112,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99107,
     city: 'Boyds',
+    favorite_id: null,
     nameState: 'Kettle River Campground, WA',
   },
   {
@@ -3815,6 +4125,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21782,
     city: 'Sharpsburg',
+    favorite_id: null,
     nameState: 'Killiansburg Cave Hiker-Biker Campsite, MD',
   },
   {
@@ -3827,6 +4138,7 @@ const campsiteData = [
     state: 'Montana',
     zipCode: 59936,
     city: 'West Glacier',
+    favorite_id: null,
     nameState: 'Kintla Lake, MT',
   },
   {
@@ -3839,6 +4151,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 94965,
     city: 'Sausalito',
+    favorite_id: null,
     nameState: 'Kirby Cove Campground, CA',
   },
   {
@@ -3851,6 +4164,7 @@ const campsiteData = [
     state: 'Hawaii',
     zipCode: 96718,
     city: 'Hawaii National Park',
+    favorite_id: null,
     nameState: 'Kulanaokuaiki, HI',
   },
   {
@@ -3863,6 +4177,7 @@ const campsiteData = [
     state: 'Arkansas',
     zipCode: 72641,
     city: 'Jasper',
+    favorite_id: null,
     nameState: 'Kyles Landing, AR',
   },
   {
@@ -3875,6 +4190,7 @@ const campsiteData = [
     state: 'Hawaii',
     zipCode: 93713,
     city: 'Hāna',
+    favorite_id: null,
     nameState: 'Kīpahulu Campground, HI',
   },
   {
@@ -3888,6 +4204,7 @@ const campsiteData = [
     zipCode: 81230,
     city: 'Gunnison',
     address: '29070-29174 US-50',
+    favorite_id: null,
     nameState: 'Lake Fork Campground, CO',
   },
   {
@@ -3901,6 +4218,7 @@ const campsiteData = [
     zipCode: 89005,
     city: 'Boulder City',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Lake Mead RV Village, NV',
   },
   {
@@ -3913,6 +4231,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Lake Richie Campground, MI',
   },
   {
@@ -3925,6 +4244,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Lake Richie Canoe Campground, MI',
   },
   {
@@ -3937,6 +4257,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Lake Whittlesey Campground, MI',
   },
   {
@@ -3950,6 +4271,7 @@ const campsiteData = [
     zipCode: 98284,
     city: 'Sedro-Woolley',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Lakeview Campground, WA',
   },
   {
@@ -3962,6 +4284,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Lane Cove Campground, MI',
   },
   {
@@ -3974,6 +4297,7 @@ const campsiteData = [
     state: 'Nevada',
     zipCode: 89005,
     city: 'Boulder City',
+    favorite_id: null,
     nameState: 'Las Vegas Bay Campground, NV',
   },
   {
@@ -3987,6 +4311,7 @@ const campsiteData = [
     zipCode: 83213,
     city: 'Arco',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Lava Flow Campground, ID',
   },
   {
@@ -4000,6 +4325,7 @@ const campsiteData = [
     zipCode: 84737,
     city: 'Hurricane',
     address: 'Watchman Campground',
+    favorite_id: null,
     nameState: 'Lava Point Campground, UT',
   },
   {
@@ -4012,6 +4338,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 86036,
     city: 'Marble Canyon',
+    favorite_id: null,
     nameState: 'Lees Ferry Campground, AZ',
   },
   {
@@ -4024,6 +4351,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21750,
     city: 'Hancock',
+    favorite_id: null,
     nameState: 'Leopards Mill Hiker-Biker Campsite, MD',
   },
   {
@@ -4036,6 +4364,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82190,
     city: 'Yellowstone National Park',
+    favorite_id: null,
     nameState: 'Lewis Lake Campground, WY',
   },
   {
@@ -4048,6 +4377,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 22827,
     city: 'Shenandoah',
+    favorite_id: null,
     nameState: 'Lewis Mountain Campground, VA',
   },
   {
@@ -4060,6 +4390,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21711,
     city: 'Pool',
+    favorite_id: null,
     nameState: 'Licking Creek Hiker-Biker Campsite, MD',
   },
   {
@@ -4072,6 +4403,7 @@ const campsiteData = [
     state: 'North Carolina',
     zipCode: 28752,
     city: 'Linville Falls',
+    favorite_id: null,
     nameState: 'Linville Falls Campground, NC',
   },
   {
@@ -4084,6 +4416,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49884,
     city: 'Melstrand',
+    favorite_id: null,
     nameState: 'Little Beaver Lake Campground, MI',
   },
   {
@@ -4096,6 +4429,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21750,
     city: 'Hancock',
+    favorite_id: null,
     nameState: 'Little Pool Hiker-Biker Campsite, MD',
   },
   {
@@ -4108,6 +4442,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Little Todd Campground, MI',
   },
   {
@@ -4120,6 +4455,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 83013,
     city: 'Moran',
+    favorite_id: null,
     nameState: 'Lizard Creek Campground, WY',
   },
   {
@@ -4132,6 +4468,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99141,
     city: 'Kettle Falls',
+    favorite_id: null,
     nameState: 'Locust Grove Group Sites, WA',
   },
   {
@@ -4144,6 +4481,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93262,
     city: 'Lodgepole',
+    favorite_id: null,
     nameState: 'Lodgepole Campground, CA',
   },
   {
@@ -4156,6 +4494,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 22932,
     city: 'Crozet',
+    favorite_id: null,
     nameState: 'Loft Mountain Campground, VA',
   },
   {
@@ -4168,6 +4507,7 @@ const campsiteData = [
     state: 'Montana',
     zipCode: 59936,
     city: 'West Glacier',
+    favorite_id: null,
     nameState: 'Logging Creek, MT',
   },
   {
@@ -4180,6 +4520,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 86040,
     city: 'Greenehaven',
+    favorite_id: null,
     nameState: 'Lone Rock Beach Primitive Camping Area, AZ',
   },
   {
@@ -4192,6 +4533,7 @@ const campsiteData = [
     state: 'Florida',
     zipCode: 33034,
     city: 'Homestead',
+    favorite_id: null,
     nameState: 'Long Pine Key Campground, FL',
   },
   {
@@ -4205,6 +4547,7 @@ const campsiteData = [
     zipCode: 29205,
     city: 'Richland',
     address: 'Richland County',
+    favorite_id: null,
     nameState: 'Longleaf Campground, SC',
   },
   {
@@ -4218,6 +4561,7 @@ const campsiteData = [
     zipCode: 80517,
     city: 'Estes Park',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Longs Peak Campground, CO',
   },
   {
@@ -4230,6 +4574,7 @@ const campsiteData = [
     state: 'Oregon',
     zipCode: 97604,
     city: 'Crater Lake',
+    favorite_id: null,
     nameState: 'Lost Creek Campground, elevation 6,000 feet (1,829 meters), OR',
   },
   {
@@ -4242,6 +4587,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 96088,
     city: 'Shingletown',
+    favorite_id: null,
     nameState: 'Lost Creek Group Campground, CA',
   },
   {
@@ -4254,6 +4600,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98284,
     city: 'Sedro-Woolley',
+    favorite_id: null,
     nameState: 'Lower Goodell Creek Group Campground, WA',
   },
   {
@@ -4267,6 +4614,7 @@ const campsiteData = [
     zipCode: 89311,
     city: 'Baker',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Lower Lehman Campground, NV',
   },
   {
@@ -4279,6 +4627,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 95389,
     city: 'Yosemite',
+    favorite_id: null,
     nameState: 'Lower Pines Campground, CA',
   },
   {
@@ -4292,6 +4641,7 @@ const campsiteData = [
     zipCode: 88061,
     city: 'Silver City',
     address: 'NM-15',
+    favorite_id: null,
     nameState: 'Lower Scorpion Campground, NM',
   },
   {
@@ -4305,6 +4655,7 @@ const campsiteData = [
     zipCode: 54888,
     city: 'Trego',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Lower St. Croix District, WI',
   },
   {
@@ -4318,6 +4669,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Lowney Creek Individual Backpacking Sites, MI',
   },
   {
@@ -4331,6 +4683,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Lowney Greek Group Backpacking Site, MI',
   },
   {
@@ -4343,6 +4696,7 @@ const campsiteData = [
     state: 'Maine',
     zipCode: 4765,
     city: 'Patten',
+    favorite_id: null,
     nameState: 'Lunksoos Campsites, ME',
   },
   {
@@ -4356,6 +4710,7 @@ const campsiteData = [
     zipCode: 4765,
     city: 'Patten',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Lunksoos Mountain Lean-To, ME',
   },
   {
@@ -4368,6 +4723,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82190,
     city: 'Yellowstone National Park',
+    favorite_id: null,
     nameState: 'Madison Campground, WY',
   },
   {
@@ -4380,6 +4736,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92328,
     city: 'Death Valley',
+    favorite_id: null,
     nameState: 'Mahogany Flat Campground (Primitive), CA',
   },
   {
@@ -4392,6 +4749,7 @@ const campsiteData = [
     state: 'Texas',
     zipCode: 78418,
     city: 'Corpus Christi',
+    favorite_id: null,
     nameState: 'Malaquite Campground, TX',
   },
   {
@@ -4404,6 +4762,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Malone Bay Campground, MI',
   },
   {
@@ -4416,6 +4775,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82190,
     city: 'Yellowstone National Park',
+    favorite_id: null,
     nameState: 'Mammoth Campground, WY',
   },
   {
@@ -4428,6 +4788,7 @@ const campsiteData = [
     state: 'Kentucky',
     zipCode: 42259,
     city: 'Mammoth Cave',
+    favorite_id: null,
     nameState: 'Mammoth Cave Campground, KY',
   },
   {
@@ -4440,6 +4801,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 85730,
     city: 'Tucson',
+    favorite_id: null,
     nameState: 'Manning Camp, AZ',
   },
   {
@@ -4452,6 +4814,7 @@ const campsiteData = [
     state: 'Montana',
     zipCode: 59936,
     city: 'West Glacier',
+    favorite_id: null,
     nameState: 'Many Glacier, MT',
   },
   {
@@ -4464,6 +4827,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 96088,
     city: 'Shingletown',
+    favorite_id: null,
     nameState: 'Manzanita Lake Campground, CA',
   },
   {
@@ -4476,6 +4840,7 @@ const campsiteData = [
     state: 'Kentucky',
     zipCode: 42259,
     city: 'Mammoth Cave',
+    favorite_id: null,
     nameState: 'Maple Springs Group Campground, KY',
   },
   {
@@ -4488,6 +4853,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 20837,
     city: 'Poolesville',
+    favorite_id: null,
     nameState: 'Marble Quarry Hiker-Biker Campsite, MD',
   },
   {
@@ -4500,6 +4866,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99151,
     city: 'Marcus',
+    favorite_id: null,
     nameState: 'Marcus Island Campground, WA',
   },
   {
@@ -4513,6 +4880,7 @@ const campsiteData = [
     zipCode: 79847,
     city: 'Salt Flat',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Marcus Wilderness Campground, TX',
   },
   {
@@ -4526,6 +4894,7 @@ const campsiteData = [
     zipCode: 21740,
     city: 'Hagerstown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Marsden Tract Group Campground, MD',
   },
   {
@@ -4539,6 +4908,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Masse Homestead Group Backpacking Site, MI',
   },
   {
@@ -4552,6 +4922,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Masse Homestead Individual Backpacking Sites, MI',
   },
   {
@@ -4564,6 +4935,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 86023,
     city: 'Grand Canyon',
+    favorite_id: null,
     nameState: 'Mather Campground - South Rim, AZ',
   },
   {
@@ -4576,6 +4948,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 22835,
     city: 'Luray',
+    favorite_id: null,
     nameState: 'Mathews Arm Campground, VA',
   },
   {
@@ -4588,6 +4961,7 @@ const campsiteData = [
     state: 'Arkansas',
     zipCode: 72650,
     city: 'Marshall',
+    favorite_id: null,
     nameState: 'Maumee South, AR',
   },
   {
@@ -4600,6 +4974,7 @@ const campsiteData = [
     state: 'Oregon',
     zipCode: 97604,
     city: 'Crater Lake',
+    favorite_id: null,
     nameState: 'Mazama Campground, OR',
   },
   {
@@ -4613,6 +4988,7 @@ const campsiteData = [
     zipCode: '79114',
     city: 'Fritch',
     address: 'Blue West Rd',
+    favorite_id: null,
     nameState: 'McBride Canyon and Mullinaw Creek Campgrounds, TX',
   },
   {
@@ -4625,6 +5001,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'McCargoe Cove Campground, MI',
   },
   {
@@ -4638,6 +5015,7 @@ const campsiteData = [
     zipCode: 79847,
     city: 'Salt Flat',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'McKittrick Ridge Wilderness Campground, TX',
   },
   {
@@ -4650,6 +5028,7 @@ const campsiteData = [
     state: 'Pennsylvania',
     zipCode: 17325,
     city: 'Gettysburg',
+    favorite_id: null,
     nameState: 'McMillan Woods Youth Campground, PA',
   },
   {
@@ -4663,6 +5042,7 @@ const campsiteData = [
     zipCode: 21740,
     city: 'Hagerstown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Mccoys Ferry Campground, MD',
   },
   {
@@ -4675,6 +5055,7 @@ const campsiteData = [
     state: 'West Virginia',
     zipCode: 25977,
     city: 'Sandstone',
+    favorite_id: null,
     nameState: 'Meadow Creek Campground, WV',
   },
   {
@@ -4687,6 +5068,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 81146,
     city: 'Mosca',
+    favorite_id: null,
     nameState: 'Medano Pass Primitive Road Campsites, CO',
   },
   {
@@ -4699,6 +5081,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82431,
     city: 'Lovell',
+    favorite_id: null,
     nameState: 'Medicine Creek Campground, WY',
   },
   {
@@ -4711,6 +5094,7 @@ const campsiteData = [
     state: 'Tennessee',
     zipCode: 38462,
     city: 'Hohenwald',
+    favorite_id: null,
     nameState: 'Meriwether Lewis Campground, Milepost 385.9, TN',
   },
   {
@@ -4723,6 +5107,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Merritt Lane Campground, MI',
   },
   {
@@ -4736,6 +5121,7 @@ const campsiteData = [
     zipCode: 79847,
     city: 'Salt Flat',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Mescalero Wilderness Campground, TX',
   },
   {
@@ -4748,6 +5134,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92328,
     city: 'Death Valley',
+    favorite_id: null,
     nameState: 'Mesquite Spring Campground, CA',
   },
   {
@@ -4760,6 +5147,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92311,
     city: 'Barstow',
+    favorite_id: null,
     nameState: 'Mid-Hills Campground, CA',
   },
   {
@@ -4773,6 +5161,7 @@ const campsiteData = [
     zipCode: 54888,
     city: 'Trego',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Middle St. Croix, WI',
   },
   {
@@ -4785,6 +5174,7 @@ const campsiteData = [
     state: 'Florida',
     zipCode: 34141,
     city: 'Ochopee',
+    favorite_id: null,
     nameState: 'Midway Campground, FL',
   },
   {
@@ -4797,6 +5187,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 95531,
     city: 'Crescent City',
+    favorite_id: null,
     nameState: 'Mill Creek Campground, CA',
   },
   {
@@ -4809,6 +5200,7 @@ const campsiteData = [
     state: 'Florida',
     zipCode: 34141,
     city: 'Ochopee',
+    favorite_id: null,
     nameState: "Mitchell's Landing, FL",
   },
   {
@@ -4821,6 +5213,7 @@ const campsiteData = [
     state: 'New Jersey',
     zipCode: 7825,
     city: 'Blairstown',
+    favorite_id: null,
     nameState: 'Mohican Outdoor Center, NJ',
   },
   {
@@ -4833,6 +5226,7 @@ const campsiteData = [
     state: 'Florida',
     zipCode: 34141,
     city: 'Ochopee',
+    favorite_id: null,
     nameState: 'Monument Lake, FL',
   },
   {
@@ -4845,6 +5239,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98331,
     city: 'Forks',
+    favorite_id: null,
     nameState: 'Mora Campground, WA',
   },
   {
@@ -4857,6 +5252,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93633,
     city: 'Kings Canyon National Park',
+    favorite_id: null,
     nameState: 'Moraine Campground, CA',
   },
   {
@@ -4869,6 +5265,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 80517,
     city: 'Estes Park',
+    favorite_id: null,
     nameState: 'Moraine Park Campground, CO',
   },
   {
@@ -4881,6 +5278,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 81330,
     city: 'Mesa Verde National Park',
+    favorite_id: null,
     nameState: 'Morefield Campground, CO',
   },
   {
@@ -4893,6 +5291,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Moskey Basin Campground, MI',
   },
   {
@@ -4906,6 +5305,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Mosquito Individual Backpacking Sites, MI',
   },
   {
@@ -4919,6 +5319,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Mosquito River Group Backpacking Site, MI',
   },
   {
@@ -4931,6 +5332,7 @@ const campsiteData = [
     state: 'North Carolina',
     zipCode: 28803,
     city: 'Asheville',
+    favorite_id: null,
     nameState: 'Mount Pisgah, NC',
   },
   {
@@ -4944,6 +5346,7 @@ const campsiteData = [
     zipCode: null,
     city: null,
     address: null,
+    favorite_id: null,
     nameState: 'NPS Priest Rock Public Use Cabin',
   },
   {
@@ -4957,6 +5360,7 @@ const campsiteData = [
     zipCode: 54888,
     city: 'Trego',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Namekagon District, WI',
   },
   {
@@ -4969,6 +5373,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84511,
     city: 'Blanding',
+    favorite_id: null,
     nameState: 'Natural Bridges Campground, UT',
   },
   {
@@ -4981,6 +5386,7 @@ const campsiteData = [
     state: 'Florida',
     zipCode: 32563,
     city: 'Gulf Breeze',
+    favorite_id: null,
     nameState: 'Naval Live Oaks Youth Group Camping, FL',
   },
   {
@@ -4993,6 +5399,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98284,
     city: 'Sedro-Woolley',
+    favorite_id: null,
     nameState: 'Newhalem Creek Campground, WA',
   },
   {
@@ -5005,6 +5412,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82190,
     city: 'Yellowstone National Park',
+    favorite_id: null,
     nameState: 'Norris Campground, WY',
   },
   {
@@ -5017,6 +5425,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84764,
     city: 'Bryce',
+    favorite_id: null,
     nameState: 'North Campground, UT',
   },
   {
@@ -5029,6 +5438,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'North Desor Campground, MI',
   },
   {
@@ -5041,6 +5451,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98362,
     city: 'Port Angeles',
+    favorite_id: null,
     nameState: 'North Fork Campground, WA',
   },
   {
@@ -5053,6 +5464,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99126,
     city: 'Evans',
+    favorite_id: null,
     nameState: 'North Gorge Campground, WA',
   },
   {
@@ -5065,6 +5477,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21722,
     city: 'Clear Spring',
+    favorite_id: null,
     nameState: 'North Mountain Hiker-Biker Campsite, MD',
   },
   {
@@ -5078,6 +5491,7 @@ const campsiteData = [
     zipCode: 95389,
     city: 'Yosemite',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'North Pines Campground, CA',
   },
   {
@@ -5090,6 +5504,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 81415,
     city: 'Crawford',
+    favorite_id: null,
     nameState: 'North Rim Campground, CO',
   },
   {
@@ -5102,6 +5517,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 86052,
     city: 'North Rim',
+    favorite_id: null,
     nameState: 'North Rim Campground, AZ',
   },
   {
@@ -5114,6 +5530,7 @@ const campsiteData = [
     state: 'Hawaii',
     zipCode: 96718,
     city: 'Hawaii National Park',
+    favorite_id: null,
     nameState: 'Nāmakanipaio, HI',
   },
   {
@@ -5127,6 +5544,7 @@ const campsiteData = [
     zipCode: 96095,
     city: 'Whiskeytown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Oak Bottom RV, CA',
   },
   {
@@ -5140,6 +5558,7 @@ const campsiteData = [
     zipCode: 96095,
     city: 'Whiskeytown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Oak Bottom Tent Campground, CA',
   },
   {
@@ -5152,6 +5571,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 22172,
     city: 'Triangle',
+    favorite_id: null,
     nameState: 'Oak Ridge Campground, VA',
   },
   {
@@ -5164,6 +5584,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21811,
     city: 'Berlin',
+    favorite_id: null,
     nameState: 'Oceanside Drive-in Campground, MD',
   },
   {
@@ -5176,6 +5597,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21811,
     city: 'Berlin',
+    favorite_id: null,
     nameState: 'Oceanside Group Campground, MD',
   },
   {
@@ -5188,6 +5610,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21811,
     city: 'Berlin',
+    favorite_id: null,
     nameState: 'Oceanside Walk-in campground, MD',
   },
   {
@@ -5200,6 +5623,7 @@ const campsiteData = [
     state: 'North Carolina',
     zipCode: 27960,
     city: 'Ocracoke',
+    favorite_id: null,
     nameState: 'Ocracoke Campground, NC',
   },
   {
@@ -5213,6 +5637,7 @@ const campsiteData = [
     zipCode: 98304,
     city: 'Ashford',
     address: '48627 Paradise Rd E',
+    favorite_id: null,
     nameState: 'Ohanapecosh Campground, WA',
   },
   {
@@ -5225,6 +5650,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21795,
     city: 'Williamsport',
+    favorite_id: null,
     nameState: 'Opequon Junction Hiker-Biker Campsite, MD',
   },
   {
@@ -5237,6 +5663,7 @@ const campsiteData = [
     state: 'North Carolina',
     zipCode: 27959,
     city: 'Nags Head',
+    favorite_id: null,
     nameState: 'Oregon Inlet Campground, NC',
   },
   {
@@ -5249,6 +5676,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 24526,
     city: 'Big Island',
+    favorite_id: null,
     nameState: 'Otter Creek, VA',
   },
   {
@@ -5261,6 +5689,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21780,
     city: 'Sabillasville',
+    favorite_id: null,
     nameState: 'Owens Creek Campground, MD',
   },
   {
@@ -5273,6 +5702,7 @@ const campsiteData = [
     state: 'Arkansas',
     zipCode: 72641,
     city: 'Jasper',
+    favorite_id: null,
     nameState: 'Ozark Campground, AR',
   },
   {
@@ -5285,6 +5715,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98362,
     city: 'Port Angeles',
+    favorite_id: null,
     nameState: 'Ozette Campground, WA',
   },
   {
@@ -5298,6 +5729,7 @@ const campsiteData = [
     zipCode: 36108,
     city: 'Montgomery',
     address: '561 Booth Rd',
+    favorite_id: null,
     nameState: 'Paul Grist State Park, AL',
   },
   {
@@ -5311,6 +5743,7 @@ const campsiteData = [
     zipCode: 21740,
     city: 'Hagerstown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Paw Paw Tunnel Campground, MD',
   },
   {
@@ -5323,6 +5756,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 24523,
     city: 'Bedford',
+    favorite_id: null,
     nameState: 'Peaks of Otter Campground, VA',
   },
   {
@@ -5335,6 +5769,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82190,
     city: 'Yellowstone National Park',
+    favorite_id: null,
     nameState: 'Pebble Creek Campground, WY',
   },
   {
@@ -5348,6 +5783,7 @@ const campsiteData = [
     zipCode: 96095,
     city: 'Whiskeytown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Peltier Bridge, CA',
   },
   {
@@ -5360,6 +5796,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Pickerel Cove Campground, MI',
   },
   {
@@ -5372,6 +5809,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21740,
     city: 'Hagerstown',
+    favorite_id: null,
     nameState: 'Pigmans Ferry Hiker-Biker Campsite, MD',
   },
   {
@@ -5385,6 +5823,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Pine Bluff Individual Backpacking Sites, MI',
   },
   {
@@ -5397,6 +5836,7 @@ const campsiteData = [
     state: 'Texas',
     zipCode: 79847,
     city: 'Salt Flat',
+    favorite_id: null,
     nameState: 'Pine Springs Campground, TX',
   },
   {
@@ -5410,6 +5850,7 @@ const campsiteData = [
     zipCode: 79847,
     city: 'Salt Flat',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Pine Top Wilderness Campground, TX',
   },
   {
@@ -5422,6 +5863,7 @@ const campsiteData = [
     state: 'Florida',
     zipCode: 34141,
     city: 'Ochopee',
+    favorite_id: null,
     nameState: 'Pinecrest, FL',
   },
   {
@@ -5434,6 +5876,7 @@ const campsiteData = [
     state: 'Florida',
     zipCode: 34101,
     city: 'Ochopee',
+    favorite_id: null,
     nameState: 'Pink Jeep, FL',
   },
   {
@@ -5446,6 +5889,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 95043,
     city: 'Paicines',
+    favorite_id: null,
     nameState: 'Pinnacles Campground, CA',
   },
   {
@@ -5458,6 +5902,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 81146,
     city: 'Mosca',
+    favorite_id: null,
     nameState: 'Piñon Flats Campground, CO',
   },
   {
@@ -5470,6 +5915,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49640,
     city: 'Honor',
+    favorite_id: null,
     nameState: 'Platte River Campground, MI',
   },
   {
@@ -5483,6 +5929,7 @@ const campsiteData = [
     zipCode: 99840,
     city: 'Skagway',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Pleasant Camp, AK',
   },
   {
@@ -5495,6 +5942,7 @@ const campsiteData = [
     state: 'Texas',
     zipCode: 79036,
     city: 'Fritch',
+    favorite_id: null,
     nameState: 'Plum Creek Campgrounds, TX',
   },
   {
@@ -5508,6 +5956,7 @@ const campsiteData = [
     zipCode: 4765,
     city: 'Patten',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Pond Pitch Campsite, ME',
   },
   {
@@ -5520,6 +5969,7 @@ const campsiteData = [
     state: 'New Mexico',
     zipCode: 87544,
     city: 'Los Alamos',
+    favorite_id: null,
     nameState: 'Ponderosa, NM',
   },
   {
@@ -5533,6 +5983,7 @@ const campsiteData = [
     zipCode: 81230,
     city: 'Gunnison',
     address: '29070-29174 US-50',
+    favorite_id: null,
     nameState: 'Ponderosa Campground, CO',
   },
   {
@@ -5545,6 +5996,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49630,
     city: 'Empire',
+    favorite_id: null,
     nameState: 'Popple Campground - South Manitou Island, MI',
   },
   {
@@ -5558,6 +6010,7 @@ const campsiteData = [
     zipCode: 95389,
     city: 'Yosemite',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Porcupine Flat Campground, CA',
   },
   {
@@ -5571,6 +6024,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Potato Patch Individual Backpacking Sites, MI',
   },
   {
@@ -5583,6 +6037,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21740,
     city: 'Hagerstown',
+    favorite_id: null,
     nameState: 'Potomac Forks Hiker-Biker Campsite, MD',
   },
   {
@@ -5596,6 +6051,7 @@ const campsiteData = [
     zipCode: 36108,
     city: 'Montgomery',
     address: '561 Booth Rd',
+    favorite_id: null,
     nameState: 'Prairie Creek, AL',
   },
   {
@@ -5608,6 +6064,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84775,
     city: 'Torrey',
+    favorite_id: null,
     nameState: 'Primitive campsites at Cathedral Campground, UT',
   },
   {
@@ -5620,6 +6077,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84775,
     city: 'Torrey',
+    favorite_id: null,
     nameState: 'Primitive campsites at Cedar Mesa Campground, UT',
   },
   {
@@ -5632,6 +6090,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 22172,
     city: 'Triangle',
+    favorite_id: null,
     nameState: 'Prince William Forest RV Campground, VA',
   },
   {
@@ -5644,6 +6103,7 @@ const campsiteData = [
     state: 'Missouri',
     zipCode: 65466,
     city: 'Eminence',
+    favorite_id: null,
     nameState: 'Pulltite Campground, MO',
   },
   {
@@ -5657,6 +6117,7 @@ const campsiteData = [
     zipCode: 98284,
     city: 'Sedro-Woolley',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Purple Point Campground, WA',
   },
   {
@@ -5669,6 +6130,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21740,
     city: 'Hagerstown',
+    favorite_id: null,
     nameState: 'Purslane Run Hiker-Biker Campsite, MD',
   },
   {
@@ -5681,6 +6143,7 @@ const campsiteData = [
     state: 'Montana',
     zipCode: 59936,
     city: 'West Glacier',
+    favorite_id: null,
     nameState: 'Quartz Creek, MT',
   },
   {
@@ -5693,6 +6156,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98362,
     city: 'Port Angeles',
+    favorite_id: null,
     nameState: 'Queets Campground, WA',
   },
   {
@@ -5705,6 +6169,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84035,
     city: 'Jensen',
+    favorite_id: null,
     nameState: 'Rainbow Park Campground, UT',
   },
   {
@@ -5718,6 +6183,7 @@ const campsiteData = [
     zipCode: 81230,
     city: 'Gunnison',
     address: '29070-29174 US-50',
+    favorite_id: null,
     nameState: 'Red Creek Campground, CO',
   },
   {
@@ -5731,6 +6197,7 @@ const campsiteData = [
     zipCode: 99755,
     city: 'Denali Park',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Riley Creek, AK',
   },
   {
@@ -5744,6 +6211,7 @@ const campsiteData = [
     zipCode: 79834,
     city: 'Big Bend',
     address: 'Big Bend National Park',
+    favorite_id: null,
     nameState: 'Rio Grande Village Campground, TX',
   },
   {
@@ -5757,6 +6225,7 @@ const campsiteData = [
     zipCode: 79834,
     city: 'Big Bend',
     address: 'Big Bend National Park',
+    favorite_id: null,
     nameState: 'Rio Grande Village RV, TX',
   },
   {
@@ -5769,6 +6238,7 @@ const campsiteData = [
     state: 'Montana',
     zipCode: 59936,
     city: 'West Glacier',
+    favorite_id: null,
     nameState: 'Rising Sun, MT',
   },
   {
@@ -5781,6 +6251,7 @@ const campsiteData = [
     state: 'New Jersey',
     zipCode: 7881,
     city: 'Walpack Township',
+    favorite_id: null,
     nameState: 'Rivers Bend Group Campground, NJ',
   },
   {
@@ -5794,6 +6265,7 @@ const campsiteData = [
     zipCode: 73086,
     city: 'Sulpher',
     address: 'Buckhorn Campground',
+    favorite_id: null,
     nameState: 'Rock Creek Campground, OK',
   },
   {
@@ -5806,6 +6278,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Rock Harbor Campground, MI',
   },
   {
@@ -5818,6 +6291,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 24091,
     city: 'Floyd',
+    favorite_id: null,
     nameState: 'Rocky Knob Campground, VA',
   },
   {
@@ -5830,6 +6304,7 @@ const campsiteData = [
     state: 'Mississippi',
     zipCode: 39086,
     city: 'Hermanville',
+    favorite_id: null,
     nameState: 'Rocky Springs Campground, Milepost 54.8, MS',
   },
   {
@@ -5843,6 +6318,7 @@ const campsiteData = [
     zipCode: '79114',
     city: 'Fritch',
     address: 'Blue West Rd',
+    favorite_id: null,
     nameState: 'Rosita Flats, TX',
   },
   {
@@ -5856,6 +6332,7 @@ const campsiteData = [
     zipCode: 78840,
     city: 'Del Rio',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Rough Canyon Camground, TX',
   },
   {
@@ -5868,6 +6345,7 @@ const campsiteData = [
     state: 'Missouri',
     zipCode: 65466,
     city: 'Eminence',
+    favorite_id: null,
     nameState: 'Round Spring Campground, MO',
   },
   {
@@ -5881,6 +6359,7 @@ const campsiteData = [
     zipCode: 58645,
     city: 'Medora',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Roundup Group Horse Camp, ND',
   },
   {
@@ -5893,6 +6372,7 @@ const campsiteData = [
     state: 'Arkansas',
     zipCode: 72687,
     city: 'Yellville',
+    favorite_id: null,
     nameState: 'Rush Campground, AR',
   },
   {
@@ -5905,6 +6385,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92277,
     city: 'Twentynine Palms',
+    favorite_id: null,
     nameState: 'Ryan Campground, CA',
   },
   {
@@ -5917,6 +6398,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 81521,
     city: 'Fruita',
+    favorite_id: null,
     nameState: 'Saddlehorn Campground, CO',
   },
   {
@@ -5929,6 +6411,7 @@ const campsiteData = [
     state: 'South Dakota',
     zipCode: 57790,
     city: 'Wall',
+    favorite_id: null,
     nameState: 'Sage Creek Campground, SD',
   },
   {
@@ -5941,6 +6424,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93001,
     city: 'San Miguel Island',
+    favorite_id: null,
     nameState: 'San Miguel Island Campground, CA',
   },
   {
@@ -5954,6 +6438,7 @@ const campsiteData = [
     zipCode: 78840,
     city: 'Del Rio',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'San Pedro Campground, TX',
   },
   {
@@ -5967,6 +6452,7 @@ const campsiteData = [
     zipCode: 99755,
     city: 'Denali Park',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Sanctuary River, AK',
   },
   {
@@ -5979,6 +6465,7 @@ const campsiteData = [
     state: 'Maine',
     zipCode: 4765,
     city: 'Patten',
+    favorite_id: null,
     nameState: 'Sandbank Stream Campground, ME',
   },
   {
@@ -5992,6 +6479,7 @@ const campsiteData = [
     zipCode: 07732,
     city: 'Highlands',
     address: 'Camp Site Rd',
+    favorite_id: null,
     nameState: 'Sandy Hook Camp Ground, NJ',
   },
   {
@@ -6005,6 +6493,7 @@ const campsiteData = [
     zipCode: '79114',
     city: 'Fritch',
     address: 'Blue West Rd',
+    favorite_id: null,
     nameState: 'Sanford Yake Campground, TX',
   },
   {
@@ -6017,6 +6506,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93001,
     city: 'Santa Barbara Island',
+    favorite_id: null,
     nameState: 'Santa Barbara Island Campground, CA',
   },
   {
@@ -6029,6 +6519,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93001,
     city: 'Santa Cruz Island',
+    favorite_id: null,
     nameState: 'Santa Cruz Island Del Norte Backcountry Campground, CA',
   },
   {
@@ -6041,6 +6532,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93001,
     city: 'Santa Cruz Island',
+    favorite_id: null,
     nameState: 'Santa Cruz Island Scorpion Canyon Campground, CA',
   },
   {
@@ -6053,6 +6545,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93001,
     city: 'Santa Rosa Island',
+    favorite_id: null,
     nameState: 'Santa Rosa Island Backcountry Beach Camping, CA',
   },
   {
@@ -6065,6 +6558,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93001,
     city: 'Santa Rosa Island',
+    favorite_id: null,
     nameState: 'Santa Rosa Island Campground, CA',
   },
   {
@@ -6078,6 +6572,7 @@ const campsiteData = [
     zipCode: 99755,
     city: 'Denali Park',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Savage River, AK',
   },
   {
@@ -6090,6 +6585,7 @@ const campsiteData = [
     state: 'Maine',
     zipCode: 4693,
     city: 'Winter Harbor',
+    favorite_id: null,
     nameState: 'Schoodic Woods Campground, ME',
   },
   {
@@ -6103,6 +6599,7 @@ const campsiteData = [
     zipCode: 31558,
     city: 'Cumberland',
     address: 'Cumberland Island',
+    favorite_id: null,
     nameState: 'Sea Camp Campground, GA',
   },
   {
@@ -6115,6 +6612,7 @@ const campsiteData = [
     state: 'Maine',
     zipCode: 4679,
     city: 'Southwest Harbor',
+    favorite_id: null,
     nameState: 'Seawall Campground, ME',
   },
   {
@@ -6127,6 +6625,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93633,
     city: 'Kings Canyon National Park',
+    favorite_id: null,
     nameState: 'Sentinel Campground, CA',
   },
   {
@@ -6140,6 +6639,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Seven Mile Creek Group Backpacking Site, MI',
   },
   {
@@ -6153,6 +6653,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Sevenmile Creek Individual Backpacking Sites, MI',
   },
   {
@@ -6166,6 +6667,7 @@ const campsiteData = [
     zipCode: 99840,
     city: 'Skagway',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Sheep Camp, AK',
   },
   {
@@ -6179,6 +6681,7 @@ const campsiteData = [
     zipCode: 96095,
     city: 'Whiskeytown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Sheep Camp, CA',
   },
   {
@@ -6191,6 +6694,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93633,
     city: 'Kings Canyon National Park',
+    favorite_id: null,
     nameState: 'Sheep Creek Campground, CA',
   },
   {
@@ -6203,6 +6707,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92277,
     city: 'Twentynine Palms',
+    favorite_id: null,
     nameState: 'Sheep Pass Group Campground, CA',
   },
   {
@@ -6216,6 +6721,7 @@ const campsiteData = [
     zipCode: 79847,
     city: 'Salt Flat',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Shumard Canyon Wilderness Campground, TX',
   },
   {
@@ -6228,6 +6734,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 83013,
     city: 'Moran',
+    favorite_id: null,
     nameState: 'Signal Mountain Campground, WY',
   },
   {
@@ -6240,6 +6747,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Siskiwit Bay Campground, MI',
   },
   {
@@ -6252,6 +6760,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 94956,
     city: 'Point Reyes Station',
+    favorite_id: null,
     nameState: 'Sky Campground, CA',
   },
   {
@@ -6264,6 +6773,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82190,
     city: 'Yellowstone National Park',
+    favorite_id: null,
     nameState: 'Slough Creek Campground, WY',
   },
   {
@@ -6276,6 +6786,7 @@ const campsiteData = [
     state: 'North Carolina',
     zipCode: 28719,
     city: 'Cherokee',
+    favorite_id: null,
     nameState: 'Smokemont Campground, NC',
   },
   {
@@ -6288,6 +6799,7 @@ const campsiteData = [
     state: 'Tennessee',
     zipCode: 37738,
     city: 'Gatlinburg',
+    favorite_id: null,
     nameState: 'Smokemont Group Campground, TN',
   },
   {
@@ -6300,6 +6812,7 @@ const campsiteData = [
     state: 'Idaho',
     zipCode: 83312,
     city: 'Almo',
+    favorite_id: null,
     nameState: 'Smoky Mountain Campground, ID',
   },
   {
@@ -6312,6 +6825,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99141,
     city: 'Kettle Falls',
+    favorite_id: null,
     nameState: 'Snag Cove Campground, WA',
   },
   {
@@ -6325,6 +6839,7 @@ const campsiteData = [
     zipCode: 89311,
     city: 'Baker',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Snake Creek Primitive Campgrounds, NV',
   },
   {
@@ -6337,6 +6852,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21740,
     city: 'Hagerstown',
+    favorite_id: null,
     nameState: 'Sorrel Ridge Hiker-Biker Campsite, MD',
   },
   {
@@ -6349,6 +6865,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98362,
     city: 'Port Angeles',
+    favorite_id: null,
     nameState: 'South Beach Campground, WA',
   },
   {
@@ -6362,6 +6879,7 @@ const campsiteData = [
     zipCode: 84737,
     city: 'Hurricane',
     address: 'Watchman Campground',
+    favorite_id: null,
     nameState: 'South Campground, UT',
   },
   {
@@ -6374,6 +6892,7 @@ const campsiteData = [
     state: 'North Carolina',
     zipCode: 28524,
     city: 'Great Island',
+    favorite_id: null,
     nameState: 'South Core Banks -- Beach camping, NC',
   },
   {
@@ -6386,6 +6905,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93271,
     city: 'Sequoia National Park',
+    favorite_id: null,
     nameState: 'South Fork Campground, CA',
   },
   {
@@ -6398,6 +6918,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'South Lake Desor Campground, MI',
   },
   {
@@ -6410,6 +6931,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 81401,
     city: 'Montrose',
+    favorite_id: null,
     nameState: 'South Rim Campground, CO',
   },
   {
@@ -6422,6 +6944,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 96063,
     city: 'Mineral',
+    favorite_id: null,
     nameState: 'Southwest Walk-In Campground, CA',
   },
   {
@@ -6434,6 +6957,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84035,
     city: 'Jensen',
+    favorite_id: null,
     nameState: 'Split Mountain Group Campground, UT',
   },
   {
@@ -6446,6 +6970,7 @@ const campsiteData = [
     state: 'Montana',
     zipCode: 59936,
     city: 'West Glacier',
+    favorite_id: null,
     nameState: 'Sprague Creek Campground, MT',
   },
   {
@@ -6458,6 +6983,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99133,
     city: 'Grand Coulee',
+    favorite_id: null,
     nameState: 'Spring Canyon Campground, WA',
   },
   {
@@ -6470,6 +6996,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 99133,
     city: 'Grand Coulee',
+    favorite_id: null,
     nameState: 'Spring Canyon Group Sites, WA',
   },
   {
@@ -6482,6 +7009,7 @@ const campsiteData = [
     state: 'Arkansas',
     zipCode: 72639,
     city: 'Harriet',
+    favorite_id: null,
     nameState: 'Spring Creek Campground, AR',
   },
   {
@@ -6495,6 +7023,7 @@ const campsiteData = [
     zipCode: 21740,
     city: 'Hagerstown',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Spring Gap Campground, MD',
   },
   {
@@ -6507,6 +7036,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 85730,
     city: 'Tucson',
+    favorite_id: null,
     nameState: 'Spud Rock Spring, AZ',
   },
   {
@@ -6520,6 +7050,7 @@ const campsiteData = [
     zipCode: 78840,
     city: 'Del Rio',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Spur 406 Campground, TX',
   },
   {
@@ -6532,6 +7063,7 @@ const campsiteData = [
     state: 'Montana',
     zipCode: 59936,
     city: 'West Glacier',
+    favorite_id: null,
     nameState: 'St. Mary, MT',
   },
   {
@@ -6545,6 +7077,7 @@ const campsiteData = [
     zipCode: 31558,
     city: 'Cumberland',
     address: 'Cumberland Island',
+    favorite_id: null,
     nameState: 'Stafford Beach Campground, GA',
   },
   {
@@ -6558,6 +7091,7 @@ const campsiteData = [
     zipCode: 4765,
     city: 'Patten',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Stair Falls Campsite, ME',
   },
   {
@@ -6570,6 +7104,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98548,
     city: 'Hoodsport',
+    favorite_id: null,
     nameState: 'Staircase Campground, WA',
   },
   {
@@ -6582,6 +7117,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 0,
     city: 'Lake Powell',
+    favorite_id: null,
     nameState: 'Stanton Creek Primitive Camping Area, UT',
   },
   {
@@ -6594,6 +7130,7 @@ const campsiteData = [
     state: 'Tennessee',
     zipCode: 37841,
     city: 'Oneida',
+    favorite_id: null,
     nameState: 'Station Camp Campground, TN',
   },
   {
@@ -6606,6 +7143,7 @@ const campsiteData = [
     state: 'Arkansas',
     zipCode: 72742,
     city: 'Ponca',
+    favorite_id: null,
     nameState: 'Steel Creek Campground, AR',
   },
   {
@@ -6619,6 +7157,7 @@ const campsiteData = [
     zipCode: 81230,
     city: 'Gunnison',
     address: '29070-29174 US-50',
+    favorite_id: null,
     nameState: 'Stevens Creek Campground, CO',
   },
   {
@@ -6631,6 +7170,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21766,
     city: 'Little Orleans',
+    favorite_id: null,
     nameState: 'Stickpile Hill Hiker-Biker Campsite, MD',
   },
   {
@@ -6643,6 +7183,7 @@ const campsiteData = [
     state: 'West Virginia',
     zipCode: 25963,
     city: 'Thurmond',
+    favorite_id: null,
     nameState: 'Stone Cliff, WV',
   },
   {
@@ -6655,6 +7196,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92328,
     city: 'Stovepipe Wells',
+    favorite_id: null,
     nameState: 'Stovepipe Wells Campground, CA',
   },
   {
@@ -6667,6 +7209,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 96063,
     city: 'Mineral',
+    favorite_id: null,
     nameState: 'Summit Lake North Campground, CA',
   },
   {
@@ -6679,6 +7222,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 96063,
     city: 'Mineral',
+    favorite_id: null,
     nameState: 'Summit Lake South Campground, CA',
   },
   {
@@ -6691,6 +7235,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84764,
     city: 'Bryce',
+    favorite_id: null,
     nameState: 'Sunset Campground, UT',
   },
   {
@@ -6703,6 +7248,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92328,
     city: 'Furnace Creek',
+    favorite_id: null,
     nameState: 'Sunset Campground, CA',
   },
   {
@@ -6715,6 +7261,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 93633,
     city: 'Grant Grove',
+    favorite_id: null,
     nameState: 'Sunset Campground, CA',
   },
   {
@@ -6727,6 +7274,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 86054,
     city: 'Shonto',
+    favorite_id: null,
     nameState: 'Sunset View Campground, AZ',
   },
   {
@@ -6739,6 +7287,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 20854,
     city: 'Potomac',
+    favorite_id: null,
     nameState: 'Swains Lock Hiker-Biker Campsite, MD',
   },
   {
@@ -6752,6 +7301,7 @@ const campsiteData = [
     zipCode: 95389,
     city: 'Yosemite',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Tamarack Flat Campground, CA',
   },
   {
@@ -6765,6 +7315,7 @@ const campsiteData = [
     zipCode: 79847,
     city: 'Salt Flat',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Tejas Wilderness Campground, TX',
   },
   {
@@ -6778,6 +7329,7 @@ const campsiteData = [
     zipCode: 99755,
     city: 'Denali Park',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Teklanika River, AK',
   },
   {
@@ -6790,6 +7342,7 @@ const campsiteData = [
     state: 'Nevada',
     zipCode: 89005,
     city: 'Boulder City',
+    favorite_id: null,
     nameState: 'Temple Bar Campground, NV',
   },
   {
@@ -6802,6 +7355,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92328,
     city: 'Furnace Creek',
+    favorite_id: null,
     nameState: 'Texas Springs Campground, CA',
   },
   {
@@ -6814,6 +7368,7 @@ const campsiteData = [
     state: 'West Virginia',
     zipCode: 25936,
     city: 'Thurmond',
+    favorite_id: null,
     nameState: 'Thayer Campground, WV',
   },
   {
@@ -6826,6 +7381,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 23651,
     city: 'Fort Monroe',
+    favorite_id: null,
     nameState: 'The Colonies RV and Travel Park, VA',
   },
   {
@@ -6838,6 +7394,7 @@ const campsiteData = [
     state: 'Utah',
     zipCode: 84532,
     city: 'Moab',
+    favorite_id: null,
     nameState: 'The Needles Campground, UT',
   },
   {
@@ -6851,6 +7408,7 @@ const campsiteData = [
     zipCode: 73086,
     city: 'Sulpher',
     address: 'Buckhorn Campground',
+    favorite_id: null,
     nameState: 'The Point Campground, OK',
   },
   {
@@ -6863,6 +7421,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92328,
     city: 'Death Valley',
+    favorite_id: null,
     nameState: 'Thorndike Campground (Primitive), CA',
   },
   {
@@ -6875,6 +7434,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Three Mile Campground, MI',
   },
   {
@@ -6887,6 +7447,7 @@ const campsiteData = [
     state: 'Colorado',
     zipCode: 80447,
     city: 'Grand Lake',
+    favorite_id: null,
     nameState: 'Timber Creek Campground, CO',
   },
   {
@@ -6899,6 +7460,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Todd Harbor Campground, MI',
   },
   {
@@ -6911,6 +7473,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 94956,
     city: 'Point Reyes Station',
+    favorite_id: null,
     nameState: 'Tomales Bay Boat-in Camping, CA',
   },
   {
@@ -6923,6 +7486,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Tookers Island Campground, MI',
   },
   {
@@ -6935,6 +7499,7 @@ const campsiteData = [
     state: 'Wyoming',
     zipCode: 82190,
     city: 'Yellowstone National Park',
+    favorite_id: null,
     nameState: 'Tower Fall Campground, WY',
   },
   {
@@ -6947,6 +7512,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21740,
     city: 'Hagerstown',
+    favorite_id: null,
     nameState: 'Town Creek Hiker-Biker Campsite, MD',
   },
   {
@@ -6959,6 +7525,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 86023,
     city: 'Grand Canyon',
+    favorite_id: null,
     nameState: 'Trailer Village RV Park - South Rim, AZ',
   },
   {
@@ -6972,6 +7539,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Trappers Lake Group Backpacking Site, MI',
   },
   {
@@ -6985,6 +7553,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Trappers Lake Individual Backpacking Sites, MI',
   },
   {
@@ -6998,6 +7567,7 @@ const campsiteData = [
     zipCode: 95389,
     city: 'Yosemite',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Tuolumne Meadows Campground, CA',
   },
   {
@@ -7011,6 +7581,7 @@ const campsiteData = [
     zipCode: 55347,
     city: 'Triangle',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Turkey Run Ridge Group Campground, VA',
   },
   {
@@ -7023,6 +7594,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 20837,
     city: 'Poolesville',
+    favorite_id: null,
     nameState: 'Turtle Run Hiker-Biker Campsite, MD',
   },
   {
@@ -7036,6 +7608,7 @@ const campsiteData = [
     zipCode: 49839,
     city: 'Grand Marais',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Twelvemile Beach Campground, MI',
   },
   {
@@ -7048,6 +7621,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 85321,
     city: 'Ajo',
+    favorite_id: null,
     nameState: 'Twin Peaks Campground, AZ',
   },
   {
@@ -7060,6 +7634,7 @@ const campsiteData = [
     state: 'Montana',
     zipCode: 59936,
     city: 'West Glacier',
+    favorite_id: null,
     nameState: 'Two Medicine, MT',
   },
   {
@@ -7072,6 +7647,7 @@ const campsiteData = [
     state: 'Missouri',
     zipCode: 65466,
     city: 'Eminence',
+    favorite_id: null,
     nameState: 'Two Rivers Campground, MO',
   },
   {
@@ -7084,6 +7660,7 @@ const campsiteData = [
     state: 'Arkansas',
     zipCode: 72675,
     city: 'St. Joe',
+    favorite_id: null,
     nameState: 'Tyler Bend Campground, AR',
   },
   {
@@ -7096,6 +7673,7 @@ const campsiteData = [
     state: 'Maine',
     zipCode: 4765,
     city: 'Patten',
+    favorite_id: null,
     nameState: 'Upper East Branch Campsite, ME',
   },
   {
@@ -7108,6 +7686,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98284,
     city: 'Sedro-Woolley',
+    favorite_id: null,
     nameState: 'Upper Goodell Creek Group Campsite, WA',
   },
   {
@@ -7121,6 +7700,7 @@ const campsiteData = [
     zipCode: 89311,
     city: 'Baker',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Upper Lehman Campground, NV',
   },
   {
@@ -7133,6 +7713,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 95389,
     city: 'Yosemite',
+    favorite_id: null,
     nameState: 'Upper Pines Campground, CA',
   },
   {
@@ -7146,6 +7727,7 @@ const campsiteData = [
     zipCode: 88061,
     city: 'Silver City',
     address: 'NM-15',
+    favorite_id: null,
     nameState: 'Upper Scorpion Campground, NM',
   },
   {
@@ -7158,6 +7740,7 @@ const campsiteData = [
     state: 'Pennsylvania',
     zipCode: 18324,
     city: 'Bushkill',
+    favorite_id: null,
     nameState: 'Valley View Group Campground, Pennsylvania',
   },
   {
@@ -7170,6 +7753,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49630,
     city: 'Empire',
+    favorite_id: null,
     nameState: 'Village Campground - North Manitou Island, MI',
   },
   {
@@ -7182,6 +7766,7 @@ const campsiteData = [
     state: 'Arizona',
     zipCode: 86040,
     city: 'Page',
+    favorite_id: null,
     nameState: 'Wahweap Campground & RV Park, AZ',
   },
   {
@@ -7194,6 +7779,7 @@ const campsiteData = [
     state: 'West Virginia',
     zipCode: 25907,
     city: 'Prince',
+    favorite_id: null,
     nameState: 'War Ridge/Backus Mountain Campground, WV',
   },
   {
@@ -7206,6 +7792,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 96020,
     city: 'Chester',
+    favorite_id: null,
     nameState: 'Warner Valley Campground, CA',
   },
   {
@@ -7218,6 +7805,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Washington Creek Campground, MI',
   },
   {
@@ -7231,6 +7819,7 @@ const campsiteData = [
     zipCode: 4765,
     city: 'Patten',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Wassataquoik Campsite, ME',
   },
   {
@@ -7244,6 +7833,7 @@ const campsiteData = [
     zipCode: 4765,
     city: 'Patten',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Wassataquoik Lean-to, ME',
   },
   {
@@ -7257,6 +7847,7 @@ const campsiteData = [
     zipCode: null,
     city: null,
     address: null,
+    favorite_id: null,
     nameState: 'Watch Hill Family Campground',
   },
   {
@@ -7270,6 +7861,7 @@ const campsiteData = [
     zipCode: 84737,
     city: 'Hurricane',
     address: 'Watchman Campground',
+    favorite_id: null,
     nameState: 'Watchman Campground, UT',
   },
   {
@@ -7282,6 +7874,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 95389,
     city: 'Yosemite',
+    favorite_id: null,
     nameState: 'Wawona Campground, CA',
   },
   {
@@ -7294,6 +7887,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49630,
     city: 'Empire',
+    favorite_id: null,
     nameState: 'Weather Station Campground - South Manitou Island, MI',
   },
   {
@@ -7306,6 +7900,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'West Chickenbone Campground, MI',
   },
   {
@@ -7319,6 +7914,7 @@ const campsiteData = [
     zipCode: 89311,
     city: 'Baker',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Wheeler Peak Campground, NV',
   },
   {
@@ -7331,6 +7927,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49640,
     city: 'Honor',
+    favorite_id: null,
     nameState: 'White Pine Backcountry Campground, MI',
   },
   {
@@ -7343,6 +7940,7 @@ const campsiteData = [
     state: 'Washington',
     zipCode: 98304,
     city: 'Ashford',
+    favorite_id: null,
     nameState: 'White River Campground, WA',
   },
   {
@@ -7355,6 +7953,7 @@ const campsiteData = [
     state: 'Maryland',
     zipCode: 21750,
     city: 'Hancock',
+    favorite_id: null,
     nameState: 'White Rock Hiker-Biker Campsite, MD',
   },
   {
@@ -7367,6 +7966,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92277,
     city: 'Twentynine Palms',
+    favorite_id: null,
     nameState: 'White Tank Campground, CA',
   },
   {
@@ -7380,6 +7980,7 @@ const campsiteData = [
     zipCode: 95389,
     city: 'Yosemite',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'White Wolf Campground, CA',
   },
   {
@@ -7392,6 +7993,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 94956,
     city: 'Point Reyes Station',
+    favorite_id: null,
     nameState: 'Wildcat Campground, CA',
   },
   {
@@ -7404,6 +8006,7 @@ const campsiteData = [
     state: 'Hawaii',
     zipCode: 96790,
     city: 'Kula',
+    favorite_id: null,
     nameState: 'Wilderness Cabins, HI',
   },
   {
@@ -7417,6 +8020,7 @@ const campsiteData = [
     zipCode: 79847,
     city: 'Salt Flat',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Wilderness Ridge Wilderness Campground, TX',
   },
   {
@@ -7429,6 +8033,7 @@ const campsiteData = [
     state: 'Virginia',
     zipCode: 24248,
     city: 'Ewing',
+    favorite_id: null,
     nameState: 'Wilderness Road Campground, VA',
   },
   {
@@ -7441,6 +8046,7 @@ const campsiteData = [
     state: 'Hawaii',
     zipCode: 96790,
     city: 'Kula',
+    favorite_id: null,
     nameState: 'Wilderness Tent Sites, HI',
   },
   {
@@ -7453,6 +8059,7 @@ const campsiteData = [
     state: 'California',
     zipCode: 92328,
     city: 'Death Valley',
+    favorite_id: null,
     nameState: 'Wildrose Campground, CA',
   },
   {
@@ -7466,6 +8073,7 @@ const campsiteData = [
     zipCode: 99755,
     city: 'Denali Park',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Wonder Lake, AK',
   },
   {
@@ -7478,6 +8086,7 @@ const campsiteData = [
     state: 'Michigan',
     zipCode: 49931,
     city: 'Houghton',
+    favorite_id: null,
     nameState: 'Wood Lake Campground, MI',
   },
   {
@@ -7490,6 +8099,7 @@ const campsiteData = [
     state: 'Arkansas',
     zipCode: 72675,
     city: 'St. Joe',
+    favorite_id: null,
     nameState: 'Woolum, AR',
   },
   {
@@ -7503,6 +8113,7 @@ const campsiteData = [
     zipCode: 31558,
     city: 'Cumberland',
     address: 'Cumberland Island',
+    favorite_id: null,
     nameState: 'Yankee Paradise Wilderness Campsite, GA',
   },
   {
@@ -7516,6 +8127,7 @@ const campsiteData = [
     zipCode: 95389,
     city: 'Yosemite',
     address: 'Unnamed Road',
+    favorite_id: null,
     nameState: 'Yosemite Creek Campground, CA',
   },
 ];
