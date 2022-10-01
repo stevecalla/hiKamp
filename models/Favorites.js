@@ -13,17 +13,17 @@ Favorite.init(
         },
         user_id: {
             type: DataTypes.INTEGER,
-            // references: {
-            //     model: "user",
-            //     key: "id",
-            // },
+            references: {
+                model: "user",
+                key: "id",
+            },
         },
         campsite_id: {
           type: DataTypes.INTEGER,
-          // references: {
-          //   model: "campsite",
-          //   key: "id",
-          // },
+          references: {
+            model: "campsite",
+            key: "id",
+          },
         },
     },
     {
