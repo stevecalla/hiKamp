@@ -49,12 +49,19 @@ async function renderSearchInputMap(event) {
     // get all campsites from database
     let rawCampsites = await getList();
 
-    // get state for current search input
+    // get state for current search input = campsite name
     let getState = rawCampsites.filter(
       (camp) => camp.nameState === searchInput.value
     );
+
+    // get state for current search input = campsite state
+    if (!getState.length) {
+      getState = rawCampsites.filter(
+        (camp) => camp.state === searchInput.value
+        );
+    };
     
-    // if input is a zipcode get state
+    // if input is not a campsite name or state, use zipcode to get state
     if (!getState.length) {
       getState = rawCampsites.filter(
         (camp) => camp.zipCode === searchInput.value
@@ -88,13 +95,21 @@ async function searchAutoComplete() {
 
   // create campsite & zipcode array
   let campsites = rawCampsites.map((rawCampsites) => rawCampsites.nameState);
+
+  let rawStates = rawCampsites
+    .map((rawCampsites) => rawCampsites.state)
+    .filter((state) => state !== null)
+    .sort();
+
+  console.log(rawStates);
   let campZipCodes = rawCampsites
     .map((rawCampsites) => rawCampsites.zipCode)
     .filter((zipCode) => zipCode !== null)
     .sort();
 
-  let combineLists = campZipCodes.concat(campsites); // combine campsite and zip code array
-  let autoCompleteList = [...new Set(combineLists)]; // remove duplicates
+  let combineCampsitesZipCodes = campZipCodes.concat(campsites); // combine campsite and zip code array
+  let combineCampsZipsStates = combineCampsitesZipCodes.concat(rawStates); // combine campsites, zipcodes, states
+  let autoCompleteList = [...new Set(combineCampsZipsStates)]; // remove duplicates
 
   // jquery autocomplete function
   $('#search-input').autocomplete({
