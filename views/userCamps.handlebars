@@ -39,18 +39,22 @@
         margin: auto
     }
 
+    .see-thru {
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
 </style>
 
 
 <div class="row">
 
-    <div id="userCamp-aside" class="col-2 bg-dark text-white bg-opacity-25 m-1 p-1 rounded">
+    <div id="userCamp-aside" class="col-2 text-white m-2 p-1 rounded see-thru">
         hello world
     </div>
 
     {{#each campData as |data|}}
 
-    <div class="col bg-dark text-white bg-opacity-25 m-1 p-1 rounded">
+    <div class="col text-white m-2 p-1 rounded see-thru">
         <div id="campsite-header" class="row">
             <div class="col-9">
                 <h3>

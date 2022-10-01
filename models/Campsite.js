@@ -12,7 +12,7 @@ Campsite.init(
             autoIncrement: true,
         },
         camp_id: {
-            type: DataTypes.TEXT,
+            type: DataTypes.STRING,
         },
         code: {
             type: DataTypes.STRING,
@@ -27,7 +27,7 @@ Campsite.init(
         lng: {
             type: DataTypes.DOUBLE(9, 6),
         },
-        latlng: {
+        latlong: {
             type: DataTypes.STRING,
         },
         state: {
@@ -44,11 +44,12 @@ Campsite.init(
         },
         nameState: {
             type: DataTypes.STRING,
-        }
+        },
     },
     {
         sequelize,
         freezeTableName: true,
+        underscored: true,
         modelName: "campsite",
     }
 

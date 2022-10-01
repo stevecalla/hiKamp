@@ -1,25 +1,26 @@
 //query selector variables go here 👇
 let searchInput = document.getElementById('search-input'); //USED FOR AUTOCOMPLETE & SEARCH BAR RESULTS
+let searchIcon = document.getElementById('search-icon');
+let trashIcon = document.getElementById('trash-icon');
 
 //global variables go here 👇
 
 //event listeners go here 👇
 window.addEventListener('resize', adjustZoomOnResize);
 searchInput.addEventListener('keypress', renderSearchInputMap);
+searchIcon.addEventListener('click', renderSearchInputMap);
+trashIcon.addEventListener('click', () => {
+  //if search click on trash icon, hide trash icon, show search icon
+  searchInput.value = "";
+  searchIcon.classList.remove('hide');
+  trashIcon.classList.remove('show');
+  trashIcon.classList.add('hide');
+
+})
 searchInput.addEventListener('input', () => searchAutoComplete());
 // searchInput.addEventListener("input", () => console.log(searchInput.value));
 
 //functions and event handlers go here 👇
-function logToTerminal() {
-  console.log('yes');
-  let b = document.getElementById('gmimap3');
-  // b.setAttribute('style', "color:green!important");
-  // b.setIcon('http://www.google.com/mapfiles/shadow50.png');
-  // "markers[ID].setIcon(image_url)">
-  b.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
-  console.log(b);
-}
-
 // RENDER MAP ZOOM AS WINDOW IS RE-SIZED
 function adjustZoomOnResize() {
   console.log(window.innerWidth);
@@ -31,33 +32,48 @@ async function renderSearchInputMap(event) {
   let selectedCampLat;
   let selectedCampLng;
 
-  console.log(searchInput.value, searchInput.value.trim())
+  // console.log(searchInput.value, searchInput.value.trim());
+  // console.log(event, event.target, event.target.id, event.target.id === "search-icon")
   
   // If the user presses the "Enter" key on the keyboard
-  if (event.key === 'Enter') {
+  if (event.key === 'Enter' || event.target.id === "search-icon") {
     event.preventDefault();
-    
-    // validate input
-    if (searchInput.value.trim() === "") {
-      validationModal("Input is not valid", "Please select a campsite/zipcode from the list then press enter.");
-      return;
-    }
 
+    //if search input is valid hide search icon / show trash icon
+    if (searchInput.value.length > 0) {
+      searchIcon.classList.add('hide');
+      trashIcon.classList.add('show');
+      trashIcon.classList.remove('hide');
+    };
+    
     // get all campsites from database
     let rawCampsites = await getList();
 
-    // get state for current search input
+    // get state for current search input = campsite name
     let getState = rawCampsites.filter(
       (camp) => camp.nameState === searchInput.value
-    )
+    );
+
+    // get state for current search input = campsite state
+    if (!getState.length) {
+      getState = rawCampsites.filter(
+        (camp) => camp.state === searchInput.value
+        );
+    };
     
-    // if input is a zipcode get state
+    // if input is not a campsite name or state, use zipcode to get state
     if (!getState.length) {
       getState = rawCampsites.filter(
         (camp) => camp.zipCode === searchInput.value
         );
+    };
+    
+    // validate input
+    if (!getState.length) {
+      validationModal("Darn!! Campsite Not Found", "Please select a campsite/zipcode from the list then press enter.");
+      return;
     }
-
+    
     // get state for first location in the array
     let state = getState[0].state;
     // console.log(getState);
@@ -79,13 +95,21 @@ async function searchAutoComplete() {
 
   // create campsite & zipcode array
   let campsites = rawCampsites.map((rawCampsites) => rawCampsites.nameState);
+
+  let rawStates = rawCampsites
+    .map((rawCampsites) => rawCampsites.state)
+    .filter((state) => state !== null)
+    .sort();
+
+  console.log(rawStates);
   let campZipCodes = rawCampsites
     .map((rawCampsites) => rawCampsites.zipCode)
     .filter((zipCode) => zipCode !== null)
     .sort();
 
-  let combineLists = campZipCodes.concat(campsites); // combine campsite and zip code array
-  let autoCompleteList = [...new Set(combineLists)]; // remove duplicates
+  let combineCampsitesZipCodes = campZipCodes.concat(campsites); // combine campsite and zip code array
+  let combineCampsZipsStates = combineCampsitesZipCodes.concat(rawStates); // combine campsites, zipcodes, states
+  let autoCompleteList = [...new Set(combineCampsZipsStates)]; // remove duplicates
 
   // jquery autocomplete function
   $('#search-input').autocomplete({
@@ -96,8 +120,20 @@ async function searchAutoComplete() {
 
 // INTIALIZE MAP
 async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
+  //if search input is valid hide search icon / show trash icon
+
+  searchInput.value = "hello"; 
+  
+  if (searchInput.value.length > 0) {
+    searchIcon.classList.add('hide');
+    trashIcon.classList.add('show');
+    trashIcon.classList.remove('hide');
+  };
+
+  searchInput.focus(); //only focus on desktop not mobile
+
   let list = await getList(state);
-  renderSearchResults(list);
+  // renderSearchResults(list);
   let mobileZoomLevel = setMobileZoomLevel(zoomLevel);
   let { centerLat, centerLng } = setLatAndLong(
     list,
@@ -117,7 +153,7 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
 
 // GET LIST OF CAMPSITES TO RENDER
 const getList = async (state) => {
-  console.log(state);
+  // console.log(state);
 
   let result;
 
@@ -142,9 +178,44 @@ const getList = async (state) => {
   }
 };
 
+function renderHoverIcon(event, list, markers, selectedCampLat) {
+  // let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/shapes/parks.png';
+  // let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png';
+  // let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png';
+  let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/shapes/campfire.png';
+
+  // console.log(event.target);
+  // console.log(event.target.dataset);
+  // console.log(event.target.dataset.index);
+  // console.log(event.target.dataset.latitude);
+  // console.log(selectedCampLat, parseFloat(event.target.dataset.latitude), selectedCampLat === parseFloat(event.target.dataset.latitude) );
+
+  for (let i = 0; i < markers.length; i++) {
+    // if (parseInt(event.target.dataset.index) === i) {
+    if (parseInt(event.target.dataset.index) === i && parseFloat(event.target.dataset.latitude) !== selectedCampLat) {
+        // console.log(parseInt(event.target.dataset.index) === i );
+        markers[i].setIcon(hoverCampsiteIcon);
+        return;
+    }
+  }
+};
+
+function renderDefaultIcon(event, list, markers, selectedCampLat) {
+  let campsiteIcon = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
+
+  for (let i = 0; i < markers.length; i++) {
+    // if (parseInt(event.target.dataset.index) === i) {
+    if (parseInt(event.target.dataset.index) === i && parseFloat(event.target.dataset.latitude) !== selectedCampLat) {
+        // console.log(parseInt(event.target.dataset.index) === i );
+        markers[i].setIcon(campsiteIcon);
+        return;
+    }
+  }
+};
+
 // RENDER SEARCH RESULTS IN ASIDE
-function renderSearchResults(list) {
-  console.log('list ======= ', list);
+function renderSearchResults(list, markers, selectedCampLat) {
+  // console.log('list ======= ', list);
   let asideContainer = document.getElementById('searchResults');
   asideContainer.textContent = '';
 
@@ -154,12 +225,19 @@ function renderSearchResults(list) {
     let campName = document.createElement('p');
     let renderLine = document.createElement('hr');
 
-    // campPath.addEventListener('mouseover', logToTerminal);
+    campPath.addEventListener('mouseover', (event) => {
+      renderHoverIcon(event, list, markers, selectedCampLat)
+    });
+
+    // campPath.addEventListener('mouseout', (event) => {
+    //   renderDefaultIcon(event, list, markers, selectedCampLat)
+    // });
 
     //SET ATTRIBUTES
     // campPath.setAttribute('href', `/api/map/campsite/:${list[i].camp_id}`);
-
     campPath.setAttribute('href', `/api/campsites/${list[i].camp_id}`);
+    campName.setAttribute('data-index', i);
+    campName.setAttribute('data-latitude', list[i].lat)
 
     //CREATE TITLE CONTENT
     campName.textContent = `${i + 1}) ${list[i].nameState}`;
@@ -200,6 +278,8 @@ function createMap(
   list,
   selectedCampLat
 ) {
+  // ((marker.position.lat() < 50 && marker.position.lat() > 30) && (marker.position.lng() > -118 && marker.position.lng() < -75))
+
   // Create instance of map
   const map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: centerLat, lng: centerLng },
@@ -215,6 +295,8 @@ function createMap(
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
     },
+    minZoom: 2, //zoom out limited to prevent multiple maps
+    maxZoom: 25,
     enableHighAccuracy: true,
     timeout: 5000,
     maximumAge: 0,
@@ -228,6 +310,7 @@ function createMap(
 
   // Create the markers
   const markers = list.map(({ lat, lng, name, id, camp_id }, i) => {
+  // markers = list.map(({ lat, lng, name, id, camp_id }, i) => { //section
     if (lat && lng) {
       // const contentString = `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/${camp_id}">${name}</a></h6>`;
 
@@ -246,6 +329,9 @@ function createMap(
         size: new google.maps.Size(50, 100),
       });
 
+      // marker.classList.add('hello')
+      marker.className = "marker";
+
       // Add a click listener for each marker, and set up the info window
       marker.addListener('click', () => {
         infoWindow.close();
@@ -253,7 +339,8 @@ function createMap(
         infoWindow.open(marker.getMap(), marker);
         if (lat !== selectedCampLat) {
           marker.setIcon(
-            'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+            // 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+            'http://maps.google.com/mapfiles/kml/shapes/campfire.png'
           );
         }
         marker.setAnimation(google.maps.Animation.BOUNCE);
@@ -262,11 +349,20 @@ function createMap(
         }, 1000);
       });
 
+      const { south, north, west, east } = { // boundries to center map
+        south: 30,  //app Austin
+        north: 50,  //app Northern border
+        west: -118, //app LA
+        east: -75,  //app NY
+      };
+
       // creates marker boundry to center map based on screen size (step #2 of 3)
-      if ((marker.position.lat() < 50 && marker.position.lat() > 30) && (marker.position.lng() > -118 && marker.position.lng() < -75)) {
+      if ((marker.position.lat() >= south && marker.position.lat() <= north) && (marker.position.lng() >= west && marker.position.lng() <= east)) {
           loc = new google.maps.LatLng(marker.position.lat(), marker.position.lng());
           bounds.extend(loc);
         }
+
+      // console.log(marker)
       return marker;
     }
   });
@@ -277,10 +373,13 @@ function createMap(
     map.panToBounds(bounds);     //auto-center
   }
 
-  console.log(markers);
+  // setOutOfBoundsListener(map);
   // renderSelectedCampMarker(selectedCampLat, infoWindow, map);
+  renderSearchResults(list, markers, selectedCampLat);
   renderMarkerClusters(markers, map);
   renderCurrentLocationIcon(map, infoWindow);
+  renderCenterMapIcon(map, infoWindow);
+  renderCenterMapIcon(map, infoWindow);
 }
 
 // CREATES A MARKER FOR SELECTED CAMPSITE
@@ -306,7 +405,6 @@ function renderCurrentLocationIcon(map, infoWindow) {
   const location = document.createElement('div');
   const locationIcon = document.createElement('img');
   locationIcon.src = '/images/current-location-v4.png';
-  // locationIcon.src = 'https://maps.gstatic.com/tactile/mylocation/mylocation-sprite-2x.png',
   location.setAttribute('style', 'width:40px; padding: 0px');
   locationIcon.setAttribute(
     'style',
@@ -336,7 +434,8 @@ function renderCurrentLocationIcon(map, infoWindow) {
           const markerCurrentLocation = new google.maps.Marker({
             position: pos,
             map,
-            icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
+            // icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
+            icon: 'http://maps.google.com/mapfiles/kml/shapes/ranger_station.png',
           });
           infoWindow.open(
             markerCurrentLocation.getMap(),
@@ -351,6 +450,114 @@ function renderCurrentLocationIcon(map, infoWindow) {
       // Browser doesn't support Geolocation
       handleLocationError(false, infoWindow, map.getCenter());
     }
+  });
+}
+
+// RENDER CURRENT LOCATION ICON ON CLICK //todo
+function renderCenterMapIcon(map, infoWindow) {
+  const center = document.createElement('div');
+  const centerIcon = document.createElement('img');
+  centerIcon.src = '/images/current-location-v4.png'; //todo
+  center.setAttribute('style', 'width:40px; padding: 0px');
+  centerIcon.setAttribute(
+    'style',
+    'padding: 2px; height:37px; width:40px; top:50px; padding-top: 6px;'
+  );
+
+  center.append(centerIcon);
+
+  center.classList.add('custom-map-control-button');
+  map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(center);
+
+  centerIcon.addEventListener('click', () => {
+    initMap();
+    // if (navigator.geolocation) {
+    //   navigator.geolocation.getCurrentPosition(
+    //     (position) => {
+    //       const pos = {
+    //         lat: position.coords.latitude,
+    //         lng: position.coords.longitude,
+    //       };
+
+    //       infoWindow.setPosition(pos);
+    //       // infoWindow.setContent('Location found.');
+    //       infoWindow.open(map);
+    //       map.setCenter(pos);
+    //       map.setZoom(5);
+
+    //       const markerCurrentLocation = new google.maps.Marker({
+    //         position: pos,
+    //         map,
+    //         // icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
+    //         icon: 'http://maps.google.com/mapfiles/kml/shapes/ranger_station.png',
+    //       });
+    //       infoWindow.open(
+    //         markerCurrentLocation.getMap(),
+    //         markerCurrentLocation
+    //       );
+    //     },
+    //     () => {
+    //       handleLocationError(true, infoWindow, map.getCenter());
+    //     }
+    //   );
+    // } else {
+    //   // Browser doesn't support Geolocation
+    //   handleLocationError(false, infoWindow, map.getCenter());
+    // }
+  });
+}
+
+// RENDER CURRENT LOCATION ICON ON CLICK //todo
+function renderRefreshMapIcon(map, infoWindow) {
+  const refresh = document.createElement('div');
+  const refreshIcon = document.createElement('img');
+  refreshIcon.src = '/images/current-location-v4.png'; //todo
+  refresh.setAttribute('style', 'width:40px; padding: 0px');
+  refreshIcon.setAttribute(
+    'style',
+    'padding: 2px; height:37px; width:40px; top:50px; padding-top: 6px;'
+  );
+
+  refresh.append(refreshIcon);
+
+  refresh.classList.add('custom-map-control-button');
+  map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(refresh);
+
+  refreshIcon.addEventListener('click', () => {
+    initMap();
+  //   if (navigator.geolocation) {
+  //     navigator.geolocation.getCurrentPosition(
+  //       (position) => {
+  //         const pos = {
+  //           lat: position.coords.latitude,
+  //           lng: position.coords.longitude,
+  //         };
+
+  //         infoWindow.setPosition(pos);
+  //         // infoWindow.setContent('Location found.');
+  //         infoWindow.open(map);
+  //         map.setCenter(pos);
+  //         map.setZoom(5);
+
+  //         const markerCurrentLocation = new google.maps.Marker({
+  //           position: pos,
+  //           map,
+  //           // icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
+  //           icon: 'http://maps.google.com/mapfiles/kml/shapes/ranger_station.png',
+  //         });
+  //         infoWindow.open(
+  //           markerCurrentLocation.getMap(),
+  //           markerCurrentLocation
+  //         );
+  //       },
+  //       () => {
+  //         handleLocationError(true, infoWindow, map.getCenter());
+  //       }
+  //     );
+  //   } else {
+  //     // Browser doesn't support Geolocation
+  //     handleLocationError(false, infoWindow, map.getCenter());
+  //   }
   });
 }
 
@@ -370,6 +577,44 @@ function validationModal(title, body) {
   $("#no-input-title").text(title);
   $("#no-input-body").text(body);
 }
+
+// Prevents multiple maps when zoom out to the max
+// var lastValidCenter;
+// var minZoomLevel = 2;
+
+// function setOutOfBoundsListener() {
+//         google.maps.event.addListener(map, 'dragend', function () {
+//             checkLatitude(map);
+//         });
+//         google.maps.event.addListener(map, 'idle', function () {
+//             checkLatitude(map);
+//         });
+//         google.maps.event.addListener(map, 'zoom_changed', function () {
+//             checkLatitude(map);
+//         });
+// };
+
+// function checkLatitude(map) {
+//     if (this.minZoomLevel) {
+//         if (map.getZoom() < minZoomLevel) {
+//             map.setZoom(parseInt(minZoomLevel));
+//         }
+//     }
+
+//     var bounds = map.getBounds();
+//     var sLat = map.getBounds().getSouthWest().lat();
+//     var nLat = map.getBounds().getNorthEast().lat();
+//     if (sLat < -85 || nLat > 85) {
+//         //the map has gone beyone the world's max or min latitude - gray areas are visible
+//         //return to a valid position
+//         if (this.lastValidCenter) {
+//             map.setCenter(this.lastValidCenter);
+//         }
+//     }
+//     else {
+//         this.lastValidCenter = map.getCenter();
+//     }
+// }
 
 initMap();
 

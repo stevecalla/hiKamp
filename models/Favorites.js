@@ -19,18 +19,18 @@ Favorite.init(
             },
         },
         campsite_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: "campsite",
-                key: "id",
-            },
+          type: DataTypes.INTEGER,
+          references: {
+            model: "campsite",
+            key: "id",
+          },
         },
     },
     {
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: "comment",
+        modelName: "favorite",
     }
 );
 

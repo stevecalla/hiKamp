@@ -1,57 +1,55 @@
 const User = require("./User");
-const Post = require("./Post");
 const Comment = require("./Comment");
 const Campsite = require("./Campsite");
 const Favorite = require("./Favorites");
 
-//User/Comments relationship
-User.hasMany(Comment, {
-  foreignKey: "user_id",
-});
 
-Comment.belongsTo(User, {
+// User to Favorites relationship
+User.hasMany(Favorite, {
   foreignKey: "user_id",
-});
-
-//User/Favorites relationship
-User.hasOne(Favorite, {
-  foreignKey: "user_id",
+  onDelete: 'CASCADE'
 })
 
 Favorite.belongsTo(User, {
   foreignKey: "user_id",
+  onDelete: 'CASCADE'
 });
 
-//Favorite/Campsite relationship
-Favorite.hasMany(Campsite, {
-  foreignKey: "campsite_id"
+// Favorite to Campsite relationship
+Favorite.hasOne(Campsite, {
+  foreignKey: "favorite_id",
+  onDelete: 'CASCADE'
 });
 
 Campsite.belongsTo(Favorite, {
-  foreignKey: "campsite_id",
+  foreignKey: "favorite_id",
+  onDelete: 'CASCADE'
 });
 
-//Post/Comments relationship
-Post.hasMany(Comment, {
-  foreignKey: "post_id",
-});
-
-Comment.belongsTo(Post, {
-  foreignKey: "post_id",
-});
-
-//User/Post relationship
-User.hasMany(Post, {
+// User to Comments relationship
+User.hasMany(Comment, {
   foreignKey: "user_id",
+  onDelete: 'CASCADE'
 });
 
-Post.belongsTo(User, {
+Comment.belongsTo(User, {
   foreignKey: "user_id",
+  onDelete: 'CASCADE'
+});
+
+//Comment/Campsite relationship
+Campsite.hasMany(Favorite, {
+  foreignKey: "camp_id",
+  onDelete: 'CASCADE'
+});
+
+Comment.belongsTo(Campsite, {
+  foreignKey: "camp_id",
+  onDelete: 'CASCADE'
 });
 
 module.exports = {
   User,
-  Post,
   Comment,
   Campsite,
   Favorite,
