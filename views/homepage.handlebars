@@ -1,8 +1,10 @@
 <aside class="aside-map-page">
   {{> search-input }}
-  {{#each campsites as |camp|}}
-    {{> search-results }}
-  {{/each}}
+  <section class="resultsContainer">
+    {{#each campsites as |camp|}}
+      {{> search-results }}
+    {{/each}}
+  </section>
 </aside>
 
   {{> map-details }}
