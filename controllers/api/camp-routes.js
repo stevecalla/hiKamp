@@ -69,11 +69,14 @@ router.get('/:id', isNotValid, isAuthorized, async (req, res) => {
   // console.log(favorites);
   // console.log(req.session);
 
+  console.log(req.session);
+  console.log(req.session.loggedIn);
+
   res.render('userCamps', {
     campData: response.data.data,
     comments: comments,
     favorites: favorites,
-    logged_in: req.session.logged_in,
+    loggedIn: req.session.loggedIn,
   });
   } catch (error) {
     console.error(error);
