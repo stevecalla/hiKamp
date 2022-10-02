@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Post, Comment, User } = require("../models");
+const { Comment, User } = require("../models");
 const isAuthorized = require("../utils/auth");
 
 // REDIRECT TO HOME PAGE AFTER LOGIN
@@ -23,14 +23,14 @@ router.get("/signup", (req, res) => {
 
 router.get("/", async (req, res) => {
   try {
-    const dbPostData = await Post.findAll({
-      include: [{ model: User }],
-    });
+    // const dbPostData = await Post.findAll({
+    //   include: [{ model: User }],
+    // });
 
-    const posts = dbPostData.map((post) => post.get({ plain: true }));
+    // const posts = dbPostData.map((post) => post.get({ plain: true }));
 
     res.render("homepage", {
-      posts,
+      // posts,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
