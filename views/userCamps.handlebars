@@ -196,9 +196,14 @@
                     </p>
                     {{/if}}
                     {{!FEES}}
+
                     {{#if fees.[0].title}}
                     <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}{{/if}}{{#if
                         fees.[0].description}}
+
+                     {{#if fees.[0].title}}
+                    <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}{{/if}}{{#if fees.[0].description}}
+
                         {{fees.[0].description}} {{/if}} {{#if fees.[0].description}}{{fees.[0].description}}</p>{{/if}}
                     {{/each}}
                 </div>
