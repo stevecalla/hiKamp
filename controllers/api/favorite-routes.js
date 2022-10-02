@@ -3,6 +3,7 @@ const isAuthorized = require("../../utils/auth");
 const axios = require('axios').default;
 const { Favorite } = require('../../models');
 // starts at /api/favorite
+
 // CREATE AND SAVE FAVORITE
 router.post("/", async (req, res) => {
   try {
@@ -17,6 +18,7 @@ router.post("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 // // DELETE POST BASED ON REQUEST BY USER
 router.delete("/", async (req, res) => {
   console.log('hHhHHHHHHHHHHHHHHH');
@@ -39,4 +41,5 @@ router.delete("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 module.exports = router;

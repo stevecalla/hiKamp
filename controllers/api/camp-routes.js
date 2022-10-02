@@ -70,26 +70,14 @@ router.get('/:id', isNotValid, isAuthorized, async (req, res) => {
 
   const favoriteCamps = favorites.map(camps => camps.campsite.camp_id);
 
-  const isCurrentCampAFavorite = favoriteCamps.includes(req.params.id);
-
-  // console.log(favorites);
-  // console.log(favoriteCamps);
-  // console.log(isCurrentCampAFavorite);
-  // console.log(req.session);
-
-  // console.log(req.session);
-  // console.log(req.session.loggedIn);
-
-  let imgURL = response.data.data.images;
-  console.log(imgURL);
+  let isCurrentCampAFavorite = favoriteCamps.includes(req.params.id);
 
   res.render('userCamps', {
     campData: response.data.data,
     comments: comments,
     favorites: favorites,
     loggedIn: req.session.loggedIn,
-    isCurrentFavorite: isCurrentCampAFavorite,
-    // imgURL: response.data.data[0].images[0].url,
+    isFavorite: isCurrentCampAFavorite,
   });
   } catch (error) {
     console.error(error);
