@@ -14,14 +14,17 @@ favoriteStar.addEventListener('click', getIDAndImgURL);
 function getIDAndImgURL() {
   console.log('click');
   let id = campId.dataset.id;
-  let url = imgURL.getAttribute('src');
+  let url = campId.dataset.imgurl || "";
   console.log(id, url);
   console.log(favoriteStar.checked)
 
   favoriteStar.checked ? createFavorite(id, url) : deleteFavorite(id, url);
+  window.location.reload();
 }
 
 async function createFavorite(id, url) {
+  console.log(id, url)
+
   if (id && url) {
     const response = await fetch("/api/favorite", {
       method: "POST",

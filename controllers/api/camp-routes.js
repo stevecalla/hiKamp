@@ -49,6 +49,8 @@ router.get('/:id', isNotValid, isAuthorized, async (req, res) => {
   const response = await axios.get(`https://developer.nps.gov/api/v1/campgrounds?id=${req.params.id}&api_key=${key}`);
 
   // console.log(response.data.data);
+  // console.log(response.data.data[0].images[0]);
+  // console.log(response.data.data[0].images[0].url);
 
   const allComments = await Comment.findAll({
     include: [{ model: User }, { model: Campsite}],
@@ -87,7 +89,7 @@ router.get('/:id', isNotValid, isAuthorized, async (req, res) => {
     favorites: favorites,
     loggedIn: req.session.loggedIn,
     isCurrentFavorite: isCurrentCampAFavorite,
-    // imgURL: response.data.data.images[],
+    // imgURL: response.data.data[0].images[0].url,
   });
   } catch (error) {
     console.error(error);
