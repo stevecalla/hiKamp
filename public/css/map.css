@@ -1,5 +1,17 @@
+/* * {
+  border: 1px solid red;
+} */
+
+.home-wrapper {
+  /* display: flex;
+  justify-content: column;
+  width: 200px;
+  height: 50vh;
+  border: 10px solid blue; */
+}
+
 .aside-map-page {
-  margin: 5px 0px 5px 8px;
+  /* margin: 5px 0px 5px 8px; */
   /* margin: 5px;
   margin-left: 8px; */
   height: 79vh;
@@ -10,24 +22,33 @@
   color: black;
 }
 .map { 
-  position: absolute;
-  width: 71vw;
+  margin: 5px 0px 5px 8px;
+  /* position: absolute; */
   height: 79vh;
-  top: 17.35vh;
-  left: 28vw;
+  width: 790px;
+  /* top: 17.35vh; */
+  /* left: 36vw; */
   bottom: 0;
   border-radius: 0.25rem;
+  
+   
+  /* width: 71vw; */
+  /* max-width: 560px; */
   /* background-color: white; */
 }
+
 @media screen and (max-width: 1100px) {
   .aside-map-page {
     background-color:rgba(0, 0, 0, 0.0);
+    height: 50px;
   }
   .map {
     position: absolute; 
     width: 94vw; 
     height: 70vh;
-    top: 30vh; 
+    /* top: 30vh;  */
+
+  /* top: 17.35vh; */
     left: 3vw; 
     bottom: 0; 
   }
