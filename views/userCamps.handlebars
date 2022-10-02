@@ -107,19 +107,25 @@
     }
     
 </style>
-<div id="userCamp-aside" class="col-2 text-white rounded see-thru my-2 p-3">
-    <details open id="favorite-box" class="p-2 m-2 rounded">
-        <summary class="text-center" style="">
-            FAVORITES
-        </summary>
-        <br>
-        <div class="border-top border-dark p-2">
-            {{#each campsites as |campsite|}}
-            <p id="favorite-element" style="p-3 m-2"> {{ campsite.name}} </p>
-            {{/each}}
-        </div>
-    </details>
-</div>
+
+<div class="row">
+    <div id="userCamp-aside" class="col-2 text-white m-2 p-1 rounded see-thru">
+        <details open id="favorite-box" class="p-2 m-2 rounded">
+            <summary class="text-center" style="">
+                VIEW FAVORITES
+            </summary>
+            <br>
+            <div class="border-top border-dark p-2">
+                {{#each favorites as |favorite|}}
+                  <p id="favorite-element" style="p-3 m-2"> {{ favorite.campsite.name }} </p>
+                  {{!-- {{#if images.[0].url}} --}}
+                      <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{favorite.campsite_img_url}}" alt="">
+                      {{!-- <img id="campsite-photo" class="img-fluid max-width: 100%" src={{imgURL}} + alt=""> --}}
+                  {{!-- {{/if}} --}}
+                {{/each}}
+            </div>
+        </details>
+    </div>
 
 {{#each campData as |data|}}
 
@@ -131,21 +137,25 @@
             </h3>
         </div>
 
-        <div id="favStarEl" class="col-3 d-flex justify-content-end">
-            {{!-- FAVORITES BUTTON --}}
-            <input id="favStar check" class="star" type="checkbox" title="favStar">
-        </div>
-        <div class="row">
-            <div class="col-12">
-                {{!MAIN PHOTO}}
-                {{#if images.[0].url}}
-                <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{images.[0].url}}"
-                    alt="{{images.[0].altText}}">
+            <div id="favStarEl" class="col-3 d-flex justify-content-end">
+                {{!-- FAVORITES BUTTON --}}
+                {{#if isCurrentFavorite }}
+                  <input id="favStar check" class="star" type="checkbox" title="favStar" checked>
+                {{else}}
+                <input id="favStar check" class="star" type="checkbox" title="favStar">
                 {{/if}}
-                <a id="nps-link" href="https://www.nps.gov/{{campCode}}/planyourvisit/maps.htm" target="__blank"
-                    class="p-2 button">Visit NPS Page</a>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-12">
+                    {{!MAIN PHOTO}}
+                    {{#if images.[0].url}}
+                    <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{images.[0].url}}"
+                        alt="{{images.[0].altText}}">
+                    {{/if}}
+                    <a id="nps-link" href="https://www.nps.gov/{{campCode}}/planyourvisit/maps.htm" target="__blank"
+                        class="p-2 button">Visit NPS Page</a>
+                </div>
+            </div>
 
         <div class="row mt-3 body-text">
             <div class="col border-bottom border-dark">
@@ -217,4 +227,5 @@
             </details>
         </div>
     </div>
-</div>
+
+<script src="/js/favorite.js"></script>

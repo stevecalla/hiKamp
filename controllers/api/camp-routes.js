@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const isNotValid = require('../../utils/null');
+const isNotValid = require('../../utils/isNotValid');
 const isAuthorized = require('../../utils/auth');
 const axios = require('axios').default;
 const { Comment, User, Favorite, Campsite } = require('../../models');
@@ -66,14 +66,28 @@ router.get('/:id', isNotValid, isAuthorized, async (req, res) => {
   
   const favorites = allFavorites.map((favorite) => favorite.get({ plain: true }));
 
+  const favoriteCamps = favorites.map(camps => camps.campsite.camp_id);
+
+  const isCurrentCampAFavorite = favoriteCamps.includes(req.params.id);
+
   // console.log(favorites);
+  // console.log(favoriteCamps);
+  // console.log(isCurrentCampAFavorite);
   // console.log(req.session);
+
+  // console.log(req.session);
+  // console.log(req.session.loggedIn);
+
+  let imgURL = response.data.data.images;
+  console.log(imgURL);
 
   res.render('userCamps', {
     campData: response.data.data,
     comments: comments,
     favorites: favorites,
-    logged_in: req.session.logged_in,
+    loggedIn: req.session.loggedIn,
+    isCurrentFavorite: isCurrentCampAFavorite,
+    // imgURL: response.data.data.images[],
   });
   } catch (error) {
     console.error(error);
