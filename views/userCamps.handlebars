@@ -28,22 +28,34 @@
         float: right;
     }
 
+    .row{
+        margin:auto
+    }
 
     .see-thru {
         background-color: rgba(0, 0, 0, 0.75);
     }
 
+    
+
+    {{!-- //section --}}
+    #userCamp-aside {
+      overflow: scroll;
+      height: 80vh;
+    }
+    {{!-- //section --}}
     #content-box {
-        overflow: scroll;
-        min-height: 60vh;
+      overflow: scroll;
+      height: 80vh;
     }
 
     #comment-box {
         overflow: scroll;
         max-height: 40vh;
-        min-width: fit-content;
+        
         background-color: rgb(14, 88, 14);
         box-shadow: 0 0 5px 0px white;
+        {{!-- min-width: fit-content; --}}
     }
 
     #comment-element {
@@ -102,34 +114,29 @@
         color: rgb(118, 255, 118);
     }
 
-    .body-text {
-        font-size: 20;
-    }
     
+
 </style>
 
-<div class="row">
-    <div id="userCamp-aside" class="col-2 text-white m-2 p-1 rounded see-thru">
+
+    <div id="userCamp-aside" class="col-2 text-white my-2 p-3 rounded see-thru">
         <details open id="favorite-box" class="p-2 m-2 rounded">
-            <summary class="text-center" style="">
-                VIEW FAVORITES
+            <summary class="text-center" >
+                FAVORITES
             </summary>
             <br>
             <div class="border-top border-dark p-2">
                 {{#each favorites as |favorite|}}
                   <p id="favorite-element" style="p-3 m-2"> {{ favorite.campsite.name }} </p>
-                  {{!-- {{#if images.[0].url}} --}}
-                      <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{favorite.campsite_img_url}}" alt="">
-                      {{!-- <img id="campsite-photo" class="img-fluid max-width: 100%" src={{imgURL}} + alt=""> --}}
-                  {{!-- {{/if}} --}}
+                      <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{favorite.campsite_img_url}}" alt="photo of {{ favorite.campsite.name }} site">
                 {{/each}}
             </div>
         </details>
     </div>
 
 {{#each campData as |data|}}
-
-<div id="content-box" class="col text-white rounded see-thru my-2 p-3">
+    {{!-- //section --}}
+<div id="content-box" class="col text-white rounded see-thru my-2 p-3" data-id={{id}} data-imgUrl={{images.[0].url}}>
     <div id="campsite-header" class="row">
         <div class="col-9">
             <h3>
@@ -210,7 +217,7 @@
     <div class="row">
         <div class="col">
             <details open id="comment-box" class="p-2 m-2 rounded">
-                <summary class="text-center" style="">
+                <summary class="text-center">
                     COMMENTS
                 </summary>
                 <br>
