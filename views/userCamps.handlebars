@@ -1,6 +1,5 @@
 {{!-- SECTION: USER CAMPS PAGE --}}
 <style>
-
     .star {
         visibility: hidden;
         font-size: 24px;
@@ -26,13 +25,14 @@
 
     #favStarEl {
         font-size: 12px;
-        {{!-- float: right; --}}
+        float: right;
+
     }
 
     #favStarText {
         font-size: 12px;
-        {{!-- float: left; --}}
-        
+        float: left;
+
     }
 
     .row {
@@ -43,6 +43,21 @@
         background-color: rgba(0, 0, 0, 0.75);
     }
 
+    #content-box {
+        overflow: scroll;
+        height: 80vh;
+        scrollbar-color: black !important;
+    }
+
+    #comment-box {
+        background-color: rgb(14, 88, 14);
+        box-shadow: 0 0 5px 0px white;
+    }
+
+    #comment-element {
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: var(--border-radius);
+    }
 </style>
 
 
@@ -54,7 +69,7 @@
 
     {{#each campData as |data|}}
 
-    <div class="col text-white m-2 p-1 rounded see-thru">
+    <div id="content-box" class="col text-white m-2 p-1 rounded see-thru">
         <div id="campsite-header" class="row">
             <div class="col-9">
                 <h3>
@@ -72,40 +87,82 @@
             <div class="row">
                 <div class="col-12">
                     {{!MAIN PHOTO}}
+                    {{#if images.[0].url}}
                     <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{images.[0].url}}"
                         alt="{{images.[0].altText}}">
+                    {{/if}}
                 </div>
             </div>
 
             <div class="row mt-3">
                 <div class="col border-bottom border-dark">
+                    {{#if description}}
                     <p id="campsite-desc">{{ description }}</p>
+                    {{/if}}
                 </div>
             </div>
 
             <div class="row  mt-3">
                 <div class="col">
                     {{!RESERVATIONS}}
+                    {{#if reservationInfo}}
                     <p><strong>Reservation Info:</strong> {{ reservationInfo }}</p>
+                    {{/if}}
+                    {{#if reservationUrl}}
                     <p><strong>Make a reservation:</strong><a href="{{ reservationUrl }}" target="_blank"> <i>{{
                                 reservationUrl }}</i></a></p>
+                    {{/if}}
                     {{!REGULATIONS}}
-                    <p><strong>Regulations:</strong> {{ regulationsOverview }} <br><a href="{{ regulationsurl }}"
-                            class="regulations"> <i>{{ regulationsurl }}</i></a></p>
+                    {{#if regulationsOverview}}
+                    <p><strong>Regulations:</strong> {{ regulationsOverview }}
+                        {{/if}}
+                        <br>
+                        {{#if regulationsurl}}
+                        <a href="{{ regulationsurl }}" target="_blank" class="regulations"> <i>{{ regulationsurl }}</i>
+                        </a>
+                        {{/if}}
+                    </p>
+
                 </div>
 
                 <div class="col">
                     {{!CONTACT}}
+                    {{#if contacts.phoneNumbers.[0].phoneNumber}}
                     <p><strong>Phone:</strong> {{ contacts.phoneNumbers.[0].phoneNumber }}</p>
+                    {{/if}}
+                    {{#if contacts.emailAddresses.[0].emailAddress}}
                     <p><strong>Email:</strong> <a
                             href="mailto:{{ contacts.emailAddresses.[0].emailAddress }}"><i>{{contacts.emailAddresses.[0].emailAddress}}</i></a>
                     </p>
+                    {{/if}}
                     {{!FEES}}
-                    <p><strong>{{fees.[0].title}}:</strong> ${{fees.[0].cost}} {{fees.[0].description}}</p>
+                    {{#if fees.[0].title}}
+                    <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}{{/if}}{{#if
+                        fees.[0].description}} {{fees.[0].description}}</p>
+                        {{/if}}
+                {{/each}}
                 </div>
             </div>
         </div>
-    </div>
-    {{/each}}
-</div>
 
+        <div class="row">
+            <div class="col">
+                <details open id="comment-box" class="p-2 m-2 rounded">
+                    <summary class="text-center" style="">
+                        VIEW COMMENTS
+                    </summary>
+                    <br>
+                    <div class="border-top border-dark p-2">
+                    {{#each comments as |comment|}}
+                <p id="comment-element" style="p-3 m-2"> {{ comment.content }}</p>
+
+                    <p id="comment-element" style="p-3 m-2"> Posted by: {{ comment.user.username }}</p>
+                    <p id="comment-element" style="p-3 m-2"> On: {{ format_date comment.createdAt }}</p>
+
+                    {{/each}}
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+</div>

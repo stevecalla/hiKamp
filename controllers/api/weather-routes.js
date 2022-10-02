@@ -26,7 +26,7 @@ router.get('/', async (req, res) => {
       console.error(error);
     }
   });
-=======
+
 // router.get('/', async (req, res) => {
 //     // console.log('hello');
   
