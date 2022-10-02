@@ -2,7 +2,7 @@
 <style>
     .star {
         visibility: hidden;
-        font-size: 24px;
+        font-size: 32px;
         color: gold;
         cursor: pointer;
         outline-color: black;
@@ -26,13 +26,6 @@
     #favStarEl {
         font-size: 12px;
         float: right;
-
-    }
-
-    #favStarText {
-        font-size: 12px;
-        float: left;
-
     }
 
     .row {
@@ -58,13 +51,51 @@
         background-color: rgba(0, 0, 0, 0.75);
         border-radius: var(--border-radius);
     }
+
+    #nps-link {
+        position: relative;
+        bottom: 45px;
+        left: 5px;
+        z-index: 1;
+        background-color: rgb(14, 88, 14);
+        box-shadow: 0 0 3px 0px white;
+        border-radius: var(--border-radius);
+    }
+
+    #nps-link.button {
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+        text-decoration: none;
+        text: white;
+    }
+
+    #nps-link.button:hover {
+        vertical-align: top;
+        padding: 8px 13px 6px;
+        color: black;
+        background-color: white;
+        border-color: white;
+        transition: 0.35s;
+    }
+
 </style>
 
 
 <div class="row">
 
     <div id="userCamp-aside" class="col-2 text-white m-2 p-1 rounded see-thru">
-        hello world
+        <details open id="favorite-box" class="p-2 m-2 rounded">
+            <summary class="text-center" style="">
+                VIEW FAVORITES
+            </summary>
+            <br>
+            <div class="border-top border-dark p-2">
+                {{#each campsites as |campsite|}}
+                <p id="favorite-element" style="p-3 m-2"> {{ campsite.name}} </p>
+                {{/each}}
+            </div>
+        </details>
     </div>
 
     {{#each campData as |data|}}
@@ -77,13 +108,10 @@
                 </h3>
             </div>
 
-            <div id="favStarEl" class="col-3 d-flex justify-content-center">
+            <div id="favStarEl" class="col-3 d-flex justify-content-end">
                 {{!-- FAVORITES BUTTON --}}
-                <input id="favStar" class="star" type="checkbox" title="favStar">
-                <div id="favStarText" class="align-self-center"><span><i>Add to Favorites</i></span>
-                </div>
+                <input id="favStar check" class="star" type="checkbox" title="favStar">
             </div>
-
             <div class="row">
                 <div class="col-12">
                     {{!MAIN PHOTO}}
@@ -91,6 +119,8 @@
                     <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{images.[0].url}}"
                         alt="{{images.[0].altText}}">
                     {{/if}}
+                    <a id="nps-link" href="https://www.nps.gov/{{campCode}}/planyourvisit/maps.htm" target="__blank"
+                        class="p-2 button">Visit NPS Page</a>
                 </div>
             </div>
 
@@ -138,9 +168,14 @@
                     {{!FEES}}
                     {{#if fees.[0].title}}
                     <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}{{/if}}{{#if
+<<<<<<< Updated upstream
                         fees.[0].description}} {{fees.[0].description}}</p>
                         {{/if}}
                 {{/each}}
+=======
+                        fees.[0].description}} {{fees.[0].description}}</p>{{/if}}
+                    {{/each}}
+>>>>>>> Stashed changes
                 </div>
             </div>
         </div>
@@ -153,6 +188,7 @@
                     </summary>
                     <br>
                     <div class="border-top border-dark p-2">
+<<<<<<< Updated upstream
                     {{#each comments as |comment|}}
                 <p id="comment-element" style="p-3 m-2"> {{ comment.content }}</p>
 
@@ -160,6 +196,11 @@
                     <p id="comment-element" style="p-3 m-2"> On: {{ format_date comment.createdAt }}</p>
 
                     {{/each}}
+=======
+                        {{#each comments as |comment|}}
+                        <p id="comment-element" style="p-3 m-2"> {{ comment.content }} </p>
+                        {{/each}}
+>>>>>>> Stashed changes
                     </div>
                 </details>
             </div>

@@ -42,7 +42,7 @@
   <header class=" rounded m-2">
     <nav>
       <div class="dropdown col-1 m-1">
-        <button class="btn btn-secondary dropdown-toggle menu" type="button" id="dropdownMenu2"
+        <button class="btn btn-secondary camp-dropdown-toggle menu" type="button" id="dropdownMenu2"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-list"
             viewBox="0 0 16 16">
@@ -55,8 +55,9 @@
           <a href="/">Home</a>
           <a href="/user-posts">Dashboard</a>
           {{!--add conditional for being on userCamps view--}}
+          {{#if comments}}
           <a href="#comment-box">Comments</a>
-          
+          {{/if}}
           {{#if loggedIn}}
           <button id="logout" class="btn-no-style">Logout</button>
           {{else}}
