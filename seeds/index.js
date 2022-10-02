@@ -11,9 +11,9 @@ const seedAll = async () => {
 
   await seedCampsites();
 
-  await seedComments();
-
   await seedFavorites();
+  
+  await seedComments();
 
   process.exit(0);
 };

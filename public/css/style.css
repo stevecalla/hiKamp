@@ -1,11 +1,15 @@
 :root {
-  --secondary: #86938f;
+  /* --secondary: #86938f;
   --background-main: #221010;
   --background-secondary: #d9ead3;
   --quatrinary: #6c6b67;
   --light: #e3e4e3;
   --dark: #182c23;
-  --border-radius: 0.3rem;
+  --border-radius: 0.3rem; */
+}
+
+body {
+  overflow: hidden;
 }
 
 h1 {
@@ -58,7 +62,7 @@ header {
 
 .background_image {
   background-image: url('../images/bg_image-forest.jpeg');
-  background-size: cover
+  /* background-size: cover; */
 }
 
 nav {
