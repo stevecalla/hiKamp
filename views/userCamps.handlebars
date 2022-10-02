@@ -43,6 +43,8 @@
     }
 
     #comment-box {
+        overflow: scroll;
+        max-height: 40vh;
         background-color: rgb(14, 88, 14);
         box-shadow: 0 0 5px 0px white;
     }
@@ -73,21 +75,49 @@
     #nps-link.button:hover {
         vertical-align: top;
         padding: 8px 13px 6px;
-        color: black;
+        text: black;
         background-color: white;
         border-color: white;
         transition: 0.35s;
     }
 
+    #nps-link.button:visited {
+        color: burlywood;
+    }
+
+    a {
+        color: burlywood;
+    }
+    
+    a:visited {
+        color: rgb(21, 120, 21);
+    }
+
+    a:focus {
+        color: rgb(28, 176, 28);
+    }
+
+    a:hover {
+        color: rgb(28, 201, 28);
+    }
+
+    a:active {
+        color: rgb(118, 255, 118);
+    }
+
+    #userCamp-aside {
+     min-width: fit-content; 
+    }
+
+    .col-12 {
+        
+    }
+
 </style>
-
-
-<div class="row">
-
-    <div id="userCamp-aside" class="col-2 text-white m-2 p-1 rounded see-thru">
+    <div id="userCamp-aside" class="col-lg-2 col-md-2 col-12 text-white m-2 p-1 rounded see-thru">
         <details open id="favorite-box" class="p-2 m-2 rounded">
             <summary class="text-center" style="">
-                VIEW FAVORITES
+                FAVORITES
             </summary>
             <br>
             <div class="border-top border-dark p-2">
@@ -166,8 +196,14 @@
                     </p>
                     {{/if}}
                     {{!FEES}}
+
+                    {{#if fees.[0].title}}
+                    <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}{{/if}}{{#if
+                        fees.[0].description}}
+
                      {{#if fees.[0].title}}
                     <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}{{/if}}{{#if fees.[0].description}}
+
                         {{fees.[0].description}} {{/if}} {{#if fees.[0].description}}{{fees.[0].description}}</p>{{/if}}
                     {{/each}}
                 </div>
@@ -178,26 +214,21 @@
             <div class="col">
                 <details open id="comment-box" class="p-2 m-2 rounded">
                     <summary class="text-center" style="">
-                        VIEW COMMENTS
+                        COMMENTS
                     </summary>
                     <br>
                     <div class="border-top border-dark p-2">
-<<<<<<< Updated upstream
-                    {{#each comments as |comment|}}
-                <p id="comment-element" style="p-3 m-2"> {{ comment.content }}</p>
-
-                    <p id="comment-element" style="p-3 m-2"> Posted by: {{ comment.user.username }}</p>
-                    <p id="comment-element" style="p-3 m-2"> On: {{ format_date comment.createdAt }}</p>
-
-                    {{/each}}
-=======
-                        {{#each comments as |comment|}}
-                        <p id="comment-element" style="p-3 m-2"> {{ comment.content }} </p>
+                        {{#each comments as |comment|}} 
+                        <p id="comment-element" style="p-3 m-2">
+                            Posted by: {{ comment.user.username }} <br>
+                            On: {{ format_date comment.createdAt }} <br>
+                            {{ comment.content }}
+                        </p>
+                        <p id="comment-element" style="p-3 m-2"> </p>
                         {{/each}}
->>>>>>> Stashed changes
+
                     </div>
                 </details>
             </div>
         </div>
     </div>
-</div>
