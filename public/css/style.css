@@ -62,7 +62,7 @@ header {
 
 .background_image {
   background-image: url('../images/bg_image-forest.jpeg');
-  background-size: cover
+  /* background-size: cover; */
 }
 
 nav {
