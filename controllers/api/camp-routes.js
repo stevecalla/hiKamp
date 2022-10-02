@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const isNotValid = require('../../utils/null');
+const isNotValid = require('../../utils/isNotValid');
 const isAuthorized = require('../../utils/auth');
 const axios = require('axios').default;
 const { Comment, User, Favorite, Campsite } = require('../../models');
