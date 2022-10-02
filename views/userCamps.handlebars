@@ -28,9 +28,6 @@
         float: right;
     }
 
-    .row {
-        margin: auto
-    }
 
     .see-thru {
         background-color: rgba(0, 0, 0, 0.75);
@@ -38,13 +35,13 @@
 
     #content-box {
         overflow: scroll;
-        height: 80vh;
-        scrollbar-color: black !important;
+        min-height: 60vh;
     }
 
     #comment-box {
         overflow: scroll;
         max-height: 40vh;
+        min-width: fit-content;
         background-color: rgb(14, 88, 14);
         box-shadow: 0 0 5px 0px white;
     }
@@ -104,16 +101,14 @@
     a:active {
         color: rgb(118, 255, 118);
     }
+    
+        .body-text {
+            font-size: 20;
+        }
 
-    #userCamp-aside {
-        min-width: fit-content;
-    }
-
-    .col-12 {
-        margin-right: 5%;
     }
 </style>
-<div id="userCamp-aside" class="col-lg-2 col-md-2 col-12 text-white m-2 p-1 rounded see-thru">
+<div id="userCamp-aside" class="col-2 text-white rounded see-thru my-2 p-3">
     <details open id="favorite-box" class="p-2 m-2 rounded">
         <summary class="text-center" style="">
             FAVORITES
@@ -129,7 +124,7 @@
 
 {{#each campData as |data|}}
 
-<div id="content-box" class="col text-white m-2 p-1 rounded see-thru">
+<div id="content-box" class="col text-white rounded see-thru my-2 p-3">
     <div id="campsite-header" class="row">
         <div class="col-9">
             <h3>
@@ -153,7 +148,7 @@
             </div>
         </div>
 
-        <div class="row mt-3">
+        <div class="row mt-3 body-text">
             <div class="col border-bottom border-dark">
                 {{#if description}}
                 <p id="campsite-desc">{{ description }}</p>
@@ -161,7 +156,7 @@
             </div>
         </div>
 
-        <div class="row  mt-3">
+        <div class="row  mt-3 body-text">
             <div class="col">
                 {{!RESERVATIONS}}
                 {{#if reservationInfo}}
@@ -184,7 +179,7 @@
 
             </div>
 
-            <div class="col">
+            <div class="col body-text">
                 {{!CONTACT}}
                 {{#if contacts.phoneNumbers.[0].phoneNumber}}
                 <p><strong>Phone:</strong> {{ contacts.phoneNumbers.[0].phoneNumber }}</p>

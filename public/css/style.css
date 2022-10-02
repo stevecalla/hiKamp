@@ -83,11 +83,14 @@ nav a:hover {
 /* MAIN & ASIDE */
 main {
   display: flex;
+  
   flex-wrap: wrap;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   height: auto;
   /* overflow: scroll; */
 }
+
+
 
 .app_name {
   font-family: 'Splash', cursive, sans-serif;
@@ -173,10 +176,10 @@ textarea {
 }
 
 /* POSTS */
-.container a,
+/* .container a,
 .post-card {
   width: 100%;
-}
+} */
 
 .comment-wrapper {
   height: 200px;
@@ -256,7 +259,7 @@ form i {
 /* LAYOUT */
 .container {
   width:auto;
-  display: flex;
+  /* display: flex; */
   flex-flow: column wrap;
   align-content: flex-start;
   align-items: center;
@@ -272,6 +275,10 @@ form i {
     width: 100vw;
     min-width: 375px;
   }
+  main.row {
+    margin:auto;
+    min-height: 90vh;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -285,11 +292,46 @@ form i {
 
   nav a,
   nav button {
-    font-size: 24px !important;
+    font-size: 22px !important;
   }
 
   .login-header,
   .post-header {
     flex-direction: column;
   }
+
+  main.row {
+    flex-direction: column;
+    margin:auto;
+    min-height: 90vh;
+  }
+
+  #content-box {
+    max-width: 95vw;
+  }
+
+  #userCamp-aside {
+    max-width: 95vw;
+  } 
+}
+
+@media screen and (min-width: 768px) {
+
+  #userCamp-aside {
+    margin-right: 1vw;
+  }
+
+  #content-box {
+    margin-left: 1vw;
+  }
+
+}
+
+@media screen and (min-width: 1100px) {
+  
+  main.row {
+    margin: 0;
+    min-height: 90vh;
+  }
+
 }
