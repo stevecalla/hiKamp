@@ -48,6 +48,10 @@ header {
   background-color: rgb(14, 88, 14);
 }
 
+.camp-dropdown-toggle::after {
+  content: none;
+}
+
 .background_image {
   background-image: url('../images/bg_image-forest.jpeg');
 }
