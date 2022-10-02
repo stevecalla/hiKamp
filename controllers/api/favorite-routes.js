@@ -7,11 +7,15 @@ const { Favorite } = require('../../models');
 
 // CREATE AND SAVE FAVORITE
 router.post("/", async (req, res) => {
+
+  let imgURL = `https://www.nps.gov/common/uploads/structured_data/${req.body.id}.jpg`;
+
   try {
     const dbFavoriteData = await Favorite.create({
       user_id: req.session.userId,
       campsite_id: req.body.id,
-      campsite_img_url: req.body.url,
+      // campsite_img_url: req.body.url,
+      campsite_img_url: imgURL,
     });
     res.status(200).json(dbFavoriteData);
 

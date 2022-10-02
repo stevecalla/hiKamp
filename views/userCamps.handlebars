@@ -98,6 +98,7 @@
                   <p id="favorite-element" style="p-3 m-2"> {{ favorite.campsite.name }} </p>
                   {{!-- {{#if images.[0].url}} --}}
                       <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{favorite.campsite_img_url}}" alt="">
+                      {{!-- <img id="campsite-photo" class="img-fluid max-width: 100%" src={{imgURL}} + alt=""> --}}
                   {{!-- {{/if}} --}}
                 {{/each}}
             </div>
@@ -116,7 +117,11 @@
 
             <div id="favStarEl" class="col-3 d-flex justify-content-end">
                 {{!-- FAVORITES BUTTON --}}
+                {{#if isCurrentFavorite }}
+                  <input id="favStar check" class="star" type="checkbox" title="favStar" checked>
+                {{else}}
                 <input id="favStar check" class="star" type="checkbox" title="favStar">
+                {{/if}}
             </div>
             <div class="row">
                 <div class="col-12">
