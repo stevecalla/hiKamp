@@ -138,8 +138,9 @@
                     {{!FEES}}
                     {{#if fees.[0].title}}
                     <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}{{/if}}{{#if
-                        fees.[0].description}} {{fees.[0].description}}</p>{{/if}}
-                        {{/each}}
+                        fees.[0].description}} {{fees.[0].description}}</p>
+                        {{/if}}
+                {{/each}}
                 </div>
             </div>
         </div>
@@ -153,7 +154,11 @@
                     <br>
                     <div class="border-top border-dark p-2">
                     {{#each comments as |comment|}}
-                    <p id="comment-element" style="p-3 m-2"> {{ comment.content }} </p>
+                <p id="comment-element" style="p-3 m-2"> {{ comment.content }}</p>
+
+                    <p id="comment-element" style="p-3 m-2"> Posted by: {{ comment.user.username }}</p>
+                    <p id="comment-element" style="p-3 m-2"> On: {{ format_date comment.createdAt }}</p>
+
                     {{/each}}
                     </div>
                 </details>
@@ -161,6 +166,3 @@
         </div>
     </div>
 </div>
-
-
-

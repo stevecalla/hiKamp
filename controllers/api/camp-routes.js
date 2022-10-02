@@ -1,12 +1,11 @@
 const router = require('express').Router();
 const isAuthorized = require('../../utils/auth');
 const axios = require('axios').default;
-const { Comment, User } = require('../../models');
+const { Comment, User, Favorite, Campsite } = require('../../models');
 
 // route starts at api/campsites
 
 router.get('/', async (req, res) => {
-
   try {
     const key = process.env.NPS_API;
     const response = await axios.get(`https://developer.nps.gov/api/v1/campgrounds?id=1241C56B-7003-4FDF-A449-29DA8BCB0A41&api_key=${key}`);
@@ -18,12 +17,24 @@ const allComments = await Comment.findAll(
       include: [{ model: User }],
       //where: { user_id: req.session.userId },
 });
-console.log(allComments)
+// console.log(allComments)
 const comments = allComments.map((comment) => comment.get({ plain: true }));
 // res.json(comments)
+// console.log("+++++++++++++++++++++++++++", comments)
+
+const allFavorites = await Favorite.findAll(
+  {
+      include: [{ model: User }, { model: Campsite }],
+      where: { user_id: req.session.userId },
+});
+const favorite = allFavorites.map((favorite) => favorite.get({ plain: true }));
+
+console.log(req.session)
+console.log(favorite)
 
 res.render('userCamps', {
   campData: response.data.data,
+  favorites: favorite,
   comments: comments,
   logged_in: req.session.logged_in
 });
@@ -32,6 +43,7 @@ res.render('userCamps', {
 console.error(error);
 }
 });
+
 
 // https://developer.nps.gov/api/v1/campgrounds?id?limit=5?&api_key=sjsH0PhPRSMzPFiZEohC8IjAeDvFOYvXzDjsetql
 

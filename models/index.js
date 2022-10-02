@@ -17,12 +17,12 @@ Favorite.belongsTo(User, {
 
 // Favorite to Campsite relationship
 Favorite.hasOne(Campsite, {
-  foreignKey: "favorite_id",
+  foreignKey: "campsite_id",
   onDelete: 'CASCADE'
 });
 
 Campsite.belongsTo(Favorite, {
-  foreignKey: "favorite_id",
+  foreignKey: "campsite_id",
   onDelete: 'CASCADE'
 });
 
