@@ -92,7 +92,10 @@
             <br>
             <div class="border-top border-dark p-2">
                 {{#each favorites as |favorite|}}
-                <p id="favorite-element" style="p-3 m-2"> {{ favorite }} </p>
+                  <p id="favorite-element" style="p-3 m-2"> {{ favorite.campsite.name }} </p>
+                  {{!-- {{#if images.[0].url}} --}}
+                      <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{favorite.campsite_img_url}}" alt="">
+                  {{!-- {{/if}} --}}
                 {{/each}}
             </div>
         </details>
@@ -100,7 +103,7 @@
 
     {{#each campData as |data|}}
 
-    <div id="content-box" class="col text-white m-2 p-1 rounded see-thru">
+    <div id="content-box" class="col text-white m-2 p-1 rounded see-thru" data-id={{id}}>
         <div id="campsite-header" class="row">
             <div class="col-9">
                 <h3>

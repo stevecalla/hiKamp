@@ -42,10 +42,12 @@ const { Comment, User, Favorite, Campsite } = require('../../models');
 //   }
 // });
 
-router.get('/:id', async (req, res) => {
+router.get('/:id', isAuthorized, async (req, res) => {
   try {
   const key = process.env.NPS_API;
   const response = await axios.get(`https://developer.nps.gov/api/v1/campgrounds?id=${req.params.id}&api_key=${key}`);
+
+  console.log(response.data.data);
 
   const allComments = await Comment.findAll({
     include: [{ model: User }, { model: Campsite}],
@@ -54,14 +56,14 @@ router.get('/:id', async (req, res) => {
   
   const comments = allComments.map((comment) => comment.get({ plain: true }));
 
-  console.log(comments);
+  // console.log(comments);
 
-  // const allFavorites = await Favorite.findAll({
-  //   include: [{ model: User }, { model: Campsite}],
-  //   where: { user_id: req.session.userId },
-  // });
+  const allFavorites = await Favorite.findAll({
+    include: [{ model: User }, { model: Campsite}],
+    where: { user_id: req.session.userId },
+  });
   
-  // const favorites = allFavorites.map((favorite) => favorite.get({ plain: true }));
+  const favorites = allFavorites.map((favorite) => favorite.get({ plain: true }));
 
   // console.log(favorites);
   // console.log(req.session);
@@ -69,7 +71,7 @@ router.get('/:id', async (req, res) => {
   res.render('userCamps', {
     campData: response.data.data,
     comments: comments,
-    // favorites: favorites,
+    favorites: favorites,
     logged_in: req.session.logged_in,
   });
   } catch (error) {
@@ -77,7 +79,6 @@ router.get('/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 
 // weather api get request
 // router.get('/', async (req, res) => {

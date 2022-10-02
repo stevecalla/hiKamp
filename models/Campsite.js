@@ -5,15 +5,10 @@ class Campsite extends Model { }
 
 Campsite.init(
     {
-        id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            primaryKey: true,
-            autoIncrement: true,
-        },
         camp_id: {
             type: DataTypes.STRING,
             primaryKey: true,
+            unique: true,
         },
         code: {
             type: DataTypes.STRING,
