@@ -268,7 +268,7 @@ form i {
 
 /* ---------- MOBILE RESPONSIVE ---------- */
 /* LARGE SCREENS / TABLETS */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   .full-screen {
     display: none;
   }
@@ -277,7 +277,7 @@ form i {
     min-width: 375px;
   }
   main.row {
-    margin:auto;
+    margin: auto;
     min-height: 90vh;
   }
 }

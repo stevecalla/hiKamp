@@ -58,6 +58,23 @@ isBlank = (answer, name) => {
 const blue = `\x1b[36;1m`;
 const white = `\u001b[0;1m`;
 
+//UTILITY FUNCTIONS
+function sortUtility(listToSort) {
+  let sortedList = listToSort.sort(function (a, b) {
+    const nameA = a.toUpperCase(); //ignore upper and lowercase
+    const nameB = b.toUpperCase(); //ignore upper and lowercase
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    //names must be equal
+    return 0;
+  });
+  return sortedList;
+}
+
 module.exports = {
   capitalizeFirstCharacter,
   lowerCase,
@@ -68,5 +85,6 @@ module.exports = {
   white,
   format_time,
   format_date,
-  trim_content
+  trim_content,
+  sortUtility,
 };

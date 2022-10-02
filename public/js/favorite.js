@@ -17,7 +17,6 @@ function getIDAndImgURL() {
   let url = campId.dataset.imgurl || "";
   console.log(id, url);
   console.log(favoriteStar.checked)
-
   favoriteStar.checked ? createFavorite(id, url) : deleteFavorite(id, url);
   window.location.reload();
 }
