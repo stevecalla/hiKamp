@@ -16,12 +16,12 @@ function getIDAndImgURL() {
   let id = campId.dataset.id;
   let url = imgURL.getAttribute('src');
   console.log(id, url);
-  createFavorite(id, url);
+  // createFavorite(id, url);
+  deleteFavorite(id, url);
 }
 
 async function createFavorite(id, url) {
   if (id && url) {
-    // const response = await fetch("/create-favorite", {
     const response = await fetch("/api/favorite", {
       method: "POST",
       body: JSON.stringify({ id, url }),
@@ -37,23 +37,19 @@ async function createFavorite(id, url) {
   }
 }
 
-const createPostFormHandler = async (event) => {
-  event.preventDefault();
-
-  const title = document.querySelector("#post-title").value.trim();
-  const content = document.querySelector("#post-content").value.trim();
-
-  if (title && content) {
-    const response = await fetch("/create-post", {
-      method: "POST",
-      body: JSON.stringify({ title, content }),
+async function deleteFavorite(id, url) {
+  if (id && url) {
+    const response = await fetch("/api/favorite", {
+      method: "DELETE",
+      body: JSON.stringify({ id, url }),
       headers: { "Content-Type": "application/json" },
     });
 
     if (response.ok) {
       document.location.replace("/user-posts");
+      //render new favorite in the aide
     } else {
-      alert("Failed to log in.");
+      alert("Failed to create favorite.");
     }
   }
-};
+}

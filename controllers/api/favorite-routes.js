@@ -7,11 +7,6 @@ const { Favorite } = require('../../models');
 
 // CREATE AND SAVE FAVORITE
 router.post("/", async (req, res) => {
-  // if (req.body) {
-  //   res.json (req.body)
-  // } else {
-  //   res.send('hello')
-  // }
   try {
     const dbFavoriteData = await Favorite.create({
       user_id: req.session.userId,
@@ -27,11 +22,16 @@ router.post("/", async (req, res) => {
 });
 
 // // DELETE POST BASED ON REQUEST BY USER
-router.delete("/:id", isAuthorized, async (req, res) => {
+router.delete("/", async (req, res) => {
+
+  console.log('hHhHHHHHHHHHHHHHHH');
+  console.log(req.body);
+
   try {
     const deletedPost = await Favorite.destroy({
       where: {
-        id: req.params.id,
+        user_id: req.session.userId,
+        campsite_id: req.body.id,
       },
     });
 
