@@ -106,8 +106,14 @@
             </div>
         </div>
     </div>
+    
     {{/each}}
 
-    <p>COMMENTS HERE {{ comments }} </p>
+{{#each comments as |comment|}}
+
+<p style="color: white"> COMMENTS {{ comment.content }} </p>
+
+{{/each}}
+
 </div>
 
