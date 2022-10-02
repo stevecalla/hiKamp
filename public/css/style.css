@@ -35,8 +35,12 @@ header {
   color: var(--light);
 }
 
+.post {
+  flex-flow: column;
+}
+
 .header {
-  width: 325px;
+  width: 90vw;
   margin: auto;
   background-color: rgba(14, 88, 14);
   /* color: var(--background-main); */
@@ -54,6 +58,7 @@ header {
 
 .background_image {
   background-image: url('../images/bg_image-forest.jpeg');
+  background-size: cover
 }
 
 nav {
@@ -80,7 +85,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
-  height: 80vh;
+  height: auto;
   /* overflow: scroll; */
 }
 
@@ -250,6 +255,7 @@ form i {
 
 /* LAYOUT */
 .container {
+  width:auto;
   display: flex;
   flex-flow: column wrap;
   align-content: flex-start;
