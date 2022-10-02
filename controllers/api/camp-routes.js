@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const isNotValid = require('../../utils/null');
 const isAuthorized = require('../../utils/auth');
 const axios = require('axios').default;
 const { Comment, User, Favorite, Campsite } = require('../../models');
@@ -42,12 +43,12 @@ const { Comment, User, Favorite, Campsite } = require('../../models');
 //   }
 // });
 
-router.get('/:id', isAuthorized, async (req, res) => {
+router.get('/:id', isNotValid, isAuthorized, async (req, res) => {
   try {
   const key = process.env.NPS_API;
   const response = await axios.get(`https://developer.nps.gov/api/v1/campgrounds?id=${req.params.id}&api_key=${key}`);
 
-  console.log(response.data.data);
+  // console.log(response.data.data);
 
   const allComments = await Comment.findAll({
     include: [{ model: User }, { model: Campsite}],
