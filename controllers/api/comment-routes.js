@@ -3,19 +3,39 @@ const { Comment, User } = require('../../models');
 //const isAuthorized = require('../../utils/auth');
 
 //section: api/comments
-router.get('/', async (req, res) => {
+// router.get('/', async (req, res) => {
+//   try {
+//     const allComments = await Comment.findAll(
+//         {
+//             include: [{ model: User }],
+//             //where: { user_id: req.session.userId },
+//     });
+//     const comments = allComments.map((comment) => comment.get({ plain: true }));
+//    //res.json(comments)
+//     res.render('comments', {
+//         comments,
+//        // loggedIn: res.session.loggedIn
+//     });
+//   } catch (err) {
+//     console.log(err);
+//     res.status(500).json(err);
+//   }
+// });
+
+// GET route for one comment
+
+router.get('/:id', async (req, res) => {
   try {
-    const allComments = await Comment.findAll(
-        {
+    const oneComment = await Comment.findByPk(req.params.id, {
             include: [{ model: User }],
-            where: { user_id: req.session.userId },
+            //where: { user_id: req.session.userId },
     });
-
-    const comments = allComments.map((comment) => comment.get({ plain: true }));
-
+  
+    const comment = oneComment.get({ plain: true });
+   res.json(comment)
     res.render('comments', {
-        comments,
-        loggedIn: res.session.loggedIn
+        comment,
+       // loggedIn: res.session.loggedIn
     });
   } catch (err) {
     console.log(err);
