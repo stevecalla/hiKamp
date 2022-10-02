@@ -151,7 +151,7 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
   );
 }
 
-// GET LIST OF CAMPSITES TO RENDER //section
+// GET LIST OF CAMPSITES TO RENDER
 const getList = async (state) => {
   let result;
 
@@ -163,7 +163,7 @@ const getList = async (state) => {
     let list = json.filter(
       (element) => element.lat !== null || element.lng !== null
     );
-    list = sortUtility(list); //section
+    list = sortUtility(list);
     return list;
 
   } else {
@@ -174,7 +174,7 @@ const getList = async (state) => {
     let list = json.filter(
       (element) => element.lat !== null || element.lng !== null
     );
-    list = sortUtility(list); //section
+    list = sortUtility(list);
     return list;
   }
 };
@@ -581,7 +581,7 @@ function validationModal(title, body) {
   $("#no-input-body").text(body);
 }
 
-//UTILITY FUNCTIONS //section
+//UTILITY FUNCTIONS
 function sortUtility(listToSort) {
   let sortedList = listToSort.sort(function (a, b) {
     const nameA = a.name.toUpperCase(); //ignore upper and lowercase
