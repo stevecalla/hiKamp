@@ -98,21 +98,23 @@
         color: burlywood;
     }
 
-    a:visited {
+    {{!-- section --}}
+    {{!-- a:visited {
         color: rgb(21, 120, 21);
-    }
+    } --}}
 
-    a:focus {
+    {{!-- a:focus {
         color: rgb(28, 176, 28);
-    }
+    } --}}
 
-    a:hover {
+    {{!-- a:hover {
         color: rgb(28, 201, 28);
-    }
+    } --}}
 
-    a:active {
+    {{!-- a:active {
         color: rgb(118, 255, 118);
-    }
+    } --}}
+    {{!-- section --}}
 
     
 
@@ -126,10 +128,13 @@
             </summary>
             <br>
             <div class="border-top border-dark p-2">
-                {{#each favorites as |favorite|}}
-                  <p id="favorite-element" style="p-3 m-2"> {{ favorite.campsite.name }} </p>
-                      <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{favorite.campsite_img_url}}" alt="photo of {{ favorite.campsite.name }} site">
+            {{!-- SECTION --}}
+                {{#each favorites as |favorite favoriteId|}}
+                {{!-- {{#each users as |user userId|}} --}}
+                  <h6 id="" class="" style="color: white!important; text-decoration: underline; textAlign: center"><a class="map-ahref" href="/api/campsites/{{ favorite.campsite_id }}">{{ favorite.campsite.name }}</a></h6>
+                  <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{favorite.campsite_img_url}}" alt="photo of {{ favorite.campsite.name }} site">
                 {{/each}}
+            {{!-- SECTION --}}
             </div>
         </details>
     </div>

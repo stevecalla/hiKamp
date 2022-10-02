@@ -18,7 +18,7 @@ function getIDAndImgURL() {
   console.log(id, url);
   console.log(favoriteStar.checked)
   favoriteStar.checked ? createFavorite(id, url) : deleteFavorite(id, url);
-  // window.location.reload();
+  window.location.reload();
 }
 
 async function createFavorite(id, url) {
