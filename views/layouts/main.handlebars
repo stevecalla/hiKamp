@@ -54,6 +54,9 @@
           <!-- Dropdown menu links -->
           <a href="/">Home</a>
           <a href="/user-posts">Dashboard</a>
+          {{!--add conditional for being on userCamps view--}}
+          <a href="#comment-box">Comments</a>
+          
           {{#if loggedIn}}
           <button id="logout" class="btn-no-style">Logout</button>
           {{else}}

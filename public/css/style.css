@@ -77,7 +77,7 @@ main {
   flex-wrap: wrap;
   flex-grow: 1;
   height: 80vh;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .app_name {
