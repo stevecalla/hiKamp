@@ -13,7 +13,7 @@ const axios = require('axios').default;
 // //console.log('RESPONSE = ', JSON.stringify(response.data));
 // console.log('RESPONSE = ', JSON.stringify(response.data));
 //console.log('RESPONSE = ', JSON.stringify(response.data));
-console.log('RESPONSE = ', JSON.stringify(response.data));
+//console.log('RESPONSE = ', JSON.stringify(response.data));
 
 // res.render('userCamps', {
 //   campData: response.data.data,

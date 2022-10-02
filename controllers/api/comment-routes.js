@@ -7,7 +7,8 @@ router.get('/', async (req, res) => {
   try {
     const allComments = await Comment.findAll(
         {
-            include: [{ model: User }]
+            include: [{ model: User }],
+            where: { user_id: req.session.userId },
     });
 
     const comments = allComments.map((comment) => comment.get({ plain: true }));
