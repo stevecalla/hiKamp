@@ -6,6 +6,9 @@
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 0.25rem;
 }
+.map-ahref {
+  color: black;
+}
 .map { 
   position: absolute;
   width: 71vw;

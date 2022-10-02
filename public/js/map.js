@@ -316,7 +316,7 @@ function createMap(
     if (lat && lng) {
       // const contentString = `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/${camp_id}">${name}</a></h6>`;
 
-      const contentString = `<h6 id="" class="aside-ahref" style="color: blue; text-decoration: underline"><a class="aside-ahref" href="/api/campsites/${camp_id}">${name}</a></h6>`
+      const contentString = `<h6 id="" class="map-ahref" style="color: blue; text-decoration: underline"><a class="map-ahref" href="/api/campsites/${camp_id}">${name}</a></h6>`
 
       // https://maps.gstatic.com/mapfiles/place_api/icons/v2/camping_pinlet.svg
       let selectedCampsiteIcon =

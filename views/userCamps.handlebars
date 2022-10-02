@@ -43,8 +43,6 @@
     }
 
     #comment-box {
-        overflow: scroll;
-        max-height: 40vh;
         background-color: rgb(14, 88, 14);
         box-shadow: 0 0 5px 0px white;
     }
@@ -75,152 +73,129 @@
     #nps-link.button:hover {
         vertical-align: top;
         padding: 8px 13px 6px;
-        text: black;
+        color: black;
         background-color: white;
         border-color: white;
         transition: 0.35s;
     }
 
-    #nps-link.button:visited {
-        color: burlywood;
-    }
-
-    a {
-        color: burlywood;
-    }
-
-    a:visited {
-        color: rgb(21, 120, 21);
-    }
-
-    a:focus {
-        color: rgb(28, 176, 28);
-    }
-
-    a:hover {
-        color: rgb(28, 201, 28);
-    }
-
-    a:active {
-        color: rgb(118, 255, 118);
-    }
-
     #userCamp-aside {
-        min-width: fit-content;
+      height: 80vh;
+      overflow: scroll;
     }
 
-    .col-12 {
-        margin-right: 5%;
-    }
 </style>
-<div id="userCamp-aside" class="col-lg-2 col-md-2 col-12 text-white m-2 p-1 rounded see-thru">
-    <details open id="favorite-box" class="p-2 m-2 rounded">
-        <summary class="text-center" style="">
-            FAVORITES
-        </summary>
-        <br>
-        <div class="border-top border-dark p-2">
-            {{#each campsites as |campsite|}}
-            <p id="favorite-element" style="p-3 m-2"> {{ campsite.name}} </p>
-            {{/each}}
-        </div>
-    </details>
-</div>
 
-{{#each campData as |data|}}
-
-<div id="content-box" class="col text-white m-2 p-1 rounded see-thru">
-    <div id="campsite-header" class="row">
-        <div class="col-9">
-            <h3>
-                <span id="camp-name">{{name}}</span>
-            </h3>
-        </div>
-
-        <div id="favStarEl" class="col-3 d-flex justify-content-end">
-            {{!-- FAVORITES BUTTON --}}
-            <input id="favStar check" class="star" type="checkbox" title="favStar">
-        </div>
-        <div class="row">
-            <div class="col-12">
-                {{!MAIN PHOTO}}
-                {{#if images.[0].url}}
-                <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{images.[0].url}}"
-                    alt="{{images.[0].altText}}">
-                {{/if}}
-                <a id="nps-link" href="https://www.nps.gov/{{campCode}}/planyourvisit/maps.htm" target="__blank"
-                    class="p-2 button">Visit NPS Page</a>
-            </div>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col border-bottom border-dark">
-                {{#if description}}
-                <p id="campsite-desc">{{ description }}</p>
-                {{/if}}
-            </div>
-        </div>
-
-        <div class="row  mt-3">
-            <div class="col">
-                {{!RESERVATIONS}}
-                {{#if reservationInfo}}
-                <p><strong>Reservation Info:</strong> {{ reservationInfo }}</p>
-                {{/if}}
-                {{#if reservationUrl}}
-                <p><strong>Make a reservation:</strong><a href="{{ reservationUrl }}" target="_blank"> <i>{{
-                            reservationUrl }}</i></a></p>
-                {{/if}}
-                {{!REGULATIONS}}
-                {{#if regulationsOverview}}
-                <p><strong>Regulations:</strong> {{ regulationsOverview }}
-                    {{/if}}
-                    <br>
-                    {{#if regulationsurl}}
-                    <a href="{{ regulationsurl }}" target="_blank" class="regulations"> <i>{{ regulationsurl }}</i>
-                    </a>
-                    {{/if}}
-                </p>
-
-            </div>
-
-            <div class="col">
-                {{!CONTACT}}
-                {{#if contacts.phoneNumbers.[0].phoneNumber}}
-                <p><strong>Phone:</strong> {{ contacts.phoneNumbers.[0].phoneNumber }}</p>
-                {{/if}}
-                {{#if contacts.emailAddresses.[0].emailAddress}}
-                <p><strong>Email:</strong> <a
-                        href="mailto:{{ contacts.emailAddresses.[0].emailAddress }}"><i>{{contacts.emailAddresses.[0].emailAddress}}</i></a>
-                </p>
-                {{/if}}
-                {{!FEES}}
-                {{#if fees.[0].title}}
-                <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}{{/if}}
-                    {{#if fees.[0].description}}{{fees.[0].description}}</p>{{/if}}
+<div class="row">
+    <div id="userCamp-aside" class="col-2 text-white m-2 p-1 rounded see-thru">
+        <details open id="favorite-box" class="p-2 m-2 rounded">
+            <summary class="text-center" style="">
+                VIEW FAVORITES
+            </summary>
+            <br>
+            <div class="border-top border-dark p-2">
+                {{#each favorites as |favorite|}}
+                  <p id="favorite-element" style="p-3 m-2"> {{ favorite.campsite.name }} </p>
+                  {{!-- {{#if images.[0].url}} --}}
+                      <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{favorite.campsite_img_url}}" alt="">
+                  {{!-- {{/if}} --}}
                 {{/each}}
             </div>
-        </div>
+        </details>
     </div>
 
-    <div class="row">
-        <div class="col">
-            <details open id="comment-box" class="p-2 m-2 rounded">
-                <summary class="text-center" style="">
-                    COMMENTS
-                </summary>
-                <br>
-                <div class="border-top border-dark p-2">
-                    {{#each comments as |comment|}}
-                    <p id="comment-element" style="p-3 m-2">
-                        Posted by: {{ comment.user.username }} <br>
-                        On: {{ format_date comment.createdAt }} <br>
-                        {{ comment.content }}
+    {{#each campData as |data|}}
+
+    <div id="content-box" class="col text-white m-2 p-1 rounded see-thru" data-id={{id}}>
+        <div id="campsite-header" class="row">
+            <div class="col-9">
+                <h3>
+                    <span id="camp-name">{{name}}</span>
+                </h3>
+            </div>
+
+            <div id="favStarEl" class="col-3 d-flex justify-content-end">
+                {{!-- FAVORITES BUTTON --}}
+                <input id="favStar check" class="star" type="checkbox" title="favStar">
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    {{!MAIN PHOTO}}
+                    {{#if images.[0].url}}
+                    <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{images.[0].url}}"
+                        alt="{{images.[0].altText}}">
+                    {{/if}}
+                    <a id="nps-link" href="https://www.nps.gov/{{campCode}}/planyourvisit/maps.htm" target="__blank"
+                        class="p-2 button">Visit NPS Page</a>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col border-bottom border-dark">
+                    {{#if description}}
+                    <p id="campsite-desc">{{ description }}</p>
+                    {{/if}}
+                </div>
+            </div>
+
+            <div class="row  mt-3">
+                <div class="col">
+                    {{!RESERVATIONS}}
+                    {{#if reservationInfo}}
+                    <p><strong>Reservation Info:</strong> {{ reservationInfo }}</p>
+                    {{/if}}
+                    {{#if reservationUrl}}
+                    <p><strong>Make a reservation:</strong><a href="{{ reservationUrl }}" target="_blank"> <i>{{
+                                reservationUrl }}</i></a></p>
+                    {{/if}}
+                    {{!REGULATIONS}}
+                    {{#if regulationsOverview}}
+                    <p><strong>Regulations:</strong> {{ regulationsOverview }}
+                        {{/if}}
+                        <br>
+                        {{#if regulationsurl}}
+                        <a href="{{ regulationsurl }}" target="_blank" class="regulations"> <i>{{ regulationsurl }}</i>
+                        </a>
+                        {{/if}}
                     </p>
-                    <p id="comment-element" style="p-3 m-2"> </p>
+
+                </div>
+
+                <div class="col">
+                    {{!CONTACT}}
+                    {{#if contacts.phoneNumbers.[0].phoneNumber}}
+                    <p><strong>Phone:</strong> {{ contacts.phoneNumbers.[0].phoneNumber }}</p>
+                    {{/if}}
+                    {{#if contacts.emailAddresses.[0].emailAddress}}
+                    <p><strong>Email:</strong> <a
+                            href="mailto:{{ contacts.emailAddresses.[0].emailAddress }}"><i>{{contacts.emailAddresses.[0].emailAddress}}</i></a>
+                    </p>
+                    {{/if}}
+                    {{!FEES}}
+                     {{#if fees.[0].title}}
+                    <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}{{/if}}{{#if fees.[0].description}}
+                        {{fees.[0].description}} {{/if}} {{#if fees.[0].description}}{{fees.[0].description}}</p>{{/if}}
                     {{/each}}
                 </div>
-            </details>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <details open id="comment-box" class="p-2 m-2 rounded">
+                    <summary class="text-center" style="">
+                        VIEW COMMENTS
+                    </summary>
+                    <br>
+                    <div class="border-top border-dark p-2">
+                    {{#each comments as |comment|}}
+                      <p id="comment-element" style="p-3 m-2"> {{ comment.content }}</p>
+                      <p id="comment-element" style="p-3 m-2"> Posted by: {{ comment.user.username }}</p>
+                      <p id="comment-element" style="p-3 m-2"> On: {{ format_date comment.createdAt }}</p>
+                    {{/each}}
+                    </div>
+                </details>
+            </div>
         </div>
     </div>
 </div>
