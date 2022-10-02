@@ -19,11 +19,11 @@ Favorite.init(
             },
         },
         campsite_id: {
-          type: DataTypes.INTEGER,
-          references: {
-            model: "campsite",
-            key: "id",
-          },
+          type: DataTypes.STRING,
+          // references: {
+          //   model: "campsite",
+          //   key: "camp_id",
+          // },
         },
     },
     {

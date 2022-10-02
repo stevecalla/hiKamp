@@ -15,18 +15,18 @@ Favorite.belongsTo(User, {
   onDelete: 'CASCADE'
 });
 
-// Favorite to Campsite relationship
-Favorite.hasOne(Campsite, {
+// // // Favorite to Campsite relationship
+Campsite.hasMany(Favorite, {
   foreignKey: "campsite_id",
   onDelete: 'CASCADE'
 });
 
-Campsite.belongsTo(Favorite, {
+Favorite.belongsTo(Campsite, {
   foreignKey: "campsite_id",
   onDelete: 'CASCADE'
 });
 
-// User to Comments relationship
+// // User to Comments relationship
 User.hasMany(Comment, {
   foreignKey: "user_id",
   onDelete: 'CASCADE'
@@ -37,14 +37,14 @@ Comment.belongsTo(User, {
   onDelete: 'CASCADE'
 });
 
-//Comment/Campsite relationship
-Campsite.hasMany(Favorite, {
-  foreignKey: "camp_id",
+// // Comment to Campsite relationship
+Campsite.hasMany(Comment, {
+  foreignKey: "campsite_id",
   onDelete: 'CASCADE'
 });
 
 Comment.belongsTo(Campsite, {
-  foreignKey: "camp_id",
+  foreignKey: "campsite_id",
   onDelete: 'CASCADE'
 });
 

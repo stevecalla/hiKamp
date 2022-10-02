@@ -43,26 +43,37 @@ const { Comment, User, Favorite, Campsite } = require('../../models');
 // });
 
 router.get('/:id', async (req, res) => {
-  console.log(req.params);
-
   try {
-    const key = process.env.NPS_API;
-    // const response = await axios.get(`https://developer.nps.gov/api/v1/campgrounds?id=1241C56B-7003-4FDF-A449-29DA8BCB0A41&api_key=${key}`);
-    const response = await axios.get(`https://developer.nps.gov/api/v1/campgrounds?id=${req.params.id}&api_key=${key}`);
+  const key = process.env.NPS_API;
+  const response = await axios.get(`https://developer.nps.gov/api/v1/campgrounds?id=${req.params.id}&api_key=${key}`);
 
-    console.log('LINE 34 RESPONSE = ', JSON.stringify(response.data));
-    console.log('==========================================');
-    //   res.end()
-    let test = response.data.data.map((element) => element.id);
+  const allComments = await Comment.findAll({
+    include: [{ model: User }, { model: Campsite}],
+    where: { campsite_id: req.params.id },
+  });
+  
+  const comments = allComments.map((comment) => comment.get({ plain: true }));
 
-    //   //res.json(response.data)
-    console.log(test);
-    res.render('userCamps', {
-      campData: response.data.data,
-      logged_in: req.session.logged_in,
-    });
-  } catch (err) {
-    console.log(err);
+  console.log(comments);
+
+  const allFavorites = await Favorite.findAll({
+    include: [{ model: User }, { model: Campsite}],
+    where: { user_id: req.session.id },
+  });
+  
+  const favorites = allFavorites.map((favorite) => favorite.get({ plain: true }));
+
+  console.log(favorites);
+  console.log(req.session);
+
+  res.render('userCamps', {
+    campData: response.data.data,
+    comments: comments,
+    favorites: favorites,
+    logged_in: req.session.logged_in,
+  });
+  } catch (error) {
+    console.error(error);
     res.status(500).json(err);
   }
 });

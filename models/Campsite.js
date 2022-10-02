@@ -13,6 +13,7 @@ Campsite.init(
         },
         camp_id: {
             type: DataTypes.STRING,
+            primaryKey: true,
         },
         code: {
             type: DataTypes.STRING,
