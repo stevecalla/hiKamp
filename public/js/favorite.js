@@ -16,8 +16,9 @@ function getIDAndImgURL() {
   let id = campId.dataset.id;
   let url = imgURL.getAttribute('src');
   console.log(id, url);
-  // createFavorite(id, url);
-  deleteFavorite(id, url);
+  console.log(favoriteStar.checked)
+
+  favoriteStar.checked ? createFavorite(id, url) : deleteFavorite(id, url);
 }
 
 async function createFavorite(id, url) {
@@ -29,7 +30,7 @@ async function createFavorite(id, url) {
     });
 
     if (response.ok) {
-      document.location.replace("/user-posts");
+      // document.location.replace("/user-posts");
       //render new favorite in the aide
     } else {
       alert("Failed to create favorite.");
@@ -46,7 +47,7 @@ async function deleteFavorite(id, url) {
     });
 
     if (response.ok) {
-      document.location.replace("/user-posts");
+      // document.location.replace("/user-posts");
       //render new favorite in the aide
     } else {
       alert("Failed to create favorite.");
