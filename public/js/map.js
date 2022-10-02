@@ -153,8 +153,6 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
 
 // GET LIST OF CAMPSITES TO RENDER
 const getList = async (state) => {
-  // console.log(state);
-
   let result;
 
   if (!state) {
@@ -162,18 +160,21 @@ const getList = async (state) => {
       method: 'GET',
     });
     const json = await result.json();
-    const list = json.filter(
+    let list = json.filter(
       (element) => element.lat !== null || element.lng !== null
     );
+    list = sortUtility(list);
     return list;
+
   } else {
     result = await fetch(`/api/map/campsite-list/${state}`, {
       method: 'GET',
     });
     const json = await result.json();
-    const list = json.filter(
+    let list = json.filter(
       (element) => element.lat !== null || element.lng !== null
     );
+    list = sortUtility(list);
     return list;
   }
 };
@@ -578,6 +579,23 @@ function validationModal(title, body) {
   $("#no-input-model").modal("show");
   $("#no-input-title").text(title);
   $("#no-input-body").text(body);
+}
+
+//UTILITY FUNCTIONS
+function sortUtility(listToSort) {
+  let sortedList = listToSort.sort(function (a, b) {
+    const nameA = a.name.toUpperCase(); //ignore upper and lowercase
+    const nameB = b.name.toUpperCase(); //ignore upper and lowercase
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    //names must be equal
+    return 0;
+  });
+  return sortedList;
 }
 
 // Prevents multiple maps when zoom out to the max
