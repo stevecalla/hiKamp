@@ -88,7 +88,7 @@
     a {
         color: burlywood;
     }
-    
+
     a:visited {
         color: rgb(21, 120, 21);
     }
@@ -106,129 +106,121 @@
     }
 
     #userCamp-aside {
-     min-width: fit-content; 
+        min-width: fit-content;
     }
 
     .col-12 {
-        
+        margin-right: 5%;
     }
-
 </style>
-    <div id="userCamp-aside" class="col-lg-2 col-md-2 col-12 text-white m-2 p-1 rounded see-thru">
-        <details open id="favorite-box" class="p-2 m-2 rounded">
-            <summary class="text-center" style="">
-                FAVORITES
-            </summary>
-            <br>
-            <div class="border-top border-dark p-2">
-                {{#each campsites as |campsite|}}
-                <p id="favorite-element" style="p-3 m-2"> {{ campsite.name}} </p>
+<div id="userCamp-aside" class="col-lg-2 col-md-2 col-12 text-white m-2 p-1 rounded see-thru">
+    <details open id="favorite-box" class="p-2 m-2 rounded">
+        <summary class="text-center" style="">
+            FAVORITES
+        </summary>
+        <br>
+        <div class="border-top border-dark p-2">
+            {{#each campsites as |campsite|}}
+            <p id="favorite-element" style="p-3 m-2"> {{ campsite.name}} </p>
+            {{/each}}
+        </div>
+    </details>
+</div>
+
+{{#each campData as |data|}}
+
+<div id="content-box" class="col text-white m-2 p-1 rounded see-thru">
+    <div id="campsite-header" class="row">
+        <div class="col-9">
+            <h3>
+                <span id="camp-name">{{name}}</span>
+            </h3>
+        </div>
+
+        <div id="favStarEl" class="col-3 d-flex justify-content-end">
+            {{!-- FAVORITES BUTTON --}}
+            <input id="favStar check" class="star" type="checkbox" title="favStar">
+        </div>
+        <div class="row">
+            <div class="col-12">
+                {{!MAIN PHOTO}}
+                {{#if images.[0].url}}
+                <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{images.[0].url}}"
+                    alt="{{images.[0].altText}}">
+                {{/if}}
+                <a id="nps-link" href="https://www.nps.gov/{{campCode}}/planyourvisit/maps.htm" target="__blank"
+                    class="p-2 button">Visit NPS Page</a>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col border-bottom border-dark">
+                {{#if description}}
+                <p id="campsite-desc">{{ description }}</p>
+                {{/if}}
+            </div>
+        </div>
+
+        <div class="row  mt-3">
+            <div class="col">
+                {{!RESERVATIONS}}
+                {{#if reservationInfo}}
+                <p><strong>Reservation Info:</strong> {{ reservationInfo }}</p>
+                {{/if}}
+                {{#if reservationUrl}}
+                <p><strong>Make a reservation:</strong><a href="{{ reservationUrl }}" target="_blank"> <i>{{
+                            reservationUrl }}</i></a></p>
+                {{/if}}
+                {{!REGULATIONS}}
+                {{#if regulationsOverview}}
+                <p><strong>Regulations:</strong> {{ regulationsOverview }}
+                    {{/if}}
+                    <br>
+                    {{#if regulationsurl}}
+                    <a href="{{ regulationsurl }}" target="_blank" class="regulations"> <i>{{ regulationsurl }}</i>
+                    </a>
+                    {{/if}}
+                </p>
+
+            </div>
+
+            <div class="col">
+                {{!CONTACT}}
+                {{#if contacts.phoneNumbers.[0].phoneNumber}}
+                <p><strong>Phone:</strong> {{ contacts.phoneNumbers.[0].phoneNumber }}</p>
+                {{/if}}
+                {{#if contacts.emailAddresses.[0].emailAddress}}
+                <p><strong>Email:</strong> <a
+                        href="mailto:{{ contacts.emailAddresses.[0].emailAddress }}"><i>{{contacts.emailAddresses.[0].emailAddress}}</i></a>
+                </p>
+                {{/if}}
+                {{!FEES}}
+                {{#if fees.[0].title}}
+                <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}{{/if}}
+                    {{#if fees.[0].description}}{{fees.[0].description}}</p>{{/if}}
                 {{/each}}
             </div>
-        </details>
+        </div>
     </div>
 
-    {{#each campData as |data|}}
-
-    <div id="content-box" class="col text-white m-2 p-1 rounded see-thru">
-        <div id="campsite-header" class="row">
-            <div class="col-9">
-                <h3>
-                    <span id="camp-name">{{name}}</span>
-                </h3>
-            </div>
-
-            <div id="favStarEl" class="col-3 d-flex justify-content-end">
-                {{!-- FAVORITES BUTTON --}}
-                <input id="favStar check" class="star" type="checkbox" title="favStar">
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    {{!MAIN PHOTO}}
-                    {{#if images.[0].url}}
-                    <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{images.[0].url}}"
-                        alt="{{images.[0].altText}}">
-                    {{/if}}
-                    <a id="nps-link" href="https://www.nps.gov/{{campCode}}/planyourvisit/maps.htm" target="__blank"
-                        class="p-2 button">Visit NPS Page</a>
-                </div>
-            </div>
-
-            <div class="row mt-3">
-                <div class="col border-bottom border-dark">
-                    {{#if description}}
-                    <p id="campsite-desc">{{ description }}</p>
-                    {{/if}}
-                </div>
-            </div>
-
-            <div class="row  mt-3">
-                <div class="col">
-                    {{!RESERVATIONS}}
-                    {{#if reservationInfo}}
-                    <p><strong>Reservation Info:</strong> {{ reservationInfo }}</p>
-                    {{/if}}
-                    {{#if reservationUrl}}
-                    <p><strong>Make a reservation:</strong><a href="{{ reservationUrl }}" target="_blank"> <i>{{
-                                reservationUrl }}</i></a></p>
-                    {{/if}}
-                    {{!REGULATIONS}}
-                    {{#if regulationsOverview}}
-                    <p><strong>Regulations:</strong> {{ regulationsOverview }}
-                        {{/if}}
-                        <br>
-                        {{#if regulationsurl}}
-                        <a href="{{ regulationsurl }}" target="_blank" class="regulations"> <i>{{ regulationsurl }}</i>
-                        </a>
-                        {{/if}}
+    <div class="row">
+        <div class="col">
+            <details open id="comment-box" class="p-2 m-2 rounded">
+                <summary class="text-center" style="">
+                    COMMENTS
+                </summary>
+                <br>
+                <div class="border-top border-dark p-2">
+                    {{#each comments as |comment|}}
+                    <p id="comment-element" style="p-3 m-2">
+                        Posted by: {{ comment.user.username }} <br>
+                        On: {{ format_date comment.createdAt }} <br>
+                        {{ comment.content }}
                     </p>
-
-                </div>
-
-                <div class="col">
-                    {{!CONTACT}}
-                    {{#if contacts.phoneNumbers.[0].phoneNumber}}
-                    <p><strong>Phone:</strong> {{ contacts.phoneNumbers.[0].phoneNumber }}</p>
-                    {{/if}}
-                    {{#if contacts.emailAddresses.[0].emailAddress}}
-                    <p><strong>Email:</strong> <a
-                            href="mailto:{{ contacts.emailAddresses.[0].emailAddress }}"><i>{{contacts.emailAddresses.[0].emailAddress}}</i></a>
-                    </p>
-                    {{/if}}
-                    {{!FEES}}
-
-                    {{#if fees.[0].title}}
-                    <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}{{/if}}{{#if
-                        fees.[0].description}}
-
-                     {{#if fees.[0].title}}
-                    <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}{{/if}}{{#if fees.[0].description}}
-
-                        {{fees.[0].description}} {{/if}} {{#if fees.[0].description}}{{fees.[0].description}}</p>{{/if}}
+                    <p id="comment-element" style="p-3 m-2"> </p>
                     {{/each}}
                 </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <details open id="comment-box" class="p-2 m-2 rounded">
-                    <summary class="text-center" style="">
-                        COMMENTS
-                    </summary>
-                    <br>
-                    <div class="border-top border-dark p-2">
-                        {{#each comments as |comment|}} 
-                        <p id="comment-element" style="p-3 m-2">
-                            Posted by: {{ comment.user.username }} <br>
-                            On: {{ format_date comment.createdAt }} <br>
-                            {{ comment.content }}
-                        </p>
-                        <p id="comment-element" style="p-3 m-2"> </p>
-                        {{/each}}
-
-                    </div>
-                </details>
-            </div>
+            </details>
         </div>
     </div>
+</div>
