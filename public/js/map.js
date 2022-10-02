@@ -122,7 +122,7 @@ async function searchAutoComplete() {
 async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
   //if search input is valid hide search icon / show trash icon
 
-  searchInput.value = "hello"; 
+  // searchInput.value = "hello"; 
   
   if (searchInput.value.length > 0) {
     searchIcon.classList.add('hide');
@@ -236,8 +236,10 @@ function renderSearchResults(list, markers, selectedCampLat) {
     //SET ATTRIBUTES
     // campPath.setAttribute('href', `/api/map/campsite/:${list[i].camp_id}`);
     campPath.setAttribute('href', `/api/campsites/${list[i].camp_id}`);
+    // campPath.classList.add('aside-ahref');
     campName.setAttribute('data-index', i);
-    campName.setAttribute('data-latitude', list[i].lat)
+    campName.setAttribute('data-latitude', list[i].lat);
+    campName.classList.add('aside-ahref');
 
     //CREATE TITLE CONTENT
     campName.textContent = `${i + 1}) ${list[i].nameState}`;
@@ -314,7 +316,7 @@ function createMap(
     if (lat && lng) {
       // const contentString = `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/${camp_id}">${name}</a></h6>`;
 
-      const contentString = `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/campsites/${camp_id}">${name}</a></h6>`
+      const contentString = `<h6 id="" class="aside-ahref" style="color: blue; text-decoration: underline"><a class="aside-ahref" href="/api/campsites/${camp_id}">${name}</a></h6>`
 
       // https://maps.gstatic.com/mapfiles/place_api/icons/v2/camping_pinlet.svg
       let selectedCampsiteIcon =
@@ -378,8 +380,8 @@ function createMap(
   renderSearchResults(list, markers, selectedCampLat);
   renderMarkerClusters(markers, map);
   renderCurrentLocationIcon(map, infoWindow);
-  renderCenterMapIcon(map, infoWindow);
-  renderCenterMapIcon(map, infoWindow);
+  // renderCenterMapIcon(map, infoWindow);
+  // renderCenterMapIcon(map, infoWindow);
 }
 
 // CREATES A MARKER FOR SELECTED CAMPSITE
