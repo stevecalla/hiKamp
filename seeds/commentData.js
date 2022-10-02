@@ -265,13 +265,13 @@ const commentdata = [
     },
     {
       user_id: 7,
-      campsite_id: '34728A7E-796D-4834-949A-4E960CC945C1',
+      campsite_id: '48F2732E-4251-4D81-875C-8E52839620B5',
       content:
         'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.',
     },
     {
       user_id: 4,
-      campsite_id: '34728A7E-796D-4834-949A-4E960CC945C1',
+      campsite_id: '6C955DB8-0800-422C-8198-F6E1DC7BA46C',
       content: 'Nulla nisl. Nunc nisl.',
     },
 ];

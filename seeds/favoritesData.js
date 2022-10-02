@@ -1,8 +1,8 @@
 const { Favorite } = require('../models');
 
 const favoritesData = [
-  { user_id: 4, campsite_id: '34728A7E-796D-4834-949A-4E960CC945C1' },
-  { user_id: 3, campsite_id: '34728A7E-796D-4834-949A-4E960CC945C1' },
+  { user_id: 4, campsite_id: '48F2732E-4251-4D81-875C-8E52839620B5' },
+  { user_id: 3, campsite_id: '6C955DB8-0800-422C-8198-F6E1DC7BA46C' },
   { user_id: 2, campsite_id: '34728A7E-796D-4834-949A-4E960CC945C1' },
   { user_id: 3, campsite_id: '34728A7E-796D-4834-949A-4E960CC945C1' },
   { user_id: 9, campsite_id: '34728A7E-796D-4834-949A-4E960CC945C1' },

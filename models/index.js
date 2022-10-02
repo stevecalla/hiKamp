@@ -3,7 +3,6 @@ const Comment = require("./Comment");
 const Campsite = require("./Campsite");
 const Favorite = require("./Favorites");
 
-
 // User to Favorites relationship
 User.hasMany(Favorite, {
   foreignKey: "user_id",

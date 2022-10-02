@@ -56,20 +56,20 @@ router.get('/:id', async (req, res) => {
 
   console.log(comments);
 
-  const allFavorites = await Favorite.findAll({
-    include: [{ model: User }, { model: Campsite}],
-    where: { user_id: req.session.id },
-  });
+  // const allFavorites = await Favorite.findAll({
+  //   include: [{ model: User }, { model: Campsite}],
+  //   where: { user_id: req.session.userId },
+  // });
   
-  const favorites = allFavorites.map((favorite) => favorite.get({ plain: true }));
+  // const favorites = allFavorites.map((favorite) => favorite.get({ plain: true }));
 
-  console.log(favorites);
-  console.log(req.session);
+  // console.log(favorites);
+  // console.log(req.session);
 
   res.render('userCamps', {
     campData: response.data.data,
     comments: comments,
-    favorites: favorites,
+    // favorites: favorites,
     logged_in: req.session.logged_in,
   });
   } catch (error) {

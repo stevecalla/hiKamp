@@ -91,8 +91,8 @@
             </summary>
             <br>
             <div class="border-top border-dark p-2">
-                {{#each campsites as |campsite|}}
-                <p id="favorite-element" style="p-3 m-2"> {{ campsite.name}} </p>
+                {{#each favorites as |favorite|}}
+                <p id="favorite-element" style="p-3 m-2"> {{ favorite }} </p>
                 {{/each}}
             </div>
         </details>
@@ -182,19 +182,11 @@
                     </summary>
                     <br>
                     <div class="border-top border-dark p-2">
-<<<<<<< Updated upstream
                     {{#each comments as |comment|}}
-                <p id="comment-element" style="p-3 m-2"> {{ comment.content }}</p>
-
-                    <p id="comment-element" style="p-3 m-2"> Posted by: {{ comment.user.username }}</p>
-                    <p id="comment-element" style="p-3 m-2"> On: {{ format_date comment.createdAt }}</p>
-
+                      <p id="comment-element" style="p-3 m-2"> {{ comment.content }}</p>
+                      <p id="comment-element" style="p-3 m-2"> Posted by: {{ comment.user.username }}</p>
+                      <p id="comment-element" style="p-3 m-2"> On: {{ format_date comment.createdAt }}</p>
                     {{/each}}
-=======
-                        {{#each comments as |comment|}}
-                        <p id="comment-element" style="p-3 m-2"> {{ comment.content }} </p>
-                        {{/each}}
->>>>>>> Stashed changes
                     </div>
                 </details>
             </div>
