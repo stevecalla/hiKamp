@@ -53,6 +53,11 @@
         background-color: rgb(14, 88, 14);
         box-shadow: 0 0 5px 0px white;
     }
+
+    #comment-element {
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: var(--border-radius);
+    }
 </style>
 
 
@@ -134,22 +139,28 @@
                     {{#if fees.[0].title}}
                     <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}{{/if}}{{#if
                         fees.[0].description}} {{fees.[0].description}}</p>{{/if}}
+                        {{/each}}
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col">
-                <details id="comment-box" class="p-2 m-2 rounded">
-                    <summary class="text-center">
+                <details open id="comment-box" class="p-2 m-2 rounded">
+                    <summary class="text-center" style="">
                         VIEW COMMENTS
                     </summary>
+                    <br>
+                    <div class="border-top border-dark p-2">
                     {{#each comments as |comment|}}
-                    <p style="color: white"> COMMENTS {{ comment.content }} </p>
+                    <p id="comment-element" style="p-3 m-2"> {{ comment.content }} </p>
                     {{/each}}
+                    </div>
                 </details>
             </div>
         </div>
     </div>
 </div>
 
-{{/each}}
+
+
