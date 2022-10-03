@@ -6,4 +6,4 @@ const formatPhone= (req, res, next) => {
     return phoneFormatted.toString();
   };
 
-  module.exports = formatPhone;
+   module.exports = formatPhone;
