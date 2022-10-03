@@ -208,7 +208,7 @@
             <div class="col body-text">
                 {{!CONTACT}}
                 {{#if contacts.phoneNumbers.[0].phoneNumber}}
-                <p><strong>Phone:</strong> {{ contacts.phoneNumbers.[0].phoneNumber }}</p>
+                <p><strong>Phone:</strong> {{ format_phone contacts.phoneNumbers.[0].phoneNumber }}</p>
                 {{/if}}
                 {{#if contacts.emailAddresses.[0].emailAddress}}
                 <p><strong>Email:</strong> <a
