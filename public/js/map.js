@@ -114,7 +114,6 @@ async function searchAutoComplete() {
 // SECTION INTIALIZE MAP
 async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
   //if search input is valid hide search icon / show trash icon
-  // searchInput.value = "hello"; 
 
   renderSpinnerDuringAPICall()
   
@@ -145,7 +144,7 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
   // );
 
   let test = document.getElementById('map')
-  test.textContent = "hello";
+  test.textContent = "";
 
   let renderMapAPICall = setTimeout(() => {
     createMap(
@@ -498,6 +497,7 @@ function renderRefreshMapIcon(map, infoWindow) {
   // CREATE EVENT LISTENER
   refreshIcon.addEventListener('click', () => {
     initMap();
+    textToSpeech('hello')
   });
 }
 
@@ -574,3 +574,67 @@ initMap();
 // SIMPLE MARKER: https://developers.google.com/maps/documentation/javascript/examples/marker-simple
 // https://developers.google.com/maps/documentation/javascript/examples/marker-accessibility
 // INFO WINDOWS: https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple
+
+// section speaker css
+// .speaker-icon {
+//   width: 28px;
+//   height: 28px;
+//   margin: 0px;
+//   padding: 3px;
+//   background-color: lightgrey;
+//   border-radius: 50%;
+//   cursor: default;
+// }
+
+// section play sound
+// function toggleSound() {
+//   isSoundPlayable ? (isSoundPlayable = false) : (isSoundPlayable = true);
+//   speaker.classList.toggle("hide");
+//   speakerMNuted.classList.toggle("hide");
+// }
+
+// function playSelectedAnswerSound(isCorrect) {
+//   if (isSoundPlayable) {
+//     //play sound if isSoundPlayable === true;
+//     isCorrect
+//       ? document.getElementById("correct-answer-sound-effect").play()
+//       : document.getElementById("wrong-answer-sound-effect").play();
+//   }
+// }
+
+window.onload('load', textToSpeech('hello'));
+
+function textToSpeech(text) {
+  let speech = new SpeechSynthesisUtterance();
+
+  let voiceUsed;
+  var voices = speechSynthesis.getVoices();
+
+  for (let i = 0; i < voices.length; i++) {
+    if (voices[i].name === 'Alex') {
+      voiceUsed = voices[i]
+    } 
+    // console.log(voices[i], voiceUsed);
+  }
+
+
+  // let speech = window.speechSynthesis;
+  // if(typeof speechSynthesis === 'undefined') {
+  //   return;
+  // }
+  console.log(text, speech);
+
+  speech.text = text;
+  speech.rate = 1;
+  speech.volume = 1;
+  speech.pitch = 1;
+  // Speak in language
+  // speech.lang = 'en-US';
+  // speech.lang = 'en-GB';
+  // speech.voice = voices[0];
+  speech.voice = voiceUsed;
+  speechSynthesis.speak(speech);
+
+  console.log(text, speech, voices);
+  // alert(text, speech.voice, speech.text)
+}
