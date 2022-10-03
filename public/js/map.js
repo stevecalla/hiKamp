@@ -382,7 +382,7 @@ function createMap(
   renderMarkerClusters(markers, map);
   renderCurrentLocationIcon(map, infoWindow);
   // renderCenterMapIcon(map, infoWindow);
-  // renderCenterMapIcon(map, infoWindow);
+  renderRefreshMapIcon(map, infoWindow);
 }
 
 // CREATES A MARKER FOR SELECTED CAMPSITE
@@ -456,69 +456,15 @@ function renderCurrentLocationIcon(map, infoWindow) {
   });
 }
 
-// RENDER CURRENT LOCATION ICON ON CLICK //todo
-function renderCenterMapIcon(map, infoWindow) {
-  const center = document.createElement('div');
-  const centerIcon = document.createElement('img');
-  centerIcon.src = '/images/current-location-v4.png'; //todo
-  center.setAttribute('style', 'width:40px; padding: 0px');
-  centerIcon.setAttribute(
-    'style',
-    'padding: 2px; height:37px; width:40px; top:50px; padding-top: 6px;'
-  );
-
-  center.append(centerIcon);
-
-  center.classList.add('custom-map-control-button');
-  map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(center);
-
-  centerIcon.addEventListener('click', () => {
-    initMap();
-    // if (navigator.geolocation) {
-    //   navigator.geolocation.getCurrentPosition(
-    //     (position) => {
-    //       const pos = {
-    //         lat: position.coords.latitude,
-    //         lng: position.coords.longitude,
-    //       };
-
-    //       infoWindow.setPosition(pos);
-    //       // infoWindow.setContent('Location found.');
-    //       infoWindow.open(map);
-    //       map.setCenter(pos);
-    //       map.setZoom(5);
-
-    //       const markerCurrentLocation = new google.maps.Marker({
-    //         position: pos,
-    //         map,
-    //         // icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
-    //         icon: 'http://maps.google.com/mapfiles/kml/shapes/ranger_station.png',
-    //       });
-    //       infoWindow.open(
-    //         markerCurrentLocation.getMap(),
-    //         markerCurrentLocation
-    //       );
-    //     },
-    //     () => {
-    //       handleLocationError(true, infoWindow, map.getCenter());
-    //     }
-    //   );
-    // } else {
-    //   // Browser doesn't support Geolocation
-    //   handleLocationError(false, infoWindow, map.getCenter());
-    // }
-  });
-}
-
-// RENDER CURRENT LOCATION ICON ON CLICK //todo
+// RENDER REFRESH MAP ON CLICK //todo
 function renderRefreshMapIcon(map, infoWindow) {
   const refresh = document.createElement('div');
   const refreshIcon = document.createElement('img');
-  refreshIcon.src = '/images/current-location-v4.png'; //todo
+  refreshIcon.src = '/images/current-location-v7.png'; //todo
   refresh.setAttribute('style', 'width:40px; padding: 0px');
   refreshIcon.setAttribute(
     'style',
-    'padding: 2px; height:37px; width:40px; top:50px; padding-top: 6px;'
+    'height:37px; width:40px; top:50px; padding: 4px 1px 0px 2px;'
   );
 
   refresh.append(refreshIcon);
