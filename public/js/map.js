@@ -9,18 +9,11 @@ let trashIcon = document.getElementById('trash-icon');
 window.addEventListener('resize', adjustZoomOnResize);
 searchInput.addEventListener('keypress', renderSearchInputMap);
 searchIcon.addEventListener('click', renderSearchInputMap);
-trashIcon.addEventListener('click', () => {
-  //if search click on trash icon, hide trash icon, show search icon
-  searchInput.value = "";
-  searchIcon.classList.remove('hide');
-  trashIcon.classList.remove('show');
-  trashIcon.classList.add('hide');
-
-})
+trashIcon.addEventListener('click', clearSearchInputValue());
 searchInput.addEventListener('input', () => searchAutoComplete());
-// searchInput.addEventListener("input", () => console.log(searchInput.value));
 
 //functions and event handlers go here 👇
+
 // RENDER MAP ZOOM AS WINDOW IS RE-SIZED
 function adjustZoomOnResize() {
   console.log(window.innerWidth);
@@ -501,13 +494,24 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.open(map);
 }
 
+// ADD VALIDATION MODAL BASED ON USER INPUT
 function validationModal(title, body) {
   $("#no-input-model").modal("show");
   $("#no-input-title").text(title);
   $("#no-input-body").text(body);
 }
 
-//UTILITY FUNCTIONS
+// UTILITY FUNCTION TO CLEAR SEARCH INPUT & HIDE/SHOW TRASH ICON
+function clearSearchInputValue() {
+  searchInput.value = "";
+
+  //if user clicks on trash icon = hide trash icon, show search icon
+  searchIcon.classList.remove('hide');
+  trashIcon.classList.remove('show');
+  trashIcon.classList.add('hide');
+}
+
+// UTILITY SORT FUNCTION
 function sortUtility(listToSort) {
   let sortedList = listToSort.sort(function (a, b) {
     const nameA = a.name.toUpperCase(); //ignore upper and lowercase
