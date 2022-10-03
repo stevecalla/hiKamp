@@ -144,7 +144,7 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
   );
 }
 
-// GET LIST OF CAMPSITES TO RENDER
+// SECTION GET LIST OF CAMPSITES TO RENDER
 const getList = async (state) => {
   let result;
 
@@ -269,7 +269,7 @@ function setLatAndLong(list, selectedCampLat, selectedCampLng, zoomLevel) {
   return { centerLat, centerLng };
 }
 
-// CREATE MAP
+// SECTION CREATE MAP
 function createMap(
   centerLat,
   centerLng,
@@ -312,8 +312,6 @@ function createMap(
   const markers = list.map(({ lat, lng, name, id, camp_id }, i) => {
   // markers = list.map(({ lat, lng, name, id, camp_id }, i) => { //section
     if (lat && lng) {
-      // const contentString = `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/${camp_id}">${name}</a></h6>`;
-
       const contentString = `<h6 id="" class="map-ahref" style="color: blue; text-decoration: underline"><a class="map-ahref" href="/api/campsites/${camp_id}">${name}</a></h6>`
 
       // https://maps.gstatic.com/mapfiles/place_api/icons/v2/camping_pinlet.svg
@@ -327,6 +325,7 @@ function createMap(
         optimized: true,
         icon: lat === selectedCampLat ? selectedCampsiteIcon : campsiteIcon,
         size: new google.maps.Size(50, 100),
+        title: name,
       });
 
       // marker.classList.add('hello')
@@ -413,6 +412,7 @@ function renderCurrentLocationIcon(map, infoWindow) {
     'style',
     'padding: 2px; height:37px; width:40px; top:50px; padding-top: 6px;'
   );
+  location.title = 'Current location';
   location.classList.add('custom-map-control-button');
 
   // APPEND ELEMENT TO THE MAP
@@ -469,6 +469,7 @@ function renderRefreshMapIcon(map, infoWindow) {
     'style',
     'height:37px; width:40px; top:50px; padding: 4px 1px 0px 2px;'
   );
+  refresh.title = 'Refresh map';
 
   // APPEND ELEMENT TO THE MAP
   refresh.append(refreshIcon);
