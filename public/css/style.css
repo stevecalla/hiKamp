@@ -261,7 +261,7 @@ form i {
 .container {
   width:auto;
   /* display: flex; */
-  flex-flow: column wrap;
+  /* flex-flow: column wrap; */
   align-content: flex-start;
   align-items: center;
 }
@@ -281,7 +281,12 @@ form i {
     min-height: 90vh;
   }
 }
-
+@media screen and (min-width: 1200px) {
+  main.row {
+    margin: 0;
+    min-height: 90vh;
+  }
+}
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 38px;
@@ -314,9 +319,6 @@ form i {
   #userCamp-aside {
     max-width: 95vw;
   } 
-}
-
-@media screen and (min-width: 768px) {
 
   #userCamp-aside {
     margin-right: 1vw;
@@ -326,13 +328,9 @@ form i {
     margin-left: 1vw;
   }
 
-}
-
-@media screen and (min-width: 1100px) {
-  
-  main.row {
-    margin: 0;
-    min-height: 90vh;
+  .container {
+    /* padding: 0!important;
+    margin: 2px;
+    margin-right: 2px; */
   }
-
 }
