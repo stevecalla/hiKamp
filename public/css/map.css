@@ -20,6 +20,22 @@
   border-radius: 0.25rem;
   /* background-color: white; */
 }
+/* SPINNER */
+.spinner {
+  width: 150px;
+  height: 150px;
+  font-size: 24px;
+  color: white;
+}
+.spinner {
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  z-index: 2147483647;
+  top: 30vh;
+  left: 0;
+  right: 0;
+}
 @media screen and (max-width: 1300px) {
   .aside-map-page {
     background-color:rgba(0, 0, 0, 0.0);

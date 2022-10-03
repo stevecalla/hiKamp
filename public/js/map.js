@@ -9,7 +9,7 @@ let trashIcon = document.getElementById('trash-icon');
 window.addEventListener('resize', adjustZoomOnResize);
 searchInput.addEventListener('keypress', renderSearchInputMap);
 searchIcon.addEventListener('click', renderSearchInputMap);
-trashIcon.addEventListener('click', clearSearchInputValue());
+trashIcon.addEventListener('click', clearSearchInputValue);
 searchInput.addEventListener('input', () => searchAutoComplete());
 
 //functions and event handlers go here 👇
@@ -111,11 +111,12 @@ async function searchAutoComplete() {
   });
 }
 
-// INTIALIZE MAP
+// SECTION INTIALIZE MAP
 async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
   //if search input is valid hide search icon / show trash icon
-
   // searchInput.value = "hello"; 
+
+  renderSpinnerDuringAPICall()
   
   if (searchInput.value.length > 0) {
     searchIcon.classList.add('hide');
@@ -123,10 +124,9 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
     trashIcon.classList.remove('hide');
   };
 
-  searchInput.focus(); //only focus on desktop not mobile
+  searchInput.focus(); //by default only focuses on desktop not mobile
 
   let list = await getList(state);
-  // renderSearchResults(list);
   let mobileZoomLevel = setMobileZoomLevel(zoomLevel);
   let { centerLat, centerLng } = setLatAndLong(
     list,
@@ -134,14 +134,31 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
     selectedCampLng,
     zoomLevel
   );
-  createMap(
-    centerLat,
-    centerLng,
-    mobileZoomLevel,
-    zoomLevel,
-    list,
-    selectedCampLat
-  );
+
+  // createMap(
+  //   centerLat,
+  //   centerLng,
+  //   mobileZoomLevel,
+  //   zoomLevel,
+  //   list,
+  //   selectedCampLat
+  // );
+
+  let test = document.getElementById('map')
+  test.textContent = "hello";
+
+  let renderMapAPICall = setTimeout(() => {
+    createMap(
+      centerLat,
+      centerLng,
+      mobileZoomLevel,
+      zoomLevel,
+      list,
+      selectedCampLat
+    );
+    removeSpinnerAfterAPICall(renderMapAPICall);
+  // }, 500);
+  }, 1000);
 }
 
 // SECTION GET LIST OF CAMPSITES TO RENDER
@@ -504,9 +521,10 @@ function validationModal(title, body) {
 
 // UTILITY FUNCTION TO CLEAR SEARCH INPUT & HIDE/SHOW TRASH ICON
 function clearSearchInputValue() {
-  searchInput.value = "";
-
+  
   //if user clicks on trash icon = hide trash icon, show search icon
+  searchInput.value = "";
+  console.log('click');
   searchIcon.classList.remove('hide');
   trashIcon.classList.remove('show');
   trashIcon.classList.add('hide');
@@ -527,6 +545,27 @@ function sortUtility(listToSort) {
     return 0;
   });
   return sortedList;
+}
+
+// SECTION SPINNER FUNCTION
+// UTILITY RENDER SPINNER FUNCTION
+function renderSpinnerDuringAPICall() {
+  document.getElementById("spinner").classList.remove("hide");
+  document.getElementById("spinner").classList.add("show");
+
+  // document.getElementById("spinner-text").classList.remove("hide");
+  // document.getElementById("spinner-text").classList.add("show");
+}
+
+// UTILITY REMOVE SPINNER FUNCTION
+function removeSpinnerAfterAPICall(passTimeOutId) {
+  document.getElementById("spinner").classList.add("hide");
+  document.getElementById("spinner").classList.remove("show");
+
+  // document.getElementById("spinner-text").classList.add("hide");
+  // document.getElementById("spinner-text").classList.remove("show");
+
+  clearTimeout(passTimeOutId);
 }
 
 initMap();
