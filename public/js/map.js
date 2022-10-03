@@ -179,6 +179,7 @@ const getList = async (state) => {
   }
 };
 
+// RENDER ICON AS USER HOVERS OVER SEARCH RESULTS LIST IN ASIDE
 function renderHoverIcon(event, list, markers, selectedCampLat) {
   // let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/shapes/parks.png';
   // let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png';
@@ -201,6 +202,7 @@ function renderHoverIcon(event, list, markers, selectedCampLat) {
   }
 };
 
+// RENDER DEFAULT RED MARKER ICON
 function renderDefaultIcon(event, list, markers, selectedCampLat) {
   let campsiteIcon = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
 
@@ -260,6 +262,7 @@ function setMobileZoomLevel(zoomLevel) {
   return zoomLevel;
 }
 
+// SET LATTITUDE AND LONGITUDE BASED ON USER INPUT
 function setLatAndLong(list, selectedCampLat, selectedCampLng, zoomLevel) {
   let centerLat;
   let centerLng;
@@ -273,6 +276,7 @@ function setLatAndLong(list, selectedCampLat, selectedCampLng, zoomLevel) {
   return { centerLat, centerLng };
 }
 
+// CREATE MAP
 function createMap(
   centerLat,
   centerLng,
@@ -405,20 +409,24 @@ function renderMarkerClusters(markers, map) {
 
 // RENDER CURRENT LOCATION ICON ON CLICK
 function renderCurrentLocationIcon(map, infoWindow) {
+  // CREATE ELEMENT
   const location = document.createElement('div');
   const locationIcon = document.createElement('img');
+
+  // ADD ELEMENT ATTRIBUTES
   locationIcon.src = '/images/current-location-v4.png';
   location.setAttribute('style', 'width:40px; padding: 0px');
   locationIcon.setAttribute(
     'style',
     'padding: 2px; height:37px; width:40px; top:50px; padding-top: 6px;'
   );
-
-  location.append(locationIcon);
-
   location.classList.add('custom-map-control-button');
+
+  // APPEND ELEMENT TO THE MAP
+  location.append(locationIcon);
   map.controls[google.maps.ControlPosition.RIGHT_TOP].push(location);
 
+  // CREATE EVENT LISTENER
   locationIcon.addEventListener('click', () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -437,7 +445,6 @@ function renderCurrentLocationIcon(map, infoWindow) {
           const markerCurrentLocation = new google.maps.Marker({
             position: pos,
             map,
-            // icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
             icon: 'http://maps.google.com/mapfiles/kml/shapes/ranger_station.png',
           });
           infoWindow.open(
@@ -456,57 +463,30 @@ function renderCurrentLocationIcon(map, infoWindow) {
   });
 }
 
-// RENDER REFRESH MAP ON CLICK //todo
+// RENDER REFRESH MAP ON CLICK
 function renderRefreshMapIcon(map, infoWindow) {
+  // CREATE ELEMENT
   const refresh = document.createElement('div');
   const refreshIcon = document.createElement('img');
-  refreshIcon.src = '/images/current-location-v7.png'; //todo
+
+  // ADD ELEMENT ATTRIBUTES
+  refreshIcon.src = '/images/current-location-v7.png';
   refresh.setAttribute('style', 'width:40px; padding: 0px');
   refreshIcon.setAttribute(
     'style',
     'height:37px; width:40px; top:50px; padding: 4px 1px 0px 2px;'
   );
 
+  // APPEND ELEMENT TO THE MAP
   refresh.append(refreshIcon);
-
   refresh.classList.add('custom-map-control-button');
+
+  // PLACE ELEMENT ON MAP
   map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(refresh);
 
+  // CREATE EVENT LISTENER
   refreshIcon.addEventListener('click', () => {
     initMap();
-  //   if (navigator.geolocation) {
-  //     navigator.geolocation.getCurrentPosition(
-  //       (position) => {
-  //         const pos = {
-  //           lat: position.coords.latitude,
-  //           lng: position.coords.longitude,
-  //         };
-
-  //         infoWindow.setPosition(pos);
-  //         // infoWindow.setContent('Location found.');
-  //         infoWindow.open(map);
-  //         map.setCenter(pos);
-  //         map.setZoom(5);
-
-  //         const markerCurrentLocation = new google.maps.Marker({
-  //           position: pos,
-  //           map,
-  //           // icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
-  //           icon: 'http://maps.google.com/mapfiles/kml/shapes/ranger_station.png',
-  //         });
-  //         infoWindow.open(
-  //           markerCurrentLocation.getMap(),
-  //           markerCurrentLocation
-  //         );
-  //       },
-  //       () => {
-  //         handleLocationError(true, infoWindow, map.getCenter());
-  //       }
-  //     );
-  //   } else {
-  //     // Browser doesn't support Geolocation
-  //     handleLocationError(false, infoWindow, map.getCenter());
-  //   }
   });
 }
 
@@ -544,63 +524,9 @@ function sortUtility(listToSort) {
   return sortedList;
 }
 
-// Prevents multiple maps when zoom out to the max
-// var lastValidCenter;
-// var minZoomLevel = 2;
-
-// function setOutOfBoundsListener() {
-//         google.maps.event.addListener(map, 'dragend', function () {
-//             checkLatitude(map);
-//         });
-//         google.maps.event.addListener(map, 'idle', function () {
-//             checkLatitude(map);
-//         });
-//         google.maps.event.addListener(map, 'zoom_changed', function () {
-//             checkLatitude(map);
-//         });
-// };
-
-// function checkLatitude(map) {
-//     if (this.minZoomLevel) {
-//         if (map.getZoom() < minZoomLevel) {
-//             map.setZoom(parseInt(minZoomLevel));
-//         }
-//     }
-
-//     var bounds = map.getBounds();
-//     var sLat = map.getBounds().getSouthWest().lat();
-//     var nLat = map.getBounds().getNorthEast().lat();
-//     if (sLat < -85 || nLat > 85) {
-//         //the map has gone beyone the world's max or min latitude - gray areas are visible
-//         //return to a valid position
-//         if (this.lastValidCenter) {
-//             map.setCenter(this.lastValidCenter);
-//         }
-//     }
-//     else {
-//         this.lastValidCenter = map.getCenter();
-//     }
-// }
-
 initMap();
 
 // Source:
 // SIMPLE MARKER: https://developers.google.com/maps/documentation/javascript/examples/marker-simple
 // https://developers.google.com/maps/documentation/javascript/examples/marker-accessibility
 // INFO WINDOWS: https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple
-
-//TODO
-// ADD GEO LOCATION
-// ADD LINK TO ROUTE FOR EACH SITE
-// WHAT ELSE?
-// MAP ICON
-
-// const svgMarker = {
-//   path: "M10.453 14.016l6.563-6.609-1.406-1.406-5.156 5.203-2.063-2.109-1.406 1.406zM12 2.016q2.906 0 4.945 2.039t2.039 4.945q0 1.453-0.727 3.328t-1.758 3.516-2.039 3.070-1.711 2.273l-0.75 0.797q-0.281-0.328-0.75-0.867t-1.688-2.156-2.133-3.141-1.664-3.445-0.75-3.375q0-2.906 2.039-4.945t4.945-2.039z",
-//   fillColor: "blue",
-//   fillOpacity: 0.6,
-//   strokeWeight: 0,
-//   rotation: 0,
-//   scale: 1,
-//   anchor: new google.maps.Point(15, 30),
-// };
