@@ -494,10 +494,14 @@ function renderRefreshMapIcon(map, infoWindow) {
   // PLACE ELEMENT ON MAP
   map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(refresh);
 
+  let testSound = document.querySelectorAll('.resultsContainer a');
+  console.log(testSound);
+  console.log(testSound[0].textContent);
+
   // CREATE EVENT LISTENER
   refreshIcon.addEventListener('click', () => {
     initMap();
-    textToSpeech('hello')
+    textToSpeech(`${testSound[0].textContent} ${testSound[1].textContent}`)
   });
 }
 
@@ -587,23 +591,6 @@ initMap();
 // }
 
 // section play sound
-// function toggleSound() {
-//   isSoundPlayable ? (isSoundPlayable = false) : (isSoundPlayable = true);
-//   speaker.classList.toggle("hide");
-//   speakerMNuted.classList.toggle("hide");
-// }
-
-// function playSelectedAnswerSound(isCorrect) {
-//   if (isSoundPlayable) {
-//     //play sound if isSoundPlayable === true;
-//     isCorrect
-//       ? document.getElementById("correct-answer-sound-effect").play()
-//       : document.getElementById("wrong-answer-sound-effect").play();
-//   }
-// }
-
-window.onload('load', textToSpeech('hello'));
-
 function textToSpeech(text) {
   let speech = new SpeechSynthesisUtterance();
 
@@ -628,10 +615,6 @@ function textToSpeech(text) {
   speech.rate = 1;
   speech.volume = 1;
   speech.pitch = 1;
-  // Speak in language
-  // speech.lang = 'en-US';
-  // speech.lang = 'en-GB';
-  // speech.voice = voices[0];
   speech.voice = voiceUsed;
   speechSynthesis.speak(speech);
 
