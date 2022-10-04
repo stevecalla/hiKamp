@@ -106,6 +106,7 @@
             <div class="border-top border-dark pt-3">
                 {{!-- SECTION --}}
                 {{#each favorites as |favorite favoriteId|}}
+
                 {{!-- {{#each users as |user userId|}} --}}
                 {{!-- <a href="api/campsites/{{ favorite.campsite_id }}" class="map-ahref">
                     <div class="card" style="max-width: 100%; background-color: #b98f59;">
@@ -119,9 +120,11 @@
                     </div>
                 </a> --}}
                 {{!-- {{#each users as |user userId|}} --}}
+
                   <h6 id="" class="" style="color: white!important; text-decoration: underline; textAlign: center"><a class="map-ahref" href="/api/campsites/{{ favorite.campsite_id }}">{{ favorite.campsite.name }}</a></h6>
                   <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{favorite.campsite_img_url}}" alt="photo of {{ favorite.campsite.name }} site">
                 {{/each}}
+                
                 {{!-- SECTION --}}
             </div>
         </details>
