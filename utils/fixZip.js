@@ -7542,10 +7542,10 @@ const test = campsiteData.map((element) => ({
 // console.log(test);
 
 // WRITE NEW DATA TO FILE
-fs.writeFile('revisedCampsiteData.txt', JSON.stringify(test), function (err) {
-  if (err) return console.log(err);
-  console.log('Hello World > see revisedCampsiteData.txt file on your local drive');
-});
+// fs.writeFile('revisedCampsiteData.txt', JSON.stringify(test), function (err) {
+//   if (err) return console.log(err);
+//   console.log('Hello World > see revisedCampsiteData.txt file on your local drive');
+// });
 
 // BELOW IS THE NEW DATA OBTAINED FROM THE FILE GENERATEA ABOVE, PASTED BELOW, REFORMATTED TO OBJECT
 const campsiteData2 = [
@@ -15068,5 +15068,93 @@ const campsiteData2 = [
 ];
 
 // GENERATE AN ARRAY OF THE NEW ZIP CODE DATA; MANUALLY ADJUST ANY NULL VALUES
-const test2 = campsiteData2.map(element => element.zipCode);
-console.log(test2)
+const test2 = campsiteData2.map((element) => element.zipCode);
+// console.log(test2)
+
+// user_id: 9,
+// campsite_id: '34728A7E-796D-4834-949A-4E960CC945C1',
+// content:
+
+let commentSeed = [];
+function createCommentSeed() {
+  for (let i = 0; i < 1; i++) {
+    for (let j = 1; j < 11; j++) {
+      commentSeed.push({
+        user_id: j,
+        campsite_id: campsiteData2[i + j].camp_id,
+        content:
+          'This location is beautiful. I look forward to visiting again.',
+      });
+    }
+  }
+  fs.writeFile('commentSeed.txt', JSON.stringify(commentSeed), function (err) {
+    if (err) return console.log(err);
+    console.log(
+      'Hello World > see revisedCampsiteData.txt file on your local drive'
+    );
+  });
+}
+createCommentSeed();
+
+[
+  {
+    user_id: 1,
+    campsite_id: '48F2732E-4251-4D81-875C-8E52839620B5',
+    campsite_img_url:
+      'https://www.nps.gov/common/uploads/structured_data/309E8537-1DD8-B71B-0BD307081BCD3FDA.jpg',
+  },
+  {
+    user_id: 2,
+    campsite_id: '6C955DB8-0800-422C-8198-F6E1DC7BA46C',
+    campsite_img_url:
+      'https://via.placeholder.com/150/154d07/FFFFFF/?text=Go+Camping!',
+  },
+  {
+    user_id: 3,
+    campsite_id: 'A9F2297C-AFF2-48EA-BD2A-2BBE35BDE306',
+    campsite_img_url:
+      'https://www.nps.gov/common/uploads/structured_data/1643D87A-F10C-85E3-E8603CB9B30AF975.jpg',
+  },
+  {
+    user_id: 4,
+    campsite_id: '48F2732E-4251-4D81-875C-8E52839620B5',
+    campsite_img_url:
+      'https://www.nps.gov/common/uploads/structured_data/309E8537-1DD8-B71B-0BD307081BCD3FDA.jpg',
+  },
+  {
+    user_id: 5,
+    campsite_id: '6C955DB8-0800-422C-8198-F6E1DC7BA46C',
+    campsite_img_url:
+      'https://via.placeholder.com/150/154d07/FFFFFF/?text=Go+Camping!',
+  },
+  {
+    user_id: 6,
+    campsite_id: 'A9F2297C-AFF2-48EA-BD2A-2BBE35BDE306',
+    campsite_img_url:
+      'https://www.nps.gov/common/uploads/structured_data/1643D87A-F10C-85E3-E8603CB9B30AF975.jpg',
+  },
+  {
+    user_id: 7,
+    campsite_id: '48F2732E-4251-4D81-875C-8E52839620B5',
+    campsite_img_url:
+      'https://www.nps.gov/common/uploads/structured_data/309E8537-1DD8-B71B-0BD307081BCD3FDA.jpg',
+  },
+  {
+    user_id: 8,
+    campsite_id: '6C955DB8-0800-422C-8198-F6E1DC7BA46C',
+    campsite_img_url:
+      'https://via.placeholder.com/150/154d07/FFFFFF/?text=Go+Camping!',
+  },
+  {
+    user_id: 9,
+    campsite_id: 'A9F2297C-AFF2-48EA-BD2A-2BBE35BDE306',
+    campsite_img_url:
+      'https://www.nps.gov/common/uploads/structured_data/1643D87A-F10C-85E3-E8603CB9B30AF975.jpg"',
+  },
+  {
+    user_id: 10,
+    campsite_id: '48F2732E-4251-4D81-875C-8E52839620B5',
+    campsite_img_url:
+      'https://www.nps.gov/common/uploads/structured_data/309E8537-1DD8-B71B-0BD307081BCD3FDA.jpg',
+  },
+];

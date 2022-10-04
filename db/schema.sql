@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS longTrails_db;
-CREATE DATABASE longTrails_db;
+DROP DATABASE IF EXISTS hiKamp_db;
+CREATE DATABASE hiKamp_db;
