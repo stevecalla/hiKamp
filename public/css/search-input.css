@@ -2,10 +2,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  /* padding: 0 0; */
 }
 .search-icon,
 .trash-icon {
-  position: fixed;
+  position: absolute;
   margin-right: 12px;
   font-size: 24px;
   cursor: pointer;
@@ -15,9 +16,9 @@
 .search-input {
   margin: 0.625rem 0;
   height: 40px; 
-  width: 275px; 
-  padding-left: 10px;
-  font-size: 16px;
+  width: 100%; 
+  /* padding-left: 10px; */
+  font-size: 100%;
   border: 1px solid #484848;
   border-radius: 3px;
 }

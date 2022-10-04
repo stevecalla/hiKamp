@@ -1,9 +1,10 @@
 .resultsContainer {
-  height: 70vh;
+  height: 68vh;
   top: 25vh;
-  overflow: scroll;
+  overflow-y: scroll;
+  font-size: 100%;
   /* background-color: rgba(0, 0, 0, 0.75); */
-  border-radius: 0.25rem !important;
+  /* border-radius: 0.25rem !important; */
   color: white;
 }
 .aside-ahref {

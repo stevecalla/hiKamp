@@ -1,125 +1,93 @@
 <html lang='en'>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <title>LONG TRAILS</title>
-    <link
-      rel='shortcut icon'
-      type='image/jpg'
-      href='/images/flavicon-hiker3.png'
-    />
+<head>
+  <meta charset='utf-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>LONG TRAILS</title>
+  <link rel='shortcut icon' type='image/jpg' href='/images/flavicon-hiker3.png' />
 
-    {{! ADD FONTAWESOME }}
-    <link
-      rel='stylesheet'
-      href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'
-    />
+  {{! ADD FONTAWESOME }}
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css' />
 
-    <!-- ADD BOOTSTRAP -->
-    <link
-      rel='stylesheet'
-      href='https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css'
-    />
+  <!-- ADD BOOTSTRAP -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css' />
 
-    <!-- ADD GOOGLE FONT -->
+  <!-- ADD GOOGLE FONT -->
 
-    <link rel='preconnect' href='https://fonts.googleapis.com' />
-    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-    <link
-      href='https://fonts.googleapis.com/css2?family=Bangers&display=swap'
-      rel='stylesheet'
-    />
-    <link
-      href='https://fonts.googleapis.com/css2?family=Splash&display=swap'
-      rel='stylesheet'
-    />
+  <link rel='preconnect' href='https://fonts.googleapis.com' />
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+  <link href='https://fonts.googleapis.com/css2?family=Bangers&display=swap' rel='stylesheet' />
+  <link href='https://fonts.googleapis.com/css2?family=Splash&display=swap' rel='stylesheet' />
 
-    {{! MAPBOX }}
-    {{!
+  {{! MAPBOX }}
+  {{!
   <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
   <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' /> }}
 
-    <!-- ADD STYLE SHEET-->
-    <link rel='stylesheet' type='text/css' href='/css/jass.css' />
-    <link rel='stylesheet' type='text/css' href='/css/location-button.css' />
-    <link rel='stylesheet' type='text/css' href='/css/search-input.css' />
-    <link rel='stylesheet' type='text/css' href='/css/auto-complete.css' />
-    <link rel='stylesheet' type='text/css' href='/css/map.css' />
-    <link rel='stylesheet' type='text/css' href='/css/search-results.css' />
+  <!-- ADD STYLE SHEET-->
+  <link rel='stylesheet' type='text/css' href='/css/jass.css' />
+  <link rel='stylesheet' type='text/css' href='/css/location-button.css' />
+  <link rel='stylesheet' type='text/css' href='/css/search-input.css' />
+  <link rel='stylesheet' type='text/css' href='/css/auto-complete.css' />
+  <link rel='stylesheet' type='text/css' href='/css/map.css' />
+  <link rel='stylesheet' type='text/css' href='/css/search-results.css' />
 
-    <link rel='stylesheet' type='text/css' href='/css/style.css' />
+  <link rel='stylesheet' type='text/css' href='/css/style.css' />
 
-  </head>
+</head>
 
-  <body class='background_image'>
-    <div class='container'>
-      <header id='header' class='rounded my-2'>
-        <nav class='container'>
-          <div class='row'>
-            <div class='dropdown col-1 m-1'>
-              <button
-                class='btn btn-secondary camp-dropdown-toggle menu'
-                type='button'
-                id='dropdownMenu2'
-                data-toggle='dropdown'
-                aria-haspopup='true'
-                aria-expanded='false'
-              >
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='25'
-                  height='25'
-                  fill='white'
-                  class='bi bi-list'
-                  viewBox='0 0 16 16'
-                >
-                  <path
-                    fill-rule='evenodd'
-                    d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'
-                  ></path>
-                </svg>
-              </button>
-              <div class='dropdown-menu' aria-labelledby='dropdownMenu2'>
-                <!-- Dropdown menu links -->
-                <a href='/'>Home</a>
-                <a href='/'>Dashboard</a>
-                {{!add conditional for being on userCamps view}}
-                {{#if comments}}
-                  <a href='#comment-box'>Comments</a>
-                {{/if}}
-                {{#if loggedIn}}
-                  <button id='logout' class='btn-no-style'>Logout</button>
-                {{else}}
-                  <a href='/login'>Login</a>
-                {{/if}}
-              </div>
-            </div>
-            <div class='col-1'></div>
-            <div class='header col-6 p-1'>
-              {{#if dashboard}}
-                <h1 class='white app_name'>Your Dashboard</h1>
-              {{else}}
-                <h1 class='white app_name'>HiKamp</h1>
-              {{/if}}
-            </div>
-            <div class='col-2'></div>
+<body class='background_image'>
+  <div class="container m-2">
+    <header id='header' class='row'>
+      <nav class='col-12 rounded'>
+
+        <div class='dropdown col-2'>
+          <button class='btn btn-secondary camp-dropdown-toggle menu' type='button' id='dropdownMenu2'
+            data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+            <svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='#DEB887' class='bi bi-list'
+              viewBox='0 0 16 16'>
+              <path fill-rule='evenodd'
+                d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'>
+              </path>
+            </svg>
+          </button>
+          <div class='dropdown-menu' aria-labelledby='dropdownMenu2'>
+            <!-- Dropdown menu links -->
+            <a href='/'>Home</a>
+            <a href='/'>Dashboard</a>
+            {{!add conditional for being on userCamps view}}
+            {{#if comments}}
+            <a href='#comment-box'>Comments</a>
+            {{/if}}
+            {{#if loggedIn}}
+            <button id='logout' class='btn-no-style'>Logout</button>
+            {{else}}
+            <a href='/login'>Login</a>
+            {{/if}}
           </div>
-        </nav>
+        </div>
+        <div class='header'>
+          {{#if dashboard}}
+          <h1 class='row white app_name px-2 py-1'>Your Dashboard</h1>
+          {{else}}
+          <h1 class='row white app_name  px-2 py-1'>HiKamp</h1>
+          {{/if}}
+        </div>
+        <div class="col-2"></div>
+      </nav>
+    </header>
 
-      </header>
-
-      {{! section }}
-      <main>
-        {{! <main id="main-row" class="row"> }}
+    {{! section }}
+    <main id="main-row" class="row d-flex align-items-stretch">
+      {{! <main id="main-row" class="row"> }}
 
         {{{body}}}
 
       </main>
 
       {{#if loggedIn}}
-        <script src='/js/logout.js'></script>
+      <script src='/js/logout.js'></script>
       {{/if}}
 
 
@@ -130,14 +98,16 @@
       <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
 
       {{! GOOGLE MAP }}
-      <script src='https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBq4HnHzwNh73EaYuMbKSqN2OiSNrAespw' async defer></script>
+      <script src='https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBq4HnHzwNh73EaYuMbKSqN2OiSNrAespw'
+        async defer></script>
       <script src='https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js'></script>
 
       <!-- Bootstrap -->
       {{! JQUERY ADDED ABOVE }}
       <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js'></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js'></script>
-    </div>
 
-  </body>
+  </div>
+</body>
+
 </html>
