@@ -1,5 +1,5 @@
 const favParentEl = document.getElementById('userCamp-aside');
-    const favBigCont = `<details open id="favorite-box" class="p-2 m-2 rounded">
+const favBigCont = `<details open id="favorite-box" class="p-2 m-2 rounded">
     <summary class="text-center">
         FAVORITES
     </summary>
@@ -21,7 +21,7 @@ const favParentEl = document.getElementById('userCamp-aside');
         {{!-- SECTION --}}
     </div>
     </details>`;
-    const favSmallCon = `<details id="favorite-box" class="p-2 m-2 rounded">
+const favSmallCont = `<details id="favorite-box" class="p-2 m-2 rounded">
     <summary class="text-center">
         FAVORITES
     </summary>
@@ -43,8 +43,8 @@ const favParentEl = document.getElementById('userCamp-aside');
         {{!-- SECTION --}}
     </div>
     </details>`;
-    const comParentEl = document.getElementById('comment-box-cont');
-    const comBigCont = `<details open id="comment-box" class="p-2 m-2 rounded">
+const comParentEl = document.getElementById('comment-box-cont');
+const comBigCont = `<details open id="comment-box" class="p-2 m-2 rounded">
     <summary class="text-center">
         COMMENTS
     </summary>
@@ -60,7 +60,7 @@ const favParentEl = document.getElementById('userCamp-aside');
         {{/each}}
     </div>
     </details>`;
-    const comSmallCont = `<details id="comment-box" class="p-2 m-2 rounded">
+const comSmallCont = `<details id="comment-box" class="p-2 m-2 rounded">
     <summary class="text-center">
         COMMENTS
     </summary>
@@ -77,37 +77,41 @@ const favParentEl = document.getElementById('userCamp-aside');
     </div>
     </details>`;
 
-    let s = 0;
+let s = 0;
 
-    function replaceContent (parent, small, big){
-        // check if a breakpoint has been "crossed"
-        if (window.innerWidth < 481 && s === 1 ) {
-            parent.setHTML('');
+function replaceContent(parent, small, big) {
+    // check if a breakpoint has been "crossed"
+    if (window.innerWidth < 481 && s === 1) {
+        parent.setHTML('');
         parent.setHTML(small);
-            s = 0;
-        } else if ( window.innerWidth > 480 && s === 0) {
-            parent.setHTML('');
-            parent.setHTML(big);
-            s = 1;
-        };
-    }
+        s = 0;
+    } else if (window.innerWidth > 480 && s === 0) {
+        parent.setHTML('');
+        parent.setHTML(big);
+        s = 1;
+    };
+}
 
-    //call function every time the browser is re-sized
-    window.addEventListener( 'resize', function(event){
-        event.preventDefault();
-        if(window.attachEvent) {
-            window.attachEvent('onresize', function() {
-                replaceContent(favParentEl, favSmallCon, favBigCont);
-                replaceContent(comParentEl, comSmallCont, comBigCont);
-            });
-        }
-        else if(window.addEventListener) {
-            window.addEventListener('resize', function() {
-                replaceContent(favParentEl, favSmallCon, favBigCont);
-                replaceContent(comParentEl, comSmallCont, comBigCont);
-            }, true);
-        }
-        else {
-    //The browser does not support Javascript event binding
-        }
-    });
+//call function every time the browser is re-sized
+window.addEventListener('resize', function (event) {
+    event.preventDefault();
+    if (window.attachEvent) {
+        window.attachEvent('onresize', function () {
+            replaceContent(favParentEl, favSmallCont, favBigCont);
+            replaceContent(comParentEl, comSmallCont, comBigCont);
+        });
+    }
+    else if (window.addEventListener) {
+        window.addEventListener('resize', function () {
+            replaceContent(favParentEl, favSmallCont, favBigCont);
+            replaceContent(comParentEl, comSmallCont, comBigCont);
+        }, true);
+    }
+    else {
+        //The browser does not support Javascript event binding
+    }
+});
+
+window.onload = () => {
+    replaceContent(favParentEl, favSmallCont, favBigCont);
+};
