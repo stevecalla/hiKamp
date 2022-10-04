@@ -107,7 +107,7 @@
                 {{!-- SECTION --}}
                 {{#each favorites as |favorite favoriteId|}}
                 {{!-- {{#each users as |user userId|}} --}}
-                <a href="api/campsites/{{ favorite.campsite_id }}" class="map-ahref">
+                {{!-- <a href="api/campsites/{{ favorite.campsite_id }}" class="map-ahref">
                     <div class="card" style="max-width: 100%; background-color: #b98f59;">
                         <img class="card-img-top campsite-photo img-fluid max-width: 100%"
                             src="{{favorite.campsite_img_url}}" alt="image of {{favorite.campsite.name}} site">
@@ -117,7 +117,10 @@
                                 {{favorite.campsite.name}}</p>
                         </div>
                     </div>
-                </a>
+                </a> --}}
+                {{!-- {{#each users as |user userId|}} --}}
+                  <h6 id="" class="" style="color: white!important; text-decoration: underline; textAlign: center"><a class="map-ahref" href="/api/campsites/{{ favorite.campsite_id }}">{{ favorite.campsite.name }}</a></h6>
+                  <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{favorite.campsite_img_url}}" alt="photo of {{ favorite.campsite.name }} site">
                 {{/each}}
                 {{!-- SECTION --}}
             </div>
@@ -139,6 +142,7 @@
                 {{!-- FAVORITES BUTTON --}}
                 {{!-- section --}}
                 {{/each}}
+                <img src="/images/volume.png" alt="Listen to camp description." style="height: 24px; width: 24px; background-color: #DEB887; margin: 12px 25px 10px 10px; border-radius: 3px" title="Audio description">
                 {{#if isFavorite }}
                 <input id="favStar check" class="star" type="checkbox" title="favStar" checked>
                 {{else}}
@@ -153,6 +157,9 @@
                     {{#if images.[0].url}}
                     <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{images.[0].url}}"
                         alt="{{images.[0].altText}}">
+                    {{else}}
+                    <img id="campsite-photo" class="img-fluid max-width: 100%" src='https://via.placeholder.com/1100x500/b98f59/FFFFFF/?text=Go+Camping!'
+                        alt="No image available">
                     {{/if}}
                     <a id="nps-link" href="https://www.nps.gov/{{campCode}}/planyourvisit/maps.htm" target="__blank"
                         class="p-2 button">Visit NPS Page</a>

@@ -39,10 +39,10 @@
 
 <body class='background_image'>
   <div class="m-2 my-2 py-2">
-    <header id='header' class='row'>
+    <header id='header'>
       <nav class='col-12 rounded'>
 
-        <div class='dropdown col-2'>
+        <div class='dropdown col-2 dropdown-wrapper'>
           <button class='btn btn-secondary camp-dropdown-toggle menu' type='button' id='dropdownMenu2'
             data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
             <svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='#DEB887' class='bi bi-list'
@@ -55,11 +55,11 @@
           <div class='dropdown-menu' aria-labelledby='dropdownMenu2'>
             <!-- Dropdown menu links -->
             <a href='/'>Home</a>
-            <a href='/'>Dashboard</a>
             {{!add conditional for being on userCamps view}}
             {{#if comments}}
             <a href='#comment-box'>Comments</a>
             {{/if}}
+            <div class="dropdown-divider border-top border-black"></div>
             {{#if loggedIn}}
             <button id='logout' class='btn-no-style'>Logout</button>
             {{else}}
