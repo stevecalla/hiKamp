@@ -1,4 +1,4 @@
-# Long Trails
+# HiKamp
 [![License:  MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Index
@@ -24,35 +24,35 @@ As an outdoors person I want a quick and painless way to find uniform campsite d
 
 ## Acceptance Criteria
 
-As an Outdoors man or woman, I want to find campsite information quick and easy. Information that includes weather, location, amentities, whether it's by reservation or first come first serve, and information about accessibility.
+As an outdoors-inclined man or woman, I want to find campsite information quick and easy. Information that includes weather, location, amentities, whether it's by reservation or first come first serve, and information about accessibility.
 
-When I go to the longtrails app.
+When I go to the HiKamp app.
 Then I am presented with a map and a search bar.
 
 When searching or clicking into a campsite.
 Then I am presented with login/registration page.
 
 When I create an account or log in.
-Then I am able to access the whole functionality of the application.
+Then I am able to access the entire database of campgrounds via a customized Google Map.
 
 When I click into a campsite.
-Then I am presented with campsite information, comments from other users, and weather for the area.
+Then I am presented with campsite information, contact information, reservation information, fees, and comments from other users.
 
 When I click to leave comment.
 Then I am able to type a comment up about my experience with said campsite for others to view.
 
-When I click favorite.
+When I click the favorite star.
 That specific campsite is saved to my favorites and displayed on the left side of my campsite page for easy access.
 
 ## Features
 
-This app includes features that allows the user to view, add, update, delete as well as add comments to posts. It includes a variety of features such as login, logout, signup, easily save favorite campsites, not to mention a seamless and customized integration with Google Maps for easy and convenient searching. Users can search by Park Name, State Name, Zipcode and/or Campground Name.  Our customized pins are located on each National Park campground thoughout the United States and Territories, and users who know which area they wish to camp in but don't know names or zipcodes can also search for specific campgrounds by interacting directly with the map. 
+This highly interactive app allows a user to easily search all campgrounds within the United States National Park Service in all US states and Territories. The app includes features that allows the user to view, add, update, delete as well as add comments to specific campgrounds. It includes a variety of features such as login, logout, signup, easily save favorite campsites, not to mention a seamless and customized integration with Google Maps for easy and convenient searching. Users can search by Park Name, State Name, Zipcode and/or Campground Name.  Our customized pins are located on each National Park campground thoughout the United States and Territories on the map, and users who know which area they wish to camp in but don't know names or zipcodes of the area can also search for specific campgrounds by interacting directly with the map. 
 
 ## Technologies Used
 
 1. Views: [handlebars](https://handlebarsjs.com/), [express-handlebars](https://www.npmjs.com/package/express-handlebars), [Bootstrap](https://getbootstrap.com/), [Google Fonts](https://developers.google.com/fonts) Javascript, HTML, CSS
-2. [node.js](https://nodejs.org/en/)
-3. [jQuery v3.6.0](https://jquery.com/) for autocomplete features
+2. Back-end Runtime Environment: [node.js](https://nodejs.org/en/)
+3. Auto-complete Features: [jQuery v3.6.0](https://jquery.com/)
 
 ## [Deployment Link]()
 
@@ -69,7 +69,7 @@ Setup the Database Schema:
   * DB_PASSWORD="<mySQL user password>"
 
 Seed the Database: 
-- Run Server: From the root directory, run either "npm run watch" to start nodeman or "node server.js".
+- Run Server: From the root directory, run either "npm run watch" to start nodemon or "node server.js".
 - Seed Database: (a) To create the database, run "SOURCE ./db/schema.sql" in mySQL, (b) To create the database tables, from the terminal, run "npm run start" or "npm run watch", (c) To seed the database tables, run "npm run seed" or "node ./seeds/index.js".
 
 Note that the seed will also create entries for the user table including hashed passwords. When loggin into the app these user seeds can be used as test email address. Either obtain an email address from the user table (SELECT * FROM user;) or use an option noted below:
@@ -118,7 +118,7 @@ No tests at this time.
 ## Collaborators
 
 1. Alex Cleveland: [Github LINK](https://github.com/AClevel5/)
-2. Patrick Radcliff: [Github LINK](https://github.com/PatrickARatcliff)
+2. Patrick Ratcliff: [Github LINK](https://github.com/PatrickARatcliff)
 3. Rod Bennett: [Github LINK](https://github.com/RodBennett)
 4. Steve Calla: [Github LINK](https://github.com/stevecalla)
 
