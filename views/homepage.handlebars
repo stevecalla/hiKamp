@@ -1,40 +1,26 @@
-{{!-- <aside class="aside-map-page">
-  {{> search-input }}
-  <section class="resultsContainer">
-    {{> search-results }}
-  </section>
-</aside> --}}
+<div class="aside-map-page align-self-center rounded see-thru ">
+  {{!-- <div class="col"> --}}
+    {{> search-input }}
+    {{!-- </div> --}}
+  <div>
+    <details id="search-result-drop" class="text-white mb-2 p-1">
+      <summary class="text-center">RESULTS</summary>
+      <br>
+      <div class="resultsContainer border-top border-dark">
+        {{> search-results }}
+      </div>
+    </details>
+  </div>
+</div>
 
-  {{!-- {{> map-details }} --}}
-  {{!-- {{> validation-modal }} --}}
-
-
-{{!-- //section --}}
-{{!-- <section id="main-row" class="row">
-    <div id="userCamp-aside" class="col-2 text-white my-2 p-3 rounded see-thru"> --}}
-      <aside class="aside-map-page">
-        {{> search-input }}
-        <section class="resultsContainer">
-          {{> search-results }}
-        </section>
-      </aside>
-    {{!-- </div>
-</section> --}}
-
-{{!-- <div id="content-box" class="col text-white rounded see-thru my-2 p-3">
-    <div id="campsite-header" class="row">
+<div class="map-map-page col">
+  <div class="container">
+    {{> map-details }}
+    {{> validation-modal }}
+  </div>
+</div>
 
 
-         --}}
-  {{> map-details }}
-  {{> validation-modal }}
 
-{{!-- 
-        <div class="row  mt-3 body-text">
 
-        </div>
-    </div>
-
-  </section> --}}
-
-  <script src="/js/map.js"></script>
+<script src="/js/map.js"></script>

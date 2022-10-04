@@ -1,7 +1,12 @@
+* {
+  border: 1px solid red;
+}
+
 .aside-map-page {
   /* margin: 5px 0px 5px 8px; */
   /* margin: 5px;
   margin-left: 8px; */
+  width: 20vw;
   height: 79vh;
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 0.25rem;
@@ -14,11 +19,11 @@
   width: 71vw;
   height: 79vh;
   width: 780px;
-  top: 17.35vh;
+  /* top: 17.35vh; */
   left: 36vw;
   bottom: 0;
   border-radius: 0.25rem;
-  /* background-color: white; */
+  background-color: white;
 }
 @media screen and (max-width: 1300px) {
   .aside-map-page {
@@ -26,10 +31,16 @@
   }
   .map {
     position: absolute; 
-    width: 94vw; 
+    top: 0;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    width: 100%;
     height: 70vh;
-    top: 30vh; 
-    left: 3vw; 
-    bottom: 0; 
+    /* width: 94vw;  */
+    /* height: 70vh; */
+    /* top: 30vh;  */
+    /* left: 3vw;  */
+    /* bottom: 0;  */
   }
 }
