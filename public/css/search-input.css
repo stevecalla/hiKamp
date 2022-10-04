@@ -5,17 +5,17 @@
 }
 .search-icon,
 .trash-icon {
-  position: fixed;
-  margin-right: 12px;
+  position: absolute;
+  margin-right: 20px;
   font-size: 24px;
   cursor: pointer;
   background-color: white;
   color: gray;
 }
 .search-input {
-  margin: 0.625rem 0;
+  margin: 0.625rem;
+  width: 98%; 
   height: 40px; 
-  width: 275px; 
   padding-left: 10px;
   font-size: 16px;
   border: 1px solid #484848;
@@ -26,4 +26,16 @@
 }
 .show {
   display: flex;
+}
+@media screen and (max-width: 1300px) {
+  .search-input {
+    margin-top: 0px;
+    font-size: 14px;
+  }
+  .search-icon,
+  .trash-icon {
+    position: absolute;
+    top: 125px;
+    font-size: 24px;
+  }
 }

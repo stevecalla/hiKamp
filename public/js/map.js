@@ -9,16 +9,8 @@ let trashIcon = document.getElementById('trash-icon');
 window.addEventListener('resize', adjustZoomOnResize);
 searchInput.addEventListener('keypress', renderSearchInputMap);
 searchIcon.addEventListener('click', renderSearchInputMap);
-trashIcon.addEventListener('click', () => {
-  //if search click on trash icon, hide trash icon, show search icon
-  searchInput.value = "";
-  searchIcon.classList.remove('hide');
-  trashIcon.classList.remove('show');
-  trashIcon.classList.add('hide');
-
-})
+trashIcon.addEventListener('click', clearSearchInputValue);
 searchInput.addEventListener('input', () => searchAutoComplete());
-// searchInput.addEventListener("input", () => console.log(searchInput.value));
 
 //functions and event handlers go here 👇
 // RENDER MAP ZOOM AS WINDOW IS RE-SIZED
@@ -32,9 +24,6 @@ async function renderSearchInputMap(event) {
   let selectedCampLat;
   let selectedCampLng;
 
-  // console.log(searchInput.value, searchInput.value.trim());
-  // console.log(event, event.target, event.target.id, event.target.id === "search-icon")
-  
   // If the user presses the "Enter" key on the keyboard
   if (event.key === 'Enter' || event.target.id === "search-icon") {
     event.preventDefault();
@@ -118,11 +107,11 @@ async function searchAutoComplete() {
   });
 }
 
-// INTIALIZE MAP
+// SECTION INTIALIZE MAP
 async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
   //if search input is valid hide search icon / show trash icon
 
-  // searchInput.value = "hello"; 
+  renderSpinnerDuringAPICall()
   
   if (searchInput.value.length > 0) {
     searchIcon.classList.add('hide');
@@ -130,10 +119,9 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
     trashIcon.classList.remove('hide');
   };
 
-  searchInput.focus(); //only focus on desktop not mobile
+  searchInput.focus(); //by default only focuses on desktop not mobile
 
   let list = await getList(state);
-  // renderSearchResults(list);
   let mobileZoomLevel = setMobileZoomLevel(zoomLevel);
   let { centerLat, centerLng } = setLatAndLong(
     list,
@@ -141,17 +129,24 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
     selectedCampLng,
     zoomLevel
   );
-  createMap(
-    centerLat,
-    centerLng,
-    mobileZoomLevel,
-    zoomLevel,
-    list,
-    selectedCampLat
-  );
+
+  let resetMap = document.getElementById('map')
+  resetMap.textContent = "";
+
+  let renderMapAPICall = setTimeout(() => {
+    createMap(
+      centerLat,
+      centerLng,
+      mobileZoomLevel,
+      zoomLevel,
+      list,
+      selectedCampLat
+    );
+    removeSpinnerAfterAPICall(renderMapAPICall);
+  }, 1000);
 }
 
-// GET LIST OF CAMPSITES TO RENDER
+// SECTION GET LIST OF CAMPSITES TO RENDER
 const getList = async (state) => {
   let result;
 
@@ -179,35 +174,24 @@ const getList = async (state) => {
   }
 };
 
+// RENDER ICON AS USER HOVERS OVER SEARCH RESULTS LIST IN ASIDE
 function renderHoverIcon(event, list, markers, selectedCampLat) {
-  // let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/shapes/parks.png';
-  // let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png';
-  // let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png';
-  let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/shapes/campfire.png';
-
-  // console.log(event.target);
-  // console.log(event.target.dataset);
-  // console.log(event.target.dataset.index);
-  // console.log(event.target.dataset.latitude);
-  // console.log(selectedCampLat, parseFloat(event.target.dataset.latitude), selectedCampLat === parseFloat(event.target.dataset.latitude) );
+  let hoverCampsiteIcon = 'https://maps.google.com/mapfiles/kml/shapes/campfire.png';
 
   for (let i = 0; i < markers.length; i++) {
-    // if (parseInt(event.target.dataset.index) === i) {
     if (parseInt(event.target.dataset.index) === i && parseFloat(event.target.dataset.latitude) !== selectedCampLat) {
-        // console.log(parseInt(event.target.dataset.index) === i );
         markers[i].setIcon(hoverCampsiteIcon);
         return;
     }
   }
 };
 
+// RENDER DEFAULT RED MARKER ICON
 function renderDefaultIcon(event, list, markers, selectedCampLat) {
-  let campsiteIcon = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
+  let campsiteIcon = 'https://maps.google.com/mapfiles/ms/icons/red-dot.png';
 
   for (let i = 0; i < markers.length; i++) {
-    // if (parseInt(event.target.dataset.index) === i) {
     if (parseInt(event.target.dataset.index) === i && parseFloat(event.target.dataset.latitude) !== selectedCampLat) {
-        // console.log(parseInt(event.target.dataset.index) === i );
         markers[i].setIcon(campsiteIcon);
         return;
     }
@@ -216,7 +200,6 @@ function renderDefaultIcon(event, list, markers, selectedCampLat) {
 
 // RENDER SEARCH RESULTS IN ASIDE
 function renderSearchResults(list, markers, selectedCampLat) {
-  // console.log('list ======= ', list);
   let asideContainer = document.getElementById('searchResults');
   asideContainer.textContent = '';
 
@@ -235,9 +218,7 @@ function renderSearchResults(list, markers, selectedCampLat) {
     // });
 
     //SET ATTRIBUTES
-    // campPath.setAttribute('href', `/api/map/campsite/:${list[i].camp_id}`);
     campPath.setAttribute('href', `/api/campsites/${list[i].camp_id}`);
-    // campPath.classList.add('aside-ahref');
     campName.setAttribute('data-index', i);
     campName.setAttribute('data-latitude', list[i].lat);
     campName.classList.add('aside-ahref');
@@ -260,6 +241,7 @@ function setMobileZoomLevel(zoomLevel) {
   return zoomLevel;
 }
 
+// SET LATTITUDE AND LONGITUDE BASED ON USER INPUT
 function setLatAndLong(list, selectedCampLat, selectedCampLng, zoomLevel) {
   let centerLat;
   let centerLng;
@@ -267,12 +249,13 @@ function setLatAndLong(list, selectedCampLat, selectedCampLng, zoomLevel) {
   selectedCampLat ? (centerLat = selectedCampLat) : (centerLat = list[0].lat);
   selectedCampLng ? (centerLng = selectedCampLng) : (centerLng = list[0].lng);
 
-  console.log(zoomLevel, list[0].lat, list[0].lng);
-  console.log(selectedCampLat, selectedCampLng, centerLat, centerLng);
+  // console.log(zoomLevel, list[0].lat, list[0].lng);
+  // console.log(selectedCampLat, selectedCampLng, centerLat, centerLng);
 
   return { centerLat, centerLng };
 }
 
+// SECTION CREATE MAP
 function createMap(
   centerLat,
   centerLng,
@@ -294,7 +277,7 @@ function createMap(
     scaleControl: true,
     streetViewControl: true,
     rotateControl: true,
-    fullscreenControl: true,
+    fullscreenControl: false,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
     },
@@ -313,16 +296,12 @@ function createMap(
 
   // Create the markers
   const markers = list.map(({ lat, lng, name, id, camp_id }, i) => {
-  // markers = list.map(({ lat, lng, name, id, camp_id }, i) => { //section
     if (lat && lng) {
-      // const contentString = `<h6 id="" class="" style="color: blue; text-decoration: underline"><a href="/api/map/campsite/${camp_id}">${name}</a></h6>`;
-
       const contentString = `<h6 id="" class="map-ahref" style="color: blue; text-decoration: underline"><a class="map-ahref" href="/api/campsites/${camp_id}">${name}</a></h6>`
 
-      // https://maps.gstatic.com/mapfiles/place_api/icons/v2/camping_pinlet.svg
       let selectedCampsiteIcon =
-        'http://maps.google.com/mapfiles/kml/shapes/campground.png';
-      let campsiteIcon = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
+        'https://maps.google.com/mapfiles/kml/shapes/campground.png';
+      let campsiteIcon = 'https://maps.google.com/mapfiles/ms/icons/red-dot.png';
 
       const marker = new google.maps.Marker({
         position: { lat, lng },
@@ -330,9 +309,9 @@ function createMap(
         optimized: true,
         icon: lat === selectedCampLat ? selectedCampsiteIcon : campsiteIcon,
         size: new google.maps.Size(50, 100),
+        title: name,
       });
 
-      // marker.classList.add('hello')
       marker.className = "marker";
 
       // Add a click listener for each marker, and set up the info window
@@ -342,8 +321,7 @@ function createMap(
         infoWindow.open(marker.getMap(), marker);
         if (lat !== selectedCampLat) {
           marker.setIcon(
-            // 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
-            'http://maps.google.com/mapfiles/kml/shapes/campfire.png'
+            'https://maps.google.com/mapfiles/kml/shapes/campfire.png'
           );
         }
         marker.setAnimation(google.maps.Animation.BOUNCE);
@@ -381,8 +359,7 @@ function createMap(
   renderSearchResults(list, markers, selectedCampLat);
   renderMarkerClusters(markers, map);
   renderCurrentLocationIcon(map, infoWindow);
-  // renderCenterMapIcon(map, infoWindow);
-  // renderCenterMapIcon(map, infoWindow);
+  renderRefreshMapIcon(map, infoWindow);
 }
 
 // CREATES A MARKER FOR SELECTED CAMPSITE
@@ -405,20 +382,25 @@ function renderMarkerClusters(markers, map) {
 
 // RENDER CURRENT LOCATION ICON ON CLICK
 function renderCurrentLocationIcon(map, infoWindow) {
+  // CREATE ELEMENT
   const location = document.createElement('div');
   const locationIcon = document.createElement('img');
+
+  // ADD ELEMENT ATTRIBUTES
   locationIcon.src = '/images/current-location-v4.png';
   location.setAttribute('style', 'width:40px; padding: 0px');
   locationIcon.setAttribute(
     'style',
     'padding: 2px; height:37px; width:40px; top:50px; padding-top: 6px;'
   );
-
-  location.append(locationIcon);
-
+  location.title = 'Current location';
   location.classList.add('custom-map-control-button');
+
+  // APPEND ELEMENT TO THE MAP
+  location.append(locationIcon);
   map.controls[google.maps.ControlPosition.RIGHT_TOP].push(location);
 
+  // CREATE EVENT LISTENER
   locationIcon.addEventListener('click', () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -437,8 +419,7 @@ function renderCurrentLocationIcon(map, infoWindow) {
           const markerCurrentLocation = new google.maps.Marker({
             position: pos,
             map,
-            // icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
-            icon: 'http://maps.google.com/mapfiles/kml/shapes/ranger_station.png',
+            icon: 'https://maps.google.com/mapfiles/kml/shapes/ranger_station.png',
           });
           infoWindow.open(
             markerCurrentLocation.getMap(),
@@ -456,111 +437,31 @@ function renderCurrentLocationIcon(map, infoWindow) {
   });
 }
 
-// RENDER CURRENT LOCATION ICON ON CLICK //todo
-function renderCenterMapIcon(map, infoWindow) {
-  const center = document.createElement('div');
-  const centerIcon = document.createElement('img');
-  centerIcon.src = '/images/current-location-v4.png'; //todo
-  center.setAttribute('style', 'width:40px; padding: 0px');
-  centerIcon.setAttribute(
-    'style',
-    'padding: 2px; height:37px; width:40px; top:50px; padding-top: 6px;'
-  );
-
-  center.append(centerIcon);
-
-  center.classList.add('custom-map-control-button');
-  map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(center);
-
-  centerIcon.addEventListener('click', () => {
-    initMap();
-    // if (navigator.geolocation) {
-    //   navigator.geolocation.getCurrentPosition(
-    //     (position) => {
-    //       const pos = {
-    //         lat: position.coords.latitude,
-    //         lng: position.coords.longitude,
-    //       };
-
-    //       infoWindow.setPosition(pos);
-    //       // infoWindow.setContent('Location found.');
-    //       infoWindow.open(map);
-    //       map.setCenter(pos);
-    //       map.setZoom(5);
-
-    //       const markerCurrentLocation = new google.maps.Marker({
-    //         position: pos,
-    //         map,
-    //         // icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
-    //         icon: 'http://maps.google.com/mapfiles/kml/shapes/ranger_station.png',
-    //       });
-    //       infoWindow.open(
-    //         markerCurrentLocation.getMap(),
-    //         markerCurrentLocation
-    //       );
-    //     },
-    //     () => {
-    //       handleLocationError(true, infoWindow, map.getCenter());
-    //     }
-    //   );
-    // } else {
-    //   // Browser doesn't support Geolocation
-    //   handleLocationError(false, infoWindow, map.getCenter());
-    // }
-  });
-}
-
-// RENDER CURRENT LOCATION ICON ON CLICK //todo
+// RENDER REFRESH MAP ON CLICK
 function renderRefreshMapIcon(map, infoWindow) {
+  // CREATE ELEMENT
   const refresh = document.createElement('div');
   const refreshIcon = document.createElement('img');
-  refreshIcon.src = '/images/current-location-v4.png'; //todo
+
+  // ADD ELEMENT ATTRIBUTES
+  refreshIcon.src = '/images/current-location-v7.png';
   refresh.setAttribute('style', 'width:40px; padding: 0px');
   refreshIcon.setAttribute(
     'style',
-    'padding: 2px; height:37px; width:40px; top:50px; padding-top: 6px;'
+    'height:37px; width:40px; top:50px; padding: 4px 1px 0px 2px;'
   );
+  refresh.title = 'Refresh map';
 
+  // APPEND ELEMENT TO THE MAP
   refresh.append(refreshIcon);
-
   refresh.classList.add('custom-map-control-button');
+
+  // PLACE ELEMENT ON MAP
   map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(refresh);
 
+  // CREATE EVENT LISTENER
   refreshIcon.addEventListener('click', () => {
     initMap();
-  //   if (navigator.geolocation) {
-  //     navigator.geolocation.getCurrentPosition(
-  //       (position) => {
-  //         const pos = {
-  //           lat: position.coords.latitude,
-  //           lng: position.coords.longitude,
-  //         };
-
-  //         infoWindow.setPosition(pos);
-  //         // infoWindow.setContent('Location found.');
-  //         infoWindow.open(map);
-  //         map.setCenter(pos);
-  //         map.setZoom(5);
-
-  //         const markerCurrentLocation = new google.maps.Marker({
-  //           position: pos,
-  //           map,
-  //           // icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
-  //           icon: 'http://maps.google.com/mapfiles/kml/shapes/ranger_station.png',
-  //         });
-  //         infoWindow.open(
-  //           markerCurrentLocation.getMap(),
-  //           markerCurrentLocation
-  //         );
-  //       },
-  //       () => {
-  //         handleLocationError(true, infoWindow, map.getCenter());
-  //       }
-  //     );
-  //   } else {
-  //     // Browser doesn't support Geolocation
-  //     handleLocationError(false, infoWindow, map.getCenter());
-  //   }
   });
 }
 
@@ -575,13 +476,25 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.open(map);
 }
 
+// ADD VALIDATION MODAL BASED ON USER INPUT
 function validationModal(title, body) {
   $("#no-input-model").modal("show");
   $("#no-input-title").text(title);
   $("#no-input-body").text(body);
 }
 
-//UTILITY FUNCTIONS
+// UTILITY FUNCTION TO CLEAR SEARCH INPUT & HIDE/SHOW TRASH ICON
+function clearSearchInputValue() {
+  
+  //if user clicks on trash icon = hide trash icon, show search icon
+  searchInput.value = "";
+  console.log('click');
+  searchIcon.classList.remove('hide');
+  trashIcon.classList.remove('show');
+  trashIcon.classList.add('hide');
+}
+
+// UTILITY SORT FUNCTION
 function sortUtility(listToSort) {
   let sortedList = listToSort.sort(function (a, b) {
     const nameA = a.name.toUpperCase(); //ignore upper and lowercase
@@ -598,63 +511,17 @@ function sortUtility(listToSort) {
   return sortedList;
 }
 
-// Prevents multiple maps when zoom out to the max
-// var lastValidCenter;
-// var minZoomLevel = 2;
+// UTILITY RENDER SPINNER FUNCTION
+function renderSpinnerDuringAPICall() {
+  document.getElementById("spinner").classList.remove("hide");
+  document.getElementById("spinner").classList.add("show");
+}
 
-// function setOutOfBoundsListener() {
-//         google.maps.event.addListener(map, 'dragend', function () {
-//             checkLatitude(map);
-//         });
-//         google.maps.event.addListener(map, 'idle', function () {
-//             checkLatitude(map);
-//         });
-//         google.maps.event.addListener(map, 'zoom_changed', function () {
-//             checkLatitude(map);
-//         });
-// };
-
-// function checkLatitude(map) {
-//     if (this.minZoomLevel) {
-//         if (map.getZoom() < minZoomLevel) {
-//             map.setZoom(parseInt(minZoomLevel));
-//         }
-//     }
-
-//     var bounds = map.getBounds();
-//     var sLat = map.getBounds().getSouthWest().lat();
-//     var nLat = map.getBounds().getNorthEast().lat();
-//     if (sLat < -85 || nLat > 85) {
-//         //the map has gone beyone the world's max or min latitude - gray areas are visible
-//         //return to a valid position
-//         if (this.lastValidCenter) {
-//             map.setCenter(this.lastValidCenter);
-//         }
-//     }
-//     else {
-//         this.lastValidCenter = map.getCenter();
-//     }
-// }
+// UTILITY REMOVE SPINNER FUNCTION
+function removeSpinnerAfterAPICall(passTimeOutId) {
+  document.getElementById("spinner").classList.add("hide");
+  document.getElementById("spinner").classList.remove("show");
+  clearTimeout(passTimeOutId);
+}
 
 initMap();
-
-// Source:
-// SIMPLE MARKER: https://developers.google.com/maps/documentation/javascript/examples/marker-simple
-// https://developers.google.com/maps/documentation/javascript/examples/marker-accessibility
-// INFO WINDOWS: https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple
-
-//TODO
-// ADD GEO LOCATION
-// ADD LINK TO ROUTE FOR EACH SITE
-// WHAT ELSE?
-// MAP ICON
-
-// const svgMarker = {
-//   path: "M10.453 14.016l6.563-6.609-1.406-1.406-5.156 5.203-2.063-2.109-1.406 1.406zM12 2.016q2.906 0 4.945 2.039t2.039 4.945q0 1.453-0.727 3.328t-1.758 3.516-2.039 3.070-1.711 2.273l-0.75 0.797q-0.281-0.328-0.75-0.867t-1.688-2.156-2.133-3.141-1.664-3.445-0.75-3.375q0-2.906 2.039-4.945t4.945-2.039z",
-//   fillColor: "blue",
-//   fillOpacity: 0.6,
-//   strokeWeight: 0,
-//   rotation: 0,
-//   scale: 1,
-//   anchor: new google.maps.Point(15, 30),
-// };
