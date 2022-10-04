@@ -104,16 +104,15 @@ No tests at this time.
 5. [Axios](https://www.axios.com/): to get and render 3rd Party API data
 6. [phone-number-formats](https://www.npmjs.com/package/phone-number-formats): npm for formatting telephone numbers
 7. Sessions/Cookies: Sequalize Store: connect-sessions-sequalize
-8. Project Management/Repo: [Github](https://github.com/)
-
+8. [Github](https://github.com/): Project Management/Repo
+ 
 ## Future Enhancements
 
-1. Incorporate trail data APIs to tie campground searches to long trails for long-distance hikers and backpackers to plan their routes with campgrounds, parking points, and water sources. 
-2. Display campgrounds on Google Maps  
-3. Add travel alerts to the driving directions display.
-4. Use secure authentication and server side storage for user profiles
-5. Increase robustness of input validation
-6. Refactor code to single purpose functions
+1. Incorporate trail data APIs to tie campground searches to long trails for long-distance hikers and backpackers to plan their routes with campgrounds, parking options, and water sources along the way. 
+2. Expand search capabilities on Google Maps to include campgrounds of National Forests, BLM lands, State Parks, etc., according to users' requests.
+3. Add weather forecasts to campsite pages
+4. Increase robustness of input validation, and more flexible, approximate searches to allow typos in user inputs.
+5. Offer paid subscriptions for offline use based on GPS data. 
 
 ## Collaborators
 
