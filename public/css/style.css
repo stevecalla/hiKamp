@@ -67,6 +67,10 @@ nav {
   content: none;
 }
 
+.camp-dropdown-toggle:hover {
+  background-color: rgb(14, 88, 14);
+}
+
 .dropdown-wrapper {
   display: flex;
   justify-content: flex-start;
