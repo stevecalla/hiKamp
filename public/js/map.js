@@ -249,8 +249,8 @@ function setLatAndLong(list, selectedCampLat, selectedCampLng, zoomLevel) {
   selectedCampLat ? (centerLat = selectedCampLat) : (centerLat = list[0].lat);
   selectedCampLng ? (centerLng = selectedCampLng) : (centerLng = list[0].lng);
 
-  console.log(zoomLevel, list[0].lat, list[0].lng);
-  console.log(selectedCampLat, selectedCampLng, centerLat, centerLng);
+  // console.log(zoomLevel, list[0].lat, list[0].lng);
+  // console.log(selectedCampLat, selectedCampLng, centerLat, centerLng);
 
   return { centerLat, centerLng };
 }
@@ -277,7 +277,7 @@ function createMap(
     scaleControl: true,
     streetViewControl: true,
     rotateControl: true,
-    fullscreenControl: true,
+    fullscreenControl: false,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
     },
