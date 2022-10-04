@@ -1,4 +1,4 @@
-# Long Trails
+# HiKamp
 [![License:  MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Index
@@ -16,56 +16,46 @@
 
 ### Description
 
-Want to enjoy weekend out camping in the National Parks but unsure of where to go and what to do? Longtrails is here to help you become a campsite guru. Longtrails will provide you with information such as Weather, access, fees, reservations, and more in a single screen. You will be able to also see other campers reviews and comments to get a better idea of what to expect. 
+Want to enjoy weekend out camping in the National Parks but unsure of where to go and what to do? HiKamp is here to help you become a campsite guru. HiKamp will provide you with information such as Weather, Access, Fees, Reservations, and more in a single screen. You will be able to also see other campers reviews and comments to get a better idea of what to expect. 
 
 ## User Story
 
-As an outdoors person I want a quick and painless way to find uniform campsite data. Longtrails is the place to go to cut down on your research time and provide the information you need for a wonderful weekend in the National Parks.
-
-## Features
-
-This app includes features that allows the user to view, add, update and delete blog posts as well as add comments to posts. It includes a variety of features such as login, logout, signup, add comments, add blog posts, edit blog posts and delete blog posts as well as varies views..
-
-1. Model/Database: mysql2, sequalize, , mockaroo.com (for mock seed data)
-2. View: handlebars, express-handlebars, Javascript, HTML, CSS, FontAwesome
-3. Controller/Router: express
-4. Helpers: bcrypt, dotenv
-5. Sessions/Cookies: connect-sessions-sequalize
-6. Deployed Site: Heroku
-7. Project Management/Repo: Github
-
-## Future Enhancements
-
-<!-- 1. Sync the weather with driving directions so the user knows what the weather is forecasted to be when they get to various waypoints on their route.
-2. Display all SNOTEL stations in Colorado on the map to provide info for backcountry skiers.
-3. Add travel alerts to the driving directions display.
-4. Use secure authentication and server side storage for user profiles
-5. Increase robustness of input validation
-6. Refactor code to single purpose functions -->
+As an outdoors person I want a quick and painless way to find uniform campsite data within the National Park System. HiKamp is the place to go to cut down on your research time and provide the information you need for a wonderful weekend in the National Parks.
 
 ## Acceptance Criteria
 
-```
-As an Outdoors man or woman, I want to find campsite information quick and easy. Information that includes weather, location, amentities, whether it's by reservation or first come first serve, and information about accessibility.
+As an outdoors-inclined man or woman, I want to find campsite information quick and easy. Information that includes weather, location, amentities, whether it's by reservation or first come first serve, and information about accessibility.
 
-When I go to the longtrails app.
+When I go to the HiKamp app.
 Then I am presented with a map and a search bar.
 
 When searching or clicking into a campsite.
 Then I am presented with login/registration page.
 
 When I create an account or log in.
-Then I am able to access the whole functionality of the application.
+Then I am able to access the entire database of campgrounds via a customized Google Map.
 
 When I click into a campsite.
-Then I am presented with campsite information, comments from other users, and weather for the area.
+Then I am presented with campsite information, contact information, reservation information, fees, and comments from other users.
 
 When I click to leave comment.
 Then I am able to type a comment up about my experience with said campsite for others to view.
 
-When I click favorite.
+When I click the favorite star.
 That specific campsite is saved to my favorites and displayed on the left side of my campsite page for easy access.
-```
+
+## Features
+
+This highly interactive app allows a user to easily search all campgrounds within the United States National Park Service in all US states and Territories. The app includes features that allows the user to view, add, update, as well as delete comments to specific campgrounds. It includes a variety of features such as login, logout, signup, easily save favorite campsites, not to mention a seamless and customized integration with Google Maps for easy and convenient searching. Users can search by Park Name, State Name, Zipcode and/or Campground Name.  Our customized pins are located on each National Park campground thoughout the United States and Territories on the map, and users who know which area they wish to camp in but don't know names or zipcodes of the area can also search for specific campgrounds by interacting directly with the map. 
+
+## Technologies Used
+
+1. Views: [handlebars](https://handlebarsjs.com/), [express-handlebars](https://www.npmjs.com/package/express-handlebars), [Bootstrap](https://getbootstrap.com/), [Google Fonts](https://developers.google.com/fonts) Javascript, HTML, CSS
+2. Back-end Runtime Environment: [node.js](https://nodejs.org/en/)
+3. Auto-complete Features: [jQuery v3.6.0](https://jquery.com/)
+
+## [Deployment Link]()
+
 ## Installation
 
 Setup: 
@@ -79,7 +69,7 @@ Setup the Database Schema:
   * DB_PASSWORD="<mySQL user password>"
 
 Seed the Database: 
-- Run Server: From the root directory, run either "npm run watch" to start nodeman or "node server.js".
+- Run Server: From the root directory, run either "npm run watch" to start nodemon or "node server.js".
 - Seed Database: (a) To create the database, run "SOURCE ./db/schema.sql" in mySQL, (b) To create the database tables, from the terminal, run "npm run start" or "npm run watch", (c) To seed the database tables, run "npm run seed" or "node ./seeds/index.js".
 
 Note that the seed will also create entries for the user table including hashed passwords. When loggin into the app these user seeds can be used as test email address. Either obtain an email address from the user table (SELECT * FROM user;) or use an option noted below:
@@ -97,24 +87,7 @@ No tests at this time.
 
 ### Static Screenshots
 
-<img alt="Map" src="./assets/images/screenshot_map.png">
-<img alt="Dashboard" src="./assets/images/screenshot_dashboard.png">
-<img alt="Profile" src="./assets/images/screenshot_profile.png">
-
 ### Video Preview
-
-<!-- <img src="./assets/images/powder-bound.gif" width="" height=""/> -->
-
-## Technologies
-
-1. HTML
-2. CSS
-3. JavaScript
-4. GitHub (website hosting and source code management)
-5. [Moment.js v2.27.0](https://momentjs.com/)
-6. [jQuery v3.6.0](https://jquery.com/)
-7. [Bulma v0.9.4](https://bulma.io/)
-8. [Leaflet v1.8.0](https://leafletjs.com/)
 
 ### 3rd Party Application Programming Interfaces
 
@@ -125,19 +98,33 @@ No tests at this time.
 ### Dependencies
 
 1. [VS Code Live Server](https://ritwickdey.github.io/vscode-live-server/)
+2. [express.js](https://expressjs.com/) for Controller/Router 
+3. [bcrypt](https://www.npmjs.com/package/bcrypt): for password security (hashing)
+4. [dotenv](https://www.npmjs.com/package/dotenv): for creating secure production / back-end environments 
+5. [Axios](https://www.axios.com/): to get and render 3rd Party API data
+6. [phone-number-formats](https://www.npmjs.com/package/phone-number-formats): npm for formatting telephone numbers
+7. Sessions/Cookies: Sequalize Store: connect-sessions-sequalize
+8. [Github](https://github.com/): Project Management/Repo
+ 
+## Future Enhancements
+
+1. Incorporate trail data APIs to tie campground searches to long trails for long-distance hikers and backpackers to plan their routes with campgrounds, parking options, and water sources along the way. 
+2. Expand search capabilities on Google Maps to include campgrounds of National Forests, BLM lands, State Parks, etc., according to users' requests.
+3. Add weather forecasts to campsite pages
+4. Increase robustness of input validation, and more flexible, approximate searches to allow typos in user inputs.
+5. Offer paid subscriptions for offline use based on GPS data. 
 
 ## Collaborators
 
 1. Alex Cleveland: [Github LINK](https://github.com/AClevel5/)
-2. Patrick Radcliff: [Github LINK](https://github.com/PatrickARatcliff)
+2. Patrick Ratcliff: [Github LINK](https://github.com/PatrickARatcliff)
 3. Rod Bennett: [Github LINK](https://github.com/RodBennett)
 4. Steve Calla: [Github LINK](https://github.com/stevecalla)
 
 ## Resources
 
-1. Deployed Site URL - Heroku: TBD
-3. GitHub Repo: <https://github.com/stevecalla/long-trails>
-3. GitHub Projects: <https://github.com/users/stevecalla/projects/22>
+1. GitHub Repo: <https://github.com/stevecalla/long-trails>
+2. GitHub Projects: <https://github.com/users/stevecalla/projects/22>
 
 ## Contributing
 

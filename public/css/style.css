@@ -8,9 +8,10 @@
   --border-radius: 0.3rem;
 }
 
-/* body {
+body {
   overflow: hidden;
-} */
+  justify-content: center;
+}
 
 h1 {
   font-size: 42px;
@@ -31,12 +32,15 @@ p {
 
 /* HEADER & NAV */
 header {
-  height: 13vh;
-  min-height: 110px;
-  padding: 20px;
+  /* height: 136px; */
+  /* padding: 20px; */
+  margin-bottom: 10px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.75);
   color: var(--light);
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .post {
@@ -44,12 +48,15 @@ header {
 }
 
 .header {
-  width: 90vw;
-  margin: auto;
+  width: fit-content;
+  margin: 10px auto;
+  text-align: center;
   background-color: rgba(14, 88, 14);
   /* color: var(--background-main); */
   border-radius: var(--border-radius);
   /* box-shadow: 5px 5px 0px 0px gray; */
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .menu {
@@ -60,13 +67,20 @@ header {
   content: none;
 }
 
+.dropdown-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .background_image {
   background-image: url('../images/bg_image-forest.jpeg');
-  background-size: cover;
+  background-size:cover;
+  align-content: center;
 }
 
 nav {
   display: flex;
+  align-items: center;
   /* background-color: var(--background-main); */
 }
 
@@ -93,19 +107,24 @@ main {
   /* overflow: scroll; */
 }
 
-.app_name {
-  font-family: 'Splash', cursive, sans-serif;
-  font-size: 42px;
+#content-box {
+  margin-left: 1vw;
 }
 
-aside {
+.app_name {
+  font-family: 'Splash', cursive, sans-serif;
+  font-size: 6vh;
+  text-align: center;
+  color: burlywood;
+}
+
+
+
+/* .aside-map-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  top:20vh; 
-  width: 25vw; 
-  bottom:0;
-}
+} */
 
 /* LOGIN / SIGNUP */
 .login a {
@@ -184,7 +203,7 @@ textarea {
 
 .comment-wrapper {
   height: 200px;
-  overflow: scroll;
+  overflow-y: scroll; 
 }
 
 .comment-input {
@@ -261,7 +280,7 @@ form i {
 .container {
   width:auto;
   /* display: flex; */
-  flex-flow: column wrap;
+  /* flex-flow: column wrap; */
   align-content: flex-start;
   align-items: center;
 }
@@ -272,14 +291,54 @@ form i {
   .full-screen {
     display: none;
   }
-  aside {
+
+  /* .aside-map-page {
     width: 100vw;
     min-width: 375px;
+  } */
+
+  header {
+    height: 90px;
   }
-  main.row {
-    margin: auto;
+
+  .app_name {
+    font-size: 28px;
+  }
+
+  #main-row {
+    flex-direction: column;
+    margin:auto;
     min-height: 90vh;
   }
+
+  #content-box {
+    max-width: 100vw;
+    margin-left: 0vw;
+  }
+
+  #userCamp-aside {
+    max-width: 100vw;
+    margin-right: 1vw;
+  } 
+
+  #nps-link {
+    font-size: x-small;
+  }
+
+  .body-text {
+    font-size: 16px;
+  }
+
+  #search-result-drop {
+    display: none;
+  }
+
+}
+@media screen and (min-width: 1200px) {
+  #main-row {
+    margin: 0;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -301,38 +360,34 @@ form i {
     flex-direction: column;
   }
 
-  #main-row {
-    flex-direction: column;
-    margin:auto;
-    min-height: 90vh;
+  header {
+    height: 90px;
+  }
+
+  .app_name {
+    font-size: 28px;
   }
 
   #content-box {
-    max-width: 95vw;
+    max-width: 100vw;
+    margin-left: 0vw;
   }
 
   #userCamp-aside {
-    max-width: 95vw;
-  } 
-}
-
-@media screen and (min-width: 768px) {
-
-  #userCamp-aside {
+    max-width: 100vw;
     margin-right: 1vw;
+  } 
+
+  #nps-link {
+    font-size: x-small;
   }
 
-  #content-box {
-    margin-left: 1vw;
+  .body-text {
+    font-size: 16px;
   }
 
-}
-
-@media screen and (min-width: 1100px) {
-  
-  main.row {
-    margin: 0;
-    min-height: 90vh;
+  #search-result-drop {
+    display: none;
   }
 
 }

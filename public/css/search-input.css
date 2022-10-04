@@ -2,10 +2,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  /* padding: 0 0; */
 }
 .search-icon,
 .trash-icon {
-  position: fixed;
+  position: absolute;
   margin-right: 12px;
   font-size: 24px;
   cursor: pointer;
@@ -13,11 +14,11 @@
   color: gray;
 }
 .search-input {
-  margin: 0.625rem 0;
-  height: 40px; 
-  width: 275px; 
+  margin: 0.625rem;
   padding-left: 10px;
-  font-size: 16px;
+  height: 40px; 
+  width: 95%; 
+  font-size: 100%;
   border: 1px solid #484848;
   border-radius: 3px;
 }
@@ -27,3 +28,11 @@
 .show {
   display: flex;
 }
+
+/* @media screen and (max-width: 1300px) {
+  .search-input {
+    position: absolute;
+    width: 90vw; 
+    left: 0;
+  }
+} */

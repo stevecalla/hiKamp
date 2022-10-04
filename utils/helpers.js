@@ -1,3 +1,5 @@
+const phoneNumberFormatter = require('phone-number-formats');
+
 format_time = (date) => {
   return date.toLocaleTimeString();
 };
@@ -7,9 +9,11 @@ format_date = (date) => {
     date.getFullYear(),
     date.getMonth(),
     date.getDate()
-  );
-  
-  return dateFormatted.toLocaleDateString();
+  )};
+
+  format_phone = (date) => {
+    let phoneFormatted = new phoneNumberFormatter(`3-${date}`).format({type: 'domestic'});
+    return phoneFormatted.toString();
 };
 
 trim_content = (content) => {
@@ -86,5 +90,5 @@ module.exports = {
   format_time,
   format_date,
   trim_content,
-  sortUtility,
+  format_phone, 
 };
