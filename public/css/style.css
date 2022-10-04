@@ -32,8 +32,9 @@ p {
 
 /* HEADER & NAV */
 header {
-  height: 136px;
+  /* height: 136px; */
   /* padding: 20px; */
+  margin-bottom: 10px;
   text-align: center;
   color: var(--light);
 }
@@ -48,12 +49,14 @@ nav {
 
 .header {
   width: fit-content;
-  margin: auto;
+  margin: 10px auto;
   text-align: center;
   background-color: rgba(14, 88, 14);
   /* color: var(--background-main); */
   border-radius: var(--border-radius);
   /* box-shadow: 5px 5px 0px 0px gray; */
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .menu {
@@ -62,6 +65,11 @@ nav {
 
 .camp-dropdown-toggle::after {
   content: none;
+}
+
+.dropdown-wrapper {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .background_image {
@@ -283,7 +291,7 @@ form i {
   .full-screen {
     display: none;
   }
-  
+
   /* .aside-map-page {
     width: 100vw;
     min-width: 375px;
