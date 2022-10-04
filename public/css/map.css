@@ -1,11 +1,8 @@
-/* * {
+* {
   border: 1px solid red;
-} */
+}
 
 .aside-map-page {
-  /* margin: 5px 0px 5px 8px; */
-  /* margin: 5px;
-  margin-left: 8px; */
   margin-right: 10px;
   width: 20vw;
   height: 79vh;
@@ -37,7 +34,7 @@
   margin: 0 auto;
   position: absolute;
   text-align: center;
-  z-index: 2147483647;
+  z-index: 1;
   top: 30vh;
   left: 0;
   right: 0;
