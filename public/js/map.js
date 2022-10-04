@@ -13,7 +13,6 @@ trashIcon.addEventListener('click', clearSearchInputValue);
 searchInput.addEventListener('input', () => searchAutoComplete());
 
 //functions and event handlers go here 👇
-
 // RENDER MAP ZOOM AS WINDOW IS RE-SIZED
 function adjustZoomOnResize() {
   console.log(window.innerWidth);
@@ -25,9 +24,6 @@ async function renderSearchInputMap(event) {
   let selectedCampLat;
   let selectedCampLng;
 
-  // console.log(searchInput.value, searchInput.value.trim());
-  // console.log(event, event.target, event.target.id, event.target.id === "search-icon")
-  
   // If the user presses the "Enter" key on the keyboard
   if (event.key === 'Enter' || event.target.id === "search-icon") {
     event.preventDefault();
@@ -134,17 +130,8 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
     zoomLevel
   );
 
-  // createMap(
-  //   centerLat,
-  //   centerLng,
-  //   mobileZoomLevel,
-  //   zoomLevel,
-  //   list,
-  //   selectedCampLat
-  // );
-
-  let test = document.getElementById('map')
-  test.textContent = "";
+  let resetMap = document.getElementById('map')
+  resetMap.textContent = "";
 
   let renderMapAPICall = setTimeout(() => {
     createMap(
@@ -156,7 +143,6 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
       selectedCampLat
     );
     removeSpinnerAfterAPICall(renderMapAPICall);
-  // }, 500);
   }, 1000);
 }
 
@@ -190,21 +176,10 @@ const getList = async (state) => {
 
 // RENDER ICON AS USER HOVERS OVER SEARCH RESULTS LIST IN ASIDE
 function renderHoverIcon(event, list, markers, selectedCampLat) {
-  // let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/shapes/parks.png';
-  // let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png';
-  // let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png';
-  let hoverCampsiteIcon = 'http://maps.google.com/mapfiles/kml/shapes/campfire.png';
-
-  // console.log(event.target);
-  // console.log(event.target.dataset);
-  // console.log(event.target.dataset.index);
-  // console.log(event.target.dataset.latitude);
-  // console.log(selectedCampLat, parseFloat(event.target.dataset.latitude), selectedCampLat === parseFloat(event.target.dataset.latitude) );
+  let hoverCampsiteIcon = 'https://maps.google.com/mapfiles/kml/shapes/campfire.png';
 
   for (let i = 0; i < markers.length; i++) {
-    // if (parseInt(event.target.dataset.index) === i) {
     if (parseInt(event.target.dataset.index) === i && parseFloat(event.target.dataset.latitude) !== selectedCampLat) {
-        // console.log(parseInt(event.target.dataset.index) === i );
         markers[i].setIcon(hoverCampsiteIcon);
         return;
     }
@@ -213,12 +188,10 @@ function renderHoverIcon(event, list, markers, selectedCampLat) {
 
 // RENDER DEFAULT RED MARKER ICON
 function renderDefaultIcon(event, list, markers, selectedCampLat) {
-  let campsiteIcon = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
+  let campsiteIcon = 'https://maps.google.com/mapfiles/ms/icons/red-dot.png';
 
   for (let i = 0; i < markers.length; i++) {
-    // if (parseInt(event.target.dataset.index) === i) {
     if (parseInt(event.target.dataset.index) === i && parseFloat(event.target.dataset.latitude) !== selectedCampLat) {
-        // console.log(parseInt(event.target.dataset.index) === i );
         markers[i].setIcon(campsiteIcon);
         return;
     }
@@ -227,7 +200,6 @@ function renderDefaultIcon(event, list, markers, selectedCampLat) {
 
 // RENDER SEARCH RESULTS IN ASIDE
 function renderSearchResults(list, markers, selectedCampLat) {
-  // console.log('list ======= ', list);
   let asideContainer = document.getElementById('searchResults');
   asideContainer.textContent = '';
 
@@ -246,9 +218,7 @@ function renderSearchResults(list, markers, selectedCampLat) {
     // });
 
     //SET ATTRIBUTES
-    // campPath.setAttribute('href', `/api/map/campsite/:${list[i].camp_id}`);
     campPath.setAttribute('href', `/api/campsites/${list[i].camp_id}`);
-    // campPath.classList.add('aside-ahref');
     campName.setAttribute('data-index', i);
     campName.setAttribute('data-latitude', list[i].lat);
     campName.classList.add('aside-ahref');
@@ -279,8 +249,8 @@ function setLatAndLong(list, selectedCampLat, selectedCampLng, zoomLevel) {
   selectedCampLat ? (centerLat = selectedCampLat) : (centerLat = list[0].lat);
   selectedCampLng ? (centerLng = selectedCampLng) : (centerLng = list[0].lng);
 
-  console.log(zoomLevel, list[0].lat, list[0].lng);
-  console.log(selectedCampLat, selectedCampLng, centerLat, centerLng);
+  // console.log(zoomLevel, list[0].lat, list[0].lng);
+  // console.log(selectedCampLat, selectedCampLng, centerLat, centerLng);
 
   return { centerLat, centerLng };
 }
@@ -307,7 +277,7 @@ function createMap(
     scaleControl: true,
     streetViewControl: true,
     rotateControl: true,
-    fullscreenControl: true,
+    fullscreenControl: false,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
     },
@@ -326,14 +296,12 @@ function createMap(
 
   // Create the markers
   const markers = list.map(({ lat, lng, name, id, camp_id }, i) => {
-  // markers = list.map(({ lat, lng, name, id, camp_id }, i) => { //section
     if (lat && lng) {
       const contentString = `<h6 id="" class="map-ahref" style="color: blue; text-decoration: underline"><a class="map-ahref" href="/api/campsites/${camp_id}">${name}</a></h6>`
 
-      // https://maps.gstatic.com/mapfiles/place_api/icons/v2/camping_pinlet.svg
       let selectedCampsiteIcon =
-        'http://maps.google.com/mapfiles/kml/shapes/campground.png';
-      let campsiteIcon = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
+        'https://maps.google.com/mapfiles/kml/shapes/campground.png';
+      let campsiteIcon = 'https://maps.google.com/mapfiles/ms/icons/red-dot.png';
 
       const marker = new google.maps.Marker({
         position: { lat, lng },
@@ -344,7 +312,6 @@ function createMap(
         title: name,
       });
 
-      // marker.classList.add('hello')
       marker.className = "marker";
 
       // Add a click listener for each marker, and set up the info window
@@ -354,8 +321,7 @@ function createMap(
         infoWindow.open(marker.getMap(), marker);
         if (lat !== selectedCampLat) {
           marker.setIcon(
-            // 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
-            'http://maps.google.com/mapfiles/kml/shapes/campfire.png'
+            'https://maps.google.com/mapfiles/kml/shapes/campfire.png'
           );
         }
         marker.setAnimation(google.maps.Animation.BOUNCE);
@@ -393,7 +359,6 @@ function createMap(
   renderSearchResults(list, markers, selectedCampLat);
   renderMarkerClusters(markers, map);
   renderCurrentLocationIcon(map, infoWindow);
-  // renderCenterMapIcon(map, infoWindow);
   renderRefreshMapIcon(map, infoWindow);
 }
 
@@ -454,7 +419,7 @@ function renderCurrentLocationIcon(map, infoWindow) {
           const markerCurrentLocation = new google.maps.Marker({
             position: pos,
             map,
-            icon: 'http://maps.google.com/mapfiles/kml/shapes/ranger_station.png',
+            icon: 'https://maps.google.com/mapfiles/kml/shapes/ranger_station.png',
           });
           infoWindow.open(
             markerCurrentLocation.getMap(),
@@ -494,14 +459,9 @@ function renderRefreshMapIcon(map, infoWindow) {
   // PLACE ELEMENT ON MAP
   map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(refresh);
 
-  let testSound = document.querySelectorAll('.resultsContainer a');
-  console.log(testSound);
-  console.log(testSound[0].textContent);
-
   // CREATE EVENT LISTENER
   refreshIcon.addEventListener('click', () => {
     initMap();
-    textToSpeech(`${testSound[0].textContent} ${testSound[1].textContent}`)
   });
 }
 
@@ -551,73 +511,17 @@ function sortUtility(listToSort) {
   return sortedList;
 }
 
-// SECTION SPINNER FUNCTION
 // UTILITY RENDER SPINNER FUNCTION
 function renderSpinnerDuringAPICall() {
   document.getElementById("spinner").classList.remove("hide");
   document.getElementById("spinner").classList.add("show");
-
-  // document.getElementById("spinner-text").classList.remove("hide");
-  // document.getElementById("spinner-text").classList.add("show");
 }
 
 // UTILITY REMOVE SPINNER FUNCTION
 function removeSpinnerAfterAPICall(passTimeOutId) {
   document.getElementById("spinner").classList.add("hide");
   document.getElementById("spinner").classList.remove("show");
-
-  // document.getElementById("spinner-text").classList.add("hide");
-  // document.getElementById("spinner-text").classList.remove("show");
-
   clearTimeout(passTimeOutId);
 }
 
 initMap();
-
-// Source:
-// SIMPLE MARKER: https://developers.google.com/maps/documentation/javascript/examples/marker-simple
-// https://developers.google.com/maps/documentation/javascript/examples/marker-accessibility
-// INFO WINDOWS: https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple
-
-// section speaker css
-// .speaker-icon {
-//   width: 28px;
-//   height: 28px;
-//   margin: 0px;
-//   padding: 3px;
-//   background-color: lightgrey;
-//   border-radius: 50%;
-//   cursor: default;
-// }
-
-// section play sound
-function textToSpeech(text) {
-  let speech = new SpeechSynthesisUtterance();
-
-  let voiceUsed;
-  var voices = speechSynthesis.getVoices();
-
-  for (let i = 0; i < voices.length; i++) {
-    if (voices[i].name === 'Alex') {
-      voiceUsed = voices[i]
-    } 
-    // console.log(voices[i], voiceUsed);
-  }
-
-
-  // let speech = window.speechSynthesis;
-  // if(typeof speechSynthesis === 'undefined') {
-  //   return;
-  // }
-  console.log(text, speech);
-
-  speech.text = text;
-  speech.rate = 1;
-  speech.volume = 1;
-  speech.pitch = 1;
-  speech.voice = voiceUsed;
-  speechSynthesis.speak(speech);
-
-  console.log(text, speech, voices);
-  // alert(text, speech.voice, speech.text)
-}
