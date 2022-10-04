@@ -95,273 +95,134 @@
     }
 </style>
 
-{{!-- //section --}}
-{{!-- <section id="main-row" class="row"> --}}
-    <div id="userCamp-aside" class="col-2 text-white my-2 p-1 rounded see-thru">
-        <details id="favorite-box" class="p-2 m-2 rounded">
-            <summary class="text-center">
-                FAVORITES
-            </summary>
-            <br>
-            <div class="border-top border-dark pt-3">
-                {{!-- SECTION --}}
-                {{#each favorites as |favorite favoriteId|}}
-
-                {{!-- {{#each users as |user userId|}} --}}
-                {{!-- <a href="api/campsites/{{ favorite.campsite_id }}" class="map-ahref">
-                    <div class="card" style="max-width: 100%; background-color: #b98f59;">
-                        <img class="card-img-top campsite-photo img-fluid max-width: 100%"
-                            src="{{favorite.campsite_img_url}}" alt="image of {{favorite.campsite.name}} site">
-                        <div class="card-body"
-                            style="color: white!important; textAlign: center; background-color: #b98f59;">
-                            <p class="card-text" style="font-size: 100%; background-color: #b98f59;">
-                                {{favorite.campsite.name}}</p>
-                        </div>
-                    </div>
-                </a> --}}
-                {{!-- {{#each users as |user userId|}} --}}
-
-                  <h6 id="" class="" style="color: white!important; text-decoration: underline; textAlign: center"><a class="map-ahref" href="/api/campsites/{{ favorite.campsite_id }}">{{ favorite.campsite.name }}</a></h6>
-                  <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{favorite.campsite_img_url}}" alt="photo of {{ favorite.campsite.name }} site">
-                {{/each}}
-                
-                {{!-- SECTION --}}
+<div id="userCamp-aside" class="col-2 text-white my-2 p-1 rounded see-thru">
+  <details id="favorite-box" class="p-2 m-2 rounded">
+    <summary class="text-center">
+        FAVORITES
+    </summary>
+    <br>
+    <div class="border-top border-dark pt-3">
+      {{#each favorites as |favorite favoriteId|}}
+        <a href="/api/campsites/{{ favorite.campsite_id }}" class="map-ahref">
+          <div class="card" style="max-width: 100%; background-color: #b98f59;">
+            <img class="card-img-top campsite-photo img-fluid max-width: 100%"
+              src="{{favorite.campsite_img_url}}" alt="image of {{favorite.campsite.name}} site">
+            <div class="card-body"
+              style="color: white!important; textAlign: center; background-color: #b98f59;">
+              <p class="card-text" style="font-size: 100%; background-color: #b98f59;">
+                  {{favorite.campsite.name}}</p>
             </div>
-        </details>
+          </div>
+        </a>
+      {{/each}}
     </div>
+  </details>
+</div>
 
-    {{#each campData as |data|}}
-    {{!-- section old change--}}
-    <div id="content-box" class="col text-white rounded see-thru my-2 p-3" data-id={{id}}
-        data-imgUrl={{images.[0].url}}>
-        <div id="campsite-header" class="row">
-            <div class="col-9">
-                <h3>
-                    <span id="camp-name">{{name}}</span>
-                </h3>
-            </div>
-
-            <div id="favStarEl" class="col-3 d-flex justify-content-end">
-                {{!-- FAVORITES BUTTON --}}
-                {{!-- section --}}
-                {{/each}}
-                <img src="/images/volume.png" alt="Listen to camp description." style="height: 24px; width: 24px; background-color: #DEB887; margin: 12px 25px 10px 10px; border-radius: 3px" title="Audio description">
-                {{#if isFavorite }}
-                <input id="favStar check" class="star" type="checkbox" title="favStar" checked>
-                {{else}}
-                <input id="favStar check" class="star" type="checkbox" title="favStar">
-                {{/if}}
-                {{#each campData as |data|}}
-                {{!-- section --}}
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    {{!MAIN PHOTO}}
-                    {{#if images.[0].url}}
-                    <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{images.[0].url}}"
-                        alt="{{images.[0].altText}}">
-                    {{else}}
-                    <img id="campsite-photo" class="img-fluid max-width: 100%" src='https://via.placeholder.com/1100x500/b98f59/FFFFFF/?text=Go+Camping!'
-                        alt="No image available">
-                    {{/if}}
-                    <a id="nps-link" href="https://www.nps.gov/{{campCode}}/planyourvisit/maps.htm" target="__blank"
-                        class="p-2 button">Visit NPS Page</a>
-                </div>
-            </div>
-
-            <div class="row mt-3 body-text">
-                <div class="col border-bottom border-dark">
-                    {{#if description}}
-                    <p id="campsite-desc">{{ description }}</p>
-                    {{/if}}
-                </div>
-            </div>
-
-            <div class="row  mt-3 body-text">
-                <div class="col-5 body-text">
-                    {{!RESERVATIONS}}
-                    {{#if reservationInfo}}
-                    <p><strong>Reservation Info:</strong> {{ reservationInfo }}</p>
-                    {{/if}}
-                    {{#if reservationUrl}}
-                    <p><strong>Make a reservation:</strong><a href="{{ reservationUrl }}" target="_blank"> <i>{{
-                                reservationUrl }}</i></a></p>
-                    {{/if}}
-                    {{!REGULATIONS}}
-                    {{#if regulationsOverview}}
-                    <p><strong>Regulations:</strong> {{ regulationsOverview }}
-                        {{/if}}
-                        <br>
-                        {{#if regulationsurl}}
-                        <a href="{{ regulationsurl }}" target="_blank" class="regulations"> <i>{{ regulationsurl }}</i>
-                        </a>
-                        {{/if}}
-                    </p>
-
-                </div>
-
-                <div class="col-5 body-text">
-                    {{!CONTACT}}
-                    {{#if contacts.phoneNumbers.[0].phoneNumber}}
-                    <p><strong>Phone:</strong> {{ format_phone contacts.phoneNumbers.[0].phoneNumber }}</p>
-                    {{/if}}
-                    {{#if contacts.emailAddresses.[0].emailAddress}}
-                    <p><strong>Email:</strong> <a
-                            href="mailto:{{ contacts.emailAddresses.[0].emailAddress }}"><i>{{contacts.emailAddresses.[0].emailAddress}}</i></a>
-                    </p>
-                    {{/if}}
-                    {{!FEES}}
-                    {{#if fees.[0].title}}
-                    <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}{{/if}}
-                        {{#if fees.[0].description}}{{fees.[0].description}}</p>{{/if}}
-                    {{/each}}
-                </div>
-            </div>
+{{#each campData as |data|}}
+  <div id="content-box" class="col text-white rounded see-thru my-2 p-3" data-id={{id}}
+      data-imgUrl={{images.[0].url}}>
+      <div id="campsite-header" class="row">
+        <div class="col-9">
+            <h3>
+                <span id="camp-name">{{name}}</span>
+            </h3>
         </div>
-
+{{/each}}
+        {{!-- FAVORITES BUTTON --}}
+        <div id="favStarEl" class="col-3 d-flex justify-content-end">
+          <img src="/images/volume.png" alt="Listen to camp description." style="height: 24px; width: 24px; background-color: #DEB887; margin: 12px 25px 10px 10px; border-radius: 3px" title="Audio description">
+          {{#if isFavorite }}
+            <input id="favStar check" class="star" type="checkbox" title="favStar" checked>
+          {{else}}
+            <input id="favStar check" class="star" type="checkbox" title="favStar">
+          {{/if}}
+        </div>
+{{#each campData as |data|}}
         <div class="row">
-            <div id="comment-box-cont" class="col">
-                <details id="comment-box" class="p-2 m-2 rounded">
-                    <summary class="text-center">
-                        COMMENTS
-                    </summary>
-                    <br>
-                    <div class="border-top border-dark p-2">
-                        {{#each comments as |comment|}}
-                        <p id="comment-element" style="p-3 m-2">
-                            Posted by: {{ comment.user.username }} <br>
-                            On: {{ format_date comment.createdAt }} <br>
-                            {{ comment.content }}
-                        </p>
-                        <p id="comment-element" style="p-3 m-2"> </p>
-                        {{/each}}
-                    </div>
-                </details>
-            </div>
+          <div class="col-12">
+              {{!MAIN PHOTO}}
+              {{#if images.[0].url}}
+                <img id="campsite-photo" class="img-fluid max-width: 100%" src="{{images.[0].url}}" alt="{{images.[0].altText}}">
+              {{else}}
+                <img id="campsite-photo" class="img-fluid max-width: 100%" src='https://via.placeholder.com/1100x500/b98f59/FFFFFF/?text=Go+Camping!' alt="No image available">
+              {{/if}}
+                <a id="nps-link" href="https://www.nps.gov/{{campCode}}/planyourvisit/maps.htm" target="__blank"
+                    class="p-2 button">Visit NPS Page</a>
+          </div>
+      </div>
+
+      <div class="row mt-3 body-text">
+        <div class="col border-bottom border-dark">
+          {{#if description}}
+            <p id="campsite-desc">{{ description }}</p>
+          {{/if}}
         </div>
-        {{!--
-</section> --}}
+      </div>
+      <div class="row  mt-3 body-text">
+        <div class="col-5 body-text">
+            {{!RESERVATIONS}}
+            {{#if reservationInfo}}
+            <p><strong>Reservation Info:</strong> {{ reservationInfo }}</p>
+            {{/if}}
+            {{#if reservationUrl}}
+            <p><strong>Make a reservation:</strong><a href="{{ reservationUrl }}" target="_blank"> <i>{{
+                        reservationUrl }}</i></a></p>
+            {{/if}}
+            {{!REGULATIONS}}
+            {{#if regulationsOverview}}
+            <p><strong>Regulations:</strong> {{ regulationsOverview }}
+                {{/if}}
+                <br>
+                {{#if regulationsurl}}
+                <a href="{{ regulationsurl }}" target="_blank" class="regulations"> <i>{{ regulationsurl }}</i>
+                </a>
+                {{/if}}
+            </p>
+        </div>
 
-{{!--
-<script src="/js/details.js"></script> --}}
-<script>
-    const favParentEl = document.getElementById('userCamp-aside');
-    const favBigCont = `<details open id="favorite-box" class="p-2 m-2 rounded">
-    <summary class="text-center">
-        FAVORITES
-    </summary>
-    <br>
-    <div class="border-top border-dark pt-3">
-        {{!-- SECTION --}}
-        {{#each favorites as |favorite favoriteId|}}
-        {{!-- {{#each users as |user userId|}} --}}
-        <a href="api/campsites/{{ favorite.campsite_id }}" class="map-ahref">
-            <div class="card" style="max-width: 100%; background-color: #b98f59;">
-                <img class="card-img-top campsite-photo img-fluid max-width: 100%"
-                    src="{{favorite.campsite_img_url}}" alt="image of {{favorite.campsite.name}} site">
-                <div class="card-body" style="color: white!important; textAlign: center; background-color: #b98f59;">
-                    <p class="card-text" style="font-size: 100%; background-color: #b98f59;">{{favorite.campsite.name}}</p>
-                </div>
-            </div>
-        </a>
-        {{/each}}
-        {{!-- SECTION --}}
-    </div>
-    </details>`;
-    const favSmallCont = `<details id="favorite-box" class="p-2 m-2 rounded">
-    <summary class="text-center">
-        FAVORITES
-    </summary>
-    <br>
-    <div class="border-top border-dark pt-3">
-        {{!-- SECTION --}}
-        {{#each favorites as |favorite favoriteId|}}
-        {{!-- {{#each users as |user userId|}} --}}
-        <a href="api/campsites/{{ favorite.campsite_id }}" class="map-ahref">
-            <div class="card" style="max-width: 100%; background-color: #b98f59;">
-                <img class="card-img-top campsite-photo img-fluid max-width: 100%"
-                    src="{{favorite.campsite_img_url}}" alt="image of {{favorite.campsite.name}} site">
-                <div class="card-body" style="color: white!important; textAlign: center; background-color: #b98f59;">
-                    <p class="card-text" style="font-size: 100%; background-color: #b98f59;">{{favorite.campsite.name}}</p>
-                </div>
-            </div>
-        </a>
-        {{/each}}
-        {{!-- SECTION --}}
-    </div>
-    </details>`;
-    const comParentEl = document.getElementById('comment-box-cont');
-    const comBigCont = `<details open id="comment-box" class="p-2 m-2 rounded">
-    <summary class="text-center">
+        <div class="col-5 body-text">
+          {{!CONTACT}}
+          {{#if contacts.phoneNumbers.[0].phoneNumber}}
+            <p><strong>Phone:</strong> {{ format_phone contacts.phoneNumbers.[0].phoneNumber }}</p>
+          {{/if}}
+
+          {{#if contacts.emailAddresses.[0].emailAddress}}
+          <p><strong>Email:</strong> <a href="mailto:{{ contacts.emailAddresses.[0].emailAddress }}"><i>{{contacts.emailAddresses.[0].emailAddress}}</i></a>
+          </p>
+          {{/if}}
+
+          {{!FEES}}
+          {{#if fees.[0].title}}
+            <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}
+          {{/if}}
+          {{#if fees.[0].description}}
+            <p>{{fees.[0].description}}</p>
+          {{/if}}
+{{/each}}
+        </div>
+      </div>
+  </div>
+
+<div class="row">
+  <div id="comment-box-cont" class="col">
+    <details id="comment-box" class="p-2 m-2 rounded">
+      <summary class="text-center">
         COMMENTS
-    </summary>
-    <br>
-    <div class="border-top border-dark p-2">
-        {{#each comments as |comment|}}
-        <p id="comment-element" style="p-3 m-2">
-            Posted by: {{ comment.user.username }} <br>
-            On: {{ format_date comment.createdAt }} <br>
-            {{ comment.content }}
-        </p>
-        <p id="comment-element" style="p-3 m-2"> </p>
-        {{/each}}
-    </div>
-    </details>`;
-    const comSmallCont = `<details id="comment-box" class="p-2 m-2 rounded">
-    <summary class="text-center">
-        COMMENTS
-    </summary>
-    <br>
-    <div class="border-top border-dark p-2">
-        {{#each comments as |comment|}}
-        <p id="comment-element" style="p-3 m-2">
-            Posted by: {{ comment.user.username }} <br>
-            On: {{ format_date comment.createdAt }} <br>
-            {{ comment.content }}
-        </p>
-        <p id="comment-element" style="p-3 m-2"> </p>
-        {{/each}}
-    </div>
-    </details>`;
+      </summary>
+      <br>
+      <div class="border-top border-dark p-2">
+          {{#each comments as |comment|}}
+            <p id="comment-element" style="p-3 m-2">
+                Posted by: {{ comment.user.username }} <br>
+                On: {{ format_date comment.createdAt }} <br>
+                {{ comment.content }}
+            </p>
+            <p id="comment-element" style="p-3 m-2"> </p>
+          {{/each}}
+      </div>
+    </details>
+  </div>
+</div>
 
-    let s = 0;
-
-    function replaceContent(parent, small, big) {
-        // check if a breakpoint has been "crossed"
-        if (window.innerWidth <= 1300 && s === 1) {
-            parent.setHTML('');
-            parent.setHTML(small);
-            s = 0;
-        } else if (window.innerWidth > 1300 && s === 0) {
-            parent.setHTML('');
-            parent.setHTML(big);
-            s = 1;
-        };
-    }
-
-    //call function every time the browser is re-sized
-    window.addEventListener('resize', function (event) {
-        event.preventDefault();
-        if (window.attachEvent) {
-            window.attachEvent('onresize', function () {
-                replaceContent(favParentEl, favSmallCont, favBigCont);
-                replaceContent(comParentEl, comSmallCont, comBigCont);
-            });
-        }
-        else if (window.addEventListener) {
-            window.addEventListener('resize', function () {
-                replaceContent(favParentEl, favSmallCont, favBigCont);
-                replaceContent(comParentEl, comSmallCont, comBigCont);
-            }, true);
-        }
-        else {
-            //The browser does not support Javascript event binding
-        }
-    });
-
-    window.onload = () => {
-        replaceContent(favParentEl, favSmallCont, favBigCont);
-    };
-
-</script>
 <script src="/js/favorite.js"></script>
