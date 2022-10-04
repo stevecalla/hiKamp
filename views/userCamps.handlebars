@@ -318,11 +318,11 @@
 
     function replaceContent(parent, small, big) {
         // check if a breakpoint has been "crossed"
-        if (window.innerWidth < 481 && s === 1) {
+        if (window.innerWidth <= 1300 && s === 1) {
             parent.setHTML('');
             parent.setHTML(small);
             s = 0;
-        } else if (window.innerWidth > 480 && s === 0) {
+        } else if (window.innerWidth > 1300 && s === 0) {
             parent.setHTML('');
             parent.setHTML(big);
             s = 1;

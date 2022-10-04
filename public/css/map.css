@@ -1,3 +1,7 @@
+* {
+  border: 1px solid red;
+}
+
 .aside-map-page {
   /* margin: 5px 0px 5px 8px; */
   /* margin: 5px;
@@ -14,7 +18,7 @@
   width: 71vw;
   height: 79vh;
   width: 780px;
-  top: 17.35vh;
+  /* top: 17.35vh; */
   left: 36vw;
   bottom: 0;
   border-radius: 0.25rem;
@@ -26,10 +30,16 @@
   }
   .map {
     position: absolute; 
-    width: 94vw; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* width: 400px; */
     height: 70vh;
-    top: 30vh; 
-    left: 3vw; 
+    /* width: 94vw;  */
+    /* height: 70vh; */
+    /* top: 30vh;  */
+    /* left: 3vw;  */
     bottom: 0; 
   }
 }
