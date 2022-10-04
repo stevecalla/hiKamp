@@ -16,36 +16,14 @@
 
 ### Description
 
-Want to enjoy weekend out camping in the National Parks but unsure of where to go and what to do? Longtrails is here to help you become a campsite guru. Longtrails will provide you with information such as Weather, access, fees, reservations, and more in a single screen. You will be able to also see other campers reviews and comments to get a better idea of what to expect. 
+Want to enjoy weekend out camping in the National Parks but unsure of where to go and what to do? HiKamp is here to help you become a campsite guru. HiKamp will provide you with information such as Weather, Access, Fees, Reservations, and more in a single screen. You will be able to also see other campers reviews and comments to get a better idea of what to expect. 
 
 ## User Story
 
-As an outdoors person I want a quick and painless way to find uniform campsite data. Longtrails is the place to go to cut down on your research time and provide the information you need for a wonderful weekend in the National Parks.
-
-## Features
-
-This app includes features that allows the user to view, add, update and delete blog posts as well as add comments to posts. It includes a variety of features such as login, logout, signup, add comments, add blog posts, edit blog posts and delete blog posts as well as varies views..
-
-1. Model/Database: mysql2, sequalize, , mockaroo.com (for mock seed data)
-2. View: handlebars, express-handlebars, Javascript, HTML, CSS, FontAwesome
-3. Controller/Router: express
-4. Helpers: bcrypt, dotenv
-5. Sessions/Cookies: connect-sessions-sequalize
-6. Deployed Site: Heroku
-7. Project Management/Repo: Github
-
-## Future Enhancements
-
-<!-- 1. Sync the weather with driving directions so the user knows what the weather is forecasted to be when they get to various waypoints on their route.
-2. Display all SNOTEL stations in Colorado on the map to provide info for backcountry skiers.
-3. Add travel alerts to the driving directions display.
-4. Use secure authentication and server side storage for user profiles
-5. Increase robustness of input validation
-6. Refactor code to single purpose functions -->
+As an outdoors person I want a quick and painless way to find uniform campsite data within the National Park System. HiKamp is the place to go to cut down on your research time and provide the information you need for a wonderful weekend in the National Parks.
 
 ## Acceptance Criteria
 
-```
 As an Outdoors man or woman, I want to find campsite information quick and easy. Information that includes weather, location, amentities, whether it's by reservation or first come first serve, and information about accessibility.
 
 When I go to the longtrails app.
@@ -65,7 +43,19 @@ Then I am able to type a comment up about my experience with said campsite for o
 
 When I click favorite.
 That specific campsite is saved to my favorites and displayed on the left side of my campsite page for easy access.
-```
+
+## Features
+
+This app includes features that allows the user to view, add, update, delete as well as add comments to posts. It includes a variety of features such as login, logout, signup, easily save favorite campsites, not to mention a seamless and customized integration with Google Maps for easy and convenient searching. Users can search by Park Name, State Name, Zipcode and/or Campground Name.  Our customized pins are located on each National Park campground thoughout the United States and Territories, and users who know which area they wish to camp in but don't know names or zipcodes can also search for specific campgrounds by interacting directly with the map. 
+
+## Technologies Used
+
+1. Views: [handlebars](https://handlebarsjs.com/), [express-handlebars](https://www.npmjs.com/package/express-handlebars), [Bootstrap](https://getbootstrap.com/), [Google Fonts](https://developers.google.com/fonts) Javascript, HTML, CSS
+2. [node.js](https://nodejs.org/en/)
+3. [jQuery v3.6.0](https://jquery.com/) for autocomplete features
+
+## [Deployment Link]()
+
 ## Installation
 
 Setup: 
@@ -97,24 +87,7 @@ No tests at this time.
 
 ### Static Screenshots
 
-<img alt="Map" src="./assets/images/screenshot_map.png">
-<img alt="Dashboard" src="./assets/images/screenshot_dashboard.png">
-<img alt="Profile" src="./assets/images/screenshot_profile.png">
-
 ### Video Preview
-
-<!-- <img src="./assets/images/powder-bound.gif" width="" height=""/> -->
-
-## Technologies
-
-1. HTML
-2. CSS
-3. JavaScript
-4. GitHub (website hosting and source code management)
-5. [Moment.js v2.27.0](https://momentjs.com/)
-6. [jQuery v3.6.0](https://jquery.com/)
-7. [Bulma v0.9.4](https://bulma.io/)
-8. [Leaflet v1.8.0](https://leafletjs.com/)
 
 ### 3rd Party Application Programming Interfaces
 
@@ -125,6 +98,22 @@ No tests at this time.
 ### Dependencies
 
 1. [VS Code Live Server](https://ritwickdey.github.io/vscode-live-server/)
+2. [express.js](https://expressjs.com/) for Controller/Router 
+3. [bcrypt](https://www.npmjs.com/package/bcrypt): for password security (hashing)
+4. [dotenv](https://www.npmjs.com/package/dotenv): for creating secure production / back-end environments 
+5. [Axios](https://www.axios.com/): to get and render 3rd Party API data
+6. [phone-number-formats](https://www.npmjs.com/package/phone-number-formats): npm for formatting telephone numbers
+7. Sessions/Cookies: Sequalize Store: connect-sessions-sequalize
+8. Project Management/Repo: [Github](https://github.com/)
+
+## Future Enhancements
+
+1. Incorporate trail data APIs to tie campground searches to long trails for long-distance hikers and backpackers to plan their routes with campgrounds, parking points, and water sources. 
+2. Display campgrounds on Google Maps  
+3. Add travel alerts to the driving directions display.
+4. Use secure authentication and server side storage for user profiles
+5. Increase robustness of input validation
+6. Refactor code to single purpose functions
 
 ## Collaborators
 
@@ -135,9 +124,8 @@ No tests at this time.
 
 ## Resources
 
-1. Deployed Site URL - Heroku: TBD
-3. GitHub Repo: <https://github.com/stevecalla/long-trails>
-3. GitHub Projects: <https://github.com/users/stevecalla/projects/22>
+1. GitHub Repo: <https://github.com/stevecalla/long-trails>
+2. GitHub Projects: <https://github.com/users/stevecalla/projects/22>
 
 ## Contributing
 
