@@ -142,7 +142,7 @@
 {{/each}}
         {{!-- FAVORITES BUTTON --}}
         <div id="favStarEl" class="col-3 d-flex justify-content-end">
-          <img src="/images/volume.png" alt="Listen to camp description." style="height: 24px; width: 24px; background-color: #DEB887; margin: 12px 25px 10px 10px; border-radius: 3px" title="Audio description">
+          <img id='audio-button' src="/images/volume.png" alt="Listen to camp description." style="height: 24px; width: 24px; background-color: #DEB887; margin: 12px 25px 10px 10px; border-radius: 3px" title="Audio description">
           {{#if isFavorite }}
             <input id="favStar check" class="star" type="checkbox" title="Favorite star" checked>
           {{else}}
@@ -236,4 +236,6 @@
   </div>
 </div>
 
+<script src="/js/text-to-speech.js"></script>
 <script src="/js/favorite.js"></script>
+<script src="/js/user-camps.js"></script>
