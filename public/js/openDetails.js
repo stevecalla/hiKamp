@@ -10,10 +10,10 @@ window.addEventListener('resize', openClose);
 // AS WINDOW RESIZES, OPEN DETAILS IF INNERWIDTH < 1300, CLOSE IF LESS THAN 1300
 function openClose() {
   if (window.innerWidth >= 1300) {
-    console.log('open details');
+    // console.log('open details');
     openCloseDetails.setAttribute('open', 'true');
   } else {
-    console.log('close details');
+    // console.log('close details');
     openCloseDetails.removeAttribute('open');
   }
 }
