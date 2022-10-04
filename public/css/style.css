@@ -283,10 +283,12 @@ form i {
   .full-screen {
     display: none;
   }
-  .aside-map-page {
+  
+  /* .aside-map-page {
     width: 100vw;
     min-width: 375px;
-  }
+  } */
+
   header {
     height: 90px;
   }
@@ -356,12 +358,6 @@ form i {
 
   .app_name {
     font-size: 28px;
-  }
-
-  #main-row {
-    flex-direction: column;
-    margin:auto;
-    min-height: 90vh;
   }
 
   #content-box {

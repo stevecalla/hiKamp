@@ -6,6 +6,7 @@
   /* margin: 5px 0px 5px 8px; */
   /* margin: 5px;
   margin-left: 8px; */
+  width: 20vw;
   height: 79vh;
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 0.25rem;
@@ -31,15 +32,15 @@
   .map {
     position: absolute; 
     top: 0;
-    bottom: 0;
+    /* bottom: 0; */
     left: 0;
     right: 0;
-    /* width: 400px; */
+    width: 100%;
     height: 70vh;
     /* width: 94vw;  */
     /* height: 70vh; */
     /* top: 30vh;  */
     /* left: 3vw;  */
-    bottom: 0; 
+    /* bottom: 0;  */
   }
 }
