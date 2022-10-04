@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const isAuthorized = require("../../utils/auth");
 const axios = require('axios').default;
-const parkList = require('../../public/js/parkList');
+// const parkList = require('../../public/js/parkList');
 // const { campsite } = require("../models");
 const { Campsite } = require('../../models');
 
