@@ -72,6 +72,7 @@ nav {
 
 nav {
   display: flex;
+  align-items: center;
   /* background-color: var(--background-main); */
 }
 
