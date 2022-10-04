@@ -64,7 +64,7 @@ Setup:
 Setup the Database Schema: 
 - (1) Update or add an .env file. Include the fields below in the .env file. Note that the .env variables are used in the conf folder, connection.js file.
 
-  * DB_NAME="longTrails_db"
+  * DB_NAME="hiKamp_db"
   * DB_USER="<mySQL user name>"
   * DB_PASSWORD="<mySQL user password>"
 
