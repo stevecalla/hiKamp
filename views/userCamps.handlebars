@@ -41,6 +41,11 @@
         height: 80vh;
     }
 
+    .favorite-wrapper {
+      height: 80vh;
+      overflow: scroll;
+    }
+
     #content-box {
         overflow-y: scroll;
         height: 80vh;
@@ -93,15 +98,21 @@
     a {
         color: burlywood;
     }
+    @media screen and (max-width: 1300px) {
+      .favorite-wrapper {
+        height: 275px;
+        overflow: scroll;
+      }
+    }
 </style>
 
-<div id="userCamp-aside" class="col-2 text-white my-2 p-1 rounded see-thru">
+<div id="userCamp-aside" class="col-2 text-white my-2 p-1 rounded see-thru overflow-auto">
   <details id="favorite-box" class="p-2 m-2 rounded">
     <summary class="text-center">
         FAVORITES
     </summary>
     <br>
-    <div class="border-top border-dark pt-3">
+    <div class="border-top border-dark pt-3 overflow-auto favorite-wrapper">
       {{#each favorites as |favorite favoriteId|}}
         <a href="/api/campsites/{{ favorite.campsite_id }}" class="map-ahref">
           <div class="card" style="max-width: 100%; background-color: #b98f59;">
@@ -133,9 +144,9 @@
         <div id="favStarEl" class="col-3 d-flex justify-content-end">
           <img src="/images/volume.png" alt="Listen to camp description." style="height: 24px; width: 24px; background-color: #DEB887; margin: 12px 25px 10px 10px; border-radius: 3px" title="Audio description">
           {{#if isFavorite }}
-            <input id="favStar check" class="star" type="checkbox" title="favStar" checked>
+            <input id="favStar check" class="star" type="checkbox" title="Favorite star" checked>
           {{else}}
-            <input id="favStar check" class="star" type="checkbox" title="favStar">
+            <input id="favStar check" class="star" type="checkbox" title="Favorite star">
           {{/if}}
         </div>
 {{#each campData as |data|}}
