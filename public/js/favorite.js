@@ -18,8 +18,6 @@ function getIDAndImgURL() {
 }
 
 async function createFavorite(id, url) {
-  console.log(id, url)
-
   if (id || url) {
     const response = await fetch("/api/favorite", {
       method: "POST",

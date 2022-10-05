@@ -7,7 +7,6 @@ const { Campsite } = require('../../models');
 // RENDER ALL CAMPSTIES; PULLS ALL CAMPSITES FROM CAMPSITE DB
 // EXAMPLE REQUEST "localhost:3001/api/map/campsites-all"
 router.get('/campsites-all', async (req, res) => {
-  console.log(req.params.state);
   try {
     const dbCampsiteData = await Campsite.findAll();
 
@@ -22,7 +21,6 @@ router.get('/campsites-all', async (req, res) => {
 
 // EXAMPLE REQUEST "localhost:3001/api/map/campsite-list/texas"
 router.get('/campsite-list/:state', async (req, res) => {
-  console.log(req.params.state);
   try {
     const dbCampsiteData = await Campsite.findAll({
       where: {

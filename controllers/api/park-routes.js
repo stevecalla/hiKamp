@@ -10,11 +10,6 @@ router.get('/', async (req, res) => {
     const response = await axios.get(
       `https://developer.nps.gov/api/v1/campgrounds?limit=626?&api_key=sjsH0PhPRSMzPFiZEohC8IjAeDvFOYvXzDjsetql`
     );
-
-    // GET "https://developer.nps.gov/api/v1/campgrounds?limit=700"
-    // console.log('RESPONSE = ', JSON.stringify(response.data));
-    // res.json(response.data.total, response.data.data);
-
     const parks = response.data.data.map(
       (element) => ({
         id: element.id,
