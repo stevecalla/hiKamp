@@ -2,8 +2,6 @@ const togglePassword = document.querySelector('#toggle-password');
 const password = document.querySelector('#password-input');
 
 togglePassword.addEventListener('click', function (e) {
-  console.log('click');
-
   // toggle the type attribute
   const type =
     password.getAttribute('type') === 'password' ? 'text' : 'password';
