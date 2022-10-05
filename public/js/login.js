@@ -14,10 +14,17 @@ const loginFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace("/");
     } else {
-      alert("Failed to log in.");
+      validationModal("Darn!! Login Failed", "Please enter valid email (xyz@example.com) and password (minimum of six characters).");
     }
   }
 };
+
+// ADD VALIDATION MODAL BASED ON USER INPUT
+function validationModal(title, body) {
+$("#no-input-model").modal("show");
+$("#no-input-title").text(title);
+$("#no-input-body").text(body);
+}
 
 document
   .querySelector(".login-form")
