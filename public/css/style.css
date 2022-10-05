@@ -337,10 +337,7 @@ form i {
     font-size: x-small;
   }
 
-  .body-text {
-    font-size: 100%;
-  }
-
+  
   #search-result-drop {
     display: none;
   }
@@ -403,4 +400,12 @@ form i {
     display: none;
   }
   
+}
+
+/*MOBILE SIZING FOR BODY TEXT ON USERCAMPS VIEW*/
+@media screen and (max-width: 400px) {
+  .body-text {
+    inline-size: 400px;
+    overflow-wrap: break-word;
+  }
 }
