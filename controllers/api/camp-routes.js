@@ -4,7 +4,7 @@ const isAuthorized = require('../../utils/auth');
 const axios = require('axios').default;
 const { Comment, User, Favorite, Campsite } = require('../../models');
 
-// route starts at api/campsites
+// ROUTE STARTS AT "api/campsites"
 
 // ROUTE RETRIEVES ALL DATA NECESSARY TO RENDER THE CAMPSITE PAGE USING THE CAMPSITE ID
 // RETRIEVES NATIONAL PARK SERVICE DATA, COMMENTS, FAVORITES, LOGGEDIN STATUS, IF CURRENT CAMPSITE IS FAVORITE
