@@ -4,7 +4,14 @@ const isAuthorized = require('../../utils/auth');
 const axios = require('axios').default;
 const { Comment, User, Favorite, Campsite } = require('../../models');
 
-// route starts at api/campsites
+// ROUTE STARTS AT "api/campsites"
+
+// ROUTE RETRIEVES ALL DATA NECESSARY TO RENDER THE CAMPSITE PAGE USING THE CAMPSITE ID
+// RETRIEVES NATIONAL PARK SERVICE DATA, COMMENTS, FAVORITES, LOGGEDIN STATUS, IF CURRENT CAMPSITE IS FAVORITE
+// RENDERS ALL DATA TO USERCAMPS HANDBARS PAGE
+
+// MIDDLE ENSURES URL IS VALID -- -- AND USER IS AUTHORIZED (IS LOGGED IN)
+// EXAMPLE "localhost:3001/api/campsites/C4CB1781-C59F-4065-AFE3-F7A327B075A2"
 router.get('/:id', isNotValid, isAuthorized, async (req, res) => {
   try {
     const key = process.env.NPS_API;
@@ -12,6 +19,7 @@ router.get('/:id', isNotValid, isAuthorized, async (req, res) => {
       `https://developer.nps.gov/api/v1/campgrounds?id=${req.params.id}&api_key=${key}`
     );
 
+    // RETRIEVE COMMENTS FOR THE CURRENT RENDERED CAMPSITE
     const allComments = await Comment.findAll({
       include: [{ model: User }, { model: Campsite }],
       where: { campsite_id: req.params.id },
@@ -19,6 +27,7 @@ router.get('/:id', isNotValid, isAuthorized, async (req, res) => {
 
     const comments = allComments.map((comment) => comment.get({ plain: true }));
 
+    // RETRIEVE FAVORITES FOR THIS USER
     const allFavorites = await Favorite.findAll({
       include: [{ model: User }, { model: Campsite }],
       where: { user_id: req.session.userId },
@@ -28,8 +37,8 @@ router.get('/:id', isNotValid, isAuthorized, async (req, res) => {
       favorite.get({ plain: true })
     );
 
+    // IF RENDERED CAMPSITE IS ALSO A FAVORITE RETURN TRUE
     const favoriteCamps = favorites.map((camps) => camps.campsite.camp_id);
-
     let isCurrentCampAFavorite = favoriteCamps.includes(req.params.id);
 
     res.render('userCamps', {

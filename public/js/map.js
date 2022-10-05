@@ -15,7 +15,6 @@ searchInput.addEventListener('input', () => searchAutoComplete());
 //functions and event handlers go here 👇
 // RENDER MAP ZOOM AS WINDOW IS RE-SIZED
 function adjustZoomOnResize() {
-  console.log(window.innerWidth);
   window.innerWidth > 500 ? initMap(4) : initMap(3);
 }
 
@@ -25,7 +24,7 @@ async function renderSearchInputMap(event) {
   let selectedCampLng;
 
   // If the user presses the "Enter" key on the keyboard
-  if (event.key === 'Enter' || event.target.id === "search-icon") {
+  if (event.key === 'Enter' || event.target.id === 'search-icon') {
     event.preventDefault();
 
     //if search input is valid hide search icon / show trash icon
@@ -33,8 +32,8 @@ async function renderSearchInputMap(event) {
       searchIcon.classList.add('hide');
       trashIcon.classList.add('show');
       trashIcon.classList.remove('hide');
-    };
-    
+    }
+
     // get all campsites from database
     let rawCampsites = await getList();
 
@@ -47,25 +46,27 @@ async function renderSearchInputMap(event) {
     if (!getState.length) {
       getState = rawCampsites.filter(
         (camp) => camp.state === searchInput.value
-        );
-    };
-    
+      );
+    }
+
     // if input is not a campsite name or state, use zipcode to get state
     if (!getState.length) {
       getState = rawCampsites.filter(
         (camp) => camp.zipCode === searchInput.value
-        );
-    };
-    
+      );
+    }
+
     // validate input
     if (!getState.length) {
-      validationModal("Darn!! Campsite Not Found", "Please select a campsite/zipcode from the list then press enter.");
+      validationModal(
+        'Darn!! Campsite Not Found',
+        'Please select a campsite/zipcode from the list then press enter.'
+      );
       return;
     }
-    
+
     // get state for first location in the array
     let state = getState[0].state;
-    // console.log(getState);
 
     // get lat & lng for campsite to center map
     if (getState.length) {
@@ -75,7 +76,7 @@ async function renderSearchInputMap(event) {
 
     // render map by passing state, map zoom level, selected camp lat & lng
     initMap(6, state, selectedCampLat, selectedCampLng);
-  } 
+  }
 }
 
 // RENDER SEARCH BOX AUTO COMPLETE WITH JQUERY
@@ -90,7 +91,6 @@ async function searchAutoComplete() {
     .filter((state) => state !== null)
     .sort();
 
-  console.log(rawStates);
   let campZipCodes = rawCampsites
     .map((rawCampsites) => rawCampsites.zipCode)
     .filter((zipCode) => zipCode !== null)
@@ -111,13 +111,13 @@ async function searchAutoComplete() {
 async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
   //if search input is valid hide search icon / show trash icon
 
-  renderSpinnerDuringAPICall()
-  
+  renderSpinnerDuringAPICall();
+
   if (searchInput.value.length > 0) {
     searchIcon.classList.add('hide');
     trashIcon.classList.add('show');
     trashIcon.classList.remove('hide');
-  };
+  }
 
   searchInput.focus(); //by default only focuses on desktop not mobile
 
@@ -130,8 +130,8 @@ async function initMap(zoomLevel, state, selectedCampLat, selectedCampLng) {
     zoomLevel
   );
 
-  let resetMap = document.getElementById('map')
-  resetMap.textContent = "";
+  let resetMap = document.getElementById('map');
+  resetMap.textContent = '';
 
   let renderMapAPICall = setTimeout(() => {
     createMap(
@@ -160,7 +160,6 @@ const getList = async (state) => {
     );
     list = sortUtility(list);
     return list;
-
   } else {
     result = await fetch(`/api/map/campsite-list/${state}`, {
       method: 'GET',
@@ -176,27 +175,34 @@ const getList = async (state) => {
 
 // RENDER ICON AS USER HOVERS OVER SEARCH RESULTS LIST IN ASIDE
 function renderHoverIcon(event, list, markers, selectedCampLat) {
-  let hoverCampsiteIcon = 'https://maps.google.com/mapfiles/kml/shapes/campfire.png';
+  let hoverCampsiteIcon =
+    'https://maps.google.com/mapfiles/kml/shapes/campfire.png';
 
   for (let i = 0; i < markers.length; i++) {
-    if (parseInt(event.target.dataset.index) === i && parseFloat(event.target.dataset.latitude) !== selectedCampLat) {
-        markers[i].setIcon(hoverCampsiteIcon);
-        return;
+    if (
+      parseInt(event.target.dataset.index) === i &&
+      parseFloat(event.target.dataset.latitude) !== selectedCampLat
+    ) {
+      markers[i].setIcon(hoverCampsiteIcon);
+      return;
     }
   }
-};
+}
 
 // RENDER DEFAULT RED MARKER ICON
 function renderDefaultIcon(event, list, markers, selectedCampLat) {
   let campsiteIcon = 'https://maps.google.com/mapfiles/ms/icons/red-dot.png';
 
   for (let i = 0; i < markers.length; i++) {
-    if (parseInt(event.target.dataset.index) === i && parseFloat(event.target.dataset.latitude) !== selectedCampLat) {
-        markers[i].setIcon(campsiteIcon);
-        return;
+    if (
+      parseInt(event.target.dataset.index) === i &&
+      parseFloat(event.target.dataset.latitude) !== selectedCampLat
+    ) {
+      markers[i].setIcon(campsiteIcon);
+      return;
     }
   }
-};
+}
 
 // RENDER SEARCH RESULTS IN ASIDE
 function renderSearchResults(list, markers, selectedCampLat) {
@@ -210,9 +216,10 @@ function renderSearchResults(list, markers, selectedCampLat) {
     let renderLine = document.createElement('hr');
 
     campPath.addEventListener('mouseover', (event) => {
-      renderHoverIcon(event, list, markers, selectedCampLat)
+      renderHoverIcon(event, list, markers, selectedCampLat);
     });
 
+    // CODE WILL REMOVE THE HOVER ICON IF THAT IS A PREFERRED USER EXPERIENCE
     // campPath.addEventListener('mouseout', (event) => {
     //   renderDefaultIcon(event, list, markers, selectedCampLat)
     // });
@@ -249,9 +256,6 @@ function setLatAndLong(list, selectedCampLat, selectedCampLng, zoomLevel) {
   selectedCampLat ? (centerLat = selectedCampLat) : (centerLat = list[0].lat);
   selectedCampLng ? (centerLng = selectedCampLng) : (centerLng = list[0].lng);
 
-  // console.log(zoomLevel, list[0].lat, list[0].lng);
-  // console.log(selectedCampLat, selectedCampLng, centerLat, centerLng);
-
   return { centerLat, centerLng };
 }
 
@@ -264,26 +268,23 @@ function createMap(
   list,
   selectedCampLat
 ) {
-  // ((marker.position.lat() < 50 && marker.position.lat() > 30) && (marker.position.lng() > -118 && marker.position.lng() < -75))
 
   // Create instance of map
   const map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: centerLat, lng: centerLng },
     zoom: mobileZoomLevel || zoomLevel || 4,
     mapTypeId: 'terrain',
-    // disableDefaultUI: true,
     zoomControl: true,
     mapTypeControl: true,
     scaleControl: true,
     streetViewControl: true,
     rotateControl: true,
-    fullscreenControl: false,
+    fullscreenControl: false, // FULL SCREEN NOT WORKING IN DESKTOP VIEW THIS DISABLED
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
     },
     minZoom: 2, //zoom out limited to prevent multiple maps
     maxZoom: 25,
-    // enableHighAccuracy: true,
     timeout: 5000,
     maximumAge: 0,
   });
@@ -292,16 +293,17 @@ function createMap(
   const infoWindow = new google.maps.InfoWindow();
 
   // creates marker boundry to center map based on screen size (step #1 of 3)
-  let bounds  = new google.maps.LatLngBounds();
+  let bounds = new google.maps.LatLngBounds();
 
   // Create the markers
   const markers = list.map(({ lat, lng, name, id, camp_id }, i) => {
     if (lat && lng) {
-      const contentString = `<h6 id="" class="map-ahref" style="color: blue; text-decoration: underline"><a class="map-ahref" href="/api/campsites/${camp_id}">${name}</a></h6>`
+      const contentString = `<h6 id="" class="map-ahref" style="color: blue; text-decoration: underline"><a class="map-ahref" href="/api/campsites/${camp_id}">${name}</a></h6>`;
 
       let selectedCampsiteIcon =
         'https://maps.google.com/mapfiles/kml/shapes/campground.png';
-      let campsiteIcon = 'https://maps.google.com/mapfiles/ms/icons/red-dot.png';
+      let campsiteIcon =
+        'https://maps.google.com/mapfiles/ms/icons/red-dot.png';
 
       const marker = new google.maps.Marker({
         position: { lat, lng },
@@ -312,7 +314,7 @@ function createMap(
         title: name,
       });
 
-      marker.className = "marker";
+      marker.className = 'marker';
 
       // Add a click listener for each marker, and set up the info window
       marker.addListener('click', () => {
@@ -330,28 +332,36 @@ function createMap(
         }, 1000);
       });
 
-      const { south, north, west, east } = { // boundries to center map
-        south: 30,  //app Austin
-        north: 50,  //app Northern border
+      const { south, north, west, east } = {
+        // boundries to center map
+        south: 30, //app Austin
+        north: 50, //app Northern border
         west: -118, //app LA
-        east: -75,  //app NY
+        east: -75, //app NY
       };
 
       // creates marker boundry to center map based on screen size (step #2 of 3)
-      if ((marker.position.lat() >= south && marker.position.lat() <= north) && (marker.position.lng() >= west && marker.position.lng() <= east)) {
-          loc = new google.maps.LatLng(marker.position.lat(), marker.position.lng());
-          bounds.extend(loc);
-        }
+      if (
+        marker.position.lat() >= south &&
+        marker.position.lat() <= north &&
+        marker.position.lng() >= west &&
+        marker.position.lng() <= east
+      ) {
+        loc = new google.maps.LatLng(
+          marker.position.lat(),
+          marker.position.lng()
+        );
+        bounds.extend(loc);
+      }
 
-      // console.log(marker)
       return marker;
     }
   });
 
   // creates marker boundry to center map based on screen size (step #3 of 3)
   if (!selectedCampLat) {
-    map.fitBounds(bounds);       // auto-zoom
-    map.panToBounds(bounds);     //auto-center
+    map.fitBounds(bounds); // auto-zoom
+    map.panToBounds(bounds); //auto-center
   }
 
   // setOutOfBoundsListener(map);
@@ -374,9 +384,6 @@ function renderSelectedCampMarker(selectedCampLat, infoWindow, map) {
 function renderMarkerClusters(markers, map) {
   if (window.innerWidth <= 500) {
     new markerClusterer.MarkerClusterer({ markers, map });
-    // new MarkerClusterer({ markers, map });
-    // markerCluster.clearMarkers();
-    // markerCluster.removeMarker(markers[i]);
   }
 }
 
@@ -478,10 +485,8 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 
 // UTILITY FUNCTION TO CLEAR SEARCH INPUT & HIDE/SHOW TRASH ICON
 function clearSearchInputValue() {
-  
   //if user clicks on trash icon = hide trash icon, show search icon
-  searchInput.value = "";
-  console.log('click');
+  searchInput.value = '';
   searchIcon.classList.remove('hide');
   trashIcon.classList.remove('show');
   trashIcon.classList.add('hide');
@@ -506,14 +511,14 @@ function sortUtility(listToSort) {
 
 // UTILITY RENDER SPINNER FUNCTION
 function renderSpinnerDuringAPICall() {
-  document.getElementById("spinner").classList.remove("hide");
-  document.getElementById("spinner").classList.add("show");
+  document.getElementById('spinner').classList.remove('hide');
+  document.getElementById('spinner').classList.add('show');
 }
 
 // UTILITY REMOVE SPINNER FUNCTION
 function removeSpinnerAfterAPICall(passTimeOutId) {
-  document.getElementById("spinner").classList.add("hide");
-  document.getElementById("spinner").classList.remove("show");
+  document.getElementById('spinner').classList.add('hide');
+  document.getElementById('spinner').classList.remove('show');
   clearTimeout(passTimeOutId);
 }
 

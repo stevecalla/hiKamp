@@ -15069,11 +15069,6 @@ const campsiteData2 = [
 
 // GENERATE AN ARRAY OF THE NEW ZIP CODE DATA; MANUALLY ADJUST ANY NULL VALUES
 const test2 = campsiteData2.map((element) => element.zipCode);
-// console.log(test2)
-
-// user_id: 9,
-// campsite_id: '34728A7E-796D-4834-949A-4E960CC945C1',
-// content:
 
 let commentSeed = [];
 function createCommentSeed() {

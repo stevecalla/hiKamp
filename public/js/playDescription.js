@@ -7,7 +7,6 @@ let campDescription = document.getElementById('campsite-desc');
 //event listeners go here 👇
 audioButton.addEventListener('click', addListener);
 
-
 //functions and event handlers go here 👇
 function addListener() {
   playAudio();
@@ -19,12 +18,12 @@ function addListener() {
 
 function playAudio() {
   let desc = campDescription.textContent;
-  if (!desc || desc === null || desc === "" || desc.length < 100) {
+  if (!desc || desc === null || desc === '' || desc.length < 100) {
     textToSpeech('No description is available for this campsite.');
   } else {
     textToSpeech(campDescription.textContent);
-  };
-};
+  }
+}
 
 function textToSpeech(text) {
   let speech = new SpeechSynthesisUtterance();
@@ -34,8 +33,8 @@ function textToSpeech(text) {
 
   for (let i = 0; i < voices.length; i++) {
     if (voices[i].name === 'Alex') {
-      voiceUsed = voices[i]
-    } 
+      voiceUsed = voices[i];
+    }
   }
   speech.text = text;
   speech.rate = 1;

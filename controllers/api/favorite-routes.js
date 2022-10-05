@@ -1,11 +1,12 @@
 const router = require('express').Router();
-const isAuthorized = require("../../utils/auth");
+const isAuthorized = require('../../utils/auth');
 const axios = require('axios').default;
 const { Favorite } = require('../../models');
-// starts at /api/favorite
+
+// STARTS AT /api/favorite
 
 // CREATE AND SAVE FAVORITE
-router.post("/", async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const dbFavoriteData = await Favorite.create({
       user_id: req.session.userId,
@@ -20,9 +21,7 @@ router.post("/", async (req, res) => {
 });
 
 // // DELETE POST BASED ON REQUEST BY USER
-router.delete("/", async (req, res) => {
-  console.log('hHhHHHHHHHHHHHHHHH');
-  console.log(req.body);
+router.delete('/', async (req, res) => {
   try {
     const deletedPost = await Favorite.destroy({
       where: {

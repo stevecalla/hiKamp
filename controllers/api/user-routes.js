@@ -16,7 +16,6 @@ router.post('/', async (req, res) => {
       req.session.loggedIn = true;
       res.status(200).json(dbUserData);
     });
-
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -76,7 +75,7 @@ router.post('/logout', (req, res) => {
 // ROUTE ASSIGNS USER ID TO REQ.SESSION.USERID FOR NEW USER POST IN LINE 5
 router.post('/userid', async (req, res) => {
   const dbNewUserIdData = await User.findOne({
-    where: { email: req.body.email }
+    where: { email: req.body.email },
   });
 
   req.session.save(() => {
@@ -84,6 +83,6 @@ router.post('/userid', async (req, res) => {
     req.session.userId = dbNewUserIdData.id;
     res.status(200).json(dbNewUserIdData);
   });
-})
+});
 
 module.exports = router;

@@ -10,13 +10,15 @@ format_date = (date) => {
     date.getMonth(),
     date.getDate()
   );
-  
-  return dateFormatted.toLocaleDateString();
-},
 
-  format_phone = (date) => {
-    let phoneFormatted = new phoneNumberFormatter(`3-${date}`).format({type: 'domestic'});
-    return phoneFormatted.toString();
+  return dateFormatted.toLocaleDateString();
+};
+
+format_phone = (phone) => {
+  let phoneFormatted = new phoneNumberFormatter(`3-${phone}`).format({
+    type: 'domestic',
+  });
+  return phoneFormatted.toString();
 };
 
 trim_content = (content) => {
@@ -25,12 +27,12 @@ trim_content = (content) => {
 
 capitalizeFirstCharacter = (answer) => {
   str = answer.trim();
-  str = str.split(" ");
-  let isCapitalized = str.map(element => {
+  str = str.split(' ');
+  let isCapitalized = str.map((element) => {
     let firstChar = element.charAt(0).toUpperCase();
     let otherChar = element.slice(1, element.length).toLowerCase();
     return `${firstChar}${otherChar}`;
-  })
+  });
   return isCapitalized.join(' ');
 };
 
@@ -44,19 +46,19 @@ isNumber = (answer) => {
   if (!isNaN(answer)) {
     return true;
   }
-  return "Please provide a number (with no letters, commas, periods).";
+  return 'Please provide a number (with no letters, commas, periods).';
 };
 
 isEmail = (answer) => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(answer)) {
-    return "Please provide a valid email address!";
+    return 'Please provide a valid email address!';
   }
   return true;
 };
 
 isBlank = (answer, name) => {
-  if (!answer || answer.trim() === "") {
+  if (!answer || answer.trim() === '') {
     return `Please, provide a ${name}.`;
   }
   return true;
@@ -93,5 +95,5 @@ module.exports = {
   format_date,
   trim_content,
   sortUtility,
-  format_phone, 
+  format_phone,
 };
