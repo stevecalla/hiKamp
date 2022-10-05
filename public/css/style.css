@@ -331,7 +331,7 @@ form i {
   }
 
   .body-text {
-    font-size: 16px;
+    font-size: 100%;
   }
 
   #search-result-drop {
@@ -389,11 +389,11 @@ form i {
   }
 
   .body-text {
-    font-size: 16px;
+    font-size: 100%;
   }
 
   #search-result-drop {
     display: none;
   }
-
+  
 }
