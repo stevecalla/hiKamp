@@ -1,8 +1,8 @@
-const sequelize = require("../config/connection");
-const seedComments = require("./commentData");
-const seedUsers = require("./userData");
-const seedCampsites = require("./campsiteData");
-const seedFavorites = require("./favoritesData");
+const sequelize = require('../config/connection');
+const seedComments = require('./commentData');
+const seedUsers = require('./userData');
+const seedCampsites = require('./campsiteData');
+const seedFavorites = require('./favoritesData');
 
 const seedAll = async () => {
   await sequelize.sync({ force: true });
@@ -12,7 +12,7 @@ const seedAll = async () => {
   await seedCampsites();
 
   await seedFavorites();
-  
+
   await seedComments();
 
   process.exit(0);

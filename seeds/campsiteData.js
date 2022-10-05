@@ -7521,4 +7521,4 @@ const campsiteData = [
 
 const seedCampsites = () => Campsite.bulkCreate(campsiteData);
 
-module.exports = seedCampsites
+module.exports = seedCampsites;
