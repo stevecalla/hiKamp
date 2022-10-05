@@ -15,10 +15,6 @@ function getIDAndImgURL() {
   let url = campId.dataset.imgurl || 'https://via.placeholder.com/150/154d07/FFFFFF/?text=Go+Camping!';
   
   favoriteStar.checked ? createFavorite(id, url) : deleteFavorite(id, url);
-
-  console.log('click');
-  console.log(id, url);
-  console.log(favoriteStar.checked)
 }
 
 async function createFavorite(id, url) {
