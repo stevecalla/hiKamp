@@ -1,3 +1,5 @@
+const { validationModal2 } = require("../../utils/helpers");
+
 //query selector variables go here 👇
 let searchInput = document.getElementById('search-input'); //USED FOR AUTOCOMPLETE & SEARCH BAR RESULTS
 let searchIcon = document.getElementById('search-icon');
@@ -474,13 +476,6 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       : "Error: Your browser doesn't support geolocation."
   );
   infoWindow.open(map);
-}
-
-// ADD VALIDATION MODAL BASED ON USER INPUT
-function validationModal(title, body) {
-  $("#no-input-model").modal("show");
-  $("#no-input-title").text(title);
-  $("#no-input-body").text(body);
 }
 
 // UTILITY FUNCTION TO CLEAR SEARCH INPUT & HIDE/SHOW TRASH ICON

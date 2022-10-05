@@ -21,7 +21,6 @@ const signupFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace("/");
     } else {
-      alert("Failed to sign up.");
       validationModal("Darn!! Login Failed", "Please enter valid username (can't be blank), email (xyz@example.com) and password (minimum of six characters).");
       return;
     }
@@ -36,13 +35,6 @@ const signupFormHandler = async (event) => {
     });
   }
 };
-
-// ADD VALIDATION MODAL BASED ON USER INPUT
-function validationModal(title, body) {
-$("#no-input-model").modal("show");
-$("#no-input-title").text(title);
-$("#no-input-body").text(body);
-}
 
 document
   .querySelector(".signup-form")
