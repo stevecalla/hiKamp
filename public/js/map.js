@@ -90,7 +90,6 @@ async function searchAutoComplete() {
     .filter((state) => state !== null)
     .sort();
 
-  console.log(rawStates);
   let campZipCodes = rawCampsites
     .map((rawCampsites) => rawCampsites.zipCode)
     .filter((zipCode) => zipCode !== null)

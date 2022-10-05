@@ -11,6 +11,7 @@ const { Comment, User, Favorite, Campsite } = require('../../models');
 // RENDERS ALL DATA TO USERCAMPS HANDBARS PAGE
 
 // MIDDLE ENSURES URL IS VALID -- -- AND USER IS AUTHORIZED (IS LOGGED IN)
+// EXAMPLE "localhost:3001/api/campsites/C4CB1781-C59F-4065-AFE3-F7A327B075A2"
 router.get('/:id', isNotValid, isAuthorized, async (req, res) => {
   try {
     const key = process.env.NPS_API;
