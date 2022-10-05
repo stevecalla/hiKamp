@@ -1,5 +1,3 @@
-const { validationModal2 } = require("../../utils/helpers");
-
 //query selector variables go here 👇
 let searchInput = document.getElementById('search-input'); //USED FOR AUTOCOMPLETE & SEARCH BAR RESULTS
 let searchIcon = document.getElementById('search-icon');
