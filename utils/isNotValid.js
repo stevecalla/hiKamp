@@ -4,7 +4,7 @@ const isNotValid = (req, res, next) => {
   // console.log(req.params.id === "null", req.params.id === false);
 
   if (req.params.id.length !== '3A770067-D79E-413F-AF38-D879707B79B6'.length) {
-    res.redirect("/");
+    res.redirect('/');
   }
   // If req.params.id is valid, go to next step
   else {
