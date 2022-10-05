@@ -9,7 +9,10 @@ format_date = (date) => {
     date.getFullYear(),
     date.getMonth(),
     date.getDate()
-  )};
+  );
+  
+  return dateFormatted.toLocaleDateString();
+},
 
   format_phone = (date) => {
     let phoneFormatted = new phoneNumberFormatter(`3-${date}`).format({type: 'domestic'});
