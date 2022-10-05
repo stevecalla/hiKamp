@@ -91,21 +91,20 @@ No tests at this time.
 
 ### 3rd Party Application Programming Interfaces
 
-1. [Open Weather](https://openweathermap.org/api/one-call-3)
-2. [National Park Service](developer.nps.gov/api/v1)
-3. [Google Maps](https://developers.google.com/maps/documentation/javascript/examples/marker-accessibility)
+1. [National Park Service](developer.nps.gov/api/v1)
+2. [Google Maps](https://developers.google.com/maps/documentation/javascript/examples/marker-accessibility)
 
 ### Dependencies
 
-1. [VS Code Live Server](https://ritwickdey.github.io/vscode-live-server/)
-2. [express.js](https://expressjs.com/) for Controller/Router 
-3. [bcrypt](https://www.npmjs.com/package/bcrypt): for password security (hashing)
-4. [dotenv](https://www.npmjs.com/package/dotenv): for creating secure production / back-end environments 
-5. [Axios](https://www.axios.com/): to get and render 3rd Party API data
-6. [phone-number-formats](https://www.npmjs.com/package/phone-number-formats): npm for formatting telephone numbers
-7. Sessions/Cookies: Sequalize Store: connect-sessions-sequalize
-8. [Github](https://github.com/): Project Management/Repo
- 
+1. [express.js](https://expressjs.com/) for Controller/Router 
+2. [bcrypt](https://www.npmjs.com/package/bcrypt): for password security (hashing)
+3. [dotenv](https://www.npmjs.com/package/dotenv): for creating secure production / back-end environments 
+4. [Axios](https://www.axios.com/): to get and render 3rd Party API data
+5. [phone-number-formats](https://www.npmjs.com/package/phone-number-formats): npm for formatting telephone numbers
+6. Sessions/Cookies: Sequalize Store: connect-sessions-sequalize
+7. [Github](https://github.com/): Project Management/Repo
+8. [Web Speech](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API):enables incorporating voice data into web apps.
+
 ## Future Enhancements
 
 1. Incorporate trail data APIs to tie campground searches to long trails for long-distance hikers and backpackers to plan their routes with campgrounds, parking options, and water sources along the way. 
