@@ -163,15 +163,15 @@
           </div>
       </div>
 
-      <div class="row mt-3 body-text">
+      <div class="row mt-3">
         <div class="col border-bottom border-dark">
           {{#if description}}
             <p id="campsite-desc">{{ description }}</p>
           {{/if}}
         </div>
       </div>
-      <div class="row  mt-3 body-text">
-        <div class="col-5 body-text">
+      <div class="row  mt-3 ">
+        <div class="col-xl-6 col-10 body-text">
             {{!RESERVATIONS}}
             {{#if reservationInfo}}
             <p><strong>Reservation Info:</strong> {{ reservationInfo }}</p>
@@ -192,7 +192,7 @@
             </p>
         </div>
 
-        <div class="col-5 body-text">
+        <div class="col-xl-6 col-10 body-text">
           {{!CONTACT}}
           {{#if contacts.phoneNumbers.[0].phoneNumber}}
             <p><strong>Phone:</strong> {{ format_phone contacts.phoneNumbers.[0].phoneNumber }}</p>
