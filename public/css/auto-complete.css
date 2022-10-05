@@ -6,7 +6,7 @@
     z-index: 2147483647;
     height: 250px;
     overflow: scroll;
-    {{!-- padding: 5px; --}}
+    /* padding: 5px; */
   }
   /* ENSURES THE AUTOCOMPLETE ITEM DOESNT RENDER AT THE BOTTOM LEFT OF DESKTOP UX */
   .ui-helper-hidden-accessible {
