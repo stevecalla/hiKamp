@@ -7,17 +7,9 @@ const logout = async () => {
   if (response.ok) {
     document.location.replace("/");
   } else {
-    validationModal("Darn!! Campsite Not Found", "Please select a campsite/zipcode from the list then press enter.");
-    alert("Failed to log out.");
+    validationModal("Darn!! Failed to log out", "Why not take more time to explore your favorite campsites!!");
     return;
   }
 };
-
-// ADD VALIDATION MODAL BASED ON USER INPUT
-function validationModal(title, body) {
-  $("#no-input-model").modal("show");
-  $("#no-input-title").text(title);
-  $("#no-input-body").text(body);
-}
 
 document.querySelector("#logout").addEventListener("click", logout);

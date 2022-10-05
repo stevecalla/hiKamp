@@ -1,3 +1,5 @@
+// const { validationModal } = require('../../utils/helpers');
+
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
@@ -18,13 +20,6 @@ const loginFormHandler = async (event) => {
     }
   }
 };
-
-// ADD VALIDATION MODAL BASED ON USER INPUT
-function validationModal(title, body) {
-$("#no-input-model").modal("show");
-$("#no-input-title").text(title);
-$("#no-input-body").text(body);
-}
 
 document
   .querySelector(".login-form")
