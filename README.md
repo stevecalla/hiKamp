@@ -10,9 +10,9 @@
 5. [Website Preview](#website-preview)
 6. [Installation](#installation)
 7. [Tests](#tests)
-7. [Future Enhancements](#future-enhancements)
-8. [Collaborators](#collaborators)
-9. [Contributing](#contributing)
+8. [Future Enhancements](#future-enhancements)
+9. [Collaborators](#collaborators)
+10. [Contributing](#contributing)
 
 ### [Heroku Deployment Link](https://hikamp.herokuapp.com/)
 
@@ -29,7 +29,9 @@ As an outdoors person I want a quick and painless way to find uniform campsite d
 
 ## Acceptance Criteria
 ```
-As an outdoors-inclined man or woman, I want to find campsite information quick and easy. Information that includes weather, location, amentities, whether it's by reservation or first come first serve, and information about accessibility.
+As an outdoors-inclined man or woman, I want to find campsite information quick and easy. 
+
+I'm interested in weather, location, amentities, reservability (whether the campground is by reservation or first come first serve), and information about accessibility.
 
 When I go to the HiKamp app.
 Then I am presented with a map and a search bar.
@@ -122,7 +124,11 @@ If you'd like to use NPM nodemon as/if you make changes to the code, please inst
 
 ## Tests
 
-No tests at this time.
+There are a limited number of tests setup for the helpers util.js file. To run tests install "jest": "^28.1.3" as a dev dependancy, then run "npm test".
+
+For More Information:
+1. [NPM Jest](https://www.npmjs.com/package/jest)
+2. [Jest Home Page](https://jestjs.io/)
 
 ## Future Enhancements
 
@@ -130,7 +136,8 @@ No tests at this time.
 2. Expand search capabilities on Google Maps to include campgrounds of National Forests, BLM lands, State Parks, etc., according to users' requests.
 3. Add weather forecasts to campsite pages
 4. Increase robustness of input validation, and more flexible, approximate searches to allow typos in user inputs.
-5. Offer paid subscriptions for offline use based on GPS data. 
+5. Offer paid subscriptions for offline use based on GPS data.
+6. Enhance website functionality including add favorites add/delete funcationality across the site, a map of user favorites, automate and integrate the campsite seed & database with the NPS site, add social sharing icons, add ability to email campsite info and more. 
 
 ## Collaborators
 
@@ -143,6 +150,7 @@ No tests at this time.
 
 1. GitHub Repo: <https://github.com/stevecalla/long-trails>
 2. GitHub Projects: <https://github.com/users/stevecalla/projects/22>
+3. Heroku Deploy: <https://hikamp.herokuapp.com/>
 
 ## Contributing
 
