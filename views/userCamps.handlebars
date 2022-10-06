@@ -1,5 +1,6 @@
 <link rel='stylesheet' type='text/css' href='/css/userCamps.css' />
 {{!-- SECTION: USER CAMPS PAGE --}}
+{{!--FAVORITES ASIDE--}}
 <div id="userCamp-aside" class="col-2 text-white my-2 p-1 rounded see-thru overflow-auto">
   <details id="favorite-box" class="p-2 m-2 rounded" open>
     <summary class="text-center">
@@ -7,6 +8,7 @@
     </summary>
     <br>
     <div class="border-top border-dark pt-3 overflow-auto favorite-wrapper">
+      {{!--FAVORITE CARD--}}
       {{#each favorites as |favorite favoriteId|}}
       <a href="/api/campsites/{{ favorite.campsite_id }}" class="map-ahref">
         <div class="card" style="max-width: 100%; background-color: #b98f59;">
@@ -22,7 +24,7 @@
     </div>
   </details>
 </div>
-
+{{!--MAIN CONTENT BOX--}}
 {{#each campData as |data|}}
 <div id="content-box" class="col text-white rounded see-thru my-2 p-3" data-id={{id}} data-imgUrl={{images.[0].url}}>
   <div id="campsite-header" class="row">
@@ -58,8 +60,7 @@
           class="p-2 button">Visit NPS Page</a>
       </div>
     </div>
-
-
+    {{!--CAMPSITE DESCRIPTION--}}
     <div class="row mt-3">
       <div class="col border-bottom border-dark">
         {{#if description}}
@@ -88,7 +89,6 @@
           {{/if}}
         </p>
       </div>
-
       <div class="col-xl-6 col-10 body-text">
         {{!CONTACT}}
         {{#if contacts.phoneNumbers.[0].phoneNumber}}
@@ -100,7 +100,6 @@
             href="mailto:{{ contacts.emailAddresses.[0].emailAddress }}"><i>{{contacts.emailAddresses.[0].emailAddress}}</i></a>
         </p>
         {{/if}}
-
         {{!FEES}}
         {{#if fees.[0].title}}
         <p><strong>{{fees.[0].title}}:</strong>{{/if}}{{#if fees.[0].cost}} ${{fees.[0].cost}}
@@ -112,7 +111,7 @@
       </div>
     </div>
   </div>
-
+{{!--COMMENTS BOX--}}
   <div class="row">
     <div id="comment-box-cont" class="col">
       <details id="comment-box" class="p-2 m-2 rounded">
