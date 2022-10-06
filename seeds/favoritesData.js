@@ -1,6 +1,6 @@
 const { Favorite } = require('../models');
 
-const favoritesData2 = [
+const favoritesData = [
   {
     user_id: 1,
     campsite_id: '48F2732E-4251-4D81-875C-8E52839620B5',
@@ -63,6 +63,6 @@ const favoritesData2 = [
   },
 ];
 
-const seedFavorite = () => Favorite.bulkCreate(favoritesData2);
+const seedFavorite = () => Favorite.bulkCreate(favoritesData);
 
 module.exports = seedFavorite;

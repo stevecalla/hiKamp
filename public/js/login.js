@@ -4,6 +4,14 @@ const loginFormHandler = async (event) => {
   const email = document.querySelector('#email-input').value.trim();
   const password = document.querySelector('#password-input').value.trim();
 
+  if (!email || !password) {
+    validationModal(
+      'Darn!! Login Failed',
+      'Please enter valid email (xyz@example.com) and password (minimum of six characters).'
+    );
+    return;
+  }
+
   if (email && password) {
     const response = await fetch('/api/users/login', {
       method: 'POST',
