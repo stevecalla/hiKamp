@@ -56,6 +56,27 @@ const commentdata = [
     campsite_id: '03608E50-3CA0-4AEA-9E6C-146FBD6D204B',
     content: 'This location is beautiful. I look forward to visiting again.',
   },
+  {
+    user_id: 1,
+    campsite_id: 'F3D4A32A-B2CA-4E38-B049-C90164E4540A',
+    content: 'Wow, this site was amazing!  The glaciers on the mountains are snow-covered all year!  Definitely coming back to this one!',
+  },
+  {
+    user_id: 2,
+    campsite_id: 'F3D4A32A-B2CA-4E38-B049-C90164E4540A',
+    content: "It was ok, but kinda noisy.  Too many people, prob won't come back this way again.",
+  },
+  {
+    user_id: 10,
+    campsite_id: '13674F30-F2B4-4254-BD42-036039834FA0',
+    content: "This is one of the most amazing places I've ever seen.  Can't wait to come back!",
+  },
+  {
+    user_id: 7,
+    campsite_id: '13674F30-F2B4-4254-BD42-036039834FA0',
+    content: "I really enjoyed my stay here.  We're on a 6 month road trip across the US right now, and this was one of our favorite campgrounds.",
+  },
+
 ];
 
 const seedComments = () => Comment.bulkCreate(commentdata);
