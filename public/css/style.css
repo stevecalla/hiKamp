@@ -41,10 +41,6 @@ nav {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-.post {
-  flex-flow: column;
-}
-
 .header {
   width: fit-content;
   margin: 10px auto;
@@ -198,8 +194,7 @@ hr {
   color: var(--light);
 }
 
-.login-title,
-.post-header {
+.login-title {
   display: flex;
   justify-content: space-between;
   padding: 5px;
@@ -293,8 +288,7 @@ form i {
     font-size: 22px !important;
   }
 
-  .login-header,
-  .post-header {
+  .login-header {  
     flex-direction: column;
   }
 

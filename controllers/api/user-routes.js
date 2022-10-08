@@ -72,7 +72,7 @@ router.post('/logout', (req, res) => {
   }
 });
 
-// ROUTE ASSIGNS USER ID TO REQ.SESSION.USERID FOR NEW USER POST IN LINE 5
+// ROUTE ASSIGNS USER ID TO REQ.SESSION.USERID FOR NEW USER
 router.post('/userid', async (req, res) => {
   const dbNewUserIdData = await User.findOne({
     where: { email: req.body.email },

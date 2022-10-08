@@ -20,22 +20,22 @@ router.post('/', async (req, res) => {
   }
 });
 
-// // DELETE POST BASED ON REQUEST BY USER
+// // DELETE FAVORITE BASED ON REQUEST BY USER
 router.delete('/', async (req, res) => {
   try {
-    const deletedPost = await Favorite.destroy({
+    const deletedFavorite = await Favorite.destroy({
       where: {
         user_id: req.session.userId,
         campsite_id: req.body.id,
       },
     });
-    if (!deletedPost || deletedPost[0] === 0) {
+    if (!deletedFavorite || deletedFavorite[0] === 0) {
       res
         .status(404)
         .json({ message: "Can't delete. No product found with that id!" });
       return;
     }
-    res.status(200).json(deletedPost);
+    res.status(200).json(deletedFavorite);
   } catch (err) {
     res.status(500).json(err);
   }
