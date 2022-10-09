@@ -108,4 +108,8 @@ a {
         height: 275px;
         overflow: scroll;
     }
+
+    #content-box {
+        min-height: 400px;
+    }
 }
