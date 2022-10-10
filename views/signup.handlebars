@@ -1,0 +1,15 @@
+<div class="login-card">
+  <h2 class="login-title">Signup</h2>
+  <form class="form signup-form">
+    {{> username-input}}
+    {{> email-input}}
+    {{> password-input}}
+    {{> submit-button content="Sign Up!"}}    
+  </form>
+  {{> login-link link="login" content="Login instead"}}
+  {{> validation-modal }}
+</div>
+
+<script src="./js/validation-modal.js"></script>
+<script src="./js/password.js"></script>
+<script src="./js/signup.js"></script>
