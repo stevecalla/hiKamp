@@ -1,0 +1,16 @@
+.resultsContainer {
+  height: 63vh;
+  top: 25vh;
+  overflow-y: scroll;
+  font-size: 100%;
+  color: white;
+}
+.aside-ahref {
+  color: white;
+}
+@media screen and (max-width: 1300px) {
+  .search-results {
+    color: red;
+    display: none;
+  }
+}

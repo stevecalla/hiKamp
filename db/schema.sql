@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS hiKamp_db;
+CREATE DATABASE hiKamp_db;

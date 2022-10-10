@@ -1,0 +1,338 @@
+:root {
+  --secondary: #86938f;
+  --background-main: #221010;
+  --background-secondary: #d9ead3;
+  --quatrinary: #6c6b67;
+  --light: #e3e4e3;
+  --dark: #182c23;
+  --border-radius: 0.3rem;
+}
+
+body {
+  overflow-y: scroll;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+p {
+  padding-left: 10px;
+}
+
+/* HEADER & NAV */
+header {
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--light);
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.post {
+  flex-flow: column;
+}
+
+.header {
+  width: fit-content;
+  margin: 10px auto;
+  text-align: center;
+  background-color: rgba(14, 88, 14);
+  border-radius: var(--border-radius);
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.menu {
+  background-color: rgb(14, 88, 14);
+}
+
+.camp-dropdown-toggle::after {
+  content: none;
+}
+
+.camp-dropdown-toggle:hover {
+  background-color: rgb(14, 88, 14);
+}
+
+.dropdown-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.background_image {
+  background-image: url('../images/bg_image-forest.jpeg');
+  background-size: cover;
+  align-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a,
+nav button {
+  color: var(--light);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 28px;
+}
+
+nav a:hover {
+  color: var(--secondary);
+  background-color: var(--dark);
+}
+
+/* MAIN & ASIDE */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+#content-box {
+  margin-left: 1vw;
+}
+
+.app_name {
+  font-family: 'Splash', cursive, sans-serif;
+  font-size: 6vh;
+  text-align: center;
+  color: burlywood;
+}
+
+.fa-eye {
+  color: darkgray;
+}
+
+.fa-eye-slash {
+  color: darkgray;
+}
+
+/* LOGIN / SIGNUP */
+.login a {
+  border: none !important;
+  font-size: 26px;
+  text-decoration: none;
+  color: var(--light);
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* VARIOUS BUTTONS */
+.btn-no-style {
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 100%;
+  transition: color 0.1s;
+  font-size: 28px;
+}
+
+.btn-custom {
+  width: 100%;
+  background-color: rgb(14, 88, 14) !important;
+  font-size: 32px;
+}
+
+.comment-button {
+  width: 98%;
+  margin-left: 5px;
+}
+
+.new-button-wrapper {
+  display: flex;
+  justify-content: center;
+  border: none !important;
+}
+
+.new-button {
+  height: 50px;
+  width: 200px;
+  border: 3px solid black;
+  border-radius: var(--border-radius);
+  background-color: var(--background-main);
+  color: var(--light);
+  font-size: 26px;
+}
+
+.comment-wrapper {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.comment-input {
+  width: 98% !important;
+  margin-left: 5px !important;
+}
+
+hr {
+  margin: 0 50px;
+}
+
+.login-card {
+  margin: 0 0 20px 0;
+  flex: 0 0 100%;
+  padding: 5px;
+  border-radius: var(--border-radius);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: var(--light);
+}
+
+.login-title,
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  padding-left: 10px;
+  color: var(--light);
+}
+
+form i {
+  position: fixed;
+  margin-left: -45px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.password-login {
+  width: 99%;
+  padding: 0.75rem;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  margin: 0.625rem 0;
+  font-size: 1.2rem;
+  border: 1px solid #484848;
+  border-radius: var(--border-radius);
+  margin-left: 3px;
+}
+
+/* LAYOUT */
+.container {
+  width: auto;
+  align-content: flex-start;
+  align-items: center;
+}
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+/* LARGE SCREENS / TABLETS */
+@media screen and (max-width: 1300px) {
+  .full-screen {
+    display: none;
+  }
+
+  header {
+    height: 90px;
+  }
+
+  .app_name {
+    font-size: 28px;
+  }
+
+  #main-row {
+    flex-direction: column;
+    margin: auto;
+    min-height: 90vh;
+  }
+
+  #content-box {
+    max-width: 100vw;
+    margin-left: 0vw;
+  }
+
+  #userCamp-aside {
+    max-width: 100vw;
+    margin-right: 1vw;
+  }
+
+  #nps-link {
+    font-size: x-small;
+  }
+
+  #search-result-drop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #main-row {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  nav a,
+  nav button {
+    font-size: 22px !important;
+  }
+
+  .login-header,
+  .post-header {
+    flex-direction: column;
+  }
+
+  header {
+    height: 90px;
+  }
+
+  .app_name {
+    font-size: 28px;
+  }
+
+  #content-box {
+    max-width: 100vw;
+    margin-left: 0vw;
+  }
+
+  #userCamp-aside {
+    max-width: 100vw;
+    margin-right: 1vw;
+  }
+
+  #nps-link {
+    font-size: x-small;
+  }
+
+  .body-text {
+    font-size: 100%;
+  }
+
+  #search-result-drop {
+    display: none;
+  }
+}
+
+/*MOBILE SIZING FOR BODY TEXT ON USERCAMPS VIEW*/
+@media screen and (max-width: 400px) {
+  .body-text {
+    inline-size: 400px;
+    overflow-wrap: break-word;
+  }
+}

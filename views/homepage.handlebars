@@ -1,0 +1,23 @@
+<div class="aside-map-page align-self-center rounded see-thru ">
+    {{> search-input }}
+  <div>
+    <details open id="search-result-drop" class="text-white mb-2 p-1">
+      <summary class="text-center">RESULTS</summary>
+      <br>
+      <div class="resultsContainer border-top border-dark">
+        {{> search-results }}
+      </div>
+    </details>
+    {{> spinner }}
+  </div>
+</div>
+
+<div class="map-map-page col">
+  <div class="container">
+    {{> map-details }}
+    {{> validation-modal }}
+  </div>
+</div>
+
+<script src="./js/validation-modal.js"></script>
+<script src="/js/map.js"></script>
