@@ -15,7 +15,11 @@ searchInput.addEventListener('input', () => searchAutoComplete());
 //functions and event handlers go here 👇
 // RENDER MAP ZOOM AS WINDOW IS RE-SIZED
 function adjustZoomOnResize() {
-  window.innerWidth > 500 ? initMap(4) : initMap(3);
+  if (window.innerWidth > 500 && window.innerWidth % 100 === 0) {
+    initMap(4)
+  } else if (window.innerWidth < 500 & window.innerWidth % 50 === 0) {
+    initMap(3)
+  }
 }
 
 // RENDER MAP USING SEARCH INPUT
