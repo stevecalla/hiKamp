@@ -7,6 +7,7 @@ let npsURL = document.getElementById('nps-link');
 
 // function for web share api
 function webShareAPI(header, description, link) {
+  console.log(header, description, link)
   navigator
     .share({
       title: header,
@@ -22,12 +23,15 @@ if (navigator.share) {
   shareButton.style.display = "block";
   shareButton.addEventListener("click", () => {
     console.log('click');
+    alert(campName.textContent, campDescription.textContent, npsURL.href)
     webShareAPI(campName.textContent, campDescription.textContent, npsURL.href)
   });
 } else {
   // Hide button if it doesn't supports webShareAPI
-  shareButton.style.display = "none";
-  console.error("Your Browser doesn't support Web Share API");
+  // shareButton.style.display = "none";
+  console.error("Your Browser doesn't support Web Share API");  shareButton.addEventListener("click", () => {
+  alert(campName.textContent, campDescription.textContent, npsURL.href)
+  });
 }
 
 // Source:
