@@ -105,7 +105,7 @@ a {
 /*favorites aside @*/
 @media screen and (max-width: 1300px) {
     .favorite-wrapper {
-        height: 275px;
+        /* height: 275px; */
         overflow: scroll;
     }
 
