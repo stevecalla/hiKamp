@@ -105,11 +105,16 @@ a {
 /*favorites aside @*/
 @media screen and (max-width: 1300px) {
     .favorite-wrapper {
-        height: 40px;
-        overflow: scroll;
+      height: 275px;
+      overflow: scroll;
     }
 
     #content-box {
-        min-height: 400px;
+      min-height: 400px;
     }
+
+    /*favorites aside*/
+    #userCamp-aside {
+      height: auto;
+}
 }
