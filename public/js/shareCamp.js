@@ -22,7 +22,7 @@ if (navigator.share) {
   shareButton.style.display = "block";
   shareButton.addEventListener("click", () => {
     console.log('click');
-    webShareAPI(campName, campDescription, npsURL.href)
+    webShareAPI(campName.textContent, campDescription.textContent, npsURL.href)
   });
 } else {
   // Hide button if it doesn't supports webShareAPI
