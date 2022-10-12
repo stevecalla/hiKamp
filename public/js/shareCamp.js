@@ -16,7 +16,7 @@ function webShareAPI(header, description, link) {
   navigator
     .share({
       // title: header,
-      text: `${header}}\n${description}`,
+      text: `${header}\n${description}`,
       url: link,
     })
     .then(() => console.log("Successful share"))
