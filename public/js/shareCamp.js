@@ -12,11 +12,11 @@ let npsURL = document.getElementById('nps-link').href;
 
 // function for web share api
 function webShareAPI(header, description, link) {
-  console.log(header, description, link)
+  // console.log(header, description, link)
   navigator
     .share({
       // title: header,
-      text: `${title}\n${description}`,
+      text: `${header}}\n${description}`,
       url: link,
     })
     .then(() => console.log("Successful share"))
