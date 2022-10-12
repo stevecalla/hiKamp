@@ -11,7 +11,7 @@ function webShareAPI(header, description, link) {
   navigator
     .share({
       title: header,
-      text: description,
+      // text: description,
       url: link,
     })
     .then(() => console.log("Successful share"))
@@ -28,10 +28,8 @@ if (navigator.share) {
   });
 } else {
   // Hide button if it doesn't supports webShareAPI
-  // shareButton.style.display = "none";
-  console.error("Your Browser doesn't support Web Share API");  shareButton.addEventListener("click", () => {
-  alert(campName.textContent, campDescription.textContent, npsURL.href)
-  });
+  shareButton.style.display = "none";
+  console.error("Your Browser doesn't support Web Share API");
 }
 
 // Source:
