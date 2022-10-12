@@ -26,7 +26,7 @@ if (navigator.share) {
   });
 } else {
   // Hide button if it doesn't supports webShareAPI
-  shareButton.style.display a= "none";
+  shareButton.style.display = "none";
   console.error("Your Browser doesn't support Web Share API");
 }
 
