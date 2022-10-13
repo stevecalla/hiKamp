@@ -116,5 +116,12 @@ a {
     /*favorites aside*/
     #userCamp-aside {
       height: auto;
+    }
+
 }
+
+@media screen and (max-width: 576px) {
+    .camp-name-cont {
+        text-align: center;
+    }
 }
