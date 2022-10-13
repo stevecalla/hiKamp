@@ -37,7 +37,7 @@ if (navigator.share) {
   shareButton.addEventListener('click', event => {
     shareModal('Share Campground', '',);
     shareCamp.textContent = campName;
-    shareHref.href = `mailto:callasteven@gmail.com?subject=${campName}&body=${campName}%0D%0A%0D%0A${campDescription.textContent}%0D%0A%0D%0A${npsURL}`;
+    shareHref.href = `mailto:example@example.com?subject=${campName}&body=${campName}%0D%0A%0D%0A${campDescription.textContent}%0D%0A%0D%0A${npsURL}`;
   });
 }
 
