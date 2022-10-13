@@ -4,7 +4,8 @@ let shareButton = document.getElementById('share-button');
 let campName = document.getElementById('camp-name').textContent;
 let npsURL = document.getElementById('nps-link').href;
 let shareCamp = document.getElementById('share-camp');
-let shareHref = document.getElementById('share-href');
+let shareEmail = document.getElementById('share-email');
+let shareFacebook = document.getElementById('share-facebook');
 
 //global variables go here 👇
 
@@ -37,7 +38,10 @@ if (navigator.share) {
   shareButton.addEventListener('click', event => {
     shareModal('Share Campground', '',);
     shareCamp.textContent = campName;
-    shareHref.href = `mailto:example@example.com?subject=${campName}&body=${campName}%0D%0A%0D%0A${campDescription.textContent}%0D%0A%0D%0A${npsURL}`;
+
+    shareEmail.href = `mailto:example@example.com?subject=${campName}&body=${campName}%0D%0A%0D%0A${campDescription.textContent}%0D%0A%0D%0A${npsURL}`;
+    
+    shareFacebook.href = `https://www.facebook.com/sharer/sharer.php?u=${npsURL}`;
   });
 }
 
