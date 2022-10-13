@@ -113,10 +113,12 @@ main {
 
 .fa-eye {
   color: darkgray;
+  position: absolute;
 }
 
 .fa-eye-slash {
   color: darkgray;
+  position: absolute;
 }
 
 /* LOGIN / SIGNUP */

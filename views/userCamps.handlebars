@@ -29,14 +29,14 @@
 {{#each campData as |data|}}
 <div id="content-box" class="col text-white rounded see-thru my-2 p-3" data-id={{id}} data-imgUrl={{images.[0].url}}>
   <div id="campsite-header" class="row">
-    <div class="col-9">
+    <div class="col-12 col-sm-9 camp-name-cont">
       <h3>
         <span id="camp-name">{{name}}</span>
       </h3>
     </div>
     {{/each}}
     {{!-- FAVORITES BUTTON --}}
-    <div id="favStarEl" class="col-3 d-flex justify-content-end">
+    <div id="favStarEl" class="col-12 col-sm-3 d-flex justify-content-end">
       <img id='share-button' src="/images/share.png" alt="Share campground URL."
         style="height: 24px; width: 24px;  padding: 2px; background-color: #DEB887; margin: 12px 6px 10px 10px; border-radius: 3px; cursor: pointer;"
         title="Share campground">
