@@ -106,12 +106,29 @@ a {
 /*favorites aside @*/
 @media screen and (max-width: 1300px) {
     .favorite-wrapper {
-        height: 275px;
-        overflow: scroll;
+      height: 275px;
+      overflow: scroll;
     }
 
     #content-box {
-        min-height: 400px;
+      min-height: 400px;
+    }
+
+    /*favorites aside*/
+    #userCamp-aside {
+      height: auto;
+}
+}
+
+@media screen and (max-width: 576px) {
+    .camp-name-cont {
+        text-align: center;
+        border-bottom: 1px solid rgb(14, 88, 14);
+    }
+
+    /*favorites aside*/
+    #userCamp-aside {
+      height: auto;
     }
 }
 
