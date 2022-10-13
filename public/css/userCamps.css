@@ -54,6 +54,7 @@ a {
 /*main content box*/
 #content-box {
     overflow-y: scroll;
+    overflow-x: hidden;
     height: 80vh;
     margin-bottom: 50px !important;
 }
@@ -111,5 +112,12 @@ a {
 
     #content-box {
         min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .camp-name-cont {
+        text-align: center;
+        border-bottom: 1px solid rgb(14, 88, 14);
     }
 }
