@@ -5,7 +5,7 @@ let campDescription = document.getElementById('campsite-desc');
 //global variables go here 👇
 
 //event listeners go here 👇
-// audioButton.addEventListener('click', addListener);
+audioButton.addEventListener('click', addListener);
 
 //functions and event handlers go here 👇
 function addListener() {
