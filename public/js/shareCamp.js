@@ -1,8 +1,10 @@
+
 //query selector variables go here 👇
 let shareButton = document.getElementById('share-button');
 let campName = document.getElementById('camp-name').textContent;
 let npsURL = document.getElementById('nps-link').href;
-// let campDescription = declared in playDescripton
+let shareCamp = document.getElementById('share-camp');
+let shareHref = document.getElementById('share-href');
 
 //global variables go here 👇
 
@@ -12,10 +14,8 @@ let npsURL = document.getElementById('nps-link').href;
 
 // function for web share api
 function webShareAPI(header, description, link) {
-  // console.log(header, description, link)
   navigator
     .share({
-      // title: header,
       text: `${header}\n${description}`,
       url: link,
     })
@@ -31,8 +31,14 @@ if (navigator.share) {
   });
 } else {
   // Hide button if it doesn't supports webShareAPI
-  shareButton.style.display = "none";
-  console.error("Your Browser doesn't support Web Share API");
+  // shareButton.style.display = "none";
+  // console.error("Your Browser doesn't support Web Share API");
+
+  shareButton.addEventListener('click', event => {
+    shareModal('Share Campground', '',);
+    shareCamp.textContent = campName;
+    shareHref.href = `mailto:example@example.com?subject=${campName}&body=${campName}%0D%0A%0D%0A${campDescription.textContent}%0D%0A%0D%0A${npsURL}`;
+  });
 }
 
 // Source:
